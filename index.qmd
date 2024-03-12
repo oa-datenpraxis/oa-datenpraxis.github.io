@@ -1,0 +1,32 @@
+---
+title: "OA Datenpraxis"
+subtitle: "Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung"
+---
+
+## Projektbeschreibung
+
+Das Projekt OA Datenpraxis unterstützt die Strukturbildung für die Open-Access-Transformation an wissenschaftlichen Einrichtungen in Deutschland. Im Fokus stehen die Förderung und Etablierung von Prozessen und Verfahren zur souveränen Datenpraxis bei der Gestaltung der Open-Access-Transformation.
+
+Im Projekt werden Praktiker:innen in Administration, Bibliothek und anderen Serviceeinrichtungen bei der Professionalisierung ihrer Datenpraxis unterstützt, indem die Organisation, Vernetzung und Standardisierung der jeweiligen Prozesse durch einen koordinierten Ansatz gefördert werden.
+
+### Projektziele
+
+Mit Blick auf die Open-Access-Transformation verfolgt das Projekt die folgenden Ziele:
+
+1.  die Verbesserung der datenbasierten Steuerung
+
+2.  die Stärkung von Kooperationen
+
+3.  die Entwicklung von Standards für eine kollaborative Datenpraxis
+
+4.  die Minimierung von Abhängigkeiten von kommerziellen Datenquellen
+
+5.  die Verbesserung von Informationsangeboten
+
+Durch Erhebungen, Analysen, Validierungen und operative Empfehlungen leisted OA Datenpraxis einen zentralen Beitrag zur Weiterentwicklung der überregionalen Informationsversorgung in Deutschland.
+
+### Projektantrag
+
+Eine gekürzte Fassung des Projektantrags ist hier veröffentlicht:
+
+Pampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). <https://doi.org/10.5281/zenodo.10794298>

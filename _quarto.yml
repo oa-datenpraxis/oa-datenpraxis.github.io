@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "OA Datenpraxis"
+  navbar:
+    left:
+      - partners.qmd
+      - publications.qmd
+      - news.qmd
+    logo: logo_HU.png
+    tools:
+      - icon: envelope
+        text: Mail
+        href: mailto:info@mail.xyz
+      - icon: mastodon
+        text: Mastodon
+        href: https://fediscience.org/@dorothearrr
+  search: false
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
