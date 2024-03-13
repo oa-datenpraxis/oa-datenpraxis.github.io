@@ -6,9 +6,12 @@ website:
   title: "OA Datenpraxis"
   navbar:
     left:
+      - href: index.qmd
+        text: home
       - partners.qmd
       - publications.qmd
       - news.qmd
+      - impressum.qmd
     logo: logo_HU.png
     tools:
       - icon: envelope
