@@ -13,13 +13,6 @@ website:
       - news.qmd
       - impressum.qmd
     logo: logo_HU.png
-    tools:
-      - icon: envelope
-        text: Mail
-        href: mailto:info@mail.xyz
-      - icon: mastodon
-        text: Mastodon
-        href: https://fediscience.org/@dorothearrr
   search: false
 
 format:
