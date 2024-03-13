@@ -7,7 +7,7 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: home
+        text: Über das Projekt
       - partners.qmd
       - publications.qmd
       - news.qmd

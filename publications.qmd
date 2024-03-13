@@ -4,6 +4,8 @@ title: "Publikationen"
 
 ## Publikationen aus dem Projekt
 
+Pampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). <https://doi.org/10.5281/zenodo.10794298>
+
 ## Vorarbeiten der Projektpartner
 
 Fraser, N., Hobert, A., Jahn, N., Mayr, P., & Peters, I. (2023). No deal: German researchers’ publishing and citing behaviors after Big Deal negotiations with Elsevier. *Quantitative Science Studies*, *4*(2), 325–352. <https://doi.org/10.1162/qss_a_00255>
