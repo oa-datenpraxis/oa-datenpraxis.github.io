@@ -2,34 +2,34 @@
 title: "Projektpartner"
 ---
 
-## Institut für Bibliotheks- und Informationswissenschaft, Humboldt-Unversität zu Berlin
+## Humboldt-Unversität zu Berlin, Institut für Bibliotheks- und Informationswissenschaft
 
 Die Professur Information Management am Institut für Bibliotheks- und Informationswissenschaft der HU untersucht die Rolle digitaler Forschungs- und Informationsinfrastrukturen in der Wissenschaft im Kontext der digitalen Transformation. Dabei liegt der Fokus auf Informationsinfrastrukturen, die die Sammlung, Erschließung, Zugänglichmachung und Nachnutzung von Informationsobjekten im Sinne von Open Science ermöglichen. In Forschung, Lehre und Transfer werden Prozesse der digitalen Wissenschaftskommunikation und damit verbundene Praktiken, Standards und Policies betrachtet. Ein Schwerpunkt der Forschung liegt auf dem Thema Open Access und damit verbundenen Entwicklungen der digitalen Wissenschaftskommunikation.
 
-### Projektmitarbeitende
+### Team
 
-Heinz Pampel (Projektleitung) <https://orcid.org/0000-0003-3334-2771>
+Heinz Pampel <https://orcid.org/0000-0003-3334-2771>
 
-Dorothea Strecker (Projektkoordination) <https://orcid.org/0000-0002-9754-3807>
+Dorothea Strecker <https://orcid.org/0000-0002-9754-3807>
 
 ## Helmholtz Open Science Office
 
 Die Helmholtz-Gemeinschaft unterstützt OA entsprechend der „Berliner Erklärung über den freien Zugang zu wissenschaftlichem Wissen“. Mit dem Helmholtz Open Science Office (OS Office) wurde eine Infrastruktur etabliert, die den Kulturwandel hin zu Open Science in Helmholtz fördert. Das OS Office versteht sich als Dienstleister und zentrenübergreifender Partner aller an diesem Prozess beteiligten Akteur:innen, der die Helmholtz-Gemeinschaft bei der Gestaltung des Kulturwandels hin zu Open Science auf nationaler und internationaler Ebene unterstützt. Mit dieser Zielsetzung engagiert sich das OS Office in einer Vielzahl von Open-Science-Initiativen und Projekten, wie z. B. in relevanten Arbeitsgruppen der Schwerpunktinitiative „Digitale Information“ der Allianz der Wissenschaftsorganisationen, im Vorstand und in diversen Gremien der DINI sowie des Vereins RDA DE und im Rahmen diverser Drittmittelprojekte.
 
-### Projektmitarbeitende
+### Team
 
-Roland Bertelmann (Projektleitung) <https://orcid.org/0000-0002-5588-0290>
+Roland Bertelmann <https://orcid.org/0000-0002-5588-0290>
 
-Lea Maria Ferguson (Projektkoordination) <https://orcid.org/0000-0002-7060-3670>
+Lea Maria Ferguson <https://orcid.org/0000-0002-7060-3670>
 
 ## Niedersächsische Staats- und Universitätsbibliothek Göttingen
 
 Die Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen) gehört mit ihrem vielfältigen Aufgabenspektrum, das sie auf lokaler, regionaler, nationaler und internationaler Ebene erfüllt, zu den führenden Bibliotheken Deutschlands. Als international anerkanntes Kompetenzzentrum für die Digitale Bibliothek stellt sie der Forschung neue Services zur Verfügung. Zu ihren Aufgaben zählen u.a. die Sicherung der überregionalen Literaturversorgung wie im DFG geförderten Programm „Fachinformationsdienste für die Wissenschaft“, die Erhaltung und Zugänglichmachung von wissenschaftlichen Ergebnissen und des kulturhistorischen Erbes sowie die Selbstverpflichtung, Forschungs- und Entwicklungspartnerin für eine zukunftssichere Forschungs- und Informationsinfrastruktur in Deutschland und international zu sein.
 
-### Projektmitarbeitende
+### Team
 
-Birgit Schmidt (Projektleitung) <https://orcid.org/0000-0001-8036-5859>
+Najko Jahn <https://orcid.org/0000-0001-5105-1463>
 
-Najko Jahn (Projektkoordination) <https://orcid.org/0000-0001-5105-1463>
+Birgit Schmidt <https://orcid.org/0000-0001-8036-5859>
 
 ![](logos_Projektpartner.png){fig-alt="Logos der Projektpartner: Humboldt-Universität zu Berlin, Helmholtz Open Science Office, Niedersächsische Staats- und Universitätsbibliothek Göttingen"}
