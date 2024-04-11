@@ -12,7 +12,6 @@ website:
       - publications.qmd
       - news.qmd
       - impressum.qmd
-    logo: logo_HU.png
   search: false
 
 format:
