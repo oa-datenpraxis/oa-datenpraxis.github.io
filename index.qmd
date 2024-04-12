@@ -31,9 +31,11 @@ Eine gekürzte Fassung des Projektantrags ist hier veröffentlicht:
 
 Pampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). <https://doi.org/10.5281/zenodo.10794298>
 
-![](dfg-logo-de.jpg)
+### Projektförderung
 
 Das Projekt OA Datenpraxis ist unter der Projektnummer [528466070](https://gepris.dfg.de/gepris/projekt/528466070) durch die Deutsche Forschungsgemeinschaft gefördert.
+
+![](dfg-logo-de.jpg)
 
 ------------------------------------------------------------------------
 
@@ -65,6 +67,8 @@ The public section of the project proposal is accessible here (in German):
 
 Pampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). <https://doi.org/10.5281/zenodo.10794298>
 
-![](dfg-logo-int.jpg)
+### Project funding
 
 The project OA Datenpraxis with the project number [528466070](#0) is funded by the German Research Foundation DFG.
+
+![](dfg-logo-int.jpg)
