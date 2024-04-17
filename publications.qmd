@@ -18,4 +18,4 @@ Jahn, N., Matthias, L., & Laakso, M. (2022). Toward transparency of hybrid open 
 
 Pampel, H. (2022). From library budget to information budget: Fostering transparency in the transformation towards open access. *Insights the UKSG journal*, *35*, 8. <https://doi.org/10.1629/uksg.576>
 
-Taubert, N., Hobert, A., Jahn, N., Bruns, A., & Iravani, E. (2023). Understanding differences of the OA uptake within the German university landscape (2010–2020): Part 1—Journal-based OA. *Scientometrics*, *128*(6), 3601–3625. <https://doi.org/10.1007/s11192-023-04716-3>
+Stisser, A., Jahn, N., & Schmidt, B. (2022). Stand und Perspektiven bibliometriegestützter Open-Access-Services an Universitäten in Deutschland. *Bibliothek Forschung und Praxis*, *46*(2), 275–283. <https://doi.org/10.1515/bfp-2021-0098>
