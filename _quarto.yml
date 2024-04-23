@@ -1,6 +1,9 @@
 project:
   type: website
 
+resources:
+  - CNAME.txt
+  
 website:
   title: "OA Datenpraxis"
   navbar:
