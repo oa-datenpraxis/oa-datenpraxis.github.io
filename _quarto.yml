@@ -1,7 +1,9 @@
 project:
   type: website
-  output-dir: docs
 
+resources:
+  - CNAME.txt
+  
 website:
   title: "OA Datenpraxis"
   navbar:
