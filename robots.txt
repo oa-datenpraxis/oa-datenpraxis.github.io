@@ -1,1 +1,1 @@
-Sitemap: https://njahn82.github.io/oa-datenpraxis/sitemap.xml
+Sitemap: https://oa-datenpraxis.github.io/sitemap.xml
