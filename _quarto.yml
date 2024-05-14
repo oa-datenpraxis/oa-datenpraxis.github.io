@@ -6,7 +6,9 @@ resources:
   
 website:
   title: "OA Datenpraxis"
+  favicon: logo_oa_datenpraxis.png
   navbar:
+    logo: logo_oa_datenpraxis.png
     left:
       - href: index.qmd
         text: Über das Projekt
@@ -14,6 +16,9 @@ website:
       - publications.qmd
       - news.qmd
       - impressum.qmd
+    tools:
+      - icon: envelope
+        href: mailto:info.oa-datenpraxis@listserv.dfn.de
   search: false
 
 format:
