@@ -3,3 +3,13 @@ title: "Aktuelles"
 ---
 
 ## Veranstaltungen
+
+### 2024
+
+#### 2024-09-19
+
+“Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung” - Workshop auf der DINI-Jahrestagung in Potsdam [(Link zur Veranstaltung](https://dini.de/veranstaltungen/jahrestagungen/25-dini-jahrestagung/programm-der-25-dini-jahrestagung))
+
+#### 2024-09-10
+
+"Stand und Perspektiven des Open-Access-Reportings" - Workshop bei den Open-Access-Tagen in Köln ([Link zur Veranstaltung](https://open-access-tage.de/open-access-tage-2024-koeln/koeln/programm/dienstag-10092024))
