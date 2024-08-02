@@ -1,31 +1,55 @@
 project:
   type: website
+  output-dir: docs
 
-resources:
-  - CNAME.txt
-  
 website:
+  #reader-mode: true
+  back-to-top-navigation: true
+  #page-navigation: true
+  page-footer: 
+    center: 
+      - href: impressum.qmd
+     # - href: datenschutz.qmd
+  margin-header: |
+    ![](../images/logo_oa_datenpraxis.png)
   title: "OA Datenpraxis"
-  favicon: logo_oa_datenpraxis.png
   navbar:
-    logo: logo_oa_datenpraxis.png
-    left:
-      - href: index.qmd
-        text: Über das Projekt
-      - partners.qmd
-      - publications.qmd
-      - news.qmd
-      - impressum.qmd
+    logo: images/logo_oa_datenpraxis.png
     tools:
+      - icon: mastodon
+        href: https://openbiblio.social/@oa_datenpraxis
       - icon: envelope
-        href: mailto:info.oa-datenpraxis@listserv.dfn.de
+        href: mailto:oa-datenpraxis@listserv.dfn.de
+    left:
+      - href: partners.qmd
+      - publications.qmd
+      - text: "Details"
+        menu: 
+          - arbeitspakete.qmd
+      - news.qmd
   search: false
+  
 
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
+    #toc-location: left
+    grid:
+      sidebar-width: 50px
+      body-width: 850px
+      margin-width: 150px
+
 
 editor: visual
+
+babelquarto:
+  languagecodes:
+  - name: de
+    text: "DE"
+  - name: en
+    text: "EN"
+  mainlanguage: 'de'
+  languages: ['en']
 

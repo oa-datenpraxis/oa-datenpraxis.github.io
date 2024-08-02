@@ -1,0 +1,11 @@
+---
+title: "WP 5 Synopsis"
+---
+
+## Lead
+
+![](../images/hu.png){width=30%}
+
+## Description
+
+A common understanding of science-led data practice is a prerequisite for shaping the OA transformation. This practice includes the handling of data in scientific institutions in general (WP 1), the analysis and evaluation of data in the context of publishing contracts (WP 2), the handling of data on OA in institutional rankings (WP 3) and the collection of data on OA for reporting (WP 4). In line with the aim of ensuring data sovereignty in science, a synopsis will be created in WP 5 based on the findings of WPs 1, 2, 3 and 4. Recommendations (T5.2) are formulated on the basis of this synopsis (T5.1). The aim is to summarise the findings of the previous WPs and to work out their strategic dimension. As a result, summarised recommendations are published (T5.3), which are aimed at decision-makers in universities, non-university research institutions, funding organisations and science policy. Of particular importance here is the integrative view, which summarises the work in the project and highlights the interactions between the WPs. Current science policy recommendations (e.g. from the Alliance, EU, UNESCO, WR, Science Europe) are also placed in relation to the results of the previous WPs. This WP thus acts as an impulse for the future organisation of the OA transformation.

@@ -1,0 +1,35 @@
+---
+title: "Project Partner"
+---
+
+## Humboldt-Unversität zu Berlin, Berlin School of Library and Information Science
+
+The Chair of Information Management at the Berlin School of Library and Information Science at HU is investigating the role of digital research and information infrastructures in science in the context of the digital transformation. The focus is on information infrastructures that enable the collection, indexing, accessibility and re-use of information objects in the sense of Open Science. In research, teaching and transfer, processes of digital science communication and associated practices, standards and policies are analysed. Research focuses on the topic of Open Access and related developments in digital scholarly communication.
+
+### Team
+
+Heinz Pampel <https://orcid.org/0000-0003-3334-2771>
+
+Dorothea Strecker <https://orcid.org/0000-0002-9754-3807>
+
+## Helmholtz Open Science Office
+
+The Helmholtz Association supports OA in accordance with the "Berlin Declaration on Open Access to Knowledge in the Sciences and Humanities". With the Helmholtz Open Science Office (OS Office), an infrastructure has been established that promotes the cultural change towards Open Science at Helmholtz. The OS Office sees itself as a service provider and cross-centre partner for all stakeholders involved in this process, supporting the Helmholtz Association in shaping the cultural change towards Open Science at national and international level. With this objective in mind, the OS Office is involved in a large number of open science initiatives and projects, such as in relevant working groups of the Alliance of Science Organisations' priority initiative "Digital Information", on the board and in various committees of the DINI and the RDA DE association and as part of various third-party funded projects.
+
+### Team
+
+Roland Bertelmann <https://orcid.org/0000-0002-5588-0290>
+
+Lea Maria Ferguson <https://orcid.org/0000-0002-7060-3670>
+
+## Göttingen State and University Library
+
+The Göttingen State and University Library (SUB Göttingen) is one of Germany's leading libraries with its diverse range of tasks, which it fulfils at local, regional, national and international level. As an internationally recognised competence centre for the digital library, it provides new services for research. Its tasks include securing the supra-regional supply of literature, as in the DFG-funded programme "Specialised Information Services for Science", preserving and making accessible scientific results and the cultural-historical heritage, as well as its commitment to being a research and development partner for a future-proof research and information infrastructure in Germany and internationally.
+
+### Team
+
+Najko Jahn <https://orcid.org/0000-0001-5105-1463>
+
+Birgit Schmidt <https://orcid.org/0000-0001-8036-5859>
+
+[![](images/helmholtz_os_office.png){width=30% style="margin-top: 50px;"}](https://os.helmholtz.de/) [![](images/SUB_centered_cmyk.png){width=30% style="margin-top: 50px;"}](https://www.sub.uni-goettingen.de) [![](images/hu.png){width=30% style="margin-top: 50px;"}](https://www.ibi.hu-berlin.de/de/forschung/infomanagement)

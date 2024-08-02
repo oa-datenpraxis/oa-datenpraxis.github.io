@@ -1,0 +1,15 @@
+---
+title: "AP 2 Verlagsverträge"
+language:
+    toc-title-website: "Auf dieser Seite"
+bibliography: ap2.bib
+csl: ../apa.csl
+---
+
+## Federführung
+
+![](../images/SUB_centered_cmyk.png){width=30%}
+
+## Beschreibung
+
+OA-Transformationsverträge sind in Bezug auf offene Metadaten trotz Standardisierungsinitiativen wie ESAC heterogen gestaltet [@Borrego2021;@Marques2019;@Jahn2022]. Zugleich bieten Verlage unterschiedlich ausgeprägte Metadaten- und Forschungsservices zusätzlich zur OA-Stellung der Artikel und der zentralen Rechnungslegung an. Ziel des AP ist es, Verlagsverträge bezogen auf offene Metadaten und datenanalytische Forschungsservices zu analysieren und Best Practices zu identifizieren. Dadurch soll der Wettbewerb zwischen den Verlagen befördert werden.

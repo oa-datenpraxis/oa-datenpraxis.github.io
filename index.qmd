@@ -1,6 +1,8 @@
 ---
 title: "OA Datenpraxis"
-subtitle: "Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung"
+subtitle: "Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training &amp; Vernetzung"
+language:
+    toc-title-website: "Auf dieser Seite"
 ---
 
 ## Projektbeschreibung
@@ -35,40 +37,5 @@ Pampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L.
 
 Das Projekt OA Datenpraxis ist unter der Projektnummer [528466070](https://gepris.dfg.de/gepris/projekt/528466070) durch die Deutsche Forschungsgemeinschaft gefördert.
 
-![](dfg-logo-de.jpg)
+![](images/dfg-logo-de.jpg)
 
-------------------------------------------------------------------------
-
-## Project description
-
-The project OA Datenpraxis supports the development of structures for the open access transformation at research institutions in Germany. The focus is on promoting and establishing processes and procedures for sovereign data practice in shaping the open access transformation.
-
-The project supports practitioners in administration, libraries and other service institutions in professionalizing their data practices by promoting the organization, networking and standardization of processes through a coordinated approach.
-
-### Project goals
-
-With regard to the open access transformation, the project pursues the following objectives:
-
-1.  improving data-driven administration
-
-2.  strengthening collaborations
-
-3.  developing standards for collaborative data practices
-
-4.  minimizing dependencies on commercial data sources
-
-5.  improving information services
-
-Through surveys, analyses, validations and operational recommendations, OA Datenpraxis makes a central contribution to the future development of supra-regional availability of information in Germany.
-
-### Project proposal
-
-The public section of the project proposal is accessible here (in German):
-
-Pampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). <https://doi.org/10.5281/zenodo.10794298>
-
-### Project funding
-
-The project OA Datenpraxis with the project number [528466070](#0) is funded by the German Research Foundation DFG.
-
-![](dfg-logo-int.jpg)

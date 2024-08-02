@@ -1,0 +1,25 @@
+---
+title: "AP 7 Werkzeuge"
+---
+
+## Federführung
+
+![](../images/helmholtz_os_office.png){width=30%}
+
+## Beschreibung
+
+Zur Erhebung, Analyse und Visualisierung von Daten rund um die OA-Transformation gibt es mittlerweile ein großes Angebot an Werkzeugen. Neben den bereits etablierten Diensten wie dem Hybrid Open Access Dashboard (HOAD), OpenAPC und Open Access Monitor sind dies z. B.
+
+- API-Clients für den computergestützten Zugriff auf offene Datenquellen (z. B. Clients von rOpenSci12 rund um Publikationsanalysen mit R)
+- kostenpflichtige Werkzeuge wie z. B. Unsub, ein Tool für Bibliotheken zur Bewertung von Verlagsangeboten anhand lokaler Nutzungsdaten.
+- kostenpflichtige Werkzeuge wie ChronosHub, Oable, OAMetrix und OA Switchboard rund um das APC-Management.
+- Dashboards zur Datenvisualisierung wie das COKI Open Access Dashboard, das Charité Open Access Dashboard oder das Hamburg Open Science Dashboard.
+
+Da es bisher keine Übersicht dieser vielfältigen Werkzeuge gibt und es bisher keine systematischen Aus-
+und Weiterbildungsverfahren im Bereich Scholarly Communication Analytics gibt, soll in AP 5 eine
+digitale Toolbox aufgebaut werden. Diese informiert über Werkzeuge der Datenarbeit rund um die OA-
+Transformation. Ausgehend von einer Recherche werden die Werkzeuge durch ein zu entwickelndes
+Metadatenschema beschrieben. Dieses Schema soll die Auffindbarkeit und Bewertung der Werkzeuge
+unterstützen. Die so entstehende Toolbox wird auf der Webseite des Projektes präsentiert. Nach Ende des
+Vorhabens wird die Kuration durch das Helmholtz Open Science Office fortgeführt. Die Toolbox wird in
+englischer Sprache betrieben.

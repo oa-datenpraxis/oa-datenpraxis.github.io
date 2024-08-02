@@ -1,0 +1,13 @@
+---
+title: "WP 1 Institutional Level"
+---
+
+## Lead
+
+Humboldt-Universität zu Berlin
+
+## Description
+
+The basis for the overall project is an inventory that identifies and documents the topic, the actors and the interplay of aspects of data analyses for shaping the OA transformation. For this purpose, a target group-specific view of professionals who deal with the OA transformation in operational and strategic areas of scientific institutions on the basis of publication and cost data is taken. The focus is on administrative and library staff at universities and non-university institutions. These include professionals in the areas of digital publishing, OA, acquisition and collection development, research information and research funding.
+
+Based on a stakeholder analysis (T1.1), the need for information, the handling of data sources and the interdependence of data analyses in the context of OA transformation at academic institutions will be surveyed (T1.2). The potential of the open science monitoring systems currently being developed will also be analysed. The resulting inventory (T1.3), which looks at the specific practices in dealing with data on OA and future requirements of those involved, will create the basis for recommendations on the topic (WP 5).

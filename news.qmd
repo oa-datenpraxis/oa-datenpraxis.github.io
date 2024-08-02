@@ -2,14 +2,19 @@
 title: "Aktuelles"
 ---
 
+## Stellenausschreibung
+
+Für die Mitarbeit im Projektteam sucht das Helmholtz Open Science Office eine:n Referent:in Open Science (w/m/d). Die Bewerbungsfrist läuft noch bis zum **14.08.2024**.
+
+[Ausschreibungstext auf der Seite des Helmholtz Open Science Office](https://www.gfz-potsdam.de/karriere/stellenangebote/details/9582)
+
 ## Veranstaltungen
 
-### 2024
+### 2024-09-10: Open-Access-Tage 2024, Köln
 
-#### 2024-09-19
+[Stand und Perspektive des Open-Access-Reportings](https://open-access-tage.de/open-access-tage-2024-koeln/koeln/programm/dienstag-10092024)
 
-“Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung” - Workshop auf der DINI-Jahrestagung in Potsdam [(Link zur Veranstaltung](https://dini.de/veranstaltungen/jahrestagungen/25-dini-jahrestagung/programm-der-25-dini-jahrestagung))
+### 2024-09-19: 25. DINI-Jahrestagung, Potsdam
 
-#### 2024-09-10
+[Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung](https://dini.de/fileadmin/jahrestagungen/2024/Abstract_DINI-Jahrestagung_2024-1.pdf)
 
-"Stand und Perspektiven des Open-Access-Reportings" - Workshop bei den Open-Access-Tagen in Köln ([Link zur Veranstaltung](https://open-access-tage.de/open-access-tage-2024-koeln/koeln/programm/dienstag-10092024))
