@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -25,7 +25,6 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
-<link href="./logo_oa_datenpraxis.png" rel="icon" type="image/png">
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -64,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./logo_oa_datenpraxis.png" alt="" class="navbar-logo">
+    <img src="./images/logo_oa_datenpraxis.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">OA Datenpraxis</span>
@@ -76,10 +75,6 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Über das Projekt</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./partners.html"> 
 <span class="menu-text">Projektpartner</span></a>
   </li>  
@@ -87,18 +82,26 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publikationen</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-details" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Details</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-details">    
+        <li>
+    <a class="dropdown-item" href="./arbeitspakete.html">
+ <span class="dropdown-text">Arbeitspakete</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./news.html"> 
 <span class="menu-text">Aktuelles</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./impressum.html"> 
-<span class="menu-text">Impressum</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="mailto:info.oa-datenpraxis@listserv.dfn.de" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope"></i></a>
+    <a href="https://openbiblio.social/@oa_datenpraxis" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-mastodon"></i></a>
+    <a href="mailto:oa-datenpraxis@listserv.dfn.de" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -107,25 +110,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#projektbeschreibung" id="toc-projektbeschreibung" class="nav-link active" data-scroll-target="#projektbeschreibung">Projektbeschreibung</a>
-  <ul class="collapse">
-  <li><a href="#projektziele" id="toc-projektziele" class="nav-link" data-scroll-target="#projektziele">Projektziele</a></li>
-  <li><a href="#projektantrag" id="toc-projektantrag" class="nav-link" data-scroll-target="#projektantrag">Projektantrag</a></li>
-  <li><a href="#projektförderung" id="toc-projektförderung" class="nav-link" data-scroll-target="#projektförderung">Projektförderung</a></li>
-  </ul></li>
-  <li><a href="#project-description" id="toc-project-description" class="nav-link" data-scroll-target="#project-description">Project description</a>
-  <ul class="collapse">
-  <li><a href="#project-goals" id="toc-project-goals" class="nav-link" data-scroll-target="#project-goals">Project goals</a></li>
-  <li><a href="#project-proposal" id="toc-project-proposal" class="nav-link" data-scroll-target="#project-proposal">Project proposal</a></li>
-  <li><a href="#project-funding" id="toc-project-funding" class="nav-link" data-scroll-target="#project-funding">Project funding</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<p><img src="../images/logo_oa_datenpraxis.png" class="img-fluid"></p>
+</div></div>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -174,41 +161,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="projektförderung" class="level3">
 <h3 class="anchored" data-anchor-id="projektförderung">Projektförderung</h3>
 <p>Das Projekt OA Datenpraxis ist unter der Projektnummer <a href="https://gepris.dfg.de/gepris/projekt/528466070">528466070</a> durch die Deutsche Forschungsgemeinschaft gefördert.</p>
-<p><img src="dfg-logo-de.jpg" class="img-fluid"></p>
-<hr>
-</section>
-</section>
-<section id="project-description" class="level2">
-<h2 class="anchored" data-anchor-id="project-description">Project description</h2>
-<p>The project OA Datenpraxis supports the development of structures for the open access transformation at research institutions in Germany. The focus is on promoting and establishing processes and procedures for sovereign data practice in shaping the open access transformation.</p>
-<p>The project supports practitioners in administration, libraries and other service institutions in professionalizing their data practices by promoting the organization, networking and standardization of processes through a coordinated approach.</p>
-<section id="project-goals" class="level3">
-<h3 class="anchored" data-anchor-id="project-goals">Project goals</h3>
-<p>With regard to the open access transformation, the project pursues the following objectives:</p>
-<ol type="1">
-<li><p>improving data-driven administration</p></li>
-<li><p>strengthening collaborations</p></li>
-<li><p>developing standards for collaborative data practices</p></li>
-<li><p>minimizing dependencies on commercial data sources</p></li>
-<li><p>improving information services</p></li>
-</ol>
-<p>Through surveys, analyses, validations and operational recommendations, OA Datenpraxis makes a central contribution to the future development of supra-regional availability of information in Germany.</p>
-</section>
-<section id="project-proposal" class="level3">
-<h3 class="anchored" data-anchor-id="project-proposal">Project proposal</h3>
-<p>The public section of the project proposal is accessible here (in German):</p>
-<p>Pampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., &amp; Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training &amp; Vernetzung (OA Datenpraxis). <a href="https://doi.org/10.5281/zenodo.10794298" class="uri">https://doi.org/10.5281/zenodo.10794298</a></p>
-</section>
-<section id="project-funding" class="level3">
-<h3 class="anchored" data-anchor-id="project-funding">Project funding</h3>
-<p>The project OA Datenpraxis with the project number <a href="#0">528466070</a> is funded by the German Research Foundation DFG.</p>
-<p><img src="dfg-logo-int.jpg" class="img-fluid"></p>
+<p><img src="images/dfg-logo-de.jpg" class="img-fluid"></p>
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -630,6 +589,25 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./impressum.html">
+<p>Impressum</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
