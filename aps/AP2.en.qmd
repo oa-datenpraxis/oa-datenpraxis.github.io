@@ -1,0 +1,14 @@
+---
+title: "WP 2 Publisher Agreements"
+bibliography: ap2.bib
+csl: ../apa.csl
+#suppress-bibliography: true
+---
+
+## Lead
+
+SUB Göttingen
+
+## Description
+
+OA transformation agreements are heterogeneous in terms of open metadata despite standardisation initiatives such as ESAC [@Borrego2021;@Marques2019;@Jahn2022]. At the same time, publishers offer varying degrees of metadata and research services in addition to the OA provision of articles and centralised accounting. The aim of the WP is to analyse publisher agreements relating to open metadata and data-analytical research services and to identify best practices. This is intended to promote competition between publishers.

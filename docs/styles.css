@@ -1,1 +1,18 @@
 /* css styles */
+
+.dropdown-menu {
+  --bs-dropdown-min-width: 3.45rem;
+}
+
+.btn {
+    background-color: #4484dc;
+}
+
+.btn:hover {
+    background-color: #0c1c44;
+}
+
+a {
+    text-decoration: none;
+    color: #4484dc;
+}

@@ -1,0 +1,15 @@
+---
+title: "AP 1 Institutionelle Ebene"
+language:
+    toc-title-website: "Auf dieser Seite"
+---
+
+## Federführung
+
+![](../images/hu.png){width=30%}
+
+## Beschreibung
+
+Grundlage für das Gesamtvorhaben ist eine Bestandsaufnahme, die das Thema, die Akteure und das Zusammenspiel von Aspekten der Datenanalysen zur Gestaltung der OA-Transformation eruiert und dokumentiert. Hierzu wird ein zielgruppenspezifischer Blick auf Professionals eingenommen, die sich auf Basis von Publikations- und Kostendaten mit der OA-Transformation in operativen und strategischen Bereichen wissenschaftlicher Einrichtungen befassen. Im Fokus steht dabei das Personal in Administration und Bibliothek an Hochschulen und außeruniversitären Einrichtungen. Dies sind u.a. Professionals in den Bereichen Digitales Publizieren, OA, Erwerbung und Bestandsentwicklung, Forschungsinformation sowie Forschungsförderung.
+
+Auf Basis einer Stakeholder-Analyse (T1.1) wird der Informationsbedarf, der Umgang mit Datenquellen sowie die Interdependenz rund um Datenanalysen im Kontext der OA-Transformation an wissenschaftlichen Einrichtungen erhoben (T1.2). Hierbei wird auch das Potenzial der sich im Aufbau befindlichen Monitoringsysteme zu Open Science betrachtet. Mit der so erzielten Bestandsaufnahme (T1.3), die die spezifischen Praktiken im Umgang mit Daten zu OA und zukünftigen Anforderungen der Agierenden betrachtet, wird die Grundlage für Empfehlungen zum Thema geschaffen (AP 5).

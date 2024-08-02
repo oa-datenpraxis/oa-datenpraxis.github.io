@@ -1,0 +1,11 @@
+---
+title: "WP 8 Networks"
+---
+
+## Lead
+
+![](../images/helmholtz_os_office.png){width=30%}
+
+## Description
+
+Work with data on OA transformation is often carried out by various stakeholders in an academic institution. For example, professionals such as OA officers, librarians in acquisitions and licensing, research officers and actors in the field of research funding deal with aspects of data work relating to OA. The aim of the WP is to facilitate dialogue on defined issues beyond professional profiles and thus actively enable inter- and transdisciplinary discourse on data work relating to OA. The project initiates the networks and organises them with three digital workshops each over the course of the project. In addition, a mailing list will be organised for the networks, thus providing an impetus for longer-term cooperation. At the end of the project, it will be determined with other stakeholders, such as the Conference of Information and Library Science Training and Study Programmes (KIBA), to what extent the topics discussed can be continued in other committees and networks.

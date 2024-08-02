@@ -1,0 +1,39 @@
+---
+title: "Arbeitspakete"
+language:
+    toc-title-website: "Auf dieser Seite"
+---
+
+# [AP 1 Institutionelle Ebene](aps/AP1.qmd)
+
+Ziel des AP 1 ist die Erhebung, Analyse und Dokumentation von Anforderungen an Datenanalysen rund um die OA- Transformation aus der institutionellen Praxis wissenschaftlicher Einrichtungen. Die Ergebnisse des AP 1 werden in einem Report veröffentlicht und in Empfehlungen formuliert.
+
+# [AP 2 Verlagsverträge](aps/AP2.qmd)
+
+Ziel des AP 2 ist es, Verlagsverträge bezogen auf offene Metadaten und datenanalytische Forschungsservices zu analysieren und Best Practices zu identifizieren. Ergebnis sind eine Bestandsaufnahme bezogen auf deutsche Transformationsverträge und eine Handlungsempfehlung.
+
+# [AP 3 Open Access in institutionellen Rankings](aps/AP3.qmd)
+
+Ziel des AP 3 ist es, OA als Bewertungsdimension von Institutionsrankings kritisch zu begleiten. Zu diesem Zweck sollen auf Grundlage einer Bestandsaufnahme von Instituionsrankings Interpretations- und Interventionshilfen für Leitungen wissenschaftlicher Einrichtungen erstellt werden. Zum anderen werden datenanalytische Hilfestellungen entwickelt und veröffentlicht, mit denen Einrichtungen und Konsortien ein Benchmarking auf Basis von Daten aus Hochschulrankings durchführen können.
+
+# [AP 4 Open-Access-Reporting](aps/AP4.qmd)
+
+Ziel des AP 4 ist, einen Beitrag zur Verbesserung der Datenqualität zu leisten und die Standardisierung von Daten und Berichten zur OA-Transformation zu fördern. Als Ergebnis des AP 4 wird der Vorschlag eines Standards der Allianz der Wissenschaftsorganisationen zum OA-Reporting im Rahmen eines Beurteilungsprozesses weiterentwickelt.
+
+
+# [AP 5 Synopse](aps/AP5.qmd)
+
+Ziel des AP 5 ist die Synopse der Ergebnisse aus den APs 1, 2, 3 und 4 in einer strategischen Empfehlung zur Datenpraxis zur Gestaltung der OA-Transformation.
+
+
+# [AP 6 Trainings](aps/AP6.qmd)
+
+Ziel des AP 6 ist es, offene Trainingsmaterialien zur Verwendung offener Datenquellen und Werkzeuge in Form eines Carpentry Moduls partizipativ zu entwickeln und zu erproben. Die Arbeitsplanung orientiert sich am Lebenszyklus der Carpentries Lessons und umfasst die Ausschreibung zur Teamarbeit, Erstellung der Kursmaterialien, Erprobung und Revisionsphase.
+
+# [AP 7 Werkzeuge](aps/AP7.qmd)
+
+Ziel des AP ist der Aufbau und Betrieb einer digitalen Werkzeugbox, die über Tools zur Erhebung, Analyse und Visualisierungen von Daten rund um die OA-Transformation informiert.
+
+# [AP 8 Netzwerke](aps/AP8.qmd)
+
+Ziel des AP ist es, Netzwerke zu spezifischen Fragen der Datenarbeit zur OA-Transformation anzustoßen. Im Kern steht dabei der Dialog zu den Themen: Reporting, Verlagsdaten, Bibliometrie sowie Mentoring im Kontext der OA-Transformation. Das Projekt organisiert digitale Workshops für die Netzwerke und bietet eine Organisationsstruktur.

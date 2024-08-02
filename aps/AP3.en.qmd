@@ -1,0 +1,13 @@
+---
+title: "WP 3 Open Access in institutional Rankings"
+---
+
+## Lead
+
+SUB Göttingen
+
+## Description
+
+Institutional rankings enjoy a high level of attention among science policy decision-makers and the public because they succeed in comparing scientific institutions with each other in a generally understandable and clear manner. Despite numerous points of criticism, rankings can therefore not be ignored as a measure of the perception of academic institutions and play a corresponding role in institutional information management.
+
+WP 3 takes into account that OA is increasingly appearing as a comparative dimension in rankings, for example in the [Leiden Ranking of the CWTS](https://www.leidenranking.com), the [COKI Open Access Dashboard](https://open.coki.ac/) and the [Scimago Institutions Ranking](https://www.scimagoir.com/).

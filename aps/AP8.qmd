@@ -1,0 +1,11 @@
+---
+title: "AP 8 Netzwerke"
+---
+
+## Federführung
+
+![](../images/helmholtz_os_office.png){width=30%}
+
+## Beschreibung
+
+Die Arbeit mit Daten zur OA-Transformation wird häufig von verschiedenen Akteuren in einer wissenschaftlichen Einrichtung umgesetzt. So befassen sich z. B. Professionals wie OA-Beauftrage, Bibliothekar:innen in der Erwerbung und Lizenzierung, Forschungsreferent:innen und Akteur:innen im Bereich der Forschungsförderung mit Aspekten der Datenarbeit rund um OA. Anliegen des APs ist es, den Dialog zu definierten Fragestellungen über Berufsprofile hinaus zu ermöglichen und damit aktiv den inter- und transdisziplinären Diskurs zur Datenarbeit rund um OA zu ermöglichen. Das Projekt initiiert die Netzwerke und organisiert sie mit je drei digitalen Workshops in der Projektlaufzeit. Darüber hinaus wird eine Mailingliste für die Netzwerke organisiert und somit ein Anstoß zur längerfristigen Kooperation gegeben. Zum Projektende wird mit weiteren Stakeholdern, wie z. B. der Konferenz der informations- und bibliothekswissenschaftlichen Ausbildungs- und Studiengänge (KIBA) eruiert, inwiefern die behandelten Themen in weiteren Gremien und Netzwerken fortgeführt werden können.
