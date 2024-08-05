@@ -37,9 +37,8 @@ jobs:
           Rscript -e "install.packages('whoami', repos = 'https://cloud.r-project.org')"
           Rscript -e "install.packages('babelquarto', repos = c('https://ropensci.r-universe.dev', 'https://cloud.r-project.org'))"
 
-      - name: Install Quarto CLI
-        run: |
-          curl -sSL https://quarto.org/install | bash
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render website with BabelQuarto
         run: Rscript -e 'babelquarto::render_website()'
