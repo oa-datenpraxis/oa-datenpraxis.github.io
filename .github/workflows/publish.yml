@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          install.packages('babelquarto', repos = c('https://ropensci.r-universe.dev', 'https://cloud.r-project.org'))
+          Rscript -e "install.packages('babelquarto', repos = c('https://ropensci.r-universe.dev', 'https://cloud.r-project.org'))"
 
       - name: Render website with BabelQuarto
         run: Rscript -e 'babelquarto::render_website()'
