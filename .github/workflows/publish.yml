@@ -14,10 +14,17 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v1
 
-      - name: Render and Publish
+      - name: Install dependencies
+        run: |
+          install.packages('babelquarto', repos = c('https://ropensci.r-universe.dev', 'https://cloud.r-project.org'))
+
+      - name: Render website with BabelQuarto
+        run: Rscript -e 'babelquarto::render_website()'
+
+      - name: Deploy
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
