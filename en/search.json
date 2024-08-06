@@ -32,21 +32,7 @@
     "href": "aps/AP6.html#beschreibung",
     "title": "AP 6 Trainings",
     "section": "Beschreibung",
-    "text": "Beschreibung\nDie Carpentries (bestehend aus Data, Library und Software Carpentry) sind eine Methode, in grundlegende Datenkompentenzen einzuführen. Hauptaugenmerk liegt dabei auf dem gemeinschaftlichen Erlernen IT-gestützter Verfahren zur Lösung praktischer Probleme. In Deutschland unterstützen sowohl bibliothekarische Fachverbände als auch wissenschaftliche Einrichtungen die Carpentries-Community über eine Mitgliedschaft. So ist die SUB Göttingen seit 2019 Mitglied und bildet am Campus Göttingen jährlich bis zu fünf Instruktoren aus und organisiert regelmäßig Carpentries Workshops, die in erster Linie Nachwuchswissenschaftler:innen und Bibliothekar:innen adressieren. Ziel des AP ist es, Trainings mit spezifischem Fokus auf die Datenpraxis zur Gestaltung der OA- Transformation als Teil von Library Carpentry zu entwerfen, zu testen und iterativ weiterzuentwickeln. Die Zielgruppe umfasst Professionals des Bereichs OA-Transformation und Forschungsadministration. Innerhalb eines Carpentry-Trainings lassen sich nicht sämtliche datenanalytische Aspekte abdecken. Vielmehr geht es darum, offene und wissenschaftsnahe Tools und Vorgehensweisen einzuführen und deren Anwendung zu erproben (Wilson et al., 2017). Die Aufgaben des AP orientieren sich an dem Lebenszyklus der Carpentries Lessons9 und starten im 2. Projektjahr."
-  },
-  {
-    "objectID": "aps/AP3.en.html",
-    "href": "aps/AP3.en.html",
-    "title": "WP 3 Open Access in institutional Rankings",
-    "section": "",
-    "text": "SUB Göttingen"
-  },
-  {
-    "objectID": "aps/AP3.en.html#lead",
-    "href": "aps/AP3.en.html#lead",
-    "title": "WP 3 Open Access in institutional Rankings",
-    "section": "",
-    "text": "SUB Göttingen"
+    "text": "Beschreibung\nDie Carpentries (bestehend aus Data, Library und Software Carpentry) sind eine Methode, in grundlegende Datenkompentenzen einzuführen. Hauptaugenmerk liegt dabei auf dem gemeinschaftlichen Erlernen IT-gestützter Verfahren zur Lösung praktischer Probleme. In Deutschland unterstützen sowohl bibliothekarische Fachverbände als auch wissenschaftliche Einrichtungen die Carpentries-Community über eine Mitgliedschaft. So ist die SUB Göttingen seit 2019 Mitglied und bildet am Campus Göttingen jährlich bis zu fünf Instruktoren aus und organisiert regelmäßig Carpentries Workshops, die in erster Linie Nachwuchswissenschaftler:innen und Bibliothekar:innen adressieren. Ziel des AP ist es, Trainings mit spezifischem Fokus auf die Datenpraxis zur Gestaltung der OA- Transformation als Teil von Library Carpentry zu entwerfen, zu testen und iterativ weiterzuentwickeln. Die Zielgruppe umfasst Professionals des Bereichs OA-Transformation und Forschungsadministration. Innerhalb eines Carpentry-Trainings lassen sich nicht sämtliche datenanalytische Aspekte abdecken. Vielmehr geht es darum, offene und wissenschaftsnahe Tools und Vorgehensweisen einzuführen und deren Anwendung zu erproben [@Wilson2017]. Die Aufgaben des AP orientieren sich an dem Lebenszyklus der Carpentries Lessons und starten im 2. Projektjahr."
   },
   {
     "objectID": "aps/AP3.en.html#description",
@@ -172,21 +158,7 @@
     "href": "aps/AP4.en.html#description",
     "title": "WP 4 Open-Access-Reporting",
     "section": "Description",
-    "text": "Description\nThe digital strategy of the Federal Ministry of Education and Research (BMBF) states: “By 2025, 70 per cent of all new scientific publications in Germany will be published exclusively or additionally via open access.” (Federal Ministry of Education and Research, 2019, p. 37) In addition to this national OA target, individual federal states have defined specific OA targets. In the “2019 Monitoring Report” of the Joint Science Conference’s (GWK) Pact for Research and Innovation (PFI), the federal and state governments emphasise the need to establish “consistent and comparable surveys on open access publications” (Gemeinsame Wissenschaftskonferenz, 2019, p. 16). In a discussion paper published in 2022 by the Working Group on the Scientific Publication System in the Alliance’s priority initiative “Digital Information”, an initial proposal for a common set of indicators on OA for Germany is formulated (Deinzer et al., 2022). The problem with this proposal is that it has not yet been discussed beyond the working group.\nWP 4 builds on this work - in which an applicant was involved as head of the responsible task group of the Scientific Publication System WG - and organises a dialogue to further develop this proposal on the basis of the discussion paper. The aim is to develop a national standard for the definition of OA for reporting and the associated data collection practice."
-  },
-  {
-    "objectID": "aps/AP1.en.html",
-    "href": "aps/AP1.en.html",
-    "title": "WP 1 Institutional Level",
-    "section": "",
-    "text": "Humboldt-Universität zu Berlin"
-  },
-  {
-    "objectID": "aps/AP1.en.html#lead",
-    "href": "aps/AP1.en.html#lead",
-    "title": "WP 1 Institutional Level",
-    "section": "",
-    "text": "Humboldt-Universität zu Berlin"
+    "text": "Description\nThe digital strategy of the Federal Ministry of Education and Research (BMBF) states: “By 2025, 70 per cent of all new scientific publications in Germany will be published exclusively or additionally via open access.” (Bundesministerium für Bildung und Forschung, 2019, p. 37). In addition to this national OA target, individual federal states have defined specific OA targets. In the “2019 Monitoring Report” of the Joint Science Conference’s (GWK) Pact for Research and Innovation (PFI), the federal and state governments emphasise the need to establish “consistent and comparable surveys on open access publications” (Gemeinsame Wissenschaftskonferenz, 2019, p. 16). In a discussion paper published in 2022 by the Working Group on the Scientific Publication System in the Alliance’s priority initiative “Digital Information”, an initial proposal for a common set of indicators on OA for Germany is formulated (Deinzer et al., 2022). The problem with this proposal is that it has not yet been discussed beyond the working group.\nWP 4 builds on this work - in which an applicant was involved as head of the responsible task group of the Scientific Publication System WG - and organises a dialogue to further develop this proposal on the basis of the discussion paper. The aim is to develop a national standard for the definition of OA for reporting and the associated data collection practice."
   },
   {
     "objectID": "aps/AP1.en.html#description",
@@ -194,20 +166,6 @@
     "title": "WP 1 Institutional Level",
     "section": "Description",
     "text": "Description\nThe basis for the overall project is an inventory that identifies and documents the topic, the actors and the interplay of aspects of data analyses for shaping the OA transformation. For this purpose, a target group-specific view of professionals who deal with the OA transformation in operational and strategic areas of scientific institutions on the basis of publication and cost data is taken. The focus is on administrative and library staff at universities and non-university institutions. These include professionals in the areas of digital publishing, OA, acquisition and collection development, research information and research funding.\nBased on a stakeholder analysis (T1.1), the need for information, the handling of data sources and the interdependence of data analyses in the context of OA transformation at academic institutions will be surveyed (T1.2). The potential of the open science monitoring systems currently being developed will also be analysed. The resulting inventory (T1.3), which looks at the specific practices in dealing with data on OA and future requirements of those involved, will create the basis for recommendations on the topic (WP 5)."
-  },
-  {
-    "objectID": "aps/AP2.en.html",
-    "href": "aps/AP2.en.html",
-    "title": "WP 2 Publisher Agreements",
-    "section": "",
-    "text": "SUB Göttingen"
-  },
-  {
-    "objectID": "aps/AP2.en.html#lead",
-    "href": "aps/AP2.en.html#lead",
-    "title": "WP 2 Publisher Agreements",
-    "section": "",
-    "text": "SUB Göttingen"
   },
   {
     "objectID": "aps/AP2.en.html#description",
@@ -221,14 +179,14 @@
     "href": "aps/AP4.html#beschreibung",
     "title": "AP 4 Open-Access-Reporting",
     "section": "Beschreibung",
-    "text": "Beschreibung\nIn der Digital-Strategie des Bundesministeriums für Bildung und Forschung (BMBF) heißt es: „Bis zum Jahr 2025 werden 70 Prozent aller neu erscheinenden wissenschaftlichen Publikationen in Deutschland ausschließlich oder zusätzlich im Wege des Open Access veröffentlicht.“ (Bundesministerium für Bildung und Forschung, 2019, S. 37) Über diese nationale OA-Zielmarke hinaus haben einzelne Bundesländer spezifische OA-Zielmarken definiert. Im „Monitoring-Bericht 2019“ des Paktes für Forschung und Innovation (PFI) der Gemeinsame Wissenschaftskonferenz (GWK) betonen Bund und Länder die Notwendigkeit „durchgängige und vergleichbare Erhebungen zu Open-Access-Publikationen“ (Gemeinsame Wissenschaftskonferenz, 2019, S. 16) zu etablieren. In einem 2022 veröffentlichten Diskussionspapier der AG Wissenschaftliches Publikationssystem in der Schwerpunktinitiative „Digitale Information“ der Allianz wird ein erster Vorschlag für eine gemeinsame Indikatorik zu OA für Deutschland formuliert (Deinzer et al., 2022). Problem dieses Vorschlags ist, dass er bisher nicht über die AG hinaus diskutiert wurde.\nDas AP 4 setzt auf dieser Arbeit - an der ein Antragsteller als Leiter der zuständigen Task Group der AG Wissenschaftliches Publikationssystem beteiligt war - auf und organisiert auf Basis des Diskussionspapiers einen Dialog zur Weiterentwicklung dieses Vorschlags. Ziel ist es, einen nationalen Standard zur Definition von OA für das Reporting und eine damit verbundene Erhebungspraxis."
+    "text": "Beschreibung\nIn der Digital-Strategie des Bundesministeriums für Bildung und Forschung (BMBF) heißt es: „Bis zum Jahr 2025 werden 70 Prozent aller neu erscheinenden wissenschaftlichen Publikationen in Deutschland ausschließlich oder zusätzlich im Wege des Open Access veröffentlicht.“ (Bundesministerium für Bildung und Forschung, 2019, S. 37). Über diese nationale OA-Zielmarke hinaus haben einzelne Bundesländer spezifische OA-Zielmarken definiert. Im „Monitoring-Bericht 2019“ des Paktes für Forschung und Innovation (PFI) der Gemeinsame Wissenschaftskonferenz (GWK) betonen Bund und Länder die Notwendigkeit „durchgängige und vergleichbare Erhebungen zu Open-Access-Publikationen“ (Gemeinsame Wissenschaftskonferenz, 2019, S. 16) zu etablieren. In einem 2022 veröffentlichten Diskussionspapier der AG Wissenschaftliches Publikationssystem in der Schwerpunktinitiative „Digitale Information“ der Allianz wird ein erster Vorschlag für eine gemeinsame Indikatorik zu OA für Deutschland formuliert (Deinzer et al., 2022). Problem dieses Vorschlags ist, dass er bisher nicht über die AG hinaus diskutiert wurde.\nDas AP 4 setzt auf dieser Arbeit - an der ein Antragsteller als Leiter der zuständigen Task Group der AG Wissenschaftliches Publikationssystem beteiligt war - auf und organisiert auf Basis des Diskussionspapiers einen Dialog zur Weiterentwicklung dieses Vorschlags. Ziel ist es, einen nationalen Standard zur Definition von OA für das Reporting und eine damit verbundene Erhebungspraxis."
   },
   {
     "objectID": "aps/AP6.en.html#description",
     "href": "aps/AP6.en.html#description",
     "title": "WP 6 Trainings",
     "section": "Description",
-    "text": "Description\nThe Carpentries (consisting of Data, Library and Software Carpentry) are a method of introducing basic data competences. The main focus is on the joint learning of IT-supported procedures for solving practical problems. In Germany, both library associations and academic institutions support the Carpentries community through membership. For example, the SUB Göttingen has been a member since 2019 and trains up to five instructors annually at the Göttingen campus and regularly organises Carpentries workshops, which are primarily aimed at young researchers and librarians. The aim of the AP is to design, test and iteratively develop training courses with a specific focus on data practice to shape the OA transformation as part of Library Carpentry. The target group includes professionals in the field of OA transformation and research administration. Not all data analysis aspects can be covered within a Carpentry training course. Rather, the aim is to introduce open and science-oriented tools and procedures and to test their application (Wilson et al., 2017). The tasks of the WP are based on the life cycle of the Carpentries Lessons9 and start in the second year of the project."
+    "text": "Description\nThe Carpentries (consisting of Data, Library and Software Carpentry) are a method of introducing basic data competences. The main focus is on the joint learning of IT-supported procedures for solving practical problems. In Germany, both library associations and academic institutions support the Carpentries community through membership. For example, the SUB Göttingen has been a member since 2019 and trains up to five instructors annually at the Göttingen campus and regularly organises Carpentries workshops, which are primarily aimed at young researchers and librarians. The aim of the AP is to design, test and iteratively develop training courses with a specific focus on data practice to shape the OA transformation as part of Library Carpentry. The target group includes professionals in the field of OA transformation and research administration. Not all data analysis aspects can be covered within a Carpentry training course. Rather, the aim is to introduce open and science-oriented tools and procedures and to test their application [@Wilson2017]. The tasks of the WP are based on the life cycle of the Carpentries Lessons and start in the second year of the project."
   },
   {
     "objectID": "aps/AP8.html#beschreibung",
