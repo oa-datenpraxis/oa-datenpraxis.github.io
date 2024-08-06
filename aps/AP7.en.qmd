@@ -8,9 +8,9 @@ title: "WP 7 Tools"
 
 ## Description
 
-There is now a wide range of tools for collecting, analysing and visualising data relating to the OA transformation. In addition to the already established services such as the Hybrid Open Access Dashboard (HOAD), OpenAPC and Open Access Monitor, these include, for example
+There is now a wide range of tools for collecting, analysing and visualising data relating to the OA transformation. In addition to the already established services such as the [Hybrid Open Access Dashboard (HOAD)](https://subugoe.github.io/hoaddash/), [OpenAPC](https://openapc.net/) and [Open Access Monitor](https://open-access-monitor.de/), these include, for example
 
-- API clients for computer-aided access to open data sources (e.g. clients from rOpenSci12 for publication analyses with R)
+- API clients for computer-aided access to open data sources (e.g. clients from [rOpenSci](https://ropensci.org/) for publication analyses with R)
 - Paid tools such as Unsub, a tool for libraries to evaluate publishing offers based on local usage data.
 - Paid tools such as ChronosHub, Oable, OAMetrix and OA Switchboard for APC management.
 - Dashboards for data visualisation such as the COKI Open Access Dashboard, the Charité Open Access Dashboard and the Hamburg Open Science Dashboard.

@@ -8,9 +8,9 @@ title: "AP 7 Werkzeuge"
 
 ## Beschreibung
 
-Zur Erhebung, Analyse und Visualisierung von Daten rund um die OA-Transformation gibt es mittlerweile ein großes Angebot an Werkzeugen. Neben den bereits etablierten Diensten wie dem Hybrid Open Access Dashboard (HOAD), OpenAPC und Open Access Monitor sind dies z. B.
+Zur Erhebung, Analyse und Visualisierung von Daten rund um die OA-Transformation gibt es mittlerweile ein großes Angebot an Werkzeugen. Neben den bereits etablierten Diensten wie dem [Hybrid Open Access Dashboard (HOAD)](https://subugoe.github.io/hoaddash/), [OpenAPC](https://openapc.net/) und [Open Access Monitor](https://open-access-monitor.de/) sind dies z. B.
 
-- API-Clients für den computergestützten Zugriff auf offene Datenquellen (z. B. Clients von rOpenSci12 rund um Publikationsanalysen mit R)
+- API-Clients für den computergestützten Zugriff auf offene Datenquellen (z. B. Clients von [rOpenSci](https://ropensci.org/) rund um Publikationsanalysen mit R)
 - kostenpflichtige Werkzeuge wie z. B. Unsub, ein Tool für Bibliotheken zur Bewertung von Verlagsangeboten anhand lokaler Nutzungsdaten.
 - kostenpflichtige Werkzeuge wie ChronosHub, Oable, OAMetrix und OA Switchboard rund um das APC-Management.
 - Dashboards zur Datenvisualisierung wie das COKI Open Access Dashboard, das Charité Open Access Dashboard oder das Hamburg Open Science Dashboard.

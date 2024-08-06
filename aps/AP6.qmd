@@ -1,5 +1,7 @@
 ---
 title: "AP 6 Trainings"
+bibliography: ap6.bib
+csl: ../apa.csl
 ---
 
 ## Federführung
