@@ -4,7 +4,7 @@ title: "WP 1 Institutional Level"
 
 ## Lead
 
-Humboldt-Universität zu Berlin
+![](../images/hu.png){width=30%}
 
 ## Description
 

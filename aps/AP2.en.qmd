@@ -7,7 +7,7 @@ csl: ../apa.csl
 
 ## Lead
 
-SUB Göttingen
+![](../images/SUB_centered_cmyk.png){width=30%}
 
 ## Description
 
