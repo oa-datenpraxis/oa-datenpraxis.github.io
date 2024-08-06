@@ -1,6 +1,5 @@
 ---
-title: "Impressum"
-href: https://www.hu-berlin.de/de/hu/impressum
+title: "[Impressum](https://www.hu-berlin.de/de/hu/impressum)"
 ---
 
 **Institut für Bibliotheks- und Informationswissenschaft, Humboldt-Universität zu Berlin**
