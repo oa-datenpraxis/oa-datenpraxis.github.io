@@ -2,12 +2,6 @@
 title: "Aktuelles"
 ---
 
-## Stellenausschreibung
-
-Für die Mitarbeit im Projektteam sucht das Helmholtz Open Science Office eine:n Referent:in Open Science (w/m/d). Die Bewerbungsfrist läuft noch bis zum **14.08.2024**.
-
-[Ausschreibungstext auf der Seite des Helmholtz Open Science Office](https://www.gfz-potsdam.de/karriere/stellenangebote/details/9582)
-
 ## Veranstaltungen
 
 ### 2024-09-10: Open-Access-Tage 2024, Köln
