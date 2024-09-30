@@ -9,7 +9,7 @@ website:
   page-footer: 
     center: 
       - href: impressum.qmd
-     # - href: datenschutz.qmd
+      - href: datenschutz.qmd
   margin-header: |
     ![](../images/logo_oa_datenpraxis.png)
   title: "OA Datenpraxis"
