@@ -22,6 +22,8 @@ Roland Bertelmann <https://orcid.org/0000-0002-5588-0290>
 
 Lea Maria Ferguson <https://orcid.org/0000-0002-7060-3670>
 
+Johannes Schneider <https://orcid.org/0009-0004-6510-166X>
+
 ## Göttingen State and University Library
 
 The Göttingen State and University Library (SUB Göttingen) is one of Germany's leading libraries with its diverse range of tasks, which it fulfils at local, regional, national and international level. As an internationally recognised competence centre for the digital library, it provides new services for research. Its tasks include securing the supra-regional supply of literature, as in the DFG-funded programme "Specialised Information Services for Science", preserving and making accessible scientific results and the cultural-historical heritage, as well as its commitment to being a research and development partner for a future-proof research and information infrastructure in Germany and internationally.
