@@ -34,4 +34,6 @@ Najko Jahn <https://orcid.org/0000-0001-5105-1463>
 
 Birgit Schmidt <https://orcid.org/0000-0001-8036-5859>
 
+Sophia Dörner <https://orcid.org/0000-0001-8747-3422>
+
 [![](images/helmholtz_os_office.png){width=30% style="margin-top: 50px;"}](https://os.helmholtz.de/) [![](images/SUB_centered_cmyk.png){width=30% style="margin-top: 50px;"}](https://www.sub.uni-goettingen.de) [![](images/hu.png){width=30% style="margin-top: 50px;"}](https://www.ibi.hu-berlin.de/de/forschung/infomanagement)
