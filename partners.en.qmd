@@ -2,7 +2,7 @@
 title: "Project Partner"
 ---
 
-## Humboldt-Unversität zu Berlin, Berlin School of Library and Information Science
+## Humboldt-Universität zu Berlin, Berlin School of Library and Information Science
 
 The Chair of Information Management at the Berlin School of Library and Information Science at HU is investigating the role of digital research and information infrastructures in science in the context of the digital transformation. The focus is on information infrastructures that enable the collection, indexing, accessibility and re-use of information objects in the sense of Open Science. In research, teaching and transfer, processes of digital science communication and associated practices, standards and policies are analysed. Research focuses on the topic of Open Access and related developments in digital scholarly communication.
 

@@ -2,7 +2,7 @@
 title: "Projektpartner"
 ---
 
-## Humboldt-Unversität zu Berlin, Institut für Bibliotheks- und Informationswissenschaft
+## Humboldt-Universität zu Berlin, Institut für Bibliotheks- und Informationswissenschaft
 
 Die Professur Information Management am Institut für Bibliotheks- und Informationswissenschaft der HU untersucht die Rolle digitaler Forschungs- und Informationsinfrastrukturen in der Wissenschaft im Kontext der digitalen Transformation. Dabei liegt der Fokus auf Informationsinfrastrukturen, die die Sammlung, Erschließung, Zugänglichmachung und Nachnutzung von Informationsobjekten im Sinne von Open Science ermöglichen. In Forschung, Lehre und Transfer werden Prozesse der digitalen Wissenschaftskommunikation und damit verbundene Praktiken, Standards und Policies betrachtet. Ein Schwerpunkt der Forschung liegt auf dem Thema Open Access und damit verbundenen Entwicklungen der digitalen Wissenschaftskommunikation.
 
