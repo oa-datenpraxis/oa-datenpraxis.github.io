@@ -42,7 +42,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Install multibib filter
-        run: quarto add --trust pandoc-ext/multibib
+        run: quarto add --yes pandoc-ext/multibib
 
       - name: Render website with BabelQuarto
         run: Rscript -e 'babelquarto::render_website()'
