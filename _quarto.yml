@@ -1,16 +1,22 @@
 project:
   type: website
   output-dir: docs
-  filters:
-    - multibib
+  
   bibliography:
     main: publikationen.bib
     vorarbeiten: vorarbeiten.bib
-  citeproc: false
-  reference-section-title: ""
+
+  csl: apa.csl
+
   nocite: |
     @*
-  csl: apa.csl
+
+  citeproc: false
+
+  reference-section-title: ""
+
+  filters:
+    - multibib
 
 website:
   #reader-mode: true
