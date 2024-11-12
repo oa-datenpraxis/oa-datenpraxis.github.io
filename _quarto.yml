@@ -1,6 +1,16 @@
 project:
   type: website
   output-dir: docs
+  filters:
+    - multibib
+  bibliography:
+    main: publikationen.bib
+    vorarbeiten: vorarbeiten.bib
+  citeproc: false
+  reference-section-title: ""
+  nocite: |
+    @*
+  csl: apa.csl
 
 website:
   #reader-mode: true
