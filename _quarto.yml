@@ -1,7 +1,10 @@
 project:
   type: website
   output-dir: docs
-  
+
+  filters:
+    - multibib
+
   bibliography:
     main: publikationen.bib
     vorarbeiten: vorarbeiten.bib
@@ -14,9 +17,6 @@ project:
   citeproc: false
 
   reference-section-title: ""
-
-  filters:
-    - multibib
 
 website:
   #reader-mode: true

@@ -42,9 +42,10 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Install multibib filter
-        run: |
-          quarto add pandoc-ext/multibib <<< "y"
-          echo "validate-yaml: false" >> _quarto.yml
+        run: quarto add pandoc-ext/multibib <<< "y"
+
+      - name: Activate multibib filter
+        run: quarto activate pandoc-ext/multibib
 
       - name: Render website with BabelQuarto
         run: Rscript -e 'babelquarto::render_website()'
