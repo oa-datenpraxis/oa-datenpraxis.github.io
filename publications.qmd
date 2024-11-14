@@ -1,5 +1,16 @@
 ---
 title: "Publikationen"
+filters:
+  - multibib
+validate-yaml: false
+bibliography:
+  main: publikationen.bib
+  vorarbeiten: vorarbeiten.bib
+citeproc: false
+reference-section-title: ""
+nocite: |
+  @*
+csl: apa.csl
 ---
 
 ## Publikationen aus dem Projekt
