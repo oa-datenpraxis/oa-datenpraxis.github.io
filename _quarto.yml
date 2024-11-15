@@ -26,9 +26,10 @@ website:
       - text: "Details"
         menu: 
           - arbeitspakete.qmd
-      - text: "Aktuelles"
+      - text: "News"
         menu:    
-          - news.qmd
+          - events.qmd
+          - archive.qmd
   search: false
   
 
