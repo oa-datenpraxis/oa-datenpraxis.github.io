@@ -27,10 +27,9 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Install R dependencies
-        uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          extra-packages: any::curl, any::whoami, any::httr, any::here, any::DT, any::readxl
+      - name: Install R packages
+        run: |
+          Rscript -e "install.packages(c('curl', 'whoami', 'httr', 'here', 'DT', 'readxl'))"
 
       - name: Install babelquarto package
         run: |
