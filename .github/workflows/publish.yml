@@ -31,6 +31,11 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libcurl4-openssl-dev
+      
+      - name: Install babelquarto package
+        run: |
+          Rscript -e "install.packages('babelquarto', repos = c('https://ropensci.r-universe.dev', 'https://cloud.r-project.org'))"
+         
 
       - name: Install R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
