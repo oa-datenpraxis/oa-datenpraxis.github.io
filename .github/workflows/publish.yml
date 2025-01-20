@@ -41,10 +41,12 @@ jobs:
             any::tidyverse
             any::here
             any::DT
-      - name: Install httr and babelquarto
+            any::httr
+            any::babelquarto
+
+      - name: Check R package installation
         run: |
-          Rscript -e "install.packages('httr', repos = 'https://cloud.r-project.org')"
-          Rscript -e "install.packages('babelquarto', repos = c('https://ropensci.r-universe.dev', 'https://cloud.r-project.org'))"
+          Rscript -e "library(httr)"
           Rscript -e "library(babelquarto)"
 
       - name: Set up Quarto
