@@ -4,74 +4,32 @@
     "href": "arbeitspakete.html",
     "title": "Work Packages",
     "section": "",
-    "text": "WP 1 Institutional Level\nThe aim of WP 1 is to collect, analyse and document requirements for data analyses relating to the OA transformation from the institutional practice of scientific institutions. The results of WP 1 will be published in a report and formulated in recommendations.\n\n\nWP 2 Publisher Agreements\nThe aim of WP 2 is to analyse publishing contracts relating to open metadata and data analytics research services and to identify best practices. The result is an inventory of German transformation contracts and a recommendation for action.\n\n\nWP 3 Open Access in institutional Rankings\nThe aim of WP 3 is to critically accompany OA as an evaluation dimension of institutional rankings. To this end, interpretation and intervention aids for the management of scientific institutions will be developed on the basis of an inventory of institutional rankings. Secondly, data analysis aids will be developed and published to enable institutions and consortia to carry out benchmarking on the basis of data from university rankings.\n\n\nWP 4 Open-Access-Reporting\nThe aim of WP 4 is to contribute to the improvement of data quality and to promote the standardisation of data and reports on OA transformation. As a result of WP 4, the proposal for a standard of the Alliance of Science Organisations for OA reporting will be further developed as part of an assessment process.\n\n\nAP 5 Synopsis\nThe aim of WP 5 is to summarise the results from WPs 1, 2, 3 and 4 in a strategic recommendation on data practices for shaping the OA transformation.\n\n\nAP 6 Trainings\nThe aim of WP 6 is to develop and test open training materials on the use of open data sources and tools in the form of a Carpentry module in a participatory manner. The work planning is based on the life cycle of the Carpentry lessons and includes the call for teamwork, creation of the course materials, testing and revision phase.\n\n\nAP 7 Tools\nThe aim of the WP is to set up and operate a digital toolbox that provides information on tools for collecting, analysing and visualising data relating to OA transformation.\n\n\nAP 8 Networks\nThe aim of the WP is to initiate networks on specific issues relating to data work on OA transformation. At the heart of this is the dialogue on the topics of: Reporting, publishing data, bibliometrics and mentoring in the context of OA transformation. The project organises digital workshops for the networks and provides an organisational structure.\n\n\n\n\n Back to top"
+    "text": "WP 1 Institutional Level\nThe aim of WP 1 is to collect, analyse and document requirements for data analyses relating to the OA transformation from the institutional practice of scientific institutions. The results of WP 1 will be published in a report and formulated in recommendations.\n\n\nWP 2 Publisher Agreements\nThe aim of WP 2 is to analyse publishing contracts relating to open metadata and data analytics research services and to identify best practices. The result is an inventory of German transformation contracts and a recommendation for action.\n\n\nWP 3 Open Access in institutional Rankings\nThe aim of WP 3 is to critically accompany OA as an evaluation dimension of institutional rankings. To this end, interpretation and intervention aids for the management of scientific institutions will be developed on the basis of an inventory of institutional rankings. Secondly, data analysis aids will be developed and published to enable institutions and consortia to carry out benchmarking on the basis of data from university rankings.\n\n\nWP 4 Open-Access-Reporting\nThe aim of WP 4 is to contribute to the improvement of data quality and to promote the standardisation of data and reports on OA transformation. As a result of WP 4, the proposal for a standard of the Alliance of Science Organisations for OA reporting will be further developed as part of an assessment process.\n\n\nWP 5 Synopsis\nThe aim of WP 5 is to summarise the results from WPs 1, 2, 3 and 4 in a strategic recommendation on data practices for shaping the OA transformation.\n\n\nWP 6 Trainings\nThe aim of WP 6 is to develop and test open training materials on the use of open data sources and tools in the form of a Carpentry module in a participatory manner. The work planning is based on the life cycle of the Carpentry lessons and includes the call for teamwork, creation of the course materials, testing and revision phase.\n\n\nWP 7 Tools\nThe aim of the WP is to set up and operate a digital toolbox that provides information on tools for collecting, analysing and visualising data relating to OA transformation.\n\n\nWP 8 Networks\nThe aim of the WP is to initiate networks on specific issues relating to data work on OA transformation. At the heart of this is the dialogue on the topics of: Reporting, publishing data, bibliometrics and mentoring in the context of OA transformation. The project organises digital workshops for the networks and provides an organisational structure.\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "aps/AP8.html#beschreibung",
-    "href": "aps/AP8.html#beschreibung",
-    "title": "AP 8 Netzwerke",
-    "section": "Beschreibung",
-    "text": "Beschreibung\nDie Arbeit mit Daten zur OA-Transformation wird häufig von verschiedenen Akteuren in einer wissenschaftlichen Einrichtung umgesetzt. So befassen sich z. B. Professionals wie OA-Beauftrage, Bibliothekar:innen in der Erwerbung und Lizenzierung, Forschungsreferent:innen und Akteur:innen im Bereich der Forschungsförderung mit Aspekten der Datenarbeit rund um OA. Anliegen des APs ist es, den Dialog zu definierten Fragestellungen über Berufsprofile hinaus zu ermöglichen und damit aktiv den inter- und transdisziplinären Diskurs zur Datenarbeit rund um OA zu ermöglichen. Das Projekt initiiert die Netzwerke und organisiert sie mit je drei digitalen Workshops in der Projektlaufzeit. Darüber hinaus wird eine Mailingliste für die Netzwerke organisiert und somit ein Anstoß zur längerfristigen Kooperation gegeben. Zum Projektende wird mit weiteren Stakeholdern, wie z. B. der Konferenz der informations- und bibliothekswissenschaftlichen Ausbildungs- und Studiengänge (KIBA) eruiert, inwiefern die behandelten Themen in weiteren Gremien und Netzwerken fortgeführt werden können."
-  },
-  {
-    "objectID": "aps/AP4.en.html#description",
-    "href": "aps/AP4.en.html#description",
-    "title": "WP 4 Open-Access-Reporting",
+    "objectID": "aps/AP1.html#description",
+    "href": "aps/AP1.html#description",
+    "title": "WP 1 Institutional Level",
     "section": "Description",
-    "text": "Description\nThe digital strategy of the Federal Ministry of Education and Research (BMBF) states: “By 2025, 70 per cent of all new scientific publications in Germany will be published exclusively or additionally via open access.” (Federal Ministry of Education and Research, 2019, p. 37) In addition to this national OA target, individual federal states have defined specific OA targets. In the “2019 Monitoring Report” of the Joint Science Conference’s (GWK) Pact for Research and Innovation (PFI), the federal and state governments emphasise the need to establish “consistent and comparable surveys on open access publications” (Gemeinsame Wissenschaftskonferenz, 2019, p. 16). In a discussion paper published in 2022 by the Working Group on the Scientific Publication System in the Alliance’s priority initiative “Digital Information”, an initial proposal for a common set of indicators on OA for Germany is formulated (Deinzer et al., 2022). The problem with this proposal is that it has not yet been discussed beyond the working group.\nWP 4 builds on this work - in which an applicant was involved as head of the responsible task group of the Scientific Publication System WG - and organises a dialogue to further develop this proposal on the basis of the discussion paper. The aim is to develop a national standard for the definition of OA for reporting and the associated data collection practice."
+    "text": "Description\nThe basis for the overall project is an inventory that identifies and documents the topic, the actors and the interplay of aspects of data analyses for shaping the OA transformation. For this purpose, a target group-specific view of professionals who deal with the OA transformation in operational and strategic areas of scientific institutions on the basis of publication and cost data is taken. The focus is on administrative and library staff at universities and non-university institutions. These include professionals in the areas of digital publishing, OA, acquisition and collection development, research information and research funding.\nBased on a stakeholder analysis (T1.1), the need for information, the handling of data sources and the interdependence of data analyses in the context of OA transformation at academic institutions will be surveyed (T1.2). The potential of the open science monitoring systems currently being developed will also be analysed. The resulting inventory (T1.3), which looks at the specific practices in dealing with data on OA and future requirements of those involved, will create the basis for recommendations on the topic (WP 5)."
   },
   {
-    "objectID": "aps/AP1.html#beschreibung",
-    "href": "aps/AP1.html#beschreibung",
-    "title": "AP 1 Institutionelle Ebene",
-    "section": "Beschreibung",
-    "text": "Beschreibung\nGrundlage für das Gesamtvorhaben ist eine Bestandsaufnahme, die das Thema, die Akteure und das Zusammenspiel von Aspekten der Datenanalysen zur Gestaltung der OA-Transformation eruiert und dokumentiert. Hierzu wird ein zielgruppenspezifischer Blick auf Professionals eingenommen, die sich auf Basis von Publikations- und Kostendaten mit der OA-Transformation in operativen und strategischen Bereichen wissenschaftlicher Einrichtungen befassen. Im Fokus steht dabei das Personal in Administration und Bibliothek an Hochschulen und außeruniversitären Einrichtungen. Dies sind u.a. Professionals in den Bereichen Digitales Publizieren, OA, Erwerbung und Bestandsentwicklung, Forschungsinformation sowie Forschungsförderung.\nAuf Basis einer Stakeholder-Analyse (T1.1) wird der Informationsbedarf, der Umgang mit Datenquellen sowie die Interdependenz rund um Datenanalysen im Kontext der OA-Transformation an wissenschaftlichen Einrichtungen erhoben (T1.2). Hierbei wird auch das Potenzial der sich im Aufbau befindlichen Monitoringsysteme zu Open Science betrachtet. Mit der so erzielten Bestandsaufnahme (T1.3), die die spezifischen Praktiken im Umgang mit Daten zu OA und zukünftigen Anforderungen der Agierenden betrachtet, wird die Grundlage für Empfehlungen zum Thema geschaffen (AP 5)."
-  },
-  {
-    "objectID": "aps/AP2.html#beschreibung",
-    "href": "aps/AP2.html#beschreibung",
-    "title": "AP 2 Verlagsverträge",
-    "section": "Beschreibung",
-    "text": "Beschreibung\nOA-Transformationsverträge sind in Bezug auf offene Metadaten trotz Standardisierungsinitiativen wie ESAC heterogen gestaltet (Borrego et al., 2021; Jahn et al., 2022; Marques et al., 2019). Zugleich bieten Verlage unterschiedlich ausgeprägte Metadaten- und Forschungsservices zusätzlich zur OA-Stellung der Artikel und der zentralen Rechnungslegung an. Ziel des AP ist es, Verlagsverträge bezogen auf offene Metadaten und datenanalytische Forschungsservices zu analysieren und Best Practices zu identifizieren. Dadurch soll der Wettbewerb zwischen den Verlagen befördert werden."
-  },
-  {
-    "objectID": "aps/AP7.html#beschreibung",
-    "href": "aps/AP7.html#beschreibung",
-    "title": "AP 7 Werkzeuge",
-    "section": "Beschreibung",
-    "text": "Beschreibung\nZur Erhebung, Analyse und Visualisierung von Daten rund um die OA-Transformation gibt es mittlerweile ein großes Angebot an Werkzeugen. Neben den bereits etablierten Diensten wie dem Hybrid Open Access Dashboard (HOAD), OpenAPC und Open Access Monitor sind dies z. B.\n\nAPI-Clients für den computergestützten Zugriff auf offene Datenquellen (z. B. Clients von rOpenSci12 rund um Publikationsanalysen mit R)\nkostenpflichtige Werkzeuge wie z. B. Unsub, ein Tool für Bibliotheken zur Bewertung von Verlagsangeboten anhand lokaler Nutzungsdaten.\nkostenpflichtige Werkzeuge wie ChronosHub, Oable, OAMetrix und OA Switchboard rund um das APC-Management.\nDashboards zur Datenvisualisierung wie das COKI Open Access Dashboard, das Charité Open Access Dashboard oder das Hamburg Open Science Dashboard.\n\nDa es bisher keine Übersicht dieser vielfältigen Werkzeuge gibt und es bisher keine systematischen Aus- und Weiterbildungsverfahren im Bereich Scholarly Communication Analytics gibt, soll in AP 5 eine digitale Toolbox aufgebaut werden. Diese informiert über Werkzeuge der Datenarbeit rund um die OA- Transformation. Ausgehend von einer Recherche werden die Werkzeuge durch ein zu entwickelndes Metadatenschema beschrieben. Dieses Schema soll die Auffindbarkeit und Bewertung der Werkzeuge unterstützen. Die so entstehende Toolbox wird auf der Webseite des Projektes präsentiert. Nach Ende des Vorhabens wird die Kuration durch das Helmholtz Open Science Office fortgeführt. Die Toolbox wird in englischer Sprache betrieben."
-  },
-  {
-    "objectID": "aps/AP3.en.html",
-    "href": "aps/AP3.en.html",
-    "title": "WP 3 Open Access in institutional Rankings",
-    "section": "",
-    "text": "SUB Göttingen"
-  },
-  {
-    "objectID": "aps/AP3.en.html#lead",
-    "href": "aps/AP3.en.html#lead",
-    "title": "WP 3 Open Access in institutional Rankings",
-    "section": "",
-    "text": "SUB Göttingen"
-  },
-  {
-    "objectID": "aps/AP3.en.html#description",
-    "href": "aps/AP3.en.html#description",
+    "objectID": "aps/AP3.html#description",
+    "href": "aps/AP3.html#description",
     "title": "WP 3 Open Access in institutional Rankings",
     "section": "Description",
     "text": "Description\nInstitutional rankings enjoy a high level of attention among science policy decision-makers and the public because they succeed in comparing scientific institutions with each other in a generally understandable and clear manner. Despite numerous points of criticism, rankings can therefore not be ignored as a measure of the perception of academic institutions and play a corresponding role in institutional information management.\nWP 3 takes into account that OA is increasingly appearing as a comparative dimension in rankings, for example in the Leiden Ranking of the CWTS, the COKI Open Access Dashboard and the Scimago Institutions Ranking."
   },
   {
-    "objectID": "aps/AP5.html#beschreibung",
-    "href": "aps/AP5.html#beschreibung",
-    "title": "AP 5 Synopse",
-    "section": "Beschreibung",
-    "text": "Beschreibung\nVoraussetzung für die Gestaltung der OA-Transformation ist ein gemeinsames Verständnis einer wissenschaftsgeleiteten Datenpraxis. Diese Praxis umfasst den Umgang mit Daten in wissenschaftlichen Einrichtungen im Allgemeinen (AP 1), die Analyse und Bewertung von Daten im Rahmen von Verlagsverträgen (AP 2), den Umgang mit Daten zu OA im institutionellen Rankings (AP 3) sowie die Erhebung von Daten zu OA für das Reporting (AP 4). Entsprechend des Anliegens der Sicherung von Datensouveränität in der Wissenschaft wird auf Basis der Erkenntnisse in den APs 1, 2, 3 und 4 im AP 5 eine Synopse erstellt. Auf Grundlage dieser Synopse (T5.1) werden Empfehlungen formuliert (T5.2). Anliegen ist es, die Erkenntnisse der vorhergehenden APs zusammenzuführen und deren strategische Dimension herauszuarbeiten. Als Ergebnis werden zusammenfassende Empfehlungen veröffentlicht (T5.3), die sich an Entscheider:innen in Universitäten, außeruniversitären Forschungseinrichtungen, Förderorganisationen und der Wissenschaftspolitik wenden. Von besonderer Bedeutung ist hier der integrative Blick, der die Arbeiten im Projekt zusammenfasst und die Interaktionen zwischen den APs herausstellt. Hierbei werden auch aktuelle wissenschaftspolitische Empfehlungen (z. B. von Allianz, EU, UNESCO, WR, Science Europe) in Beziehung zu den Ergebnissen der vorhergehenden APs gesetzt. Somit wirkt dieses AP als Impuls für die zukünftige Gestaltung der OA-Transformation."
+    "objectID": "aps/AP6.html#description",
+    "href": "aps/AP6.html#description",
+    "title": "WP 6 Trainings",
+    "section": "Description",
+    "text": "Description\nThe Carpentries (consisting of Data, Library and Software Carpentry) are a method of introducing basic data competences. The main focus is on the joint learning of IT-supported procedures for solving practical problems. In Germany, both library associations and academic institutions support the Carpentries community through membership. For example, the SUB Göttingen has been a member since 2019 and trains up to five instructors annually at the Göttingen campus and regularly organises Carpentries workshops, which are primarily aimed at young researchers and librarians. The aim of the AP is to design, test and iteratively develop training courses with a specific focus on data practice to shape the OA transformation as part of Library Carpentry. The target group includes professionals in the field of OA transformation and research administration. Not all data analysis aspects can be covered within a Carpentry training course. Rather, the aim is to introduce open and science-oriented tools and procedures and to test their application (Wilson et al., 2017). The tasks of the WP are based on the life cycle of the Carpentries Lessons and start in the second year of the project."
   },
   {
-    "objectID": "aps/AP5.en.html#description",
-    "href": "aps/AP5.en.html#description",
+    "objectID": "aps/AP5.html#description",
+    "href": "aps/AP5.html#description",
     "title": "WP 5 Synopsis",
     "section": "Description",
     "text": "Description\nA common understanding of science-led data practice is a prerequisite for shaping the OA transformation. This practice includes the handling of data in scientific institutions in general (WP 1), the analysis and evaluation of data in the context of publishing contracts (WP 2), the handling of data on OA in institutional rankings (WP 3) and the collection of data on OA for reporting (WP 4). In line with the aim of ensuring data sovereignty in science, a synopsis will be created in WP 5 based on the findings of WPs 1, 2, 3 and 4. Recommendations (T5.2) are formulated on the basis of this synopsis (T5.1). The aim is to summarise the findings of the previous WPs and to work out their strategic dimension. As a result, summarised recommendations are published (T5.3), which are aimed at decision-makers in universities, non-university research institutions, funding organisations and science policy. Of particular importance here is the integrative view, which summarises the work in the project and highlights the interactions between the WPs. Current science policy recommendations (e.g. from the Alliance, EU, UNESCO, WR, Science Europe) are also placed in relation to the results of the previous WPs. This WP thus acts as an impulse for the future organisation of the OA transformation."
@@ -81,42 +39,42 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Pampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). https://doi.org/10.5281/zenodo.10794298"
+    "text": "Barbers, I., Kindling, M., Stadler, H., & Strecker, D. (2024). Stand und Perspektive des Open-Access-Reportings. https://doi.org/10.5281/zenodo.13831942\n\n\nFerguson, L. M., Meistring, M., Pampel, H., & Strecker, D. (2024). Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung. https://doi.org/10.5281/zenodo.13837272\n\n\nFerguson, L. M., Pampel, H., Strecker, D., & Meistring, M. (2025). Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung. Zenodo. https://doi.org/10.5281/zenodo.14505423\n\n\nPampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). https://doi.org/10.5281/ZENODO.10794298"
   },
   {
     "objectID": "publications.html#publications-from-the-project",
     "href": "publications.html#publications-from-the-project",
     "title": "Publications",
     "section": "",
-    "text": "Pampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). https://doi.org/10.5281/zenodo.10794298"
+    "text": "Barbers, I., Kindling, M., Stadler, H., & Strecker, D. (2024). Stand und Perspektive des Open-Access-Reportings. https://doi.org/10.5281/zenodo.13831942\n\n\nFerguson, L. M., Meistring, M., Pampel, H., & Strecker, D. (2024). Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung. https://doi.org/10.5281/zenodo.13837272\n\n\nFerguson, L. M., Pampel, H., Strecker, D., & Meistring, M. (2025). Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung. Zenodo. https://doi.org/10.5281/zenodo.14505423\n\n\nPampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). https://doi.org/10.5281/ZENODO.10794298"
   },
   {
     "objectID": "publications.html#preliminary-work-of-the-project-partners",
     "href": "publications.html#preliminary-work-of-the-project-partners",
     "title": "Publications",
     "section": "Preliminary work of the project partners",
-    "text": "Preliminary work of the project partners\nFraser, N., Hobert, A., Jahn, N., Mayr, P., & Peters, I. (2023). No deal: German researchers’ publishing and citing behaviors after Big Deal negotiations with Elsevier. Quantitative Science Studies, 4(2), 325–352. https://doi.org/10.1162/qss_a_00255\nHobert, A., Jahn, N., Mayr, P., Schmidt, B., & Taubert, N. (2021). Open access uptake in Germany 2010–2018: Adoption in a diverse research landscape. Scientometrics, 126(12), 9751–9777. https://doi.org/10.1007/s11192-021-04002-0\nJahn, N. (2024). How open are hybrid journals included in transformative agreements? (arXiv:2402.18255). arXiv. http://arxiv.org/abs/2402.18255\nJahn, N., Matthias, L., & Laakso, M. (2022). Toward transparency of hybrid open access through publisher-provided metadata: An article-level study of Elsevier. Journal of the Association for Information Science and Technology, 73(1), 104–118. https://doi.org/10.1002/asi.24549\nPampel, H. (2022). From library budget to information budget: Fostering transparency in the transformation towards open access. Insights the UKSG journal, 35, 8. https://doi.org/10.1629/uksg.576\nStisser, A., Jahn, N., & Schmidt, B. (2022). Stand und Perspektiven bibliometriegestützter Open-Access-Services an Universitäten in Deutschland. Bibliothek Forschung und Praxis, 46(2), 275–283. https://doi.org/10.1515/bfp-2021-0098"
+    "text": "Preliminary work of the project partners\n\n\nFraser, N., Hobert, A., Jahn, N., Mayr, P., & Peters, I. (2023). No deal: German researchers’ publishing and citing behaviors after big deal negotiations with elsevier. Quantitative Science Studies, 4(2), 325–352. https://doi.org/10.1162/qss_a_00255\n\n\nHobert, A., Jahn, N., Mayr, P., Schmidt, B., & Taubert, N. (2021). Open access uptake in germany 2010–2018: Adoption in a diverse research landscape. Scientometrics, 126(12), 9751–9777. https://doi.org/10.1007/s11192-021-04002-0\n\n\nJahn, N. (2024). How open are hybrid journals included in transformative agreements? arXiv. https://doi.org/10.48550/arXiv.2402.18255\n\n\nJahn, N., Matthias, L., & Laakso, M. (2022). Toward transparency of hybrid open access through publisher-provided metadata: An article-level study of elsevier. Journal of the Association for Information Science and Technology, 73(1), 104–118. https://doi.org/10.1002/asi.24549\n\n\nPampel, H. (2022). From library budget to information budget: Fostering transparency in the transformation towards open access. Insights the UKSG Journal, 35, 8. https://doi.org/10.1629/uksg.576\n\n\nTaubert, N., Hobert, A., Jahn, N., Bruns, A., & Iravani, E. (2023). Understanding differences of the OA uptake within the german university landscape (2010–2020): Part 1—journal-based OA. Scientometrics, 128(6), 3601–3625. https://doi.org/10.1007/s11192-023-04716-3"
   },
   {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "News",
+    "objectID": "archive.html",
+    "href": "archive.html",
+    "title": "Archive",
     "section": "",
-    "text": "The Helmholtz Open Science Office is looking for an Open Science Officer (f/m/d) to join the project team. The application deadline is 14.08.2024.\nJob advertisement on the website of the Helmholtz Open Science Office"
+    "text": "Stand und Perspektive des Open-Access-Reportings\n\n\n\nTransparenz in der Wissenschaft: Strategien für offene Informationsversorgung"
   },
   {
-    "objectID": "news.html#job-opportunity",
-    "href": "news.html#job-opportunity",
-    "title": "News",
+    "objectID": "archive.html#past-events",
+    "href": "archive.html#past-events",
+    "title": "Archive",
     "section": "",
-    "text": "The Helmholtz Open Science Office is looking for an Open Science Officer (f/m/d) to join the project team. The application deadline is 14.08.2024.\nJob advertisement on the website of the Helmholtz Open Science Office"
+    "text": "Stand und Perspektive des Open-Access-Reportings\n\n\n\nTransparenz in der Wissenschaft: Strategien für offene Informationsversorgung"
   },
   {
-    "objectID": "news.html#events",
-    "href": "news.html#events",
-    "title": "News",
-    "section": "Events",
-    "text": "Events\n\n2024-09-10: Open-Access-Tage 2024, Cologne, Germany\nStand und Perspektive des Open-Access-Reportings\n\n\n2024-09-19: 25. DINI-Jahrestagung, Potsdam, Germany\nTransparenz in der Wissenschaft: Strategien für offene Informationsversorgung"
+    "objectID": "datenschutz.html",
+    "href": "datenschutz.html",
+    "title": "Privacy Statement",
+    "section": "",
+    "text": "We do not automatically or manually collect, store or process any personal data.\nThis website contains links or buttons that lead to third-party services like Mastodon or email. Use of these features may result in data collection. Engaging with these buttons, tools, or content may automatically send certain browser information to the service provider. Please review the privacy statements of the service providers for more information.\nThis website is hosted on GitHub Pages. GitHub may collect personal data when interacting with their services, for more information please review the GitHub Privacy Statement.\nFor more information, see the Data Protection Statement of Humboldt-Universität zu Berlin.\n\n\n\n Back to top"
   },
   {
     "objectID": "partners.html",
@@ -126,8 +84,8 @@
     "text": "The Chair of Information Management at the Berlin School of Library and Information Science at HU is investigating the role of digital research and information infrastructures in science in the context of the digital transformation. The focus is on information infrastructures that enable the collection, indexing, accessibility and re-use of information objects in the sense of Open Science. In research, teaching and transfer, processes of digital science communication and associated practices, standards and policies are analysed. Research focuses on the topic of Open Access and related developments in digital scholarly communication.\n\n\nHeinz Pampel https://orcid.org/0000-0003-3334-2771\nDorothea Strecker https://orcid.org/0000-0002-9754-3807"
   },
   {
-    "objectID": "partners.html#humboldt-unversität-zu-berlin-berlin-school-of-library-and-information-science",
-    "href": "partners.html#humboldt-unversität-zu-berlin-berlin-school-of-library-and-information-science",
+    "objectID": "partners.html#humboldt-universität-zu-berlin-berlin-school-of-library-and-information-science",
+    "href": "partners.html#humboldt-universität-zu-berlin-berlin-school-of-library-and-information-science",
     "title": "Project Partner",
     "section": "",
     "text": "The Chair of Information Management at the Berlin School of Library and Information Science at HU is investigating the role of digital research and information infrastructures in science in the context of the digital transformation. The focus is on information infrastructures that enable the collection, indexing, accessibility and re-use of information objects in the sense of Open Science. In research, teaching and transfer, processes of digital science communication and associated practices, standards and policies are analysed. Research focuses on the topic of Open Access and related developments in digital scholarly communication.\n\n\nHeinz Pampel https://orcid.org/0000-0003-3334-2771\nDorothea Strecker https://orcid.org/0000-0002-9754-3807"
@@ -137,19 +95,26 @@
     "href": "partners.html#helmholtz-open-science-office",
     "title": "Project Partner",
     "section": "Helmholtz Open Science Office",
-    "text": "Helmholtz Open Science Office\nThe Helmholtz Association supports OA in accordance with the “Berlin Declaration on Open Access to Knowledge in the Sciences and Humanities”. With the Helmholtz Open Science Office (OS Office), an infrastructure has been established that promotes the cultural change towards Open Science at Helmholtz. The OS Office sees itself as a service provider and cross-centre partner for all stakeholders involved in this process, supporting the Helmholtz Association in shaping the cultural change towards Open Science at national and international level. With this objective in mind, the OS Office is involved in a large number of open science initiatives and projects, such as in relevant working groups of the Alliance of Science Organisations’ priority initiative “Digital Information”, on the board and in various committees of the DINI and the RDA DE association and as part of various third-party funded projects.\n\nTeam\nRoland Bertelmann https://orcid.org/0000-0002-5588-0290\nLea Maria Ferguson https://orcid.org/0000-0002-7060-3670"
+    "text": "Helmholtz Open Science Office\nThe Helmholtz Association supports OA in accordance with the “Berlin Declaration on Open Access to Knowledge in the Sciences and Humanities”. With the Helmholtz Open Science Office (OS Office), an infrastructure has been established that promotes the cultural change towards Open Science at Helmholtz. The OS Office sees itself as a service provider and cross-centre partner for all stakeholders involved in this process, supporting the Helmholtz Association in shaping the cultural change towards Open Science at national and international level. With this objective in mind, the OS Office is involved in a large number of open science initiatives and projects, such as in relevant working groups of the Alliance of Science Organisations’ priority initiative “Digital Information”, on the board and in various committees of the DINI and the RDA DE association and as part of various third-party funded projects.\n\nTeam\nMathijs Vleugel https://orcid.org/0000-0003-2988-2628\nLea Maria Ferguson https://orcid.org/0000-0002-7060-3670\nJohannes Schneider https://orcid.org/0009-0004-6510-166X"
   },
   {
     "objectID": "partners.html#göttingen-state-and-university-library",
     "href": "partners.html#göttingen-state-and-university-library",
     "title": "Project Partner",
     "section": "Göttingen State and University Library",
-    "text": "Göttingen State and University Library\nThe Göttingen State and University Library (SUB Göttingen) is one of Germany’s leading libraries with its diverse range of tasks, which it fulfils at local, regional, national and international level. As an internationally recognised competence centre for the digital library, it provides new services for research. Its tasks include securing the supra-regional supply of literature, as in the DFG-funded programme “Specialised Information Services for Science”, preserving and making accessible scientific results and the cultural-historical heritage, as well as its commitment to being a research and development partner for a future-proof research and information infrastructure in Germany and internationally.\n\nTeam\nNajko Jahn https://orcid.org/0000-0001-5105-1463\nBirgit Schmidt https://orcid.org/0000-0001-8036-5859"
+    "text": "Göttingen State and University Library\nThe Göttingen State and University Library (SUB Göttingen) is one of Germany’s leading libraries with its diverse range of tasks, which it fulfils at local, regional, national and international level. As an internationally recognised competence centre for the digital library, it provides new services for research. Its tasks include securing the supra-regional supply of literature, as in the DFG-funded programme “Specialised Information Services for Science”, preserving and making accessible scientific results and the cultural-historical heritage, as well as its commitment to being a research and development partner for a future-proof research and information infrastructure in Germany and internationally.\n\nTeam\nNajko Jahn https://orcid.org/0000-0001-5105-1463\nBirgit Schmidt https://orcid.org/0000-0001-8036-5859\nSophia Dörner https://orcid.org/0000-0001-8747-3422"
   },
   {
-    "objectID": "datenschutz.html",
-    "href": "datenschutz.html",
-    "title": "Privacy Policy",
+    "objectID": "toolbox.html",
+    "href": "toolbox.html",
+    "title": "Dashboards",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "events.html",
+    "href": "events.html",
+    "title": "Events",
     "section": "",
     "text": "Back to top"
   },
@@ -175,87 +140,31 @@
     "text": "Berlin School of Library and Information Science, Humboldt-Universität zu Berlin\nDorotheenstr. 26\n10117 Berlin\nGermany\nKontakt\nProf. Dr. Heinz Pampel\nE-Mail: heinz.pampel@hu-berlin.de\nPhone: (+49 30) 2093 70977\n\n\n\n Back to top"
   },
   {
-    "objectID": "aps/AP7.en.html#description",
-    "href": "aps/AP7.en.html#description",
+    "objectID": "aps/AP4.html#description",
+    "href": "aps/AP4.html#description",
+    "title": "WP 4 Open-Access-Reporting",
+    "section": "Description",
+    "text": "Description\nThe digital strategy of the Federal Ministry of Education and Research (BMBF) states: “By 2025, 70 per cent of all new scientific publications in Germany will be published exclusively or additionally via open access.” (Bundesministerium für Bildung und Forschung, 2019, p. 37). In addition to this national OA target, individual federal states have defined specific OA targets. In the “2019 Monitoring Report” of the Joint Science Conference’s (GWK) Pact for Research and Innovation (PFI), the federal and state governments emphasise the need to establish “consistent and comparable surveys on open access publications” (Gemeinsame Wissenschaftskonferenz, 2019, p. 16). In a discussion paper published in 2022 by the Working Group on the Scientific Publication System in the Alliance’s priority initiative “Digital Information”, an initial proposal for a common set of indicators on OA for Germany is formulated (Deinzer et al., 2022). The problem with this proposal is that it has not yet been discussed beyond the working group.\nWP 4 builds on this work - in which an applicant was involved as head of the responsible task group of the Scientific Publication System WG - and organises a dialogue to further develop this proposal on the basis of the discussion paper. The aim is to develop a national standard for the definition of OA for reporting and the associated data collection practice."
+  },
+  {
+    "objectID": "aps/AP7.html#description",
+    "href": "aps/AP7.html#description",
     "title": "WP 7 Tools",
     "section": "Description",
-    "text": "Description\nThere is now a wide range of tools for collecting, analysing and visualising data relating to the OA transformation. In addition to the already established services such as the Hybrid Open Access Dashboard (HOAD), OpenAPC and Open Access Monitor, these include, for example\n\nAPI clients for computer-aided access to open data sources (e.g. clients from rOpenSci12 for publication analyses with R)\nPaid tools such as Unsub, a tool for libraries to evaluate publishing offers based on local usage data.\nPaid tools such as ChronosHub, Oable, OAMetrix and OA Switchboard for APC management.\nDashboards for data visualisation such as the COKI Open Access Dashboard, the Charité Open Access Dashboard and the Hamburg Open Science Dashboard.\n\nAs there is currently no overview of these diverse tools and there are no systematic training and further education and further training procedures in the field of Scholarly Communication Analytics, a digital toolbox is to be developed in WP 5. This will provide information on tools for data work relating to OA transformation. Based on research, the tools will be described by a metadata schema to be developed. metadata schema to be developed. This schema should support the findability and evaluation of the tools. tools. The resulting toolbox will be presented on the project website. After the end of the curation will be continued by the Helmholtz Open Science Office. The toolbox will be operated in English language."
+    "text": "Description\nThere is now a wide range of tools for collecting, analysing and visualising data relating to the OA transformation. In addition to the already established services such as the Hybrid Open Access Dashboard (HOAD), OpenAPC and Open Access Monitor, these include, for example\n\nAPI clients for computer-aided access to open data sources (e.g. clients from rOpenSci for publication analyses with R)\nPaid tools such as Unsub, a tool for libraries to evaluate publishing offers based on local usage data.\nPaid tools such as ChronosHub, Oable, OAMetrix and OA Switchboard for APC management.\nDashboards for data visualisation such as the COKI Open Access Dashboard, the Charité Open Access Dashboard and the Hamburg Open Science Dashboard.\n\nAs there is currently no overview of these diverse tools and there are no systematic training and further education and further training procedures in the field of Scholarly Communication Analytics, a digital toolbox is to be developed in WP 5. This will provide information on tools for data work relating to OA transformation. Based on research, the tools will be described by a metadata schema to be developed. metadata schema to be developed. This schema should support the findability and evaluation of the tools. tools. The resulting toolbox will be presented on the project website. After the end of the curation will be continued by the Helmholtz Open Science Office. The toolbox will be operated in English language."
   },
   {
-    "objectID": "aps/AP4.html#beschreibung",
-    "href": "aps/AP4.html#beschreibung",
-    "title": "AP 4 Open-Access-Reporting",
-    "section": "Beschreibung",
-    "text": "Beschreibung\nIn der Digital-Strategie des Bundesministeriums für Bildung und Forschung (BMBF) heißt es: „Bis zum Jahr 2025 werden 70 Prozent aller neu erscheinenden wissenschaftlichen Publikationen in Deutschland ausschließlich oder zusätzlich im Wege des Open Access veröffentlicht.“ (Bundesministerium für Bildung und Forschung, 2019, S. 37) Über diese nationale OA-Zielmarke hinaus haben einzelne Bundesländer spezifische OA-Zielmarken definiert. Im „Monitoring-Bericht 2019“ des Paktes für Forschung und Innovation (PFI) der Gemeinsame Wissenschaftskonferenz (GWK) betonen Bund und Länder die Notwendigkeit „durchgängige und vergleichbare Erhebungen zu Open-Access-Publikationen“ (Gemeinsame Wissenschaftskonferenz, 2019, S. 16) zu etablieren. In einem 2022 veröffentlichten Diskussionspapier der AG Wissenschaftliches Publikationssystem in der Schwerpunktinitiative „Digitale Information“ der Allianz wird ein erster Vorschlag für eine gemeinsame Indikatorik zu OA für Deutschland formuliert (Deinzer et al., 2022). Problem dieses Vorschlags ist, dass er bisher nicht über die AG hinaus diskutiert wurde.\nDas AP 4 setzt auf dieser Arbeit - an der ein Antragsteller als Leiter der zuständigen Task Group der AG Wissenschaftliches Publikationssystem beteiligt war - auf und organisiert auf Basis des Diskussionspapiers einen Dialog zur Weiterentwicklung dieses Vorschlags. Ziel ist es, einen nationalen Standard zur Definition von OA für das Reporting und eine damit verbundene Erhebungspraxis."
-  },
-  {
-    "objectID": "aps/AP6.html#beschreibung",
-    "href": "aps/AP6.html#beschreibung",
-    "title": "AP 6 Trainings",
-    "section": "Beschreibung",
-    "text": "Beschreibung\nDie Carpentries (bestehend aus Data, Library und Software Carpentry) sind eine Methode, in grundlegende Datenkompentenzen einzuführen. Hauptaugenmerk liegt dabei auf dem gemeinschaftlichen Erlernen IT-gestützter Verfahren zur Lösung praktischer Probleme. In Deutschland unterstützen sowohl bibliothekarische Fachverbände als auch wissenschaftliche Einrichtungen die Carpentries-Community über eine Mitgliedschaft. So ist die SUB Göttingen seit 2019 Mitglied und bildet am Campus Göttingen jährlich bis zu fünf Instruktoren aus und organisiert regelmäßig Carpentries Workshops, die in erster Linie Nachwuchswissenschaftler:innen und Bibliothekar:innen adressieren. Ziel des AP ist es, Trainings mit spezifischem Fokus auf die Datenpraxis zur Gestaltung der OA- Transformation als Teil von Library Carpentry zu entwerfen, zu testen und iterativ weiterzuentwickeln. Die Zielgruppe umfasst Professionals des Bereichs OA-Transformation und Forschungsadministration. Innerhalb eines Carpentry-Trainings lassen sich nicht sämtliche datenanalytische Aspekte abdecken. Vielmehr geht es darum, offene und wissenschaftsnahe Tools und Vorgehensweisen einzuführen und deren Anwendung zu erproben (Wilson et al., 2017). Die Aufgaben des AP orientieren sich an dem Lebenszyklus der Carpentries Lessons9 und starten im 2. Projektjahr."
-  },
-  {
-    "objectID": "aps/AP3.html#beschreibung",
-    "href": "aps/AP3.html#beschreibung",
-    "title": "AP 3 Open Access in institutionellen Rankings",
-    "section": "Beschreibung",
-    "text": "Beschreibung\nInstitutionelle Rankings genießen eine hohe Aufmerksamkeit bei wissenschaftspolitischen Entscheidungsträgern und in der Öffentlichkeit, weil es ihnen gelingt, wissenschaftliche Einrichtungen allgemeinverständlich und übersichtlich miteinander zu vergleichen. Trotz vielzähliger Kritikpunkte lassen sich daher Rankings als ein Maßstab der Wahrnehmung wissenschaftlicher Einrichtungen nicht ignorieren und spielen eine entsprechende Rolle beim institutionellen Informationsmanagement.\nDas AP 3 berücksichtigt, dass OA verstärkt als Vergleichsdimension in Rankings auftaucht, etwa im Leiden Ranking of the CWTS, dem COKI Open Access Dashboard und dem Scimago Institutions Ranking."
-  },
-  {
-    "objectID": "aps/AP1.en.html",
-    "href": "aps/AP1.en.html",
-    "title": "WP 1 Institutional Level",
-    "section": "",
-    "text": "Humboldt-Universität zu Berlin"
-  },
-  {
-    "objectID": "aps/AP1.en.html#lead",
-    "href": "aps/AP1.en.html#lead",
-    "title": "WP 1 Institutional Level",
-    "section": "",
-    "text": "Humboldt-Universität zu Berlin"
-  },
-  {
-    "objectID": "aps/AP1.en.html#description",
-    "href": "aps/AP1.en.html#description",
-    "title": "WP 1 Institutional Level",
-    "section": "Description",
-    "text": "Description\nThe basis for the overall project is an inventory that identifies and documents the topic, the actors and the interplay of aspects of data analyses for shaping the OA transformation. For this purpose, a target group-specific view of professionals who deal with the OA transformation in operational and strategic areas of scientific institutions on the basis of publication and cost data is taken. The focus is on administrative and library staff at universities and non-university institutions. These include professionals in the areas of digital publishing, OA, acquisition and collection development, research information and research funding.\nBased on a stakeholder analysis (T1.1), the need for information, the handling of data sources and the interdependence of data analyses in the context of OA transformation at academic institutions will be surveyed (T1.2). The potential of the open science monitoring systems currently being developed will also be analysed. The resulting inventory (T1.3), which looks at the specific practices in dealing with data on OA and future requirements of those involved, will create the basis for recommendations on the topic (WP 5)."
-  },
-  {
-    "objectID": "aps/AP8.en.html#description",
-    "href": "aps/AP8.en.html#description",
-    "title": "WP 8 Networks",
-    "section": "Description",
-    "text": "Description\nWork with data on OA transformation is often carried out by various stakeholders in an academic institution. For example, professionals such as OA officers, librarians in acquisitions and licensing, research officers and actors in the field of research funding deal with aspects of data work relating to OA. The aim of the WP is to facilitate dialogue on defined issues beyond professional profiles and thus actively enable inter- and transdisciplinary discourse on data work relating to OA. The project initiates the networks and organises them with three digital workshops each over the course of the project. In addition, a mailing list will be organised for the networks, thus providing an impetus for longer-term cooperation. At the end of the project, it will be determined with other stakeholders, such as the Conference of Information and Library Science Training and Study Programmes (KIBA), to what extent the topics discussed can be continued in other committees and networks."
-  },
-  {
-    "objectID": "aps/AP6.en.html#description",
-    "href": "aps/AP6.en.html#description",
-    "title": "WP 6 Trainings",
-    "section": "Description",
-    "text": "Description\nThe Carpentries (consisting of Data, Library and Software Carpentry) are a method of introducing basic data competences. The main focus is on the joint learning of IT-supported procedures for solving practical problems. In Germany, both library associations and academic institutions support the Carpentries community through membership. For example, the SUB Göttingen has been a member since 2019 and trains up to five instructors annually at the Göttingen campus and regularly organises Carpentries workshops, which are primarily aimed at young researchers and librarians. The aim of the AP is to design, test and iteratively develop training courses with a specific focus on data practice to shape the OA transformation as part of Library Carpentry. The target group includes professionals in the field of OA transformation and research administration. Not all data analysis aspects can be covered within a Carpentry training course. Rather, the aim is to introduce open and science-oriented tools and procedures and to test their application (Wilson et al., 2017). The tasks of the WP are based on the life cycle of the Carpentries Lessons9 and start in the second year of the project."
-  },
-  {
-    "objectID": "aps/AP2.en.html",
-    "href": "aps/AP2.en.html",
-    "title": "WP 2 Publisher Agreements",
-    "section": "",
-    "text": "SUB Göttingen"
-  },
-  {
-    "objectID": "aps/AP2.en.html#lead",
-    "href": "aps/AP2.en.html#lead",
-    "title": "WP 2 Publisher Agreements",
-    "section": "",
-    "text": "SUB Göttingen"
-  },
-  {
-    "objectID": "aps/AP2.en.html#description",
-    "href": "aps/AP2.en.html#description",
+    "objectID": "aps/AP2.html#description",
+    "href": "aps/AP2.html#description",
     "title": "WP 2 Publisher Agreements",
     "section": "Description",
     "text": "Description\nOA transformation agreements are heterogeneous in terms of open metadata despite standardisation initiatives such as ESAC (Borrego et al., 2021; Jahn et al., 2022; Marques et al., 2019). At the same time, publishers offer varying degrees of metadata and research services in addition to the OA provision of articles and centralised accounting. The aim of the WP is to analyse publisher agreements relating to open metadata and data-analytical research services and to identify best practices. This is intended to promote competition between publishers."
+  },
+  {
+    "objectID": "aps/AP8.html#description",
+    "href": "aps/AP8.html#description",
+    "title": "WP 8 Networks",
+    "section": "Description",
+    "text": "Description\nWork with data on OA transformation is often carried out by various stakeholders in an academic institution. For example, professionals such as OA officers, librarians in acquisitions and licensing, research officers and actors in the field of research funding deal with aspects of data work relating to OA. The aim of the WP is to facilitate dialogue on defined issues beyond professional profiles and thus actively enable inter- and transdisciplinary discourse on data work relating to OA. The project initiates the networks and organises them with three digital workshops each over the course of the project. In addition, a mailing list will be organised for the networks, thus providing an impetus for longer-term cooperation. At the end of the project, it will be determined with other stakeholders, such as the Conference of Information and Library Science Training and Study Programmes (KIBA), to what extent the topics discussed can be continued in other committees and networks."
   }
 ]

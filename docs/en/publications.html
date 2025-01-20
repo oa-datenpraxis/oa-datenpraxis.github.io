@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<link rel="alternate" hreflang="de" href="http://127.0.0.1:4321/publications.html" />
+<link rel="alternate" hreflang="en" href="http://127.0.0.1:4321/en/publications.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.5.57">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>OA Datenpraxis - Publications</title>
+<title>Publications – OA Datenpraxis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -18,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 <script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-html/quarto.js"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
@@ -50,14 +72,14 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">OA Datenpraxis</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-<div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="http://127.0.0.1:4321/publications.html" id="language-link-de">DE</a></li></ul>
-</div>
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item"><div class="dropdown" id="languages-links-parent">
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="http://127.0.0.1:4321/publications.html" id="language-link-de">DE</a></li></ul>
+</div></li>
 <li class="nav-item">
     <a class="nav-link" href="./partners.html"> 
 <span class="menu-text">Project Partner</span></a>
@@ -67,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-details" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-details" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Details</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-details">
@@ -75,15 +97,30 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./arbeitspakete.html">
  <span class="dropdown-text">Work Packages</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./toolbox.html">
+ <span class="dropdown-text">Dashboards</span></a>
+  </li>  
     </ul>
 </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./news.html"> 
-<span class="menu-text">News</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-news" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">News</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-news">
+<li>
+    <a class="dropdown-item" href="./events.html">
+ <span class="dropdown-text">Events</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./archive.html">
+ <span class="dropdown-text">Archive</span></a>
+  </li>  
+    </ul>
+</li>
 </ul>
 </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
     <a href="https://openbiblio.social/@oa_datenpraxis" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-mastodon"></i></a>
     <a href="mailto:oa-datenpraxis@listserv.dfn.de" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope"></i></a>
 </div>
@@ -113,14 +150,41 @@ ul.task-list li input[type="checkbox"] {
 
 
 </header><section id="publications-from-the-project" class="level2"><h2 class="anchored" data-anchor-id="publications-from-the-project">Publications from the project</h2>
-<p>Pampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., &amp; Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training &amp; Vernetzung (OA Datenpraxis). <a href="https://doi.org/10.5281/zenodo.10794298" class="uri">https://doi.org/10.5281/zenodo.10794298</a></p>
+<div id="refs-main" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-barbers_stand_2024" class="csl-entry" role="listitem">
+Barbers, I., Kindling, M., Stadler, H., &amp; Strecker, D. (2024). <em><span class="nocase">Stand und Perspektive des Open-Access-Reportings</span></em>. <a href="https://doi.org/10.5281/zenodo.13831942">https://doi.org/10.5281/zenodo.13831942</a>
+</div>
+<div id="ref-ferguson_transparenz_2024" class="csl-entry" role="listitem">
+Ferguson, L. M., Meistring, M., Pampel, H., &amp; Strecker, D. (2024). <em><span class="nocase">Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung</span></em>. <a href="https://doi.org/10.5281/zenodo.13837272">https://doi.org/10.5281/zenodo.13837272</a>
+</div>
+<div id="ref-ferguson_transparenz_2025" class="csl-entry" role="listitem">
+Ferguson, L. M., Pampel, H., Strecker, D., &amp; Meistring, M. (2025). <em><span class="nocase">Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung</span></em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.14505423">https://doi.org/10.5281/zenodo.14505423</a>
+</div>
+<div id="ref-pampel_datenpraxis_2024" class="csl-entry" role="listitem">
+Pampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., &amp; Stisser, A. (2024). <em><span class="nocase">Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training &amp; Vernetzung (<span>OA</span> Datenpraxis)</span></em>. <a href="https://doi.org/10.5281/ZENODO.10794298">https://doi.org/10.5281/ZENODO.10794298</a>
+</div>
+</div>
 </section><section id="preliminary-work-of-the-project-partners" class="level2"><h2 class="anchored" data-anchor-id="preliminary-work-of-the-project-partners">Preliminary work of the project partners</h2>
-<p>Fraser, N., Hobert, A., Jahn, N., Mayr, P., &amp; Peters, I. (2023). No deal: German researchers’ publishing and citing behaviors after Big Deal negotiations with Elsevier. <em>Quantitative Science Studies</em>, <em>4</em>(2), 325–352. <a href="https://doi.org/10.1162/qss_a_00255" class="uri">https://doi.org/10.1162/qss_a_00255</a></p>
-<p>Hobert, A., Jahn, N., Mayr, P., Schmidt, B., &amp; Taubert, N. (2021). Open access uptake in Germany 2010–2018: Adoption in a diverse research landscape. <em>Scientometrics</em>, <em>126</em>(12), 9751–9777. <a href="https://doi.org/10.1007/s11192-021-04002-0" class="uri">https://doi.org/10.1007/s11192-021-04002-0</a></p>
-<p>Jahn, N. (2024). <em>How open are hybrid journals included in transformative agreements?</em> (arXiv:2402.18255). arXiv. <a href="http://arxiv.org/abs/2402.18255" class="uri">http://arxiv.org/abs/2402.18255</a></p>
-<p>Jahn, N., Matthias, L., &amp; Laakso, M. (2022). Toward transparency of hybrid open access through publisher-provided metadata: An article-level study of Elsevier. <em>Journal of the Association for Information Science and Technology</em>, <em>73</em>(1), 104–118. <a href="https://doi.org/10.1002/asi.24549" class="uri">https://doi.org/10.1002/asi.24549</a></p>
-<p>Pampel, H. (2022). From library budget to information budget: Fostering transparency in the transformation towards open access. <em>Insights the UKSG journal</em>, <em>35</em>, 8. <a href="https://doi.org/10.1629/uksg.576" class="uri">https://doi.org/10.1629/uksg.576</a></p>
-<p>Stisser, A., Jahn, N., &amp; Schmidt, B. (2022). Stand und Perspektiven bibliometriegestützter Open-Access-Services an Universitäten in Deutschland. <em>Bibliothek Forschung und Praxis</em>, <em>46</em>(2), 275–283. <a href="https://doi.org/10.1515/bfp-2021-0098" class="uri">https://doi.org/10.1515/bfp-2021-0098</a></p>
+<div id="refs-vorarbeiten" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-fraser_no_2023" class="csl-entry" role="listitem">
+Fraser, N., Hobert, A., Jahn, N., Mayr, P., &amp; Peters, I. (2023). No deal: German researchers’ publishing and citing behaviors after big deal negotiations with elsevier. <em>Quantitative Science Studies</em>, <em>4</em>(2), 325–352. <a href="https://doi.org/10.1162/qss_a_00255">https://doi.org/10.1162/qss_a_00255</a>
+</div>
+<div id="ref-hobert_open_2021" class="csl-entry" role="listitem">
+Hobert, A., Jahn, N., Mayr, P., Schmidt, B., &amp; Taubert, N. (2021). Open access uptake in germany 2010–2018: Adoption in a diverse research landscape. <em>Scientometrics</em>, <em>126</em>(12), 9751–9777. <a href="https://doi.org/10.1007/s11192-021-04002-0">https://doi.org/10.1007/s11192-021-04002-0</a>
+</div>
+<div id="ref-jahn_how_2024" class="csl-entry" role="listitem">
+Jahn, N. (2024). <em>How open are hybrid journals included in transformative agreements?</em> <span>arXiv</span>. <a href="https://doi.org/10.48550/arXiv.2402.18255">https://doi.org/10.48550/arXiv.2402.18255</a>
+</div>
+<div id="ref-jahn_toward_2022" class="csl-entry" role="listitem">
+Jahn, N., Matthias, L., &amp; Laakso, M. (2022). Toward transparency of hybrid open access through publisher-provided metadata: An article-level study of elsevier. <em>Journal of the Association for Information Science and Technology</em>, <em>73</em>(1), 104–118. <a href="https://doi.org/10.1002/asi.24549">https://doi.org/10.1002/asi.24549</a>
+</div>
+<div id="ref-pampel_library_2022" class="csl-entry" role="listitem">
+Pampel, H. (2022). From library budget to information budget: Fostering transparency in the transformation towards open access. <em>Insights the <span>UKSG</span> Journal</em>, <em>35</em>, 8. <a href="https://doi.org/10.1629/uksg.576">https://doi.org/10.1629/uksg.576</a>
+</div>
+<div id="ref-taubert_understanding_2023" class="csl-entry" role="listitem">
+Taubert, N., Hobert, A., Jahn, N., Bruns, A., &amp; Iravani, E. (2023). Understanding differences of the <span>OA</span> uptake within the german university landscape (2010–2020): Part 1—journal-based <span>OA</span>. <em>Scientometrics</em>, <em>128</em>(6), 3601–3625. <a href="https://doi.org/10.1007/s11192-023-04716-3">https://doi.org/10.1007/s11192-023-04716-3</a>
+</div>
+</div>
 
 
 </section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
@@ -158,18 +222,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -201,7 +254,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -209,7 +284,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -541,7 +616,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       <ul class="footer-items list-unstyled">
 <li class="nav-item">
     <a class="nav-link" href="./impressum.html">
-<p>Legal Notice</p>
+<p><a href="https://www.hu-berlin.de/de/hu/impressum">Legal Notice</a></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./datenschutz.html">
+<p>Privacy Statement</p>
 </a>
   </li>  
 </ul>

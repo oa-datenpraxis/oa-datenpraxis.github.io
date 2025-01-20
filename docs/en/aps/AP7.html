@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<link rel="alternate" hreflang="de" href="http://127.0.0.1:4321/aps/AP7.html" />
+<link rel="alternate" hreflang="en" href="http://127.0.0.1:4321/en/aps/AP7.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.5.57">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>OA Datenpraxis - AP 7 Werkzeuge</title>
+<title>WP 7 Tools – OA Datenpraxis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,14 +52,14 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">OA Datenpraxis</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-<div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="http://127.0.0.1:4321/en/aps/AP7.html" id="language-link-de">DE</a></li></ul>
-</div>
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item"><div class="dropdown" id="languages-links-parent">
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="http://127.0.0.1:4321/aps/AP7.html" id="language-link-de">DE</a></li></ul>
+</div></li>
 <li class="nav-item">
     <a class="nav-link" href="../partners.html"> 
 <span class="menu-text">Project Partner</span></a>
@@ -67,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-details" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-details" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Details</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-details">
@@ -75,15 +77,30 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../arbeitspakete.html">
  <span class="dropdown-text">Work Packages</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../toolbox.html">
+ <span class="dropdown-text">Dashboards</span></a>
+  </li>  
     </ul>
 </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../news.html"> 
-<span class="menu-text">News</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-news" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">News</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-news">
+<li>
+    <a class="dropdown-item" href="../events.html">
+ <span class="dropdown-text">Events</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../archive.html">
+ <span class="dropdown-text">Archive</span></a>
+  </li>  
+    </ul>
+</li>
 </ul>
 </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
     <a href="https://openbiblio.social/@oa_datenpraxis" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-mastodon"></i></a>
     <a href="mailto:oa-datenpraxis@listserv.dfn.de" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope"></i></a>
 </div>
@@ -98,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">AP 7 Werkzeuge</h1>
+<h1 class="title">WP 7 Tools</h1>
 </div>
 
 
@@ -112,17 +129,17 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><section id="federführung" class="level2"><h2 class="anchored" data-anchor-id="federführung">Federführung</h2>
+</header><section id="lead" class="level2"><h2 class="anchored" data-anchor-id="lead">Lead</h2>
 <p><img src="../images/helmholtz_os_office.png" class="img-fluid" style="width:30.0%"></p>
-</section><section id="beschreibung" class="level2"><h2 class="anchored" data-anchor-id="beschreibung">Beschreibung</h2>
-<p>Zur Erhebung, Analyse und Visualisierung von Daten rund um die OA-Transformation gibt es mittlerweile ein großes Angebot an Werkzeugen. Neben den bereits etablierten Diensten wie dem Hybrid Open Access Dashboard (HOAD), OpenAPC und Open Access Monitor sind dies z. B.</p>
+</section><section id="description" class="level2"><h2 class="anchored" data-anchor-id="description">Description</h2>
+<p>There is now a wide range of tools for collecting, analysing and visualising data relating to the OA transformation. In addition to the already established services such as the <a href="https://subugoe.github.io/hoaddash/">Hybrid Open Access Dashboard (HOAD)</a>, <a href="https://openapc.net/">OpenAPC</a> and <a href="https://open-access-monitor.de/">Open Access Monitor</a>, these include, for example</p>
 <ul>
-<li>API-Clients für den computergestützten Zugriff auf offene Datenquellen (z. B. Clients von rOpenSci12 rund um Publikationsanalysen mit R)</li>
-<li>kostenpflichtige Werkzeuge wie z. B. Unsub, ein Tool für Bibliotheken zur Bewertung von Verlagsangeboten anhand lokaler Nutzungsdaten.</li>
-<li>kostenpflichtige Werkzeuge wie ChronosHub, Oable, OAMetrix und OA Switchboard rund um das APC-Management.</li>
-<li>Dashboards zur Datenvisualisierung wie das COKI Open Access Dashboard, das Charité Open Access Dashboard oder das Hamburg Open Science Dashboard.</li>
+<li>API clients for computer-aided access to open data sources (e.g. clients from <a href="https://ropensci.org/">rOpenSci</a> for publication analyses with R)</li>
+<li>Paid tools such as Unsub, a tool for libraries to evaluate publishing offers based on local usage data.</li>
+<li>Paid tools such as ChronosHub, Oable, OAMetrix and OA Switchboard for APC management.</li>
+<li>Dashboards for data visualisation such as the COKI Open Access Dashboard, the Charité Open Access Dashboard and the Hamburg Open Science Dashboard.</li>
 </ul>
-<p>Da es bisher keine Übersicht dieser vielfältigen Werkzeuge gibt und es bisher keine systematischen Aus- und Weiterbildungsverfahren im Bereich Scholarly Communication Analytics gibt, soll in AP 5 eine digitale Toolbox aufgebaut werden. Diese informiert über Werkzeuge der Datenarbeit rund um die OA- Transformation. Ausgehend von einer Recherche werden die Werkzeuge durch ein zu entwickelndes Metadatenschema beschrieben. Dieses Schema soll die Auffindbarkeit und Bewertung der Werkzeuge unterstützen. Die so entstehende Toolbox wird auf der Webseite des Projektes präsentiert. Nach Ende des Vorhabens wird die Kuration durch das Helmholtz Open Science Office fortgeführt. Die Toolbox wird in englischer Sprache betrieben.</p>
+<p>As there is currently no overview of these diverse tools and there are no systematic training and further education and further training procedures in the field of Scholarly Communication Analytics, a digital toolbox is to be developed in WP 5. This will provide information on tools for data work relating to OA transformation. Based on research, the tools will be described by a metadata schema to be developed. metadata schema to be developed. This schema should support the findability and evaluation of the tools. tools. The resulting toolbox will be presented on the project website. After the end of the curation will be continued by the Helmholtz Open Science Office. The toolbox will be operated in English language.</p>
 
 
 </section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
@@ -160,18 +177,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -203,7 +209,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -211,7 +239,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -543,7 +571,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       <ul class="footer-items list-unstyled">
 <li class="nav-item">
     <a class="nav-link" href="../impressum.html">
-<p>Legal Notice</p>
+<p><a href="https://www.hu-berlin.de/de/hu/impressum">Legal Notice</a></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../datenschutz.html">
+<p>Privacy Statement</p>
 </a>
   </li>  
 </ul>

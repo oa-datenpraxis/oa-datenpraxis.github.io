@@ -26,6 +26,7 @@ website:
       - text: "Details"
         menu: 
           - arbeitspakete.qmd
+          - toolbox.qmd
       - text: "News"
         menu:    
           - events.qmd
