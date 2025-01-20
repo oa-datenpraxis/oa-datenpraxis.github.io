@@ -35,19 +35,17 @@ jobs:
       - name: Install babelquarto package
         run: |
           Rscript -e "install.packages('babelquarto', repos = c('https://ropensci.r-universe.dev', 'https://cloud.r-project.org'))"
-         
+
+      - name: Install tidyverse, DT, and here packages
+        run: |
+          Rscript -e "install.packages(c('tidyverse', 'DT', 'here'))"
 
       - name: Install R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          extra-packages: |
-            any::tidyverse
-            any::here
-            any::DT
 
       - name: Check R package installation
         run: |
-          Rscript -e "library(httr)"
+          Rscript -e "library(tidyverse)"
           Rscript -e "library(babelquarto)"
 
       - name: Set up Quarto
