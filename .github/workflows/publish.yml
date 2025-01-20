@@ -30,7 +30,7 @@ jobs:
       - name: Install R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: any::curl, any::whoami, any::httr, any::tidyverse, any::here, any::DT, any::readxl
+          extra-packages: any::curl, any::whoami, any::httr, any::here, any::DT, any::readxl
 
       - name: Install babelquarto package
         run: |
@@ -41,7 +41,6 @@ jobs:
         run: |
           Rscript -e "library(httr)"
           Rscript -e "library(babelquarto)"
-          Rscript -e "library(tidyverse)"
           Rscript -e "library(here)"
           Rscript -e "library(DT)"
           Rscript -e "library(readxl)"

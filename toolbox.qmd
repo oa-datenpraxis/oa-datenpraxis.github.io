@@ -3,7 +3,6 @@ title: "Dashboards Übersicht (work in progress)"
 ---
 
 ```{r, echo=FALSE, message=FALSE}
-library(tidyverse)
 library(here)
 library(DT)
 library(readxl)
@@ -11,11 +10,6 @@ library(readxl)
 
 ```{r, echo=FALSE, message=FALSE}
 dashboards <- read_excel(here("files","Dashboards_online.xlsx"))
-```
-
-```{r, echo=FALSE}
-dashboards <- dashboards %>%
-  filter(NAME != "https://catalogue.openaire.eu/service/openaire.monitor/overview")
 ```
 
 ```{r, echo=FALSE}
