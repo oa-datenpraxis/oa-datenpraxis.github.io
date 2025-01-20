@@ -41,13 +41,9 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages: |
-            any::curl
-            any::whoami
             any::tidyverse
             any::here
             any::DT
-            any::httr
-            any::babelquarto
 
       - name: Check R package installation
         run: |
