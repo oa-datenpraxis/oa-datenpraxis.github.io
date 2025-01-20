@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      container:
+        image: rocker/tidyverse:latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -36,12 +38,9 @@ jobs:
         run: |
           Rscript -e "install.packages('babelquarto', repos = c('https://ropensci.r-universe.dev', 'https://cloud.r-project.org'))"
 
-      - name: Install tidyverse, DT, and here packages
+      - name: Install DT and here packages
         run: |
-          Rscript -e "install.packages(c('tidyverse', 'DT', 'here'))"
-
-      - name: Install R dependencies
-        uses: r-lib/actions/setup-r-dependencies@v2
+          Rscript -e "install.packages(c('DT', 'here'))"
 
       - name: Check R package installation
         run: |
