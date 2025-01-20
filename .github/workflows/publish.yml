@@ -37,12 +37,15 @@ jobs:
         with:
           extra-packages: |
             any::curl
-            any::httr
             any::whoami
             any::tidyverse
             any::here
             any::DT
-            any::babelquarto
+      - name: Install httr and babelquarto
+        run: |
+          Rscript -e "install.packages('httr', repos = 'https://cloud.r-project.org')"
+          Rscript -e "install.packages('babelquarto', repos = c('https://ropensci.r-universe.dev', 'https://cloud.r-project.org'))"
+          Rscript -e "library(babelquarto)"
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
