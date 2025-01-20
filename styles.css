@@ -16,3 +16,8 @@ a {
     text-decoration: none;
     color: #4484dc;
 }
+
+.datatable {
+    width: 100% !important;
+    max-width: 1200px !important; /* Adjust this value to your desired width */
+  }

@@ -36,9 +36,9 @@ jobs:
         run: |
           Rscript -e "install.packages('babelquarto', repos = c('https://ropensci.r-universe.dev', 'https://cloud.r-project.org'))"
 
-      - name: Install tidyverse, DT, and here packages
+      - name: Install R packages
         run: |
-          Rscript -e "install.packages(c('tidyverse', 'DT', 'here'))"
+          Rscript -e "install.packages(c('ragg','tidyverse', 'DT', 'here'))"
 
       - name: Check R package installation
         run: |
