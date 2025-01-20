@@ -13,8 +13,8 @@ dashboards <- read_excel(here("files","Dashboards_online.xlsx"))
 ```
 
 ```{r, echo=FALSE}
-dashboards$URL <- if_else(grepl("^https?://", dashboards$URL),
+dashboards$URL <- ifelse(grepl("^https?://", dashboards$URL),
  paste0("<a href='", dashboards$URL, "' target='_blank'>", dashboards$URL, "</a>"),
  dashboards$URL)
-datatable(dashboards)
+datatable(dashboards,escape = FALSE)
 ```
