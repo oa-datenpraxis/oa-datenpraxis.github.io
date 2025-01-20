@@ -35,7 +35,13 @@ jobs:
           Rscript -e "install.packages('curl', repos = 'https://cloud.r-project.org')"
           Rscript -e "install.packages('httr', repos = 'https://cloud.r-project.org')"
           Rscript -e "install.packages('whoami', repos = 'https://cloud.r-project.org')"
+          Rscript -e "install.packages('tidyverse', repos = 'https://cloud.r-project.org')"
+          Rscript -e "install.packages('here', repos = 'https://cloud.r-project.org')"
+          Rscript -e "install.packages('DT', repos = 'https://cloud.r-project.org')"
           Rscript -e "install.packages('babelquarto', repos = c('https://ropensci.r-universe.dev', 'https://cloud.r-project.org'))"
+          Rscript -e "library(tidyverse)"
+          Rscript -e "library(here)"
+          Rscript -e "library(DT)"
           Rscript -e "library(babelquarto)"
 
       - name: Set up Quarto
