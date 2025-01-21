@@ -25,8 +25,6 @@ dashboards <- read_excel(here("files","Dashboards_online.xlsx"))
 dashboards$URL <- ifelse(grepl("^https?://", dashboards$URL),
  paste0("<a href='", dashboards$URL, "' target='_blank'>", dashboards$URL, "</a>"),
  dashboards$URL)
-dashboards$ROR <- ifelse(grepl("^https?://", dashboards$ROR),
- paste0("<a href='", dashboards$ROR, "' target='_blank'>", dashboards$ROR, "</a>"),
- dashboards$ROR)
+dashboards$ROR <- sapply(regmatches(dashboards$ROR, gregexpr("https://ror.org/[0-9a-z]{9}", dashboards$ROR)), function(url) paste0("<a href='", url, "' target='_blank'>", url, "</a>"))
 datatable(dashboards,escape = FALSE,options = list(searchHighlight = TRUE, responsive = TRUE))
 ```
