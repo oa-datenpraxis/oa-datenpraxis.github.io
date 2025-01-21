@@ -25,5 +25,5 @@ dashboards <- read_excel(here("files","Dashboards_online.xlsx"))
 dashboards$URL <- ifelse(grepl("^https?://", dashboards$URL),
  paste0("<a href='", dashboards$URL, "' target='_blank'>", dashboards$URL, "</a>"),
  dashboards$URL)
-datatable(dashboards,escape = FALSE,options = list(searchHighlight = TRUE))
+datatable(dashboards,escape = FALSE,options = list(searchHighlight = TRUE, responsive = TRUE))
 ```
