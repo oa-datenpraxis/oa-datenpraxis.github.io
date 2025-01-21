@@ -1,14 +1,14 @@
 ---
 title: "Dashboards Übersicht (work in progress)"
 header-includes:
- - |
- <style>
- body .page-columns {
- display: inline-grid;
- gap: 0;
- grid-template-columns: [screen-start] 1.5em [screen-start-inset] 5fr [page-start page-start-inset] 7px [body-start-outset] 7px [body-start] 1.5em [body-content-start] minmax(1700px, calc(900px - 3em)) [body-content-end] 1.5em [body-end] 21px [body-end-outset] minmax(45px, 87px) [page-end-inset] 21px [page-end] 5fr [screen-end-inset] 1.5em [screen-end];
- }
- </style>
+  - |
+    <style>
+    body .page-columns {
+      display: inline-grid;
+      gap: 0;
+      grid-template-columns: [screen-start] 1.5em [screen-start-inset] 5fr [page-start page-start-inset] 7px [body-start-outset] 7px [body-start] 1.5em [body-content-start] minmax(1700px, calc(900px - 3em)) [body-content-end] 1.5em [body-end] 21px [body-end-outset] minmax(45px, 87px) [page-end-inset] 21px [page-end] 5fr [screen-end-inset] 1.5em [screen-end];
+    }
+    </style>
 ---
 
 ```{r, echo=FALSE, message=FALSE}
