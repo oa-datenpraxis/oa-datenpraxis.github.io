@@ -375,7 +375,7 @@
   <macro name="date-sort">
     <!-- This is necessary to ensure that citeproc sorts all item types chonologically in the same list. -->
     <choose>
-      <if type="article article-journal book chapter entry entry-dictionary entry-encyclopedia dataset figure graphic manuscript map musical_score patent report review review-book thesis" match="any">
+      <if type="article article-journal book chapter entry entry-dictionary entry-encyclopedia dataset figure graphic manuscript map musical_score patent report review review-book thesis unpublished misc" match="any">
         <date variable="issued" date-parts="year" form="numeric"/>
       </if>
       <else-if type="paper-conference">
