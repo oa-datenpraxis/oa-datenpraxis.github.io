@@ -5,11 +5,16 @@
 }
 
 .btn {
-    background-color: #4484dc;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #545555;
+    border-radius: 12px;
 }
 
 .btn:hover {
-    background-color: #0c1c44;
+    background-color: #4484dc;
+    border-color: #4484dc;
+    border-radius: 12px;
 }
 
 a {

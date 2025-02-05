@@ -1,0 +1,15 @@
+website:
+  navbar:
+    left:
+      - href: partners.qmd
+        text: "Projektpartner"
+      - href: publications.qmd
+        text: "Publikationen"
+      - text: "Projektvorhaben"
+        menu: 
+          - arbeitspakete.qmd
+          #- toolbox.qmd
+      - text: "Aktuelles"
+        menu:    
+          - events.qmd
+          - archive.qmd

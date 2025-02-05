@@ -20,17 +20,6 @@ website:
         href: https://openbiblio.social/@oa_datenpraxis
       - icon: envelope
         href: mailto:oa-datenpraxis@listserv.dfn.de
-    left:
-      - href: partners.qmd
-      - publications.qmd
-      - text: "Details"
-        menu: 
-          - arbeitspakete.qmd
-          #- toolbox.qmd
-      - text: "News"
-        menu:    
-          - events.qmd
-          - archive.qmd
   search: false
   
 
@@ -45,10 +34,8 @@ format:
       body-width: 850px
       margin-width: 150px
 
-
-editor: visual
-
 babelquarto:
+  languagelinks: navbar
   languagecodes:
   - name: de
     text: "DE"
