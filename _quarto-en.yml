@@ -2,7 +2,7 @@ website:
   navbar:
     left:
       - href: partners.qmd
-        text: "Project Partner"
+        text: "Project Partners"
       - href: publications.qmd
         text: "Publications"
       - text: "Project Plan"
