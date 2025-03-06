@@ -1,3 +1,10 @@
 ---
 title: "Veranstaltungen"
 ---
+### 2025-06-24: 9. Bibliothekskongress 2025, Bremen
+
+[Open-Access-Monitoring-Dashboards mitQuarto](https://bid2025.abstractserver.com/program/#/details/sessions/79)
+
+### 2025-06-27: 9. Bibliothekskongress 2025, Bremen
+
+[Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland](https://bid2025.abstractserver.com/program/#/details/presentations/273)
