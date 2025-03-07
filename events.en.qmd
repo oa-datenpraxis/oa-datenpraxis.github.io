@@ -1,6 +1,13 @@
 ---
 title: "Events"
 ---
+### 2025-03-28: OA Datenpraxis Webinar: Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland
+
+The webinar will present  results of a survey conducted in 2024 as part of the project OA Datenpraxis.
+The event will take place on 28.03.2025 from 10:00 to 11:00 CET via Zoom.
+Information on the program and registration can be found under this link: [https://hu-berlin.zoom-x.de/webinar/register/WN_pKTlDzjsQwC7QspLxwMHCg
+](https://hu-berlin.zoom-x.de/webinar/register/WN_pKTlDzjsQwC7QspLxwMHCg)
+
 ### 2025-06-24: 9. Bibliothekskongress 2025, Bremen
 
 [Open-Access-Monitoring-Dashboards mitQuarto](https://bid2025.abstractserver.com/program/#/details/sessions/79)
