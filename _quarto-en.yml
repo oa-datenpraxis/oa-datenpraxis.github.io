@@ -20,3 +20,8 @@ website:
         menu:    
           - events.qmd
           - archive.qmd
+      - text: "OA Dashboards"
+        menu:
+          - dashboards.qmd
+          - dashboards_schema.qmd
+
