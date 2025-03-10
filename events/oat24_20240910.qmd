@@ -1,0 +1,35 @@
+---
+title: Workshop <br/> Stand und Perspektive des Open-Access-Reportings
+subtitle: Open-Access-Tage 2024, Köln
+---
+
+## Daten
+
+**Datum:** 10.09.2024
+
+**Uhrzeit:** 13:30--15:00 Uhr
+
+**Raum:** Raum 149
+
+[Programm auf der Seite des Veranstalters](https://open-access-tage.de/open-access-tage-2024-koeln/koeln/programm/dienstag-10092024)
+
+## Beschreibung
+
+Vor dem Hintergrund der Definition expliziter Zielmarken für das Open-Access-Publikationsaufkommen durch das Bundesministerium für Bildung und Forschung, einiger Bundesländer und verschiedener weiterer Stakeholder gewinnt Open-Access-Reporting weiter an Bedeutung. Gleichzeitig erschweren Umstände wie die komplexe Datenlage eine flächendeckende Implementierung von Verfahren, und es wird deutlich, dass das Erfassen des Publikationsaufkommens durch die Betrachtung weiterer Indikatoren ergänzt werden sollte, um den unterschiedlichen Typen von Hochschulen und deren fachlicher Ausrichtung besser gerecht zu werden.
+
+Dieser interaktive Workshop richtet sich daher an Mitarbeitende an wissenschaftlichen Einrichtungen, die an der Durchführung von Open-Access-Reporting interessiert sind.
+
+Im Workshop werden unterschiedliche Ansätze des Open-Access-Reportings beleuchtet und diskutiert sowie anhand praxisnaher Beispiele das konkrete Vorgehen bei der Berichterstattung vermittelt.
+
+Der Workshop wird mit kurzen Praxisberichten zu Open-Access-Reporting auf Länderebene basierend auf qualitativen und quantitativen Ansätzen durch das Open-Access-Büro Berlin und die Vernetzungs- und Kompetenzstelle Brandenburg eröffnet.
+
+Anschließend erhalten Teilnehmende anhand eigener Fragestellungen und Analyseszenarien einen Einblick in die Nutzung des Open Access Monitors [^1] für das Reporting des Publikationsaufkommens ihrer Einrichtung sowie ergänzender Informationen zu Strategien und Services von wissenschaftlichen Einrichtungen auf Basis des oa.atlas [^2].
+
+Anhand vorbereiteter Impulse diskutieren Teilnehmende in Kleingruppen Chancen und Herausforderungen der vorgestellten Reporting-Ansätze, bevor die Ergebnisse kurz im Plenum vorgestellt werden.
+
+Nach Abschluss des Workshops sind die Teilnehmenden mit verschiedenen Ansätzen des Open-Access-Reportings vertraut und in der Lage, den Open Access Monitor und den oa.atlas für die Erstellung eines Berichts über ihre Open-Access-Aktivitäten sowie das Publikationsaufkommen ihrer Einrichtung zu nutzen.
+
+An dem Workshop können maximal 20 Personen (exklusive der Organisator:innen) teilnehmen. Teilnehmende müssen einen eigenen Laptop mitbringen.
+
+[^1]: [open-access-monitor.de](open-access-monitor.de)
+[^2]: [open-access.network/services/oaatlas](open-access.network/services/oaatlas)

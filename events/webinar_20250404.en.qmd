@@ -1,0 +1,31 @@
+---
+title: OA Datenpraxis Webinar <br/> Open metadata for university rankings illustrated by the Leiden Ranking
+---
+
+## Dates
+
+**Date:** 04.04.2025
+
+**Time:** 10:00--11:00 AM CEST
+
+**Location:** Online via Zoom
+
+**Registration:** [https://hu-berlin.zoom-x.de/webinar/register/WN_4_U1o0yDSbOufyh7y_aloQ](https://hu-berlin.zoom-x.de/webinar/register/WN_4_U1o0yDSbOufyh7y_aloQ)
+
+
+## Description
+
+Open metadata on scientific publications increasingly play an important role in university rankings. They not only enable comprehensive and transparent reporting on the research performance of universities, but also offer a wide range of reuse options.
+
+The webinar will present the Leiden Ranking of the CWTS, which now also utilises open metadata. The example of the University of Konstanz will then be used to illustrate how universities can use the ranking to provide data-supported information about the research and open access achievements of their institution both internally and externally.
+
+We are delighted that Dr Nees Jan van Eck (CWTS Leiden) and Dr Anja Oberländer (University of Konstanz) will be sharing their insights with us, both from the perspective of creating a ranking and from the application perspective.
+
+This webinar is aimed at all employees in the field of Open Access/Open Science and heads of scientific institutions, as well as people interested in science assessment and Open Access/Open Science.
+
+### Programme:
+
+- Welcome by Sophia Dörner (5 minutes)
+- Presentation 1: Nees Jan van Eck (CWTS Leiden) introduces the Leiden Ranking Open Edition with a focus on open data and open access as a ranking dimension (20 minutes).
+- Presentation 2: Anja Oberländer (University of Konstanz) provides a user perspective on the Leiden Ranking and discusses strategic approaches to Open Access/Open Science (20 minutes).
+- Q&A Session (15 minutes).

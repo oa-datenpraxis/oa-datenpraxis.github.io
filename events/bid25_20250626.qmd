@@ -1,0 +1,20 @@
+---
+title: Vortrag <br/> Offene Metadaten als Bezugspunkt für die Verhandlung und Evaluierung von Open-Access-Transformationsverträgen
+subtitle: 9. Bibliothekskongress 2025, 24. – 27. Juni 2025, Bremen
+---
+
+## Daten
+
+**Datum:** 26.06.2025
+
+**Uhrzeit:** 11:00--12:30 Uhr
+
+**Saal:** Kaisen Saal (mit Streaming)
+
+[Programm auf der Seite des Veranstalters](https://2025.bid-kongress.de/programm/)
+
+## Beschreibung
+
+Die Georg-August-Universität Göttingen hat am 28. August 2024 die „Barcelona Declaration on Open Research Information“ unterzeichnet. Damit schließt sich die Universität Göttingen namhaften internationalen Wissenschaftsakteuren an, die sich für die Öffnung von Forschungsinformationen einsetzen.
+
+Der Vortrag stellt zunächst die diesbezüglichen Handlungsfelder der Niedersächsischen Staats- und Universitätsbibliothek Göttingen im Sinne der Prinzipien der Barcelona Declaration kurz vor. Der Schwerpunkt des Vortrags liegt dann auf der Bewertung der Anwendbarkeit offener Metadaten wissenschaftlicher Publikationen für das Monitoring internationaler Open-Access-Transformationsverträge im Vergleich zu proprietären Bibliometriedatenbanken. Die Datenanalyse von mehr als 13.000 hybriden wissenschaftlichen Zeitschriften, die Teil eines Transformationsvertrages sind, aus den offenen Quellen Crossref und OpenAlex sowie den geschlossenen Datenbanken Web of Science und Scopus zeigt Potenziale und Lücken auf. Darauf aufbauend werden Handlungsfelder für den Ausbau offener Metadaten benannt, die Bibliotheken und Verlage im Rahmen von Verhandlungen über Open-Access-Transformationsverträge adressieren können. Insgesamt kommt Open-Access-Transformationsverträgen eine Schlüsselrolle zu, um durch die Bereitstellung offener Metadaten seitens der Verlage das Open-Access-Monitoring zu verbessern und damit den Wandel hin zu offenen Forschungsinformationen im Sinne der Barcelona Declaration zu fördern.

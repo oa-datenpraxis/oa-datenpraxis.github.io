@@ -1,0 +1,25 @@
+---
+title: Workshop <br/> Stand und Perspektive des Open-Access-Reportings
+subtitle: Open-Access-Tage 2024, Köln
+---
+
+## Dates
+
+**Date:** 10.09.2024
+
+**Time:** 13:30--15:00 PM CEST
+
+**Room:** Room 149
+
+[Programme on the organiser's website](https://open-access-tage.de/open-access-tage-2024-koeln/koeln/programm/dienstag-10092024)
+
+## Description
+
+Against the background of the definition of explicit targets for the volume of open access publications by the Federal Ministry of Education and Research, some federal states and various other stakeholders, open access reporting is becoming increasingly important. At the same time, circumstances such as the complex data situation make it difficult to implement procedures across the board, and it is becoming clear that the recording of publication volumes should be supplemented by the consideration of further indicators in order to do better justice to the different types of universities and their disciplinary orientation.
+
+This interactive workshop is therefore aimed at staff at scientific institutions who are interested in carrying out open access reporting. The workshop will examine and discuss different approaches to open access reporting and provide practical examples of the concrete reporting procedure. The workshop will open with short practical reports on open access reporting at state level based on qualitative and quantitative approaches by the Open Access Office Berlin and the Brandenburg Networking and Competence Centre. Participants will then be given an insight into the use of the Open Access Monitor [^1] for reporting the publication volume of their institution and supplementary information on strategies and services of scientific institutions based on the oa.atlas [^2] using their own questions and analysis scenarios. Using prepared impulses, participants discuss the opportunities and challenges of the reporting approaches presented in small groups before the results are briefly presented in plenary. After completing the workshop, participants will be familiar with various approaches to open access reporting and will be able to use the Open Access Monitor and the oa.atlas to prepare a report on their open access activities and the publication output of their institution.
+
+A maximum of 20 people (excluding the organisers) can take part in the workshop. Participants must bring their own laptop.
+
+[^1]: [open-access-monitor.de](open-access-monitor.de)
+[^2]: [open-access.network/services/oaatlas](open-access.network/services/oaatlas)

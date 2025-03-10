@@ -1,17 +1,19 @@
 ---
 title: "Veranstaltungen"
 ---
-### 2025-03-28: OA Datenpraxis Webinar: Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland
+## OA Datenpraxis Webinarreihe
 
-In dem Webinar werden Ergebnisse einer Umfrage vorgestellt, die im Rahmen des Projekts OA Datenpraxis im Jahr 2024 durchgeführt wurde.
-Die Veranstaltung findet am 28.03.2025 von 10:00 bis 11:00 CET über Zoom statt.
-Informationen zum Programm sowie die Anmeldung finden Sie unter diesem Link: [https://hu-berlin.zoom-x.de/webinar/register/WN_pKTlDzjsQwC7QspLxwMHCg
-](https://hu-berlin.zoom-x.de/webinar/register/WN_pKTlDzjsQwC7QspLxwMHCg)
+#### [28.03.2025: Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland](events/webinar_20250328.qmd)
 
-### 2025-06-24: 9. Bibliothekskongress 2025, Bremen
+#### [04.04.2025: Offene Metadaten für Hochschulrankings am Beispiel des Leiden Ranking](events/webinar_20250404.qmd)
 
-[Open-Access-Monitoring-Dashboards mitQuarto](https://bid2025.abstractserver.com/program/#/details/sessions/79)
 
-### 2025-06-27: 9. Bibliothekskongress 2025, Bremen
+## Konferenzen & Tagungen
 
-[Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland](https://bid2025.abstractserver.com/program/#/details/presentations/273)
+### 9. Bibliothekskongress 2025, 24. – 27. Juni 2025, Bremen
+
+#### [24.06.2025: Hands-on Lab -- Open-Access-Monitoring-Dashboards mit Quarto](events/bid25_20250624.qmd)
+
+#### [26.06.2025: Vortrag -- Offene Metadaten als Bezugspunkt für die Verhandlung und Evaluierung von Open-Access-Transformationsverträgen](events/bid25_20250626.qmd)
+
+#### [27.06.2025: Vortrag -- Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland](events/bid25_20250627.qmd)

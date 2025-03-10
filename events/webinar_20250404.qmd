@@ -1,0 +1,32 @@
+---
+title: OA Datenpraxis Webinar <br/> Offene Metadaten für Hochschulrankings am Beispiel des Leiden Ranking
+---
+
+## Daten
+
+**Datum:** 04.04.2025
+
+**Uhrzeit:** 10:00--11:00 Uhr
+
+**Ort:** Online über Zoom
+
+**Registrierung unter:** [https://hu-berlin.zoom-x.de/webinar/register/WN_4_U1o0yDSbOufyh7y_aloQ](https://hu-berlin.zoom-x.de/webinar/register/WN_4_U1o0yDSbOufyh7y_aloQ)
+
+
+## Beschreibung
+
+Offene Metadaten zu wissenschaftlichen Publikationen spielen auch in Hochschulrankings eine zunehmend wichtige Rolle. Sie ermöglichen nicht nur eine umfassende und transparente Berichterstattung über die Forschungsleistungen von Universitäten, sondern bieten auch vielfältige Nachnutzungsmöglichkeiten.
+
+Im Webinar wird das einschlägige Leiden Ranking des CWTS vorgestellt, das nun auch offene Metadaten nutzt. Am Beispiel der Universität Konstanz wird anschließend illustriert, wie Universitäten das Ranking nutzen können, um datengestützt über die Forschungs- und Open-Access-Erfolge ihrer Institution nach innen und außen zu informieren.
+
+Wir freuen uns, dass Dr. Nees Jan van Eck (CWTS Leiden) und Dr. Anja Oberländer (Universität Konstanz) ihre Einblicke sowohl aus der Perspektive der Erstellung eines Rankings als auch aus der Anwendungsperspektive mit uns teilen.
+
+Das Webinar richtet sich an alle Mitarbeiter im Bereich Open Access/Open Science und Leiter von wissenschaftlichen Einrichtungen sowie an Personen, die sich für Wissenschaftsbewertung und Open Access/Open Science interessieren.
+
+
+### Programm
+
+- Begrüßung durch Sophia Dörner (5 Minuten)
+- Vortrag 1: Nees Jan van Eck (CWTS Leiden) stellt das Leiden Ranking Open Edition mit Fokus auf offene Daten und Open Access als Rankingdimension vor (20 Minuten)
+- Vortrag 2: Anja Oberländer (Universität Konstanz) stellt die Anwenderperspektive des Leiden Rankings vor und erläutert strategische Ansätze zu Open Access/Open Science (20 Minuten)
+- Fragen & Diskussion (15 Minuten)

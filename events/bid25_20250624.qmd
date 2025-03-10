@@ -1,0 +1,23 @@
+---
+title: Hands-on Lab <br/> Open-Access-Monitoring Dashboards mit Quarto
+subtitle: 9. Bibliothekskongress 2025, 24. – 27. Juni 2025, Bremen
+---
+
+## Daten
+
+**Datum:** 24.06.2025
+
+**Uhrzeit:** 16:00--18:00 Uhr
+
+**Saal:** Salon London
+
+[Programm auf der Seite des Veranstalters](https://2025.bid-kongress.de/programm/)
+
+## Beschreibung
+
+Das Ziel des Hands-on Labs ist, eine niedrigschwellige praktische Einführung in die Erstellung eines einfachen Dashboards zur Darstellung des (Open-Access-)Publikationsoutputs wissenschaftlicher Einrichtungen zu geben. Zu diesem Zweck wird Quarto genutzt, ein wissenschaftliches und technisches Open-Source-Publikationssystem, das es ermöglicht, reproduzierbare Artikel, Präsentationen, Dashboards, Websites, Blogs oder Bücher in verschiedenen (Export-)Formaten zu erstellen. Ziel ist die übersichtliche und leicht abrufbare Darstellung von unterschiedlichen OA-bezogenen Daten und ein Beitrag zu einer reproduzierbaren OA Datenpraxis, welche auch im Rahmen des Projekts OA Datenpraxis[^1] angestrebt und ausgebaut werden. Es wird zu Beginn ein Datensatz für die eigene Institution von OpenAlex[^2] abgefragt. Anschließend werden gemeinsam die Grundlagen der Verwendung von Quarto zum Laden und Bearbeiten von Daten, zur Erstellung von Visualisierungen und zur Präsentation der Ergebnisse in einem benutzerfreundlichen Dashboard mit R erarbeitet. Vorkenntnisse in der Programmiersprache R oder im Umgang mit Quarto werden nicht vorausgesetzt, sind jedoch hilfreich. Der im Rahmen des Labs verwendete Code wird so erarbeitet, dass er auch ohne Vorkenntnisse genutzt und nachvollzogen werden kann.
+Bitte bringen Sie einen Laptop mit und erstellen vorab einen Posit Cloud Account[^3].
+
+[^1]: [https://oa-datenpraxis.de/](https://oa-datenpraxis.de/)
+[^2]: [https://openalex.org/](https://openalex.org/)
+[^3]: [https://posit.cloud/plans/free](https://posit.cloud/plans/free)

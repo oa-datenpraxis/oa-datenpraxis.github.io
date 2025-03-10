@@ -1,0 +1,17 @@
+---
+title: Workshop <br/> Transparenz in der Wissenschaft -- Strategien für offene Informationsversorgung 
+subtitle: 25. DINI-Jahrestagung, 18.--19. September 2024, Potsdam
+---
+## Daten
+
+**Datum:** 19.09.2024
+
+**Uhrzeit:** 11:15--12:15 Uhr
+
+[Programm auf der Seite des Veranstalters](https://dini.de/veranstaltungen/jahrestagungen/25-dini-jahrestagung/programm-der-25-dini-jahrestagung)
+
+[Workshop Report](https://doi.org/10.5281/zenodo.14505423)
+
+## Beschreibung
+
+Sowohl die Open-Access-Strategie des Bundesministeriums für Bildung und Forschung (BMBF), als auch die Empfehlungen der Europäischen Kommission zu OA an die EU-Mitgliedsstaaten fordern wissenschaftliche Einrichtungen auf, die Transparenz rund um vertragliche Vereinbarungen mit Verlagen zu stärken. Auch die Allianz der deutschen Wissenschaftsorganisationen adressiert dieses Thema. In der Praxis wird diese Forderung jedoch bis auf wenige Ausnahmen (z. B. die Offenlegung der DEAL-Verträge) nicht umgesetzt. Während im Bereich der Publikationsgebühren mit der Initiative OpenAPC ein international beachteter Ansatz zur Offenlegung der Mittel geschaffen wurde, steht eine solche Initiative z. B. für Subskriptionskosten noch aus. Vor diesem Hintergrund strebt das DFG-Projekt Transform2Open eine nationale Transparenzinitiative an, die sowohl Subskriptions- als auch Transformations- und OA-Verträge adressiert. Von besonderem Interesse sind der Umgang mit Non-Disclosure-Agreements und aktuelle Hindernisse für Transparenzbestrebungen. Auch praktische Verfahren zur Offenlegung von Kosten sind ein wichtiges Thema. Mit den Bestrebungen zur Öffnung von Forschungsinformationen, z. B. im Rahmen der Initiative „Barcelona Declaration on Open Research Information“, ergeben sich darüber hinaus neue Möglichkeiten der Zusammenführung von Daten über Publikationen und ihre Kosten. Unter dem Tagungsmotto „Gemeinsame Infrastrukturen für eine offene Wissenschaft“ der 25. Jahrestagung der Deutschen Initiative für Netzwerkinformation (DINI) am 19. September 2024 in Potsdam wurden im Rahmen eines World-Café-Workshops thematisiert, welche Aspekte und Einrichtungen für eine prototypische Implementierung einer Transparenzinitiative zunächst fokussiert werden sollten. Gemeinsam wurden Herausforderungen bei der Umsetzung identifiziert, um die Umsetzung in die Praxis vorzubereiten. Der Workshop wurde gemeinsam von den DFG-Projekten Transform2Open und OA Datenpraxis angeboten. OA Datenpraxis unterstützt die Strukturbildung für die Open-Access-Transformation auf nationaler Ebene. Eine enge Zusammenarbeit mit Akteur:innen aus dem Projekt DEAL, OpenAPC, openCost und dem OA-Monitor besteht bzw. wird weiter ausgebaut.

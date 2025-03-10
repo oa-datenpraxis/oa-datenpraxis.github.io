@@ -1,0 +1,18 @@
+---
+title: Workshop <br/> Transparenz in der Wissenschaft -- Strategien für offene Informationsversorgung 
+subtitle: 25. DINI-Jahrestagung, 18.--19. September 2024, Potsdam
+---
+
+## Dates
+
+**Date:** 19.09.2024
+
+**Time:** 11:15 AM to 12:15 PM CEST
+
+[Programme on the organiser's website](https://dini.de/veranstaltungen/jahrestagungen/25-dini-jahrestagung/programm-der-25-dini-jahrestagung)
+
+[Workshop Report](https://doi.org/10.5281/zenodo.14505423)
+
+## Description
+
+Both the Open Access strategy of the Federal Ministry of Education and Research (BMBF) and the European Commission's recommendations on OA to the EU member states call on scientific institutions to increase the transparency of contractual agreements with publishers. The Alliance of German Science Organisations also addresses this issue. In practice, however, with a few exceptions (e.g. the disclosure of DEAL contracts), this demand has not been implemented. While the OpenAPC initiative has created an internationally recognised approach to the disclosure of funds in the area of publication fees, there is still no such initiative for subscription costs, for example. Against this background, the DFG project Transform2Open is endeavouring to create a national transparency initiative that addresses subscription, transformation and OA contracts. Of particular interest are the handling of non-disclosure agreements and current obstacles to transparency endeavours. Practical procedures for disclosing costs are also an important topic. Efforts to open up research information, e.g. as part of the ‘Barcelona Declaration on Open Research Information’ initiative, are also creating new opportunities to pool data on publications and their costs. Under the conference motto ‘Shared infrastructures for open science’ of the 25th annual conference of the German Initiative for Networked Information (DINI) on 19 September 2024 in Potsdam, a World Café workshop was held to discuss which aspects and institutions should initially be focused on for a prototype implementation of a transparency initiative. Implementation challenges were jointly identified in order to prepare for practical implementation. The workshop was jointly organised by the DFG projects Transform2Open and OA Datenpraxis. OA Datenpraxis supports the development of structures for the open access transformation at national level. Close cooperation with stakeholders from the DEAL project, OpenAPC, openCost and the OA Monitor exists or will be further expanded.
