@@ -15,7 +15,6 @@ website:
       - text: "Projektvorhaben"
         menu: 
           - arbeitspakete.qmd
-          #- toolbox.qmd
       - text: "Aktuelles"
         menu:    
           - events.qmd
