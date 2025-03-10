@@ -4,10 +4,11 @@ title: "Archive"
 
 ## Past Events
 
-### 2024-09-10: Open-Access-Tage 2024, Cologne, Germany
 
-[Stand und Perspektive des Open-Access-Reportings](https://open-access-tage.de/open-access-tage-2024-koeln/koeln/programm/dienstag-10092024)
+### Open-Access-Tage 2024, Cologne
 
-### 2024-09-19: 25. DINI-Jahrestagung, Potsdam, Germany
+#### [Stand und Perspektive des Open-Access-Reportings](events/oat24_20240910.en.qmd)
 
-[Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung](https://dini.de/fileadmin/jahrestagungen/2024/Abstract_DINI-Jahrestagung_2024-1.pdf)
+### 25th DINI Annual Conference, 18--19 September 2024, Potsdam
+
+#### [Transparenz in der Wissenschaft -- Strategien für offene Informationsversorgung](events/dini24_20240919.en.qmd)
