@@ -21,3 +21,11 @@ a {
     text-decoration: none;
     color: #4484dc;
 }
+
+#quarto-back-to-top {
+  left: 90%;
+}
+
+.nav-footer-center .footer-items {
+  display: table;
+}
