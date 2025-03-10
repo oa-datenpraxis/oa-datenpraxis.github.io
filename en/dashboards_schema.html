@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="alternate" hreflang="de" href="/aps/AP1.html" />
-<link rel="alternate" hreflang="en" href="/en/aps/AP1.en.html" />
+<link rel="alternate" hreflang="de" href="/dashboards_schema.html" />
+<link rel="alternate" hreflang="en" href="/en/dashboards_schema.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.6.42">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>WP 1 Institutional Level – OA Datenpraxis</title>
+<title>Metadata Schema – OA Datenpraxis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,11 +21,11 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script><script src="../site_libs/quarto-nav/headroom.min.js"></script><script src="../site_libs/clipboard/clipboard.min.js"></script><script src="../site_libs/quarto-html/quarto.js"></script><script src="../site_libs/quarto-html/popper.min.js"></script><script src="../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../site_libs/quarto-html/anchor.min.js"></script><link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script><link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ebf40501830e14ca08927bb4e5c5c1bc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script><script id="quarto-search-options" type="application/json">{
+<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-html/quarto.js"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-ebf40501830e14ca08927bb4e5c5c1bc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script><script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -39,16 +39,32 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><link rel="stylesheet" href="../styles.css">
+}</script><style>
+@media screen and (min-width: 1280px) {
+  body .page-columns {
+  display: inline-grid;
+  gap: 0;
+  grid-template-columns: [screen-start] 1.5em [screen-start-inset] 5fr [page-start page-start-inset] 7px [body-start-outset] 7px [body-start] 1.5em [body-content-start] minmax(1280px, calc(900px - 3em)) [body-content-end] 1.5em [body-end] 21px [body-end-outset] minmax(45px, 87px) [page-end-inset] 21px [page-end] 5fr [screen-end-inset] 1.5em [screen-end] !important;
+  }
+}
+@media screen and (min-width: 1500px) {
+  body .page-columns {
+  display: inline-grid;
+  gap: 0;
+  grid-template-columns: [screen-start] 1.5em [screen-start-inset] 5fr [page-start page-start-inset] 7px [body-start-outset] 7px [body-start] 1.5em [body-content-start] minmax(1700px, calc(900px - 3em)) [body-content-end] 1.5em [body-end] 21px [body-end-outset] minmax(45px, 87px) [page-end-inset] 21px [page-end] 5fr [screen-end-inset] 1.5em [screen-end] !important;
+  }
+}
+</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/logo_oa_datenpraxis.png" alt="" class="navbar-logo"></a>
-    <a class="navbar-brand" href="../index.html">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logo_oa_datenpraxis.png" alt="" class="navbar-logo"></a>
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">OA Datenpraxis</span>
     </a>
   </div>
@@ -58,14 +74,14 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> EN</button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="/aps/AP1.html" id="language-link-de">DE</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> EN</button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="/dashboards_schema.html" id="language-link-de">DE</a></li></ul>
 </div></li>
 <li class="nav-item">
-    <a class="nav-link" href="../partners.html"> 
+    <a class="nav-link" href="./partners.html"> 
 <span class="menu-text">Project Partners</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../publications.html"> 
+    <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -74,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-project-plan">
 <li>
-    <a class="dropdown-item" href="../arbeitspakete.html">
+    <a class="dropdown-item" href="./arbeitspakete.html">
  <span class="dropdown-text">Work Packages</span></a>
   </li>  
     </ul>
@@ -85,11 +101,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-news">
 <li>
-    <a class="dropdown-item" href="../events.html">
+    <a class="dropdown-item" href="./events.html">
  <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../archive.html">
+    <a class="dropdown-item" href="./archive.html">
  <span class="dropdown-text">Archive</span></a>
   </li>  
     </ul>
@@ -100,11 +116,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-oa-dashboards">
 <li>
-    <a class="dropdown-item" href="../dashboards.html">
+    <a class="dropdown-item" href="./dashboards.html">
  <span class="dropdown-text">Open-Access-Dashboard Collection</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../dashboards_schema.html">
+    <a class="dropdown-item" href="./dashboards_schema.html">
  <span class="dropdown-text">Metadata Schema</span></a>
   </li>  
     </ul>
@@ -126,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">WP 1 Institutional Level</h1>
+<h1 class="title">Metadata Schema</h1>
 </div>
 
 
@@ -140,14 +156,139 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><section id="lead" class="level2"><h2 class="anchored" data-anchor-id="lead">Lead</h2>
-<p><img src="../images/hu.png" class="img-fluid" style="width:30.0%"></p>
-</section><section id="description" class="level2"><h2 class="anchored" data-anchor-id="description">Description</h2>
-<p>The basis for the overall project is an inventory that identifies and documents the topic, the actors and the interplay of aspects of data analyses for shaping the OA transformation. For this purpose, a target group-specific view of professionals who deal with the OA transformation in operational and strategic areas of scientific institutions on the basis of publication and cost data is taken. The focus is on administrative and library staff at universities and non-university institutions. These include professionals in the areas of digital publishing, OA, acquisition and collection development, research information and research funding.</p>
-<p>Based on a stakeholder analysis (T1.1), the need for information, the handling of data sources and the interdependence of data analyses in the context of OA transformation at academic institutions will be surveyed (T1.2). The potential of the open science monitoring systems currently being developed will also be analysed. The resulting inventory (T1.3), which looks at the specific practices in dealing with data on OA and future requirements of those involved, will create the basis for recommendations on the topic (WP 5).</p>
-
-
-</section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</header><table class="caption-top table">
+<colgroup>
+<col style="width: 0%">
+<col style="width: 2%">
+<col style="width: 66%">
+<col style="width: 0%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead><tr class="header">
+<th>ID</th>
+<th>Property</th>
+<th>Definition</th>
+<th>Occ</th>
+<th>Values</th>
+<th>Example</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Name</td>
+<td>name given to the dashboard by its authors, from (in descending priority): provided citation form, name given in associated publication, self-description on the website (header, ‘about’ page, self-referring term throughout the website), browser tab name; year is removed from dashboard name if there are versions for multiple years; instances of dashboard collections are named after the scheme ‘[Name of dashboard collection]: [Name of organization]’</td>
+<td>1</td>
+<td></td>
+<td>French Open Science Monitor, CWTS Leiden Ranking, OpenAIRE Monitor Dashboard: Universität Göttingen</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>URL</td>
+<td>URL to homepage of the dashboard; if listed dashboard is only one of other dashboard-unrelated services on a website, URL of the specific webpage</td>
+<td>1</td>
+<td></td>
+<td>https://frenchopensciencemonitor.esr.gouv.fr/</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Time period</td>
+<td>Time period in years from the year of earliest data presented in the dashboard to the year of latest data; Note: This is not the year of publication in the dashboard - ‘year of latest data’ earlier than 2024 does not necessarily mean the dashboard is inactive; the Leiden Ranking 2024 e.g. refers to data from 2019 - 2022</td>
+<td>1-n</td>
+<td>[year of common era] - [year of common era]</td>
+<td>2018 – 2024</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Operator</td>
+<td>Name of operator responsible for running the dashboard; if that operator does not have an associated ROR, but there is an organization containing the operator that has a ROR, this organization is listed after the original operator, separated by comma; multiple direct operators are separated by semicolon.</td>
+<td>1-n</td>
+<td></td>
+<td>Centre for Science and Technology Studies (CWTS), Leiden University</td>
+</tr>
+<tr class="odd">
+<td>4.1</td>
+<td>ROR</td>
+<td>ROR of the organization(s) listed under 4 if available, N/A if unavailable</td>
+<td>1-n</td>
+<td>ROR ID as an operable URL, N/A</td>
+<td>https://ror.org/027bh9e22</td>
+</tr>
+<tr class="even">
+<td>4.2</td>
+<td>Operator type</td>
+<td>Type of organization running the dashboard, distinguishing two major types of research-related organizations, Research Performing and Funding Organizations (‘RPO’ and ‘RFO’ respectively), with `other’ for everything else</td>
+<td>1-n</td>
+<td>Research performing organization (RPO), Research funding organization (RFO), other</td>
+<td>RPO</td>
+</tr>
+<tr class="odd">
+<td>5.1</td>
+<td>Scope</td>
+<td>Scope of the coverage of dashboard: international if data for more than one country, national if data for one country, institutional if data on one or more organizations but not country-wide</td>
+<td>1</td>
+<td>international, national, research institution</td>
+<td>international</td>
+</tr>
+<tr class="even">
+<td>5.2</td>
+<td>Countries</td>
+<td>Country code of the organization(s) whose data are represented in the dashboard, represented with country code value ‘Europe’ if more than 1 country but all from EU + Switzerland OR Norway OR UK value ‘global’ if more than 1 country and more than 3 countries outside of ‘Europe’</td>
+<td>1-n</td>
+<td>Controlled vocabulary: 3-letter ISO 3166-1 alpha-3 country code in addition: ‘Europe’, ‘global’</td>
+<td>DEU</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>Data type</td>
+<td>Type of data that the dashboard shows ‘publications’ for data on textual publications such as e.g. journal articles ‘data’ for research data ‘software’ for research software ‘infrastructures’ for data on e.g. repositories ‘other’ for data that does not fall under any of the other categories</td>
+<td>1-n</td>
+<td>publications, data, software, infrustructures, other</td>
+<td>publications</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>Dashboard license</td>
+<td>Copyright license of the software used to create the dashboard; if the dashboard provides a generic license for its website without specifically mentioning the software or its dataset, this license is instead entered here</td>
+<td>1-n</td>
+<td>controlled vocabulary: SPDX License List entries, N/A</td>
+<td>MIT, Apache-2.0</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>Data license</td>
+<td>Copyright license under which the data of the dashboard is published</td>
+<td>1-n</td>
+<td>controlled vocabulary: SPDX License List entries, N/A</td>
+<td>CC-BY-4,0, CC0-1.0</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>Data source</td>
+<td>availability of the data source the dashboard is based on: ‘open’ if data comes from an open source such as e.g. OpenAlex, ‘proprietary’ if not, both values if dashboard uses data sources of both types</td>
+<td>1-n</td>
+<td>open, proprietary, N/A</td>
+<td>open</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>Collection</td>
+<td>names the dashboard collection the dashboard is part of if applicable; ‘N/A’ otherwise</td>
+<td>1</td>
+<td>string of the dashboard collection name, N/A</td>
+<td>OpenAIRE Monitor Dashboard, CHORUS dashboard</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>Documentation</td>
+<td>free text field in which relevant links and comments are gathered; these can include: links to the specific part of the website where the various licenses are mentioned, DOIs to accompanying publications about the dashboard and other comments</td>
+<td>0-n</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -572,12 +713,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
 <li class="nav-item">
-    <a class="nav-link" href="../impressum.html">
+    <a class="nav-link" href="./impressum.html">
 <p><a href="https://www.hu-berlin.de/de/hu/impressum">Legal Notice</a></p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../datenschutz.html">
+    <a class="nav-link" href="./datenschutz.html">
 <p>Privacy Statement</p>
 </a>
   </li>  
