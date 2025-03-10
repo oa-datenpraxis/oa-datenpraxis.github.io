@@ -7,8 +7,8 @@ title: "Archive"
 
 ### Open-Access-Tage 2024, Cologne
 
-#### [Stand und Perspektive des Open-Access-Reportings](events/oat24_20240910.en.qmd)
+#### [Stand und Perspektive des Open-Access-Reportings](events/oat24_20240910.qmd)
 
 ### 25th DINI Annual Conference, 18--19 September 2024, Potsdam
 
-#### [Transparenz in der Wissenschaft -- Strategien für offene Informationsversorgung](events/dini24_20240919.en.qmd)
+#### [Transparenz in der Wissenschaft -- Strategien für offene Informationsversorgung](events/dini24_20240919.qmd)
