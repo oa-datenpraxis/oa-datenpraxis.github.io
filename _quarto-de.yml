@@ -1,4 +1,11 @@
 website:
+  page-footer: 
+    center:
+      - href: impressum.qmd
+      - href: datenschutz.qmd
+      - text: "{{< iconify bxl:creative-commons size=xl >}} {{< iconify humbleicons:creative-commons-by size=xl >}}"
+        href: "https://creativecommons.org/licenses/by/4.0/deed.de"
+      - text: "Sofern nicht anders angegeben, ist der Inhalt dieser Website unter einer Creative Commons Namensnennung 4.0 International Lizenz lizenziert."
   navbar:
     left:
       - href: partners.qmd
