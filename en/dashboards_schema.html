@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.6.42">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Metadata Schema – OA Datenpraxis</title>
+<title>Metadata Scheme – OA Datenpraxis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./dashboards_schema.html">
- <span class="dropdown-text">Metadata Schema</span></a>
+ <span class="dropdown-text">Metadata Scheme</span></a>
   </li>  
     </ul>
 </li>
@@ -142,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Metadata Schema</h1>
+<h1 class="title">Metadata Scheme</h1>
 </div>
 
 
@@ -177,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>1</td>
 <td>Name</td>
-<td>name given to the dashboard by its authors, from (in descending priority): provided citation form, name given in associated publication, self-description on the website (header, ‘about’ page, self-referring term throughout the website), browser tab name; year is removed from dashboard name if there are versions for multiple years; instances of dashboard collections are named after the scheme ‘[Name of dashboard collection]: [Name of organization]’</td>
+<td>Name given to the dashboard by its authors, from (in descending priority): provided citation form, name given in associated publication, self-description on the website (header, ‘about’ page, self-referring term throughout the website), browser tab name; year is removed from dashboard name if there are versions for multiple years; instances of dashboard collections are named after the scheme ‘[Name of dashboard collection]: [Name of organization]’</td>
 <td>1</td>
 <td></td>
 <td>French Open Science Monitor, CWTS Leiden Ranking, OpenAIRE Monitor Dashboard: Universität Göttingen</td>
@@ -193,10 +193,10 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>3</td>
 <td>Time period</td>
-<td>Time period in years from the year of earliest data presented in the dashboard to the year of latest data; Note: This is not the year of publication in the dashboard - ‘year of latest data’ earlier than 2024 does not necessarily mean the dashboard is inactive; the Leiden Ranking 2024 e.g. refers to data from 2019 - 2022</td>
+<td>Time period in years from the year of earliest data presented in the dashboard to the year of latest data; note: this is not the year of publication in the dashboard - ‘year of latest data’ earlier than 2024 does not necessarily mean the dashboard is inactive; the Leiden Ranking 2024 e.g. refers to data from 2019–2022</td>
 <td>1-n</td>
-<td>[year of common era] - [year of common era]</td>
-<td>2018 – 2024</td>
+<td>[year of common era]–[year of common era]</td>
+<td>2018–2024</td>
 </tr>
 <tr class="even">
 <td>4</td>
@@ -217,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>4.2</td>
 <td>Operator type</td>
-<td>Type of organization running the dashboard, distinguishing two major types of research-related organizations, Research Performing and Funding Organizations (‘RPO’ and ‘RFO’ respectively), with `other’ for everything else</td>
+<td>Type of organization running the dashboard, distinguishing two major types of research-related organizations, Research Performing and Funding Organizations (‘RPO’ and ‘RFO’ respectively), with ‘other’ for everything else</td>
 <td>1-n</td>
 <td>Research performing organization (RPO), Research funding organization (RFO), other</td>
 <td>RPO</td>
@@ -235,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Countries</td>
 <td>Country code of the organization(s) whose data are represented in the dashboard, represented with country code value ‘Europe’ if more than 1 country but all from EU + Switzerland OR Norway OR UK value ‘global’ if more than 1 country and more than 3 countries outside of ‘Europe’</td>
 <td>1-n</td>
-<td>Controlled vocabulary: 3-letter ISO 3166-1 alpha-3 country code in addition: ‘Europe’, ‘global’</td>
+<td>Controlled vocabulary: 3-letter ISO 3166-1 alpha-3 country code; additionally: ‘Europe’, ‘global’</td>
 <td>DEU</td>
 </tr>
 <tr class="odd">
@@ -267,7 +267,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Data source</td>
 <td>availability of the data source the dashboard is based on: ‘open’ if data comes from an open source such as e.g. OpenAlex, ‘proprietary’ if not, both values if dashboard uses data sources of both types</td>
 <td>1-n</td>
-<td>open, proprietary, N/A</td>
+<td>open, restricted, N/A</td>
 <td>open</td>
 </tr>
 <tr class="odd">
@@ -282,8 +282,8 @@ ul.task-list li input[type="checkbox"] {
 <td>11</td>
 <td>Documentation</td>
 <td>free text field in which relevant links and comments are gathered; these can include: links to the specific part of the website where the various licenses are mentioned, DOIs to accompanying publications about the dashboard and other comments</td>
-<td>0-n</td>
-<td></td>
+<td>1-n</td>
+<td>string of comment, N/A</td>
 <td></td>
 </tr>
 </tbody>
