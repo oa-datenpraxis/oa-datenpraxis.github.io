@@ -1,6 +1,6 @@
 ---
 title: "OA Datenpraxis"
-subtitle: "Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training &amp; Vernetzung"
+subtitle: "Data practice for shaping the open access transformation - analysis, recommendation, training &amp; networking"
 ---
 
 ## Project description
