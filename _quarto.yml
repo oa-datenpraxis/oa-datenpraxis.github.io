@@ -16,6 +16,8 @@ website:
         href: https://openbiblio.social/@oa_datenpraxis
       - icon: envelope
         href: mailto:oa-datenpraxis@listserv.dfn.de
+      - icon: github
+        href: https://github.com/oa-datenpraxis/oa-datenpraxis.github.io
   search: false
   
 
