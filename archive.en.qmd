@@ -4,6 +4,11 @@ title: "Archive"
 
 ## Past Events
 
+### OA Datenpraxis Webinar Series
+
+#### [28.03.2025: Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland](events/webinar_20250328.qmd)
+
+#### [04.04.2025: Open Metadata for University Rankings illustrated by the Leiden Ranking](events/webinar_20250404.qmd)
 
 ### Open-Access-Tage 2024, Cologne
 
