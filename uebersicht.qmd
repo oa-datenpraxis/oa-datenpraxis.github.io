@@ -1,0 +1,17 @@
+---
+title: "Übersicht"
+---
+## Unsere Collection
+
+Hier ist unsere Mail-Adresse
+
+
+## Konferenzen & Tagungen
+
+### 9. Bibliothekskongress 2025, 24. – 27. Juni 2025, Bremen
+
+#### [24.06.2025: Hands-on Lab -- Open-Access-Monitoring-Dashboards mit Quarto](events/bid25_20250624.qmd)
+
+#### [26.06.2025: Vortrag -- Offene Metadaten als Bezugspunkt für die Verhandlung und Evaluierung von Open-Access-Transformationsverträgen](events/bid25_20250626.qmd)
+
+#### [27.06.2025: Vortrag -- Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland](events/bid25_20250627.qmd)
