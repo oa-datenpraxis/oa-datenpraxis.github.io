@@ -7,7 +7,7 @@ With Open Access gaining importance in science policy, questions arise about its
 
 To support this, we conducted a search for relevant dashboards and created a custom metadata schema to index them. In May 2025, we launched a community process to further develop and expand the collection.
 
-You can find the Open Access dashboard collection [here](dashboards.en.qmd) and the corresponding metadata scheme [here](dashboards_schema.en.qmd).
+You can find the Open Access dashboard collection [here](dashboards.qmd) and the corresponding metadata scheme [here](dashboards_schema.qmd).
 
 If you have any suggestions for modifications or a new dashboard that isn’t listed here yet, we encourage you to write us here: [oa-datenpraxis-dashboards@listserv.dfn.de](mailto:oa-datenpraxis-dashboards@listserv.dfn.de)
 We are happy about any suggestions and will add new dashboards for you.
