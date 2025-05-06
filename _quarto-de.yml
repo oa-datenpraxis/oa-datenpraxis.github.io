@@ -21,5 +21,6 @@ website:
           - archive.qmd
       - text: "OA Dashboards"
         menu:
+          - dashboard_uebersicht.qmd
           - dashboards.qmd
           - dashboards_schema.qmd
