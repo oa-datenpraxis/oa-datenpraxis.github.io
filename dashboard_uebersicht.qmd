@@ -9,7 +9,7 @@ Dafür haben wir eine Recherche zu relevanten Dashboards durchgeführt und ein e
 
 Sie finden die Open-Access-Dashboard-Collection [hier](dashboards.qmd) und das dazugehörige Metadatenschema [hier](dashboards_schema.qmd).
 
-Falls Sie Änderungsvorschläge haben oder ein Dashboard haben, was hier noch nicht gelistet wird, schreiben Sie uns sehr gerne hier: [oa-datenpraxis-dashboards@listserv.dfn.de](mailto:oa-datenpraxis-dashboards@listserv.dfn.de)
+Falls Sie Änderungsvorschläge haben oder ein Dashboard haben, was hier noch nicht gelistet wird, schreiben Sie uns sehr gerne hier: [oa-datenpraxis-dashboards@listserv.dfn.de](mailto:oa-datenpraxis-dashboards@listserv.dfn.de).
 Wir freuen uns über jeden Hinweis und tragen neue Dashboards ein.
 
 Falls Sie selbst tätig werden wollen, finden Sie eine editierbare Version der Dashboard-Collection hier: 
