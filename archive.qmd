@@ -11,10 +11,18 @@ title: "Archiv"
 
 #### [04.04.2025: Open Metadata for University Rankings illustrated by the Leiden Ranking](events/webinar_20250404.qmd)
 
-### Open-Access-Tage 2024, Köln
+### 9. Bibliothekskongress, 24.--27. Juni 2025, Bremen
 
-#### [Stand und Perspektive des Open-Access-Reportings](events/oat24_20240910.qmd)
+#### [Hands-on Lab: Open-Access-Monitoring Dashboards mit Quarto](events/bid25_20250624.qmd)
+
+#### [Vortrag: Offene Metadaten als Bezugspunkt für die Verhandlung und Evaluierung von Open-Access-Transformationsverträgen](events/bid25_20250626.qmd)
+
+#### [Vortrag: Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland](events/bid25_20250627.qmd)
 
 ### 25. DINI-Jahrestagung, 18.--19. September 2024, Potsdam
 
 #### [Transparenz in der Wissenschaft -- Strategien für offene Informationsversorgung](events/dini24_20240919.qmd)
+
+### Open-Access-Tage 2024, 10. - 12. September 2024, Köln
+
+#### [Stand und Perspektive des Open-Access-Reportings](events/oat24_20240910.qmd)
