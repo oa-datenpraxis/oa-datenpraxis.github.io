@@ -2,7 +2,7 @@
 
 <!-- badges: start -->
 
-[![Render and deploy OA Datenpraxis website](https://github.com/oa-datenpraxis/oa-datenpraxis.github.io/blob/main/.github/workflows/publish.yml/badge.svg)](https://github.com/oa-datenpraxis/oa-datenpraxis.github.io/blob/main/.github/workflows/publish.yml)
+[![Render and deploy OA Datenpraxis website](https://github.com/oa-datenpraxis/oa-datenpraxis.github.io/actions/workflows/publish.yml/badge.svg)](https://github.com/oa-datenpraxis/oa-datenpraxis.github.io/actions/workflows/publish.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 <!-- badges: end -->
