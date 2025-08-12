@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "dashboard_uebersicht.html",
-    "href": "dashboard_uebersicht.html",
-    "title": "OA Dashboards Contact",
-    "section": "",
-    "text": "With Open Access gaining importance in science policy, questions arise about its share in the publication output of research institutions, countries, and globally. In the OA Data Practices project, we are developing an overview of dashboards on Open Access.\nTo support this, we conducted a search for relevant dashboards and created a custom metadata schema to index them. In May 2025, we launched a community process to further develop and expand the collection.\nYou can find the Open Access dashboard collection here and the corresponding metadata schema here.\nIf you have any suggestions for modifications or a new dashboard that isn’t listed here yet, we encourage you to write us here: oa-datenpraxis-dashboards@listserv.dfn.de. We are happy about any suggestions and will add new dashboards for you.\nIf you want to become active yourself you can find an editable version of the dashboard collection here: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz There you can add your new suggestions yourself."
-  },
-  {
-    "objectID": "dashboard_uebersicht.html#oa-dashboard-collection",
-    "href": "dashboard_uebersicht.html#oa-dashboard-collection",
-    "title": "OA Dashboards Contact",
-    "section": "",
-    "text": "With Open Access gaining importance in science policy, questions arise about its share in the publication output of research institutions, countries, and globally. In the OA Data Practices project, we are developing an overview of dashboards on Open Access.\nTo support this, we conducted a search for relevant dashboards and created a custom metadata schema to index them. In May 2025, we launched a community process to further develop and expand the collection.\nYou can find the Open Access dashboard collection here and the corresponding metadata schema here.\nIf you have any suggestions for modifications or a new dashboard that isn’t listed here yet, we encourage you to write us here: oa-datenpraxis-dashboards@listserv.dfn.de. We are happy about any suggestions and will add new dashboards for you.\nIf you want to become active yourself you can find an editable version of the dashboard collection here: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz There you can add your new suggestions yourself."
-  },
-  {
     "objectID": "partners.html",
     "href": "partners.html",
     "title": "Project Partner",
@@ -42,6 +28,62 @@
     "text": "Göttingen State and University Library\nThe Göttingen State and University Library (SUB Göttingen) is one of Germany’s leading libraries with its diverse range of tasks, which it fulfils at local, regional, national and international level. As an internationally recognised competence centre for the digital library, it provides new services for research. Its tasks include securing the supra-regional supply of literature, as in the DFG-funded programme “Specialised Information Services for Science”, preserving and making accessible scientific results and the cultural-historical heritage, as well as its commitment to being a research and development partner for a future-proof research and information infrastructure in Germany and internationally.\n\nTeam\nNajko Jahn https://orcid.org/0000-0001-5105-1463\nBirgit Schmidt https://orcid.org/0000-0001-8036-5859\nSophia Dörner https://orcid.org/0000-0001-8747-3422"
   },
   {
+    "objectID": "dashboard_uebersicht.html",
+    "href": "dashboard_uebersicht.html",
+    "title": "OA Dashboards Contact",
+    "section": "",
+    "text": "With Open Access gaining importance in science policy, questions arise about its share in the publication output of research institutions, countries, and globally. In the OA Data Practices project, we are developing an overview of dashboards on Open Access.\nTo support this, we conducted a search for relevant dashboards and created a custom metadata schema to index them. In May 2025, we launched a community process to further develop and expand the collection.\nYou can find the Open Access dashboard collection here and the corresponding metadata schema here.\nIf you have any suggestions for modifications or a new dashboard that isn’t listed here yet, we encourage you to write us here: oa-datenpraxis-dashboards@listserv.dfn.de. We are happy about any suggestions and will add new dashboards for you.\nIf you want to become active yourself you can find an editable version of the dashboard collection here: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz There you can add your new suggestions yourself."
+  },
+  {
+    "objectID": "dashboard_uebersicht.html#oa-dashboard-collection",
+    "href": "dashboard_uebersicht.html#oa-dashboard-collection",
+    "title": "OA Dashboards Contact",
+    "section": "",
+    "text": "With Open Access gaining importance in science policy, questions arise about its share in the publication output of research institutions, countries, and globally. In the OA Data Practices project, we are developing an overview of dashboards on Open Access.\nTo support this, we conducted a search for relevant dashboards and created a custom metadata schema to index them. In May 2025, we launched a community process to further develop and expand the collection.\nYou can find the Open Access dashboard collection here and the corresponding metadata schema here.\nIf you have any suggestions for modifications or a new dashboard that isn’t listed here yet, we encourage you to write us here: oa-datenpraxis-dashboards@listserv.dfn.de. We are happy about any suggestions and will add new dashboards for you.\nIf you want to become active yourself you can find an editable version of the dashboard collection here: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz There you can add your new suggestions yourself."
+  },
+  {
+    "objectID": "aps/AP8.html#description",
+    "href": "aps/AP8.html#description",
+    "title": "WP 8 Networks",
+    "section": "Description",
+    "text": "Description\nWork with data on OA transformation is often carried out by various stakeholders in an academic institution. For example, professionals such as OA officers, librarians in acquisitions and licensing, research officers and actors in the field of research funding deal with aspects of data work relating to OA. The aim of the WP is to facilitate dialogue on defined issues beyond professional profiles and thus actively enable inter- and transdisciplinary discourse on data work relating to OA. The project initiates the networks and organises them with three digital workshops each over the course of the project. In addition, a mailing list will be organised for the networks, thus providing an impetus for longer-term cooperation. At the end of the project, it will be determined with other stakeholders, such as the Conference of Information and Library Science Training and Study Programmes (KIBA), to what extent the topics discussed can be continued in other committees and networks."
+  },
+  {
+    "objectID": "aps/AP4.html#description",
+    "href": "aps/AP4.html#description",
+    "title": "WP 4 Open-Access-Reporting",
+    "section": "Description",
+    "text": "Description\nThe digital strategy of the Federal Ministry of Education and Research (BMBF) states: “By 2025, 70 per cent of all new scientific publications in Germany will be published exclusively or additionally via open access.” (Bundesministerium für Bildung und Forschung, 2019, p. 37). In addition to this national OA target, individual federal states have defined specific OA targets. In the “2019 Monitoring Report” of the Joint Science Conference’s (GWK) Pact for Research and Innovation (PFI), the federal and state governments emphasise the need to establish “consistent and comparable surveys on open access publications” (Gemeinsame Wissenschaftskonferenz, 2019, p. 16). In a discussion paper published in 2022 by the Working Group on the Scientific Publication System in the Alliance’s priority initiative “Digital Information”, an initial proposal for a common set of indicators on OA for Germany is formulated (Deinzer et al., 2022). The problem with this proposal is that it has not yet been discussed beyond the working group.\nWP 4 builds on this work - in which an applicant was involved as head of the responsible task group of the Scientific Publication System WG - and organises a dialogue to further develop this proposal on the basis of the discussion paper. The aim is to develop a national standard for the definition of OA for reporting and the associated data collection practice."
+  },
+  {
+    "objectID": "aps/AP7.html#description",
+    "href": "aps/AP7.html#description",
+    "title": "WP 7 Tools",
+    "section": "Description",
+    "text": "Description\nThere is now a wide range of tools for collecting, analysing and visualising data relating to the OA transformation. In addition to the already established services such as the Hybrid Open Access Dashboard (HOAD), OpenAPC and Open Access Monitor, these include, for example\n\nAPI clients for computer-aided access to open data sources (e.g. clients from rOpenSci for publication analyses with R)\nPaid tools such as Unsub, a tool for libraries to evaluate publishing offers based on local usage data.\nPaid tools such as ChronosHub, Oable, OAMetrix and OA Switchboard for APC management.\nDashboards for data visualisation such as the COKI Open Access Dashboard, the Charité Open Access Dashboard and the Hamburg Open Science Dashboard.\n\nAs there is currently no overview of these diverse tools and there are no systematic training and further education and further training procedures in the field of Scholarly Communication Analytics, a digital toolbox is to be developed in WP 5. This will provide information on tools for data work relating to OA transformation. Based on research, the tools will be described by a metadata schema to be developed. metadata schema to be developed. This schema should support the findability and evaluation of the tools. tools. The resulting toolbox will be presented on the project website. After the end of the curation will be continued by the Helmholtz Open Science Office. The toolbox will be operated in English language."
+  },
+  {
+    "objectID": "aps/AP1.html#description",
+    "href": "aps/AP1.html#description",
+    "title": "WP 1 Institutional Level",
+    "section": "Description",
+    "text": "Description\nThe basis for the overall project is an inventory that identifies and documents the topic, the actors and the interplay of aspects of data analyses for shaping the OA transformation. For this purpose, a target group-specific view of professionals who deal with the OA transformation in operational and strategic areas of scientific institutions on the basis of publication and cost data is taken. The focus is on administrative and library staff at universities and non-university institutions. These include professionals in the areas of digital publishing, OA, acquisition and collection development, research information and research funding.\nBased on a stakeholder analysis (T1.1), the need for information, the handling of data sources and the interdependence of data analyses in the context of OA transformation at academic institutions will be surveyed (T1.2). The potential of the open science monitoring systems currently being developed will also be analysed. The resulting inventory (T1.3), which looks at the specific practices in dealing with data on OA and future requirements of those involved, will create the basis for recommendations on the topic (WP 5)."
+  },
+  {
+    "objectID": "datenschutz.html",
+    "href": "datenschutz.html",
+    "title": "Privacy Statement",
+    "section": "",
+    "text": "We do not automatically or manually collect, store or process any personal data.\nThis website contains links or buttons that lead to third-party services like Mastodon or email. Use of these features may result in data collection. Engaging with these buttons, tools, or content may automatically send certain browser information to the service provider. Please review the privacy statements of the service providers for more information.\nThis website is hosted on GitHub Pages. GitHub may collect personal data when interacting with their services, for more information please review the GitHub Privacy Statement.\nFor more information, see the Data Protection Statement of Humboldt-Universität zu Berlin.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "impressum.html",
+    "href": "impressum.html",
+    "title": "Legal Notice",
+    "section": "",
+    "text": "Berlin School of Library and Information Science, Humboldt-Universität zu Berlin\nDorotheenstr. 26\n10117 Berlin\nGermany\nKontakt\nProf. Dr. Heinz Pampel\nE-Mail: heinz.pampel@hu-berlin.de\nPhone: (+49 30) 2093 70977\n\n\n\n Back to top"
+  },
+  {
     "objectID": "events/oat24_20240910.html",
     "href": "events/oat24_20240910.html",
     "title": "Workshop  Stand und Perspektive des Open-Access-Reportings",
@@ -68,6 +110,27 @@
     "title": "Workshop  Stand und Perspektive des Open-Access-Reportings",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nopen-access-monitor.de↩︎\nopen-access.network/services/oaatlas↩︎"
+  },
+  {
+    "objectID": "events/webinar_20250404.html",
+    "href": "events/webinar_20250404.html",
+    "title": "OA Datenpraxis Webinar  Open metadata for university rankings illustrated by the Leiden Ranking",
+    "section": "",
+    "text": "Date: 04.04.2025\nTime: 10:00–11:00 AM CEST\nLocation: Online via Zoom\nRegistration: https://hu-berlin.zoom-x.de/webinar/register/WN_4_U1o0yDSbOufyh7y_aloQ"
+  },
+  {
+    "objectID": "events/webinar_20250404.html#dates",
+    "href": "events/webinar_20250404.html#dates",
+    "title": "OA Datenpraxis Webinar  Open metadata for university rankings illustrated by the Leiden Ranking",
+    "section": "",
+    "text": "Date: 04.04.2025\nTime: 10:00–11:00 AM CEST\nLocation: Online via Zoom\nRegistration: https://hu-berlin.zoom-x.de/webinar/register/WN_4_U1o0yDSbOufyh7y_aloQ"
+  },
+  {
+    "objectID": "events/webinar_20250404.html#description",
+    "href": "events/webinar_20250404.html#description",
+    "title": "OA Datenpraxis Webinar  Open metadata for university rankings illustrated by the Leiden Ranking",
+    "section": "Description",
+    "text": "Description\nOpen metadata on scientific publications increasingly play an important role in university rankings. They not only enable comprehensive and transparent reporting on the research performance of universities, but also offer a wide range of reuse options.\nThe webinar will present the Leiden Ranking of the CWTS, which now also utilises open metadata. The example of the University of Konstanz will then be used to illustrate how universities can use the ranking to provide data-supported information about the research and open access achievements of their institution both internally and externally.\nWe are delighted that Dr Nees Jan van Eck (CWTS Leiden) and Dr Anja Oberländer (University of Konstanz) will be sharing their insights with us, both from the perspective of creating a ranking and from the application perspective.\nThis webinar is aimed at all employees in the field of Open Access/Open Science and heads of scientific institutions, as well as people interested in science assessment and Open Access/Open Science.\n\nProgramme:\n\nWelcome by Sophia Dörner (5 minutes)\nPresentation 1: Nees Jan van Eck (CWTS Leiden) introduces the Leiden Ranking Open Edition with a focus on open data and open access as a ranking dimension (20 minutes).\nPresentation 2: Anja Oberländer (University of Konstanz) provides a user perspective on the Leiden Ranking and discusses strategic approaches to Open Access/Open Science (20 minutes).\nQ&A Session (15 minutes)."
   },
   {
     "objectID": "events/bid25_20250627.html",
@@ -112,6 +175,34 @@
     "text": "Description\nThe webinar will present the results of a survey conducted as part of the OA Datenpraxis project funded by the German Research Foundation (DFG) in 2024.\nThe survey, which was developed in dialogue with representatives of the DEAL subgroup ‘Communication’, investigated how data on publication costs are currently collected at scientific institutions in Germany. Representatives of universities, universities of applied sciences, institutes of non-university research organisations and federal departmental research institutions were addressed. Of the 583 people invited, 258 (44.3 %) took part in the survey. The survey is the first comprehensive survey on publication costs in Germany.\nThis webinar is aimed at professionals who are interested in open access monitoring, in particular the recording of open access publication costs.\n\nProgramme\nAfter a presentation of the survey results, participants will have the opportunity to ask questions about the survey. This will be followed by a panel discussion with members of the DEAL group on some key aspects of recording publication costs.\n\nWelcome by Heinz Pampel (5 minutes)\nPresentation of the survey results by Dorothea Strecker (30 minutes)\nQ&A on the survey (10 minutes)\nPanel discussion with members of the DEAL Group (15 minutes)"
   },
   {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Ferguson, L. M., Pampel, H., Strecker, D., & Meistring, M. (2025). Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung. Zenodo. https://doi.org/10.5281/zenodo.14505423\n\n\nJahn, N. (2025a). Estimating transformative agreement impact on hybrid open access: A comparative large-scale study using Scopus, Web of Science and open metadata. Scientometrics. https://doi.org/10.1007/s11192-025-05390-3\n\n\nJahn, N. (2025b). How open are hybrid journals included in transformative agreements? Quantitative Science Studies, 6, 242–262. https://doi.org/10.1162/qss_a_00348\n\n\nOberländer, A. (2025). OA Datenpraxis Webinar: Leiden Ranking at the University of Konstanz. https://doi.org/10.5281/zenodo.15593872\n\n\nSchneider, J., Pampel, H., & Höfting, J. (2025). Data Documentation for: Mapping the Landscape of Open Access Dashboards: A Dataset for Research and Infrastructure Development. Zenodo. https://doi.org/10.5281/zenodo.15593821\n\n\nStrecker, D., Höfting, J., & Pampel, H. (2025). Wie erfassen wissenschaftliche Einrichtungen Daten zu Publikationskosten? In oa.blog. https://open-access.network/blog/wie-erfassen-wissenschaftliche-einrichtungen-daten-zu-publikationskosten\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025a). Dataset for: Recording of publication costs at research performing institutions in Germany. Zenodo. https://doi.org/10.5281/zenodo.14732554\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025b). Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland. https://nbn-resolving.org/urn:nbn:de:0290-opus4-198024\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025c). Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland. Bibliothek Forschung Und Praxis. https://doi.org/10.1515/bfp-2025-0008\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025d). OA Datenpraxis Webinar: Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland. https://doi.org/10.5281/zenodo.15076512\n\n\nVan Eck, N. J. (2025). OA Datenpraxis Webinar: CWTS Leiden Ranking Open Edition. https://doi.org/10.5281/zenodo.15147838\n\n\nBarbers, I., Kindling, M., Stadler, H., & Strecker, D. (2024). Stand und Perspektive des Open-Access-Reportings. https://doi.org/10.5281/zenodo.13831942\n\n\nFerguson, L. M., Meistring, M., Pampel, H., & Strecker, D. (2024). Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung. https://doi.org/10.5281/zenodo.13837272\n\n\nPampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). https://doi.org/10.5281/ZENODO.10794298"
+  },
+  {
+    "objectID": "publications.html#publications-from-the-project",
+    "href": "publications.html#publications-from-the-project",
+    "title": "Publications",
+    "section": "",
+    "text": "Ferguson, L. M., Pampel, H., Strecker, D., & Meistring, M. (2025). Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung. Zenodo. https://doi.org/10.5281/zenodo.14505423\n\n\nJahn, N. (2025a). Estimating transformative agreement impact on hybrid open access: A comparative large-scale study using Scopus, Web of Science and open metadata. Scientometrics. https://doi.org/10.1007/s11192-025-05390-3\n\n\nJahn, N. (2025b). How open are hybrid journals included in transformative agreements? Quantitative Science Studies, 6, 242–262. https://doi.org/10.1162/qss_a_00348\n\n\nOberländer, A. (2025). OA Datenpraxis Webinar: Leiden Ranking at the University of Konstanz. https://doi.org/10.5281/zenodo.15593872\n\n\nSchneider, J., Pampel, H., & Höfting, J. (2025). Data Documentation for: Mapping the Landscape of Open Access Dashboards: A Dataset for Research and Infrastructure Development. Zenodo. https://doi.org/10.5281/zenodo.15593821\n\n\nStrecker, D., Höfting, J., & Pampel, H. (2025). Wie erfassen wissenschaftliche Einrichtungen Daten zu Publikationskosten? In oa.blog. https://open-access.network/blog/wie-erfassen-wissenschaftliche-einrichtungen-daten-zu-publikationskosten\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025a). Dataset for: Recording of publication costs at research performing institutions in Germany. Zenodo. https://doi.org/10.5281/zenodo.14732554\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025b). Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland. https://nbn-resolving.org/urn:nbn:de:0290-opus4-198024\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025c). Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland. Bibliothek Forschung Und Praxis. https://doi.org/10.1515/bfp-2025-0008\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025d). OA Datenpraxis Webinar: Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland. https://doi.org/10.5281/zenodo.15076512\n\n\nVan Eck, N. J. (2025). OA Datenpraxis Webinar: CWTS Leiden Ranking Open Edition. https://doi.org/10.5281/zenodo.15147838\n\n\nBarbers, I., Kindling, M., Stadler, H., & Strecker, D. (2024). Stand und Perspektive des Open-Access-Reportings. https://doi.org/10.5281/zenodo.13831942\n\n\nFerguson, L. M., Meistring, M., Pampel, H., & Strecker, D. (2024). Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung. https://doi.org/10.5281/zenodo.13837272\n\n\nPampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). https://doi.org/10.5281/ZENODO.10794298"
+  },
+  {
+    "objectID": "publications.html#preliminary-work-of-the-project-partners",
+    "href": "publications.html#preliminary-work-of-the-project-partners",
+    "title": "Publications",
+    "section": "Preliminary work of the project partners",
+    "text": "Preliminary work of the project partners\n\n\nJahn, N. (2024). How open are hybrid journals included in transformative agreements? arXiv. https://doi.org/10.48550/arXiv.2402.18255\n\n\nFraser, N., Hobert, A., Jahn, N., Mayr, P., & Peters, I. (2023). No deal: German researchers’ publishing and citing behaviors after big deal negotiations with elsevier. Quantitative Science Studies, 4(2), 325–352. https://doi.org/10.1162/qss_a_00255\n\n\nTaubert, N., Hobert, A., Jahn, N., Bruns, A., & Iravani, E. (2023). Understanding differences of the OA uptake within the german university landscape (2010–2020): Part 1—journal-based OA. Scientometrics, 128(6), 3601–3625. https://doi.org/10.1007/s11192-023-04716-3\n\n\nJahn, N., Matthias, L., & Laakso, M. (2022). Toward transparency of hybrid open access through publisher-provided metadata: An article-level study of elsevier. Journal of the Association for Information Science and Technology, 73(1), 104–118. https://doi.org/10.1002/asi.24549\n\n\nPampel, H. (2022). From library budget to information budget: Fostering transparency in the transformation towards open access. Insights the UKSG Journal, 35, 8. https://doi.org/10.1629/uksg.576\n\n\nHobert, A., Jahn, N., Mayr, P., Schmidt, B., & Taubert, N. (2021). Open access uptake in germany 2010–2018: Adoption in a diverse research landscape. Scientometrics, 126(12), 9751–9777. https://doi.org/10.1007/s11192-021-04002-0"
+  },
+  {
+    "objectID": "dashboards_schema.html",
+    "href": "dashboards_schema.html",
+    "title": "Metadata Scheme",
+    "section": "",
+    "text": "ID\nProperty\nDefinition\nOcc\nValues\nExample\n\n\n\n\n1\nName\nName given to the dashboard by its authors, from (in descending priority): provided citation form, name given in associated publication, self-description on the website (header, ‘about’ page, self-referring term throughout the website), browser tab name; year is removed from dashboard name if there are versions for multiple years; instances of dashboard collections are named after the scheme ‘[Name of dashboard collection]: [Name of organization]’\n1\n\nFrench Open Science Monitor, CWTS Leiden Ranking, OpenAIRE Monitor Dashboard: Universität Göttingen\n\n\n2\nURL\nURL to homepage of the dashboard; if listed dashboard is only one of other dashboard-unrelated services on a website, URL of the specific webpage\n1\n\nhttps://open.coki.ac/\n\n\n3\nTime period\nTime period in years from the year of earliest data presented in the dashboard to the year of latest data; note: this is not the year of publication in the dashboard - ‘year of latest data’ earlier than 2024 does not necessarily mean the dashboard is inactive; the Leiden Ranking 2024 e.g. refers to data from 2019–2022\n1-n\n[year of common era]–[year of common era]\n2018–2024\n\n\n4\nOperator\nName of operator responsible for running the dashboard; if that operator does not have an associated ROR, but there is an organization containing the operator that has a ROR, this organization is listed after the original operator, separated by comma; multiple direct operators are separated by semicolon.\n1-n\n\nCentre for Science and Technology Studies (CWTS), Leiden University\n\n\n4.1\nROR\nROR of the organization(s) listed under 4 if available, N/A if unavailable\n1-n\nROR ID as an operable URL, N/A\nhttps://ror.org/027bh9e22\n\n\n4.2\nOperator type\nType of organization running the dashboard, distinguishing two major types of research-related organizations, Research Performing and Funding Organizations (‘RPO’ and ‘RFO’ respectively), with ‘other’ for everything else\n1-n\nResearch performing organization (RPO), Research funding organization (RFO), other\nRPO\n\n\n5.1\nScope\nScope of the coverage of dashboard: international if data for more than one country, national if data for one country, institutional if data on one or more organizations but not country-wide\n1\ninternational, national, research institution\ninternational\n\n\n5.2\nCountries\nCountry code of the organization(s) whose data are represented in the dashboard, represented with country code value ‘Europe’ if more than 1 country but all from EU + Switzerland OR Norway OR UK value ‘global’ if more than 1 country and more than 3 countries outside of ‘Europe’\n1-n\nControlled vocabulary: 3-letter ISO 3166-1 alpha-3 country code; additionally: ‘Europe’, ‘global’\nDEU\n\n\n6\nData type\nType of data that the dashboard shows ‘publications’ for data on textual publications such as e.g. journal articles ‘data’ for research data ‘software’ for research software ‘infrastructures’ for data on e.g. repositories ‘other’ for data that does not fall under any of the other categories\n1-n\npublications, data, software, infrustructures, other\npublications\n\n\n7\nDashboard license\nCopyright license of the software used to create the dashboard; if the dashboard provides a generic license for its website without specifically mentioning the software or its dataset, this license is instead entered here\n1-n\ncontrolled vocabulary: SPDX License List entries, N/A\nMIT, Apache-2.0\n\n\n8\nData license\nCopyright license under which the data of the dashboard is published\n1-n\ncontrolled vocabulary: SPDX License List entries, N/A\nCC-BY-4,0, CC0-1.0\n\n\n9\nData source\nAvailability of the data source the dashboard is based on: ‘open’ if data comes from an open source such as e.g. OpenAlex, ‘proprietary’ if not, both values if dashboard uses data sources of both types\n1-n\nopen, restricted, N/A\nopen\n\n\n10\nCollection\nNames the dashboard collection the dashboard is part of if applicable; ‘N/A’ otherwise\n1\nstring of the dashboard collection name, N/A\nOpenAIRE Monitor Dashboard, CHORUS dashboard\n\n\n11\nDocumentation\nFree text field in which relevant links and comments are gathered; these can include: links to the specific part of the website where the various licenses are mentioned, DOIs to accompanying publications about the dashboard and other comments\n1-n\nstring of comment, N/A\nData source: https://bibliotecnica.upc.edu/en/observatori#metodologia\n\n\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "events/bid25_20250624.html",
     "href": "events/bid25_20250624.html",
     "title": "Hands-on Lab  Open-Access-Monitoring Dashboards mit Quarto",
@@ -138,153 +229,6 @@
     "title": "Hands-on Lab  Open-Access-Monitoring Dashboards mit Quarto",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nhttps://oa-datenpraxis.de/↩︎\nhttps://openalex.org/↩︎\nhttps://posit.cloud/plans/free↩︎"
-  },
-  {
-    "objectID": "aps/AP1.html#description",
-    "href": "aps/AP1.html#description",
-    "title": "WP 1 Institutional Level",
-    "section": "Description",
-    "text": "Description\nThe basis for the overall project is an inventory that identifies and documents the topic, the actors and the interplay of aspects of data analyses for shaping the OA transformation. For this purpose, a target group-specific view of professionals who deal with the OA transformation in operational and strategic areas of scientific institutions on the basis of publication and cost data is taken. The focus is on administrative and library staff at universities and non-university institutions. These include professionals in the areas of digital publishing, OA, acquisition and collection development, research information and research funding.\nBased on a stakeholder analysis (T1.1), the need for information, the handling of data sources and the interdependence of data analyses in the context of OA transformation at academic institutions will be surveyed (T1.2). The potential of the open science monitoring systems currently being developed will also be analysed. The resulting inventory (T1.3), which looks at the specific practices in dealing with data on OA and future requirements of those involved, will create the basis for recommendations on the topic (WP 5)."
-  },
-  {
-    "objectID": "aps/AP2.html#description",
-    "href": "aps/AP2.html#description",
-    "title": "WP 2 Publisher Agreements",
-    "section": "Description",
-    "text": "Description\nOA transformation agreements are heterogeneous in terms of open metadata despite standardisation initiatives such as ESAC (Borrego et al., 2021; Jahn et al., 2022; Marques et al., 2019). At the same time, publishers offer varying degrees of metadata and research services in addition to the OA provision of articles and centralised accounting. The aim of the WP is to analyse publisher agreements relating to open metadata and data-analytical research services and to identify best practices. This is intended to promote competition between publishers."
-  },
-  {
-    "objectID": "aps/AP7.html#description",
-    "href": "aps/AP7.html#description",
-    "title": "WP 7 Tools",
-    "section": "Description",
-    "text": "Description\nThere is now a wide range of tools for collecting, analysing and visualising data relating to the OA transformation. In addition to the already established services such as the Hybrid Open Access Dashboard (HOAD), OpenAPC and Open Access Monitor, these include, for example\n\nAPI clients for computer-aided access to open data sources (e.g. clients from rOpenSci for publication analyses with R)\nPaid tools such as Unsub, a tool for libraries to evaluate publishing offers based on local usage data.\nPaid tools such as ChronosHub, Oable, OAMetrix and OA Switchboard for APC management.\nDashboards for data visualisation such as the COKI Open Access Dashboard, the Charité Open Access Dashboard and the Hamburg Open Science Dashboard.\n\nAs there is currently no overview of these diverse tools and there are no systematic training and further education and further training procedures in the field of Scholarly Communication Analytics, a digital toolbox is to be developed in WP 5. This will provide information on tools for data work relating to OA transformation. Based on research, the tools will be described by a metadata schema to be developed. metadata schema to be developed. This schema should support the findability and evaluation of the tools. tools. The resulting toolbox will be presented on the project website. After the end of the curation will be continued by the Helmholtz Open Science Office. The toolbox will be operated in English language."
-  },
-  {
-    "objectID": "aps/AP5.html#description",
-    "href": "aps/AP5.html#description",
-    "title": "WP 5 Synopsis",
-    "section": "Description",
-    "text": "Description\nA common understanding of science-led data practice is a prerequisite for shaping the OA transformation. This practice includes the handling of data in scientific institutions in general (WP 1), the analysis and evaluation of data in the context of publishing contracts (WP 2), the handling of data on OA in institutional rankings (WP 3) and the collection of data on OA for reporting (WP 4). In line with the aim of ensuring data sovereignty in science, a synopsis will be created in WP 5 based on the findings of WPs 1, 2, 3 and 4. Recommendations (T5.2) are formulated on the basis of this synopsis (T5.1). The aim is to summarise the findings of the previous WPs and to work out their strategic dimension. As a result, summarised recommendations are published (T5.3), which are aimed at decision-makers in universities, non-university research institutions, funding organisations and science policy. Of particular importance here is the integrative view, which summarises the work in the project and highlights the interactions between the WPs. Current science policy recommendations (e.g. from the Alliance, EU, UNESCO, WR, Science Europe) are also placed in relation to the results of the previous WPs. This WP thus acts as an impulse for the future organisation of the OA transformation."
-  },
-  {
-    "objectID": "dashboards.html",
-    "href": "dashboards.html",
-    "title": "Open Access Dashboard Collection",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "OA Datenpraxis",
-    "section": "",
-    "text": "The project OA Datenpraxis supports the development of structures for the open access transformation at research institutions in Germany. The focus is on promoting and establishing processes and procedures for sovereign data practice in shaping the open access transformation.\nThe project supports practitioners in administration, libraries and other service institutions in professionalizing their data practices by promoting the organization, networking and standardization of processes through a coordinated approach.\n\n\nWith regard to the open access transformation, the project pursues the following objectives:\n\nimproving data-driven administration\nstrengthening collaborations\ndeveloping standards for collaborative data practices\nminimizing dependencies on commercial data sources\nimproving information services\n\nThrough surveys, analyses, validations and operational recommendations, OA Datenpraxis makes a central contribution to the future development of supra-regional availability of information in Germany.\n\n\n\nThe public section of the project proposal is accessible here (in German):\nPampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). https://doi.org/10.5281/zenodo.10794298\n\n\n\nThe project OA Datenpraxis with the project number 528466070 is funded by the German Research Foundation DFG."
-  },
-  {
-    "objectID": "index.html#project-description",
-    "href": "index.html#project-description",
-    "title": "OA Datenpraxis",
-    "section": "",
-    "text": "The project OA Datenpraxis supports the development of structures for the open access transformation at research institutions in Germany. The focus is on promoting and establishing processes and procedures for sovereign data practice in shaping the open access transformation.\nThe project supports practitioners in administration, libraries and other service institutions in professionalizing their data practices by promoting the organization, networking and standardization of processes through a coordinated approach.\n\n\nWith regard to the open access transformation, the project pursues the following objectives:\n\nimproving data-driven administration\nstrengthening collaborations\ndeveloping standards for collaborative data practices\nminimizing dependencies on commercial data sources\nimproving information services\n\nThrough surveys, analyses, validations and operational recommendations, OA Datenpraxis makes a central contribution to the future development of supra-regional availability of information in Germany.\n\n\n\nThe public section of the project proposal is accessible here (in German):\nPampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). https://doi.org/10.5281/zenodo.10794298\n\n\n\nThe project OA Datenpraxis with the project number 528466070 is funded by the German Research Foundation DFG."
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Ferguson, L. M., Pampel, H., Strecker, D., & Meistring, M. (2025). Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung. Zenodo. https://doi.org/10.5281/zenodo.14505423\n\n\nJahn, N. (2025a). Estimating transformative agreement impact on hybrid open access: A comparative large-scale study using Scopus, Web of Science and open metadata. Scientometrics. https://doi.org/10.1007/s11192-025-05390-3\n\n\nJahn, N. (2025b). How open are hybrid journals included in transformative agreements? Quantitative Science Studies, 6, 242–262. https://doi.org/10.1162/qss_a_00348\n\n\nOberländer, A. (2025). OA Datenpraxis Webinar: Leiden Ranking at the University of Konstanz. https://doi.org/10.5281/zenodo.15593872\n\n\nSchneider, J., Pampel, H., & Höfting, J. (2025). Data Documentation for: Mapping the Landscape of Open Access Dashboards: A Dataset for Research and Infrastructure Development. Zenodo. https://doi.org/10.5281/zenodo.15593821\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025a). Dataset for: Recording of publication costs at research performing institutions in Germany. Zenodo. https://doi.org/10.5281/zenodo.14732554\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025b). Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland. https://nbn-resolving.org/urn:nbn:de:0290-opus4-198024\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025c). Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland. Bibliothek Forschung Und Praxis. https://doi.org/10.1515/bfp-2025-0008\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025d). OA Datenpraxis Webinar: Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland. https://doi.org/10.5281/zenodo.15076512\n\n\nVan Eck, N. J. (2025). OA Datenpraxis Webinar: CWTS Leiden Ranking Open Edition. https://doi.org/10.5281/zenodo.15147838\n\n\nBarbers, I., Kindling, M., Stadler, H., & Strecker, D. (2024). Stand und Perspektive des Open-Access-Reportings. https://doi.org/10.5281/zenodo.13831942\n\n\nFerguson, L. M., Meistring, M., Pampel, H., & Strecker, D. (2024). Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung. https://doi.org/10.5281/zenodo.13837272\n\n\nPampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). https://doi.org/10.5281/ZENODO.10794298"
-  },
-  {
-    "objectID": "publications.html#publications-from-the-project",
-    "href": "publications.html#publications-from-the-project",
-    "title": "Publications",
-    "section": "",
-    "text": "Ferguson, L. M., Pampel, H., Strecker, D., & Meistring, M. (2025). Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung. Zenodo. https://doi.org/10.5281/zenodo.14505423\n\n\nJahn, N. (2025a). Estimating transformative agreement impact on hybrid open access: A comparative large-scale study using Scopus, Web of Science and open metadata. Scientometrics. https://doi.org/10.1007/s11192-025-05390-3\n\n\nJahn, N. (2025b). How open are hybrid journals included in transformative agreements? Quantitative Science Studies, 6, 242–262. https://doi.org/10.1162/qss_a_00348\n\n\nOberländer, A. (2025). OA Datenpraxis Webinar: Leiden Ranking at the University of Konstanz. https://doi.org/10.5281/zenodo.15593872\n\n\nSchneider, J., Pampel, H., & Höfting, J. (2025). Data Documentation for: Mapping the Landscape of Open Access Dashboards: A Dataset for Research and Infrastructure Development. Zenodo. https://doi.org/10.5281/zenodo.15593821\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025a). Dataset for: Recording of publication costs at research performing institutions in Germany. Zenodo. https://doi.org/10.5281/zenodo.14732554\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025b). Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland. https://nbn-resolving.org/urn:nbn:de:0290-opus4-198024\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025c). Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland. Bibliothek Forschung Und Praxis. https://doi.org/10.1515/bfp-2025-0008\n\n\nStrecker, D., Pampel, H., & Höfting, J. (2025d). OA Datenpraxis Webinar: Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland. https://doi.org/10.5281/zenodo.15076512\n\n\nVan Eck, N. J. (2025). OA Datenpraxis Webinar: CWTS Leiden Ranking Open Edition. https://doi.org/10.5281/zenodo.15147838\n\n\nBarbers, I., Kindling, M., Stadler, H., & Strecker, D. (2024). Stand und Perspektive des Open-Access-Reportings. https://doi.org/10.5281/zenodo.13831942\n\n\nFerguson, L. M., Meistring, M., Pampel, H., & Strecker, D. (2024). Transparenz in der Wissenschaft: Strategien für offene Informationsversorgung. https://doi.org/10.5281/zenodo.13837272\n\n\nPampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). https://doi.org/10.5281/ZENODO.10794298"
-  },
-  {
-    "objectID": "publications.html#preliminary-work-of-the-project-partners",
-    "href": "publications.html#preliminary-work-of-the-project-partners",
-    "title": "Publications",
-    "section": "Preliminary work of the project partners",
-    "text": "Preliminary work of the project partners\n\n\nJahn, N. (2024). How open are hybrid journals included in transformative agreements? arXiv. https://doi.org/10.48550/arXiv.2402.18255\n\n\nFraser, N., Hobert, A., Jahn, N., Mayr, P., & Peters, I. (2023). No deal: German researchers’ publishing and citing behaviors after big deal negotiations with elsevier. Quantitative Science Studies, 4(2), 325–352. https://doi.org/10.1162/qss_a_00255\n\n\nTaubert, N., Hobert, A., Jahn, N., Bruns, A., & Iravani, E. (2023). Understanding differences of the OA uptake within the german university landscape (2010–2020): Part 1—journal-based OA. Scientometrics, 128(6), 3601–3625. https://doi.org/10.1007/s11192-023-04716-3\n\n\nJahn, N., Matthias, L., & Laakso, M. (2022). Toward transparency of hybrid open access through publisher-provided metadata: An article-level study of elsevier. Journal of the Association for Information Science and Technology, 73(1), 104–118. https://doi.org/10.1002/asi.24549\n\n\nPampel, H. (2022). From library budget to information budget: Fostering transparency in the transformation towards open access. Insights the UKSG Journal, 35, 8. https://doi.org/10.1629/uksg.576\n\n\nHobert, A., Jahn, N., Mayr, P., Schmidt, B., & Taubert, N. (2021). Open access uptake in germany 2010–2018: Adoption in a diverse research landscape. Scientometrics, 126(12), 9751–9777. https://doi.org/10.1007/s11192-021-04002-0"
-  },
-  {
-    "objectID": "datenschutz.html",
-    "href": "datenschutz.html",
-    "title": "Privacy Statement",
-    "section": "",
-    "text": "We do not automatically or manually collect, store or process any personal data.\nThis website contains links or buttons that lead to third-party services like Mastodon or email. Use of these features may result in data collection. Engaging with these buttons, tools, or content may automatically send certain browser information to the service provider. Please review the privacy statements of the service providers for more information.\nThis website is hosted on GitHub Pages. GitHub may collect personal data when interacting with their services, for more information please review the GitHub Privacy Statement.\nFor more information, see the Data Protection Statement of Humboldt-Universität zu Berlin.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "dashboards_schema.html",
-    "href": "dashboards_schema.html",
-    "title": "Metadata Scheme",
-    "section": "",
-    "text": "ID\nProperty\nDefinition\nOcc\nValues\nExample\n\n\n\n\n1\nName\nName given to the dashboard by its authors, from (in descending priority): provided citation form, name given in associated publication, self-description on the website (header, ‘about’ page, self-referring term throughout the website), browser tab name; year is removed from dashboard name if there are versions for multiple years; instances of dashboard collections are named after the scheme ‘[Name of dashboard collection]: [Name of organization]’\n1\n\nFrench Open Science Monitor, CWTS Leiden Ranking, OpenAIRE Monitor Dashboard: Universität Göttingen\n\n\n2\nURL\nURL to homepage of the dashboard; if listed dashboard is only one of other dashboard-unrelated services on a website, URL of the specific webpage\n1\n\nhttps://open.coki.ac/\n\n\n3\nTime period\nTime period in years from the year of earliest data presented in the dashboard to the year of latest data; note: this is not the year of publication in the dashboard - ‘year of latest data’ earlier than 2024 does not necessarily mean the dashboard is inactive; the Leiden Ranking 2024 e.g. refers to data from 2019–2022\n1-n\n[year of common era]–[year of common era]\n2018–2024\n\n\n4\nOperator\nName of operator responsible for running the dashboard; if that operator does not have an associated ROR, but there is an organization containing the operator that has a ROR, this organization is listed after the original operator, separated by comma; multiple direct operators are separated by semicolon.\n1-n\n\nCentre for Science and Technology Studies (CWTS), Leiden University\n\n\n4.1\nROR\nROR of the organization(s) listed under 4 if available, N/A if unavailable\n1-n\nROR ID as an operable URL, N/A\nhttps://ror.org/027bh9e22\n\n\n4.2\nOperator type\nType of organization running the dashboard, distinguishing two major types of research-related organizations, Research Performing and Funding Organizations (‘RPO’ and ‘RFO’ respectively), with ‘other’ for everything else\n1-n\nResearch performing organization (RPO), Research funding organization (RFO), other\nRPO\n\n\n5.1\nScope\nScope of the coverage of dashboard: international if data for more than one country, national if data for one country, institutional if data on one or more organizations but not country-wide\n1\ninternational, national, research institution\ninternational\n\n\n5.2\nCountries\nCountry code of the organization(s) whose data are represented in the dashboard, represented with country code value ‘Europe’ if more than 1 country but all from EU + Switzerland OR Norway OR UK value ‘global’ if more than 1 country and more than 3 countries outside of ‘Europe’\n1-n\nControlled vocabulary: 3-letter ISO 3166-1 alpha-3 country code; additionally: ‘Europe’, ‘global’\nDEU\n\n\n6\nData type\nType of data that the dashboard shows ‘publications’ for data on textual publications such as e.g. journal articles ‘data’ for research data ‘software’ for research software ‘infrastructures’ for data on e.g. repositories ‘other’ for data that does not fall under any of the other categories\n1-n\npublications, data, software, infrustructures, other\npublications\n\n\n7\nDashboard license\nCopyright license of the software used to create the dashboard; if the dashboard provides a generic license for its website without specifically mentioning the software or its dataset, this license is instead entered here\n1-n\ncontrolled vocabulary: SPDX License List entries, N/A\nMIT, Apache-2.0\n\n\n8\nData license\nCopyright license under which the data of the dashboard is published\n1-n\ncontrolled vocabulary: SPDX License List entries, N/A\nCC-BY-4,0, CC0-1.0\n\n\n9\nData source\nAvailability of the data source the dashboard is based on: ‘open’ if data comes from an open source such as e.g. OpenAlex, ‘proprietary’ if not, both values if dashboard uses data sources of both types\n1-n\nopen, restricted, N/A\nopen\n\n\n10\nCollection\nNames the dashboard collection the dashboard is part of if applicable; ‘N/A’ otherwise\n1\nstring of the dashboard collection name, N/A\nOpenAIRE Monitor Dashboard, CHORUS dashboard\n\n\n11\nDocumentation\nFree text field in which relevant links and comments are gathered; these can include: links to the specific part of the website where the various licenses are mentioned, DOIs to accompanying publications about the dashboard and other comments\n1-n\nstring of comment, N/A\nData source: https://bibliotecnica.upc.edu/en/observatori#metodologia\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "OA Datenpraxis",
-    "section": "",
-    "text": "The content of the OA Datenpraxis website is made available under the Creative Commons Attribution license. The following is a human-readable summary of (and not a substitute for) the full legal text of the CC BY 4.0 license.\nYou are free:\n\nto Share—copy and redistribute the material in any medium or format\nto Adapt—remix, transform, and build upon the material\n\nfor any purpose, even commercially.\nThe licensor cannot revoke these freedoms as long as you follow the license terms.\nUnder the following terms:\n\nAttribution—You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions—You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits. With the understanding that:\n\nNotices:\n\nYou do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.\nNo warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "aps/AP4.html#description",
-    "href": "aps/AP4.html#description",
-    "title": "WP 4 Open-Access-Reporting",
-    "section": "Description",
-    "text": "Description\nThe digital strategy of the Federal Ministry of Education and Research (BMBF) states: “By 2025, 70 per cent of all new scientific publications in Germany will be published exclusively or additionally via open access.” (Bundesministerium für Bildung und Forschung, 2019, p. 37). In addition to this national OA target, individual federal states have defined specific OA targets. In the “2019 Monitoring Report” of the Joint Science Conference’s (GWK) Pact for Research and Innovation (PFI), the federal and state governments emphasise the need to establish “consistent and comparable surveys on open access publications” (Gemeinsame Wissenschaftskonferenz, 2019, p. 16). In a discussion paper published in 2022 by the Working Group on the Scientific Publication System in the Alliance’s priority initiative “Digital Information”, an initial proposal for a common set of indicators on OA for Germany is formulated (Deinzer et al., 2022). The problem with this proposal is that it has not yet been discussed beyond the working group.\nWP 4 builds on this work - in which an applicant was involved as head of the responsible task group of the Scientific Publication System WG - and organises a dialogue to further develop this proposal on the basis of the discussion paper. The aim is to develop a national standard for the definition of OA for reporting and the associated data collection practice."
-  },
-  {
-    "objectID": "aps/AP6.html#description",
-    "href": "aps/AP6.html#description",
-    "title": "WP 6 Trainings",
-    "section": "Description",
-    "text": "Description\nThe Carpentries (consisting of Data, Library and Software Carpentry) are a method of introducing basic data competences. The main focus is on the joint learning of IT-supported procedures for solving practical problems. In Germany, both library associations and academic institutions support the Carpentries community through membership. For example, the SUB Göttingen has been a member since 2019 and trains up to five instructors annually at the Göttingen campus and regularly organises Carpentries workshops, which are primarily aimed at young researchers and librarians. The aim of the AP is to design, test and iteratively develop training courses with a specific focus on data practice to shape the OA transformation as part of Library Carpentry. The target group includes professionals in the field of OA transformation and research administration. Not all data analysis aspects can be covered within a Carpentry training course. Rather, the aim is to introduce open and science-oriented tools and procedures and to test their application (Wilson et al., 2017). The tasks of the WP are based on the life cycle of the Carpentries Lessons and start in the second year of the project."
-  },
-  {
-    "objectID": "aps/AP3.html#description",
-    "href": "aps/AP3.html#description",
-    "title": "WP 3 Open Access in institutional Rankings",
-    "section": "Description",
-    "text": "Description\nInstitutional rankings enjoy a high level of attention among science policy decision-makers and the public because they succeed in comparing scientific institutions with each other in a generally understandable and clear manner. Despite numerous points of criticism, rankings can therefore not be ignored as a measure of the perception of academic institutions and play a corresponding role in institutional information management.\nWP 3 takes into account that OA is increasingly appearing as a comparative dimension in rankings, for example in the Leiden Ranking of the CWTS, the COKI Open Access Dashboard and the Scimago Institutions Ranking."
-  },
-  {
-    "objectID": "aps/AP8.html#description",
-    "href": "aps/AP8.html#description",
-    "title": "WP 8 Networks",
-    "section": "Description",
-    "text": "Description\nWork with data on OA transformation is often carried out by various stakeholders in an academic institution. For example, professionals such as OA officers, librarians in acquisitions and licensing, research officers and actors in the field of research funding deal with aspects of data work relating to OA. The aim of the WP is to facilitate dialogue on defined issues beyond professional profiles and thus actively enable inter- and transdisciplinary discourse on data work relating to OA. The project initiates the networks and organises them with three digital workshops each over the course of the project. In addition, a mailing list will be organised for the networks, thus providing an impetus for longer-term cooperation. At the end of the project, it will be determined with other stakeholders, such as the Conference of Information and Library Science Training and Study Programmes (KIBA), to what extent the topics discussed can be continued in other committees and networks."
-  },
-  {
-    "objectID": "events.html#conferences-meetings",
-    "href": "events.html#conferences-meetings",
-    "title": "Events",
-    "section": "Conferences & Meetings",
-    "text": "Conferences & Meetings"
-  },
-  {
-    "objectID": "events/webinar_20250404.html",
-    "href": "events/webinar_20250404.html",
-    "title": "OA Datenpraxis Webinar  Open metadata for university rankings illustrated by the Leiden Ranking",
-    "section": "",
-    "text": "Date: 04.04.2025\nTime: 10:00–11:00 AM CEST\nLocation: Online via Zoom\nRegistration: https://hu-berlin.zoom-x.de/webinar/register/WN_4_U1o0yDSbOufyh7y_aloQ"
-  },
-  {
-    "objectID": "events/webinar_20250404.html#dates",
-    "href": "events/webinar_20250404.html#dates",
-    "title": "OA Datenpraxis Webinar  Open metadata for university rankings illustrated by the Leiden Ranking",
-    "section": "",
-    "text": "Date: 04.04.2025\nTime: 10:00–11:00 AM CEST\nLocation: Online via Zoom\nRegistration: https://hu-berlin.zoom-x.de/webinar/register/WN_4_U1o0yDSbOufyh7y_aloQ"
-  },
-  {
-    "objectID": "events/webinar_20250404.html#description",
-    "href": "events/webinar_20250404.html#description",
-    "title": "OA Datenpraxis Webinar  Open metadata for university rankings illustrated by the Leiden Ranking",
-    "section": "Description",
-    "text": "Description\nOpen metadata on scientific publications increasingly play an important role in university rankings. They not only enable comprehensive and transparent reporting on the research performance of universities, but also offer a wide range of reuse options.\nThe webinar will present the Leiden Ranking of the CWTS, which now also utilises open metadata. The example of the University of Konstanz will then be used to illustrate how universities can use the ranking to provide data-supported information about the research and open access achievements of their institution both internally and externally.\nWe are delighted that Dr Nees Jan van Eck (CWTS Leiden) and Dr Anja Oberländer (University of Konstanz) will be sharing their insights with us, both from the perspective of creating a ranking and from the application perspective.\nThis webinar is aimed at all employees in the field of Open Access/Open Science and heads of scientific institutions, as well as people interested in science assessment and Open Access/Open Science.\n\nProgramme:\n\nWelcome by Sophia Dörner (5 minutes)\nPresentation 1: Nees Jan van Eck (CWTS Leiden) introduces the Leiden Ranking Open Edition with a focus on open data and open access as a ranking dimension (20 minutes).\nPresentation 2: Anja Oberländer (University of Konstanz) provides a user perspective on the Leiden Ranking and discusses strategic approaches to Open Access/Open Science (20 minutes).\nQ&A Session (15 minutes)."
   },
   {
     "objectID": "events/bid25_20250626.html",
@@ -336,10 +280,66 @@
     "text": "WP 1 Institutional Level\nThe aim of WP 1 is to collect, analyse and document requirements for data analyses relating to the OA transformation from the institutional practice of scientific institutions. The results of WP 1 will be published in a report and formulated in recommendations.\n\n\nWP 2 Publisher Agreements\nThe aim of WP 2 is to analyse publishing contracts relating to open metadata and data analytics research services and to identify best practices. The result is an inventory of German transformation contracts and a recommendation for action.\n\n\nWP 3 Open Access in institutional Rankings\nThe aim of WP 3 is to critically accompany OA as an evaluation dimension of institutional rankings. To this end, interpretation and intervention aids for the management of scientific institutions will be developed on the basis of an inventory of institutional rankings. Secondly, data analysis aids will be developed and published to enable institutions and consortia to carry out benchmarking on the basis of data from university rankings.\n\n\nWP 4 Open-Access-Reporting\nThe aim of WP 4 is to contribute to the improvement of data quality and to promote the standardisation of data and reports on OA transformation. As a result of WP 4, the proposal for a standard of the Alliance of Science Organisations for OA reporting will be further developed as part of an assessment process.\n\n\nWP 5 Synopsis\nThe aim of WP 5 is to summarise the results from WPs 1, 2, 3 and 4 in a strategic recommendation on data practices for shaping the OA transformation.\n\n\nWP 6 Trainings\nThe aim of WP 6 is to develop and test open training materials on the use of open data sources and tools in the form of a Carpentry module in a participatory manner. The work planning is based on the life cycle of the Carpentry lessons and includes the call for teamwork, creation of the course materials, testing and revision phase.\n\n\nWP 7 Tools\nThe aim of the WP is to set up and operate a digital toolbox that provides information on tools for collecting, analysing and visualising data relating to OA transformation.\n\n\nWP 8 Networks\nThe aim of the WP is to initiate networks on specific issues relating to data work on OA transformation. At the heart of this is the dialogue on the topics of: Reporting, publishing data, bibliometrics and mentoring in the context of OA transformation. The project organises digital workshops for the networks and provides an organisational structure.\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "impressum.html",
-    "href": "impressum.html",
-    "title": "Legal Notice",
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "OA Datenpraxis",
     "section": "",
-    "text": "Berlin School of Library and Information Science, Humboldt-Universität zu Berlin\nDorotheenstr. 26\n10117 Berlin\nGermany\nKontakt\nProf. Dr. Heinz Pampel\nE-Mail: heinz.pampel@hu-berlin.de\nPhone: (+49 30) 2093 70977\n\n\n\n Back to top"
+    "text": "The content of the OA Datenpraxis website is made available under the Creative Commons Attribution license. The following is a human-readable summary of (and not a substitute for) the full legal text of the CC BY 4.0 license.\nYou are free:\n\nto Share—copy and redistribute the material in any medium or format\nto Adapt—remix, transform, and build upon the material\n\nfor any purpose, even commercially.\nThe licensor cannot revoke these freedoms as long as you follow the license terms.\nUnder the following terms:\n\nAttribution—You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions—You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits. With the understanding that:\n\nNotices:\n\nYou do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.\nNo warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "events.html#conferences-meetings",
+    "href": "events.html#conferences-meetings",
+    "title": "Events",
+    "section": "Conferences & Meetings",
+    "text": "Conferences & Meetings"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OA Datenpraxis",
+    "section": "",
+    "text": "The project OA Datenpraxis supports the development of structures for the open access transformation at research institutions in Germany. The focus is on promoting and establishing processes and procedures for sovereign data practice in shaping the open access transformation.\nThe project supports practitioners in administration, libraries and other service institutions in professionalizing their data practices by promoting the organization, networking and standardization of processes through a coordinated approach.\n\n\nWith regard to the open access transformation, the project pursues the following objectives:\n\nimproving data-driven administration\nstrengthening collaborations\ndeveloping standards for collaborative data practices\nminimizing dependencies on commercial data sources\nimproving information services\n\nThrough surveys, analyses, validations and operational recommendations, OA Datenpraxis makes a central contribution to the future development of supra-regional availability of information in Germany.\n\n\n\nThe public section of the project proposal is accessible here (in German):\nPampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). https://doi.org/10.5281/zenodo.10794298\n\n\n\nThe project OA Datenpraxis with the project number 528466070 is funded by the German Research Foundation DFG."
+  },
+  {
+    "objectID": "index.html#project-description",
+    "href": "index.html#project-description",
+    "title": "OA Datenpraxis",
+    "section": "",
+    "text": "The project OA Datenpraxis supports the development of structures for the open access transformation at research institutions in Germany. The focus is on promoting and establishing processes and procedures for sovereign data practice in shaping the open access transformation.\nThe project supports practitioners in administration, libraries and other service institutions in professionalizing their data practices by promoting the organization, networking and standardization of processes through a coordinated approach.\n\n\nWith regard to the open access transformation, the project pursues the following objectives:\n\nimproving data-driven administration\nstrengthening collaborations\ndeveloping standards for collaborative data practices\nminimizing dependencies on commercial data sources\nimproving information services\n\nThrough surveys, analyses, validations and operational recommendations, OA Datenpraxis makes a central contribution to the future development of supra-regional availability of information in Germany.\n\n\n\nThe public section of the project proposal is accessible here (in German):\nPampel, H., Jahn, N., Bertelmann, R., Horstmann, W., Rothfritz, L., Ferguson, L. M., Schmidt, B., & Stisser, A. (2024). Datenpraxis zur Gestaltung der Open-Access-Transformation - Analyse, Empfehlung, Training & Vernetzung (OA Datenpraxis). https://doi.org/10.5281/zenodo.10794298\n\n\n\nThe project OA Datenpraxis with the project number 528466070 is funded by the German Research Foundation DFG."
+  },
+  {
+    "objectID": "aps/AP6.html#description",
+    "href": "aps/AP6.html#description",
+    "title": "WP 6 Trainings",
+    "section": "Description",
+    "text": "Description\nThe Carpentries (consisting of Data, Library and Software Carpentry) are a method of introducing basic data competences. The main focus is on the joint learning of IT-supported procedures for solving practical problems. In Germany, both library associations and academic institutions support the Carpentries community through membership. For example, the SUB Göttingen has been a member since 2019 and trains up to five instructors annually at the Göttingen campus and regularly organises Carpentries workshops, which are primarily aimed at young researchers and librarians. The aim of the AP is to design, test and iteratively develop training courses with a specific focus on data practice to shape the OA transformation as part of Library Carpentry. The target group includes professionals in the field of OA transformation and research administration. Not all data analysis aspects can be covered within a Carpentry training course. Rather, the aim is to introduce open and science-oriented tools and procedures and to test their application (Wilson et al., 2017). The tasks of the WP are based on the life cycle of the Carpentries Lessons and start in the second year of the project."
+  },
+  {
+    "objectID": "aps/AP3.html#description",
+    "href": "aps/AP3.html#description",
+    "title": "WP 3 Open Access in institutional Rankings",
+    "section": "Description",
+    "text": "Description\nInstitutional rankings enjoy a high level of attention among science policy decision-makers and the public because they succeed in comparing scientific institutions with each other in a generally understandable and clear manner. Despite numerous points of criticism, rankings can therefore not be ignored as a measure of the perception of academic institutions and play a corresponding role in institutional information management.\nWP 3 takes into account that OA is increasingly appearing as a comparative dimension in rankings, for example in the Leiden Ranking of the CWTS, the COKI Open Access Dashboard and the Scimago Institutions Ranking."
+  },
+  {
+    "objectID": "aps/AP2.html#description",
+    "href": "aps/AP2.html#description",
+    "title": "WP 2 Publisher Agreements",
+    "section": "Description",
+    "text": "Description\nOA transformation agreements are heterogeneous in terms of open metadata despite standardisation initiatives such as ESAC (Borrego et al., 2021; Jahn et al., 2022; Marques et al., 2019). At the same time, publishers offer varying degrees of metadata and research services in addition to the OA provision of articles and centralised accounting. The aim of the WP is to analyse publisher agreements relating to open metadata and data-analytical research services and to identify best practices. This is intended to promote competition between publishers."
+  },
+  {
+    "objectID": "aps/AP5.html#description",
+    "href": "aps/AP5.html#description",
+    "title": "WP 5 Synopsis",
+    "section": "Description",
+    "text": "Description\nA common understanding of science-led data practice is a prerequisite for shaping the OA transformation. This practice includes the handling of data in scientific institutions in general (WP 1), the analysis and evaluation of data in the context of publishing contracts (WP 2), the handling of data on OA in institutional rankings (WP 3) and the collection of data on OA for reporting (WP 4). In line with the aim of ensuring data sovereignty in science, a synopsis will be created in WP 5 based on the findings of WPs 1, 2, 3 and 4. Recommendations (T5.2) are formulated on the basis of this synopsis (T5.1). The aim is to summarise the findings of the previous WPs and to work out their strategic dimension. As a result, summarised recommendations are published (T5.3), which are aimed at decision-makers in universities, non-university research institutions, funding organisations and science policy. Of particular importance here is the integrative view, which summarises the work in the project and highlights the interactions between the WPs. Current science policy recommendations (e.g. from the Alliance, EU, UNESCO, WR, Science Europe) are also placed in relation to the results of the previous WPs. This WP thus acts as an impulse for the future organisation of the OA transformation."
+  },
+  {
+    "objectID": "dashboards.html",
+    "href": "dashboards.html",
+    "title": "Open Access Dashboard Collection",
+    "section": "",
+    "text": "Back to top"
   }
 ]
