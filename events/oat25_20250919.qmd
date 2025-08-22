@@ -1,0 +1,30 @@
+---
+title: Workshop <br/> Praktiken und Infrastrukturen des Open-Access-Monitorings
+subtitle: Open-Access-Tage 2025, Konstanz
+---
+
+## Daten
+
+**Datum:** 19.09.2025
+
+**Uhrzeit:** 09:00--10:00 Uhr
+
+**Raum:** Raum C425
+
+[Programm auf der Seite des Veranstalters](https://www.conftool.org/oat2025/index.php?page=browseSessions&form_session=189)
+
+## Beschreibung
+
+Unter dem Begriff Open-Access-Monitoring wird die Erfassung und Analyse von Informationen, Publikationen, Kosten und weiteren Parametern des Open-Access-Publizierens verstanden. Mit Blick auf Zielmarken sowie auf die ökonomische Dimension der Open-Access-Transformation gewinnt der Umgang mit diesen Informationen weiter an Relevanz.
+
+Dieser Workshop wird gemeinsam von den DFG-geförderten Projekten OA Datenpraxis [^1], openCost [^2] und Transform2Open [^3] veranstaltet und richtet sich an Professionals, die sich mit Monitoring beschäftigen.
+
+Ziel des Workshops ist es, gemeinsam mit den Teilnehmenden aktuelle Fragestellungen des Open-Access-Monitorings zu diskutieren. Dabei widmet sich der Workshop den folgenden Handlungsfeldern: (1) die Stärkung der Standardisierung im Bereich des Monitorings, (2) die Förderung von Transparenzinitiativen in diesem Bereich, (3) die Weiterentwicklung der Nachnutzungsmöglichkeiten offener Daten – auch im Kontext der Barcelona Declaration.
+
+Der Workshop beginnt mit einer kurzen Vorstellung der beteiligten Projekte. Anschließend bearbeiten Teilnehmende vorbereitete Impulse im Format World Café. Hierbei diskutieren die Teilnehmenden in Gruppen Fragestellungen zu den oben genannten Aspekten an verschiedenen Stationen im Raum. Anschließend werden die Ergebnisse im Plenum zusammengetragen. Als kollaboratives Tool für die Diskussion und Ergebnissicherung wird ein Etherpad verwendet. Die Ergebnisse werden im Anschluss an die Veranstaltung durch die Organisator:innen in einem Blogpost aufbereitet und kommuniziert.
+
+An dem Workshop können maximal 30 Personen teilnehmen. Teilnehmenden wird empfohlen, einen eigenen Laptop mitzubringen.
+
+[^1]: [https://oa-datenpraxis.de](https://oa-datenpraxis.de)
+[^2]: [https://www.opencost.de](https://www.opencost.de)
+[^3]: [https://www.transform2open.de](https://www.transform2open.de)
