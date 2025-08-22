@@ -1,0 +1,30 @@
+---
+title: Workshop <br/> Praktiken und Infrastrukturen des Open-Access-Monitorings
+subtitle: Open-Access-Tage 2025, Konstanz
+---
+
+## Dates
+
+**Date:** 19.09.2025
+
+**Time:** 09:00--10:30 AM CEST
+
+**Room:** Room C425
+
+[Programme on the organiser's website](https://www.conftool.org/oat2025/index.php?page=browseSessions&form_session=189)
+
+## Description
+
+The term “open access monitoring” refers to the collection and analysis of information, publications, costs, and other parameters related to open access publishing. With regards to the objectives and economic dimension of the open access transformation, the handling of this information is becoming increasingly relevant.
+
+This workshop is organized by the DFG-funded projects OA Datenpraxis [^1], openCost [^2], and Transform2Open [^3] and is aimed at professionals involved in monitoring.
+
+The aim of the workshop is to discuss current issues relating to open access monitoring with participants. The workshop will focus on the following areas: (1) strengthening standardization in the field of monitoring, (2) promoting transparency initiatives, (3)developing the potential for reusing open data – also in the context of the Barcelona Declaration.
+
+The workshop begins with a brief introduction of the projects. Participants then discuss issues related to the above-mentioned aspects in groups at different stations in the room, following the World Café format. The results are then summarised in the plenary. Etherpads will be used to collaboratively record results. Following the event, the organizers will communicate the results in a blog post.
+
+A maximum of 30 people can participate in the workshop. Participants are advised to bring their own laptop.
+
+[^1]: [https://oa-datenpraxis.de](https://oa-datenpraxis.de)
+[^2]: [https://www.opencost.de](https://www.opencost.de)
+[^3]: [https://www.transform2open.de](https://www.transform2open.de)
