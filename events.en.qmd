@@ -5,3 +5,6 @@ title: "Events"
 
 
 ## Conferences & Meetings
+
+### Open-Access-Tage 2025, 17. – 19. September 2025, Konstanz
+[19.09.2025: Workshop – Praktiken und Infrastrukturen des Open-Access-Monitorings](events/oat25_20250919.qmd)
