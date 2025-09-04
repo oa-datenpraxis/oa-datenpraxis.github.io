@@ -1,0 +1,358 @@
+---
+title: "OpenAlex"
+filters: 
+  - _extensions/coatless/webr/webr.lua
+format: 
+  html:
+    resources:
+      - notebooks/openalex_data.rds
+    bibliography: notebooks/references.bib
+    toc: false
+    code-overflow: wrap
+    highlight-style: github
+    code-copy: true
+    code-link: true
+execute:
+  warning: false
+  error: false
+webr:
+  packages: ['tidyverse']
+lightbox: true
+---
+
+# What is OpenAlex?
+OpenAlex is a fully-open bibliographic database operated by the non-profit organization [OurResearch](https://ourresearch.org/). It launched in 2022 as a successor to the then discontinued Microsoft Academic Graph [@Priem2022]. OpenAlex data comprises information about various entities of the scholarly ecosystem such as research outputs (journal articles, books, datasets, etc.), authors, sources, etc. [@OpenAlex].
+
+The OpenAlex dataset is a useful tool to monitor open access activities on different levels of aggregation, as OpenAlex e.g. provides information on the open access status of a work or information on estimates for article processing charges (APCs) at the journal and work levels.
+
+# How can I access OpenAlex data?
+
+OpenAlex offers three main ways to access the data:
+
+## The OpenAlex web user interface
+
+In the [web user interface](https://openalex.org/) you are able to query the database via a search bar, apply filters and export the results in csv, ris or txt format.
+
+## The OpenAlex API
+
+The [OpenAlex REST API](https://docs.openalex.org/how-to-use-the-api/api-overview) allows programmatic access to and retrieval of OpenAlex data. The API has a limit of 100,000 calls per user per day. Though no authentication is required it is advised to add your email address to all API requests in order to get into the polite pool. 
+
+
+## The OpenAlex data snapshot
+
+OpenAlex additionally offers a [data snapshot](https://docs.openalex.org/download-all-data/openalex-snapshot) with a copy of the complete database for download, which a user can then load into their own data warehouse or relational database. The snapshot gets updated monthly. 
+
+
+# Exploring OpenAlex institutional open access data
+
+In this notebook we will query the OpenAlex API with R [@R] to answer the following question:
+
+> How many of recent journal articles from a given institution are open access and how did the share of open access publications evolve over the years?
+
+To answer the question, we will filter OpenAlex work records to be:
+
+- of type article
+- have at least one author affiliated with a specific institution (the notebook uses the example of the University of Göttingen)
+- published between 2020 and 2024
+
+and we will limit the number of fields (or columns) returned by the API to: 
+
+- the OpenAlex ID associated with the article
+- the digital object identifier (DOI) of the article
+- the title of the article
+- the publication year of the article
+- journal information
+- open access information
+- information on the apc list prices and
+- information on the paid apc prices 
+
+OpenAlex offers a lot more information than what we are exploring in this notebook. For a full documentation of all available entities and fields, please visit the [OpenAlex technical documentation](https://docs.openalex.org/).
+
+## Loading packages
+
+We will load the *openalexR* package [@openalexR] that allows us to query the OpenAlex API from within our notebook and the *tidyverse* package [@tidyverse] that provides a lot of additional functionalities for data wrangling and visualization.
+
+
+```{r}
+# Installation of packages if not already installed with
+# install.packages(c("openalexR","tidyverse"))
+library(openalexR)
+library(tidyverse)
+```
+
+## Loading data
+
+We will use the `oa_fetch` function from the openalexR package to query the OpenAlex API and store the returned *tibble* (a data frame that works well with the tidyverse) in the object *df*.
+
+```{r, eval=FALSE}
+df <- oa_fetch(entity = "works", 
+               institutions.ror = "01y9bpm73", # change the ROR id if you want to analyse the performance of another institution
+               type = "article",
+               is_paratext = FALSE,
+               is_retracted = FALSE,
+               from_publication_date = "2020-01-01",
+               to_publication_date = "2024-12-31",
+               options = list(select = c("id","doi","title","publication_year",
+                         "primary_location","open_access","apc_list","apc_paid")),
+               output = "tibble", 
+               paging = "cursor",
+               abstract = FALSE,
+               mailto = "example@domain.com") # add your email address here to get into the polite pool
+```
+
+```{r}
+#| echo: false
+
+df <- readRDS("notebooks/openalex_data.rds")
+```
+
+## Structure of the dataset
+
+To get an overview of the structure of our data frame, especially the number of rows (observations) and columns (variables), the individual column names and the data types they contain, we will use the `glimpse` function from the *dplyr* package, which is part of the tidyverse. 
+
+```{r}
+glimpse(df)
+```
+
+The output shows that our data frame contains a total of `r formatC(n_distinct(df$id), big.mark=",")` rows (observations) and `r ncol(df)` columns. Furthermore, it shows that most of the column values are of data type *character* (chr), the publication year column values are of type *integer* (int), some of the open access column values are of type *logical* (lgl) and the apc column values are of type *list* (list). The output also indicates the first values of every column on the right hand side. 
+
+The first values show us two important things: 
+
+1. There are at least some missing values within our data frame as is indicated by the *NA* in the license and version columns. *NA* is not a common string or numeric value, but a reserved word in R for the logical constant which contains a missing value indicator, i.e. R uses *NA* to indicate that the specific value is missing. 
+2. The apc column contains data frames as values. This means we can't access the apc information directly. We will explore later in the notebook how to transform the column and access the apc information.
+
+
+To look at the first 10 rows of our data frame we are using the `head` function.
+
+```{r}
+head(df,10)
+```
+
+The first argument within the `head` function is our data frame *df* and the second argument is the number of rows we want to have returned. Each row within our data frame corresponds to an article.
+
+
+## Data wrangling with the tidyverse
+
+Before analysing the OpenAlex data, we will have a closer look at the publisher and apc columns and perform some data wrangling tasks.
+
+To get an overview of the publishers present in our dataframe and the number of articles per publisher, we will use three tidyverse functions and the pipe operator `%>%`. 
+
+The pipe operator allows us to take e.g. a data frame or the result of a function and pass it to another function. If we type the name of our data frame followed by the pipe operator that means we don't have to specify which data we want a function to be performed on, when we call it after the pipe operator.
+
+The `group_by` function allows us to group data in our data frame *df* by one or more variables. In this case we will group the data frame by the OpenAlex provided id for the publisher in our *host_organization* column and the publisher name in our *host_organization_name*. This allows us to generate aggregate statistics for the publishers in our data frame.
+
+The `summarise` function allows us to calculate summary statistics for each group. In this case we will use the `n` function to count the number of observations in each group, and the result is stored in a new variable called n.
+
+The `arrange` function is used to sort the data based on the n variable and the `desc` function lets us determine that the ordering should be in descending order. This means that the groups with the highest number of observations will appear at the top of the output.
+
+
+```{r}
+df %>%
+  group_by(host_organization,host_organization_name) %>%
+  summarise(n = n()) %>%
+  arrange(desc(n))
+```
+
+The output shows us some important things about the data: 
+
+1. There is a significant amount of articles that don't have any publisher assigned. We can't cover data cleaning tasks in-depth in this notebook but want to point out that this is something worth investigating further. Questions that could be asked are: Do these articles have a DOI? Were these articles misclassified in any way? Can the publisher information got lost for some reason? Are there any other inconsistencies with these articles? Can I disregard some or all of the articles? 
+2. Publisher names are at least in some cases not standardized or aggregated to a single publishing house. The approach taken to represent the publishing structure, i.e. listing imprints or subsidiaries separately or under the main publisher name, and the point in time of the analysis, have an influence of the results, e.g. because of changes in ownership [see also @scheidt2025].
+
+As an example we will look at the publisher names in our data frame that contain *Springer* or *Nature*. We will use the `filter` function from the tidyverse that lets us filter articles that fulfil the condition we specify in combination with the `grepl` function that allows to search for patterns. In this case we will use a regular expression as the pattern to search for.
+
+```{r}
+df %>%
+  group_by(host_organization,host_organization_name) %>%
+  summarise(n = n()) %>%
+  arrange(desc(n)) %>% 
+  filter(grepl("^Springer|Nature", host_organization_name))
+```
+
+If we want to replace the Springer name variants with *Springer Nature* as publisher name, we can use the `mutate` function that lets us transform a column in our data frame in combination with the `str_replace_all` function that lets us replace string values that follow a pattern we specify to do so. 
+
+```{r}
+df %>% 
+  mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature")) %>%
+  group_by(host_organization_name) %>%
+  summarise(n = n()) %>%
+  arrange(desc(n))
+```
+
+Be aware that this data transformation only applies to the publisher name column and not the OpenAlex provided publisher id column. We would need to perform a separate transformation step to align both. Additionally, we did not permanently rename the publisher name values in our data frame. To do this we can either override our data frame *df* or create a new data frame by assigning the output with the `<-` operator.
+
+```{r, eval=FALSE}
+df <- df %>% 
+      mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature"))
+
+df2 <- df %>% 
+       mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature"))
+```
+
+
+To access the apc values in our data frame we will use the `unnest_wider`, `unnest_longer`, and `pivot_wider` functions from the tidyverse with the apc column.
+
+The `unnest_wider` function allows us to turn each element of a list-column into a column. We will further use the `select` function to print only the resulting apc columns.
+
+```{r}
+df %>%
+  unnest_wider(apc, names_sep = ".") %>%
+  select(starts_with("apc"))
+```
+
+The output shows that the values in the apc columns are lists, this is, because OpenAlex provides information for APC list prices and prices of APCs that were actually paid, when available. To transform the lists into single value cells we will use the `unnest_longer` function that does precisely that.
+
+```{r}
+df %>%
+  unnest_wider(apc, names_sep = ".") %>%
+  unnest_longer(c(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) %>%
+  select(id,starts_with("apc"))
+```
+
+The output shows that we now have multiple rows for the same id. To transform the data frame to single rows for each id we will use the `pivot_wider` function that allows us to increase the number of columns and decrease the number of rows.
+
+```{r}
+df %>%
+unnest_wider(apc, names_sep = ".") %>%
+unnest_longer(c(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) %>%
+pivot_wider(id_cols = id, names_from = apc.type, values_from = c(apc.value, apc.currency, apc.value_usd, apc.provenance))
+```
+
+Now we can access the apc information provided by OpenAlex. In this notebook we won't analyse APC information any further. If you are interested in APC analysis, we offer a notebook showing how to analyse APC information using the OpenAPC data set at: <https://oa-datenpraxis.de/OpenAPC.html>
+
+## Analysing institutional open access performance
+
+In the following sections, we will analyse the data to address our question and generate visualizations. This notebook can't provide an in-depth analysis, but it will demonstrate how to apply some useful functions from base R and the tidyverse to gain insights from the data and show how to create visualisations using the *ggplot2* package [@ggplot2].
+
+### How many of the institutions publication are open access?
+
+To determine total number of open access publications of the research organization, we are using the `sum` function on the *is_oa* column. This column contains boolean values (true or false) and the `sum` function will sum up all rows that contain *true* values.
+
+
+```{r}
+sum(df$is_oa, na.rm=T)
+```
+
+We also provided the `na.rm=T` argument to the `sum` function which causes *NA* values to be removed. 
+
+When we check for *NA* values in the *is_oa* column using the `is.na` function, we see that there are `r sum(is.na(df$is_oa))` articles where the open access status is not determined.
+
+
+```{r}
+sum(is.na(df$is_oa))
+```
+
+To determine the overall open access share over all publication years in our data frame, we divide the total number of open access publications by the total number of publications. We calculate the latter using the `n_distinct` function on our id column.
+
+```{r}
+round(sum(df$is_oa, na.rm=T) / n_distinct(df$id) * 100,2)
+```
+
+
+## How are open access publications distributed across journals?
+
+To analyse the distribution of open access articles across journals we will calculate the total number of articles (n_articles), the total number of open access articles (n_oa_articles) and the total number of closed articles (n_closed_articles) per journal. We will again use the `group_by`, `summarise` and `arrange` functions. However, since we noticed that `r sum(is.na(df$is_oa))` articles have an undetermined open access status, we will first filter out all rows with *NA* values in the *is_oa* column. We will also group the data by the *source_display_name* column to generate aggregate statistics for the journals.
+
+```{r}
+df %>%
+  filter(!is.na(is_oa)) %>%
+  group_by(source_display_name) %>%
+  summarise(n_articles = n(),
+            n_oa_articles = sum(is_oa),
+            n_closed_articles = n_articles - n_oa_articles) %>%
+  arrange(desc(n_oa_articles))
+```
+
+The results show that 414 articles have no journal assigned within our data frame. This could indicate that more data cleaning needs to be performed. The results further show that the top three journals in terms of overall publication volume are SSRN Electronic Journal, Scientific Reports, and Astronomy and Astrophysics, while in terms of open access publication volume the top three journals are Scientific Reports, Astronomy and Astrophysics, and Journal of High Energy Physics. 
+
+We can further explore the open access status distribution for the articles. We will do this on the example of the top three journals in terms of open access publication volume.
+
+```{r}
+df %>%
+  filter(source_display_name %in% c('Scientific Reports', 'Astronomy and Astrophysics', 'Journal of High Energy Physics')) %>%
+  group_by(source_display_name,is_oa, oa_status) %>%
+  summarise(n = n())
+```
+
+The results show that there are some data inconsistencies for the Astronomy and Astrophysics journal regarding the green open access status. Furthermore Scientific Reports appears to be a true gold open access journal.
+
+### How does the number of open access publications evolve over time?
+
+We can combine functions from the tidyverse and ggplot2 to visualise the development of open access over time.
+
+First, we group the data by publication year and open access status. We will then compute the number of articles in each group. In the ggplot function, we assign the publication year column to the x axis and the number of articles to the y axis. We choose point (geom_point) and line (geom_line) graph types to mark the distinct values of n and have them connected by lines. Both are provided with a colour aesthetic which is set to our open access status column. This will result in different colours being assigned to the points and lines for the different open access status values. With the *theme_minimal* option we are applying a minimal theme for the plot appearance.
+
+```{r}
+df %>%
+  group_by(publication_year,oa_status) %>%
+  summarise(n = n(), .groups = "keep") %>%
+  ggplot(aes(x=publication_year, y=n)) +
+  geom_line(aes(colour = oa_status)) +
+  geom_point(aes(colour = oa_status)) +
+  theme_minimal()
+```
+
+We can further choose to visualise the open access distribution over time in terms of percentages. For this we first calculate the share of each open access status per publication year and create a new column using the `mutate` function that stores these values. We pipe the result through to the `ggplot` function assigning the publication year column to the x axis and the share to the y axis. We assign the *oa_status* column to the fill argument which will plot a different colour for each open access status. For this plot we choose a bar chart (geom_bar) graph type and again apply the minimal theme.
+
+```{r}
+df %>%
+  group_by(publication_year,oa_status) %>%
+  summarise(count = n()) %>%
+  mutate(perc = count/sum(count) * 100) %>%
+  ggplot(aes(x = publication_year, y = perc, fill = oa_status)) +
+  geom_bar(stat = "identity") +
+  theme_minimal()
+```
+
+## Exercises
+
+```{webr-r}
+#| context: setup
+#| eval: false
+
+
+# Specify the data URL using HTTPS
+url <- "https://oa-datenpraxis.de/notebooks/openalex_data.rds"
+
+# Download the data file from the HTTPS URL and save it
+download.file(url, "openalex_data.rds")
+
+
+# Read the data into R
+df <- readRDS("openalex_data.rds")
+```
+
+The following exercises focus on open access publications in regard to publishers and journals. The code is presented in interactive code blocks. You can adapt the code and run it by clicking on *run code*.
+
+## Aggregate statistics for publishers
+
+Before, we analysed the distribution of open access articles across journals. Below is a copy of the corresponding code. Adapt the code to give you aggregate statistics for *publishers* instead of journals.
+
+
+```{webr-r}
+df %>%
+  filter(!is.na(is_oa)) %>%
+  group_by(source_display_name) %>%
+  summarise(n_articles = n(),
+            n_oa_articles = sum(is_oa),
+            n_closed_articles = n_articles - n_oa_articles) %>%
+  arrange(desc(n_oa_articles))
+```
+
+Which publishers are among the top three in terms of overall publication volume and in terms of open access publication volume? Do you notice any interesting patterns?
+
+## Visuzlisation of open access disctribution by top three publishers
+
+Now, see if you can adapt the code we used to visualise the open access share over time to show you the open access share for the top three publishers in terms of open access publication volume.
+
+
+```{webr-r}
+df %>%
+  group_by(publication_year,oa_status) %>%
+  summarise(count = n()) %>%
+  mutate(perc = count/sum(count) * 100) %>%
+  ggplot(aes(x = publication_year, y = perc, fill = oa_status)) +
+  geom_bar(stat = "identity") +
+  theme_minimal()
+```
+
+# References

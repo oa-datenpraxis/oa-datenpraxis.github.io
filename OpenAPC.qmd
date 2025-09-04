@@ -16,7 +16,7 @@ execute:
   warning: false
   error: false
 webr:
-  packages: ['tidyverse', 'plotly']
+  packages: ['tidyverse']
 lightbox: true
 ---
 
