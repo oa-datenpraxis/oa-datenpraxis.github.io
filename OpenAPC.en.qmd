@@ -175,11 +175,10 @@ The plot tells us that the number of APC payments has increased between 2018 and
 
 ```{r}
 #| echo: false
-#| eval: false
 
-#url <- "https://oa-datenpraxis.de/notebooks/facts.csv"
-#download.file(url, "facts.csv")
-#df <- read_csv("facts.csv")
+url <- "https://oa-datenpraxis.de/notebooks/facts.csv"
+download.file(url, "facts.csv")
+df <- read.csv("facts.csv")
 ```
 
 The following exercises focus on APC payments to publishers and include interactive code blocks. You can adapt the code and run it by clicking on *run code*.
