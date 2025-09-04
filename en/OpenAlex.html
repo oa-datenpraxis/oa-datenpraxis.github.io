@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="alternate" hreflang="de" href="https://oa-datenpraxis.de/OpenAPC.html" />
-<link rel="alternate" hreflang="en" href="https://oa-datenpraxis.de/en/OpenAPC.en.html" />
+<link rel="alternate" hreflang="de" href="https://oa-datenpraxis.de/OpenAlex.html" />
+<link rel="alternate" hreflang="en" href="https://oa-datenpraxis.de/en/OpenAlex.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.34">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>OpenAPC – OA Datenpraxis</title>
+<title>OpenAlex – OA Datenpraxis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -395,7 +395,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"# Specify the data URL using HTTPS\nurl <- \"https://oa-datenpraxis.de/notebooks/facts.csv\"\n\n# Download the data file from the HTTPS URL and save it\ndownload.file(url, \"facts.csv\")\n\n\n# Read the data into R\ndf <- read.csv(\"facts.csv\")","id":1,"options":{"autorun":"true","classes":"","comment":"","context":"setup","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  group_by(journal_full_title) %>%\n  summarise(n_articles = n(),\n            sum_apc = sum(euro),\n            avg_apc = round(sum_apc / n_articles, 2),\n            sd_apc = round(sd(euro),2)) %>%\n  arrange(desc(n_articles))","id":2,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-2","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  filter(journal_full_title %in% c(\"Scientific Reports\", \"PLOS ONE\", \"Frontiers in Immunology\")) %>%\n  ggplot(aes(x = euro, y = journal_full_title)) +\n  geom_boxplot() +\n  theme_minimal()","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-3","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}}];
+globalThis.qwebrCellDetails = [{"code":"# Specify the data URL using HTTPS\nurl <- \"https://oa-datenpraxis.de/notebooks/openalex_data.rds\"\n\n# Download the data file from the HTTPS URL and save it\ndownload.file(url, \"openalex_data.rds\")\n\n\n# Read the data into R\ndf <- readRDS(\"openalex_data.rds\")","id":1,"options":{"autorun":"true","classes":"","comment":"","context":"setup","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","eval":"false","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  filter(!is.na(is_oa)) %>%\n  group_by(source_display_name) %>%\n  summarise(n_articles = n(),\n            n_oa_articles = sum(is_oa),\n            n_closed_articles = n_articles - n_oa_articles) %>%\n  arrange(desc(n_oa_articles))","id":2,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-2","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  group_by(publication_year,oa_status) %>%\n  summarise(count = n()) %>%\n  mutate(perc = count/sum(count) * 100) %>%\n  ggplot(aes(x = publication_year, y = perc, fill = oa_status)) +\n  geom_bar(stat = \"identity\") +\n  theme_minimal()","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-3","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}}];
 
 </script><script type="module">
 // Declare startupMessageQWebR globally
@@ -1661,39 +1661,39 @@ globalThis.qwebrExecuteCode = async function (
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> DE</button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://oa-datenpraxis.de/en/OpenAPC.html" id="language-link-en">EN</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> EN</button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://oa-datenpraxis.de/OpenAlex.html" id="language-link-de">DE</a></li></ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="./partners.html"> 
-<span class="menu-text">Projektpartner</span></a>
+<span class="menu-text">Project Partners</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
-<span class="menu-text">Publikationen</span></a>
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projektvorhaben" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Projektvorhaben</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-plan" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Project Plan</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-projektvorhaben">
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-plan">
 <li>
     <a class="dropdown-item" href="./arbeitspakete.html">
- <span class="dropdown-text">Arbeitspakete</span></a>
+ <span class="dropdown-text">Work Packages</span></a>
   </li>  
     </ul>
 </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-aktuelles" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Aktuelles</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-news" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">News</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-aktuelles">
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-news">
 <li>
     <a class="dropdown-item" href="./events.html">
- <span class="dropdown-text">Veranstaltungen</span></a>
+ <span class="dropdown-text">Events</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./archive.html">
- <span class="dropdown-text">Archiv</span></a>
+ <span class="dropdown-text">Archive</span></a>
   </li>  
     </ul>
 </li>
@@ -1704,15 +1704,15 @@ globalThis.qwebrExecuteCode = async function (
     <ul class="dropdown-menu" aria-labelledby="nav-menu-oa-dashboards">
 <li>
     <a class="dropdown-item" href="./dashboard_uebersicht.html">
- <span class="dropdown-text">OA Dashboards Kontakt</span></a>
+ <span class="dropdown-text">OA Dashboards Contact</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./dashboards.html">
- <span class="dropdown-text">Open-Access-Dashboard Collection</span></a>
+ <span class="dropdown-text">Open Access Dashboard Collection</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./dashboards_schema.html">
- <span class="dropdown-text">Metadatenschema</span></a>
+ <span class="dropdown-text">Metadata Scheme</span></a>
   </li>  
     </ul>
 </li>
@@ -2014,7 +2014,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
   
 }
 </script><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">OpenAPC</h1>
+<h1 class="title">OpenAlex</h1>
 </div>
 
 
@@ -2028,241 +2028,429 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
   
 
 
-</header><div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Dieses Notebook wird nur in English angeboten</p>
-</div>
-</div>
-<section id="what-is-openapc" class="level1"><h1>What is OpenAPC?</h1>
-<p>OpenAPC is an initiative that aims to collect information on payments for open access publications <span class="citation" data-cites="pieper_openapc_2018">(<a href="#ref-pieper_openapc_2018" role="doc-biblioref">Pieper and Broschinski 2018</a>)</span>. The project is located at Bielefeld University Library and started ingesting data from research organizations in 2014. Although the project initially started with a focus on Germany, institutions from more than 20 countries share payment information via OpenAPC as of 2025.</p>
-<p>If research organizations are pursuing a complete transition away from the subscription model and toward open access, it is important to understand the financial dimension. However, data on open access costs are difficult to obtain. Prices listed on publisher websites can be useful to understand what publishers charge for open access publications. There are lists that collect this information and enable comprehensive analyses across multiple publishers <span class="citation" data-cites="butler_open_2024">(<a href="#ref-butler_open_2024" role="doc-biblioref">Butler et al. 2024</a>)</span>. In contrast to these price lists, OpenAPC collects information about payments research organizations made. The amounts paid can differ from prices listed on publisher websites, for example if the organization has signed an agreement with the publisher, or if a publisher grants a discount.</p>
-<p>The OpenAPC dataset shows how much money was spent to publish open access. The initiators imagine that the dataset “[can] be reused to make cash flows between research institutions and publishers more transparent.” <span class="citation" data-cites="openapc_project_nodate">(<a href="#ref-openapc_project_nodate" role="doc-biblioref">OpenAPC n.d.</a>)</span></p>
-<p>Participating in OpenAPC is voluntary. Not all institutions collect data about these payments or pass the data on to OpenAPC.</p>
-</section><section id="how-can-i-access-openapc-data" class="level1"><h1>How can I access OpenAPC data?</h1>
-<p>OpenAPC offers three main ways to access the data:</p>
-<section id="the-github-repository" class="level2"><h2 class="anchored" data-anchor-id="the-github-repository">The GitHub repository</h2>
-<p>The project is organized in a <a href="https://github.com/OpenAPC/openapc-de/tree/master">GitHub repository</a>. You can find and download csv-files with payment information for individual institutions in the folder <em>data</em>.</p>
-</section><section id="the-olap-server" class="level2"><h2 class="anchored" data-anchor-id="the-olap-server">The OLAP server</h2>
-<p>The <a href="https://github.com/OpenAPC/openapc-olap/blob/master/HOWTO.md">OLAP server</a> allows programmatic access to and retrieval of OpenAPC data.</p>
-</section><section id="the-dashboard" class="level2"><h2 class="anchored" data-anchor-id="the-dashboard">The Dashboard</h2>
-<p>On the <a href="https://treemaps.openapc.net/apcdata/openapc/">dashboard</a>, you are able to filter the dataset, see a treemap visualization and download data.</p>
-</section></section><section id="exploring-openapc-data" class="level1"><h1>Exploring OpenAPC data</h1>
-<p>In this notebook we will look at OpenAPC data with R <span class="citation" data-cites="R">(<a href="#ref-R" role="doc-biblioref">R Core Team 2025</a>)</span>, using a specific research organization as an example (Charité - Universitätsmedizin Berlin). We want to adress the following questions:</p>
-<ol type="1">
-<li>How much did the institution spend on open access publications in total?</li>
-<li>How are payments distributed across journals and publishers?</li>
-<li>How do payments evolve over the years?</li>
-</ol>
-<p>To answer the questions, we have retrieved APC data for <em>Charité - Universitätsmedizin Berlin</em> from the <a href="https://treemaps.openapc.net/apcdata/openapc/">OpenAPC dashboard</a>.</p>
-<p>OpenAPC offers comprehensive information on APC payments for participating research organizations. For a full documentation of all available fields, please refer to the <a href="https://github.com/OpenAPC/openapc-de/wiki/schema#openapc-data-set">OpenAPC schema</a>.</p>
-<section id="loading-packages" class="level2"><h2 class="anchored" data-anchor-id="loading-packages">loading packages</h2>
-<p>We will load the <em>dplyr</em> package <span class="citation" data-cites="dplyr">(<a href="#ref-dplyr" role="doc-biblioref">Wickham et al. 2023</a>)</span> that provides a lot of additional functionality for data wrangling, and <em>ggplot2</em> <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span> for data visualization.</p>
+</header><section id="what-is-openalex" class="level1"><h1>What is OpenAlex?</h1>
+<p>OpenAlex is a fully-open bibliographic database operated by the non-profit organization <a href="https://ourresearch.org/">OurResearch</a>. It launched in 2022 as a successor to the then discontinued Microsoft Academic Graph <span class="citation" data-cites="Priem2022">(<a href="#ref-Priem2022" role="doc-biblioref">Priem, Piwowar, and Orr 2022</a>)</span>. OpenAlex data comprises information about various entities of the scholarly ecosystem such as research outputs (journal articles, books, datasets, etc.), authors, sources, etc. <span class="citation" data-cites="OpenAlex">(<a href="#ref-OpenAlex" role="doc-biblioref">OurResearch, n.d.</a>)</span>.</p>
+<p>The OpenAlex dataset is a useful tool to monitor open access activities on different levels of aggregation, as OpenAlex e.g. provides information on the open access status of a work or information on estimates for article processing charges (APCs) at the journal and work levels.</p>
+</section><section id="how-can-i-access-openalex-data" class="level1"><h1>How can I access OpenAlex data?</h1>
+<p>OpenAlex offers three main ways to access the data:</p>
+<section id="the-openalex-web-user-interface" class="level2"><h2 class="anchored" data-anchor-id="the-openalex-web-user-interface">The OpenAlex web user interface</h2>
+<p>In the <a href="https://openalex.org/">web user interface</a> you are able to query the database via a search bar, apply filters and export the results in csv, ris or txt format.</p>
+</section><section id="the-openalex-api" class="level2"><h2 class="anchored" data-anchor-id="the-openalex-api">The OpenAlex API</h2>
+<p>The <a href="https://docs.openalex.org/how-to-use-the-api/api-overview">OpenAlex REST API</a> allows programmatic access to and retrieval of OpenAlex data. The API has a limit of 100,000 calls per user per day. Though no authentication is required it is advised to add your email address to all API requests in order to get into the polite pool.</p>
+</section><section id="the-openalex-data-snapshot" class="level2"><h2 class="anchored" data-anchor-id="the-openalex-data-snapshot">The OpenAlex data snapshot</h2>
+<p>OpenAlex additionally offers a <a href="https://docs.openalex.org/download-all-data/openalex-snapshot">data snapshot</a> with a copy of the complete database for download, which a user can then load into their own data warehouse or relational database. The snapshot gets updated monthly.</p>
+</section></section><section id="exploring-openalex-institutional-open-access-data" class="level1"><h1>Exploring OpenAlex institutional open access data</h1>
+<p>In this notebook we will query the OpenAlex API with R <span class="citation" data-cites="R">(<a href="#ref-R" role="doc-biblioref">R Core Team 2025</a>)</span> to answer the following question:</p>
+<blockquote class="blockquote">
+<p>How many of recent journal articles from a given institution are open access and how did the share of open access publications evolve over the years?</p>
+</blockquote>
+<p>To answer the question, we will filter OpenAlex work records to be:</p>
+<ul>
+<li>of type article</li>
+<li>have at least one author affiliated with a specific institution (the notebook uses the example of the University of Göttingen)</li>
+<li>published between 2020 and 2024</li>
+</ul>
+<p>and we will limit the number of fields (or columns) returned by the API to:</p>
+<ul>
+<li>the OpenAlex ID associated with the article</li>
+<li>the digital object identifier (DOI) of the article</li>
+<li>the title of the article</li>
+<li>the publication year of the article</li>
+<li>journal information</li>
+<li>open access information</li>
+<li>information on the apc list prices and</li>
+<li>information on the paid apc prices</li>
+</ul>
+<p>OpenAlex offers a lot more information than what we are exploring in this notebook. For a full documentation of all available entities and fields, please visit the <a href="https://docs.openalex.org/">OpenAlex technical documentation</a>.</p>
+<section id="loading-packages" class="level2"><h2 class="anchored" data-anchor-id="loading-packages">Loading packages</h2>
+<p>We will load the <em>openalexR</em> package <span class="citation" data-cites="openalexR">(<a href="#ref-openalexR" role="doc-biblioref">Aria et al. 2024</a>)</span> that allows us to query the OpenAlex API from within our notebook and the <em>tidyverse</em> package <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al. 2019</a>)</span> that provides a lot of additional functionalities for data wrangling and visualization.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installation of packages if not already installed with</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(c("dplyr","ggplot2"))</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(c("openalexR","tidyverse"))</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openalexR)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="loading-data" class="level2"><h2 class="anchored" data-anchor-id="loading-data">loading data</h2>
-<p>We will load the csv file downloaded from the OpenAPC dashboard and store it in the object <em>df</em>.</p>
+</section><section id="loading-data" class="level2"><h2 class="anchored" data-anchor-id="loading-data">Loading data</h2>
+<p>We will use the <code>oa_fetch</code> function from the openalexR package to query the OpenAlex API and store the returned <em>tibble</em> (a data frame that works well with the tidyverse) in the object <em>df</em>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"facts.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">oa_fetch</span>(<span class="at">entity =</span> <span class="st">"works"</span>, </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>               <span class="at">institutions.ror =</span> <span class="st">"01y9bpm73"</span>, <span class="co"># change the ROR id if you want to analyse the performance of another institution</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">type =</span> <span class="st">"article"</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">is_paratext =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>               <span class="at">is_retracted =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>               <span class="at">from_publication_date =</span> <span class="st">"2020-01-01"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>               <span class="at">to_publication_date =</span> <span class="st">"2024-12-31"</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">options =</span> <span class="fu">list</span>(<span class="at">select =</span> <span class="fu">c</span>(<span class="st">"id"</span>,<span class="st">"doi"</span>,<span class="st">"title"</span>,<span class="st">"publication_year"</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>                         <span class="st">"primary_location"</span>,<span class="st">"open_access"</span>,<span class="st">"apc_list"</span>,<span class="st">"apc_paid"</span>)),</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>               <span class="at">output =</span> <span class="st">"tibble"</span>, </span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>               <span class="at">paging =</span> <span class="st">"cursor"</span>,</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>               <span class="at">abstract =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>               <span class="at">mailto =</span> <span class="st">"example@domain.com"</span>) <span class="co"># add your email address here to get into the polite pool</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="structure-of-the-dataset" class="level2"><h2 class="anchored" data-anchor-id="structure-of-the-dataset">structure of the dataset</h2>
-<p>To get an overview of the structure of our data frame, especially the number of rows (observations) and columns (variables), the individual column names and the data types they contain, we will use the <code>glimpse</code> function from the <em>dplyr</em> package.</p>
+</section><section id="structure-of-the-dataset" class="level2"><h2 class="anchored" data-anchor-id="structure-of-the-dataset">Structure of the dataset</h2>
+<p>To get an overview of the structure of our data frame, especially the number of rows (observations) and columns (variables), the individual column names and the data types they contain, we will use the <code>glimpse</code> function from the <em>dplyr</em> package, which is part of the tidyverse.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Rows: 4,331
-Columns: 10
-$ X__fact_key__      &lt;chr&gt; "Charité - Universitätsmedizin Berlin", "Charité - …
-$ institution        &lt;chr&gt; "Charité - Universitätsmedizin Berlin", "Charité - …
-$ period             &lt;int&gt; 2019, 2019, 2019, 2019, 2019, 2019, 2019, 2019, 201…
-$ publisher          &lt;chr&gt; "Wiley-Blackwell", "Wiley-Blackwell", "Wiley-Blackw…
-$ journal_full_title &lt;chr&gt; "International Journal of Gynecology &amp; Obstetrics",…
-$ issn               &lt;chr&gt; "0020-7292", "0909-752X", "1552-4825", "0906-6705",…
-$ doi                &lt;chr&gt; "10.1002/ijgo.13099", "10.1111/srt.12800", "10.1002…
-$ is_hybrid          &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRU…
-$ country            &lt;chr&gt; "DEU", "DEU", "DEU", "DEU", "DEU", "DEU", "DEU", "D…
-$ euro               &lt;dbl&gt; 4331.07, 4331.07, 4331.07, 4331.07, 4331.07, 4331.0…</code></pre>
+<pre><code>Rows: 15,952
+Columns: 19
+$ id                          &lt;chr&gt; "https://openalex.org/W3009912996", "https…
+$ title                       &lt;chr&gt; "SARS-CoV-2 Cell Entry Depends on ACE2 and…
+$ doi                         &lt;chr&gt; "https://doi.org/10.1016/j.cell.2020.02.05…
+$ publication_year            &lt;int&gt; 2020, 2021, 2020, 2020, 2020, 2020, 2020, …
+$ is_oa                       &lt;lgl&gt; TRUE, FALSE, TRUE, TRUE, TRUE, TRUE, TRUE,…
+$ is_oa_anywhere              &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FALSE,…
+$ oa_status                   &lt;chr&gt; "bronze", "green", "bronze", "hybrid", "hy…
+$ oa_url                      &lt;chr&gt; "https://www.cell.com/article/S00928674203…
+$ any_repository_has_fulltext &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, FALSE…
+$ source_display_name         &lt;chr&gt; "Cell", "Diabetes Research and Clinical Pr…
+$ source_id                   &lt;chr&gt; "https://openalex.org/S110447773", "https:…
+$ issn_l                      &lt;chr&gt; "0092-8674", "0168-8227", "1097-2765", "00…
+$ host_organization           &lt;chr&gt; "https://openalex.org/P4310315673", "https…
+$ host_organization_name      &lt;chr&gt; "Cell Press", "Elsevier BV", "Elsevier BV"…
+$ landing_page_url            &lt;chr&gt; "https://doi.org/10.1016/j.cell.2020.02.05…
+$ pdf_url                     &lt;chr&gt; "https://www.cell.com/article/S00928674203…
+$ license                     &lt;chr&gt; "other-oa", NA, "other-oa", "cc-by", "cc-b…
+$ version                     &lt;chr&gt; "publishedVersion", NA, "publishedVersion"…
+$ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;data.frame[2 x 5…</code></pre>
 </div>
 </div>
-<p>The output shows that our data frame contains a total of 4,331 rows (observations) and 10 columns. Each row in the data frame corresponds to one APC payment. The output also shows that most of the column values are of data type <em>character</em> (chr), the perion column values are of type <em>integer</em> (int), the is_hybrid column values are of type <em>logical</em> (lgl) and the euro column values are of type <em>double-precision floating-point</em> (dbl) - a format for decimal numbers. The output also indicates the first values of every column on the right hand side.</p>
+<p>The output shows that our data frame contains a total of 15,952 rows (observations) and 19 columns. Furthermore, it shows that most of the column values are of data type <em>character</em> (chr), the publication year column values are of type <em>integer</em> (int), some of the open access column values are of type <em>logical</em> (lgl) and the apc column values are of type <em>list</em> (list). The output also indicates the first values of every column on the right hand side.</p>
+<p>The first values show us two important things:</p>
+<ol type="1">
+<li>There are at least some missing values within our data frame as is indicated by the <em>NA</em> in the license and version columns. <em>NA</em> is not a common string or numeric value, but a reserved word in R for the logical constant which contains a missing value indicator, i.e. R uses <em>NA</em> to indicate that the specific value is missing.</li>
+<li>The apc column contains data frames as values. This means we can’t access the apc information directly. We will explore later in the notebook how to transform the column and access the apc information.</li>
+</ol>
 <p>To look at the first 10 rows of our data frame we are using the <code>head</code> function.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df,<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>                          X__fact_key__                          institution
-1  Charité - Universitätsmedizin Berlin Charité - Universitätsmedizin Berlin
-2  Charité - Universitätsmedizin Berlin Charité - Universitätsmedizin Berlin
-3  Charité - Universitätsmedizin Berlin Charité - Universitätsmedizin Berlin
-4  Charité - Universitätsmedizin Berlin Charité - Universitätsmedizin Berlin
-5  Charité - Universitätsmedizin Berlin Charité - Universitätsmedizin Berlin
-6  Charité - Universitätsmedizin Berlin Charité - Universitätsmedizin Berlin
-7  Charité - Universitätsmedizin Berlin Charité - Universitätsmedizin Berlin
-8  Charité - Universitätsmedizin Berlin Charité - Universitätsmedizin Berlin
-9  Charité - Universitätsmedizin Berlin Charité - Universitätsmedizin Berlin
-10 Charité - Universitätsmedizin Berlin Charité - Universitätsmedizin Berlin
-   period       publisher
-1    2019 Wiley-Blackwell
-2    2019 Wiley-Blackwell
-3    2019 Wiley-Blackwell
-4    2019 Wiley-Blackwell
-5    2019 Wiley-Blackwell
-6    2019 Wiley-Blackwell
-7    2019 Wiley-Blackwell
-8    2019 Wiley-Blackwell
-9    2019 Wiley-Blackwell
-10   2019 Wiley-Blackwell
-                                         journal_full_title      issn
-1          International Journal of Gynecology &amp; Obstetrics 0020-7292
-2                              Skin Research and Technology 0909-752X
-3               American Journal of Medical Genetics Part A 1552-4825
-4                                  Experimental Dermatology 0906-6705
-5                              Journal of Internal Medicine 0954-6820
-6                                                Immunology 0019-2805
-7  JDDG Journal der Deutschen Dermatologischen Gesellschaft 1610-0379
-8                                                   Allergy 0105-4538
-9   Journal of Tissue Engineering and Regenerative Medicine 1932-6254
-10            Alcoholism Clinical and Experimental Research 0145-6008
-                    doi is_hybrid country    euro
-1    10.1002/ijgo.13099      TRUE     DEU 4331.07
-2     10.1111/srt.12800      TRUE     DEU 4331.07
-3  10.1002/ajmg.a.61419      TRUE     DEU 4331.07
-4     10.1111/exd.14007      TRUE     DEU 4331.07
-5    10.1111/joim.12985      TRUE     DEU 4331.07
-6     10.1111/imm.13138      TRUE     DEU 4331.07
-7     10.1111/ddg.14013      TRUE     DEU 4331.07
-8     10.1111/all.14015      TRUE     DEU 4331.07
-9     10.1002/term.2948      TRUE     DEU 4331.07
-10   10.1111/acer.14211      TRUE     DEU 4331.07</code></pre>
+<pre><code># A tibble: 10 × 19
+   id         title doi   publication_year is_oa is_oa_anywhere oa_status oa_url
+   &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;            &lt;int&gt; &lt;lgl&gt; &lt;lgl&gt;          &lt;chr&gt;     &lt;chr&gt; 
+ 1 https://o… SARS… http…             2020 TRUE  TRUE           bronze    https…
+ 2 https://o… IDF … http…             2021 FALSE TRUE           green     https…
+ 3 https://o… A Mu… http…             2020 TRUE  TRUE           bronze    https…
+ 4 https://o… Neur… http…             2020 TRUE  TRUE           hybrid    https…
+ 5 https://o… COVI… http…             2020 TRUE  TRUE           hybrid    https…
+ 6 https://o… Olfa… http…             2020 TRUE  TRUE           hybrid    https…
+ 7 https://o… Mana… http…             2020 TRUE  FALSE          closed    https…
+ 8 https://o… SARS… http…             2021 TRUE  TRUE           green     https…
+ 9 https://o… Infe… http…             2020 TRUE  TRUE           hybrid    https…
+10 https://o… The … http…             2021 TRUE  TRUE           bronze    https…
+# ℹ 11 more variables: any_repository_has_fulltext &lt;lgl&gt;,
+#   source_display_name &lt;chr&gt;, source_id &lt;chr&gt;, issn_l &lt;chr&gt;,
+#   host_organization &lt;chr&gt;, host_organization_name &lt;chr&gt;,
+#   landing_page_url &lt;chr&gt;, pdf_url &lt;chr&gt;, license &lt;chr&gt;, version &lt;chr&gt;,
+#   apc &lt;list&gt;</code></pre>
 </div>
 </div>
 <p>The first argument within the <code>head</code> function is our data frame <em>df</em> and the second argument is the number of rows we want to have returned. Each row within our data frame corresponds to an article.</p>
-</section><section id="analyzing-and-visualizing-open-access-payments" class="level2"><h2 class="anchored" data-anchor-id="analyzing-and-visualizing-open-access-payments">Analyzing and visualizing open access payments</h2>
-<p>In the following sections, we will analyze the data to address our questions and generate visualizations.</p>
-<section id="how-much-did-the-institution-spend-on-open-access-publications-in-total" class="level3"><h3 class="anchored" data-anchor-id="how-much-did-the-institution-spend-on-open-access-publications-in-total">How much did the institution spend on open access publications in total?</h3>
-<p>To determine total open access spending of the research organization, we are using the <code>sum</code> function and apply it to the colum <em>euro</em>. The <a href="https://github.com/OpenAPC/openapc-de/wiki/schema#openapc-data-set">OpenAPC schema</a> states that this column contains “[t]he APC amount that was paid in EURO. Includes VAT and any discounts”.</p>
+</section><section id="data-wrangling-with-the-tidyverse" class="level2"><h2 class="anchored" data-anchor-id="data-wrangling-with-the-tidyverse">Data wrangling with the tidyverse</h2>
+<p>Before analysing the OpenAlex data, we will have a closer look at the publisher and apc columns and perform some data wrangling tasks.</p>
+<p>To get an overview of the publishers present in our dataframe and the number of articles per publisher, we will use three tidyverse functions and the pipe operator <code>%&gt;%</code>.</p>
+<p>The pipe operator allows us to take e.g. a data frame or the result of a function and pass it to another function. If we type the name of our data frame followed by the pipe operator that means we don’t have to specify which data we want a function to be performed on, when we call it after the pipe operator.</p>
+<p>The <code>group_by</code> function allows us to group data in our data frame <em>df</em> by one or more variables. In this case we will group the data frame by the OpenAlex provided id for the publisher in our <em>host_organization</em> column and the publisher name in our <em>host_organization_name</em>. This allows us to generate aggregate statistics for the publishers in our data frame.</p>
+<p>The <code>summarise</code> function allows us to calculate summary statistics for each group. In this case we will use the <code>n</code> function to count the number of observations in each group, and the result is stored in a new variable called n.</p>
+<p>The <code>arrange</code> function is used to sort the data based on the n variable and the <code>desc</code> function lets us determine that the ordering should be in descending order. This means that the groups with the highest number of observations will appear at the top of the output.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(df<span class="sc">$</span>euro)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(host_organization,host_organization_name) <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 8669107</code></pre>
+<pre><code># A tibble: 443 × 3
+# Groups:   host_organization [443]
+   host_organization                host_organization_name                     n
+   &lt;chr&gt;                            &lt;chr&gt;                                  &lt;int&gt;
+ 1 https://openalex.org/P4310320990 Elsevier BV                             2506
+ 2 https://openalex.org/P4310320595 Wiley                                   2121
+ 3 https://openalex.org/P4310319900 Springer Science+Business Media         1395
+ 4 &lt;NA&gt;                             &lt;NA&gt;                                    1127
+ 5 https://openalex.org/P4310310987 Multidisciplinary Digital Publishing …  1073
+ 6 https://openalex.org/P4310319908 Nature Portfolio                         650
+ 7 https://openalex.org/P4310320527 Frontiers Media                          506
+ 8 https://openalex.org/P4310311648 Oxford University Press                  481
+ 9 https://openalex.org/P4310319965 Springer Nature                          417
+10 https://openalex.org/P4310320006 American Chemical Society                388
+# ℹ 433 more rows</code></pre>
 </div>
 </div>
-<p>Without context, this number does not say much. Applying the <code>min</code> and <code>max</code> functions to the column <em>period</em> (“Year of APC payment (YYYY)”), we can see that this sum was accrued over a period of 6 years, from 2018 to 2023.</p>
+<p>The output shows us some important things about the data:</p>
+<ol type="1">
+<li>There is a significant amount of articles that don’t have any publisher assigned. We can’t cover data cleaning tasks in-depth in this notebook but want to point out that this is something worth investigating further. Questions that could be asked are: Do these articles have a DOI? Were these articles misclassified in any way? Can the publisher information got lost for some reason? Are there any other inconsistencies with these articles? Can I disregard some or all of the articles?</li>
+<li>Publisher names are at least in some cases not standardized or aggregated to a single publishing house. The approach taken to represent the publishing structure, i.e. listing imprints or subsidiaries separately or under the main publisher name, and the point in time of the analysis, have an influence of the results, e.g. because of changes in ownership <span class="citation" data-cites="scheidt2025">(see also <a href="#ref-scheidt2025" role="doc-biblioref">Scheidt 2025</a>)</span>.</li>
+</ol>
+<p>As an example we will look at the publisher names in our data frame that contain <em>Springer</em> or <em>Nature</em>. We will use the <code>filter</code> function from the tidyverse that lets us filter articles that fulfil the condition we specify in combination with the <code>grepl</code> function that allows to search for patterns. In this case we will use a regular expression as the pattern to search for.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(df<span class="sc">$</span>period)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(host_organization,host_organization_name) <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">grepl</span>(<span class="st">"^Springer|Nature"</span>, host_organization_name))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2018</code></pre>
+<pre><code># A tibble: 8 × 3
+# Groups:   host_organization [8]
+  host_organization                host_organization_name                n
+  &lt;chr&gt;                            &lt;chr&gt;                             &lt;int&gt;
+1 https://openalex.org/P4310319900 Springer Science+Business Media    1395
+2 https://openalex.org/P4310319908 Nature Portfolio                    650
+3 https://openalex.org/P4310319965 Springer Nature                     417
+4 https://openalex.org/P4310319986 Springer VS                          28
+5 https://openalex.org/P4310320108 Springer Nature (Netherlands)         9
+6 https://openalex.org/P4310319972 Springer International Publishing     3
+7 https://openalex.org/P4310321666 Springer Vienna                       2
+8 https://openalex.org/P4310320090 Springer Medizin                      1</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(df<span class="sc">$</span>period)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2023</code></pre>
 </div>
-</div>
-<p>Because it takes research organizations time to collect and process data on APC payments and submit it to OpenAPC, there is usually a delay in reporting. In this example, data for 2024 is not yet available.</p>
-</section><section id="how-are-payments-distributed-across-journals" class="level3"><h3 class="anchored" data-anchor-id="how-are-payments-distributed-across-journals">How are payments distributed across journals?</h3>
-<p>The R package <em>dplyr</em> provides a lot of functionality for data wrangling. We can’t go into much detail here, but we will demonstrate how to use some of the most useful functions.</p>
-<p>One of them is the <code>group_by</code> function. Here, we use it to group the dataset by the column <em>journal_full_title</em>. This will allow us to generate aggregate statistics for articles published within a journal. We then use the pipe operator <code>%&gt;%</code>, which takes output from one function as input for the next function. The input is passed to the <code>summarise</code> function, where we calculate aggregate statistics. For each journal in the dataset, we calculate the total number of articles published (<em>n_articles</em>), the total of APCs paid (<em>sum_apc</em>), the average APC paid per article (<em>avg_apc</em>), and the standard deviation (<em>sd_apc</em>). The last two statistics are rounded to two decimal places. To get a better overview of the data, we then use <code>arrange</code> to sort the result by the total number of articles.</p>
+<p>If we want to replace the Springer name variants with <em>Springer Nature</em> as publisher name, we can use the <code>mutate</code> function that lets us transform a column in our data frame in combination with the <code>str_replace_all</code> function that lets us replace string values that follow a pattern we specify to do so.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(journal_full_title) <span class="sc">%&gt;%</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n_articles =</span> <span class="fu">n</span>(),</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">sum_apc =</span> <span class="fu">sum</span>(euro),</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">avg_apc =</span> <span class="fu">round</span>(sum_apc <span class="sc">/</span> n_articles, <span class="dv">2</span>),</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">sd_apc =</span> <span class="fu">round</span>(<span class="fu">sd</span>(euro),<span class="dv">2</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_articles))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span> </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">host_organization_name =</span> <span class="fu">str_replace_all</span>(host_organization_name, <span class="st">"^Springer.*$|Nature.*$"</span>, <span class="st">"Springer Nature"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(host_organization_name) <span class="sc">%&gt;%</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 923 × 5
-   journal_full_title                          n_articles sum_apc avg_apc sd_apc
-   &lt;chr&gt;                                            &lt;int&gt;   &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;
- 1 Scientific Reports                                 232 433492.   1868.   141.
- 2 PLOS ONE                                           134 223456.   1668.   210.
- 3 Frontiers in Immunology                            130 276129.   2124.   516.
- 4 International Journal of Molecular Sciences        124 222282.   1793.   331.
- 5 Journal of Clinical Medicine                       120 212463.   1771.   502.
- 6 Frontiers in Neurology                              70 144595.   2066.   558.
- 7 Cancers                                             66 118423.   1794.   557.
- 8 Allergy                                             61 168277.   2759.   623.
- 9 Frontiers in Psychiatry                             60 128626.   2144.   638.
-10 Frontiers in Physiology                             43  91332    2124    474.
-# ℹ 913 more rows</code></pre>
+<pre><code># A tibble: 434 × 2
+   host_organization_name                             n
+   &lt;chr&gt;                                          &lt;int&gt;
+ 1 Elsevier BV                                     2506
+ 2 Springer Nature                                 2505
+ 3 Wiley                                           2121
+ 4 &lt;NA&gt;                                            1127
+ 5 Multidisciplinary Digital Publishing Institute  1073
+ 6 Frontiers Media                                  506
+ 7 Oxford University Press                          481
+ 8 American Chemical Society                        388
+ 9 American Physical Society                        350
+10 Taylor &amp; Francis                                 326
+# ℹ 424 more rows</code></pre>
 </div>
 </div>
-<p>The results show that Charité paid APCs for 923 journals, as indicated by the number of rows. Most APC payments were made to the journals Scientific Reports, PLOS ONE, and Frontiers in Immunology. The column <em>sd_apc</em> tells us that for some journals, there is a considerable variance in APC payments.</p>
-<p>We can explore this variance further by visualizing the distribution of APC payments. For this, we will use the packages <em>dplyr</em> and <em>ggplot2</em>. First, we <code>filter</code> the data to focus on the three journals with the most APC payments. We then pass this output to the <code>ggplot</code> function. We assign the column <em>euro</em> to the x axis and the column <em>journal_full_title</em> to the y axis. Next, we define the type of plot we want - here, we choose a box plot to visualize a distribution. Finally, we choose the theme <em>theme_minimal</em> for a simple layout.</p>
+<p>Be aware that this data transformation only applies to the publisher name column and not the OpenAlex provided publisher id column. We would need to perform a separate transformation step to align both. Additionally, we did not permanently rename the publisher name values in our data frame. To do this we can either override our data frame <em>df</em> or create a new data frame by assigning the output with the <code>&lt;-</code> operator.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(journal_full_title <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Scientific Reports"</span>, <span class="st">"PLOS ONE"</span>, <span class="st">"Frontiers in Immunology"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> euro, <span class="at">y =</span> journal_full_title)) <span class="sc">+</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure"><p><a href="OpenAPC_files/figure-html/unnamed-chunk-9-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="OpenAPC_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></a></p>
-</figure>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(<span class="at">host_organization_name =</span> <span class="fu">str_replace_all</span>(host_organization_name, <span class="st">"^Springer.*$|Nature.*$"</span>, <span class="st">"Springer Nature"</span>))</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>       <span class="fu">mutate</span>(<span class="at">host_organization_name =</span> <span class="fu">str_replace_all</span>(host_organization_name, <span class="st">"^Springer.*$|Nature.*$"</span>, <span class="st">"Springer Nature"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To access the apc values in our data frame we will use the <code>unnest_wider</code>, <code>unnest_longer</code>, and <code>pivot_wider</code> functions from the tidyverse with the apc column.</p>
+<p>The <code>unnest_wider</code> function allows us to turn each element of a list-column into a column. We will further use the <code>select</code> function to print only the resulting apc columns.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(apc, <span class="at">names_sep =</span> <span class="st">"."</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">starts_with</span>(<span class="st">"apc"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 15,952 × 6
+      apc.type   apc.value apc.currency apc.value_usd apc.provenance apc.1
+   &lt;list&lt;chr&gt;&gt; &lt;list&lt;dbl&gt;&gt;  &lt;list&lt;chr&gt;&gt;   &lt;list&lt;dbl&gt;&gt;    &lt;list&lt;chr&gt;&gt; &lt;lgl&gt;
+ 1         [2]         [2]          [2]           [2]            [2] NA   
+ 2         [2]         [2]          [2]           [2]            [2] NA   
+ 3         [2]         [2]          [2]           [2]            [2] NA   
+ 4                                                                   NA   
+ 5         [2]         [2]          [2]           [2]            [2] NA   
+ 6         [2]         [2]          [2]           [2]            [2] NA   
+ 7                                                                   NA   
+ 8         [2]         [2]          [2]           [2]            [2] NA   
+ 9                                                                   NA   
+10         [2]         [2]          [2]           [2]            [2] NA   
+# ℹ 15,942 more rows</code></pre>
 </div>
 </div>
-</div>
-<p>These box plots show clear differences in the distribution of APC payments. The three journals differ in the median amount of APCs paid - the median is the middle point in a distribution and is visualized by the vertical line in the box plot. We also see that the range of APC payments is highest for Frontiers in Immunology: there are outliers at the bottom and top end of the distribution, as indicated by the dots.</p>
-</section><section id="how-do-payments-evolve-over-the-years" class="level3"><h3 class="anchored" data-anchor-id="how-do-payments-evolve-over-the-years">How do payments evolve over the years?</h3>
-<p>We can combine <em>dplyr</em> and <em>ggplot2</em> to visualize the development of APC payments over time. We will also consider open access types (gold / hybrid).</p>
-<p>First, we group the data by <em>period</em> (“Year of APC payment (YYYY)”) and <em>is_hybrid</em> (“Determines if the article has been published in a hybrid journal (TRUE) or in fully/Gold OA journal (FALSE)”). Just like above, we will generate the aggregate statistic <em>n_articles</em>. In the <code>ggplot</code> function, we assign the column <em>period</em> to the x axis, <em>n_articles</em> to the y axis, and <em>is_hybrid</em> to fill - this means that different colours will be assigned to the open access types. We choose the graph type <em>geom_col</em>, a simple bar chart.</p>
+<p>The output shows that the values in the apc columns are lists, this is, because OpenAlex provides information for APC list prices and prices of APCs that were actually paid, when available. To transform the lists into single value cells we will use the <code>unnest_longer</code> function that does precisely that.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(period, is_hybrid) <span class="sc">%&gt;%</span></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n_articles =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> period, <span class="at">y =</span> n_articles, <span class="at">fill =</span> is_hybrid)) <span class="sc">+</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(apc, <span class="at">names_sep =</span> <span class="st">"."</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_longer</span>(<span class="fu">c</span>(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) <span class="sc">%&gt;%</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id,<span class="fu">starts_with</span>(<span class="st">"apc"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 22,044 × 7
+   id         apc.type apc.value apc.currency apc.value_usd apc.provenance apc.1
+   &lt;chr&gt;      &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt;                &lt;dbl&gt; &lt;chr&gt;          &lt;lgl&gt;
+ 1 https://o… list         10100 USD                  10100 &lt;NA&gt;           NA   
+ 2 https://o… paid            NA &lt;NA&gt;                    NA &lt;NA&gt;           NA   
+ 3 https://o… list          3970 USD                   3970 &lt;NA&gt;           NA   
+ 4 https://o… paid            NA &lt;NA&gt;                    NA &lt;NA&gt;           NA   
+ 5 https://o… list          9080 USD                   9080 &lt;NA&gt;           NA   
+ 6 https://o… paid            NA &lt;NA&gt;                    NA &lt;NA&gt;           NA   
+ 7 https://o… list          3690 EUR                   4790 &lt;NA&gt;           NA   
+ 8 https://o… paid          3690 EUR                   4790 &lt;NA&gt;           NA   
+ 9 https://o… list          9750 EUR                  11690 &lt;NA&gt;           NA   
+10 https://o… paid          9750 EUR                  11690 &lt;NA&gt;           NA   
+# ℹ 22,034 more rows</code></pre>
+</div>
+</div>
+<p>The output shows that we now have multiple rows for the same id. To transform the data frame to single rows for each id we will use the <code>pivot_wider</code> function that allows us to increase the number of columns and decrease the number of rows.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">unnest_wider</span>(apc, <span class="at">names_sep =</span> <span class="st">"."</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">unnest_longer</span>(<span class="fu">c</span>(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) <span class="sc">%&gt;%</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="fu">pivot_wider</span>(<span class="at">id_cols =</span> id, <span class="at">names_from =</span> apc.type, <span class="at">values_from =</span> <span class="fu">c</span>(apc.value, apc.currency, apc.value_usd, apc.provenance))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 11,022 × 9
+   id          apc.value_list apc.value_paid apc.currency_list apc.currency_paid
+   &lt;chr&gt;                &lt;dbl&gt;          &lt;dbl&gt; &lt;chr&gt;             &lt;chr&gt;            
+ 1 https://op…          10100             NA USD               &lt;NA&gt;             
+ 2 https://op…           3970             NA USD               &lt;NA&gt;             
+ 3 https://op…           9080             NA USD               &lt;NA&gt;             
+ 4 https://op…           3690           3690 EUR               EUR              
+ 5 https://op…           9750           9750 EUR               EUR              
+ 6 https://op…          10100             NA USD               &lt;NA&gt;             
+ 7 https://op…          10100             NA USD               &lt;NA&gt;             
+ 8 https://op…           1800           1800 USD               USD              
+ 9 https://op…           9750           9750 EUR               EUR              
+10 https://op…           3920           3920 GBP               GBP              
+# ℹ 11,012 more rows
+# ℹ 4 more variables: apc.value_usd_list &lt;dbl&gt;, apc.value_usd_paid &lt;dbl&gt;,
+#   apc.provenance_list &lt;chr&gt;, apc.provenance_paid &lt;chr&gt;</code></pre>
+</div>
+</div>
+<p>Now we can access the apc information provided by OpenAlex. In this notebook we won’t analyse APC information any further. If you are interested in APC analysis, we offer a notebook showing how to analyse APC information using the OpenAPC data set at: <a href="https://oa-datenpraxis.de/OpenAPC.html" class="uri">https://oa-datenpraxis.de/OpenAPC.html</a></p>
+</section><section id="analysing-institutional-open-access-performance" class="level2"><h2 class="anchored" data-anchor-id="analysing-institutional-open-access-performance">Analysing institutional open access performance</h2>
+<p>In the following sections, we will analyse the data to address our question and generate visualizations. This notebook can’t provide an in-depth analysis, but it will demonstrate how to apply some useful functions from base R and the tidyverse to gain insights from the data and show how to create visualisations using the <em>ggplot2</em> package <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span>.</p>
+<section id="how-many-of-the-institutions-publication-are-open-access" class="level3"><h3 class="anchored" data-anchor-id="how-many-of-the-institutions-publication-are-open-access">How many of the institutions publication are open access?</h3>
+<p>To determine total number of open access publications of the research organization, we are using the <code>sum</code> function on the <em>is_oa</em> column. This column contains boolean values (true or false) and the <code>sum</code> function will sum up all rows that contain <em>true</em> values.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(df<span class="sc">$</span>is_oa, <span class="at">na.rm=</span>T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10668</code></pre>
+</div>
+</div>
+<p>We also provided the <code>na.rm=T</code> argument to the <code>sum</code> function which causes <em>NA</em> values to be removed.</p>
+<p>When we check for <em>NA</em> values in the <em>is_oa</em> column using the <code>is.na</code> function, we see that there are 21 articles where the open access status is not determined.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(df<span class="sc">$</span>is_oa))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 21</code></pre>
+</div>
+</div>
+<p>To determine the overall open access share over all publication years in our data frame, we divide the total number of open access publications by the total number of publications. We calculate the latter using the <code>n_distinct</code> function on our id column.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">sum</span>(df<span class="sc">$</span>is_oa, <span class="at">na.rm=</span>T) <span class="sc">/</span> <span class="fu">n_distinct</span>(df<span class="sc">$</span>id) <span class="sc">*</span> <span class="dv">100</span>,<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 66.88</code></pre>
+</div>
+</div>
+</section></section><section id="how-are-open-access-publications-distributed-across-journals" class="level2"><h2 class="anchored" data-anchor-id="how-are-open-access-publications-distributed-across-journals">How are open access publications distributed across journals?</h2>
+<p>To analyse the distribution of open access articles across journals we will calculate the total number of articles (n_articles), the total number of open access articles (n_oa_articles) and the total number of closed articles (n_closed_articles) per journal. We will again use the <code>group_by</code>, <code>summarise</code> and <code>arrange</code> functions. However, since we noticed that 21 articles have an undetermined open access status, we will first filter out all rows with <em>NA</em> values in the <em>is_oa</em> column. We will also group the data by the <em>source_display_name</em> column to generate aggregate statistics for the journals.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(is_oa)) <span class="sc">%&gt;%</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(source_display_name) <span class="sc">%&gt;%</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n_articles =</span> <span class="fu">n</span>(),</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">n_oa_articles =</span> <span class="fu">sum</span>(is_oa),</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">n_closed_articles =</span> n_articles <span class="sc">-</span> n_oa_articles) <span class="sc">%&gt;%</span></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_oa_articles))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4,156 × 4
+   source_display_name                n_articles n_oa_articles n_closed_articles
+   &lt;chr&gt;                                   &lt;int&gt;         &lt;int&gt;             &lt;int&gt;
+ 1 Scientific Reports                        221           221                 0
+ 2 Astronomy and Astrophysics                219           215                 4
+ 3 Journal of High Energy Physics            173           173                 0
+ 4 Nature Communications                     170           170                 0
+ 5 PLoS ONE                                  124           123                 1
+ 6 The European Physical Journal C            97            97                 0
+ 7 Forests                                    95            95                 0
+ 8 Angewandte Chemie                         103            92                11
+ 9 International Journal of Molecula…         84            84                 0
+10 &lt;NA&gt;                                      414            84               330
+# ℹ 4,146 more rows</code></pre>
+</div>
+</div>
+<p>The results show that 414 articles have no journal assigned within our data frame. This could indicate that more data cleaning needs to be performed. The results further show that the top three journals in terms of overall publication volume are SSRN Electronic Journal, Scientific Reports, and Astronomy and Astrophysics, while in terms of open access publication volume the top three journals are Scientific Reports, Astronomy and Astrophysics, and Journal of High Energy Physics.</p>
+<p>We can further explore the open access status distribution for the articles. We will do this on the example of the top three journals in terms of open access publication volume.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(source_display_name <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">'Scientific Reports'</span>, <span class="st">'Astronomy and Astrophysics'</span>, <span class="st">'Journal of High Energy Physics'</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(source_display_name,is_oa, oa_status) <span class="sc">%&gt;%</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8 × 4
+# Groups:   source_display_name, is_oa [4]
+  source_display_name            is_oa oa_status     n
+  &lt;chr&gt;                          &lt;lgl&gt; &lt;chr&gt;     &lt;int&gt;
+1 Astronomy and Astrophysics     FALSE closed        1
+2 Astronomy and Astrophysics     FALSE green         3
+3 Astronomy and Astrophysics     TRUE  bronze       95
+4 Astronomy and Astrophysics     TRUE  green         1
+5 Astronomy and Astrophysics     TRUE  hybrid      119
+6 Journal of High Energy Physics TRUE  diamond     168
+7 Journal of High Energy Physics TRUE  green         5
+8 Scientific Reports             TRUE  gold        221</code></pre>
+</div>
+</div>
+<p>The results show that there are some data inconsistencies for the Astronomy and Astrophysics journal regarding the green open access status. Furthermore Scientific Reports appears to be a true gold open access journal.</p>
+<section id="how-does-the-number-of-open-access-publications-evolve-over-time" class="level3"><h3 class="anchored" data-anchor-id="how-does-the-number-of-open-access-publications-evolve-over-time">How does the number of open access publications evolve over time?</h3>
+<p>We can combine functions from the tidyverse and ggplot2 to visualise the development of open access over time.</p>
+<p>First, we group the data by publication year and open access status. We will then compute the number of articles in each group. In the ggplot function, we assign the publication year column to the x axis and the number of articles to the y axis. We choose point (geom_point) and line (geom_line) graph types to mark the distinct values of n and have them connected by lines. Both are provided with a colour aesthetic which is set to our open access status column. This will result in different colours being assigned to the points and lines for the different open access status values. With the <em>theme_minimal</em> option we are applying a minimal theme for the plot appearance.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(publication_year,oa_status) <span class="sc">%&gt;%</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">"keep"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>publication_year, <span class="at">y=</span>n)) <span class="sc">+</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">colour =</span> oa_status)) <span class="sc">+</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> oa_status)) <span class="sc">+</span></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="OpenAPC_files/figure-html/unnamed-chunk-10-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="OpenAPC_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></a></p>
+<figure class="figure"><p><a href="OpenAlex_files/figure-html/unnamed-chunk-18-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="OpenAlex_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></a></p>
 </figure>
 </div>
 </div>
 </div>
-<p>The plot tells us that the number of APC payments has increased between 2018 and 2021 and has dropped off since. We can also see that APC payments for publications in hybrid open access journals have increased considerably between 2019 and 2020. This is likely the result of transformative agreements between German research organizations and publishers.</p>
-</section></section></section><section id="exercises" class="level1"><h1>Exercises</h1>
+<p>We can further choose to visualise the open access distribution over time in terms of percentages. For this we first calculate the share of each open access status per publication year and create a new column using the <code>mutate</code> function that stores these values. We pipe the result through to the <code>ggplot</code> function assigning the publication year column to the x axis and the share to the y axis. We assign the <em>oa_status</em> column to the fill argument which will plot a different colour for each open access status. For this plot we choose a bar chart (geom_bar) graph type and again apply the minimal theme.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(publication_year,oa_status) <span class="sc">%&gt;%</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">count =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">perc =</span> count<span class="sc">/</span><span class="fu">sum</span>(count) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> publication_year, <span class="at">y =</span> perc, <span class="at">fill =</span> oa_status)) <span class="sc">+</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><a href="OpenAlex_files/figure-html/unnamed-chunk-19-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="OpenAlex_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="672"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section></section><section id="exercises" class="level2"><h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>The following exercises focus on APC payments to publishers and include interactive code blocks. You can adapt the code and run it by clicking on <em>run code</em>.</p>
-<section id="aggregate-statistics-for-publishers" class="level2"><h2 class="anchored" data-anchor-id="aggregate-statistics-for-publishers">1. Aggregate statistics for publishers</h2>
-<p>Above, we analyzed APC payments by journal. Here is a copy of that code block. See if you can adapt it to give you aggregate statistics for <em>publishers</em> instead.</p>
+<p>The following exercises focus on open access publications in regard to publishers and journals. The code is presented in interactive code blocks. You can adapt the code and run it by clicking on <em>run code</em>.</p>
+</section><section id="aggregate-statistics-for-publishers" class="level2"><h2 class="anchored" data-anchor-id="aggregate-statistics-for-publishers">Aggregate statistics for publishers</h2>
+<p>Before, we analysed the distribution of open access articles across journals. Below is a copy of the corresponding code. Adapt the code to give you aggregate statistics for <em>publishers</em> instead of journals.</p>
 <div id="qwebr-insertion-location-2"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>Which publishers received the highest amount of APC payments from Charité? Do you notice any interesting patterns?</p>
-</section><section id="visuzlization-of-apc-disctribution-by-publisher" class="level2"><h2 class="anchored" data-anchor-id="visuzlization-of-apc-disctribution-by-publisher">2. Visuzlization of APC disctribution by publisher</h2>
-<p>Now, see if you can adapt the code above to show you the distribution of APC payments by publisher.</p>
+<p>Which publishers are among the top three in terms of overall publication volume and in terms of open access publication volume? Do you notice any interesting patterns?</p>
+</section><section id="visuzlisation-of-open-access-disctribution-by-top-three-publishers" class="level2"><h2 class="anchored" data-anchor-id="visuzlisation-of-open-access-disctribution-by-top-three-publishers">Visuzlisation of open access disctribution by top three publishers</h2>
+<p>Now, see if you can adapt the code we used to visualise the open access share over time to show you the open access share for the top three publishers in terms of open access publication volume.</p>
 <div id="qwebr-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section></section><section id="references" class="level1"></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-butler_open_2024" class="csl-entry" role="listitem">
-Butler, Leigh-Ann, Madelaine Hare, Nina Schönfelder, Eric Schares, Juan Pablo Alperin, and Stefanie Haustein. 2024. <span>“Open Dataset of Annual <span>Article</span> <span>Processing</span> <span>Charges</span> (<span>APCs</span>) of Gold and Hybrid Journals Published by <span>Elsevier</span>, <span>Frontiers</span>, <span>MDPI</span>, <span>PLOS</span>, <span>Springer</span>-<span>Nature</span> and <span>Wiley</span> 2019-2023.”</span> Harvard Dataverse. <a href="https://doi.org/10.7910/DVN/CR1MMV">https://doi.org/10.7910/DVN/CR1MMV</a>.
+<div id="ref-openalexR" class="csl-entry" role="listitem">
+Aria, Massimo, Le Trang, Corrado Cuccurullo, Alessandra Belfiore, and June Choe. 2024. <span>“openalexR: An r-Tool for Collecting Bibliometric Data from OpenAlex.”</span> <em>The R Journal</em> 15: 167–80. <a href="https://doi.org/10.32614/RJ-2023-089">https://doi.org/10.32614/RJ-2023-089</a>.
 </div>
-<div id="ref-openapc_project_nodate" class="csl-entry" role="listitem">
-OpenAPC. n.d. <span>“Project <span>History</span>.”</span> Accessed August 29, 2025. <a href="https://www.openapc.net/history/">https://www.openapc.net/history/</a>.
+<div id="ref-OpenAlex" class="csl-entry" role="listitem">
+OurResearch. n.d. <span>“<span class="nocase">OpenAlex technical documentation</span>.”</span> <a href="https://docs.openalex.org/">https://docs.openalex.org/</a>.
 </div>
-<div id="ref-pieper_openapc_2018" class="csl-entry" role="listitem">
-Pieper, Dirk, and Christoph Broschinski. 2018. <span>“<span>OpenAPC</span>: A Contribution to a Transparent and Reproducible Monitoring of Fee-Based Open Access Publishing Across Institutions and Nations.”</span> <em>Insights the UKSG Journal</em> 31: 39. <a href="https://doi.org/10.1629/uksg.439">https://doi.org/10.1629/uksg.439</a>.
+<div id="ref-Priem2022" class="csl-entry" role="listitem">
+Priem, Jason, Heather Piwowar, and Richard Orr. 2022. <span>“<span class="nocase">OpenAlex: A fully-open index of scholarly works, authors, venues, institutions, and concepts</span>.”</span> In <em>Proceedings of the 26th International Conference on Science and Technology Indicators, STI 2022</em>, edited by Nicolas Robinson-Garcia, Daniel Torres-Salinas, and Wenceslao Arroyo-Machado. Zenodo. <a href="https://doi.org/10.5281/ZENODO.6936227">https://doi.org/10.5281/ZENODO.6936227</a>.
 </div>
 <div id="ref-R" class="csl-entry" role="listitem">
 R Core Team. 2025. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
 </div>
+<div id="ref-scheidt2025" class="csl-entry" role="listitem">
+Scheidt, Barbara. 2025. <span>“Publisher Normalization for <span>OpenAlex</span> Data.”</span> September 3, 2025. <a href="http://www.open-bibliometrics.de/posts/20250903-PublisherNormalization/">http://www.open-bibliometrics.de/posts/20250903-PublisherNormalization/</a>.
+</div>
 <div id="ref-ggplot2" class="csl-entry" role="listitem">
 Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.
 </div>
-<div id="ref-dplyr" class="csl-entry" role="listitem">
-Wickham, Hadley, Romain François, Lionel Henry, Kirill Müller, and Davis Vaughan. 2023. <em>Dplyr: A Grammar of Data Manipulation</em>. <a href="https://doi.org/10.32614/CRAN.package.dplyr">https://doi.org/10.32614/CRAN.package.dplyr</a>.
+<div id="ref-tidyverse" class="csl-entry" role="listitem">
+Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the <span class="nocase">tidyverse</span>.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
 </div>
 </div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -2336,7 +2524,7 @@ Wickham, Hadley, Romain François, Lionel Henry, Kirill Müller, and Davis Vaugh
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/oa-datenpraxis\.de\/");
+        var filterRegex = new RegExp("https:\/\/oa-datenpraxis\.de\/en");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -2672,21 +2860,21 @@ Wickham, Hadley, Romain François, Lionel Henry, Kirill Müller, and Davis Vaugh
       <ul class="footer-items list-unstyled">
 <li class="nav-item">
     <a class="nav-link" href="./impressum.html">
-<p><a href="https://www.hu-berlin.de/de/hu/impressum">Impressum</a></p>
+<p><a href="https://www.hu-berlin.de/de/hu/impressum">Legal Notice</a></p>
 </a>
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="./datenschutz.html">
-<p>Datenschutz</p>
+<p>Privacy Statement</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://creativecommons.org/licenses/by/4.0/deed.de">
+    <a class="nav-link" href="https://creativecommons.org/licenses/by/4.0/deed.en">
 <p><iconify-icon role="img" inline="" icon="bxl:creative-commons" style="font-size: 1.5em;" aria-label="Icon creative-commons from bxl Iconify.design set." title="Icon creative-commons from bxl Iconify.design set."></iconify-icon><iconify-icon role="img" inline="" icon="humbleicons:creative-commons-by" style="font-size: 1.5em;" aria-label="Icon creative-commons-by from humbleicons Iconify.design set." title="Icon creative-commons-by from humbleicons Iconify.design set."></iconify-icon></p>
 </a>
   </li>  
     <li class="nav-item">
- Sofern nicht anders angegeben, ist der Inhalt dieser Website unter einer Creative Commons Namensnennung 4.0 International Lizenz lizenziert.
+ Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license.
   </li>  
 </ul>
 </div>
