@@ -1,0 +1,209 @@
+---
+title: "OpenAPC"
+filters: 
+  - _extensions/coatless/webr/webr.lua
+format: 
+  html:
+    resources:
+      - notebooks/facts.csv
+    bibliography: notebooks/references.bib
+    toc: false
+    code-overflow: wrap
+    highlight-style: github
+    code-copy: true
+    code-link: true
+execute:
+  warning: false
+  error: false
+webr:
+  packages: ['tidyverse', 'plotly']
+---
+
+# What is OpenAPC?
+
+OpenAPC is an initiative that aims to collect information on payments for open access publications [@pieper_openapc_2018]. The project is located at Bielefeld University Library and started ingesting data from research organizations in 2014. Although the project initially started with a focus on Germany, institutions from more than 20 countries share payment information via OpenAPC as of 2025.
+
+If research organizations are pursuing a complete transition away from the subscription model and toward open access, it is important to understand the financial dimension. However, data on open access costs are difficult to obtain.
+Prices listed on publisher websites can be useful to understand what publishers charge for open access publications. There are lists that collect this information and enable comprehensive analyses across multiple publishers [@butler_open_2024].
+In contrast to these price lists, OpenAPC collects information about payments research organizations made. The amounts paid can differ from prices listed on publisher websites, for example if the organization has signed an agreement with the publisher, or if a publisher grants a discount.
+
+The OpenAPC dataset shows how much money was spent to publish open access. The initiators imagine that the dataset "\[can\] be reused to make cash flows between research institutions and publishers more transparent." [@openapc_project_nodate]
+
+Participating in OpenAPC is voluntary. Not all institutions collect data about these payments or pass the data on to OpenAPC.
+
+# How can I access OpenAPC data?
+
+OpenAPC offers three main ways to access the data:
+
+## The GitHub repository
+
+The project is organized in a [GitHub repository](https://github.com/OpenAPC/openapc-de/tree/master). You can find and download csv-files with payment information for individual institutions in the folder *data*.
+
+## The OLAP server
+
+The [OLAP server](https://github.com/OpenAPC/openapc-olap/blob/master/HOWTO.md) allows programmatic access to and retrieval of OpenAPC data.
+
+## The Dashboard
+
+On the [dashboard](https://treemaps.openapc.net/apcdata/openapc/), you are able to filter the dataset, see a treemap visualization and download data.
+
+# Exploring OpenAPC data
+
+In this notebook we will look at OpenAPC data with R [@R], using a specific research organization as an example (Charité - Universitätsmedizin Berlin). We want to adress the following questions:
+
+1. How much did the institution spend on open access publications in total?
+2. How are payments distributed across journals and publishers?
+3. How do payments evolve over the years?
+
+To answer the questions, we have retrieved APC data for *Charité - Universitätsmedizin Berlin* from the [OpenAPC dashboard](https://treemaps.openapc.net/apcdata/openapc/).
+
+OpenAPC offers comprehensive information on APC payments for participating research organizations. For a full documentation of all available fields, please refer to the [OpenAPC schema](https://github.com/OpenAPC/openapc-de/wiki/schema#openapc-data-set).
+
+## loading packages
+
+We will load the *dplyr* package [@dplyr] that provides a lot of additional functionality for data wrangling, and *ggplot2* [@ggplot2] for data visualization.
+
+```{r}
+# Installation of packages if not already installed with
+# install.packages(c("dplyr","ggplot2"))
+library(dplyr)
+library(ggplot2)
+```
+
+## loading data
+
+We will load the csv file downloaded from the OpenAPC dashboard and store it in the object *df*.
+
+```{r}
+df <- read.csv("facts.csv")
+```
+
+## structure of the dataset
+
+To get an overview of the structure of our data frame, especially the number of rows (observations) and columns (variables), the individual column names and the data types they contain, we will use the `glimpse` function from the *dplyr* package.
+
+```{r}
+glimpse(df)
+```
+The output shows that our data frame contains a total of `r formatC(n_distinct(df$doi), big.mark=",")` rows (observations) and `r ncol(df)` columns. Each row in the data frame corresponds to one APC payment.
+The output also shows that most of the column values are of data type *character* (chr), the perion column values are of type *integer* (int), the is_hybrid column values are of type *logical* (lgl) and the euro column values are of type *double-precision floating-point* (dbl) - a format for decimal numbers. The output also indicates the first values of every column on the right hand side.
+
+To look at the first 10 rows of our data frame we are using the `head` function.
+
+```{r}
+head(df,10)
+```
+
+The first argument within the `head` function is our data frame *df* and the second argument is the number of rows we want to have returned. Each row within our data frame corresponds to an article.
+
+## Analyzing and visualizing open access payments
+
+In the following sections, we will analyze the data to address our questions and generate visualizations.
+
+### How much did the institution spend on open access publications in total?
+
+To determine total open access spending of the research organization, we are using the `sum` function and apply it to the colum *euro*. The [OpenAPC schema](https://github.com/OpenAPC/openapc-de/wiki/schema#openapc-data-set) states that this column contains "[t]he APC amount that was paid in EURO. Includes VAT and any discounts".
+
+```{r}
+sum(df$euro)
+```
+
+Without context, this number does not say much. Applying the `min` and `max` functions to the column *period* ("Year of APC payment (YYYY)"), we can see that this sum was accrued over a period of 6 years, from 2018 to 2023.
+
+```{r}
+min(df$period)
+max(df$period)
+```
+
+Because it takes research organizations time to collect and process data on APC payments and submit it to OpenAPC, there is usually a delay in reporting. In this example, data for 2024 is not yet available.
+
+### How are payments distributed across journals?
+
+The R package *dplyr* provides a lot of functionality for data wrangling. We can't go into much detail here, but we will demonstrate how to use some of the most useful functions.
+
+One of them is the `group_by` function. Here, we use it to group the dataset by the column *journal_full_title*. This will allow us to generate aggregate statistics for articles published within a journal. We then use the pipe operator `%>%`, which takes output from one function as input for the next function. The input is passed to the `summarise` function, where we calculate aggregate statistics. For each journal in the dataset, we calculate the total number of articles published (*n_articles*), the total of APCs paid (*sum_apc*), the average APC paid per article (*avg_apc*), and the standard deviation (*sd_apc*). The last two statistics are rounded to two decimal places. To get a better overview of the data, we then use `arrange` to sort the result by the total number of articles.
+
+```{r}
+df %>%
+  group_by(journal_full_title) %>%
+  summarise(n_articles = n(),
+            sum_apc = sum(euro),
+            avg_apc = round(sum_apc / n_articles, 2),
+            sd_apc = round(sd(euro),2)) %>%
+  arrange(desc(n_articles))
+```
+
+The results show that Charité paid APCs for 923 journals, as indicated by the number of rows. Most APC payments were made to the journals Scientific Reports, PLOS ONE, and Frontiers in Immunology. The column *sd_apc* tells us that for some journals, there is a considerable variance in APC payments.
+
+We can explore this variance further by visualizing the distribution of APC payments. For this, we will use the packages *dplyr* and *ggplot2*.
+First, we `filter` the data to focus on the three journals with the most APC payments. We then pass this output to the `ggplot` function. We assign the column *euro* to the x axis and the column *journal_full_title* to the y axis. Next, we define the type of plot we want - here, we choose a box plot to visualize a distribution. Finally, we choose the theme *theme_minimal* for a simple layout.
+
+```{r}
+df %>%
+  filter(journal_full_title %in% c("Scientific Reports", "PLOS ONE", "Frontiers in Immunology")) %>%
+  ggplot(aes(x = euro, y = journal_full_title)) +
+  geom_boxplot() +
+  theme_minimal()
+```
+
+These box plots show clear differences in the distribution of APC payments. The three journals differ in the median amount of APCs paid - the median is the middle point in a distribution and is visualized by the vertical line in the box plot. We also see that the range of APC payments is highest for Frontiers in Immunology: there are outliers at the bottom and top end of the distribution, as indicated by the dots.
+
+### How do payments evolve over the years?
+
+We can combine *dplyr* and *ggplot2* to visualize the development of APC payments over time. We will also consider open access types (gold / hybrid).
+
+First, we group the data by *period* ("Year of APC payment (YYYY)") and *is_hybrid* ("Determines if the article has been published in a hybrid journal (TRUE) or in fully/Gold OA journal (FALSE)"). Just like above, we will generate the aggregate statistic *n_articles*. In the `ggplot` function, we assign the column *period* to the x axis, *n_articles* to the y axis, and *is_hybrid* to fill - this means that different colours will be assigned to the open access types. We choose the graph type *geom_col*, a simple bar chart.
+
+```{r}
+df %>%
+  group_by(period, is_hybrid) %>%
+  summarise(n_articles = n()) %>%
+  ggplot(aes(x = period, y = n_articles, fill = is_hybrid)) +
+  geom_col() +
+  theme_minimal()
+```
+
+The plot tells us that the number of APC payments has increased between 2018 and 2021 and has dropped off since. We can also see that APC payments for publications in hybrid open access journals have increased considerably between 2019 and 2020. This is likely the result of transformative agreements between German research organizations and publishers.
+
+# Exercises
+
+```{r}
+#| echo: false
+#| eval: false
+
+url <- "https://oa-datenpraxis.de/notebooks/facts.csv"
+download.file(url, "facts.csv")
+df <- read_csv("facts.csv")
+```
+
+The following exercises focus on APC payments to publishers and include interactive code blocks. You can adapt the code and run it by clicking on *run code*.
+
+## 1. Aggregate statistics for publishers
+
+Above, we analyzed APC payments by journal. Here is a copy of that code block. See if you can adapt it to give you aggregate statistics for *publishers* instead.
+
+```{webr-r}
+df %>%
+  group_by(journal_full_title) %>%
+  summarise(n_articles = n(),
+            sum_apc = sum(euro),
+            avg_apc = round(sum_apc / n_articles, 2),
+            sd_apc = round(sd(euro),2)) %>%
+  arrange(desc(n_articles))
+```
+
+Which publishers received the highest amount of APC payments from Charité? Do you notice any interesting patterns?
+
+## 2. Visuzlization of APC disctribution by publisher
+
+Now, see if you can adapt the code above to show you the distribution of APC payments by publisher.
+
+```{webr-r}
+df %>%
+  filter(journal_full_title %in% c("Scientific Reports", "PLOS ONE", "Frontiers in Immunology")) %>%
+  ggplot(aes(x = euro, y = journal_full_title)) +
+  geom_boxplot() +
+  theme_minimal()
+```
+
+# References
