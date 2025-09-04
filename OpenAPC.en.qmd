@@ -17,6 +17,7 @@ execute:
   error: false
 webr:
   packages: ['tidyverse', 'plotly']
+lightbox: true
 ---
 
 # What is OpenAPC?
