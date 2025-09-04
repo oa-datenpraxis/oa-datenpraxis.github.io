@@ -177,11 +177,18 @@ The plot tells us that the number of APC payments has increased between 2018 and
 
 # Exercises
 
-```{r}
-#| echo: false
+```{webr-r}
+#| context: setup
 
+
+# Specify the data URL using HTTPS
 url <- "https://oa-datenpraxis.de/notebooks/facts.csv"
+
+# Download the data file from the HTTPS URL and save it
 download.file(url, "facts.csv")
+
+
+# Read the data into R
 df <- read.csv("facts.csv")
 ```
 
