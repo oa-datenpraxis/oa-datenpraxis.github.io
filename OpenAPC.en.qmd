@@ -75,7 +75,13 @@ library(ggplot2)
 We will load the csv file downloaded from the OpenAPC dashboard and store it in the object *df*.
 
 ```{r}
+#| eval: false
 df <- read.csv("facts.csv")
+```
+
+```{r}
+#| echo: false
+df <- read.csv("notebooks/facts.csv")
 ```
 
 ## structure of the dataset
@@ -171,9 +177,9 @@ The plot tells us that the number of APC payments has increased between 2018 and
 #| echo: false
 #| eval: false
 
-url <- "https://oa-datenpraxis.de/notebooks/facts.csv"
-download.file(url, "facts.csv")
-df <- read_csv("facts.csv")
+#url <- "https://oa-datenpraxis.de/notebooks/facts.csv"
+#download.file(url, "facts.csv")
+#df <- read_csv("facts.csv")
 ```
 
 The following exercises focus on APC payments to publishers and include interactive code blocks. You can adapt the code and run it by clicking on *run code*.
