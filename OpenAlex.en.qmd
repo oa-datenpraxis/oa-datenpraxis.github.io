@@ -307,7 +307,6 @@ df %>%
 
 ```{webr-r}
 #| context: setup
-#| eval: false
 
 
 # Specify the data URL using HTTPS

@@ -311,8 +311,6 @@ df %>%
 
 ```{webr-r}
 #| context: setup
-#| eval: false
-
 
 # Specify the data URL using HTTPS
 url <- "https://oa-datenpraxis.de/notebooks/openalex_data.rds"
