@@ -29,7 +29,7 @@ jobs:
 
       - name: Install R packages
         run: |
-          Rscript -e "install.packages(c('curl', 'whoami', 'httr', 'here', 'DT', 'readxl'))"
+          Rscript -e "install.packages(c('curl', 'whoami', 'httr', 'here', 'DT', 'readxl', 'dplyr'))"
 
       - name: Install babelquarto package
         run: |
