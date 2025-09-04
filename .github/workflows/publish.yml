@@ -29,7 +29,7 @@ jobs:
 
       - name: Install R packages
         run: |
-          Rscript -e "install.packages(c('curl', 'whoami', 'httr', 'here', 'DT', 'readxl', 'dplyr'))"
+          Rscript -e "install.packages(c('curl', 'whoami', 'httr', 'here', 'DT', 'readxl', 'dplyr','ggplot2'))"
 
       - name: Install babelquarto package
         run: |
@@ -43,6 +43,8 @@ jobs:
           Rscript -e "library(here)"
           Rscript -e "library(DT)"
           Rscript -e "library(readxl)"
+          Rscript -e "library(dplyr)"
+          Rscript -e "library(ggplot2)"
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
