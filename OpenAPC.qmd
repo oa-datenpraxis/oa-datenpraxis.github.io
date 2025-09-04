@@ -19,6 +19,10 @@ webr:
   packages: ['tidyverse', 'plotly']
 ---
 
+::: {.callout-note}
+Dieses Notebook wird nur in English angeboten
+:::
+
 # What is OpenAPC?
 
 OpenAPC is an initiative that aims to collect information on payments for open access publications [@pieper_openapc_2018]. The project is located at Bielefeld University Library and started ingesting data from research organizations in 2014. Although the project initially started with a focus on Germany, institutions from more than 20 countries share payment information via OpenAPC as of 2025.
