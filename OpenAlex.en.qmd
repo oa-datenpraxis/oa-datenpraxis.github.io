@@ -85,19 +85,23 @@ library(tidyverse)
 We will use the `oa_fetch` function from the openalexR package to query the OpenAlex API and store the returned *tibble* (a data frame that works well with the tidyverse) in the object *df*.
 
 ```{r, eval=FALSE}
-df <- oa_fetch(entity = "works", 
-               institutions.ror = "01y9bpm73", # change the ROR id if you want to analyse the performance of another institution
-               type = "article",
-               is_paratext = FALSE,
-               is_retracted = FALSE,
-               from_publication_date = "2020-01-01",
-               to_publication_date = "2024-12-31",
-               options = list(select = c("id","doi","title","publication_year",
-                         "primary_location","open_access","apc_list","apc_paid")),
-               output = "tibble", 
-               paging = "cursor",
-               abstract = FALSE,
-               mailto = "example@domain.com") # add your email address here to get into the polite pool
+df <- oa_fetch(
+  entity = "works",
+  institutions.ror = "01y9bpm73", # change the ROR id if you want to analyse the performance of another institution
+  type = "article",
+  is_paratext = FALSE,
+  is_retracted = FALSE,
+  from_publication_date = "2020-01-01",
+  to_publication_date = "2024-12-31",
+  options = list(select = c(
+    "id", "doi", "title", "publication_year",
+    "primary_location", "open_access", "apc_list", "apc_paid"
+  )),
+  output = "tibble",
+  paging = "cursor",
+  abstract = FALSE,
+  mailto = "example@domain.com" # add your email address here to get into the polite pool
+) 
 ```
 
 ```{r}
@@ -125,7 +129,7 @@ The first values show us two important things:
 To look at the first 10 rows of our data frame we are using the `head` function.
 
 ```{r}
-head(df,10)
+head(df, 10)
 ```
 
 The first argument within the `head` function is our data frame *df* and the second argument is the number of rows we want to have returned. Each row within our data frame corresponds to an article.
@@ -148,7 +152,7 @@ The `arrange` function is used to sort the data based on the n variable and the 
 
 ```{r}
 df %>%
-  group_by(host_organization,host_organization_name) %>%
+  group_by(host_organization, host_organization_name) %>%
   summarise(n = n()) %>%
   arrange(desc(n))
 ```
@@ -162,16 +166,16 @@ As an example we will look at the publisher names in our data frame that contain
 
 ```{r}
 df %>%
-  group_by(host_organization,host_organization_name) %>%
+  group_by(host_organization, host_organization_name) %>%
   summarise(n = n()) %>%
-  arrange(desc(n)) %>% 
+  arrange(desc(n)) %>%
   filter(grepl("^Springer|Nature", host_organization_name))
 ```
 
 If we want to replace the Springer name variants with *Springer Nature* as publisher name, we can use the `mutate` function that lets us transform a column in our data frame in combination with the `str_replace_all` function that lets us replace string values that follow a pattern we specify to do so. 
 
 ```{r}
-df %>% 
+df %>%
   mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature")) %>%
   group_by(host_organization_name) %>%
   summarise(n = n()) %>%
@@ -181,11 +185,11 @@ df %>%
 Be aware that this data transformation only applies to the publisher name column and not the OpenAlex provided publisher id column. We would need to perform a separate transformation step to align both. Additionally, we did not permanently rename the publisher name values in our data frame. To do this we can either override our data frame *df* or create a new data frame by assigning the output with the `<-` operator.
 
 ```{r, eval=FALSE}
-df <- df %>% 
-      mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature"))
+df <- df %>%
+  mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature"))
 
-df2 <- df %>% 
-       mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature"))
+df2 <- df %>%
+  mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature"))
 ```
 
 
@@ -205,16 +209,16 @@ The output shows that the values in the apc columns are lists, this is, because 
 df %>%
   unnest_wider(apc, names_sep = ".") %>%
   unnest_longer(c(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) %>%
-  select(id,starts_with("apc"))
+  select(id, starts_with("apc"))
 ```
 
 The output shows that we now have multiple rows for the same id. To transform the data frame to single rows for each id we will use the `pivot_wider` function that allows us to increase the number of columns and decrease the number of rows.
 
 ```{r}
 df %>%
-unnest_wider(apc, names_sep = ".") %>%
-unnest_longer(c(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) %>%
-pivot_wider(id_cols = id, names_from = apc.type, values_from = c(apc.value, apc.currency, apc.value_usd, apc.provenance))
+  unnest_wider(apc, names_sep = ".") %>%
+  unnest_longer(c(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) %>%
+  pivot_wider(id_cols = id, names_from = apc.type, values_from = c(apc.value, apc.currency, apc.value_usd, apc.provenance))
 ```
 
 Now we can access the apc information provided by OpenAlex. In this notebook we won't analyse APC information any further. If you are interested in APC analysis, we offer a notebook showing how to analyse APC information using the OpenAPC data set at: <https://oa-datenpraxis.de/OpenAPC.html>
@@ -229,7 +233,7 @@ To determine total number of open access publications of the research organizati
 
 
 ```{r}
-sum(df$is_oa, na.rm=T)
+sum(df$is_oa, na.rm = T)
 ```
 
 We also provided the `na.rm=T` argument to the `sum` function which causes *NA* values to be removed. 
@@ -244,7 +248,7 @@ sum(is.na(df$is_oa))
 To determine the overall open access share over all publication years in our data frame, we divide the total number of open access publications by the total number of publications. We calculate the latter using the `n_distinct` function on our id column.
 
 ```{r}
-round(sum(df$is_oa, na.rm=T) / n_distinct(df$id) * 100,2)
+round(sum(df$is_oa, na.rm = T) / n_distinct(df$id) * 100, 2)
 ```
 
 
@@ -256,9 +260,11 @@ To analyse the distribution of open access articles across journals we will calc
 df %>%
   filter(!is.na(is_oa)) %>%
   group_by(source_display_name) %>%
-  summarise(n_articles = n(),
-            n_oa_articles = sum(is_oa),
-            n_closed_articles = n_articles - n_oa_articles) %>%
+  summarise(
+    n_articles = n(),
+    n_oa_articles = sum(is_oa),
+    n_closed_articles = n_articles - n_oa_articles
+  ) %>%
   arrange(desc(n_oa_articles))
 ```
 
@@ -268,8 +274,8 @@ We can further explore the open access status distribution for the articles. We 
 
 ```{r}
 df %>%
-  filter(source_display_name %in% c('Scientific Reports', 'Astronomy and Astrophysics', 'Journal of High Energy Physics')) %>%
-  group_by(source_display_name,is_oa, oa_status) %>%
+  filter(source_display_name %in% c("Scientific Reports", "Astronomy and Astrophysics", "Journal of High Energy Physics")) %>%
+  group_by(source_display_name, is_oa, oa_status) %>%
   summarise(n = n())
 ```
 
@@ -283,9 +289,9 @@ First, we group the data by publication year and open access status. We will the
 
 ```{r}
 df %>%
-  group_by(publication_year,oa_status) %>%
+  group_by(publication_year, oa_status) %>%
   summarise(n = n(), .groups = "keep") %>%
-  ggplot(aes(x=publication_year, y=n)) +
+  ggplot(aes(x = publication_year, y = n)) +
   geom_line(aes(colour = oa_status)) +
   geom_point(aes(colour = oa_status)) +
   theme_minimal()
@@ -295,9 +301,9 @@ We can further choose to visualise the open access distribution over time in ter
 
 ```{r}
 df %>%
-  group_by(publication_year,oa_status) %>%
+  group_by(publication_year, oa_status) %>%
   summarise(count = n()) %>%
-  mutate(perc = count/sum(count) * 100) %>%
+  mutate(perc = count / sum(count) * 100) %>%
   ggplot(aes(x = publication_year, y = perc, fill = oa_status)) +
   geom_bar(stat = "identity") +
   theme_minimal()
@@ -331,9 +337,11 @@ Before, we analysed the distribution of open access articles across journals. Be
 df %>%
   filter(!is.na(is_oa)) %>%
   group_by(source_display_name) %>%
-  summarise(n_articles = n(),
-            n_oa_articles = sum(is_oa),
-            n_closed_articles = n_articles - n_oa_articles) %>%
+  summarise(
+    n_articles = n(),
+    n_oa_articles = sum(is_oa),
+    n_closed_articles = n_articles - n_oa_articles
+  ) %>%
   arrange(desc(n_oa_articles))
 ```
 
@@ -346,9 +354,9 @@ Now, see if you can adapt the code we used to visualise the open access share ov
 
 ```{webr-r}
 df %>%
-  group_by(publication_year,oa_status) %>%
+  group_by(publication_year, oa_status) %>%
   summarise(count = n()) %>%
-  mutate(perc = count/sum(count) * 100) %>%
+  mutate(perc = count / sum(count) * 100) %>%
   ggplot(aes(x = publication_year, y = perc, fill = oa_status)) +
   geom_bar(stat = "identity") +
   theme_minimal()
