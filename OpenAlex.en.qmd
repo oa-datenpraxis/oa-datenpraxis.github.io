@@ -139,7 +139,7 @@ The first argument within the `head` function is our data frame *df* and the sec
 
 Before analysing the OpenAlex data, we will have a closer look at the publisher and apc columns and perform some data wrangling tasks.
 
-To get an overview of the publishers present in our dataframe and the number of articles per publisher, we will use three tidyverse functions and the pipe operator `%>%`. 
+To get an overview of the publishers present in our dataframe and the number of articles per publisher, we will use three tidyverse functions and the pipe operator `%>%` ([magrittr pipe](https://magrittr.tidyverse.org/reference/pipe.html)) or `|>` (base R pipe). 
 
 The pipe operator allows us to take e.g. a data frame or the result of a function and pass it to another function. If we type the name of our data frame followed by the pipe operator that means we don't have to specify which data we want a function to be performed on, when we call it after the pipe operator.
 
