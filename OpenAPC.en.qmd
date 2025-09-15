@@ -98,7 +98,7 @@ The output also shows that most of the column values are of data type *character
 To look at the first 10 rows of our data frame we are using the `head` function.
 
 ```{r}
-head(df,10)
+head(df, 10)
 ```
 
 The first argument within the `head` function is our data frame *df* and the second argument is the number of rows we want to have returned. Each row within our data frame corresponds to an article.
@@ -133,10 +133,12 @@ One of them is the `group_by` function. Here, we use it to group the dataset by 
 ```{r}
 df %>%
   group_by(journal_full_title) %>%
-  summarise(n_articles = n(),
-            sum_apc = sum(euro),
-            avg_apc = round(sum_apc / n_articles, 2),
-            sd_apc = round(sd(euro),2)) %>%
+  summarise(
+    n_articles = n(),
+    sum_apc = sum(euro),
+    avg_apc = round(sum_apc / n_articles, 2),
+    sd_apc = round(sd(euro), 2)
+  ) %>%
   arrange(desc(n_articles))
 ```
 
@@ -198,10 +200,12 @@ Above, we analyzed APC payments by journal. Here is a copy of that code block. S
 ```{webr-r}
 df %>%
   group_by(journal_full_title) %>%
-  summarise(n_articles = n(),
-            sum_apc = sum(euro),
-            avg_apc = round(sum_apc / n_articles, 2),
-            sd_apc = round(sd(euro),2)) %>%
+  summarise(
+    n_articles = n(),
+    sum_apc = sum(euro),
+    avg_apc = round(sum_apc / n_articles, 2),
+    sd_apc = round(sd(euro), 2)
+  ) %>%
   arrange(desc(n_articles))
 ```
 
