@@ -201,6 +201,10 @@ The following exercises focus on APC payments to publishers and include interact
 
 Above, we analyzed APC payments by journal. Here is a copy of that code block. See if you can adapt it to give you aggregate statistics for *publishers* instead.
 
+::: {.panel-tabset}
+
+## {{< iconify proicons:code >}}&ensp;Interactive editor
+
 ```{webr-r}
 df %>%
   group_by(journal_full_title) %>%
@@ -213,11 +217,31 @@ df %>%
   arrange(desc(n_articles))
 ```
 
+## {{< iconify proicons:checkmark-circle >}}&ensp;Solution
+
+```{webr-r}
+df %>%
+  group_by(publisher) %>%
+  summarise(
+    n_articles = n(),
+    sum_apc = sum(euro),
+    avg_apc = round(sum_apc / n_articles, 2),
+    sd_apc = round(sd(euro), 2)
+  ) %>%
+  arrange(desc(n_articles))
+```
+
+:::
+
 Which publishers received the highest amount of APC payments from Charité? Do you notice any interesting patterns?
 
 ## 2. Visuzlization of APC disctribution by publisher
 
 Now, see if you can adapt the code above to show you the distribution of APC payments by publisher.
+
+::: {.panel-tabset}
+
+## {{< iconify proicons:code >}}&ensp;Interactive editor
 
 ```{webr-r}
 df %>%
@@ -226,5 +250,17 @@ df %>%
   geom_boxplot() +
   theme_minimal()
 ```
+
+## {{< iconify proicons:checkmark-circle >}}&ensp;Solution
+
+```{webr-r}
+df %>%
+  filter(publisher %in% c("Springer Nature", "Wiley-Blackwell", "Frontiers Media SA")) %>%
+  ggplot(aes(x = euro, y = publisher)) +
+  geom_boxplot() +
+  theme_minimal()
+```
+
+:::
 
 # References
