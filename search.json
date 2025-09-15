@@ -431,14 +431,14 @@
     "href": "OpenAPC.html#aggregate-statistics-for-publishers",
     "title": "OpenAPC",
     "section": "1. Aggregate statistics for publishers",
-    "text": "1. Aggregate statistics for publishers\nAbove, we analyzed APC payments by journal. Here is a copy of that code block. See if you can adapt it to give you aggregate statistics for publishers instead.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWhich publishers received the highest amount of APC payments from Charité? Do you notice any interesting patterns?"
+    "text": "1. Aggregate statistics for publishers\nAbove, we analyzed APC payments by journal. Here is a copy of that code block. See if you can adapt it to give you aggregate statistics for publishers instead.\n\n Interactive editor Solution\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nWhich publishers received the highest amount of APC payments from Charité? Do you notice any interesting patterns?"
   },
   {
     "objectID": "OpenAPC.html#visuzlization-of-apc-disctribution-by-publisher",
     "href": "OpenAPC.html#visuzlization-of-apc-disctribution-by-publisher",
     "title": "OpenAPC",
     "section": "2. Visuzlization of APC disctribution by publisher",
-    "text": "2. Visuzlization of APC disctribution by publisher\nNow, see if you can adapt the code above to show you the distribution of APC payments by publisher.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "2. Visuzlization of APC disctribution by publisher\nNow, see if you can adapt the code above to show you the distribution of APC payments by publisher.\n\n Interactive editor Solution\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "dashboard_uebersicht.html",

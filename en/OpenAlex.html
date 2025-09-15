@@ -395,7 +395,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"# Specify the data URL using HTTPS\nurl <- \"https://oa-datenpraxis.de/notebooks/openalex_data.rds\"\n\n# Download the data file from the HTTPS URL and save it\ndownload.file(url, \"openalex_data.rds\")\n\n\n# Read the data into R\ndf <- readRDS(\"openalex_data.rds\")","id":1,"options":{"autorun":"true","classes":"","comment":"","context":"setup","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  filter(!is.na(is_oa)) %>%\n  group_by(source_display_name) %>%\n  summarise(\n    n_articles = n(),\n    n_oa_articles = sum(is_oa),\n    n_closed_articles = n_articles - n_oa_articles\n  ) %>%\n  arrange(desc(n_oa_articles))","id":2,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-2","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  group_by(publication_year, oa_status) %>%\n  summarise(count = n()) %>%\n  mutate(perc = count / sum(count) * 100) %>%\n  ggplot(aes(x = publication_year, y = perc, fill = oa_status)) +\n  geom_bar(stat = \"identity\") +\n  theme_minimal()","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-3","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}}];
+globalThis.qwebrCellDetails = [{"code":"# Specify the data URL using HTTPS\nurl <- \"https://oa-datenpraxis.de/notebooks/openalex_data.rds\"\n\n# Download the data file from the HTTPS URL and save it\ndownload.file(url, \"openalex_data.rds\")\n\n\n# Read the data into R\ndf <- readRDS(\"openalex_data.rds\")","id":1,"options":{"autorun":"true","classes":"","comment":"","context":"setup","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  filter(!is.na(is_oa)) %>%\n  group_by(source_display_name) %>%\n  summarise(\n    n_articles = n(),\n    n_oa_articles = sum(is_oa),\n    n_closed_articles = n_articles - n_oa_articles\n  ) %>%\n  arrange(desc(n_oa_articles))","id":2,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-2","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  filter(!is.na(is_oa)) %>%\n  group_by(host_organization_name) %>%\n  summarise(\n    n_articles = n(),\n    n_oa_articles = sum(is_oa),\n    n_closed_articles = n_articles - n_oa_articles\n  ) %>%\n  arrange(desc(n_oa_articles))","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-3","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  group_by(publication_year, oa_status) %>%\n  summarise(count = n()) %>%\n  mutate(perc = count / sum(count) * 100) %>%\n  ggplot(aes(x = publication_year, y = perc, fill = oa_status)) +\n  geom_bar(stat = \"identity\") +\n  theme_minimal()","id":4,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-4","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  filter(host_organization_name %in% c(\"Wiley\", \"Elsevier BV\", \"Springer Science+Business Media\")) %>% \n  group_by(host_organization_name, oa_status) %>%\n  summarise(count = n()) %>%\n  mutate(perc = count / sum(count) * 100) %>%\n  ggplot(aes(x = host_organization_name, y = perc, fill = oa_status)) +\n  geom_bar(stat = \"identity\") +\n  theme_minimal()","id":5,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-5","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}}];
 
 </script><script type="module">
 // Declare startupMessageQWebR globally
@@ -2482,13 +2482,47 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 <p>The following exercises focus on open access publications in regard to publishers and journals. The code is presented in interactive code blocks. You can adapt the code and run it by clicking on <em>run code</em>.</p>
 </section><section id="aggregate-statistics-for-publishers" class="level2"><h2 class="anchored" data-anchor-id="aggregate-statistics-for-publishers">Aggregate statistics for publishers</h2>
 <p>Before, we analysed the distribution of open access articles across journals. Below is a copy of the corresponding code. Adapt the code to give you aggregate statistics for <em>publishers</em> instead of journals.</p>
+<div class="tabset-margin-container"></div>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href=""><iconify-icon role="img" inline="" icon="proicons:code" aria-label="Icon code from proicons Iconify.design set." title="Icon code from proicons Iconify.design set."></iconify-icon> Interactive editor</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href=""><iconify-icon role="img" inline="" icon="proicons:checkmark-circle" aria-label="Icon checkmark-circle from proicons Iconify.design set." title="Icon checkmark-circle from proicons Iconify.design set."></iconify-icon> Solution</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div id="qwebr-insertion-location-2"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="qwebr-insertion-location-3"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</div>
+</div>
 <p>Which publishers are among the top three in terms of overall publication volume and in terms of open access publication volume? Do you notice any interesting patterns?</p>
 </section><section id="visuzlisation-of-open-access-disctribution-by-top-three-publishers" class="level2"><h2 class="anchored" data-anchor-id="visuzlisation-of-open-access-disctribution-by-top-three-publishers">Visuzlisation of open access disctribution by top three publishers</h2>
 <p>Now, see if you can adapt the code we used to visualise the open access share over time to show you the open access share for the top three publishers in terms of open access publication volume.</p>
-<div id="qwebr-insertion-location-3"></div>
+<div class="tabset-margin-container"></div>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href=""><iconify-icon role="img" inline="" icon="proicons:code" aria-label="Icon code from proicons Iconify.design set." title="Icon code from proicons Iconify.design set."></iconify-icon> Interactive editor</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href=""><iconify-icon role="img" inline="" icon="proicons:lightbulb" aria-label="Icon lightbulb from proicons Iconify.design set." title="Icon lightbulb from proicons Iconify.design set."></iconify-icon> Hint</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href=""><iconify-icon role="img" inline="" icon="proicons:checkmark-circle" aria-label="Icon checkmark-circle from proicons Iconify.design set." title="Icon checkmark-circle from proicons Iconify.design set."></iconify-icon> Solution</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="qwebr-insertion-location-4"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p><strong>Hint:</strong> You’ll want to change something in the code so that you filter first based on the publisher names of the top three publishers before you perform the grouping. You can reuse code that was already introduced in the notebook.</p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div id="qwebr-insertion-location-5"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</div>
+</div>
 </section></section><section id="references" class="level1"></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-openalexR" class="csl-entry" role="listitem">

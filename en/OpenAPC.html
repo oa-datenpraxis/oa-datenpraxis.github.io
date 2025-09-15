@@ -395,7 +395,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"# Specify the data URL using HTTPS\nurl <- \"https://oa-datenpraxis.de/notebooks/facts.csv\"\n\n# Download the data file from the HTTPS URL and save it\ndownload.file(url, \"facts.csv\")\n\n\n# Read the data into R\ndf <- read.csv(\"facts.csv\")","id":1,"options":{"autorun":"true","classes":"","comment":"","context":"setup","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  group_by(journal_full_title) %>%\n  summarise(\n    n_articles = n(),\n    sum_apc = sum(euro),\n    avg_apc = round(sum_apc / n_articles, 2),\n    sd_apc = round(sd(euro), 2)\n  ) %>%\n  arrange(desc(n_articles))","id":2,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-2","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  filter(journal_full_title %in% c(\"Scientific Reports\", \"PLOS ONE\", \"Frontiers in Immunology\")) %>%\n  ggplot(aes(x = euro, y = journal_full_title)) +\n  geom_boxplot() +\n  theme_minimal()","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-3","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}}];
+globalThis.qwebrCellDetails = [{"code":"# Specify the data URL using HTTPS\nurl <- \"https://oa-datenpraxis.de/notebooks/facts.csv\"\n\n# Download the data file from the HTTPS URL and save it\ndownload.file(url, \"facts.csv\")\n\n\n# Read the data into R\ndf <- read.csv(\"facts.csv\")","id":1,"options":{"autorun":"true","classes":"","comment":"","context":"setup","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  group_by(journal_full_title) %>%\n  summarise(\n    n_articles = n(),\n    sum_apc = sum(euro),\n    avg_apc = round(sum_apc / n_articles, 2),\n    sd_apc = round(sd(euro), 2)\n  ) %>%\n  arrange(desc(n_articles))","id":2,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-2","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  group_by(publisher) %>%\n  summarise(\n    n_articles = n(),\n    sum_apc = sum(euro),\n    avg_apc = round(sum_apc / n_articles, 2),\n    sd_apc = round(sd(euro), 2)\n  ) %>%\n  arrange(desc(n_articles))","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-3","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  filter(journal_full_title %in% c(\"Scientific Reports\", \"PLOS ONE\", \"Frontiers in Immunology\")) %>%\n  ggplot(aes(x = euro, y = journal_full_title)) +\n  geom_boxplot() +\n  theme_minimal()","id":4,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-4","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"df %>%\n  filter(publisher %in% c(\"Springer Nature\", \"Wiley-Blackwell\", \"Frontiers Media SA\")) %>%\n  ggplot(aes(x = euro, y = publisher)) +\n  geom_boxplot() +\n  theme_minimal()","id":5,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-5","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}}];
 
 </script><script type="module">
 // Declare startupMessageQWebR globally
@@ -2256,13 +2256,43 @@ $ euro               &lt;dbl&gt; 4331.07, 4331.07, 4331.07, 4331.07, 4331.07, 43
 <p>The following exercises focus on APC payments to publishers and include interactive code blocks. You can adapt the code and run it by clicking on <em>run code</em>.</p>
 <section id="aggregate-statistics-for-publishers" class="level2"><h2 class="anchored" data-anchor-id="aggregate-statistics-for-publishers">1. Aggregate statistics for publishers</h2>
 <p>Above, we analyzed APC payments by journal. Here is a copy of that code block. See if you can adapt it to give you aggregate statistics for <em>publishers</em> instead.</p>
+<div class="tabset-margin-container"></div>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href=""><iconify-icon role="img" inline="" icon="proicons:code" aria-label="Icon code from proicons Iconify.design set." title="Icon code from proicons Iconify.design set."></iconify-icon> Interactive editor</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href=""><iconify-icon role="img" inline="" icon="proicons:checkmark-circle" aria-label="Icon checkmark-circle from proicons Iconify.design set." title="Icon checkmark-circle from proicons Iconify.design set."></iconify-icon> Solution</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div id="qwebr-insertion-location-2"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="qwebr-insertion-location-3"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</div>
+</div>
 <p>Which publishers received the highest amount of APC payments from Charité? Do you notice any interesting patterns?</p>
 </section><section id="visuzlization-of-apc-disctribution-by-publisher" class="level2"><h2 class="anchored" data-anchor-id="visuzlization-of-apc-disctribution-by-publisher">2. Visuzlization of APC disctribution by publisher</h2>
 <p>Now, see if you can adapt the code above to show you the distribution of APC payments by publisher.</p>
-<div id="qwebr-insertion-location-3"></div>
+<div class="tabset-margin-container"></div>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href=""><iconify-icon role="img" inline="" icon="proicons:code" aria-label="Icon code from proicons Iconify.design set." title="Icon code from proicons Iconify.design set."></iconify-icon> Interactive editor</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href=""><iconify-icon role="img" inline="" icon="proicons:checkmark-circle" aria-label="Icon checkmark-circle from proicons Iconify.design set." title="Icon checkmark-circle from proicons Iconify.design set."></iconify-icon> Solution</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="qwebr-insertion-location-4"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="qwebr-insertion-location-5"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+</div>
+</div>
 </section></section><section id="references" class="level1"></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-butler_open_2024" class="csl-entry" role="listitem">

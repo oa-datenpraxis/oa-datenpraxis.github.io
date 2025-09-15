@@ -123,14 +123,14 @@
     "href": "OpenAlex.html#aggregate-statistics-for-publishers",
     "title": "OpenAlex",
     "section": "Aggregate statistics for publishers",
-    "text": "Aggregate statistics for publishers\nBefore, we analysed the distribution of open access articles across journals. Below is a copy of the corresponding code. Adapt the code to give you aggregate statistics for publishers instead of journals.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWhich publishers are among the top three in terms of overall publication volume and in terms of open access publication volume? Do you notice any interesting patterns?"
+    "text": "Aggregate statistics for publishers\nBefore, we analysed the distribution of open access articles across journals. Below is a copy of the corresponding code. Adapt the code to give you aggregate statistics for publishers instead of journals.\n\n Interactive editor Solution\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nWhich publishers are among the top three in terms of overall publication volume and in terms of open access publication volume? Do you notice any interesting patterns?"
   },
   {
     "objectID": "OpenAlex.html#visuzlisation-of-open-access-disctribution-by-top-three-publishers",
     "href": "OpenAlex.html#visuzlisation-of-open-access-disctribution-by-top-three-publishers",
     "title": "OpenAlex",
     "section": "Visuzlisation of open access disctribution by top three publishers",
-    "text": "Visuzlisation of open access disctribution by top three publishers\nNow, see if you can adapt the code we used to visualise the open access share over time to show you the open access share for the top three publishers in terms of open access publication volume.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "Visuzlisation of open access disctribution by top three publishers\nNow, see if you can adapt the code we used to visualise the open access share over time to show you the open access share for the top three publishers in terms of open access publication volume.\n\n Interactive editor Hint Solution\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nHint: You’ll want to change something in the code so that you filter first based on the publisher names of the top three publishers before you perform the grouping. You can reuse code that was already introduced in the notebook.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "LICENSE.html",
@@ -431,14 +431,14 @@
     "href": "OpenAPC.html#aggregate-statistics-for-publishers",
     "title": "OpenAPC",
     "section": "1. Aggregate statistics for publishers",
-    "text": "1. Aggregate statistics for publishers\nAbove, we analyzed APC payments by journal. Here is a copy of that code block. See if you can adapt it to give you aggregate statistics for publishers instead.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWhich publishers received the highest amount of APC payments from Charité? Do you notice any interesting patterns?"
+    "text": "1. Aggregate statistics for publishers\nAbove, we analyzed APC payments by journal. Here is a copy of that code block. See if you can adapt it to give you aggregate statistics for publishers instead.\n\n Interactive editor Solution\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nWhich publishers received the highest amount of APC payments from Charité? Do you notice any interesting patterns?"
   },
   {
     "objectID": "OpenAPC.html#visuzlization-of-apc-disctribution-by-publisher",
     "href": "OpenAPC.html#visuzlization-of-apc-disctribution-by-publisher",
     "title": "OpenAPC",
     "section": "2. Visuzlization of APC disctribution by publisher",
-    "text": "2. Visuzlization of APC disctribution by publisher\nNow, see if you can adapt the code above to show you the distribution of APC payments by publisher.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "2. Visuzlization of APC disctribution by publisher\nNow, see if you can adapt the code above to show you the distribution of APC payments by publisher.\n\n Interactive editor Solution\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "dashboard_uebersicht.html",
