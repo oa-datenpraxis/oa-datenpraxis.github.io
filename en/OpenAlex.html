@@ -5,7 +5,7 @@
 <link rel="alternate" hreflang="en" href="https://oa-datenpraxis.de/en/OpenAlex.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>OpenAlex – OA Datenpraxis</title>
 <style>
@@ -76,10 +76,10 @@ div.csl-right-inline {
 div.csl-indent {
   margin-left: 2em;
 }</style>
-<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-9582434199d49cc9e91654cdeeb4866b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-a6e161b2431e1f94a14e0f5d32135a3c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ff474ca1e7d8cce943bc92812cb3bc62.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b97337154565f68b67c5835fd53cdd8d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script><script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script><link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -1650,7 +1650,7 @@ globalThis.qwebrExecuteCode = async function (
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo_oa_datenpraxis.png" alt="" class="navbar-logo"></a>
+    <img src="./images/logo_oa_datenpraxis.png" alt="" class="navbar-logo light-content"><img src="./images/logo_oa_datenpraxis.png" alt="" class="navbar-logo dark-content"></a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">OA Datenpraxis</span>
     </a>
@@ -2065,14 +2065,18 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <section id="loading-packages" class="level2"><h2 class="anchored" data-anchor-id="loading-packages">Loading packages</h2>
 <p>We will load the <em>openalexR</em> package <span class="citation" data-cites="openalexR">(<a href="#ref-openalexR" role="doc-biblioref">Aria et al. 2024</a>)</span> that allows us to query the OpenAlex API from within our notebook and the <em>tidyverse</em> package <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al. 2019</a>)</span> that provides a lot of additional functionalities for data wrangling and visualization.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installation of packages if not already installed with</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(c("openalexR","tidyverse"))</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openalexR)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 </div>
 </section><section id="loading-data" class="level2"><h2 class="anchored" data-anchor-id="loading-data">Loading data</h2>
 <p>We will use the <code>oa_fetch</code> function from the openalexR package to query the OpenAlex API and store the returned <em>tibble</em> (a data frame that works well with the tidyverse) in the object <em>df</em>.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">oa_fetch</span>(</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">entity =</span> <span class="st">"works"</span>,</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">institutions.ror =</span> <span class="st">"01y9bpm73"</span>, <span class="co"># change the ROR id if you want to analyse the performance of another institution</span></span>
@@ -2089,12 +2093,17 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">paging =</span> <span class="st">"cursor"</span>,</span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">abstract =</span> <span class="cn">FALSE</span>,</span>
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">mailto =</span> <span class="st">"example@domain.com"</span> <span class="co"># add your email address here to get into the polite pool</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>) </span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 </div>
 </section><section id="structure-of-the-dataset" class="level2"><h2 class="anchored" data-anchor-id="structure-of-the-dataset">Structure of the dataset</h2>
 <p>To get an overview of the structure of our data frame, especially the number of rows (observations) and columns (variables), the individual column names and the data types they contain, we will use the <code>glimpse</code> function from the <em>dplyr</em> package, which is part of the tidyverse.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(df)</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 15,952
 Columns: 19
@@ -2127,7 +2136,10 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 </ol>
 <p>To look at the first 10 rows of our data frame we are using the <code>head</code> function.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df, <span class="dv">10</span>)</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 19
    id         title doi   publication_year is_oa is_oa_anywhere oa_status oa_url
@@ -2158,10 +2170,13 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 <p>The <code>summarise</code> function allows us to calculate summary statistics for each group. In this case we will use the <code>n</code> function to count the number of observations in each group, and the result is stored in a new variable called n.</p>
 <p>The <code>arrange</code> function is used to sort the data based on the n variable and the <code>desc</code> function lets us determine that the ordering should be in descending order. This means that the groups with the highest number of observations will appear at the top of the output.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(host_organization, host_organization_name) <span class="sc">%&gt;%</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n))</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 443 × 3
 # Groups:   host_organization [443]
@@ -2187,11 +2202,14 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 </ol>
 <p>As an example we will look at the publisher names in our data frame that contain <em>Springer</em> or <em>Nature</em>. We will use the <code>filter</code> function from the tidyverse that lets us filter articles that fulfil the condition we specify in combination with the <code>grepl</code> function that allows to search for patterns. In this case we will use a regular expression as the pattern to search for.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(host_organization, host_organization_name) <span class="sc">%&gt;%</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">%&gt;%</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">grepl</span>(<span class="st">"^Springer|Nature"</span>, host_organization_name))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">grepl</span>(<span class="st">"^Springer|Nature"</span>, host_organization_name))</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 3
 # Groups:   host_organization [8]
@@ -2209,11 +2227,14 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 </div>
 <p>If we want to replace the Springer name variants with <em>Springer Nature</em> as publisher name, we can use the <code>mutate</code> function that lets us transform a column in our data frame in combination with the <code>str_replace_all</code> function that lets us replace string values that follow a pattern we specify to do so.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">host_organization_name =</span> <span class="fu">str_replace_all</span>(host_organization_name, <span class="st">"^Springer.*$|Nature.*$"</span>, <span class="st">"Springer Nature"</span>)) <span class="sc">%&gt;%</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(host_organization_name) <span class="sc">%&gt;%</span></span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n))</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 434 × 2
    host_organization_name                             n
@@ -2233,18 +2254,24 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 </div>
 <p>Be aware that this data transformation only applies to the publisher name column and not the OpenAlex provided publisher id column. We would need to perform a separate transformation step to align both. Additionally, we did not permanently rename the publisher name values in our data frame. To do this we can either override our data frame <em>df</em> or create a new data frame by assigning the output with the <code>&lt;-</code> operator.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">host_organization_name =</span> <span class="fu">str_replace_all</span>(host_organization_name, <span class="st">"^Springer.*$|Nature.*$"</span>, <span class="st">"Springer Nature"</span>))</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">host_organization_name =</span> <span class="fu">str_replace_all</span>(host_organization_name, <span class="st">"^Springer.*$|Nature.*$"</span>, <span class="st">"Springer Nature"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">host_organization_name =</span> <span class="fu">str_replace_all</span>(host_organization_name, <span class="st">"^Springer.*$|Nature.*$"</span>, <span class="st">"Springer Nature"</span>))</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 </div>
 <p>To access the apc values in our data frame we will use the <code>unnest_wider</code>, <code>unnest_longer</code>, and <code>pivot_wider</code> functions from the tidyverse with the apc column.</p>
 <p>The <code>unnest_wider</code> function allows us to turn each element of a list-column into a column. We will further use the <code>select</code> function to print only the resulting apc columns.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(apc, <span class="at">names_sep =</span> <span class="st">"."</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">starts_with</span>(<span class="st">"apc"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">starts_with</span>(<span class="st">"apc"</span>))</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 15,952 × 6
       apc.type   apc.value apc.currency apc.value_usd apc.provenance apc.1
@@ -2264,10 +2291,13 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 </div>
 <p>The output shows that the values in the apc columns are lists, this is, because OpenAlex provides information for APC list prices and prices of APCs that were actually paid, when available. To transform the lists into single value cells we will use the <code>unnest_longer</code> function that does precisely that.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(apc, <span class="at">names_sep =</span> <span class="st">"."</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_longer</span>(<span class="fu">c</span>(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) <span class="sc">%&gt;%</span></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, <span class="fu">starts_with</span>(<span class="st">"apc"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, <span class="fu">starts_with</span>(<span class="st">"apc"</span>))</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 22,044 × 7
    id         apc.type apc.value apc.currency apc.value_usd apc.provenance apc.1
@@ -2287,10 +2317,13 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 </div>
 <p>The output shows that we now have multiple rows for the same id. To transform the data frame to single rows for each id we will use the <code>pivot_wider</code> function that allows us to increase the number of columns and decrease the number of rows.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_wider</span>(apc, <span class="at">names_sep =</span> <span class="st">"."</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest_longer</span>(<span class="fu">c</span>(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) <span class="sc">%&gt;%</span></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">id_cols =</span> id, <span class="at">names_from =</span> apc.type, <span class="at">values_from =</span> <span class="fu">c</span>(apc.value, apc.currency, apc.value_usd, apc.provenance))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">id_cols =</span> id, <span class="at">names_from =</span> apc.type, <span class="at">values_from =</span> <span class="fu">c</span>(apc.value, apc.currency, apc.value_usd, apc.provenance))</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 11,022 × 9
    id          apc.value_list apc.value_paid apc.currency_list apc.currency_paid
@@ -2316,7 +2349,10 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 <section id="how-many-of-the-institutions-publication-are-open-access" class="level3"><h3 class="anchored" data-anchor-id="how-many-of-the-institutions-publication-are-open-access">How many of the institutions publication are open access?</h3>
 <p>To determine total number of open access publications of the research organization, we are using the <code>sum</code> function on the <em>is_oa</em> column. This column contains boolean values (true or false) and the <code>sum</code> function will sum up all rows that contain <em>true</em> values.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(df<span class="sc">$</span>is_oa, <span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(df<span class="sc">$</span>is_oa, <span class="at">na.rm =</span> T)</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 10668</code></pre>
 </div>
@@ -2324,14 +2360,20 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 <p>We also provided the <code>na.rm=T</code> argument to the <code>sum</code> function which causes <em>NA</em> values to be removed.</p>
 <p>When we check for <em>NA</em> values in the <em>is_oa</em> column using the <code>is.na</code> function, we see that there are 21 articles where the open access status is not determined.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(df<span class="sc">$</span>is_oa))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(df<span class="sc">$</span>is_oa))</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 21</code></pre>
 </div>
 </div>
 <p>To determine the overall open access share over all publication years in our data frame, we divide the total number of open access publications by the total number of publications. We calculate the latter using the <code>n_distinct</code> function on our id column.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">sum</span>(df<span class="sc">$</span>is_oa, <span class="at">na.rm =</span> T) <span class="sc">/</span> <span class="fu">n_distinct</span>(df<span class="sc">$</span>id) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">sum</span>(df<span class="sc">$</span>is_oa, <span class="at">na.rm =</span> T) <span class="sc">/</span> <span class="fu">n_distinct</span>(df<span class="sc">$</span>id) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">2</span>)</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 66.88</code></pre>
 </div>
@@ -2339,6 +2381,7 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 </section></section><section id="how-are-open-access-publications-distributed-across-journals" class="level2"><h2 class="anchored" data-anchor-id="how-are-open-access-publications-distributed-across-journals">How are open access publications distributed across journals?</h2>
 <p>To analyse the distribution of open access articles across journals we will calculate the total number of articles (n_articles), the total number of open access articles (n_oa_articles) and the total number of closed articles (n_closed_articles) per journal. We will again use the <code>group_by</code>, <code>summarise</code> and <code>arrange</code> functions. However, since we noticed that 21 articles have an undetermined open access status, we will first filter out all rows with <em>NA</em> values in the <em>is_oa</em> column. We will also group the data by the <em>source_display_name</em> column to generate aggregate statistics for the journals.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(is_oa)) <span class="sc">%&gt;%</span></span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(source_display_name) <span class="sc">%&gt;%</span></span>
@@ -2347,7 +2390,9 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 <span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_oa_articles =</span> <span class="fu">sum</span>(is_oa),</span>
 <span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">n_closed_articles =</span> n_articles <span class="sc">-</span> n_oa_articles</span>
 <span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_oa_articles))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_oa_articles))</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4,156 × 4
    source_display_name                n_articles n_oa_articles n_closed_articles
@@ -2368,10 +2413,13 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 <p>The results show that 414 articles have no journal assigned within our data frame. This could indicate that more data cleaning needs to be performed. The results further show that the top three journals in terms of overall publication volume are SSRN Electronic Journal, Scientific Reports, and Astronomy and Astrophysics, while in terms of open access publication volume the top three journals are Scientific Reports, Astronomy and Astrophysics, and Journal of High Energy Physics.</p>
 <p>We can further explore the open access status distribution for the articles. We will do this on the example of the top three journals in terms of open access publication volume.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(source_display_name <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Scientific Reports"</span>, <span class="st">"Astronomy and Astrophysics"</span>, <span class="st">"Journal of High Energy Physics"</span>)) <span class="sc">%&gt;%</span></span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(source_display_name, is_oa, oa_status) <span class="sc">%&gt;%</span></span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>())</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 4
 # Groups:   source_display_name, is_oa [4]
@@ -2392,13 +2440,16 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 <p>We can combine functions from the tidyverse and ggplot2 to visualise the development of open access over time.</p>
 <p>First, we group the data by publication year and open access status. We will then compute the number of articles in each group. In the ggplot function, we assign the publication year column to the x axis and the number of articles to the y axis. We choose point (geom_point) and line (geom_line) graph types to mark the distinct values of n and have them connected by lines. Both are provided with a colour aesthetic which is set to our open access status column. This will result in different colours being assigned to the points and lines for the different open access status values. With the <em>theme_minimal</em> option we are applying a minimal theme for the plot appearance.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(publication_year, oa_status) <span class="sc">%&gt;%</span></span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">"keep"</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> publication_year, <span class="at">y =</span> n)) <span class="sc">+</span></span>
 <span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">colour =</span> oa_status)) <span class="sc">+</span></span>
 <span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> oa_status)) <span class="sc">+</span></span>
-<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output-display">
 <div>
 <figure class="figure"><p><a href="OpenAlex_files/figure-html/unnamed-chunk-18-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="OpenAlex_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></a></p>
@@ -2408,13 +2459,16 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 </div>
 <p>We can further choose to visualise the open access distribution over time in terms of percentages. For this we first calculate the share of each open access status per publication year and create a new column using the <code>mutate</code> function that stores these values. We pipe the result through to the <code>ggplot</code> function assigning the publication year column to the x axis and the share to the y axis. We assign the <em>oa_status</em> column to the fill argument which will plot a different colour for each open access status. For this plot we choose a bar chart (geom_bar) graph type and again apply the minimal theme.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(publication_year, oa_status) <span class="sc">%&gt;%</span></span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">count =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
 <span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">perc =</span> count <span class="sc">/</span> <span class="fu">sum</span>(count) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> publication_year, <span class="at">y =</span> perc, <span class="at">fill =</span> oa_status)) <span class="sc">+</span></span>
 <span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
-<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
+</div>
 <div class="cell-output-display">
 <div>
 <figure class="figure"><p><a href="OpenAlex_files/figure-html/unnamed-chunk-19-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="OpenAlex_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="672"></a></p>
@@ -2509,13 +2563,14 @@ Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino 
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
