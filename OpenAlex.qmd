@@ -335,6 +335,9 @@ The following exercises focus on open access publications in regard to publisher
 
 Before, we analysed the distribution of open access articles across journals. Below is a copy of the corresponding code. Adapt the code to give you aggregate statistics for *publishers* instead of journals.
 
+::: {.panel-tabset}
+
+## {{< iconify proicons:code >}}&ensp;Interactive editor
 
 ```{webr-r}
 df %>%
@@ -348,12 +351,32 @@ df %>%
   arrange(desc(n_oa_articles))
 ```
 
+## {{< iconify proicons:checkmark-circle >}}&ensp;Solution
+
+```{webr-r}
+df %>%
+  filter(!is.na(is_oa)) %>%
+  group_by(host_organization_name) %>%
+  summarise(
+    n_articles = n(),
+    n_oa_articles = sum(is_oa),
+    n_closed_articles = n_articles - n_oa_articles
+  ) %>%
+  arrange(desc(n_oa_articles))
+```
+
+:::
+
+
 Which publishers are among the top three in terms of overall publication volume and in terms of open access publication volume? Do you notice any interesting patterns?
 
 ## Visuzlisation of open access disctribution by top three publishers
 
 Now, see if you can adapt the code we used to visualise the open access share over time to show you the open access share for the top three publishers in terms of open access publication volume.
 
+::: {.panel-tabset}
+
+## {{< iconify proicons:code >}}&ensp;Interactive editor
 
 ```{webr-r}
 df %>%
@@ -364,5 +387,24 @@ df %>%
   geom_bar(stat = "identity") +
   theme_minimal()
 ```
+
+## {{< iconify proicons:lightbulb >}}&ensp;Hint
+
+**Hint:** You’ll want to change something in the code so that you filter first based on the publisher names of the top three publishers before you perform the grouping. You can reuse code that was already introduced in the notebook.
+
+## {{< iconify proicons:checkmark-circle >}}&ensp;Solution
+
+```{webr-r}
+df %>%
+  filter(host_organization_name %in% c("Wiley", "Elsevier BV", "Springer Science+Business Media")) %>% 
+  group_by(host_organization_name, oa_status) %>%
+  summarise(count = n()) %>%
+  mutate(perc = count / sum(count) * 100) %>%
+  ggplot(aes(x = host_organization_name, y = perc, fill = oa_status)) +
+  geom_bar(stat = "identity") +
+  theme_minimal()
+```
+
+:::
 
 # References
