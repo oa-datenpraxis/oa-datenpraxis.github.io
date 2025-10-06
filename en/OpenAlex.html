@@ -2029,18 +2029,18 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 
 </header><section id="what-is-openalex" class="level1"><h1>What is OpenAlex?</h1>
-<p>OpenAlex is a fully-open bibliographic database operated by the non-profit organization <a href="https://ourresearch.org/">OurResearch</a>. It launched in 2022 as a successor to the then discontinued Microsoft Academic Graph <span class="citation" data-cites="Priem2022">(<a href="#ref-Priem2022" role="doc-biblioref">Priem, Piwowar, and Orr 2022</a>)</span>. OpenAlex data comprises information about various entities of the scholarly ecosystem such as research outputs (journal articles, books, datasets, etc.), authors, sources, etc. <span class="citation" data-cites="OpenAlex">(<a href="#ref-OpenAlex" role="doc-biblioref">OurResearch, n.d.</a>)</span>.</p>
+<p>OpenAlex is a fully-open bibliographic database operated by the non-profit organization <a href="https://ourresearch.org/">OurResearch</a>. It launched in 2022 as a successor to the then discontinued Microsoft Academic Graph <span class="citation" data-cites="Priem2022">(<a href="#ref-Priem2022" role="doc-biblioref">Priem et al., 2022</a>)</span>. OpenAlex data comprises information about various entities of the scholarly ecosystem such as research outputs (journal articles, books, datasets, etc.), authors, sources, etc. <span class="citation" data-cites="OpenAlex">(<a href="#ref-OpenAlex" role="doc-biblioref">OurResearch, n.d.</a>)</span>.</p>
 <p>The OpenAlex dataset is a useful tool to monitor open access activities on different levels of aggregation, as OpenAlex e.g. provides information on the open access status of a work or information on estimates for article processing charges (APCs) at the journal and work levels.</p>
 </section><section id="how-can-i-access-openalex-data" class="level1"><h1>How can I access OpenAlex data?</h1>
 <p>OpenAlex offers three main ways to access the data:</p>
 <section id="the-openalex-web-user-interface" class="level2"><h2 class="anchored" data-anchor-id="the-openalex-web-user-interface">The OpenAlex web user interface</h2>
 <p>In the <a href="https://openalex.org/">web user interface</a> you are able to query the database via a search bar, apply filters and export the results in csv, ris or txt format.</p>
 </section><section id="the-openalex-api" class="level2"><h2 class="anchored" data-anchor-id="the-openalex-api">The OpenAlex API</h2>
-<p>The <a href="https://docs.openalex.org/how-to-use-the-api/api-overview">OpenAlex REST API</a> allows programmatic access to and retrieval of OpenAlex data. The API has a limit of 100,000 calls per user per day. Though no authentication is required it is advised to add your email address to all API requests in order to get into the polite pool.</p>
+<p>The <a href="https://docs.openalex.org/how-to-use-the-api/api-overview">OpenAlex REST API</a> allows programmatic access to and retrieval of OpenAlex data. The API has a limit of 100,000 calls per user per day<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Though no authentication is required it is advised to add your email address to all API requests in order to get into the polite pool<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
 </section><section id="the-openalex-data-snapshot" class="level2"><h2 class="anchored" data-anchor-id="the-openalex-data-snapshot">The OpenAlex data snapshot</h2>
 <p>OpenAlex additionally offers a <a href="https://docs.openalex.org/download-all-data/openalex-snapshot">data snapshot</a> with a copy of the complete database for download, which a user can then load into their own data warehouse or relational database. The snapshot gets updated monthly.</p>
 </section></section><section id="exploring-openalex-institutional-open-access-data" class="level1"><h1>Exploring OpenAlex institutional open access data</h1>
-<p>In this notebook we will query the OpenAlex API with R <span class="citation" data-cites="R">(<a href="#ref-R" role="doc-biblioref">R Core Team 2025</a>)</span> to answer the following question:</p>
+<p>In this notebook we will query the OpenAlex API with R <span class="citation" data-cites="R">(<a href="#ref-R" role="doc-biblioref">R Core Team, 2025</a>)</span> to answer the following question:</p>
 <blockquote class="blockquote">
 <p>How many of recent journal articles from a given institution are open access and how did the share of open access publications evolve over the years?</p>
 </blockquote>
@@ -2063,7 +2063,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </ul>
 <p>OpenAlex offers a lot more information than what we are exploring in this notebook. For a full documentation of all available entities and fields, please visit the <a href="https://docs.openalex.org/">OpenAlex technical documentation</a>.</p>
 <section id="loading-packages" class="level2"><h2 class="anchored" data-anchor-id="loading-packages">Loading packages</h2>
-<p>We will load the <em>openalexR</em> package <span class="citation" data-cites="openalexR">(<a href="#ref-openalexR" role="doc-biblioref">Aria et al. 2024</a>)</span> that allows us to query the OpenAlex API from within our notebook and the <em>tidyverse</em> package <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al. 2019</a>)</span> that provides a lot of additional functionalities for data wrangling and visualization.</p>
+<p>We will load the <em>openalexR</em> package <span class="citation" data-cites="openalexR">(<a href="#ref-openalexR" role="doc-biblioref">Aria et al., 2024</a>)</span> that allows us to query the OpenAlex API from within our notebook and the <em>tidyverse</em> package <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al., 2019</a>)</span> that provides a lot of additional functionalities for data wrangling and visualization.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Installation of packages if not already installed with</span></span>
@@ -2166,7 +2166,7 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 <p>Before analysing the OpenAlex data, we will have a closer look at the publisher and apc columns and perform some data wrangling tasks.</p>
 <p>To get an overview of the publishers present in our dataframe and the number of articles per publisher, we will use three tidyverse functions and the pipe operator <code>%&gt;%</code> (<a href="https://magrittr.tidyverse.org/reference/pipe.html">magrittr pipe</a>) or <code>|&gt;</code> (base R pipe).</p>
 <p>The pipe operator allows us to take e.g. a data frame or the result of a function and pass it to another function. If we type the name of our data frame followed by the pipe operator that means we don’t have to specify which data we want a function to be performed on, when we call it after the pipe operator.</p>
-<p>The <code>group_by</code> function allows us to group data in our data frame <em>df</em> by one or more variables. In this case we will group the data frame by the OpenAlex provided id for the publisher in our <em>host_organization</em> column and the publisher name in our <em>host_organization_name</em>. This allows us to generate aggregate statistics for the publishers in our data frame.</p>
+<p>The <code>group_by</code> function allows us to group data in our data frame <em>df</em> by one or more variables. In this case we will group the data frame by the OpenAlex provided id for the publisher in our <em>host_organization</em> column and the publisher name in our <em>host_organization_name</em> column. This allows us to generate aggregate statistics for the publishers in our data frame.</p>
 <p>The <code>summarise</code> function allows us to calculate summary statistics for each group. In this case we will use the <code>n</code> function to count the number of observations in each group, and the result is stored in a new variable called n.</p>
 <p>The <code>arrange</code> function is used to sort the data based on the n variable and the <code>desc</code> function lets us determine that the ordering should be in descending order. This means that the groups with the highest number of observations will appear at the top of the output.</p>
 <div class="cell">
@@ -2197,8 +2197,8 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 </div>
 <p>The output shows us some important things about the data:</p>
 <ol type="1">
-<li>There is a significant amount of articles that don’t have any publisher assigned. We can’t cover data cleaning tasks in-depth in this notebook but want to point out that this is something worth investigating further. Questions that could be asked are: Do these articles have a DOI? Were these articles misclassified in any way? Can the publisher information got lost for some reason? Are there any other inconsistencies with these articles? Can I disregard some or all of the articles?</li>
-<li>Publisher names are at least in some cases not standardized or aggregated to a single publishing house. The approach taken to represent the publishing structure, i.e. listing imprints or subsidiaries separately or under the main publisher name, and the point in time of the analysis, have an influence of the results, e.g. because of changes in ownership <span class="citation" data-cites="scheidt2025">(see also <a href="#ref-scheidt2025" role="doc-biblioref">Scheidt 2025</a>)</span>.</li>
+<li>There is a significant amount of articles that don’t have any publisher assigned. We can’t cover data cleaning tasks in-depth in this notebook but want to point out that this is something worth investigating further. Questions that could be asked are: Do these articles have a DOI? Were these articles misclassified in any way? Did the publisher information get lost for some reason? Are there any other inconsistencies with these articles? Can I disregard some or all of the articles?</li>
+<li>Publisher names are at least in some cases not standardized or aggregated to a single publishing house. The approach taken to represent the publishing structure, i.e. listing imprints or subsidiaries separately or under the main publisher name, and the point in time of the analysis, have an influence of the results, e.g. because of changes in ownership <span class="citation" data-cites="scheidt2025">(see also <a href="#ref-scheidt2025" role="doc-biblioref">Scheidt, 2025</a>)</span>.</li>
 </ol>
 <p>As an example we will look at the publisher names in our data frame that contain <em>Springer</em> or <em>Nature</em>. We will use the <code>filter</code> function from the tidyverse that lets us filter articles that fulfil the condition we specify in combination with the <code>grepl</code> function that allows to search for patterns. In this case we will use a regular expression as the pattern to search for.</p>
 <div class="cell">
@@ -2255,11 +2255,13 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 <p>Be aware that this data transformation only applies to the publisher name column and not the OpenAlex provided publisher id column. We would need to perform a separate transformation step to align both. Additionally, we did not permanently rename the publisher name values in our data frame. To do this we can either override our data frame <em>df</em> or create a new data frame by assigning the output with the <code>&lt;-</code> operator.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">host_organization_name =</span> <span class="fu">str_replace_all</span>(host_organization_name, <span class="st">"^Springer.*$|Nature.*$"</span>, <span class="st">"Springer Nature"</span>))</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">host_organization_name =</span> <span class="fu">str_replace_all</span>(host_organization_name, <span class="st">"^Springer.*$|Nature.*$"</span>, <span class="st">"Springer Nature"</span>))</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># overriding our data frame</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">host_organization_name =</span> <span class="fu">str_replace_all</span>(host_organization_name, <span class="st">"^Springer.*$|Nature.*$"</span>, <span class="st">"Springer Nature"</span>))</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co"># creating a new data frame df2</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">host_organization_name =</span> <span class="fu">str_replace_all</span>(host_organization_name, <span class="st">"^Springer.*$|Nature.*$"</span>, <span class="st">"Springer Nature"</span>))</span></code></pre></div>
 <button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
 </div>
 </div>
@@ -2289,7 +2291,7 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 # ℹ 15,942 more rows</code></pre>
 </div>
 </div>
-<p>The output shows that the values in the apc columns are lists, this is, because OpenAlex provides information for APC list prices and prices of APCs that were actually paid, when available. To transform the lists into single value cells we will use the <code>unnest_longer</code> function that does precisely that.</p>
+<p>The output shows that the values in the apc columns are lists. This is because OpenAlex provides information for APC list prices and prices of APCs that were actually paid, when available. To transform the lists into single value cells we will use the <code>unnest_longer</code> function that does precisely that.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
@@ -2343,9 +2345,14 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 #   apc.provenance_list &lt;chr&gt;, apc.provenance_paid &lt;chr&gt;</code></pre>
 </div>
 </div>
-<p>Now we can access the apc information provided by OpenAlex. In this notebook we won’t analyse APC information any further. If you are interested in APC analysis, we offer a notebook showing how to analyse APC information using the OpenAPC data set at: <a href="https://oa-datenpraxis.de/OpenAPC.html" class="uri">https://oa-datenpraxis.de/OpenAPC.html</a></p>
+<p>The output doesn’t show all 9 variables (or columns). Underneath the preview we get the information:</p>
+<blockquote class="blockquote">
+<p>4 more variables: apc.value_usd_list <dbl>, apc.value_usd_paid <dbl>, apc.provenance_list <chr>, apc.provenance_paid <chr></chr></chr></dbl></dbl></p>
+</blockquote>
+<p>This means that they are in fact available in our data frame but are omitted in the preview.</p>
+<p>Now we can access the APC information provided by OpenAlex. In this notebook we won’t analyse APC information any further. If you are interested in APC analysis, we offer a notebook showing how to analyse APC information using the OpenAPC data set at: <a href="https://oa-datenpraxis.de/OpenAPC.html" class="uri">https://oa-datenpraxis.de/OpenAPC.html</a></p>
 </section><section id="analysing-institutional-open-access-performance" class="level2"><h2 class="anchored" data-anchor-id="analysing-institutional-open-access-performance">Analysing institutional open access performance</h2>
-<p>In the following sections, we will analyse the data to address our question and generate visualizations. This notebook can’t provide an in-depth analysis, but it will demonstrate how to apply some useful functions from base R and the tidyverse to gain insights from the data and show how to create visualisations using the <em>ggplot2</em> package <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span>.</p>
+<p>In the following sections, we will analyse the data to address our question and generate visualizations. This notebook can’t provide an in-depth analysis, but it will demonstrate how to apply some useful functions from base R and the tidyverse to gain insights from the data and show how to create visualisations using the <em>ggplot2</em> package <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham, 2016</a>)</span>.</p>
 <section id="how-many-of-the-institutions-publication-are-open-access" class="level3"><h3 class="anchored" data-anchor-id="how-many-of-the-institutions-publication-are-open-access">How many of the institutions publication are open access?</h3>
 <p>To determine total number of open access publications of the research organization, we are using the <code>sum</code> function on the <em>is_oa</em> column. This column contains boolean values (true or false) and the <code>sum</code> function will sum up all rows that contain <em>true</em> values.</p>
 <div class="cell">
@@ -2368,7 +2375,7 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 <pre><code>[1] 21</code></pre>
 </div>
 </div>
-<p>To determine the overall open access share over all publication years in our data frame, we divide the total number of open access publications by the total number of publications. We calculate the latter using the <code>n_distinct</code> function on our id column.</p>
+<p>To determine the overall open access share over all publication years in our data frame, we divide the total number of open access publications by the total number of publications. We calculate the latter using the <code>n_distinct</code> function on our id column. The <code>n_distinct</code> function is quite handy as it returns the number of unique values in the provided column. Since we provide the id column, it will return the total number of publications in our data frame.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">sum</span>(df<span class="sc">$</span>is_oa, <span class="at">na.rm =</span> T) <span class="sc">/</span> <span class="fu">n_distinct</span>(df<span class="sc">$</span>id) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">2</span>)</span></code></pre></div>
@@ -2410,7 +2417,7 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 # ℹ 4,146 more rows</code></pre>
 </div>
 </div>
-<p>The results show that 414 articles have no journal assigned within our data frame. This could indicate that more data cleaning needs to be performed. The results further show that the top three journals in terms of overall publication volume are SSRN Electronic Journal, Scientific Reports, and Astronomy and Astrophysics, while in terms of open access publication volume the top three journals are Scientific Reports, Astronomy and Astrophysics, and Journal of High Energy Physics.</p>
+<p>The results show that 414 articles have no journal assigned within our data frame. This could indicate that more data cleaning needs to be performed. The results further show that the top three journals in terms of open access publication volume are Scientific Reports, Astronomy and Astrophysics, and Journal of High Energy Physics.</p>
 <p>We can further explore the open access status distribution for the articles. We will do this on the example of the top three journals in terms of open access publication volume.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold">
@@ -2457,6 +2464,7 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 </div>
 </div>
 </div>
+<p>The plot shows use the total number of publications for each publication year and open access status. Generally, there seems to be a downwards trend in terms of publication volume for all open access status types but hybrid open access.</p>
 <p>We can further choose to visualise the open access distribution over time in terms of percentages. For this we first calculate the share of each open access status per publication year and create a new column using the <code>mutate</code> function that stores these values. We pipe the result through to the <code>ggplot</code> function assigning the publication year column to the x axis and the share to the y axis. We assign the <em>oa_status</em> column to the fill argument which will plot a different colour for each open access status. For this plot we choose a bar chart (geom_bar) graph type and again apply the minimal theme.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold">
@@ -2476,6 +2484,7 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 </div>
 </div>
 </div>
+<p>The plot shows use the share of each open access status for each publication year. The most dominant open access types are gold and hybrid open access. Furthermore the share of open access publications across all publication years is higher than for closed access publications.</p>
 </section></section><section id="exercises" class="level2"><h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
@@ -2523,30 +2532,37 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 </div>
 </div>
 </div>
-</section></section><section id="references" class="level1"></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-openalexR" class="csl-entry" role="listitem">
-Aria, Massimo, Le Trang, Corrado Cuccurullo, Alessandra Belfiore, and June Choe. 2024. <span>“openalexR: An r-Tool for Collecting Bibliometric Data from OpenAlex.”</span> <em>The R Journal</em> 15: 167–80. <a href="https://doi.org/10.32614/RJ-2023-089">https://doi.org/10.32614/RJ-2023-089</a>.
-</div>
-<div id="ref-OpenAlex" class="csl-entry" role="listitem">
-OurResearch. n.d. <span>“<span class="nocase">OpenAlex technical documentation</span>.”</span> <a href="https://docs.openalex.org/">https://docs.openalex.org/</a>.
-</div>
-<div id="ref-Priem2022" class="csl-entry" role="listitem">
-Priem, Jason, Heather Piwowar, and Richard Orr. 2022. <span>“<span class="nocase">OpenAlex: A fully-open index of scholarly works, authors, venues, institutions, and concepts</span>.”</span> In <em>Proceedings of the 26th International Conference on Science and Technology Indicators, STI 2022</em>, edited by Nicolas Robinson-Garcia, Daniel Torres-Salinas, and Wenceslao Arroyo-Machado. Zenodo. <a href="https://doi.org/10.5281/ZENODO.6936227">https://doi.org/10.5281/ZENODO.6936227</a>.
+</section></section><section id="references" class="level1"></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default">
+<section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-scheidt2025" class="csl-entry" role="listitem">
+Scheidt, B. (2025, September 3). <em>Publisher Normalization for <span>OpenAlex</span> Data</em>. <a href="http://www.open-bibliometrics.de/posts/20250903-PublisherNormalization/">http://www.open-bibliometrics.de/posts/20250903-PublisherNormalization/</a>
 </div>
 <div id="ref-R" class="csl-entry" role="listitem">
-R Core Team. 2025. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
+R Core Team. (2025). <em>R: A language and environment for statistical computing</em>. R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>
 </div>
-<div id="ref-scheidt2025" class="csl-entry" role="listitem">
-Scheidt, Barbara. 2025. <span>“Publisher Normalization for <span>OpenAlex</span> Data.”</span> September 3, 2025. <a href="http://www.open-bibliometrics.de/posts/20250903-PublisherNormalization/">http://www.open-bibliometrics.de/posts/20250903-PublisherNormalization/</a>.
+<div id="ref-openalexR" class="csl-entry" role="listitem">
+Aria, M., Le Trang, Cuccurullo, C., Belfiore, A., &amp; Choe, J. (2024). openalexR: An r-tool for collecting bibliometric data from OpenAlex. <em>The R Journal</em>, <em>15</em>, 167–180. <a href="https://doi.org/10.32614/RJ-2023-089">https://doi.org/10.32614/RJ-2023-089</a>
 </div>
-<div id="ref-ggplot2" class="csl-entry" role="listitem">
-Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.
+<div id="ref-Priem2022" class="csl-entry" role="listitem">
+Priem, J., Piwowar, H., &amp; Orr, R. (2022). <span class="nocase">OpenAlex: A fully-open index of scholarly works, authors, venues, institutions, and concepts</span>. In N. Robinson-Garcia, D. Torres-Salinas, &amp; W. Arroyo-Machado (Eds.), <em>Proceedings of the 26th international conference on science and technology indicators, STI 2022</em>. Zenodo. <a href="https://doi.org/10.5281/ZENODO.6936227">https://doi.org/10.5281/ZENODO.6936227</a>
 </div>
 <div id="ref-tidyverse" class="csl-entry" role="listitem">
-Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the <span class="nocase">tidyverse</span>.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
+Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L. D., François, R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen, T. L., Miller, E., Bache, S. M., Müller, K., Ooms, J., Robinson, D., Seidel, D. P., Spinu, V., … Yutani, H. (2019). Welcome to the <span class="nocase">tidyverse</span>. <em>Journal of Open Source Software</em>, <em>4</em>(43), 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>
 </div>
-</div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+<div id="ref-ggplot2" class="csl-entry" role="listitem">
+Wickham, H. (2016). <em>ggplot2: Elegant graphics for data analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>
+</div>
+<div id="ref-OpenAlex" class="csl-entry" role="listitem">
+OurResearch. (n.d.). <em><span class="nocase">OpenAlex technical documentation</span></em>. <a href="https://docs.openalex.org/">https://docs.openalex.org/</a>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>API stands for Application Programming Interface. An API call is a request made by a client to an API endpoint on a server to retrieve or send information. An API call is a way for different applications to communicate with each other. The client (e.g. you, the user) makes the request and the server sends back a response (e.g. the OpenAlex data you requested).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>OpenAlex sorts API users into two pools: the polite and the common pool. All users who identify by providing their email addresses, i.e. are being polite and telling OpenAlex who you are and how to contact you if there happens to be any problems, are sorted into the polite pool, which has more consistent response times.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol></section>
+</div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
