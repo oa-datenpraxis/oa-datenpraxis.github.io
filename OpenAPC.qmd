@@ -20,6 +20,7 @@ format:
     highlight-style: github
     code-copy: true
     code-link: true
+    repo-actions: [issue]
 execute:
   warning: false
   error: false
