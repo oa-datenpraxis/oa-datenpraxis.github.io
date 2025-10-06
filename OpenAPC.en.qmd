@@ -93,7 +93,7 @@ To get an overview of the structure of our data frame, especially the number of 
 glimpse(df)
 ```
 The output shows that our data frame contains a total of `r formatC(n_distinct(df$doi), big.mark=",")` rows (observations) and `r ncol(df)` columns. Each row in the data frame corresponds to one APC payment.
-The output also shows that most of the column values are of data type *character* (chr), the perion column values are of type *integer* (int), the is_hybrid column values are of type *logical* (lgl) and the euro column values are of type *double-precision floating-point* (dbl) - a format for decimal numbers. The output also indicates the first values of every column on the right hand side.
+The output also shows that most of the column values are of data type *character* (chr), the period column values are of type *integer* (int), the is_hybrid column values are of type *logical* (lgl) and the euro column values are of type *double-precision floating-point* (dbl) - a format for decimal numbers. The output also indicates the first values of every column on the right hand side.
 
 To look at the first 10 rows of our data frame we are using the `head` function.
 
@@ -231,7 +231,7 @@ df %>%
 
 Which publishers received the highest amount of APC payments from Charité? Do you notice any interesting patterns?
 
-## 2. Visuzlization of APC disctribution by publisher
+## 2. Visuzlization of APC distribution by publisher
 
 Now, see if you can adapt the code above to show you the distribution of APC payments by publisher.
 
