@@ -21,7 +21,7 @@ lightbox: true
 ---
 
 ::: {.callout-note}
-Dieses Notebook wird nur auf English angeboten
+Dieses Notebook wird nur auf Englisch angeboten
 :::
 
 # What is OpenAPC?
