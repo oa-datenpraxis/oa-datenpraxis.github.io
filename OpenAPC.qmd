@@ -20,14 +20,15 @@ format:
     highlight-style: github
     code-copy: true
     code-link: true
-    repo-url: https://github.com/oa-datenpraxis/oa-datenpraxis.github.io
-    repo-actions: [issue]
 execute:
   warning: false
   error: false
 webr:
   packages: ['tidyverse']
 lightbox: true
+repo-url: https://github.com/oa-datenpraxis/oa-datenpraxis.github.io
+repo-branch: main
+repo-actions: issue
 ---
 
 ::: {.callout-note}
