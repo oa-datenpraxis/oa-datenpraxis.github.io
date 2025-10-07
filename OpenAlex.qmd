@@ -1,7 +1,17 @@
 ---
-title: "OpenAlex"
+title: "Open Access Monitoring with OpenAlex"
+author:
+  - name: Sophia Dörner
+    orcid: 0000-0001-8747-3422
+    affiliation: 
+      - name: Göttingen State and University Library
+        url: https://www.sub.uni-goettingen.de/en/
+abstract: > 
+  This notebook is a tool for library and information professionals dealing with monitoring Open Access publication output at their institution. It shows how to leverage OpenAlex to retrieve and analyze publication data using R. No software installation or prior programming knowledge required. At the end of the notebook you will find some short excercises that can be executed directly in your browser. If you have suggestions or notice any mistake, please open an [issue](https://github.com/oa-datenpraxis/oa-datenpraxis.github.io/issues/new).
 filters: 
   - _extensions/coatless/webr/webr.lua
+repo-url: https://github.com/oa-datenpraxis/oa-datenpraxis.github.io
+repo-actions: issue
 format: 
   html:
     resources:
