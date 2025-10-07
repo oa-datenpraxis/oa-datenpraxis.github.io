@@ -24,3 +24,7 @@ website:
           - dashboard_uebersicht.qmd
           - dashboards.qmd
           - dashboards_schema.qmd
+      - text: "Notebooks"
+        menu: 
+          - OpenAPC.qmd
+          - OpenAlex.qmd
