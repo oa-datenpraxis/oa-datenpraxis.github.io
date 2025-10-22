@@ -26,25 +26,26 @@ jobs:
         uses: r-lib/actions/setup-r@v2
         with:
           use-public-rspm: true
+          extra-repositories: |
+            https://ropensci.r-universe.dev
 
-      - name: Install R packages
-        run: |
-          Rscript -e "install.packages(c('curl', 'whoami', 'httr', 'here', 'DT', 'readxl', 'dplyr','ggplot2','tidyverse','openalexR'))"
-
-      - name: Install babelquarto package
-        run: |
-          Rscript -e "install.packages('babelquarto', repos = c('https://ropensci.r-universe.dev', 'https://cloud.r-project.org'))"
-
-
-      - name: Check R package installation
-        run: |
-          Rscript -e "library(httr)"
-          Rscript -e "library(babelquarto)"
-          Rscript -e "library(here)"
-          Rscript -e "library(DT)"
-          Rscript -e "library(readxl)"
-          Rscript -e "library(dplyr)"
-          Rscript -e "library(ggplot2)"
+      - name: Install R dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::shiny
+            any::bslib
+            any::tidyverse
+            any::plotly
+            any::curl
+            any::whoami
+            any::httr
+            any::here
+            any::DT
+            any::readxl
+            any::openalexR
+          extra-packages: |
+            babelquarto
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
