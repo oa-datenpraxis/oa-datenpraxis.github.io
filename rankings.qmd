@@ -3,7 +3,7 @@ title: "Open Access in institutionellen Rankings"
 format: 
   html: 
     resources: 
-      #- shinylive-sw.js
+      - rankings/data/shinylive-sw.js
       - rankings/data/leiden_shiny.csv
 filters:
   - shinylive
@@ -11,6 +11,11 @@ bibliography: rankings/data/rankings.bib
 csl: apa.csl
 lightbox:
   match: auto
+crossref:
+  fig-title: "Abbildung"
+  fig-prefix: "Abb."
+  tbl-title: "Tabelle"
+  tbl-prefix: "Tab."
 ---
 
 Institutionelle Rankings oder Hochschulrankings genießen eine hohe Aufmerksamkeit in Wissenschaftspolitik und Öffentlichkeit, weil es ihnen gelingt, wissenschaftliche Einrichtungen auf globaler Ebene übersichtlich miteinander zu vergleichen. Sie dienen verschiedenen Interessengruppen, wie politischen Entscheidungsträgern, Hochschulmanagern oder Studieninteressierten, unter anderem als Instrument zur strategischen Entscheidungsfindung, Veranschaulichung der institutionellen Exzellenz oder bei der Wahl des Studienorts [@Waltman2012]. Die jeweilige Methodik, auf der die Rankings basieren, ist mitunter vielzähliger Kritikpunkte ausgesetzt, beispielsweise wegen ihrer Tendenz, mehrere Dimensionen des Leistungsspektrums wissenschaftlicher Einrichtungen zu einer einzigen, oft undurchsichtigen Punktzahl zusammenzufassen [@vanRaan2005;@Diprose2023]. Dieser Ansatz erschwert nicht nur die Interpretation der Rankings, sondern berücksichtigt auch nicht hinreichend die unterschiedlichen Aufgaben und Prioritäten der Einrichtungen [@Waltman2012;@Huang2020].
@@ -29,9 +34,9 @@ Die folgenden Abschnitte beginnen mit einer Beschreibung der Kernmerkmale der au
 
 ### Leiden Ranking
 
-Das Leiden Ranking wird seit 2007 jährlich vom Centre for Science and Technology Studies (CWTS) der Universität Leiden in den Niederlanden erstellt [@Waltman2012;@LR_updates]. Das Ranking bietet keine klassische Rangliste, bei der eine Gesamtkennzahl berechnet wird, jedoch verschiedene bibliometrische Indikatoren entlang der Dimensionen *scientific impact*, *collaboration*, *Open Access* und *gender*. Die Indikatoren werden sowohl in größenabhängiger (absolute Zahlen) als auch in größenunabhängiger (relative Anteile) Form dargestellt, um Unterschiede in der Größe der Universitäten zu berücksichtigen. Das Ranking bietet auch Trendanalysen über Zeiträume und Stabilitätsintervalle, um statistische Unsicherheiten zu berücksichtigen [@LR_general;@LR_indicators]. 
+Das Leiden Ranking wird seit 2007 jährlich vom Centre for Science and Technology Studies (CWTS) der Universität Leiden in den Niederlanden erstellt [@Waltman2012;@LR_updates]. Das Ranking bietet keine klassische Rangliste, bei der eine Gesamtkennzahl berechnet wird, jedoch verschiedene bibliometrische Indikatoren entlang der Dimensionen *scientific impact*, *collaboration*, *Open Access* und *gender*. Die Indikatoren werden sowohl in größenabhängiger (absolute Zahlen) als auch in größenunabhängiger (relative Anteile) Form dargestellt, um Unterschiede in der Größe der Hochschulen zu berücksichtigen. Das Ranking bietet auch Trendanalysen über Zeiträume und Stabilitätsintervalle, um statistische Unsicherheiten zu berücksichtigen [@LR_general;@LR_indicators]. 
 
-Die Version 2024 des Leiden Ranking umfasst bibliometrische Daten für 1.506 Universitäten weltweit [@LR_universities]. Indikatoren werden jeweils für Zeiträume von vier Jahren angegeben, die Version 2024 erweitert diese um den Zeitraum 2019--2024 [@LR_indicators]. Die bibliographischen Daten stammen aus dem Web of Science, wobei jedoch nur Artikel und Reviews berücksichtigt werden, die in internationalen wissenschaftlichen Zeitschriften veröffentlicht wurden [@LR_indicators]. Die Auswahl der Universitäten erfolgt auf der Grundlage ihrer Forschungsleistung, wobei diese mindestens 800 sogenannte *core publications* vorweisen müssen, um in das Ranking aufgenommen zu werden. Unter *core publications* werden Veröffentlichungen verstanden, die in internationalen wissenschaftlichen Zeitschriften in solchen Feldern veröffentlicht wurden, die für die Zitationsanalyse geeignet sind. Diese Publikationen müssen in englischer Sprache verfasst sein, mindestens eine:n Autor:in haben, dürfen nicht zurückgezogen (*retracted*) worden sein und müssen in einem sogenannten *core journal* erschienen sein. *core journals* zeichnen sich durch ihre internationale Ausrichtung aus und müssen in einem Feld angesiedelt sein, das für die Zitationsanalyse geeignet ist. Das Leiden Ranking verwendet keine Daten, die direkt von Universitäten stammen [@LR_data;@LR_universities;@LR_indicators;@LR_general].
+Die Version 2024 des Leiden Ranking umfasst bibliometrische Daten für 1.506 Hochschulen weltweit [@LR_universities]. Indikatoren werden jeweils für Zeiträume von vier Jahren angegeben, die Version 2024 erweitert diese um den Zeitraum 2019--2024 [@LR_indicators]. Die bibliographischen Daten stammen aus dem Web of Science, wobei jedoch nur Artikel und Reviews berücksichtigt werden, die in internationalen wissenschaftlichen Zeitschriften veröffentlicht wurden [@LR_indicators]. Die Auswahl der Hochschulen erfolgt auf der Grundlage ihrer Forschungsleistung, wobei diese mindestens 800 sogenannte *core publications* vorweisen müssen, um in das Ranking aufgenommen zu werden. Unter *core publications* werden Veröffentlichungen verstanden, die in internationalen wissenschaftlichen Zeitschriften in solchen Feldern veröffentlicht wurden, die für die Zitationsanalyse geeignet sind. Diese Publikationen müssen in englischer Sprache verfasst sein, mindestens eine:n Autor:in haben, dürfen nicht zurückgezogen (*retracted*) worden sein und müssen in einem sogenannten *core journal* erschienen sein. *core journals* zeichnen sich durch ihre internationale Ausrichtung aus und müssen in einem Feld angesiedelt sein, das für die Zitationsanalyse geeignet ist. Das Leiden Ranking verwendet keine Daten, die direkt von Hochschulen stammen [@LR_data;@LR_universities;@LR_indicators;@LR_general].
 
 Ein wesentliches Merkmal des Leiden Ranking ist der Fokus auf Open-Access-Veröffentlichungen. Mit der Version 2019 des Rankings wurden Indikatoren zum Open-Access-Publizieren hinzugefügt [@LR_updates]. Um den Open-Access-Status von Publikationen zu bestimmen, nutzt das Leiden Ranking OpenAlex als Datenquelle [@LR_data; @LR_indicators;@LR_general].
 
@@ -57,13 +62,13 @@ Ein wesentliches Merkmal des Leiden Ranking ist der Fokus auf Open-Access-Veröf
 
 **Open Access Indikatoren (Gewichtung):**
 
-- Gesamtzahl der Veröffentlichungen einer Universität
-- Anzahl und Anteil der Open-Access-Veröffentlichungen einer Universität
-- Anzahl und Anteil der Gold-Open-Access-Veröffentlichungen einer Universität
-- Anzahl und Anteil der Hybrid-Open-Access-Publikationen einer Universität
-- Die Anzahl und der Anteil der Bronze-Open-Access-Publikationen einer Universität
-- Die Anzahl und der Anteil der grünen Open-Access-Publikationen einer Universität
-- Die Anzahl und der Anteil der Publikationen einer Universität, deren Open-Access-Status unbekannt ist
+- Gesamtzahl der Veröffentlichungen einer Hochschule
+- Anzahl und Anteil der Open-Access-Veröffentlichungen einer Hochschule
+- Anzahl und Anteil der Gold-Open-Access-Veröffentlichungen einer Hochschule
+- Anzahl und Anteil der Hybrid-Open-Access-Publikationen einer Hochschule
+- Die Anzahl und der Anteil der Bronze-Open-Access-Publikationen einer Hochschule
+- Die Anzahl und der Anteil der grünen Open-Access-Publikationen einer Hochschule
+- Die Anzahl und der Anteil der Publikationen einer Hochschule, deren Open-Access-Status unbekannt ist
 
 **Publikations-/Update-Rythmus:** jährlich
 
@@ -81,9 +86,9 @@ Ein wesentliches Merkmal des Leiden Ranking ist der Fokus auf Open-Access-Veröf
 ### Leiden Ranking Open Edition
 
 
-Das Leiden Ranking Open Edition wird seit 2024 [@LROE2024] jährlich vom Centre for Science and Technology Studies (CWTS) der Universität Leiden in den Niederlanden erstellt. Es ist eine annähernde Reproduktion des traditionellen Leiden Ranking unter Nutzung offener Datenquellen [@LROE2024] und bietet ebenfalls keine klassische Rangliste, sondern verschiedene bibliometrische Indikatoren entlang der Dimensionen *scientific impact*, *collaboration*, und *Open Access*. Die Indikatoren werden in der Open Edition ebenfalls sowohl in größenabhängiger (absolute Zahlen) als auch in größenunabhängiger (relative Anteile) Form dargestellt, um Unterschiede in der Größe der Universitäten zu berücksichtigen. Die Open Edition des Leiden Ranking bietet zudem ebenfalls Trendanalysen über Zeiträume und Stabilitätsintervalle, um statistische Unsicherheiten zu berücksichtigen [@LROE_indicators;@LROE_updates]. 
+Das Leiden Ranking Open Edition wird seit 2024 [@LROE2024] jährlich vom Centre for Science and Technology Studies (CWTS) der Universität Leiden in den Niederlanden erstellt. Es ist eine annähernde Reproduktion des traditionellen Leiden Ranking unter Nutzung offener Datenquellen [@LROE2024] und bietet ebenfalls keine klassische Rangliste, sondern verschiedene bibliometrische Indikatoren entlang der Dimensionen *scientific impact*, *collaboration*, und *Open Access*. Die Indikatoren werden in der Open Edition ebenfalls sowohl in größenabhängiger (absolute Zahlen) als auch in größenunabhängiger (relative Anteile) Form dargestellt, um Unterschiede in der Größe der Hochschulen zu berücksichtigen. Die Open Edition des Leiden Ranking bietet zudem ebenfalls Trendanalysen über Zeiträume und Stabilitätsintervalle, um statistische Unsicherheiten zu berücksichtigen [@LROE_indicators;@LROE_updates]. 
 
-Die Version 2024 des Leiden Ranking umfasst bibliometrische Daten für 1.506 Universitäten weltweit [@LROE_universities]. Indikatoren werden jeweils für Zeiträume von vier Jahren angegeben, die Version 2024 erweitert diese um den Zeitraum 2019--2024 [@LROE_indicators]. Die bibliographischen Daten stammen aus OpenAlex, wobei jedoch nur sogenannte *core publications* berücksichtigt werden [@LROE_indicators]. Im Vergleich zum traditionellen Leiden Ranking zählen in der Open Edition zusätzlich Publikationen vom Typ Buchkapitel, die in Buchreihen veröffentlicht wurden zu den *core publications*. Ferner müssen alle Publikationen nicht nur Autor:innenangaben, sondern auch Affiliationsangaben und Referenzen enthalten, um zu den *core publications* zu zählen. Alle anderen Kriterien für die *core publications* und *core journals* sind deckungsgleich zum traditionellen Leiden Ranking [@LROE_indicators].
+Die Version 2024 des Leiden Ranking umfasst bibliometrische Daten für 1.506 Hochschulen weltweit [@LROE_universities]. Indikatoren werden jeweils für Zeiträume von vier Jahren angegeben, die Version 2024 erweitert diese um den Zeitraum 2019--2024 [@LROE_indicators]. Die bibliographischen Daten stammen aus OpenAlex, wobei jedoch nur sogenannte *core publications* berücksichtigt werden [@LROE_indicators]. Im Vergleich zum traditionellen Leiden Ranking zählen in der Open Edition zusätzlich Publikationen vom Typ Buchkapitel, die in Buchreihen veröffentlicht wurden zu den *core publications*. Ferner müssen alle Publikationen nicht nur Autor:innenangaben, sondern auch Affiliationsangaben und Referenzen enthalten, um zu den *core publications* zu zählen. Alle anderen Kriterien für die *core publications* und *core journals* sind deckungsgleich zum traditionellen Leiden Ranking [@LROE_indicators].
 
 Auch das Leiden Ranking Open Edition legt einen Fokus auf Open-Access-Veröffentlichungen und bietet weitestgehend die selben Open-Access-Indikatoren wie das traditionelle Leiden Ranking, mit Ausnahme der Indikatoren zu Publikationen mit unklarem Open-Access-Status [@LROE_indicators]. Darüber hinaus weist das Leiden Ranking Open Edition die Besonderheit auf, dass auf der Weboberfläche die den Indikatoren zugrunde liegenden Publikationen einsehen werden können [@LROE2024a].
 
@@ -109,12 +114,12 @@ Auch das Leiden Ranking Open Edition legt einen Fokus auf Open-Access-Veröffent
 
 **Open Access Indikatoren (Gewichtung):**
 
-- Gesamtzahl der Veröffentlichungen einer Universität
-- Anzahl und Anteil der Open-Access-Veröffentlichungen einer Universität
-- Anzahl und Anteil der Gold-Open-Access-Veröffentlichungen einer Universität
-- Anzahl und Anteil der Hybrid-Open-Access-Publikationen einer Universität
-- Die Anzahl und der Anteil der Bronze-Open-Access-Publikationen einer Universität
-- Die Anzahl und der Anteil der grünen Open-Access-Publikationen einer Universität
+- Gesamtzahl der Veröffentlichungen einer Hochschule
+- Anzahl und Anteil der Open-Access-Veröffentlichungen einer Hochschule
+- Anzahl und Anteil der Gold-Open-Access-Veröffentlichungen einer Hochschule
+- Anzahl und Anteil der Hybrid-Open-Access-Publikationen einer Hochschule
+- Die Anzahl und der Anteil der Bronze-Open-Access-Publikationen einer Hochschule
+- Die Anzahl und der Anteil der grünen Open-Access-Publikationen einer Hochschule
 
 **Publikations-/Update-Rythmus:** jährlich
 
@@ -293,29 +298,244 @@ Es soll dabei herausgearbeitet werden, inwiefern sich die einzelnen Rankingsyste
 : Verwendete Datenquellen für die Erhebung bibliographischer Daten {#tbl-1}
 
 
+#### Open-Access-Datenquellen
+
+
+#### Disziplinäre Unterschiede
+
+
+::: {.column-page}
+
+```{shinylive-r}
+#| standalone: true
+#| viewerHeight: 600
+
+library(shiny)
+library(bslib)
+library(dplyr)
+library(plotly)
+library(viridis)
+
+# Define UI ----
+ui <- page_sidebar(
+  sidebar = sidebar(open = "open",
+      selectInput("field", "Field", choices = NULL),
+      selectInput("period", "Period", choices = NULL, selected = "2019–2022"),
+      selectInput("country", "Country", choices = NULL, multiple = TRUE), selected = "All",
+      selectInput("indicator", "OA Indicator", choices = c(
+        "P" = "oa_P", 
+        "P(OA)" = "P_OA", 
+        "P(gold OA)" = "P_gold_OA",
+        "P(hybrid OA)" = "P_hybrid_OA", 
+        "P(bronze OA)" = "P_bronze_OA", 
+        "P(green OA)" = "P_green_OA", 
+        "P(unknown OA)" = "P_OA_unknown", 
+        "PP(OA)" = "PP_OA", 
+        "PP(gold OA)" = "PP_gold_OA", 
+        "PP(hybrid OA)" = "PP_hybrid_OA", 
+        "PP(bronze OA)" = "PP_bronze_OA", 
+        "PP(green OA)" = "PP_green_OA", 
+        "PP(unknown OA)" = "PP_OA_unknown"
+      ))
+    ),
+    mainPanel(
+      plotlyOutput("scatter_plot", height = 500, width = 900)
+    )
+  )
+
+server <- function(input, output, session) {
+  
+  # Load data once when app starts
+  data_loaded <- reactiveVal(FALSE)
+  leiden_shiny <- reactiveVal(NULL)
+  
+  # Initialize data only once
+  observe({
+    if (!data_loaded()) {
+      data_url <- "https://oa-datenpraxis.de/rankings/data/leiden_shiny.csv"
+      download.file(data_url, "leiden_shiny.csv", quiet = TRUE)
+      data <- read.csv("leiden_shiny.csv")
+      leiden_shiny(data)
+      data_loaded(TRUE)
+
+      updateSelectInput(session, "field", choices = unique(data$Field))
+      updateSelectInput(session, "period", choices = unique(data$Period), selected = "2019–2022")
+      updateSelectInput(session, "country", choices = c("All",sort(unique(data$Country))), selected = "All")
+    }
+  })
+  
+  # Filtered data reactive
+  filtered_data <- reactive({
+    req(leiden_shiny())
+    req(input$field != "")
+    req(input$period != "")
+    
+    # Get base data
+    data <- leiden_shiny() %>%
+      filter(Field == input$field) %>%
+      filter(Period == input$period)
+    
+    ## If "All" is selected, return all data immediately
+    if (length(input$country) == 1 && input$country == "All") {
+      return(data)
+    } else {
+      # Filter by selected countries (excluding "All" if present)
+      countries_to_filter <- input$country[input$country != "All"]
+      if (length(countries_to_filter) > 0) {
+        return(data %>% filter(Country %in% countries_to_filter))
+      } else {
+        return(data)  # Default to all data if no valid countries
+      }
+    }
+  })
+  
+  x_var <- reactive({
+    paste0(input$indicator, "_lr")
+  })
+  
+  y_var <- reactive({
+    paste0(input$indicator, "_lroe")
+  })
+  
+  output$scatter_plot <- renderPlotly({
+    req(filtered_data())
+    req(nrow(filtered_data()) > 0, "No data to display")
+    req(x_var() %in% colnames(filtered_data()), "X Variable not found in filtered data")
+    req(y_var() %in% colnames(filtered_data()), "Y Variable not found in filtered data")
+    
+    # Get the range for both axes
+    x_values <- filtered_data()[[x_var()]]
+    y_values <- filtered_data()[[y_var()]]
+    
+    # Calculate max values for both axes
+    max_x <- max(x_values, na.rm = TRUE)
+    max_y <- max(y_values, na.rm = TRUE)
+    
+    # Add 5% padding to both axes
+    max_x_padded <- max_x * 1.05
+    max_y_padded <- max_y * 1.05
+    
+    max_val <- max(max_x_padded, max_y_padded)
+    
+    # Create indicator label mapping
+    indicator_labels <- c(
+      "oa_P" = "P",
+      "P_OA" = "P(OA)",
+      "P_gold_OA" = "P(gold OA)",
+      "P_hybrid_OA" = "P(hybrid OA)",
+      "P_bronze_OA" = "P(bronze OA)",
+      "P_green_OA" = "P(green OA)",
+      "P_OA_unknown" = "P(unknown OA)",
+      "PP_OA" = "PP(OA)",
+      "PP_gold_OA" = "PP(gold OA)",
+      "PP_hybrid_OA" = "PP(hybrid OA)",
+      "PP_bronze_OA" = "PP(bronze OA)",
+      "PP_green_OA" = "PP(green OA)",
+      "PP_OA_unknown" = "PP(unknown OA)"
+    )
+    
+    # Get the human-readable label for the selected indicator
+    selected_indicator_label <- indicator_labels[input$indicator]
+    
+    shapes <- list(
+      list(
+          type = "line",
+          x0 = 0,
+          y0 = 0,
+          x1 = max_val,
+          y1 = max_val,
+          line = list(color = "rgba(0, 0, 0, 0.3)", width = 1),
+          layer = "below"
+        )
+    )
+    
+    # Create plotly plot with hover information
+    p <- plot_ly(filtered_data(), 
+                 x = ~filtered_data()[[x_var()]], 
+                 y = ~filtered_data()[[y_var()]],
+                 text = ~paste0("<b>", University, "</b>", "\n", "Country: ", Country, "\n", "Field: ", Field, "\n", "Period: ", Period, "\n", "Indicator: ", selected_indicator_label),
+                 color = ~Country,
+                 colors = viridis(256),
+                 hovertemplate = paste0(
+                   "%{text}<br>",
+                   "%{yaxis.title.text}: %{y:.2f}<br>",
+                   "%{xaxis.title.text}: %{x:.2f}<br>",
+                   "<extra></extra>"
+                 ),
+                 type = 'scatter',
+                 mode = 'markers',
+                 marker = list(size = 10))
+    
+    p <- p %>% layout(
+      xaxis = list(title = "Leiden Ranking 2024 (Web of Science)"),
+      yaxis = list(title = "Leiden Ranking Open Edition 2024 (OpenAlex)"),
+      shapes = shapes,
+      showlegend = FALSE
+    )
+    
+    p
+  })
+}
+
+# Create Shiny app ----
+shinyApp(ui = ui, server = server)
+```
+
+:::
+
+
+
 ### Open-Access-Indikatoren
 
 
 
 ### Überschneidung von Institutionen
 
+```{r}
+#| label: loading-data
+#| echo: false
+#| warning: false
+#| message: false
+
+library(here)
+library(tidyverse)
+options(scipen = 999)
+
+institutions_df_region <- read_csv(here("rankings/data","institutions_df_region.csv"))
+institutions_df_education <- read_csv(here("rankings/data", "institutions_df_education.csv"))
+```
+
 Zur Bestimmung der institutionellen Überschneidungen zwischen den Rankings wurden zunächst die verfügbaren Ergebnisdaten der Rankings heruntergeladen[^1]. Neben den Namen und Standorten (Länderangaben, teilweise auch Angaben zu Regionen und Unterregion) aller Institutionen, enthalten die Daten der beiden Versionen des Leiden Rankings sowie des COKI OA Dashboards auch Identifier aus dem [Research Organization Registry (ROR)](https://ror.org/). Darüber hinaus umfassen die Daten des COKI OA Dashboard und des SCImago Institutions Ranking Sektorenzuordnungen für alle in den Rankings abgebildeten Institutionen. 
 
 Um identische Institutionen zwischen den Rankings anhand ihrer ROR IDs eindeutig zuordnen zu können, mussten zunächst die Daten des SCImago Institutions Rankings und des QS Sustainability Rankings um ROR IDs ergänzt werden. Dazu wurde der gesamte ROR-Datensatz in der Version 1.69 [@ror_data] heruntergeladen. Anschließend wurde jeweils für beide Rankings ein maschineller Abgleich auf Basis der institutionellen Namensansetzung und der Länderangabe mit den ROR-Daten durchgeführt. Die QS Daten enthielten Einträge für insgesamt 1.743 Institutionen[^2], von denen 1.204 Institutionen mittels des maschinellen Abgleichs ROR IDs zugeordnet werden konnten. Für die restlichen 539 Institutionen wurde eine manuelle Zuordnung der ROR IDs vorgenommen, wobei allerdings für 7 Institutionen keine Zuordnung erfolgen konnte. Zur quantitativen Bestimmung der institutionellen Überschneidungen konnten demnach lediglich 1.736 Institutionen aus dem QS Sustainability Ranking berücksichtigt werden. 
 
-Schwieriger gestaltete sich die Zuordnung von ROR IDs zu den 9.755 im SCImago Institutions Ranking inkludierten Institutionen[^3]. Über den maschinellen Abgleich auf Basis der institutionellen Namensansetzung und der Länderangabe konnten ROR IDs lediglich zu 4.714 Institutionen zugeordnet werden. In Teilen könnte dies darauf zurückzuführen sein, dass das SCImago Institutions Ranking auch Institutionen listet, die als multinational gekennzeichnet sind [@SIR_method]. Dies scheint insbesondere Unternehmen zu betreffen, die überregional agieren, beispielsweise [Google](https://www.scimagoir.com/institution.php?idp=89900). Zwar bietet ROR auch IDs für Unternehmen (siehe [Google](https://ror.org/00njsd438)), scheint dabei jedoch eindeutige Länderzuordnungen vorzunehmen. Die größere Schwierigkeit für den maschinellen Abgleich stellen jedoch vermutlich unterschiedliche Namensansetzungen zwischen dem SCImago Institutions Ranking und ROR dar[^4]. Um die Abdeckung mit ROR IDs für das SCImago Institutions Ranking zu erhöhen, wurde ein fuzzy matching Ansatz getestet, der auch alternative Namensformen und Akronyme aus dem ROR-Datensatz berücksichtigte. Da das Ergebnis jedoch nicht hinreichend genau war und einen hohen Datenbereinigungsaufwand erfordert hätte, wurde an dieser Stelle entschieden, lediglich die 4.714 Institutionen zu berücksichtigen, denen eindeutig ROR IDs zugeordnet werden konnten. Die Bestimmung der institutionellen Überschneidungen kann daher in Bezug auf das SCImago Institutions Ranking nur als ungefähre Annäherung betrachtet werden und stellt eine deutliche Limitation für die weitere Verwendbarkeit des SCImago-Datensatzes für diese Art von Analyse dar.
+Schwieriger gestaltete sich die Zuordnung von ROR IDs zu den 9.755 im SCImago Institutions Ranking inkludierten Institutionen[^3]. Über den maschinellen Abgleich auf Basis der institutionellen Namensansetzung und der Länderangabe konnten ROR IDs lediglich zu 4.714 Institutionen zugeordnet werden. In Teilen könnte dies darauf zurückzuführen sein, dass das SCImago Institutions Ranking auch Institutionen listet, die als multinational gekennzeichnet sind [@SIR_method]. Dies scheint insbesondere Unternehmen zu betreffen, die überregional agieren, beispielsweise [Google](https://www.scimagoir.com/institution.php?idp=89900). Zwar bietet ROR auch IDs für Unternehmen (siehe [Google](https://ror.org/00njsd438)), scheint dabei jedoch eindeutige Länderzuordnungen vorzunehmen. Die größere Schwierigkeit für den maschinellen Abgleich stellen jedoch vermutlich unterschiedliche Namensansetzungen zwischen dem SCImago Institutions Ranking und ROR dar[^4]. Um die Abdeckung mit ROR IDs für das SCImago Institutions Ranking zu erhöhen, wurde ein fuzzy matching Ansatz getestet, der auch alternative Namensformen und Akronyme aus dem ROR-Datensatz berücksichtigte. Da das Ergebnis jedoch nicht hinreichend genau war und einen hohen Datenbereinigungsaufwand erfordert hätte, wurde an dieser Stelle entschieden, lediglich die 4.714 Institutionen zu berücksichtigen, denen eindeutig ROR IDs zugeordnet werden konnten. Die Bestimmung der institutionellen Überschneidungen kann daher in Bezug auf das SCImago Institutions Ranking nur als ungefähre Annäherung betrachtet werden und stellt eine deutliche Limitation für die weitere Verwendbarkeit des SCImago-Datensatzes für diese Art von Analyse dar. 
+
+@fig-2 stellt quantitativ die institutionellen Überschneidungen zwischen den Rankings dar. Die Abbildung bezieht dabei nur diejenigen Institutionen ein, denen ROR IDs zugeordnet werden konnten.
+
+![Institutionelle Überschneidungen für alle Institutionen mit ROR IDs in fünf Rankingsystemen](rankings/plots/all_institution_upset.png){#fig-2 group="upset"}
+
+Insgesamt konnten nach dem Abgleich der ROR IDs `r format(n_distinct(institutions_df_region$ror), big.mark=".", decimal.mark = ",")` einzigartige Instiutionen über alle Rankingsysteme hinweg identifiziert werden. Anhand von @fig-2 ist zu erkennen, dass das COKI OA Dashboard deutlich mehr Institutionen abbildet, als alle anderen Rankingsysteme, sowohl insgesamt (`r format(sum(institutions_df_region$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(institutions_df_region$coki) / n_distinct(institutions_df_region$ror) *100, 2), decimal.mark=",")` %), als auch in Bezug auf die Anzahl an Institutionen, die in keinem anderen Rankingsystem abgebildet werden (`r format(sum(filter(institutions_df_region, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(filter(institutions_df_region, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_region$ror) *100, 2), decimal.mark=",")` %). Dies könnte insbesondere darauf zurückzuführen sein, dass das COKI OA Dashboard zum einen relativ langen Publikationszeitraum abbildet (2000--2024) und zum anderen auch Institutionen aus mehreren Sektoren, sowie Institutionen mit einem relativ geringen Publikationsvolumen von i.d.R. mindestens 50 Publikationen in das Ranking aufnimmt [@COKI_how;@COKI_data].
+
+@fig-2 zeigt ferner, dass von den `r format(sum(institutions_df_region$sir), big.mark=".", decimal.mark = ",")` aus dem SCImago Institutions Ranking berücksichtigten Institutionen `r format(sum(filter(institutions_df_region, sir == 1 & lr == 0 & lroe == 0 & qs == 0 & coki == 0)$sir), big.mark=".", decimal.mark = ",")` Institutionen (`r format(round(sum(filter(institutions_df_region, sir == 1 & lr == 0 & lroe == 0 & qs == 0 & coki == 0)$sir) / n_distinct(institutions_df_region$ror) *100, 2), decimal.mark=",")` %) in keinem anderen Ranking erfasst sind. Von den `r format(sum(institutions_df_region$qs), big.mark=".", decimal.mark = ",")` aus dem QS Sustainability Ranking berücksichtigten Institutionen sind `r format(sum(filter(institutions_df_region, sir == 0 & lr == 0 & lroe == 0 & qs == 1 & coki == 0)$qs), big.mark=".", decimal.mark = ",")` Institutionen (`r format(round(sum(filter(institutions_df_region, sir == 0 & lr == 0 & lroe == 0 & qs == 1 & coki == 0)$qs) / n_distinct(institutions_df_region$ror) *100, 2), decimal.mark=",")` %) in keinem anderen Ranking erfasst. Dahingegen werden alle Instiutionen aus beiden Versionen des Leiden Rankings auch in mindestens einem weiteren Ranking abgebildet. Insgesamt sind lediglich `r format(sum(filter(institutions_df_region, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki), big.mark=".", decimal.mark = ",")` Institutionen (`r format(round(sum(filter(institutions_df_region, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki) / n_distinct(institutions_df_region$ror) *100, 2), decimal.mark=",")` %) in allen fünf Rankingsystemen erfasst. 
+
+Während das QS Sustainability Ranking sowie beide Versionen des Leiden Ranking lediglich Hochschulen in ihre Rankings einbeziehen, sind im COKI OA Dashboard und dem SCImago Institutions Ranking auch Institutionen aus anderen Sektoren erfasst. Die Zuordnung der Institutionen zu einzelnen Sektoren bzw. die Kategorisierung der Institutionstypen im gesamten Datensatz erfolgte anhand der Klassifikation aus dem COKI OA Dashboard. Institutionen aus dem QS Sustainability Ranking, die nicht im COKI OA Dashboard repräsentiert sind wurden dem Bildungssektor (*Education*) zugeordnet. Institutionen aus dem SCImago Institutions Ranking, die nicht im COKI OA Dashboard repräsentiert sind, wurde der im SCImago Institutions Ranking hinterlegte Sektor zugeordnet. Um die institutionellen Überschneidungen bezogen auf den Bildungssektor zu untersuchen, wurde der gesamte Datensatz nach Institutionen mit der Sektorzuordnung *Education* gefiltert.
+
+@fig-3 stellt im folgenden die institutionellen Überschneidungen der Bildungseinrichtungen zwischen den Rankings dar. Die Abbildung bezieht dabei ebenfalls nur diejenigen Institutionen ein, denen ROR IDs zugeordnet werden konnten.
+
+![Institutionelle Überschneidungen im Bildungssektor für Institutionen mit ROR IDs in fünf Rankingsystemen](rankings/plots/education_institution_upset.png){#fig-3 group="upset"}
+
+Insgesamt konnten `r format(n_distinct(institutions_df_education$ror), big.mark = ".")` einzigartige Institutionen aus dem gesamten Datensatz identifiziert werden, die dem Bildungssektor zugeordnet sind. @fig-3 zeigt, dass das COKI OA Dashboard auch in Bezug auf die Bildungsinstitutionen deutlich mehr Institutionen abbildet, als alle anderen Rankingsysteme, sowohl insgesamt (`r format(sum(institutions_df_education$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(institutions_df_education$coki) / n_distinct(institutions_df_education$ror) *100, 2), decimal.mark=",")` %), als auch in Bezug auf die Anzahl an Institutionen, die in keinem anderen Rankingsystem erfasst sind (`r format(sum(filter(institutions_df_education, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(filter(institutions_df_education, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_education$ror) *100, 2), decimal.mark=",")` %). Die Anzahl an Institutionen, die in allen fünf Rankingsystemen erfasst sind ist unverändert (`r format(sum(filter(institutions_df_education, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(filter(institutions_df_education, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki) / n_distinct(institutions_df_region$ror) *100, 2), decimal.mark=",")` %). 
+
+@fig-3 zeigt jedoch auch, dass die Gesamtmenge an Institutionen (*Set size*) in beiden Versionen des Leiden Ranking und im QS Sustainability Ranking nach dem Filtern des Datensatzes auf Bildungseinrichtungen leicht minimiert ist. Dies ist auf die Kategorisierung der Institutionen innerhalb des COKI OA Dashboard Datensatzes zurückzuführen. Informationen zu den Institutionen im COKI Datensatz stammen aus dem Research Organization Registry (ROR) [@COKI_how]. Das ROR vergibt mindestens einen Institutionstyp aus einer kontrollierten Liste, wobei jedoch auch mehrere Typkategorien einer Institution zugeordnet werden können[^5] [@ror_types]. Im COKI Datensatz ist nur eine Typkategorie pro Instiution vorhanden, aus der Methodik geht auch nicht hervor nach welchen Kriterien die Typkategorie im Falle mehrer Kategorien ausgewählt wird. Dies könnte teilweise ursächlich dafür sein, dass weniger Institutionen aus dem QS Sustainability Ranking und den beiden Versionen der Leiden Rankings dem Bildungssektor zugeordnet wurden. Ferner könnten auch unterschiedliche Perspektiven zwischen ROR und den Rankings oder ggf. sogar fehlende Typkategorien in ROR ursächlich sein. 
 
 
-![](rankings/plots/all_institution_upset.png){group="upset"}
 
-
-![](rankings/plots/education_institution_upset.png){group="upset"}
-
-
-[^1]: Informationen zur jeweiligen Datenverfügbarkeit inklusive eines Links zum Download der verwendeten Version der Daten -- sofern vorhanden -- sind für alle Rankings in dem jeweiligen Kasten mit Ranking Details erfasst.
+[^1]: Informationen zur jeweiligen Datenverfügbarkeit inklusive eines Links zum Download der verwendeten Version der Daten -- sofern vorhanden -- sind für alle Rankings in dem jeweiligen Kasten mit den Ranking Details erfasst.
 [^2]: @QS_date berichtet, dass 1.744 Instiutionen in der Version 2025 geranked wurden. Die Daten zeigen hier jedoch eine Abweichung um eine Einrichtung.
 [^3]: Die bereitgestellten Daten zeigen eine Abweichung um eine Institution zu der von SCImago auf der Rankingwebsite berichteten Anzahl an gerankten Institutionen [@SIR]. Die bereitgestellte csv-Datei enthält zwar 9.756 Zeilen, jedoch handelt es sich bei der ersten Zeile lediglich um eine Kopfzeile. 
 [^4]: Beispielsweise wird im SCImago Institutions Ranking das [Deutsche Krebsforschungszentrum](https://www.scimagoir.com/institution.php?idp=21592) in der Landessprache angesetzt, während in ROR die englische Namensvariante [German Cancer Research Center](https://ror.org/04cdgtt98) als Hauptansetzung verwendet wird.
+[^5]: Siehe zum Beispiel [University of Nebraska Medical Center](https://ror.org/00thqtb16).
 
 ### Geographische Verteilung
 

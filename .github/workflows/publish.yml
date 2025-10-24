@@ -44,6 +44,7 @@ jobs:
             any::DT
             any::readxl
             any::openalexR
+            any::viridis
           extra-packages: |
             babelquarto
 
