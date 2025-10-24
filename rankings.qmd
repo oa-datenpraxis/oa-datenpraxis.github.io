@@ -284,7 +284,7 @@ Um zu beurteilen, wie vergleichbar die Ergebnisse der ausgewählten Rankings sin
 
 Es soll dabei herausgearbeitet werden, inwiefern sich die einzelnen Rankingsysteme unterscheiden und welche Auswirkungen dies mitunter für die Nutzung eines bestimmten Rankings bei Open-Access-Monitoringaktivitäten oder der strategischen Entscheidungsfindung haben kann. 
 
-### Bibliographische Datenquellen
+### Datenquellen
 
 
 | Ranking |Web of Science | Scopus | OpenAlex | Crossref |
@@ -298,10 +298,7 @@ Es soll dabei herausgearbeitet werden, inwiefern sich die einzelnen Rankingsyste
 : Verwendete Datenquellen für die Erhebung bibliographischer Daten {#tbl-1}
 
 
-### Open-Access-Datenquellen
-
-
-### Disziplinäre Unterschiede
+#### Disziplinäre Unterschiede
 
 
 ::: {.column-page}
@@ -455,7 +452,7 @@ server <- function(input, output, session) {
                  y = ~filtered_data()[[y_var()]],
                  text = ~paste0("<b>", University, "</b>", "\n", "Country: ", Country, "\n", "Field: ", Field, "\n", "Period: ", Period, "\n", "Indicator: ", selected_indicator_label),
                  color = ~Country,
-                 colors = viridis(256),
+                 colors = viridis(195),
                  hovertemplate = paste0(
                    "%{text}<br>",
                    "%{yaxis.title.text}: %{y:.2f}<br>",
