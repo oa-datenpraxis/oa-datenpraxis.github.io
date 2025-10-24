@@ -46,6 +46,10 @@ jobs:
             any::readxl
             any::openalexR
             any::viridis
+            any::knitr
+            any::rmarkdown
+            any::downlit
+            any::xml2
           extra-packages: |
             babelquarto
 

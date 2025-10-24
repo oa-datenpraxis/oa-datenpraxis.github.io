@@ -284,7 +284,7 @@ Um zu beurteilen, wie vergleichbar die Ergebnisse der ausgewählten Rankings sin
 
 Es soll dabei herausgearbeitet werden, inwiefern sich die einzelnen Rankingsysteme unterscheiden und welche Auswirkungen dies mitunter für die Nutzung eines bestimmten Rankings bei Open-Access-Monitoringaktivitäten oder der strategischen Entscheidungsfindung haben kann. 
 
-### Datenquellen
+### Bibliographische Datenquellen
 
 
 | Ranking |Web of Science | Scopus | OpenAlex | Crossref |
@@ -298,10 +298,10 @@ Es soll dabei herausgearbeitet werden, inwiefern sich die einzelnen Rankingsyste
 : Verwendete Datenquellen für die Erhebung bibliographischer Daten {#tbl-1}
 
 
-#### Open-Access-Datenquellen
+### Open-Access-Datenquellen
 
 
-#### Disziplinäre Unterschiede
+### Disziplinäre Unterschiede
 
 
 ::: {.column-page}
