@@ -441,8 +441,8 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="vergleichbarkeit-der-ranking-ergebnisse">Vergleichbarkeit der Ranking-Ergebnisse</h2>
 <p>Um zu beurteilen, wie vergleichbar die Ergebnisse der ausgewählten Rankings sind, konzentrieren sich die folgenden Abschnitte auf die Überprüfung folgender Aspekte: die von den Rankings verwendeten Datenquellen, die von den Rankings verwendeten Open-Access-Indikatoren und deren Gewichtung, die Anzahl der in allen Rankings vertretenen Institutionen, die geografische Verteilung der Institutionen über Länder und Weltregionen hinweg sowie die Möglichkeit der institutionellen Beteiligung am Datenerhebungsprozess der Ranking-Anbieter.</p>
 <p>Es soll dabei herausgearbeitet werden, inwiefern sich die einzelnen Rankingsysteme unterscheiden und welche Auswirkungen dies mitunter für die Nutzung eines bestimmten Rankings bei Open-Access-Monitoringaktivitäten oder der strategischen Entscheidungsfindung haben kann.</p>
-<section id="bibliographische-datenquellen" class="level3">
-<h3 class="anchored" data-anchor-id="bibliographische-datenquellen">Bibliographische Datenquellen</h3>
+<section id="datenquellen" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="datenquellen">Datenquellen</h3>
 <div id="tbl-1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -500,12 +500,8 @@ Tabelle&nbsp;1: Verwendete Datenquellen für die Erhebung bibliographischer Date
 </div>
 </figure>
 </div>
-</section>
-<section id="open-access-datenquellen" class="level3">
-<h3 class="anchored" data-anchor-id="open-access-datenquellen">Open-Access-Datenquellen</h3>
-</section>
-<section id="disziplinäre-unterschiede" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="disziplinäre-unterschiede">Disziplinäre Unterschiede</h3>
+<section id="disziplinäre-unterschiede" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="disziplinäre-unterschiede">Disziplinäre Unterschiede</h4>
 <div class="column-page">
 <pre class="shinylive-r" data-engine="r"><code>#| '!! shinylive warning !!': |
 #|   shinylive does not work in self-contained HTML documents.
@@ -658,7 +654,7 @@ server &lt;- function(input, output, session) {
                  y = ~filtered_data()[[y_var()]],
                  text = ~paste0("&lt;b&gt;", University, "&lt;/b&gt;", "\n", "Country: ", Country, "\n", "Field: ", Field, "\n", "Period: ", Period, "\n", "Indicator: ", selected_indicator_label),
                  color = ~Country,
-                 colors = viridis(256),
+                 colors = viridis(195),
                  hovertemplate = paste0(
                    "%{text}&lt;br&gt;",
                    "%{yaxis.title.text}: %{y:.2f}&lt;br&gt;",
@@ -683,6 +679,7 @@ server &lt;- function(input, output, session) {
 # Create Shiny app ----
 shinyApp(ui = ui, server = server)</code></pre>
 </div>
+</section>
 </section>
 <section id="open-access-indikatoren" class="level3">
 <h3 class="anchored" data-anchor-id="open-access-indikatoren">Open-Access-Indikatoren</h3>
