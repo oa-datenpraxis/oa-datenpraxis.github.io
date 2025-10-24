@@ -34,6 +34,7 @@ jobs:
         with:
           packages: |
             any::shiny
+            any::shinylive
             any::bslib
             any::tidyverse
             any::plotly
