@@ -49,7 +49,8 @@ jobs:
             any::rmarkdown
             any::downlit
             any::xml2
-            remotes::install_github("posit-dev/r-shinylive")
+            any::pak
+            pak::pak("posit-dev/r-shinylive")
           extra-packages: |
             babelquarto
 
