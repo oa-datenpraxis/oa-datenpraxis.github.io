@@ -1,0 +1,44 @@
+Package: oa-datenpraxis
+Title: OA Datenpraxis
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Sophia", "Dörner", "sophia.doerner@sub.uni-goettingen.de", role = c("aut","cre"), comment = c(ORCID = "0000-0001-8747-3422")),
+    person("Dorothea", "Strecker", role = c("aut")),
+    person("Johannes", "Schneider", role = c("aut")),
+    person("Najko", "Jahn", role = c("aut")),
+    person("Heinz", "Pampel", role = c("aut")),
+    person(
+        given = "German Research Foundation",
+        role = c("spn"),
+        comment = "Projektnummer #528466070"
+      )
+)
+Description: Source code repository for the OA Datenpraxis website.
+URL: https://oa-datenpraxis.de/
+BugReports: https://github.com/oa-datenpraxis/oa-datenpraxis.github.io/issues
+License: CC0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    babelquarto,
+    bslib,
+    curl,
+    downlit,
+    DT,
+    here,
+    httr,
+    knitr,
+    openalexR,
+    plotly,
+    readxl,
+    rmarkdown,
+    shiny,
+    shinylive,
+    tidyverse,
+    viridis,
+    whoami,
+    xml2
+Remotes:
+    ropensci-review-tools/babelquarto
+    posit-dev/r-shinylive

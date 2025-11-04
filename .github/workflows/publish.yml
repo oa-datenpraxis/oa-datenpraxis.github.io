@@ -31,28 +31,6 @@ jobs:
 
       - name: Install R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          packages: |
-            any::shiny
-            any::bslib
-            any::tidyverse
-            any::plotly
-            any::curl
-            any::whoami
-            any::httr
-            any::here
-            any::DT
-            any::readxl
-            any::openalexR
-            any::viridis
-            any::knitr
-            any::rmarkdown
-            any::downlit
-            any::xml2
-            any::pak
-            pak::pak("posit-dev/r-shinylive")
-          extra-packages: |
-            babelquarto
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
