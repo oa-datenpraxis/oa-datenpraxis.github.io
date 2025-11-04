@@ -3,7 +3,7 @@ title: "Open Access in institutionellen Rankings"
 format: 
   html: 
     resources: 
-      - rankings/data/shinylive-sw.js
+      - shinylive-sw.js
       - rankings/data/leiden_shiny.csv
 filters:
   - shinylive
@@ -312,8 +312,6 @@ library(bslib)
 library(dplyr)
 library(plotly)
 library(viridis)
-
-shinylive::assets_download('0.10.6')
 
 # Define UI ----
 ui <- page_sidebar(
