@@ -11,8 +11,7 @@ Authors@R: c(
         given = "German Research Foundation",
         role = c("spn"),
         comment = "Projektnummer #528466070"
-      )
-)
+      ))
 Description: Source code repository for the OA Datenpraxis website.
 URL: https://oa-datenpraxis.de/
 BugReports: https://github.com/oa-datenpraxis/oa-datenpraxis.github.io/issues
@@ -40,5 +39,5 @@ Imports:
     whoami,
     xml2
 Remotes:
-    ropensci-review-tools/babelquarto
+    ropensci-review-tools/babelquarto,
     posit-dev/r-shinylive
