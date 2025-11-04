@@ -32,6 +32,10 @@ jobs:
       - name: Install R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
 
+      - name: Install shinylive assets
+        run: |
+          Rscript -e "shinylive::assets_download('0.10.6')"
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
