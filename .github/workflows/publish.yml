@@ -23,21 +23,12 @@ jobs:
 
       - name: Install R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
-      
-      - name: Install shinylive assets
-        run: |
-          Rscript -e "shinylive::assets_download('0.10.6')"
-          Rscript -e "shinylive::assets_cleanup()"
-        env:
-          R_CACHE_HOME: ${{ runner.tempPath }}/Rcache
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render website with BabelQuarto
         run: Rscript -e 'babelquarto::render_website()'
-        env:
-          R_CACHE_HOME: ${{ runner.tempPath }}/Rcache
 
       - name: Deploy
         uses: quarto-dev/quarto-actions/publish@v2
