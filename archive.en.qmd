@@ -4,13 +4,17 @@ title: "Archive"
 
 ## Past Events
 
+### Open-Access-Tage 2025, 17--19 September 2025, Konstanz
+
+#### [Workshop: Praktiken und Infrastrukturen des Open-Access-Monitorings](events/oat25_20250919.qmd)
+
 ### OA Datenpraxis Webinar Series
 
 #### [28.03.2025: Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland](events/webinar_20250328.qmd)
 
 #### [04.04.2025: Open Metadata for University Rankings illustrated by the Leiden Ranking](events/webinar_20250404.qmd)
 
-### 9. Bibliothekskongress, 18--19 June 2025, Bremen
+### 9th Library Congress, 18--19 June 2025, Bremen
 
 #### [Hands-on Lab: Open-Access-Monitoring Dashboards mit Quarto](events/bid25_20250624.qmd)
 

@@ -4,6 +4,9 @@ title: "Archiv"
 
 ## Vergangene Veranstaltungen
 
+### Open-Access-Tage 2025, 17.--19. September 2025, Konstanz
+
+#### [Workshop: Praktiken und Infrastrukturen des Open-Access-Monitorings](events/oat25_20250919.qmd)
 
 ### OA Datenpraxis Webinarreihe
 
@@ -23,6 +26,6 @@ title: "Archiv"
 
 #### [Transparenz in der Wissenschaft -- Strategien für offene Informationsversorgung](events/dini24_20240919.qmd)
 
-### Open-Access-Tage 2024, 10. - 12. September 2024, Köln
+### Open-Access-Tage 2024, 10.--12. September 2024, Köln
 
 #### [Stand und Perspektive des Open-Access-Reportings](events/oat24_20240910.qmd)
