@@ -40,5 +40,5 @@ Imports:
     xml2
 Remotes:
     ropensci-review-tools/babelquarto,
-    posit-dev/r-shinylive
+    posit-dev/r-shinylive,
     posit-dev/shinylive
