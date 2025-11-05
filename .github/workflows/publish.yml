@@ -23,6 +23,10 @@ jobs:
 
       - name: Install R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            remotes
+            posit-dev/r-shinylive
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2

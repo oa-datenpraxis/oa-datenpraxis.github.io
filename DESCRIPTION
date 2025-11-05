@@ -33,11 +33,9 @@ Imports:
     readxl,
     rmarkdown,
     shiny,
-    shinylive,
     tidyverse,
     viridis,
     whoami,
     xml2
 Remotes:
-    ropensci-review-tools/babelquarto,
-    posit-dev/r-shinylive
+    ropensci-review-tools/babelquarto
