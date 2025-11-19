@@ -4,7 +4,6 @@ format:
   html: 
     resources: 
       - shinylive-sw.js
-      - rankings/data/leiden_shiny.csv
 filters:
   - shinylive
 bibliography: rankings/data/rankings.bib
@@ -300,6 +299,7 @@ In diesem Abschnitt werden die von den fünf Rankings verwendeten Datenquellen u
 
 : Verwendete Datenquellen für die Erhebung bibliographischer Daten {#tbl-1}
 
+
 #### Open-Access-Datenquellen
 
 | Ranking | Unpaywall | OpenAlex |
@@ -312,187 +312,23 @@ In diesem Abschnitt werden die von den fünf Rankings verwendeten Datenquellen u
 
 : Verwendete Datenquellen für die Bestimmung des Open-Access-Status {#tbl-2}
 
-#### Disziplinäre Unterschiede
 
+#### Disziplinäre Unterschiede
 
 ::: {.column-page}
 
-```{shinylive-r}
-#| standalone: true
-#| viewerHeight: 600
+::: {#fig-fields}
 
-library(shiny)
-library(bslib)
-library(dplyr)
-library(plotly)
-library(viridis)
-
-# Define UI ----
-ui <- page_sidebar(
-  sidebar = sidebar(open = "open",
-      selectInput("field", "Field", choices = NULL),
-      selectInput("country", "Country", choices = NULL, multiple = TRUE), selected = "All",
-      selectInput("indicator", "OA Indicator", choices = c(
-        "P" = "oa_P", 
-        "P(OA)" = "P_OA", 
-        "P(gold OA)" = "P_gold_OA",
-        "P(hybrid OA)" = "P_hybrid_OA", 
-        "P(bronze OA)" = "P_bronze_OA", 
-        "P(green OA)" = "P_green_OA", 
-        "P(unknown OA)" = "P_OA_unknown", 
-        "PP(OA)" = "PP_OA", 
-        "PP(gold OA)" = "PP_gold_OA", 
-        "PP(hybrid OA)" = "PP_hybrid_OA", 
-        "PP(bronze OA)" = "PP_bronze_OA", 
-        "PP(green OA)" = "PP_green_OA", 
-        "PP(unknown OA)" = "PP_OA_unknown"
-      ))
-    ),
-    mainPanel(
-      plotlyOutput("scatter_plot", height = 500, width = 900)
-    )
-  )
-
-server <- function(input, output, session) {
-  
-  # Load data once when app starts
-  data_loaded <- reactiveVal(FALSE)
-  leiden_shiny <- reactiveVal(NULL)
-  
-  # Initialize data only once
-  observe({
-    if (!data_loaded()) {
-      data_url <- "https://oa-datenpraxis.de/rankings/data/leiden_shiny.csv"
-      download.file(data_url, "leiden_shiny.csv", quiet = TRUE)
-      data <- read.csv("leiden_shiny.csv")
-      leiden_shiny(data)
-      data_loaded(TRUE)
-
-      updateSelectInput(session, "field", choices = unique(data$Field))
-      updateSelectInput(session, "country", choices = c("All",sort(unique(data$Country))), selected = "All")
-    }
-  })
-  
-  # Filtered data reactive
-  filtered_data <- reactive({
-    req(leiden_shiny())
-    req(input$field != "")
-    
-    # Get base data
-    data <- leiden_shiny() %>%
-      filter(Field == input$field)
-    
-    ## If "All" is selected, return all data immediately
-    if (length(input$country) == 1 && input$country == "All") {
-      return(data)
-    } else {
-      # Filter by selected countries (excluding "All" if present)
-      countries_to_filter <- input$country[input$country != "All"]
-      if (length(countries_to_filter) > 0) {
-        return(data %>% filter(Country %in% countries_to_filter))
-      } else {
-        return(data)  # Default to all data if no valid countries
-      }
-    }
-  })
-  
-  x_var <- reactive({
-    paste0(input$indicator, "_lr")
-  })
-  
-  y_var <- reactive({
-    paste0(input$indicator, "_lroe")
-  })
-  
-  output$scatter_plot <- renderPlotly({
-    req(filtered_data())
-    req(nrow(filtered_data()) > 0, "No data to display")
-    req(x_var() %in% colnames(filtered_data()), "X Variable not found in filtered data")
-    req(y_var() %in% colnames(filtered_data()), "Y Variable not found in filtered data")
-    
-    # Get the range for both axes
-    x_values <- filtered_data()[[x_var()]]
-    y_values <- filtered_data()[[y_var()]]
-    
-    # Calculate max values for both axes
-    max_x <- max(x_values, na.rm = TRUE)
-    max_y <- max(y_values, na.rm = TRUE)
-    
-    # Add 5% padding to both axes
-    max_x_padded <- max_x * 1.05
-    max_y_padded <- max_y * 1.05
-    
-    max_val <- max(max_x_padded, max_y_padded)
-    
-    # Create indicator label mapping
-    indicator_labels <- c(
-      "oa_P" = "P",
-      "P_OA" = "P(OA)",
-      "P_gold_OA" = "P(gold OA)",
-      "P_hybrid_OA" = "P(hybrid OA)",
-      "P_bronze_OA" = "P(bronze OA)",
-      "P_green_OA" = "P(green OA)",
-      "P_OA_unknown" = "P(unknown OA)",
-      "PP_OA" = "PP(OA)",
-      "PP_gold_OA" = "PP(gold OA)",
-      "PP_hybrid_OA" = "PP(hybrid OA)",
-      "PP_bronze_OA" = "PP(bronze OA)",
-      "PP_green_OA" = "PP(green OA)",
-      "PP_OA_unknown" = "PP(unknown OA)"
-    )
-    
-    # Get the label for the selected indicator
-    selected_indicator_label <- indicator_labels[input$indicator]
-    
-    shapes <- list(
-      list(
-          type = "line",
-          x0 = 0,
-          y0 = 0,
-          x1 = max_val,
-          y1 = max_val,
-          line = list(color = "rgba(0, 0, 0, 0.3)", width = 1),
-          layer = "below"
-        )
-    )
-    
-    # Create plotly plot with hover information
-    p <- plot_ly(filtered_data(), 
-                 x = ~filtered_data()[[x_var()]], 
-                 y = ~filtered_data()[[y_var()]],
-                 text = ~paste0("<b>", University, "</b>", "\n", "Country: ", Country, "\n", "Field: ", Field, "\n", "Period: ", "2019–2022", "\n", "Indicator: ", selected_indicator_label),
-                 color = ~Country,
-                 colors = viridis(256),
-                 hovertemplate = paste0(
-                   "%{text}<br>",
-                   "%{yaxis.title.text}: %{y:.2f}<br>",
-                   "%{xaxis.title.text}: %{x:.2f}<br>",
-                   "<extra></extra>"
-                 ),
-                 type = 'scatter',
-                 mode = 'markers',
-                 marker = list(size = 10))
-    
-    p <- p %>% layout(
-      xaxis = list(title = "Leiden Ranking 2024 (Web of Science)"),
-      yaxis = list(title = "Leiden Ranking Open Edition 2024 (OpenAlex)"),
-      shapes = shapes,
-      showlegend = FALSE
-    )
-    
-    p
-  })
-}
-
-# Create Shiny app ----
-shinyApp(ui = ui, server = server)
+```{=html}
+<iframe width="1040" height="560" src="https://app.powerbi.com/view?r=eyJrIjoiZmI0YzljYjYtYWZlNy00YzUzLWE1YjYtYjdkNmYwMDUzNjFmIiwidCI6ImNhMmE3Zjc2LWRiZDctNGVjMC05MTA4LTZiM2Q1MjRmYjdjOCIsImMiOjh9"></iframe>
 ```
+
+Disziplinäre Unterschiede zwischen dem traditionellen Leiden Ranking 2024 und dem Leiden Ranking Open Edition 2024 (Quelle: [Open Dashboard 2024](https://app.powerbi.com/view?r=eyJrIjoiZmI0YzljYjYtYWZlNy00YzUzLWE1YjYtYjdkNmYwMDUzNjFmIiwidCI6ImNhMmE3Zjc2LWRiZDctNGVjMC05MTA4LTZiM2Q1MjRmYjdjOCIsImMiOjh9), [@LROE_resources])
+:::
 
 :::
 
 ### Open-Access-Indikatoren
-
-
 
 ### Überschneidung von Institutionen
 
@@ -506,8 +342,8 @@ library(here)
 library(tidyverse)
 options(scipen = 999)
 
-institutions_df_region <- read_csv(here("rankings/data","institutions_df_region.csv"))
-institutions_df_education <- read_csv(here("rankings/data", "institutions_df_education.csv"))
+institutions_df_de_sector <- read_csv(here("rankings/data","institutions_df_de_sector.csv"))
+institutions_df_de_univs <- read_csv(here("rankings/data", "institutions_df_de_univs.csv"))
 pref_df <- read_csv(here("rankings/data", "pref_df.csv"))
 ```
 
@@ -516,38 +352,37 @@ Zur Bestimmung der institutionellen Überschneidungen zwischen den Rankings wurd
 
 Um identische Institutionen zwischen den Rankings anhand ihrer ROR-IDs eindeutig zuordnen zu können, mussten zunächst die Daten des SCImago Institutions Rankings und des QS Sustainability Rankings um ROR-IDs ergänzt werden. Dazu wurde der gesamte ROR-Datensatz in der Version 1.69 [@ror_data] heruntergeladen. Anschließend wurde jeweils für beide Rankings ein maschineller Abgleich auf Basis der institutionellen Namensansetzung und der Länderangabe mit den ROR-Daten durchgeführt. Die QS Daten enthielten Einträge für insgesamt 1.743 Institutionen[^2], von denen 1.204 Institutionen mittels des maschinellen Abgleichs ROR-IDs zugeordnet werden konnten. Für die restlichen 539 Institutionen wurde eine manuelle Zuordnung der ROR-IDs vorgenommen, wobei allerdings für 7 Institutionen keine Zuordnung erfolgen konnte. Zur quantitativen Bestimmung der institutionellen Überschneidungen konnten demnach lediglich 1.736 Institutionen aus dem QS Sustainability Ranking berücksichtigt werden. 
 
-Schwieriger gestaltete sich die Zuordnung von ROR-IDs zu den 9.755 im SCImago Institutions Ranking inkludierten Institutionen[^3]. Über den maschinellen Abgleich auf Basis der institutionellen Namensansetzung und der Länderangabe konnten ROR-IDs lediglich zu 4.714 Institutionen zugeordnet werden. In Teilen könnte dies darauf zurückzuführen sein, dass das SCImago Institutions Ranking auch Institutionen listet, die als multinational gekennzeichnet sind [@SIR_method]. Dies scheint insbesondere Unternehmen zu betreffen, die überregional agieren, beispielsweise [Google](https://www.scimagoir.com/institution.php?idp=89900). Zwar bietet ROR auch IDs für Unternehmen (siehe [Google](https://ror.org/00njsd438)), scheint dabei jedoch eindeutige Länderzuordnungen vorzunehmen. Die größere Schwierigkeit für den maschinellen Abgleich stellen jedoch vermutlich unterschiedliche Namensansetzungen zwischen dem SCImago Institutions Ranking und ROR dar[^4]. Um die Abdeckung mit ROR-IDs für das SCImago Institutions Ranking zu erhöhen, wurde ein fuzzy matching Ansatz getestet, der auch alternative Namensformen und Akronyme aus dem ROR-Datensatz berücksichtigte. Da das Ergebnis jedoch nicht hinreichend genau war und einen hohen Datenbereinigungsaufwand erfordert hätte, wurde an dieser Stelle entschieden, lediglich die 4.714 Institutionen zu berücksichtigen, denen eindeutig ROR-IDs zugeordnet werden konnten. Die Bestimmung der institutionellen Überschneidungen kann daher in Bezug auf das SCImago Institutions Ranking nur als ungefähre Annäherung betrachtet werden und stellt eine deutliche Limitation für die weitere Verwendbarkeit des SCImago-Datensatzes für diese Art von Analyse dar. 
+Schwieriger gestaltete sich die Zuordnung von ROR-IDs zu den 9.755 im SCImago Institutions Ranking inkludierten Institutionen[^3]. Über den maschinellen Abgleich auf Basis der institutionellen Namensansetzung und der Länderangabe konnten ROR-IDs lediglich zu 4.714 Institutionen zugeordnet werden. In Teilen könnte dies darauf zurückzuführen sein, dass das SCImago Institutions Ranking auch Institutionen listet, die als multinational gekennzeichnet sind [@SIR_method]. Dies scheint insbesondere Unternehmen zu betreffen, die überregional agieren, beispielsweise [Google](https://www.scimagoir.com/institution.php?idp=89900). Zwar bietet ROR auch IDs für Unternehmen (siehe [Google](https://ror.org/00njsd438)), scheint dabei jedoch eindeutige Länderzuordnungen vorzunehmen. Die größere Schwierigkeit für den maschinellen Abgleich stellen jedoch vermutlich unterschiedliche Namensansetzungen zwischen dem SCImago Institutions Ranking und ROR dar[^4]. Um die Abdeckung mit ROR-IDs für das SCImago Institutions Ranking zu erhöhen, wurde ein fuzzy matching Ansatz getestet, der auch alternative Namensformen und Akronyme aus dem ROR-Datensatz berücksichtigte. Das Ergebnis war jedoch nicht hinreichend genau und hätte einen hohen Datenbereinigungsaufwand erfordert. Insgesamt stellt dies eine deutliche Limitation für die Verwendbarkeit des SCImago-Datensatzes für eine globale Analyse der institutionellen Überschneidungen dar. 
 
-@fig-2 stellt quantitativ die institutionellen Überschneidungen zwischen den Rankings dar. Die Abbildung bezieht dabei nur diejenigen Institutionen ein, denen ROR-IDs zugeordnet werden konnten.
+Aufgrund der Probleme bei der Zuordnung von ROR-IDs wurde entschieden, die Analyse der institutionellen Überschneidungen auf Einrichtungen aus Deutschland zu beschränken. Im Datensatz des QS Sustainability Ranking konnten insgesamt 50 Einrichtungen aus Deutschland identifiziert werden, von denen allen eine ROR-ID zugeordnet werden konnte. Im Datensatz des SCImago Institutions Ranking konnten insgesamt 364 Einrichtungen aus Deutschland identifiziert werden, von denen 342 keine ROR-ID über den maschinellen Abgleich zugeordnet werden konnten. Daher wurde eine manuelle Zuordnung vorgenommen, wobei jedoch für 6 der 342 Einrichtungen keine Zuordnung einer ROR-ID erfolgen konnte. Für die Analyse der institutionellen Überschneidungen deutscher Einrichtungen konnten demnach 385 Einrichtungen für das SCImago Institutions Ranking berücksichtigt werden.
 
-![Institutionelle Überschneidungen für alle Institutionen mit ROR-IDs in fünf Rankingsystemen](rankings/plots/all_institution_upset.png){#fig-2 group="upset"}
+@fig-2 stellt quantitativ die institutionellen Überschneidungen deutscher Einrichtungen zwischen den Rankings dar. Die Abbildung bezieht dabei nur die Institutionen ein, denen ROR-IDs zugeordnet werden konnten.
 
-Insgesamt konnten nach dem Abgleich der ROR-IDs `r format(n_distinct(institutions_df_region$ror), big.mark=".", decimal.mark = ",")` einzigartige Instiutionen über alle Rankingsysteme hinweg identifiziert werden. Anhand von @fig-2 ist zu erkennen, dass das COKI OA Dashboard deutlich mehr Institutionen abbildet, als alle anderen Rankingsysteme, sowohl insgesamt (`r format(sum(institutions_df_region$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(institutions_df_region$coki) / n_distinct(institutions_df_region$ror) *100, 2), decimal.mark=",")` %), als auch in Bezug auf die Anzahl an Institutionen, die in keinem anderen Rankingsystem abgebildet werden (`r format(sum(filter(institutions_df_region, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(filter(institutions_df_region, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_region$ror) *100, 2), decimal.mark=",")` %). Dies könnte insbesondere darauf zurückzuführen sein, dass das COKI OA Dashboard zum einen relativ langen Publikationszeitraum abbildet (2000--2024) und zum anderen auch Institutionen aus mehreren Sektoren, sowie Institutionen mit einem relativ geringen Publikationsvolumen von i.d.R. mindestens 50 Publikationen in das Ranking aufnimmt [@COKI_how;@COKI_data].
+![Institutionelle Überschneidungen für alle deutschen Institutionen mit ROR-IDs in fünf Rankingsystemen](rankings/plots/all_de_institution_upset.png){#fig-2 group="upset"}
 
-@fig-2 zeigt ferner, dass von den `r format(sum(institutions_df_region$sir), big.mark=".", decimal.mark = ",")` aus dem SCImago Institutions Ranking berücksichtigten Institutionen `r format(sum(filter(institutions_df_region, sir == 1 & lr == 0 & lroe == 0 & qs == 0 & coki == 0)$sir), big.mark=".", decimal.mark = ",")` Institutionen (`r format(round(sum(filter(institutions_df_region, sir == 1 & lr == 0 & lroe == 0 & qs == 0 & coki == 0)$sir) / n_distinct(institutions_df_region$ror) *100, 2), decimal.mark=",")` %) in keinem anderen Ranking erfasst sind. Von den `r format(sum(institutions_df_region$qs), big.mark=".", decimal.mark = ",")` aus dem QS Sustainability Ranking berücksichtigten Institutionen sind `r format(sum(filter(institutions_df_region, sir == 0 & lr == 0 & lroe == 0 & qs == 1 & coki == 0)$qs), big.mark=".", decimal.mark = ",")` Institutionen (`r format(round(sum(filter(institutions_df_region, sir == 0 & lr == 0 & lroe == 0 & qs == 1 & coki == 0)$qs) / n_distinct(institutions_df_region$ror) *100, 2), decimal.mark=",")` %) in keinem anderen Ranking erfasst. Dahingegen werden alle Instiutionen aus beiden Versionen des Leiden Rankings auch in mindestens einem weiteren Ranking abgebildet. Insgesamt sind lediglich `r format(sum(filter(institutions_df_region, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki), big.mark=".", decimal.mark = ",")` Institutionen (`r format(round(sum(filter(institutions_df_region, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki) / n_distinct(institutions_df_region$ror) *100, 2), decimal.mark=",")` %) in allen fünf Rankingsystemen erfasst. 
+Insgesamt konnten nach dem Abgleich der ROR-IDs `r format(n_distinct(institutions_df_de_sector$ror), big.mark=".", decimal.mark = ",")` einzigartige Instiutionen aus Deutschland über alle Rankingsysteme hinweg identifiziert werden. Anhand von @fig-2 ist zu erkennen, dass das COKI OA Dashboard deutlich mehr deutsche Einrichtungen abbildet, als alle anderen Rankingsysteme, sowohl insgesamt (`r format(sum(institutions_df_de_sector$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(institutions_df_de_sector$coki) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=",")` %), als auch in Bezug auf die Anzahl an Institutionen, die in keinem anderen Rankingsystem abgebildet werden (`r format(sum(filter(institutions_df_de_sector, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(filter(institutions_df_de_sector, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=",")` %). Dies könnte insbesondere darauf zurückzuführen sein, dass das COKI OA Dashboard einerseits einen relativ langen Publikationszeitraum abbildet (2000--2024) und andererseits auch Institutionen aus mehreren Sektoren, sowie Institutionen mit einem relativ geringen Publikationsvolumen von i.d.R. mindestens 50 Publikationen in das Ranking aufnimmt [@COKI_how;@COKI_data].
 
-Während das QS Sustainability Ranking sowie beide Versionen des Leiden Ranking lediglich Hochschulen in ihre Rankings einbeziehen, sind im COKI OA Dashboard und dem SCImago Institutions Ranking auch Institutionen aus anderen Sektoren erfasst. Die Zuordnung der Institutionen zu einzelnen Sektoren bzw. die Kategorisierung der Institutionstypen im gesamten Datensatz erfolgte anhand der Klassifikation aus dem COKI OA Dashboard. Institutionen aus dem QS Sustainability Ranking, die nicht im COKI OA Dashboard repräsentiert sind wurden dem Bildungssektor (*Education*) zugeordnet. Institutionen aus dem SCImago Institutions Ranking, die nicht im COKI OA Dashboard repräsentiert sind, wurde der im SCImago Institutions Ranking hinterlegte Sektor zugeordnet. Um die institutionellen Überschneidungen bezogen auf den Bildungssektor zu untersuchen, wurde der gesamte Datensatz nach Institutionen mit der Sektorzuordnung *Education* gefiltert.
+@fig-2 zeigt ferner, dass von den `r format(sum(institutions_df_de_sector$sir), big.mark=".", decimal.mark = ",")` aus dem SCImago Institutions Ranking berücksichtigten Institutionen, `r format(sum(filter(institutions_df_de_sector, sir == 1 & lr == 0 & lroe == 0 & qs == 0 & coki == 0)$sir), big.mark=".", decimal.mark = ",")` Institution (`r format(round(sum(filter(institutions_df_de_sector, sir == 1 & lr == 0 & lroe == 0 & qs == 0 & coki == 0)$sir) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=",")` %) in keinem anderen Ranking erfasst ist. Dahingegen werden alle Instiutionen aus beiden Versionen des Leiden Rankings sowie aus dem QS Sustainability Ranking auch in mindestens einem weiteren Ranking abgebildet. Insgesamt sind lediglich `r format(sum(filter(institutions_df_de_sector, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki), big.mark=".", decimal.mark = ",")` Institutionen (`r format(round(sum(filter(institutions_df_de_sector, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=",")` %) in allen fünf Rankingsystemen erfasst. 
 
-@fig-3 stellt im folgenden die institutionellen Überschneidungen der Bildungseinrichtungen zwischen den Rankings dar. Die Abbildung bezieht dabei ebenfalls nur diejenigen Institutionen ein, denen ROR-IDs zugeordnet werden konnten.
+Während das QS Sustainability Ranking sowie beide Versionen des Leiden Ranking lediglich Hochschulen in ihre Rankings einbeziehen, sind im COKI OA Dashboard und dem SCImago Institutions Ranking auch Institutionen aus anderen Sektoren erfasst. Hochschulen werden im COKI-Datensatz mit dem Institutionentyp *Education* klassifiziert, während im Datensatz des SCImago Institutions Ranking der Sektor *Universities* für Hochschulen zugewiesen ist. Um folgend die institutionellen Überschneidungen der deutschen Hochschulen zwischen den fünf Rankingsystemen zu untersuchen, wurde im zusammengeführten Datensatz aller Rankingsysteme eine Spalte *sector* hinzugefügt. Für Einrichtungen, die in beiden Versionen des Leiden Ranking oder im QS Sustainability Ranking abgebildet sind, wurde die Sektorzuordnung *Universities* ergänzt. Für Einrichtungen, die im SCImago Institutions Ranking oder COKI OA Dashboard abgebildet sind wurde die ursprüngliche Klassifikation beibehalten. Anschließend wurde der Datensatz nach Einrichtungen gefiltert, denen in der *sector*-Spalte die Werte *Universities* oder *Education* zugewiesen waren.
 
-![Institutionelle Überschneidungen im Bildungssektor für Institutionen mit ROR-IDs in fünf Rankingsystemen](rankings/plots/education_institution_upset.png){#fig-3 group="upset"}
+@fig-3 stellt folgend die institutionellen Überschneidungen bezogen auf deutsche Hochschulen zwischen den Rankings dar. Die Abbildung bezieht dabei ebenfalls nur diejenigen Institutionen ein, denen ROR-IDs zugeordnet werden konnten.
 
-Insgesamt konnten `r format(n_distinct(institutions_df_education$ror), big.mark = ".")` einzigartige Institutionen aus dem gesamten Datensatz identifiziert werden, die dem Bildungssektor zugeordnet sind. @fig-3 zeigt, dass das COKI OA Dashboard auch in Bezug auf die Bildungsinstitutionen deutlich mehr Institutionen abbildet, als alle anderen Rankingsysteme, sowohl insgesamt (`r format(sum(institutions_df_education$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(institutions_df_education$coki) / n_distinct(institutions_df_education$ror) *100, 2), decimal.mark=",")` %), als auch in Bezug auf die Anzahl an Institutionen, die in keinem anderen Rankingsystem erfasst sind (`r format(sum(filter(institutions_df_education, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(filter(institutions_df_education, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_education$ror) *100, 2), decimal.mark=",")` %). Die absolute Anzahl an Institutionen, die in allen fünf Rankingsystemen erfasst sind ist unverändert (`r format(sum(filter(institutions_df_education, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(filter(institutions_df_education, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki) / n_distinct(institutions_df_education$ror) *100, 2), decimal.mark=",")` %). 
+![Institutionelle Überschneidungen für deutsche Hochschulen mit ROR-IDs in fünf Rankingsystemen](rankings/plots/univs_de_institution_upset.png){#fig-3 group="upset"}
 
-@fig-3 zeigt jedoch auch, dass die Gesamtmenge an Institutionen (*Set size*) in beiden Versionen des Leiden Ranking und im QS Sustainability Ranking nach dem Filtern des Datensatzes auf Bildungseinrichtungen leicht minimiert ist. Dies ist auf die Kategorisierung der Institutionen innerhalb des COKI OA Dashboard Datensatzes zurückzuführen. Informationen zu den Institutionen im COKI Datensatz stammen aus dem Research Organization Registry (ROR) [@COKI_how]. Das ROR vergibt mindestens einen Institutionstyp aus einer kontrollierten Liste, wobei jedoch auch mehrere Typkategorien einer Institution zugeordnet werden können[^5] [@ror_types]. Im COKI Datensatz ist nur eine Typkategorie pro Instiution vorhanden, aus der Methodik geht auch nicht hervor nach welchen Kriterien die Typkategorie im Falle mehrer Kategorien ausgewählt wird. So sind beispielsweise dem [University of Nebraska Medical Center](https://ror.org/00thqtb16) im ROR die Organisationstypen *Education*, *Funder* und *Healthcare* zugewiesen, während im COKI OA Dashboard Datensatz lediglich die Kategorie *Funder* zugeordnet ist. Dies könnte teilweise ursächlich dafür sein, dass weniger Institutionen aus dem QS Sustainability Ranking und den beiden Versionen der Leiden Rankings dem Bildungssektor zugeordnet wurden. Ferner könnten auch unterschiedliche Perspektiven zwischen ROR und den Rankingsystemen oder ggf. sogar fehlende Typkategorien in ROR ursächlich sein. So wird beispielsweise das [Indian Institute of Technology Madras](https://ror.org/03v0r5n49) im ROR als *Facility* und *Funder* kategorisiert, bietet als technische Hochschule[^6] jedoch auch Lehre an und erfüllt als solche die Aufnahmekriterien für beide Versionen des Leiden Rankings.
+Insgesamt konnten `r format(n_distinct(institutions_df_de_univs$ror), big.mark = ".")` verschiedene deutsche Hochschulen über alle Rankingsysteme hinweg identifiziert werden. @fig-3 zeigt, dass das COKI OA Dashboard auch in Bezug auf die deutschen Hochschulen deutlich mehr Institutionen abbildet, als alle anderen Rankingsysteme, sowohl insgesamt (`r format(sum(institutions_df_de_univs$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(institutions_df_de_univs$coki) / n_distinct(institutions_df_de_univs$ror) *100, 2), decimal.mark=",")` %), als auch in Bezug auf die Anzahl an Institutionen, die in keinem anderen Rankingsystem erfasst sind (`r format(sum(filter(institutions_df_de_univs, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(filter(institutions_df_de_univs, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_de_univs$ror) *100, 2), decimal.mark=",")` %). Nach Angaben des Statistischen Bundesamt wurden im Wintersemester 2024/2025 insgesamt 422 deutsche Hochschulen gezählt [@destatis]. Demnach bildet das COKI OA Dashboard nach aktuellem Stand `r format(round(n_distinct(institutions_df_de_univs$ror) / 422 * 100,2), decimal.mark = ",")` % aller deutschen Hochschulen ab. Es ist zudem das einzige Rankingsystem, dass Hochschulen abbildet, die in keinem anderen Ranking erfasst sind. Die absolute Anzahl an deutschen Hochschulen, die in allen fünf Rankingsystemen erfasst sind ist mit `r format(sum(filter(institutions_df_de_univs, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki), big.mark=".", decimal.mark = ",")` Hochschulen unverändert zur absoluten Anzahl aller deutschen Einrichtungen, die in allen fünf Rankingsystemen erfasst sind. 
 
+Das COKI OA Dashboard und das SCImago Institutions Ranking sind die beiden einzigen der untersuchten Rankingsysteme, die nicht nur Hochschulen in ihre Rankings mit einbeziehen. In Bezug auf Deutschland entfallen auf die insgesamt `r format(sum(institutions_df_de_sector$coki), big.mark=".", decimal.mark = ",")` deutschen Einrichtungen, die im COKI OA Dashboard abgebildet sind `r format(round(sum(institutions_df_de_univs$coki) / sum(institutions_df_de_sector$coki) *100,2), big.mark=".", decimal.mark = ",")` % auf deutsche Hochschulen. Im Vergleich entfallen auf die insgesamt `r format(sum(institutions_df_de_sector$sir), big.mark=".", decimal.mark = ",")` deutschen Einrichtungen, die im SCImago Institutions Ranking abgebildet sind, `r format(round(sum(institutions_df_de_univs$sir) / sum(institutions_df_de_sector$sir) *100,2), big.mark=".", decimal.mark = ",")` % auf deutsche Hochschulen. Für beide Rankingsysteme lässt sich demnach feststellen, dass der Großteil an abgebildeten Einrichtungen, zumindest in Bezug auf Deutschland, anderen Sektoren zugewiesen ist. 
 
 
 [^1]: Informationen zur jeweiligen Datenverfügbarkeit inklusive eines Links zum Download der verwendeten Version der Daten -- sofern vorhanden -- sind für alle Rankings in dem jeweiligen Kasten mit den Ranking Details erfasst.
 [^2]: @QS_date berichtet, dass 1.744 Instiutionen in der Version 2025 geranked wurden. Die Daten zeigen hier jedoch eine Abweichung um eine Einrichtung.
 [^3]: Die bereitgestellten Daten zeigen eine Abweichung um eine Institution zu der von SCImago auf der Rankingwebsite berichteten Anzahl an gerankten Institutionen [@SIR]. Die bereitgestellte csv-Datei enthält zwar 9.756 Zeilen, jedoch handelt es sich bei der ersten Zeile lediglich um eine Kopfzeile. 
 [^4]: Beispielsweise wird im SCImago Institutions Ranking das [Deutsche Krebsforschungszentrum](https://www.scimagoir.com/institution.php?idp=21592) in der Landessprache angesetzt, während in ROR die englische Namensvariante [German Cancer Research Center](https://ror.org/04cdgtt98) als Hauptansetzung verwendet wird.
-[^5]: Siehe zum Beispiel [University of Nebraska Medical Center](https://ror.org/00thqtb16).
-[^6]: Siehe <https://www.iitm.ac.in/the-institute/about-iit-madras/overview>
 
 ### Geographische Verteilung
 
-Abbildungen -@fig-leidenmaps und -@fig-maps[^7] zeigen folgend die geographischen Verteilung der Instiutionen in Bezug auf die Länder und Weltregionen, in denen sie lokalisiert sind. Auch wenn alle fünf Rankings eine globale Ausrichtung haben, soll anhand der Abbildungen visualisiert werden, ob es Unterschiede in der geographischen Verteilung zwischen den Rankings gibt. Um eine bessere Vergleichbarkeit zu gewährleisten wurden für alle Rankingsysteme die Instiutionen auf jene eingeschränkt, die dem Bildungssektor (*Education*) zugeordnet sind.
+Abbildungen -@fig-leidenmaps und -@fig-maps[^5] zeigen folgend die geographische Verteilung der Instiutionen in Bezug auf die Länder und Weltregionen, in denen sie lokalisiert sind. Auch wenn alle fünf Rankings eine globale Ausrichtung haben, soll anhand der Abbildungen visualisiert werden, ob es Unterschiede in der geographischen Verteilung zwischen den Rankings gibt. Um eine bessere Vergleichbarkeit zu gewährleisten wurden für alle Rankingsysteme die Instiutionen auf jene eingeschränkt, die dem Hochschulsektor (*Universities*, *Education*) zugeordnet sind.
 
 ::: {#fig-leidenmaps layout-ncol=2}
 
@@ -562,114 +397,114 @@ Geographische Verteilung der in den Leiden Rankings abgebildeten Institutionen a
 
 ::: {#fig-maps layout-ncol=3}
 
-![SCImago Institutions Ranking 2025 (Bildungssektor)](rankings/plots/sir_univ_map.png){#fig-sir group="map"}
+![SCImago Institutions Ranking 2025 (Universities)](rankings/plots/sir_univ_map.png){#fig-sir group="map"}
 
 ![QS Sustainability Ranking 2025](rankings/plots/qs_map.png){#fig-qs group="map"}
 
-![COKI OA Dashboard 2025 (Bildungssektor)](rankings/plots/coki_univ_map.png){#fig-coki group="map"}
+![COKI OA Dashboard 2025 (Education)](rankings/plots/coki_univ_map.png){#fig-coki group="map"}
 
 Geographische Verteilung der in den Rankingssystemen SIR, QS und COKI abgebildeten Institutionen auf Länder und Weltregionen
 
 :::
 
-Betrachtet man die absoluten Anzahlen an Institutionen aus dem Bildungssektor, so zeigen Abbildungen -@fig-leidenmaps und -@fig-maps insbesondere, dass für beide Versionen des Leiden Rankings sowie das SCImago Instiutions Ranking die meisten Institutionen in China ansässig sind (LR: `r pref_df$nij_lr[pref_df$Country == "China"]` Institutionen, LROE: `r pref_df$nij_lroe[pref_df$Country == "China"]` Institutionen, SIR: `r pref_df$nij_sir[pref_df$Country == "China"]` Institutionen). Hingegen sind für das QS Sustainability Ranking sowie das COKI OA Dashboard die meisten Institutionen in den Vereinigten Staaten von Amerika ansässig (QS: `r pref_df$nij_qs[pref_df$Country == "United States"]` Institutionen, COKI: `r pref_df$nij_coki[pref_df$Country == "United States"]` Institutionen). Ferner verdeutlichen die Abbildungen, dass, mit Ausnahme des COKI OA Dashboards, insbesondere einige Länder aus dem globalen Süden gar nicht in den Rankingsystemen repräsentiert sind. 
+Betrachtet man die absoluten Anzahlen an Hochschulen, so zeigen Abbildungen -@fig-leidenmaps und -@fig-maps insbesondere, dass für beide Versionen des Leiden Rankings sowie das SCImago Instiutions Ranking die meisten Hochschulen in China ansässig sind (LR: `r pref_df$nij_lr[pref_df$Country == "China"]` Institutionen, LROE: `r pref_df$nij_lroe[pref_df$Country == "China"]` Institutionen, SIR: `r pref_df$nij_sir[pref_df$Country == "China"]` Institutionen). Hingegen sind für das QS Sustainability Ranking sowie das COKI OA Dashboard die meisten Institutionen in den Vereinigten Staaten von Amerika ansässig (QS: `r pref_df$nij_qs[pref_df$Country == "United States"]` Institutionen, COKI: `r pref_df$nij_coki[pref_df$Country == "United States"]` Institutionen). Ferner verdeutlichen die Abbildungen, dass, mit Ausnahme des COKI OA Dashboards, insbesondere einige Länder aus dem globalen Süden gar nicht in den Rankingsystemen repräsentiert sind. 
 
-Zusätzlich zur absoluten Anzahl an Institutionen soll im Folgenden die relative Verteilung der Institutionen aus dem Bildungssektor über Länder und Rankingsysteme hinweg anhand der *preference* nach @Moed2016 betrachtet werden. @Moed2016 definiert die *preference* als[^8]:
+Zusätzlich zur absoluten Anzahl an Hochschulen soll im Folgenden die relative Verteilung der Hochschulen über Länder und Rankingsysteme hinweg anhand der *preference* nach @Moed2016 betrachtet werden. @Moed2016 definiert die *preference* als[^6]:
 
 > The preference of ranking system R for a particular country C is expressed as the ratio of the actual and the expected number of institutions from C appearing in R, where the expected number is based on the total number of institutions across countries and across systems, under the assumption of independence of these two variables. A value of 1.0 indicates that the number of institutions from C in R is ‘as expected’.
 
 
-Der resultierende Präferenzwert (*preference score*) misst also, ob ein Land innerhalb eines Rankingsystems überproportional oder unterproportional repräsentiert ist. Das Maß ist bei einem Wert von 1 neutral, d.h. die Anzahl an Institutionen aus einem Land in einem Rankingsystem entspricht den Erwartungen. Werte über 1 deuten darauf hin, dass mehr Institutionen aus einem Land in einem Rankingsystem erfasst sind als erwartet. Werte unter 1 deuten darauf hin, dass weniger Institutionen aus einem Land in einem Rankingsystem erfasst sind als erwartet. 
+Der resultierende Präferenzwert (*preference score*) misst also, ob ein Land, gemessen an der Anzahl dort ansässiger Institutionen, innerhalb eines Rankingsystems überproportional oder unterproportional repräsentiert ist. Das Maß ist bei einem Wert von 1 neutral, d.h. die Anzahl an Institutionen aus einem Land in einem Rankingsystem entspricht den Erwartungen. Werte über 1 deuten darauf hin, dass mehr Institutionen aus einem Land in einem Rankingsystem erfasst sind als erwartet. Werte unter 1 deuten darauf hin, dass weniger Institutionen aus einem Land in einem Rankingsystem erfasst sind als erwartet. 
 
 
-@tbl-pref stellt für alle fünf Rankingsysteme für die Top 5 Länder, gemessen am Präferenzwert (*preference score*), sowie Deutschland die absolute Anzahl an Institutionen und den jweiligen Präferenzwert dar. 
+@tbl-pref stellt für alle fünf Rankingsysteme für die Top 5 Länder, gemessen am Präferenzwert (*preference score*), sowie Deutschland die absolute Anzahl an Hochschulen und den jweiligen Präferenzwert dar. 
 
 ::: {#tbl-pref layout-ncol=2}
 
 +---------+-----------------------------+-----------------+------------------+
 | Ranking | Land                        | Nr. Hochschulen | preference score |
 +=========+=============================+=================+==================+
-| Leiden  | Vietnam                     | 3               |    7,95          |
+| Leiden  | Luxemburg                   | 1               |    2,45          |
 |         +-----------------------------+-----------------+------------------+
-|         | Italien                     | 49              |    2,55          |
+|         | Australien                  | 35              |    2,34          |
 |         +-----------------------------+-----------------+------------------+
-|         | Spanien                     | 47              |    2,42          |
+|         | Spanien                     | 47              |    2,32          |
 |         +-----------------------------+-----------------+------------------+
-|         | Australien                  | 35              |    2,27          |
+|         | Italien                     | 49              |    2,22          |
 |         +-----------------------------+-----------------+------------------+
-|         | Luxemburg                   | 1               |    2,27          |
+|         | China                       | 313             |    2,15          |
 |         +-----------------------------+-----------------+------------------+
 |         +-----------------------------+-----------------+------------------+
-|         | Deutschland                 | 57              |    1,59          |
+|         | Deutschland                 | 57              |    1,46          |
 +---------+-----------------------------+-----------------+------------------+
-| SIR     | Färöer-Inseln               | 1               |    3,80          |
+| SIR     | Färöer-Inseln               | 1               |    2,55          |
 |         +-----------------------------+-----------------+------------------+
-|         | Lesotho                     | 1               |    3,80          |
+|         | Französisch-Guayana         | 1               |    2,55          |
 |         +-----------------------------+-----------------+------------------+
-|         | Namibia                     | 2               |    2,53          |
+|         | Grenada                     | 1               |    2,55          |
 |         +-----------------------------+-----------------+------------------+
-|         | Irak                        | 45              |    2,46          |
+|         | Guadeloupe                  | 1               |    2,55          |
 |         +-----------------------------+-----------------+------------------+
-|         | Jordanien                   | 19              |    2,45          |
+|         | Lesotho                     | 1               |    2,55          |
 |         +-----------------------------+-----------------+------------------+
 |         +-----------------------------+-----------------+------------------+
-|         | Deutschland                 | 8               |    0,11          |
+|         | Deutschland                 | 108             |    0,82          |
 +---------+-----------------------------+-----------------+------------------+
-| COKI    | Bolivien                    | 34              |    1,49          |
+| COKI    | Myanmar                     | 27              |    1,61          |
 |         +-----------------------------+-----------------+------------------+
-|         |Demokratische Republik Kongo | 22              |    1,49          |
+|         | Kambodscha                  | 15              |    1,61          |
 |         +-----------------------------+-----------------+------------------+
-|         | Kambodscha                  | 15              |    1,49          |
+|         | Nicaragua                   | 15              |    1,61          |
 |         +-----------------------------+-----------------+------------------+
-|         | Mosambik                    | 15              |    1,49          |
+|         | Somalia                     | 14              |    1,61          |
 |         +-----------------------------+-----------------+------------------+
-|         | Myanmar                     | 27              |    1,49          |
+|         | El Salvador                 | 13              |    1,61          |
 |         +-----------------------------+-----------------+------------------+
 |         +-----------------------------+-----------------+------------------+
-|         | Deutschland                 | 397             |    1,04          |
+|         | Deutschland                 | 397             |    0,96          |
 +---------+-----------------------------+-----------------+------------------+
 
-+-----------+------------+-----------------+------------------+
-| Ranking   | Land       | Nr. Hochschulen | preference score |
-+===========+============+=================+==================+
-| Leiden OE | Vietnam    | 3               |    7,95          |
-|           +------------+-----------------+------------------+
-|           | Italien    | 49              |    2,55          |
-|           +------------+-----------------+------------------+
-|           | Spanien    | 47              |    2,42          |
-|           +------------+-----------------+------------------+
-|           | Australien | 35              |    2,27          |
-|           +------------+-----------------+------------------+
-|           | Luxemburg  | 1               |    2,27          |
-|           +------------+-----------------+------------------+
-|           +------------+-----------------+------------------+
-|           | Deutschland| 57              |    1,59          |
-+-----------+------------+-----------------+------------------+
-| QS        | Brunei     | 2               |    3,45          |
-|           +------------+-----------------+------------------+
-|           | Hongkong   | 9               |    3,36          |
-|           +------------+-----------------+------------------+
-|           | Macau      | 2               |    3,07          |
-|           +------------+-----------------+------------------+
-|           | Fidschi    | 1               |    2,76          |
-|           +------------+-----------------+------------------+
-|           | Malta      | 1               |    2,76          |
-|           +------------+-----------------+------------------+
-|           +------------+-----------------+------------------+
-|           | Deutschland| 50              |    1,21          |
-+-----------+------------+-----------------+------------------+
++-----------+---------------+-----------------+------------------+
+| Ranking   | Land          | Nr. Hochschulen | preference score |
++===========+===============+=================+==================+
+| Leiden OE | Luxemburg     | 1               |    2,45          |
+|           +---------------+-----------------+------------------+
+|           | Australien    | 35              |    2,34          |
+|           +---------------+-----------------+------------------+
+|           | Spanien       | 47              |    2,32          |
+|           +---------------+-----------------+------------------+
+|           | Italien       | 49              |    2,22          |
+|           +---------------+-----------------+------------------+
+|           | China         | 313             |    2,15          |
+|           +---------------+-----------------+------------------+
+|           +---------------+-----------------+------------------+
+|           | Deutschland   | 57              |    1,46          |
++-----------+---------------+-----------------+------------------+
+| QS        | Brunei        | 2               |    3,70          |
+|           +---------------+-----------------+------------------+
+|           | Hongkong      | 9               |    3,17          |
+|           +---------------+-----------------+------------------+
+|           | Malta         | 1               |    2,96          |
+|           +---------------+-----------------+------------------+
+|           | Saudi-Arabien | 28              |    2,67          |
+|           +---------------+-----------------+------------------+
+|           | Jordanien     | 11              |    2,50          |
+|           +---------------+-----------------+------------------+
+|           +---------------+-----------------+------------------+
+|           | Deutschland   | 50              |    1,11          |
++-----------+---------------+-----------------+------------------+
 
 
 Präferenzwerte der Top 5 Länder und Deutschland pro Rankingsystem
 :::
 
-@tbl-pref zeigt unterschiedliche geografische Abdeckungen der verschiedenen Rankingsysteme in Bezug auf die überproportinal repräsentierten Länder auf. So sind beide Versionen des Leiden Ranking tendenziell auf Europa ausgerichtet, das SCImago Institutions Ranking sowie das COKI OA Dashboard überwiegend auf Asien und Afrika und das QS Sustainability Ranking primär auf Asien. Eine Besonderheit stellt das COKI OA Dashboard dar. Insgesamt weist der COKI Datensatz `r nrow(filter(pref_df,pref_coki == 1.49))` Länder mit dem selben Präferenzwert von 1,49 auf. Die in @tbl-pref dargestellten Länder sind jene ersten fünf Einträge, die sich aus einer absteigenden Sortierung nach der Anzahl an Institutionen aus den jeweiligen Ländern ergeben. Die Beobachtung, dass eine Vielzahl an Ländern den selben Präferenzwert haben ist darauf zurückzuführen, dass die `r nrow(filter(pref_df,pref_coki == 1.49))` Länder ausschließlich im COKI OA Dashboard enthalten sind.
+@tbl-pref zeigt unterschiedliche geografische Abdeckungen der verschiedenen Rankingsysteme in Bezug auf die überproportinal repräsentierten Länder auf. So sind beide Versionen des Leiden Ranking tendenziell auf Europa ausgerichtet, das SCImago Institutions Ranking tendenziell auf Nord- und Südamerika, das COKI OA Dashboard überwiegend auf Asien und Mittelamerika und das QS Sustainability Ranking primär auf Asien. Eine Besonderheit stellt das COKI OA Dashboard dar. Insgesamt weist der COKI Datensatz `r nrow(filter(pref_df,pref_coki == 1.61))` Länder mit dem selben Präferenzwert von 1,61 auf. Die in @tbl-pref dargestellten Länder sind jene ersten fünf Einträge, die sich aus einer absteigenden Sortierung nach der Anzahl an Institutionen aus den jeweiligen Ländern ergeben. Die Beobachtung, dass eine Vielzahl an Ländern den selben Präferenzwert haben ist darauf zurückzuführen, dass die `r nrow(filter(pref_df,pref_coki == 1.61))` Länder ausschließlich im COKI OA Dashboard enthalten sind.
 
-Bezogen auf Deutschland zeigt @tbl-pref, dass beiden Versionen des Leiden Ranking sowie das QS Sustainability Ranking mit Präferenzwerten von 1,59 und 1,21 eine überproportionale bzw. leicht überproportionale Anzahl an deutsche Institutionen in ihre Rankings einbeziehen. Dies deutet darauf hin, dass in diesen Rankingsystemen deutsche Einrichtungen mit einer absoluten Anzahl von 50 und 57 Institutionen leicht überrepräsentiert bis überrepräsentiert sind. Hingegen sind im COKI OA Dashboard mit einer absoluten Anzahl von 397 Institutionen zwar wesentlich mehr deutsche Einrichtingen im Ranking enthalten, allerdings zeigt der Präferenzwert von 1,04, dass diese Anzahl nahezu dem Erwartungswert entspricht. Für das SCImago Institutions Ranking beträgt der Präferenzwert für deutsche Institutionen lediglich 0,11. Dies deutet darauf hin, dass Einrichtungen aus Deutschland in diesem Ranking stark unterrepräsentiert sind. Auch die absolute Anzahl an deutschen Einrichtungen ist für das SCImago Institutions Ranking im Vergleich zu den anderen Rankings mit lediglich 8 Einrichtungen deutlich geringer.
+Bezogen auf Deutschland zeigt @tbl-pref, dass beiden Versionen des Leiden Ranking sowie das QS Sustainability Ranking mit Präferenzwerten von 1,46 und 1,11 eine überproportionale bzw. leicht überproportionale Anzahl an deutschen Hochschulen in ihre Rankings einbeziehen. Dies deutet darauf hin, dass in diesen Rankingsystemen deutsche Hochschulen mit einer absoluten Anzahl von 50 und 57 Hochschulen leicht überrepräsentiert bis überrepräsentiert sind. Hingegen sind im COKI OA Dashboard mit einer absoluten Anzahl von 397 zwar wesentlich mehr deutsche Hochschulen im Ranking enthalten, allerdings zeigt der Präferenzwert von 0.96, dass diese Anzahl unter dem Erwartungswert liegt. Für das SCImago Institutions Ranking beträgt der Präferenzwert für deutsche Hochschulen lediglich 0,82. Dies deutet darauf hin, dass Einrichtungen aus Deutschland in diesem Ranking unterrepräsentiert sind, obwohl die absolute Anzahl an deutschen Hochschulen mit 108 die Zweithöchste ist.
 
 
-[^7]: Durch Klick auf die Abbildungen werden diese vergrößert dargestellt.
-[^8]: Formal definiert @Moed2016 die *preference* mit: $P= \dfrac{\bigg(\dfrac{n[i, j]}{\sum_i n[i, j]}\bigg)}{\bigg(\dfrac{\sum_jn[i, j]}{\sum_i\sum_jn[i, j]}\bigg)}$, wobei $n[i, j]$ die Anzahl an Institutionen aus Land $i$ im Rankingsystem $j$, $\sum_in[i, j]$ die Summe aller $n[i, j]$ über alle $i$ (Länder), $\sum_jn[i, j]$ die Summe aller $n[i, j]$ über alle $j$ (Rankingsysteme), und $\sum_i\sum_jn[i, j]$ die Summe aller $n[i, j]$ über alle $i$ (Länder) und alle $j$ (Rankingsysteme) angibt.
+[^5]: Durch Klick auf die Abbildungen werden diese vergrößert dargestellt.
+[^6]: Formal definiert @Moed2016 die *preference* mit: $P= \dfrac{\bigg(\dfrac{n[i, j]}{\sum_i n[i, j]}\bigg)}{\bigg(\dfrac{\sum_jn[i, j]}{\sum_i\sum_jn[i, j]}\bigg)}$, wobei $n[i, j]$ die Anzahl an Institutionen aus Land $i$ im Rankingsystem $j$, $\sum_in[i, j]$ die Summe aller $n[i, j]$ über alle $i$ (Länder), $\sum_jn[i, j]$ die Summe aller $n[i, j]$ über alle $j$ (Rankingsysteme), und $\sum_i\sum_jn[i, j]$ die Summe aller $n[i, j]$ über alle $i$ (Länder) und alle $j$ (Rankingsysteme) angibt.
 
 ### Institutionelle Beteiligung bei der Datenerhebung
 
