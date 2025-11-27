@@ -25,7 +25,7 @@ execute:
   warning: false
   error: false
 webr:
-  packages: ['tidyverse']
+  packages: ['dplyr','tidyr','ggplot2']
 lightbox: true
 ---
 
@@ -81,14 +81,16 @@ OpenAlex offers a lot more information than what we are exploring in this notebo
 
 ## Loading packages
 
-We will load the *openalexR* package [@openalexR] that allows us to query the OpenAlex API from within our notebook and the *tidyverse* package [@tidyverse] that provides a lot of additional functionalities for data wrangling and visualization.
+We will load the *openalexR* package [@openalexR] that allows us to query the OpenAlex API from within our notebook. We will also load the packages *dplyr*, *tidyr* and *ggplot2* that provide a lot of additional functionalities for data wrangling and visualization and are part of the *tidyverse* package [@tidyverse].
 
 
 ```{r}
 # Installation of packages if not already installed with
 # install.packages(c("openalexR","tidyverse"))
 library(openalexR)
-library(tidyverse)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
 ```
 
 ## Loading data
@@ -162,9 +164,9 @@ The `arrange` function is used to sort the data based on the n variable and the 
 
 
 ```{r}
-df %>%
-  group_by(host_organization, host_organization_name) %>%
-  summarise(n = n()) %>%
+df |>
+  group_by(host_organization, host_organization_name) |>
+  summarise(n = n()) |>
   arrange(desc(n))
 ```
 
@@ -176,20 +178,20 @@ The output shows us some important things about the data:
 As an example we will look at the publisher names in our data frame that contain *Springer* or *Nature*. We will use the `filter` function from the tidyverse that lets us filter articles that fulfil the condition we specify in combination with the `grepl` function that allows to search for patterns. In this case we will use a regular expression as the pattern to search for.
 
 ```{r}
-df %>%
-  group_by(host_organization, host_organization_name) %>%
-  summarise(n = n()) %>%
-  arrange(desc(n)) %>%
+df |>
+  group_by(host_organization, host_organization_name) |>
+  summarise(n = n()) |>
+  arrange(desc(n)) |>
   filter(grepl("^Springer|Nature", host_organization_name))
 ```
 
 If we want to replace the Springer name variants with *Springer Nature* as publisher name, we can use the `mutate` function that lets us transform a column in our data frame in combination with the `str_replace_all` function that lets us replace string values that follow a pattern we specify to do so. 
 
 ```{r}
-df %>%
-  mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature")) %>%
-  group_by(host_organization_name) %>%
-  summarise(n = n()) %>%
+df |>
+  mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature")) |>
+  group_by(host_organization_name) |>
+  summarise(n = n()) |>
   arrange(desc(n))
 ```
 
@@ -197,11 +199,11 @@ Be aware that this data transformation only applies to the publisher name column
 
 ```{r, eval=FALSE}
 # overriding our data frame
-df <- df %>%
+df <- df |>
   mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature"))
 
 # creating a new data frame df2
-df2 <- df %>%
+df2 <- df |>
   mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature"))
 ```
 
@@ -211,26 +213,26 @@ To access the apc values in our data frame we will use the `unnest_wider`, `unne
 The `unnest_wider` function allows us to turn each element of a list-column into a column. We will further use the `select` function to print only the resulting apc columns.
 
 ```{r}
-df %>%
-  unnest_wider(apc, names_sep = ".") %>%
+df |>
+  unnest_wider(apc, names_sep = ".") |>
   select(starts_with("apc"))
 ```
 
 The output shows that the values in the apc columns are lists. This is because OpenAlex provides information for APC list prices and prices of APCs that were actually paid, when available. To transform the lists into single value cells we will use the `unnest_longer` function that does precisely that.
 
 ```{r}
-df %>%
-  unnest_wider(apc, names_sep = ".") %>%
-  unnest_longer(c(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) %>%
+df |>
+  unnest_wider(apc, names_sep = ".") |>
+  unnest_longer(c(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) |>
   select(id, starts_with("apc"))
 ```
 
 The output shows that we now have multiple rows for the same id. To transform the data frame to single rows for each id we will use the `pivot_wider` function that allows us to increase the number of columns and decrease the number of rows.
 
 ```{r}
-df %>%
-  unnest_wider(apc, names_sep = ".") %>%
-  unnest_longer(c(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) %>%
+df |>
+  unnest_wider(apc, names_sep = ".") |>
+  unnest_longer(c(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) |>
   pivot_wider(id_cols = id, names_from = apc.type, values_from = c(apc.value, apc.currency, apc.value_usd, apc.provenance))
 ```
 
@@ -276,14 +278,14 @@ round(sum(df$is_oa, na.rm = T) / n_distinct(df$id) * 100, 2)
 To analyse the distribution of open access articles across journals we will calculate the total number of articles (n_articles), the total number of open access articles (n_oa_articles) and the total number of closed articles (n_closed_articles) per journal. We will again use the `group_by`, `summarise` and `arrange` functions. However, since we noticed that `r sum(is.na(df$is_oa))` articles have an undetermined open access status, we will first filter out all rows with *NA* values in the *is_oa* column. We will also group the data by the *source_display_name* column to generate aggregate statistics for the journals.
 
 ```{r}
-df %>%
-  filter(!is.na(is_oa)) %>%
-  group_by(source_display_name) %>%
+df |>
+  filter(!is.na(is_oa)) |>
+  group_by(source_display_name) |>
   summarise(
     n_articles = n(),
     n_oa_articles = sum(is_oa),
     n_closed_articles = n_articles - n_oa_articles
-  ) %>%
+  ) |>
   arrange(desc(n_oa_articles))
 ```
 
@@ -292,9 +294,9 @@ The results show that 414 articles have no journal assigned within our data fram
 We can further explore the open access status distribution for the articles. We will do this on the example of the top three journals in terms of open access publication volume.
 
 ```{r}
-df %>%
-  filter(source_display_name %in% c("Scientific Reports", "Astronomy and Astrophysics", "Journal of High Energy Physics")) %>%
-  group_by(source_display_name, is_oa, oa_status) %>%
+df |>
+  filter(source_display_name %in% c("Scientific Reports", "Astronomy and Astrophysics", "Journal of High Energy Physics")) |>
+  group_by(source_display_name, is_oa, oa_status) |>
   summarise(n = n())
 ```
 
@@ -307,9 +309,9 @@ We can combine functions from the tidyverse and ggplot2 to visualise the develop
 First, we group the data by publication year and open access status. We will then compute the number of articles in each group. In the ggplot function, we assign the publication year column to the x axis and the number of articles to the y axis. We choose point (geom_point) and line (geom_line) graph types to mark the distinct values of n and have them connected by lines. Both are provided with a colour aesthetic which is set to our open access status column. This will result in different colours being assigned to the points and lines for the different open access status values. With the *theme_minimal* option we are applying a minimal theme for the plot appearance.
 
 ```{r}
-df %>%
-  group_by(publication_year, oa_status) %>%
-  summarise(n = n(), .groups = "keep") %>%
+df |>
+  group_by(publication_year, oa_status) |>
+  summarise(n = n(), .groups = "keep") |>
   ggplot(aes(x = publication_year, y = n)) +
   geom_line(aes(colour = oa_status)) +
   geom_point(aes(colour = oa_status)) +
@@ -321,10 +323,10 @@ The plot shows use the total number of publications for each publication year an
 We can further choose to visualise the open access distribution over time in terms of percentages. For this we first calculate the share of each open access status per publication year and create a new column using the `mutate` function that stores these values. We pipe the result through to the `ggplot` function assigning the publication year column to the x axis and the share to the y axis. We assign the *oa_status* column to the fill argument which will plot a different colour for each open access status. For this plot we choose a bar chart (geom_bar) graph type and again apply the minimal theme.
 
 ```{r}
-df %>%
-  group_by(publication_year, oa_status) %>%
-  summarise(count = n()) %>%
-  mutate(perc = count / sum(count) * 100) %>%
+df |>
+  group_by(publication_year, oa_status) |>
+  summarise(count = n()) |>
+  mutate(perc = count / sum(count) * 100) |>
   ggplot(aes(x = publication_year, y = perc, fill = oa_status)) +
   geom_bar(stat = "identity") +
   theme_minimal()
@@ -359,28 +361,28 @@ Before, we analysed the distribution of open access articles across journals. Be
 ## {{< iconify proicons:code >}}&ensp;Interactive editor
 
 ```{webr-r}
-df %>%
-  filter(!is.na(is_oa)) %>%
-  group_by(source_display_name) %>%
+df |>
+  filter(!is.na(is_oa)) |>
+  group_by(source_display_name) |>
   summarise(
     n_articles = n(),
     n_oa_articles = sum(is_oa),
     n_closed_articles = n_articles - n_oa_articles
-  ) %>%
+  ) |>
   arrange(desc(n_oa_articles))
 ```
 
 ## {{< iconify proicons:checkmark-circle >}}&ensp;Solution
 
 ```{webr-r}
-df %>%
-  filter(!is.na(is_oa)) %>%
-  group_by(host_organization_name) %>%
+df |>
+  filter(!is.na(is_oa)) |>
+  group_by(host_organization_name) |>
   summarise(
     n_articles = n(),
     n_oa_articles = sum(is_oa),
     n_closed_articles = n_articles - n_oa_articles
-  ) %>%
+  ) |>
   arrange(desc(n_oa_articles))
 ```
 
@@ -398,10 +400,10 @@ Now, see if you can adapt the code we used to visualise the open access share ov
 ## {{< iconify proicons:code >}}&ensp;Interactive editor
 
 ```{webr-r}
-df %>%
-  group_by(publication_year, oa_status) %>%
-  summarise(count = n()) %>%
-  mutate(perc = count / sum(count) * 100) %>%
+df |>
+  group_by(publication_year, oa_status) |>
+  summarise(count = n()) |>
+  mutate(perc = count / sum(count) * 100) |>
   ggplot(aes(x = publication_year, y = perc, fill = oa_status)) +
   geom_bar(stat = "identity") +
   theme_minimal()
@@ -414,11 +416,11 @@ df %>%
 ## {{< iconify proicons:checkmark-circle >}}&ensp;Solution
 
 ```{webr-r}
-df %>%
-  filter(host_organization_name %in% c("Wiley", "Elsevier BV", "Springer Science+Business Media")) %>% 
-  group_by(host_organization_name, oa_status) %>%
-  summarise(count = n()) %>%
-  mutate(perc = count / sum(count) * 100) %>%
+df |>
+  filter(host_organization_name %in% c("Wiley", "Elsevier BV", "Springer Science+Business Media")) |> 
+  group_by(host_organization_name, oa_status) |>
+  summarise(count = n()) |>
+  mutate(perc = count / sum(count) * 100) |>
   ggplot(aes(x = host_organization_name, y = perc, fill = oa_status)) +
   geom_bar(stat = "identity") +
   theme_minimal()
