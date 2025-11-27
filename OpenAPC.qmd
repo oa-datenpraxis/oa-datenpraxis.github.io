@@ -24,7 +24,7 @@ execute:
   warning: false
   error: false
 webr:
-  packages: ['tidyverse']
+  packages: ['dplyr','tidyr','ggplot2']
 lightbox: true
 ---
 
@@ -76,10 +76,15 @@ OpenAPC offers comprehensive information on APC payments for participating resea
 
 We will load the *dplyr* package [@dplyr] that provides a lot of additional functionality for data wrangling, and *ggplot2* [@ggplot2] for data visualization.
 
+We will load the *openalexR* package [@openalexR] that allows us to query the OpenAlex API from within our notebook. We will also load the packages *dplyr*, *tidyr* and *ggplot2* that provide a lot of additional functionalities for data wrangling and visualization and are part of the *tidyverse* package [@tidyverse].
+
+
 ```{r}
 # Installation of packages if not already installed with
-# install.packages(c("dplyr","ggplot2"))
+# install.packages(c("openalexR","tidyverse"))
+library(openalexR)
 library(dplyr)
+library(tidyr)
 library(ggplot2)
 ```
 
@@ -140,17 +145,17 @@ Because it takes research organizations time to collect and process data on APC 
 
 The R package *dplyr* provides a lot of functionality for data wrangling. We can't go into much detail here, but we will demonstrate how to use some of the most useful functions.
 
-One of them is the `group_by` function. Here, we use it to group the dataset by the column *journal_full_title*. This will allow us to generate aggregate statistics for articles published within a journal. We then use the pipe operator `%>%`, which takes output from one function as input for the next function. The input is passed to the `summarise` function, where we calculate aggregate statistics. For each journal in the dataset, we calculate the total number of articles published (*n_articles*), the total of APCs paid (*sum_apc*), the average APC paid per article (*avg_apc*), and the standard deviation (*sd_apc*). The last two statistics are rounded to two decimal places. To get a better overview of the data, we then use `arrange` to sort the result by the total number of articles.
+One of them is the `group_by` function. Here, we use it to group the dataset by the column *journal_full_title*. This will allow us to generate aggregate statistics for articles published within a journal. We then use the pipe operator `|>`, which takes output from one function as input for the next function. The input is passed to the `summarise` function, where we calculate aggregate statistics. For each journal in the dataset, we calculate the total number of articles published (*n_articles*), the total of APCs paid (*sum_apc*), the average APC paid per article (*avg_apc*), and the standard deviation (*sd_apc*). The last two statistics are rounded to two decimal places. To get a better overview of the data, we then use `arrange` to sort the result by the total number of articles.
 
 ```{r}
-df %>%
-  group_by(journal_full_title) %>%
+df |>
+  group_by(journal_full_title) |>
   summarise(
     n_articles = n(),
     sum_apc = sum(euro),
     avg_apc = round(sum_apc / n_articles, 2),
     sd_apc = round(sd(euro), 2)
-  ) %>%
+  ) |>
   arrange(desc(n_articles))
 ```
 
@@ -160,8 +165,8 @@ We can explore this variance further by visualizing the distribution of APC paym
 First, we `filter` the data to focus on the three journals with the most APC payments. We then pass this output to the `ggplot` function. We assign the column *euro* to the x axis and the column *journal_full_title* to the y axis. Next, we define the type of plot we want - here, we choose a box plot to visualize a distribution. Finally, we choose the theme *theme_minimal* for a simple layout.
 
 ```{r}
-df %>%
-  filter(journal_full_title %in% c("Scientific Reports", "PLOS ONE", "Frontiers in Immunology")) %>%
+df |>
+  filter(journal_full_title %in% c("Scientific Reports", "PLOS ONE", "Frontiers in Immunology")) |>
   ggplot(aes(x = euro, y = journal_full_title)) +
   geom_boxplot() +
   theme_minimal()
@@ -176,9 +181,9 @@ We can combine *dplyr* and *ggplot2* to visualize the development of APC payment
 First, we group the data by *period* ("Year of APC payment (YYYY)") and *is_hybrid* ("Determines if the article has been published in a hybrid journal (TRUE) or in fully/Gold OA journal (FALSE)"). Just like above, we will generate the aggregate statistic *n_articles*. In the `ggplot` function, we assign the column *period* to the x axis, *n_articles* to the y axis, and *is_hybrid* to fill - this means that different colours will be assigned to the open access types. We choose the graph type *geom_col*, a simple bar chart.
 
 ```{r}
-df %>%
-  group_by(period, is_hybrid) %>%
-  summarise(n_articles = n()) %>%
+df |>
+  group_by(period, is_hybrid) |>
+  summarise(n_articles = n()) |>
   ggplot(aes(x = period, y = n_articles, fill = is_hybrid)) +
   geom_col() +
   theme_minimal()
@@ -214,28 +219,28 @@ Above, we analyzed APC payments by journal. Here is a copy of that code block. S
 ## {{< iconify proicons:code >}}&ensp;Interactive editor
 
 ```{webr-r}
-df %>%
-  group_by(journal_full_title) %>%
+df |>
+  group_by(journal_full_title) |>
   summarise(
     n_articles = n(),
     sum_apc = sum(euro),
     avg_apc = round(sum_apc / n_articles, 2),
     sd_apc = round(sd(euro), 2)
-  ) %>%
+  ) |>
   arrange(desc(n_articles))
 ```
 
 ## {{< iconify proicons:checkmark-circle >}}&ensp;Solution
 
 ```{webr-r}
-df %>%
-  group_by(publisher) %>%
+df |>
+  group_by(publisher) |>
   summarise(
     n_articles = n(),
     sum_apc = sum(euro),
     avg_apc = round(sum_apc / n_articles, 2),
     sd_apc = round(sd(euro), 2)
-  ) %>%
+  ) |>
   arrange(desc(n_articles))
 ```
 
@@ -252,8 +257,8 @@ Now, see if you can adapt the code above to show you the distribution of APC pay
 ## {{< iconify proicons:code >}}&ensp;Interactive editor
 
 ```{webr-r}
-df %>%
-  filter(journal_full_title %in% c("Scientific Reports", "PLOS ONE", "Frontiers in Immunology")) %>%
+df |>
+  filter(journal_full_title %in% c("Scientific Reports", "PLOS ONE", "Frontiers in Immunology")) |>
   ggplot(aes(x = euro, y = journal_full_title)) +
   geom_boxplot() +
   theme_minimal()
@@ -262,8 +267,8 @@ df %>%
 ## {{< iconify proicons:checkmark-circle >}}&ensp;Solution
 
 ```{webr-r}
-df %>%
-  filter(publisher %in% c("Springer Nature", "Wiley-Blackwell", "Frontiers Media SA")) %>%
+df |>
+  filter(publisher %in% c("Springer Nature", "Wiley-Blackwell", "Frontiers Media SA")) |>
   ggplot(aes(x = euro, y = publisher)) +
   geom_boxplot() +
   theme_minimal()
