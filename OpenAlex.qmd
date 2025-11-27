@@ -85,14 +85,16 @@ OpenAlex offers a lot more information than what we are exploring in this notebo
 
 ## Loading packages
 
-We will load the *openalexR* package [@openalexR] that allows us to query the OpenAlex API from within our notebook and the *tidyverse* package [@tidyverse] that provides a lot of additional functionalities for data wrangling and visualization.
+We will load the *openalexR* package [@openalexR] that allows us to query the OpenAlex API from within our notebook. We will also load the packages *dplyr*, *tidyr* and *ggplot2* that provide a lot of additional functionalities for data wrangling and visualization and are part of the *tidyverse* package [@tidyverse].
 
 
 ```{r}
 # Installation of packages if not already installed with
 # install.packages(c("openalexR","tidyverse"))
 library(openalexR)
-library(tidyverse)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
 ```
 
 ## Loading data
