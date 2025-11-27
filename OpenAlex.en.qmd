@@ -86,10 +86,11 @@ We will load the *openalexR* package [@openalexR] that allows us to query the Op
 
 ```{r}
 # Installation of packages if not already installed with
-# install.packages(c("openalexR","tidyverse"))
+# install.packages(c("openalexR","dplyr","tidyr","stringr","ggplot2"))
 library(openalexR)
 library(dplyr)
 library(tidyr)
+library(stringr)
 library(ggplot2)
 ```
 
