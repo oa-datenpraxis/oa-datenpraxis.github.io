@@ -25,7 +25,7 @@ execute:
   warning: false
   error: false
 webr:
-  packages: ['dplyr','tidyr','ggplot2']
+  packages: ['dplyr','tidyr','stringr','ggplot2']
 lightbox: true
 ---
 
