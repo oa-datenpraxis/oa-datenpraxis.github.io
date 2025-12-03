@@ -431,7 +431,7 @@
     "href": "OpenAPC.html#loading-packages",
     "title": "Open Access Cost Monitoring with OpenAPC",
     "section": "loading packages",
-    "text": "loading packages\nWe will load the dplyr (Wickham et al. 2023) and tidyr (Wickham, Vaughan, and Girlich 2024) packages that provides a lot of additional functionality for data wrangling, and ggplot2 (Wickham 2016) for data visualization. All three packages are part of the tidyverse package (Wickham et al. 2019).\n\n# Installation of packages if not already installed with\n# install.packages(c(\"dplyr\",\"tidyr\",\"ggplot2\"))\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(ggplot2)"
+    "text": "loading packages\nWe will load the dplyr (Wickham et al. 2023) and tidyr (Wickham, Vaughan, and Girlich 2024) packages that provide a lot of additional functionalities for data wrangling, and ggplot2 (Wickham 2016) for data visualization. All three packages are part of the tidyverse package (Wickham et al. 2019).\n\n# Installation of packages if not already installed with\n# install.packages(c(\"dplyr\",\"tidyr\",\"ggplot2\"))\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(ggplot2)"
   },
   {
     "objectID": "OpenAPC.html#loading-data",
