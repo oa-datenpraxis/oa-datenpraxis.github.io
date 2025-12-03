@@ -70,18 +70,14 @@ OpenAPC offers comprehensive information on APC payments for participating resea
 
 ## loading packages
 
-We will load the *dplyr* package [@dplyr] that provides a lot of additional functionality for data wrangling, and *ggplot2* [@ggplot2] for data visualization.
-
-We will load the *openalexR* package [@openalexR] that allows us to query the OpenAlex API from within our notebook. We will also load the packages *dplyr*, *tidyr* and *ggplot2* that provide a lot of additional functionalities for data wrangling and visualization and are part of the *tidyverse* package [@tidyverse].
+We will load the *dplyr* [@dplyr] and *tidyr* [@tidyr] packages that provides a lot of additional functionality for data wrangling, and *ggplot2* [@ggplot2] for data visualization. All three packages are part of the *tidyverse* package [@tidyverse].
 
 
 ```{r}
 # Installation of packages if not already installed with
-# install.packages(c("openalexR","dplyr","tidyr","stringr","ggplot2"))
-library(openalexR)
+# install.packages(c("dplyr","tidyr","ggplot2"))
 library(dplyr)
 library(tidyr)
-library(stringr)
 library(ggplot2)
 ```
 
