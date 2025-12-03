@@ -39,7 +39,7 @@
     "href": "OpenAlex.html#loading-packages",
     "title": "Open Access Monitoring with OpenAlex",
     "section": "Loading packages",
-    "text": "Loading packages\nWe will load the openalexR package (Aria et al., 2024) that allows us to query the OpenAlex API from within our notebook. We will also load the packages dplyr, tidyr and ggplot2 that provide a lot of additional functionalities for data wrangling and visualization and are part of the tidyverse package (Wickham et al., 2019).\n\n# Installation of packages if not already installed with\n# install.packages(c(\"openalexR\",\"dplyr\",\"tidyr\",\"stringr\",\"ggplot2\"))\nlibrary(openalexR)\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(stringr)\nlibrary(ggplot2)"
+    "text": "Loading packages\nWe will load the openalexR package (Aria et al., 2024) that allows us to query the OpenAlex API from within our notebook. We will also load the packages dplyr (Wickham et al., 2023), tidyr (Wickham et al., 2024), stringr (Wickham, 2025) and ggplot2 (Wickham, 2016) that provide a lot of additional functionalities for data wrangling and visualization and are part of the tidyverse package (Wickham et al., 2019).\n\n# Installation of packages if not already installed with\n# install.packages(c(\"openalexR\",\"dplyr\",\"tidyr\",\"stringr\",\"ggplot2\"))\nlibrary(openalexR)\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(stringr)\nlibrary(ggplot2)"
   },
   {
     "objectID": "OpenAlex.html#loading-data",
@@ -431,7 +431,7 @@
     "href": "OpenAPC.html#loading-packages",
     "title": "Open Access Cost Monitoring with OpenAPC",
     "section": "loading packages",
-    "text": "loading packages\nWe will load the dplyr package (Wickham et al. 2023) that provides a lot of additional functionality for data wrangling, and ggplot2 (Wickham 2016) for data visualization.\nWe will load the openalexR package (Aria et al. 2024) that allows us to query the OpenAlex API from within our notebook. We will also load the packages dplyr, tidyr and ggplot2 that provide a lot of additional functionalities for data wrangling and visualization and are part of the tidyverse package (Wickham et al. 2019).\n\n# Installation of packages if not already installed with\n# install.packages(c(\"openalexR\",\"tidyverse\"))\nlibrary(openalexR)\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(ggplot2)"
+    "text": "loading packages\nWe will load the dplyr (Wickham et al. 2023) and tidyr (Wickham, Vaughan, and Girlich 2024) packages that provides a lot of additional functionality for data wrangling, and ggplot2 (Wickham 2016) for data visualization. All three packages are part of the tidyverse package (Wickham et al. 2019).\n\n# Installation of packages if not already installed with\n# install.packages(c(\"dplyr\",\"tidyr\",\"ggplot2\"))\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(ggplot2)"
   },
   {
     "objectID": "OpenAPC.html#loading-data",

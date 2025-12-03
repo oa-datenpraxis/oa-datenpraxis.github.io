@@ -2088,16 +2088,13 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <p>To answer the questions, we have retrieved APC data for <em>Charité - Universitätsmedizin Berlin</em> from the <a href="https://treemaps.openapc.net/apcdata/openapc/">OpenAPC dashboard</a>.</p>
 <p>OpenAPC offers comprehensive information on APC payments for participating research organizations. For a full documentation of all available fields, please refer to the <a href="https://github.com/OpenAPC/openapc-de/wiki/schema#openapc-data-set">OpenAPC schema</a>.</p>
 <section id="loading-packages" class="level2"><h2 class="anchored" data-anchor-id="loading-packages">loading packages</h2>
-<p>We will load the <em>dplyr</em> package <span class="citation" data-cites="dplyr">(<a href="#ref-dplyr" role="doc-biblioref">Wickham et al. 2023</a>)</span> that provides a lot of additional functionality for data wrangling, and <em>ggplot2</em> <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span> for data visualization.</p>
-<p>We will load the <em>openalexR</em> package <span class="citation" data-cites="openalexR">(<a href="#ref-openalexR" role="doc-biblioref">Aria et al. 2024</a>)</span> that allows us to query the OpenAlex API from within our notebook. We will also load the packages <em>dplyr</em>, <em>tidyr</em> and <em>ggplot2</em> that provide a lot of additional functionalities for data wrangling and visualization and are part of the <em>tidyverse</em> package <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al. 2019</a>)</span>.</p>
+<p>We will load the <em>dplyr</em> <span class="citation" data-cites="dplyr">(<a href="#ref-dplyr" role="doc-biblioref">Wickham et al. 2023</a>)</span> and <em>tidyr</em> <span class="citation" data-cites="tidyr">(<a href="#ref-tidyr" role="doc-biblioref">Wickham, Vaughan, and Girlich 2024</a>)</span> packages that provides a lot of additional functionality for data wrangling, and <em>ggplot2</em> <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span> for data visualization. All three packages are part of the <em>tidyverse</em> package <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al. 2019</a>)</span>.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold">
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Installation of packages if not already installed with</span></span>
-<span><span class="co"># install.packages(c("openalexR","dplyr","tidyr","stringr","ggplot2"))</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://docs.ropensci.org/openalexR">openalexR</a></span><span class="op">)</span></span>
+<span><span class="co"># install.packages(c("dplyr","tidyr","ggplot2"))</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyr.tidyverse.org">tidyr</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://stringr.tidyverse.org">stringr</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span></span></code></pre></div>
 <button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
 </div>
@@ -2336,9 +2333,6 @@ $ euro               &lt;dbl&gt; 4331.07, 4331.07, 4331.07, 4331.07, 4331.07, 43
 </div>
 </section></section><section id="references" class="level1"></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-openalexR" class="csl-entry" role="listitem">
-Aria, Massimo, Le Trang, Corrado Cuccurullo, Alessandra Belfiore, and June Choe. 2024. <span>“openalexR: An r-Tool for Collecting Bibliometric Data from OpenAlex.”</span> <em>The R Journal</em> 15: 167–80. <a href="https://doi.org/10.32614/RJ-2023-089">https://doi.org/10.32614/RJ-2023-089</a>.
-</div>
 <div id="ref-butler_open_2024" class="csl-entry" role="listitem">
 Butler, Leigh-Ann, Madelaine Hare, Nina Schönfelder, Eric Schares, Juan Pablo Alperin, and Stefanie Haustein. 2024. <span>“Open Dataset of Annual <span>Article</span> <span>Processing</span> <span>Charges</span> (<span>APCs</span>) of Gold and Hybrid Journals Published by <span>Elsevier</span>, <span>Frontiers</span>, <span>MDPI</span>, <span>PLOS</span>, <span>Springer</span>-<span>Nature</span> and <span>Wiley</span> 2019-2023.”</span> Harvard Dataverse. <a href="https://doi.org/10.7910/DVN/CR1MMV">https://doi.org/10.7910/DVN/CR1MMV</a>.
 </div>
@@ -2359,6 +2353,9 @@ Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino 
 </div>
 <div id="ref-dplyr" class="csl-entry" role="listitem">
 Wickham, Hadley, Romain François, Lionel Henry, Kirill Müller, and Davis Vaughan. 2023. <em>Dplyr: A Grammar of Data Manipulation</em>. <a href="https://doi.org/10.32614/CRAN.package.dplyr">https://doi.org/10.32614/CRAN.package.dplyr</a>.
+</div>
+<div id="ref-tidyr" class="csl-entry" role="listitem">
+Wickham, Hadley, Davis Vaughan, and Maximilian Girlich. 2024. <em>Tidyr: Tidy Messy Data</em>. <a href="https://doi.org/10.32614/CRAN.package.tidyr">https://doi.org/10.32614/CRAN.package.tidyr</a>.
 </div>
 </div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
