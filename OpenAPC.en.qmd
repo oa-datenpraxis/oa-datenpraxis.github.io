@@ -70,7 +70,7 @@ OpenAPC offers comprehensive information on APC payments for participating resea
 
 ## loading packages
 
-We will load the *dplyr* [@dplyr] and *tidyr* [@tidyr] packages that provides a lot of additional functionality for data wrangling, and *ggplot2* [@ggplot2] for data visualization. All three packages are part of the *tidyverse* package [@tidyverse].
+We will load the *dplyr* [@dplyr] and *tidyr* [@tidyr] packages that provide a lot of additional functionalities for data wrangling, and *ggplot2* [@ggplot2] for data visualization. All three packages are part of the *tidyverse* package [@tidyverse].
 
 
 ```{r}
