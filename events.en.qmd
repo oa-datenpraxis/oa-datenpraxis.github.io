@@ -8,4 +8,4 @@ title: "Events"
 
 ### openCost Conference, 17--19 March 2026, Hamburg
 
-#### [Poster: Recording Publication of Costs at Research Performing Organizations in Germany](events/occ26_20260318.en.qmd)
+#### [Poster: Recording Publication of Costs at Research Performing Organizations in Germany](events/occ26_20260318.qmd)
