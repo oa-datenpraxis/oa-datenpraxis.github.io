@@ -1,5 +1,5 @@
 ---
-title: Hands-on Lab <br/> How to: Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen
+title: Hands-on Lab <br/> Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen
 subtitle: 114. Bibliocon, 19--22 May 2026, Berlin
 ---
 
