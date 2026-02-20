@@ -12,6 +12,6 @@ title: "Events"
 
 ### 114. Bibliocon, 19--22 May 2026, Berlin
 
-#### [Presentation: Open-Access-Dashboards im Überblick](events/bibliocon26_20260519.en.qmd)
+#### [Presentation: Open-Access-Dashboards im Überblick](events/bibliocon26_20260519.qmd)
 
-#### [Hands-on Lab: How to: Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen](events/bibliocon26_20260520.en.qmd)
+#### [Hands-on Lab: How to: Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen](events/bibliocon26_20260520.qmd)
