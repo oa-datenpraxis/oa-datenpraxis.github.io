@@ -301,11 +301,60 @@
     "text": "Beschreibung\nDie Georg-August-Universität Göttingen hat am 28. August 2024 die „Barcelona Declaration on Open Research Information“ unterzeichnet. Damit schließt sich die Universität Göttingen namhaften internationalen Wissenschaftsakteuren an, die sich für die Öffnung von Forschungsinformationen einsetzen.\nDer Vortrag stellt zunächst die diesbezüglichen Handlungsfelder der Niedersächsischen Staats- und Universitätsbibliothek Göttingen im Sinne der Prinzipien der Barcelona Declaration kurz vor. Der Schwerpunkt des Vortrags liegt dann auf der Bewertung der Anwendbarkeit offener Metadaten wissenschaftlicher Publikationen für das Monitoring internationaler Open-Access-Transformationsverträge im Vergleich zu proprietären Bibliometriedatenbanken. Die Datenanalyse von mehr als 13.000 hybriden wissenschaftlichen Zeitschriften, die Teil eines Transformationsvertrages sind, aus den offenen Quellen Crossref und OpenAlex sowie den geschlossenen Datenbanken Web of Science und Scopus zeigt Potenziale und Lücken auf. Darauf aufbauend werden Handlungsfelder für den Ausbau offener Metadaten benannt, die Bibliotheken und Verlage im Rahmen von Verhandlungen über Open-Access-Transformationsverträge adressieren können. Insgesamt kommt Open-Access-Transformationsverträgen eine Schlüsselrolle zu, um durch die Bereitstellung offener Metadaten seitens der Verlage das Open-Access-Monitoring zu verbessern und damit den Wandel hin zu offenen Forschungsinformationen im Sinne der Barcelona Declaration zu fördern."
   },
   {
+    "objectID": "events/bibliocon26_20260520.html",
+    "href": "events/bibliocon26_20260520.html",
+    "title": "Hands-on Lab  Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen",
+    "section": "",
+    "text": "Datum: 20.05.2026\nUhrzeit: 14:00–16:00 Uhr\nSaal: Raum VIII / 8\nProgramm auf der Seite des Veranstalters"
+  },
+  {
+    "objectID": "events/bibliocon26_20260520.html#daten",
+    "href": "events/bibliocon26_20260520.html#daten",
+    "title": "Hands-on Lab  Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen",
+    "section": "",
+    "text": "Datum: 20.05.2026\nUhrzeit: 14:00–16:00 Uhr\nSaal: Raum VIII / 8\nProgramm auf der Seite des Veranstalters"
+  },
+  {
+    "objectID": "events/bibliocon26_20260520.html#beschreibung",
+    "href": "events/bibliocon26_20260520.html#beschreibung",
+    "title": "Hands-on Lab  Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen",
+    "section": "Beschreibung",
+    "text": "Beschreibung\nSie fragen sich, was, wie viel und wo Forschende Ihrer Einrichtung publizieren? In diesem Hands-on-Lab möchten wir Ihnen zeigen, wie Sie das Publikationsaufkommen an Ihrer Einrichtung erfassen können. Dazu nutzen wir OpenAlex, eine offene Quelle für Forschungsinformationen.\nIm Hands-on Lab werden wir demonstrieren, wie Sie mit Hilfe eines R-Notebooks Daten Ihrer Einrichtung anhand der ROR-ID über die OpenAlex API abfragen können. Anschließend werden wir den abgefragten Datensatz gemeinsam explorieren und für die Auswertung vorbereiten. Dabei gehen wir insbesondere auf übliche Qualitätsprobleme ein und zeigen, wie sie beseitigt werden können. Abschließend zeigen wir exemplarisch, wie sich anhand der bereinigten Daten Metriken für das Monitoring des Publikationsverhaltens an Ihrer Einrichtung berechnen lassen.\nDas Hands-on Lab ist angelehnt an interaktive Notebooks [1 & 2], die wir im Rahmen des DFG-geförderten Projekts OA Datenpraxis [3] erstellt haben, um die Verwendung offener Datenquellen für das Monitoring von Publikationsaufkommen und -kosten zu demonstrieren.\nIn der Veranstaltung führen wir Sie Schritt für Schritt durch den verwendeten Code. Darum sind Vorkenntnisse in der Programmiersprache R nicht erforderlich.\nBitte bringen Sie einen Laptop mit und erstellen Sie vorab einen kostenlosen Posit-Cloud Account [4]. Die Installation von Software ist nicht notwendig.\nGerne können Sie auch vorab Wünsche zu Metriken an uns richten, die wir dann in der Veranstaltung berechnen.\nBitte um Voranmeldung bei: dorothea.strecker@hu-berlin.de"
+  },
+  {
     "objectID": "events.html#konferenzen-tagungen",
     "href": "events.html#konferenzen-tagungen",
     "title": "Veranstaltungen",
     "section": "Konferenzen & Tagungen",
-    "text": "Konferenzen & Tagungen\n\nopenCost Konferenz, 17.–19. März 2026, Hamburg\n\nPoster: Recording Publication of Costs at Research Performing Organizations in Germany"
+    "text": "Konferenzen & Tagungen\n\nopenCost Konferenz, 17.–19. März 2026, Hamburg\n\nPoster: Recording Publication of Costs at Research Performing Organizations in Germany\n\n\n\n114. Bibliocon, 19.–22. Mai 2026, Berlin\n\nVortrag: Open-Access-Dashboards im Überblick\n\n\nHands-on Lab: How to: Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen"
+  },
+  {
+    "objectID": "events/bibliocon26_20260519.html",
+    "href": "events/bibliocon26_20260519.html",
+    "title": "Vortrag  Open-Access-Dashboards im Überblick",
+    "section": "",
+    "text": "Datum: 19.05.2026\nUhrzeit: 16:30–17:00 Uhr\nSaal: Auditorium\nProgramm auf der Seite des Veranstalters"
+  },
+  {
+    "objectID": "events/bibliocon26_20260519.html#daten",
+    "href": "events/bibliocon26_20260519.html#daten",
+    "title": "Vortrag  Open-Access-Dashboards im Überblick",
+    "section": "",
+    "text": "Datum: 19.05.2026\nUhrzeit: 16:30–17:00 Uhr\nSaal: Auditorium\nProgramm auf der Seite des Veranstalters"
+  },
+  {
+    "objectID": "events/bibliocon26_20260519.html#beschreibung",
+    "href": "events/bibliocon26_20260519.html#beschreibung",
+    "title": "Vortrag  Open-Access-Dashboards im Überblick",
+    "section": "Beschreibung",
+    "text": "Beschreibung\nMit der wachsenden Bedeutung von Open Access in der wissenschaftspolitischen Diskussion stellt sich die Frage nach dem Anteil offener Publikationen am Publikationsaufkommen wissenschaftlicher Einrichtungen, Förderorganisationen oder auch Staaten und Bundesländern. In den letzten Jahren wurden Dashboards auf nationaler, internationaler und institutioneller Ebene entwickelt, um die Entwicklung des Open-Access-Publizierens mithilfe bibliometrischer Indikatoren zu verfolgen. Im Bereich des Informationsmanagements werden Dashboards als Werkzeuge zur Visualisierung von Daten und Informationen verstanden. Solche Werkzeuge, die ihren Ursprung in den Executive Information Systems (EIS) der 1980er-Jahre haben, ermöglichen die Kommunikation von Daten und Informationen anhand definierter Indikatoren. Um einen Überblick über Open-Access-Dashboards und ihre Besonderheiten zu gewinnen, wurde im DFG-geförderten Projekt OA Datenpraxis eine Erhebung zu Open-Access-Dashboards durchgeführt. Auf Basis einer Recherche wurden im März 2025 rund 60 solcher Dashboards auf internationaler Ebene identifiziert und nach einem eigens dafür entwickelten Metadatenschema erschlossen 1. Dabei wurden die erfassten Publikationstypen, die Offenheit und Quellen der verwendeten Daten und Informationen sowie weitere Parameter der Dashboards erfasst. Ein Ergebnis dieser Untersuchung ist, dass viele dieser Dashboards nicht nur Open Access erfassen, sondern auch andere Open-Science-Praktiken wie Open Research Data und Open Research Software berücksichtigen. Der Vortrag stellt die Studie zur Datenerhebung und -analyse erstmals vor und gibt einen Einblick in den Datensatz der Open-Access-Dashboards. Darüber hinaus werden Vorschläge zur kollaborativen Weiterentwicklung der Datensammlung vorgestellt und mit den Teilnehmenden diskutiert."
+  },
+  {
+    "objectID": "events/bibliocon26_20260519.html#footnotes",
+    "href": "events/bibliocon26_20260519.html#footnotes",
+    "title": "Vortrag  Open-Access-Dashboards im Überblick",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://oa-datenpraxis.de/dashboards.html↩︎"
   },
   {
     "objectID": "events/oat25_20250919.html",
