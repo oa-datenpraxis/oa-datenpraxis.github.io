@@ -1,0 +1,39 @@
+---
+title: Hands-on Lab <br/> How to: Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen
+subtitle: 114. Bibliocon, 19.--22. Mai 2026, Berlin
+---
+
+## Daten
+
+**Datum:** 20.05.2026
+
+**Uhrzeit:** 14:00--16:00 Uhr
+
+**Saal:** Raum VIII / 8
+
+[Programm auf der Seite des Veranstalters](https://bibliocon2026.abstractserver.com/program/#/details/sessions/64)
+
+## Beschreibung
+
+Sie fragen sich, was, wie viel und wo Forschende Ihrer Einrichtung publizieren? In diesem Hands-on-Lab möchten wir Ihnen zeigen, wie Sie das Publikationsaufkommen an Ihrer Einrichtung erfassen können. Dazu nutzen wir OpenAlex, eine offene Quelle für Forschungsinformationen.
+
+Im Hands-on Lab werden wir demonstrieren, wie Sie mit Hilfe eines R-Notebooks Daten Ihrer Einrichtung anhand der ROR-ID über die OpenAlex API abfragen können. Anschließend werden wir den abgefragten Datensatz gemeinsam explorieren und für die Auswertung vorbereiten. Dabei gehen wir insbesondere auf übliche Qualitätsprobleme ein und zeigen, wie sie beseitigt werden können. Abschließend zeigen wir exemplarisch, wie sich anhand der bereinigten Daten Metriken für das Monitoring des Publikationsverhaltens an Ihrer Einrichtung berechnen lassen.
+
+Das Hands-on Lab ist angelehnt an interaktive Notebooks [1 & 2], die wir im Rahmen des DFG-geförderten Projekts OA Datenpraxis [3] erstellt haben, um die Verwendung offener Datenquellen für das Monitoring von Publikationsaufkommen und -kosten zu demonstrieren.
+
+In der Veranstaltung führen wir Sie Schritt für Schritt durch den verwendeten Code. Darum sind Vorkenntnisse in der Programmiersprache R nicht erforderlich.
+
+Bitte bringen Sie einen Laptop mit und erstellen Sie vorab einen kostenlosen Posit-Cloud Account [4]. Die Installation von Software ist nicht notwendig.
+
+Gerne können Sie auch vorab Wünsche zu Metriken an uns richten, die wir dann in der Veranstaltung berechnen.
+
+**Bitte um Voranmeldung bei:** dorothea.strecker@hu-berlin.de
+
+
+[^1]: [https://oa-datenpraxis.de/OpenAlex.html](https://oa-datenpraxis.de/OpenAlex.html)
+
+[^2]: [https://oa-datenpraxis.de/OpenAPC.html](https://oa-datenpraxis.de/OpenAPC.html)
+
+[^3]: [https://oa-datenpraxis.de/](https://oa-datenpraxis.de/)
+
+[^4]: [https://posit.cloud/plans/free](https://posit.cloud/plans/free)

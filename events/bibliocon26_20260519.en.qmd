@@ -1,0 +1,20 @@
+---
+title: Presentation <br/> Open-Access-Dashboards im Überblick
+subtitle: 114. Bibliocon, 19--22 May 2026, Berlin
+---
+
+## Dates
+
+**Date:** 19.05.2026
+
+**Time:** 16:30--17:00 CEST
+
+**Room:** Auditorium
+
+[Programme on the organiser's website](https://bibliocon2026.abstractserver.com/program/#/details/presentations/366)
+
+## Description
+
+Mit der wachsenden Bedeutung von Open Access in der wissenschaftspolitischen Diskussion stellt sich die Frage nach dem Anteil offener Publikationen am Publikationsaufkommen wissenschaftlicher Einrichtungen, Förderorganisationen oder auch Staaten und Bundesländern. In den letzten Jahren wurden Dashboards auf nationaler, internationaler und institutioneller Ebene entwickelt, um die Entwicklung des Open-Access-Publizierens mithilfe bibliometrischer Indikatoren zu verfolgen. Im Bereich des Informationsmanagements werden Dashboards als Werkzeuge zur Visualisierung von Daten und Informationen verstanden. Solche Werkzeuge, die ihren Ursprung in den Executive Information Systems (EIS) der 1980er-Jahre haben, ermöglichen die Kommunikation von Daten und Informationen anhand definierter Indikatoren. Um einen Überblick über Open-Access-Dashboards und ihre Besonderheiten zu gewinnen, wurde im DFG-geförderten Projekt OA Datenpraxis eine Erhebung zu Open-Access-Dashboards durchgeführt. Auf Basis einer Recherche wurden im März 2025 rund 60 solcher Dashboards auf internationaler Ebene identifiziert und nach einem eigens dafür entwickelten Metadatenschema erschlossen [^1]. Dabei wurden die erfassten Publikationstypen, die Offenheit und Quellen der verwendeten Daten und Informationen sowie weitere Parameter der Dashboards erfasst. Ein Ergebnis dieser Untersuchung ist, dass viele dieser Dashboards nicht nur Open Access erfassen, sondern auch andere Open-Science-Praktiken wie Open Research Data und Open Research Software berücksichtigen. Der Vortrag stellt die Studie zur Datenerhebung und -analyse erstmals vor und gibt einen Einblick in den Datensatz der Open-Access-Dashboards. Darüber hinaus werden Vorschläge zur kollaborativen Weiterentwicklung der Datensammlung vorgestellt und mit den Teilnehmenden diskutiert.
+
+[^1]: [https://oa-datenpraxis.de/dashboards.html](https://oa-datenpraxis.de/dashboards.html)

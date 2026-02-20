@@ -9,3 +9,9 @@ title: "Veranstaltungen"
 ### openCost Konferenz, 17.--19. März 2026, Hamburg
 
 #### [Poster: Recording Publication of Costs at Research Performing Organizations in Germany](events/occ26_20260318.qmd)
+
+### 114. Bibliocon, 19.--22. Mai 2026, Berlin
+
+#### [Vortrag: Open-Access-Dashboards im Überblick](events/bibliocon26_20260519.qmd)
+
+#### [Hands-on Lab: How to: Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen](events/bibliocon26_20260520.qmd)
