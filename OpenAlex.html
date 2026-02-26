@@ -80,7 +80,7 @@ div.csl-indent {
 <script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d9780382da8b79898a93cb6b4ed93f72.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5377e860c733d0f884ca658ea6183c61.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script><script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script><link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -2086,9 +2086,9 @@ Note
 <section id="the-openalex-web-user-interface" class="level2"><h2 class="anchored" data-anchor-id="the-openalex-web-user-interface">The OpenAlex web user interface</h2>
 <p>In the <a href="https://openalex.org/">web user interface</a> you are able to query the database via a search bar, apply filters and export the results in csv, ris or txt format.</p>
 </section><section id="the-openalex-api" class="level2"><h2 class="anchored" data-anchor-id="the-openalex-api">The OpenAlex API</h2>
-<p>The <a href="https://docs.openalex.org/how-to-use-the-api/api-overview">OpenAlex REST API</a> allows programmatic access to and retrieval of OpenAlex data. The API has a limit of 100,000 calls per user per day<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Though no authentication is required it is advised to add your email address to all API requests in order to get into the polite pool<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<p>The <a href="https://developers.openalex.org/api-reference/introduction">OpenAlex REST API</a> allows programmatic access to and retrieval of OpenAlex data<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. To interact with the API you are required to register an <a href="https://openalex.org/login?redirect=/settings/api-key">API key</a> as of February 2026 <span class="citation" data-cites="Priem2026">(<a href="#ref-Priem2026" role="doc-biblioref">Priem, 2026</a>)</span>. The API is designed as a freemium service; more detailed information on the pricing model is provided in the <a href="https://developers.openalex.org/api-reference/authentication">OpenAlex technical documentation</a>. However, the free daily quota is sufficient for our use case in this notebook.</p>
 </section><section id="the-openalex-data-snapshot" class="level2"><h2 class="anchored" data-anchor-id="the-openalex-data-snapshot">The OpenAlex data snapshot</h2>
-<p>OpenAlex additionally offers a <a href="https://docs.openalex.org/download-all-data/openalex-snapshot">data snapshot</a> with a copy of the complete database for download, which a user can then load into their own data warehouse or relational database. The snapshot gets updated monthly.</p>
+<p>OpenAlex additionally offers a <a href="https://developers.openalex.org/download/overview#openalex-snapshot">data snapshot</a> with a copy of the complete database for download, which a user can then load into their own data warehouse or relational database. The snapshot gets updated monthly.</p>
 </section></section><section id="exploring-openalex-institutional-open-access-data" class="level1"><h1>Exploring OpenAlex institutional open access data</h1>
 <p>In this notebook we will query the OpenAlex API with R <span class="citation" data-cites="R">(<a href="#ref-R" role="doc-biblioref">R Core Team, 2025</a>)</span> to answer the following question:</p>
 <blockquote class="blockquote">
@@ -2111,7 +2111,7 @@ Note
 <li>information on the apc list prices and</li>
 <li>information on the paid apc prices</li>
 </ul>
-<p>OpenAlex offers a lot more information than what we are exploring in this notebook. For a full documentation of all available entities and fields, please visit the <a href="https://docs.openalex.org/">OpenAlex technical documentation</a>.</p>
+<p>OpenAlex offers a lot more information than what we are exploring in this notebook. For a full documentation of all available entities and fields, please visit the <a href="https://developers.openalex.org/api-reference/introduction">OpenAlex technical documentation</a>.</p>
 <section id="loading-packages" class="level2"><h2 class="anchored" data-anchor-id="loading-packages">Loading packages</h2>
 <p>We will load the <em>openalexR</em> package <span class="citation" data-cites="openalexR">(<a href="#ref-openalexR" role="doc-biblioref">Aria et al., 2024</a>)</span> that allows us to query the OpenAlex API from within our notebook. We will also load the packages <em>dplyr</em> <span class="citation" data-cites="dplyr">(<a href="#ref-dplyr" role="doc-biblioref">Wickham et al., 2023</a>)</span>, <em>tidyr</em> <span class="citation" data-cites="tidyr">(<a href="#ref-tidyr" role="doc-biblioref">Wickham et al., 2024</a>)</span>, <em>stringr</em> <span class="citation" data-cites="stringr">(<a href="#ref-stringr" role="doc-biblioref">Wickham, 2025</a>)</span> and <em>ggplot2</em> <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham, 2016</a>)</span> that provide a lot of additional functionalities for data wrangling and visualization and are part of the <em>tidyverse</em> package <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al., 2019</a>)</span>.</p>
 <div class="cell">
@@ -2145,7 +2145,7 @@ Note
 <span>  output <span class="op">=</span> <span class="st">"tibble"</span>,</span>
 <span>  paging <span class="op">=</span> <span class="st">"cursor"</span>,</span>
 <span>  abstract <span class="op">=</span> <span class="cn">FALSE</span>,</span>
-<span>  mailto <span class="op">=</span> <span class="st">"example@domain.com"</span> <span class="co"># add your email address here to get into the polite pool</span></span>
+<span>  api_key <span class="op">=</span> <span class="st">"your_api_key"</span> <span class="co"># add your api key here</span></span>
 <span><span class="op">)</span> </span></code></pre></div>
 <button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button>
 </div>
@@ -2588,6 +2588,9 @@ $ apc                         &lt;list&gt; [&lt;data.frame[2 x 5]&gt;], [&lt;dat
 </section></section><section id="references" class="level1"></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default">
 <section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Priem2026" class="csl-entry" role="listitem">
+Priem, J. (2026, February 24). <em>New features and usage-based pricing</em>. <a href="https://blog.openalex.org/openalex-api-new-features-and-usage-based-pricing/">https://blog.openalex.org/openalex-api-new-features-and-usage-based-pricing/</a>
+</div>
 <div id="ref-scheidt2025" class="csl-entry" role="listitem">
 Scheidt, B. (2025, September 3). <em>Publisher Normalization for <span>OpenAlex</span> Data</em>. <a href="http://www.open-bibliometrics.de/posts/20250903-PublisherNormalization/">http://www.open-bibliometrics.de/posts/20250903-PublisherNormalization/</a>
 </div>
@@ -2621,7 +2624,6 @@ OurResearch. (n.d.). <em><span class="nocase">OpenAlex technical documentation</
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 <ol>
 <li id="fn1"><p>API stands for Application Programming Interface. An API call is a request made by a client to an API endpoint on a server to retrieve or send information. An API call is a way for different applications to communicate with each other. The client (e.g. you, the user) makes the request and the server sends back a response (e.g. the OpenAlex data you requested).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>OpenAlex sorts API users into two pools: the polite and the common pool. All users who identify by providing their email addresses, i.e. are being polite and telling OpenAlex who you are and how to contact you if there happens to be any problems, are sorted into the polite pool, which has more consistent response times.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol></section>
 </div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
