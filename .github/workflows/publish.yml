@@ -27,6 +27,7 @@ jobs:
           packages: |
             remotes
             posit-dev/r-shinylive
+          cache: false
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
