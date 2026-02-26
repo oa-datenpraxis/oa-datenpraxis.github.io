@@ -48,14 +48,13 @@ In the [web user interface](https://openalex.org/) you are able to query the dat
 
 ## The OpenAlex API
 
-The [OpenAlex REST API](https://docs.openalex.org/how-to-use-the-api/api-overview) allows programmatic access to and retrieval of OpenAlex data. The API has a limit of 100,000 calls per user per day[^1]. Though no authentication is required it is advised to add your email address to all API requests in order to get into the polite pool[^2]. 
+The [OpenAlex REST API](https://developers.openalex.org/api-reference/introduction) allows programmatic access to and retrieval of OpenAlex data[^1]. To interact with the API you are required to register an [API key](https://openalex.org/login?redirect=/settings/api-key) as of February 2026 [@Priem2026]. The API is designed as a freemium service; more detailed information on the pricing model is provided in the [OpenAlex technical documentation](https://developers.openalex.org/api-reference/authentication). However, the free daily quota is sufficient for our use case in this notebook.
 
 [^1]: API stands for Application Programming Interface. An API call is a request made by a client to an API endpoint on a server to retrieve or send information. An API call is a way for different applications to communicate with each other. The client (e.g. you, the user) makes the request and the server sends back a response (e.g. the OpenAlex data you requested).
-[^2]: OpenAlex sorts API users into two pools: the polite and the common pool. All users who identify by providing their email addresses, i.e. are being polite and telling OpenAlex who you are and how to contact you if there happens to be any problems, are sorted into the polite pool, which has more consistent response times. 
 
 ## The OpenAlex data snapshot
 
-OpenAlex additionally offers a [data snapshot](https://docs.openalex.org/download-all-data/openalex-snapshot) with a copy of the complete database for download, which a user can then load into their own data warehouse or relational database. The snapshot gets updated monthly. 
+OpenAlex additionally offers a [data snapshot](https://developers.openalex.org/download/overview#openalex-snapshot) with a copy of the complete database for download, which a user can then load into their own data warehouse or relational database. The snapshot gets updated monthly. 
 
 
 # Exploring OpenAlex institutional open access data
@@ -81,7 +80,7 @@ and we will limit the number of fields (or columns) returned by the API to:
 - information on the apc list prices and
 - information on the paid apc prices 
 
-OpenAlex offers a lot more information than what we are exploring in this notebook. For a full documentation of all available entities and fields, please visit the [OpenAlex technical documentation](https://docs.openalex.org/).
+OpenAlex offers a lot more information than what we are exploring in this notebook. For a full documentation of all available entities and fields, please visit the [OpenAlex technical documentation](https://developers.openalex.org/api-reference/introduction).
 
 ## Loading packages
 
@@ -118,7 +117,7 @@ df <- oa_fetch(
   output = "tibble",
   paging = "cursor",
   abstract = FALSE,
-  mailto = "example@domain.com" # add your email address here to get into the polite pool
+  api_key = "your_api_key" # add your api key here
 ) 
 ```
 
