@@ -1,0 +1,37 @@
+---
+title: OA Datenpraxis Webinar <br/> Open-Access-Reporting - Initiativen und Guidelines
+---
+
+## Daten
+
+**Datum:** 14.04.2026
+
+**Uhrzeit:** 15:00--16:00 Uhr
+
+**Ort:** Online über Zoom
+
+**Registrierung unter:** [https://hu-berlin.zoom-x.de/meeting/register/FQ0J688cRX2jkTW_S3lk0A](https://hu-berlin.zoom-x.de/meeting/register/FQ0J688cRX2jkTW_S3lk0A)
+
+## Beschreibung
+
+An dieser Paneldiskussion beteiligen sich Initiativen und Empfehlungen, die einen Bezug zum Open-Access-Reporting aufweisen. Die Veranstaltung kreist um die zentrale Frage, wie die Berichtstellung im Kontext der Open-Access-Transformation gestaltet werden kann und inwieweit eine einrichtungsübergreifende Standardisierung sinnvoll und möglich ist.
+
+An der Paneldiskussion nehmen Expert*innen teil, die sich aus verschiedenen Perspektiven mit dem Thema befasst haben:
+
+- Evgeny Bobrov (Mitinitiator der [Open Science Monitoring Initiative](https://open-science-monitoring.org/about/initiative/))
+- Stefanie Haustein (Ko-Autorin der [Guidance List for the repOrting of Bibliometric AnaLyses (GLOBAL)](https://doi.org/10.1162/QSS.a.12))
+- Bernhard Mittermaier (Ko-Autor eines [Papiers](https://doi.org/10.48440/ALLIANZOA.047) der AG Wissenschaftliches Publikationssystem, Allianz der deutschen Wissenschaftsorganisationen)
+- Fatma Rebeggiani (Redaktionsmitglied des [ersten deutschen Staatenberichts zur UNESCO-Empfehlung zu Open Science](https://www.unesco.de/dokumente-und-hintergruende/publikationen/detail/erster-deutscher-staatenbericht-zur-unesco-empfehlung-zu-open-science/#:~:text=Mit%20der%20UNESCO%20UNESCO%20UNESCO,Grundlage%20von%20Offener%20Wissenschaft%20geschaffen))
+- Nina Schönfelder (Mitarbeit am [Publikations- und Kostenmonitoring in Nordrhein-Westfalen (pkm_nrw)](https://pkm-nrw.ub.uni-bielefeld.de))
+
+Diese Veranstaltung richtet sich an Mitarbeitende in wissenschaftlichen Einrichtungen, die mit Monitoring und Berichterstattung im Kontext der Open-Access-Transformation betraut sind.
+
+### Programm
+
+Nach einer kurzen Vorstellung der Initiativen folgt eine Paneldiskussion. Im Anschluss haben Teilnehmende die Möglichkeit, Fragen zu stellen.
+
+- Begrüßung (5 Minuten)
+- Vorstellung der Initiativen durch die Panelists (35 Minuten)
+- Paneldiskussion (30 Minuten)
+- Q&A-Session(20 Minuten)
+

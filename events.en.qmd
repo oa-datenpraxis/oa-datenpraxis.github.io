@@ -3,6 +3,9 @@ title: "Events"
 ---
 ## OA Datenpraxis Webinar Series
 
+#### [27 March 2026: Open-Access-Reporting in der Praxis](events/webinar_20260327.qmd)
+
+#### [14 April 2026: Open-Access-Reporting - Initiativen und Guidelines](events/webinar_20260414.qmd)
 
 ## Conferences & Meetings
 
