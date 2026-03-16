@@ -27,9 +27,6 @@ jobs:
           packages: |
             remotes
             posit-dev/r-shinylive
-            arsenal
-            VennDiagram
-          install-remotes: true
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
