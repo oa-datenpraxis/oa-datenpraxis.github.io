@@ -29,6 +29,23 @@ jobs:
             posit-dev/r-shinylive
             openalexR
             ropensci-review-tools/babelquarto
+            arsenal
+            bslib
+            curl
+            downlit
+            DT
+            here
+            httr
+            knitr
+            plotly
+            readxl
+            rmarkdown
+            shiny
+            tidyverse
+            VennDiagram
+            viridis
+            whoami
+            xml2
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
