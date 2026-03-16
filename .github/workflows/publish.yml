@@ -27,6 +27,7 @@ jobs:
           packages: |
             remotes
             posit-dev/r-shinylive
+            openalexR
             ropensci-review-tools/babelquarto
 
       - name: Set up Quarto
