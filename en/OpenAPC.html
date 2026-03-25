@@ -5,11 +5,14 @@
 <link rel="alternate" hreflang="en" href="https://oa-datenpraxis.de/en/OpenAPC.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.36">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Dorothea Strecker">
 <title>Open Access Cost Monitoring with OpenAPC – OA Datenpraxis</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -60,7 +63,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -77,10 +79,10 @@ div.csl-right-inline {
 div.csl-indent {
   margin-left: 2em;
 }</style>
-<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-a06763021a52c43c40a351ac8b799b8f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5377e860c733d0f884ca658ea6183c61.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-83ae96184d27c285309dc4535ea60b91.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script><script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script><link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -2068,7 +2070,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header><section id="what-is-openapc" class="level1"><h1>What is OpenAPC?</h1>
 <p>OpenAPC is an initiative that aims to collect information on payments for open access publications <span class="citation" data-cites="pieper_openapc_2018">(<a href="#ref-pieper_openapc_2018" role="doc-biblioref">Pieper and Broschinski 2018</a>)</span>. The project is located at Bielefeld University Library and started ingesting data from research organizations in 2014. Although the project initially started with a focus on Germany, institutions from more than 20 countries share payment information via OpenAPC as of 2025.</p>
 <p>If research organizations are pursuing a complete transition away from the subscription model and toward open access, it is important to understand the financial dimension. However, data on open access costs are difficult to obtain. Prices listed on publisher websites can be useful to understand what publishers charge for open access publications. There are lists that collect this information and enable comprehensive analyses across multiple publishers <span class="citation" data-cites="butler_open_2024">(<a href="#ref-butler_open_2024" role="doc-biblioref">Butler et al. 2024</a>)</span>. In contrast to these price lists, OpenAPC collects information about payments research organizations made. The amounts paid can differ from prices listed on publisher websites, for example if the organization has signed an agreement with the publisher, or if a publisher grants a discount.</p>
-<p>The OpenAPC dataset shows how much money was spent to publish open access. The initiators imagine that the dataset “[can] be reused to make cash flows between research institutions and publishers more transparent.” <span class="citation" data-cites="openapc_project_nodate">(<a href="#ref-openapc_project_nodate" role="doc-biblioref">OpenAPC n.d.</a>)</span></p>
+<p>The OpenAPC dataset shows how much money was spent to publish open access. The initiators imagine that the dataset “[can] be reused to make cash flows between research institutions and publishers more transparent.” <span class="citation" data-cites="openapc_project_nodate">(<a href="#ref-openapc_project_nodate" role="doc-biblioref">OpenAPC, n.d.</a>)</span></p>
 <p>Participating in OpenAPC is voluntary. Not all institutions collect data about these payments or pass the data on to OpenAPC.</p>
 </section><section id="how-can-i-access-openapc-data" class="level1"><h1>How can I access OpenAPC data?</h1>
 <p>OpenAPC offers three main ways to access the data:</p>
@@ -2088,7 +2090,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <p>To answer the questions, we have retrieved APC data for <em>Charité - Universitätsmedizin Berlin</em> from the <a href="https://treemaps.openapc.net/apcdata/openapc/">OpenAPC dashboard</a>.</p>
 <p>OpenAPC offers comprehensive information on APC payments for participating research organizations. For a full documentation of all available fields, please refer to the <a href="https://github.com/OpenAPC/openapc-de/wiki/schema#openapc-data-set">OpenAPC schema</a>.</p>
 <section id="loading-packages" class="level2"><h2 class="anchored" data-anchor-id="loading-packages">loading packages</h2>
-<p>We will load the <em>dplyr</em> <span class="citation" data-cites="dplyr">(<a href="#ref-dplyr" role="doc-biblioref">Wickham et al. 2023</a>)</span> and <em>tidyr</em> <span class="citation" data-cites="tidyr">(<a href="#ref-tidyr" role="doc-biblioref">Wickham, Vaughan, and Girlich 2024</a>)</span> packages that provide a lot of additional functionalities for data wrangling, and <em>ggplot2</em> <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span> for data visualization. All three packages are part of the <em>tidyverse</em> package <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al. 2019</a>)</span>.</p>
+<p>We will load the <em>dplyr</em> <span class="citation" data-cites="dplyr">(<a href="#ref-dplyr" role="doc-biblioref">Wickham et al. 2023</a>)</span> and <em>tidyr</em> <span class="citation" data-cites="tidyr">(<a href="#ref-tidyr" role="doc-biblioref">Wickham et al. 2024</a>)</span> packages that provide a lot of additional functionalities for data wrangling, and <em>ggplot2</em> <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span> for data visualization. All three packages are part of the <em>tidyverse</em> package <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al. 2019</a>)</span>.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold">
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Installation of packages if not already installed with</span></span>
@@ -2332,24 +2334,24 @@ $ euro               &lt;dbl&gt; 4331.07, 4331.07, 4331.07, 4331.07, 4331.07, 43
 </div>
 </div>
 </section></section><section id="references" class="level1"></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-butler_open_2024" class="csl-entry" role="listitem">
-Butler, Leigh-Ann, Madelaine Hare, Nina Schönfelder, Eric Schares, Juan Pablo Alperin, and Stefanie Haustein. 2024. <span>“Open Dataset of Annual <span>Article</span> <span>Processing</span> <span>Charges</span> (<span>APCs</span>) of Gold and Hybrid Journals Published by <span>Elsevier</span>, <span>Frontiers</span>, <span>MDPI</span>, <span>PLOS</span>, <span>Springer</span>-<span>Nature</span> and <span>Wiley</span> 2019-2023.”</span> Harvard Dataverse. <a href="https://doi.org/10.7910/DVN/CR1MMV">https://doi.org/10.7910/DVN/CR1MMV</a>.
+Butler, Leigh-Ann, Madelaine Hare, Nina Schönfelder, Eric Schares, Juan Pablo Alperin, and Stefanie Haustein. 2024. <em>Open Dataset of Annual <span>Article</span> <span>Processing</span> <span>Charges</span> (<span>APCs</span>) of Gold and Hybrid Journals Published by <span>Elsevier</span>, <span>Frontiers</span>, <span>MDPI</span>, <span>PLOS</span>, <span>Springer</span>-<span>Nature</span> and <span>Wiley</span> 2019-2023</em>. Harvard Dataverse. <a href="https://doi.org/10.7910/DVN/CR1MMV">https://doi.org/10.7910/DVN/CR1MMV</a>.
 </div>
 <div id="ref-openapc_project_nodate" class="csl-entry" role="listitem">
-OpenAPC. n.d. <span>“Project <span>History</span>.”</span> Accessed August 29, 2025. <a href="https://www.openapc.net/history/">https://www.openapc.net/history/</a>.
+OpenAPC. n.d. <em>Project <span>History</span></em>. Accessed August 29, 2025. <a href="https://www.openapc.net/history/">https://www.openapc.net/history/</a>.
 </div>
 <div id="ref-pieper_openapc_2018" class="csl-entry" role="listitem">
 Pieper, Dirk, and Christoph Broschinski. 2018. <span>“<span>OpenAPC</span>: A Contribution to a Transparent and Reproducible Monitoring of Fee-Based Open Access Publishing Across Institutions and Nations.”</span> <em>Insights the UKSG Journal</em> 31: 39. <a href="https://doi.org/10.1629/uksg.439">https://doi.org/10.1629/uksg.439</a>.
 </div>
 <div id="ref-R" class="csl-entry" role="listitem">
-R Core Team. 2025. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
+R Core Team. 2025. <em>R: A Language and Environment for Statistical Computing</em>. R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
 </div>
 <div id="ref-ggplot2" class="csl-entry" role="listitem">
 Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.
 </div>
 <div id="ref-tidyverse" class="csl-entry" role="listitem">
-Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the <span class="nocase">tidyverse</span>.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
+Wickham, Hadley, Mara Averick, Jennifer Bryan, et al. 2019. <span>“Welcome to the <span class="nocase">tidyverse</span>.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
 </div>
 <div id="ref-dplyr" class="csl-entry" role="listitem">
 Wickham, Hadley, Romain François, Lionel Henry, Kirill Müller, and Davis Vaughan. 2023. <em>Dplyr: A Grammar of Data Manipulation</em>. <a href="https://doi.org/10.32614/CRAN.package.dplyr">https://doi.org/10.32614/CRAN.package.dplyr</a>.

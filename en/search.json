@@ -515,14 +515,14 @@
     "href": "events/webinar_20260414.html",
     "title": "OA Datenpraxis Webinar  Open-Access-Reporting - Initiativen und Guidelines",
     "section": "",
-    "text": "Date: 14.04.2026\nTime: 15:00–16:00 Uhr\nLocation: Online über Zoom\nRegistration: https://hu-berlin.zoom-x.de/meeting/register/FQ0J688cRX2jkTW_S3lk0A"
+    "text": "Date: 14.04.2026\nTime: 15:00–16:30 Uhr\nLocation: Online über Zoom\nRegistration: https://hu-berlin.zoom-x.de/meeting/register/FQ0J688cRX2jkTW_S3lk0A"
   },
   {
     "objectID": "events/webinar_20260414.html#dates",
     "href": "events/webinar_20260414.html#dates",
     "title": "OA Datenpraxis Webinar  Open-Access-Reporting - Initiativen und Guidelines",
     "section": "",
-    "text": "Date: 14.04.2026\nTime: 15:00–16:00 Uhr\nLocation: Online über Zoom\nRegistration: https://hu-berlin.zoom-x.de/meeting/register/FQ0J688cRX2jkTW_S3lk0A"
+    "text": "Date: 14.04.2026\nTime: 15:00–16:30 Uhr\nLocation: Online über Zoom\nRegistration: https://hu-berlin.zoom-x.de/meeting/register/FQ0J688cRX2jkTW_S3lk0A"
   },
   {
     "objectID": "events/webinar_20260414.html#description",
@@ -648,7 +648,7 @@
     "href": "OpenAPC.html",
     "title": "Open Access Cost Monitoring with OpenAPC",
     "section": "",
-    "text": "OpenAPC is an initiative that aims to collect information on payments for open access publications (Pieper and Broschinski 2018). The project is located at Bielefeld University Library and started ingesting data from research organizations in 2014. Although the project initially started with a focus on Germany, institutions from more than 20 countries share payment information via OpenAPC as of 2025.\nIf research organizations are pursuing a complete transition away from the subscription model and toward open access, it is important to understand the financial dimension. However, data on open access costs are difficult to obtain. Prices listed on publisher websites can be useful to understand what publishers charge for open access publications. There are lists that collect this information and enable comprehensive analyses across multiple publishers (Butler et al. 2024). In contrast to these price lists, OpenAPC collects information about payments research organizations made. The amounts paid can differ from prices listed on publisher websites, for example if the organization has signed an agreement with the publisher, or if a publisher grants a discount.\nThe OpenAPC dataset shows how much money was spent to publish open access. The initiators imagine that the dataset “[can] be reused to make cash flows between research institutions and publishers more transparent.” (OpenAPC n.d.)\nParticipating in OpenAPC is voluntary. Not all institutions collect data about these payments or pass the data on to OpenAPC."
+    "text": "OpenAPC is an initiative that aims to collect information on payments for open access publications (Pieper and Broschinski 2018). The project is located at Bielefeld University Library and started ingesting data from research organizations in 2014. Although the project initially started with a focus on Germany, institutions from more than 20 countries share payment information via OpenAPC as of 2025.\nIf research organizations are pursuing a complete transition away from the subscription model and toward open access, it is important to understand the financial dimension. However, data on open access costs are difficult to obtain. Prices listed on publisher websites can be useful to understand what publishers charge for open access publications. There are lists that collect this information and enable comprehensive analyses across multiple publishers (Butler et al. 2024). In contrast to these price lists, OpenAPC collects information about payments research organizations made. The amounts paid can differ from prices listed on publisher websites, for example if the organization has signed an agreement with the publisher, or if a publisher grants a discount.\nThe OpenAPC dataset shows how much money was spent to publish open access. The initiators imagine that the dataset “[can] be reused to make cash flows between research institutions and publishers more transparent.” (OpenAPC, n.d.)\nParticipating in OpenAPC is voluntary. Not all institutions collect data about these payments or pass the data on to OpenAPC."
   },
   {
     "objectID": "OpenAPC.html#the-github-repository",
@@ -676,7 +676,7 @@
     "href": "OpenAPC.html#loading-packages",
     "title": "Open Access Cost Monitoring with OpenAPC",
     "section": "loading packages",
-    "text": "loading packages\nWe will load the dplyr (Wickham et al. 2023) and tidyr (Wickham, Vaughan, and Girlich 2024) packages that provide a lot of additional functionalities for data wrangling, and ggplot2 (Wickham 2016) for data visualization. All three packages are part of the tidyverse package (Wickham et al. 2019).\n\n# Installation of packages if not already installed with\n# install.packages(c(\"dplyr\",\"tidyr\",\"ggplot2\"))\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(ggplot2)"
+    "text": "loading packages\nWe will load the dplyr (Wickham et al. 2023) and tidyr (Wickham et al. 2024) packages that provide a lot of additional functionalities for data wrangling, and ggplot2 (Wickham 2016) for data visualization. All three packages are part of the tidyverse package (Wickham et al. 2019).\n\n# Installation of packages if not already installed with\n# install.packages(c(\"dplyr\",\"tidyr\",\"ggplot2\"))\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(ggplot2)"
   },
   {
     "objectID": "OpenAPC.html#loading-data",
