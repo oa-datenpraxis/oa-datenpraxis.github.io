@@ -6,9 +6,17 @@ title: "Archive"
 
 ### OA Datenpraxis Webinar Series
 
-#### [28 March 2025: Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland](events/webinar_20250328.qmd)
+#### [14 April 2026: Open-Access-Reporting - Initiativen und Guidelines](events/webinar_20260414.qmd)
+
+#### [27 March 2026: Open-Access-Reporting in der Praxis](events/webinar_20260327.qmd)
 
 #### [4 April 2025: Open Metadata for University Rankings illustrated by the Leiden Ranking](events/webinar_20250404.qmd)
+
+#### [28 March 2025: Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland](events/webinar_20250328.qmd)
+
+### openCost Conference, 17--19 March 2026, Hamburg
+
+#### [Poster: Recording Publication of Costs at Research Performing Organizations in Germany](events/occ26_20260318.qmd)
 
 ### Open-Access-Tage 2025, 17--19 September 2025, Konstanz
 
