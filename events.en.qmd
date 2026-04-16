@@ -3,15 +3,7 @@ title: "Events"
 ---
 ## OA Datenpraxis Webinar Series
 
-#### [27 March 2026: Open-Access-Reporting in der Praxis](events/webinar_20260327.qmd)
-
-#### [14 April 2026: Open-Access-Reporting - Initiativen und Guidelines](events/webinar_20260414.qmd)
-
 ## Conferences & Meetings
-
-### openCost Conference, 17--19 March 2026, Hamburg
-
-#### [Poster: Recording Publication of Costs at Research Performing Organizations in Germany](events/occ26_20260318.qmd)
 
 ### 114. Bibliocon, 19--22 May 2026, Berlin
 
