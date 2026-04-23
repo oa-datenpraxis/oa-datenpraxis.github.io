@@ -227,7 +227,7 @@ venn.diagram(
 )
 ```
 
-![Venn diagram showing DOI overlap between three search strategies: (1) multiple ROR IDs, (2) single ROR ID, and (3) string-based search](doi_venn_diagram.png)
+![Venn diagram showing DOI overlap between three search strategies: (1) multiple ROR IDs, (2) single ROR ID, and (3) string-based search](notebooks/doi_venn_diagram.png)
 
 The Venn diagram reveals that *single_ror* (single ROR) is fully contained within *multi_ror* (multiple RORs). Furthermore, the diagram shows that `r length(dplyr::setdiff(dplyr::setdiff(multi_ror$doi, string_search$doi), single_ror$doi))` publications are unique to *multi_ror* — these are likely attributable to Charité – Universitätsmedizin Berlin, as they are not found in either the single-ROR or string-based searches. `r length(dplyr::setdiff(dplyr::setdiff(string_search$doi, multi_ror$doi), single_ror$doi))` publications are unique to *string_search* (string-based search), i.e. these are not captured by either ROR-based approach.
 

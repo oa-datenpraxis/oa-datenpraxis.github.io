@@ -98,7 +98,7 @@ df <- read.csv("notebooks/facts.csv")
 To get an overview of the structure of our data frame, especially the number of rows (observations) and columns (variables), the individual column names and the data types they contain, we will use the `glimpse` function from the *dplyr* package.
 
 ```{r}
-glimpse(df)
+dplyr::glimpse(df)
 ```
 The output shows that our data frame contains a total of `r formatC(n_distinct(df$doi), big.mark=",")` rows (observations) and `r ncol(df)` columns. Each row in the data frame corresponds to one APC payment.
 The output also shows that most of the column values are of data type *character* (chr), the period column values are of type *integer* (int), the is_hybrid column values are of type *logical* (lgl) and the euro column values are of type *double-precision floating-point* (dbl) - a format for decimal numbers. The output also indicates the first values of every column on the right hand side.
@@ -140,14 +140,14 @@ One of them is the `group_by` function. Here, we use it to group the dataset by 
 
 ```{r}
 df |>
-  group_by(journal_full_title) |>
-  summarise(
+  dplyr::group_by(journal_full_title) |>
+  dplyr::summarise(
     n_articles = n(),
     sum_apc = sum(euro),
     avg_apc = round(sum_apc / n_articles, 2),
     sd_apc = round(sd(euro), 2)
   ) |>
-  arrange(desc(n_articles))
+  dplyr::arrange(desc(n_articles))
 ```
 
 The results show that Charité paid APCs for 923 journals, as indicated by the number of rows. Most APC payments were made to the journals Scientific Reports, PLOS ONE, and Frontiers in Immunology. The column *sd_apc* tells us that for some journals, there is a considerable variance in APC payments.
@@ -157,7 +157,7 @@ First, we `filter` the data to focus on the three journals with the most APC pay
 
 ```{r}
 df |>
-  filter(journal_full_title %in% c("Scientific Reports", "PLOS ONE", "Frontiers in Immunology")) |>
+  dplyr::filter(journal_full_title %in% c("Scientific Reports", "PLOS ONE", "Frontiers in Immunology")) |>
   ggplot(aes(x = euro, y = journal_full_title)) +
   geom_boxplot() +
   theme_minimal()
@@ -173,8 +173,8 @@ First, we group the data by *period* ("Year of APC payment (YYYY)") and *is_hybr
 
 ```{r}
 df |>
-  group_by(period, is_hybrid) |>
-  summarise(n_articles = n()) |>
+  dplyr::group_by(period, is_hybrid) |>
+  dplyr::summarise(n_articles = n()) |>
   ggplot(aes(x = period, y = n_articles, fill = is_hybrid)) +
   geom_col() +
   theme_minimal()
@@ -211,28 +211,28 @@ Above, we analyzed APC payments by journal. Here is a copy of that code block. S
 
 ```{webr-r}
 df |>
-  group_by(journal_full_title) |>
-  summarise(
+  dplyr::group_by(journal_full_title) |>
+  dplyr::summarise(
     n_articles = n(),
     sum_apc = sum(euro),
     avg_apc = round(sum_apc / n_articles, 2),
     sd_apc = round(sd(euro), 2)
   ) |>
-  arrange(desc(n_articles))
+  dplyr::arrange(desc(n_articles))
 ```
 
 ## {{< iconify proicons:checkmark-circle >}}&ensp;Solution
 
 ```{webr-r}
 df |>
-  group_by(publisher) |>
-  summarise(
+  dplyr::group_by(publisher) |>
+  dplyr::summarise(
     n_articles = n(),
     sum_apc = sum(euro),
     avg_apc = round(sum_apc / n_articles, 2),
     sd_apc = round(sd(euro), 2)
   ) |>
-  arrange(desc(n_articles))
+  dplyr::arrange(desc(n_articles))
 ```
 
 :::
@@ -249,7 +249,7 @@ Now, see if you can adapt the code above to show you the distribution of APC pay
 
 ```{webr-r}
 df |>
-  filter(journal_full_title %in% c("Scientific Reports", "PLOS ONE", "Frontiers in Immunology")) |>
+  dplyr::filter(journal_full_title %in% c("Scientific Reports", "PLOS ONE", "Frontiers in Immunology"))  |> 
   ggplot(aes(x = euro, y = journal_full_title)) +
   geom_boxplot() +
   theme_minimal()
@@ -259,7 +259,7 @@ df |>
 
 ```{webr-r}
 df |>
-  filter(publisher %in% c("Springer Nature", "Wiley-Blackwell", "Frontiers Media SA")) |>
+  dplyr::filter(publisher %in% c("Springer Nature", "Wiley-Blackwell", "Frontiers Media SA")) |>
   ggplot(aes(x = euro, y = publisher)) +
   geom_boxplot() +
   theme_minimal()
