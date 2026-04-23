@@ -52,6 +52,27 @@ The [OpenAlex REST API](https://developers.openalex.org/api-reference/introducti
 
 [^1]: API stands for Application Programming Interface. An API call is a request made by a client to an API endpoint on a server to retrieve or send information. An API call is a way for different applications to communicate with each other. The client (e.g. you, the user) makes the request and the server sends back a response (e.g. the OpenAlex data you requested).
 
+### OpenAlex API Key
+
+To get your free API key you need to:
+
+1. Create a free account at [openalex.org](https://openalex.org/signup)
+2. Copy your API key from https://openalex.org/settings/api
+
+Best coding practice is to store credentials in your [.Renviron](https://docs.posit.co/ide/user/ide/guide/environments/r/managing-r.html#renviron) file. To add your API Key to the `.Renviron` file you go into the console and type:
+
+```zsh
+file.edit("~/.Renviron")
+```
+
+The file opens and you can store your OpenAlex API Key by typing:
+
+```zsh
+openalexR.apikey = YOUR_API_KEY
+```
+
+Then you need to save the file and are good to go.
+
 ## The OpenAlex data snapshot
 
 OpenAlex additionally offers a [data snapshot](https://developers.openalex.org/download/overview#openalex-snapshot) with a copy of the complete database for download, which a user can then load into their own data warehouse or relational database. The snapshot gets updated monthly. 
@@ -99,10 +120,14 @@ library(ggplot2)
 
 ## Loading data
 
+::: {.callout-note}
+We won't query the API in this notebook directly. We ran the API query once and stored the results in a separate file we will load into the notebook in a following code chunk.
+:::
+
 We will use the `oa_fetch` function from the openalexR package to query the OpenAlex API and store the returned *tibble* (a data frame that works well with the tidyverse) in the object *df*.
 
-```{r, eval=FALSE}
-df <- oa_fetch(
+```r
+df <- openalexR::oa_fetch(
   entity = "works",
   institutions.ror = "01y9bpm73", # change the ROR id if you want to analyse the performance of another institution
   type = "article",
@@ -116,14 +141,13 @@ df <- oa_fetch(
   )),
   output = "tibble",
   paging = "cursor",
-  abstract = FALSE,
-  api_key = "your_api_key" # add your api key here
+  abstract = FALSE
 ) 
 ```
 
-```{r}
-#| echo: false
+We have saved the query result as an rds-file, which we will now load. You can skip this step if you have adapted the notebook to investigate the publication output of your institution.
 
+```{r}
 df <- readRDS("notebooks/openalex_data.rds")
 ```
 
@@ -132,7 +156,7 @@ df <- readRDS("notebooks/openalex_data.rds")
 To get an overview of the structure of our data frame, especially the number of rows (observations) and columns (variables), the individual column names and the data types they contain, we will use the `glimpse` function from the *dplyr* package, which is part of the tidyverse. 
 
 ```{r}
-glimpse(df)
+dplyr::glimpse(df)
 ```
 
 The output shows that our data frame contains a total of `r formatC(n_distinct(df$id), big.mark=",")` rows (observations) and `r ncol(df)` columns. Furthermore, it shows that most of the column values are of data type *character* (chr), the publication year column values are of type *integer* (int), some of the open access column values are of type *logical* (lgl) and the apc column values are of type *list* (list). The output also indicates the first values of every column on the right hand side. 
@@ -169,9 +193,9 @@ The `arrange` function is used to sort the data based on the n variable and the 
 
 ```{r}
 df |>
-  group_by(host_organization, host_organization_name) |>
-  summarise(n = n()) |>
-  arrange(desc(n))
+  dplyr::group_by(host_organization, host_organization_name) |>
+  dplyr::summarise(n = n()) |>
+  dplyr::arrange(desc(n))
 ```
 
 The output shows us some important things about the data: 
@@ -183,32 +207,32 @@ As an example we will look at the publisher names in our data frame that contain
 
 ```{r}
 df |>
-  group_by(host_organization, host_organization_name) |>
-  summarise(n = n()) |>
-  arrange(desc(n)) |>
-  filter(grepl("^Springer|Nature", host_organization_name))
+  dplyr::group_by(host_organization, host_organization_name) |>
+  dplyr::summarise(n = n()) |>
+  dplyr::arrange(desc(n)) |>
+  dplyr::filter(grepl("^Springer|Nature", host_organization_name))
 ```
 
 If we want to replace the Springer name variants with *Springer Nature* as publisher name, we can use the `mutate` function that lets us transform a column in our data frame in combination with the `str_replace_all` function that lets us replace string values that follow a pattern we specify to do so. 
 
 ```{r}
 df |>
-  mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature")) |>
-  group_by(host_organization_name) |>
-  summarise(n = n()) |>
-  arrange(desc(n))
+  dplyr::mutate(host_organization_name = stringr::str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature")) |>
+  dplyr::group_by(host_organization_name) |>
+  dplyr::summarise(n = n()) |>
+  dplyr::arrange(desc(n))
 ```
 
 Be aware that this data transformation only applies to the publisher name column and not the OpenAlex provided publisher id column. We would need to perform a separate transformation step to align both. Additionally, we did not permanently rename the publisher name values in our data frame. To do this we can either override our data frame *df* or create a new data frame by assigning the output with the `<-` operator.
 
-```{r, eval=FALSE}
+```r
 # overriding our data frame
 df <- df |>
-  mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature"))
+  dplyr::mutate(host_organization_name = stringr::str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature"))
 
 # creating a new data frame df2
 df2 <- df |>
-  mutate(host_organization_name = str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature"))
+  dplyr::mutate(host_organization_name = stringr::str_replace_all(host_organization_name, "^Springer.*$|Nature.*$", "Springer Nature"))
 ```
 
 
@@ -218,26 +242,26 @@ The `unnest_wider` function allows us to turn each element of a list-column into
 
 ```{r}
 df |>
-  unnest_wider(apc, names_sep = ".") |>
-  select(starts_with("apc"))
+  tidyr::unnest_wider(apc, names_sep = ".") |>
+  dplyr::select(starts_with("apc"))
 ```
 
 The output shows that the values in the apc columns are lists. This is because OpenAlex provides information for APC list prices and prices of APCs that were actually paid, when available. To transform the lists into single value cells we will use the `unnest_longer` function that does precisely that.
 
 ```{r}
 df |>
-  unnest_wider(apc, names_sep = ".") |>
-  unnest_longer(c(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) |>
-  select(id, starts_with("apc"))
+  tidyr::unnest_wider(apc, names_sep = ".") |>
+  tidyr::unnest_longer(c(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) |>
+  dplyr::select(id, starts_with("apc"))
 ```
 
 The output shows that we now have multiple rows for the same id. To transform the data frame to single rows for each id we will use the `pivot_wider` function that allows us to increase the number of columns and decrease the number of rows.
 
 ```{r}
 df |>
-  unnest_wider(apc, names_sep = ".") |>
-  unnest_longer(c(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) |>
-  pivot_wider(id_cols = id, names_from = apc.type, values_from = c(apc.value, apc.currency, apc.value_usd, apc.provenance))
+  tidyr::unnest_wider(apc, names_sep = ".") |>
+  tidyr::unnest_longer(c(apc.type, apc.value, apc.currency, apc.value_usd, apc.provenance)) |>
+  tidyr::pivot_wider(id_cols = id, names_from = apc.type, values_from = c(apc.value, apc.currency, apc.value_usd, apc.provenance))
 ```
 
 The output doesn't show all 9 variables (or columns). Underneath the preview we get the information:
@@ -283,14 +307,14 @@ To analyse the distribution of open access articles across journals we will calc
 
 ```{r}
 df |>
-  filter(!is.na(is_oa)) |>
-  group_by(source_display_name) |>
-  summarise(
+  dplyr::filter(!is.na(is_oa)) |>
+  dplyr::group_by(source_display_name) |>
+  dplyr::summarise(
     n_articles = n(),
     n_oa_articles = sum(is_oa),
     n_closed_articles = n_articles - n_oa_articles
   ) |>
-  arrange(desc(n_oa_articles))
+  dplyr::arrange(desc(n_oa_articles))
 ```
 
 The results show that 414 articles have no journal assigned within our data frame. This could indicate that more data cleaning needs to be performed. The results further show that the top three journals in terms of open access publication volume are Scientific Reports, Astronomy and Astrophysics, and Journal of High Energy Physics. 
@@ -299,9 +323,9 @@ We can further explore the open access status distribution for the articles. We 
 
 ```{r}
 df |>
-  filter(source_display_name %in% c("Scientific Reports", "Astronomy and Astrophysics", "Journal of High Energy Physics")) |>
-  group_by(source_display_name, is_oa, oa_status) |>
-  summarise(n = n())
+  dplyr::filter(source_display_name %in% c("Scientific Reports", "Astronomy and Astrophysics", "Journal of High Energy Physics")) |>
+  dplyr::group_by(source_display_name, is_oa, oa_status) |>
+  dplyr::summarise(n = n())
 ```
 
 The results show that there are some data inconsistencies for the Astronomy and Astrophysics journal regarding the green open access status. Furthermore Scientific Reports appears to be a true gold open access journal.
@@ -314,8 +338,8 @@ First, we group the data by publication year and open access status. We will the
 
 ```{r}
 df |>
-  group_by(publication_year, oa_status) |>
-  summarise(n = n(), .groups = "keep") |>
+  dplyr::group_by(publication_year, oa_status) |>
+  dplyr::summarise(n = n(), .groups = "keep") |>
   ggplot(aes(x = publication_year, y = n)) +
   geom_line(aes(colour = oa_status)) +
   geom_point(aes(colour = oa_status)) +
@@ -328,9 +352,9 @@ We can further choose to visualise the open access distribution over time in ter
 
 ```{r}
 df |>
-  group_by(publication_year, oa_status) |>
-  summarise(count = n()) |>
-  mutate(perc = count / sum(count) * 100) |>
+  dplyr::group_by(publication_year, oa_status) |>
+  dplyr::summarise(count = n()) |>
+  dplyr::mutate(perc = count / sum(count) * 100) |>
   ggplot(aes(x = publication_year, y = perc, fill = oa_status)) +
   geom_bar(stat = "identity") +
   theme_minimal()
@@ -366,28 +390,28 @@ Before, we analysed the distribution of open access articles across journals. Be
 
 ```{webr-r}
 df |>
-  filter(!is.na(is_oa)) |>
-  group_by(source_display_name) |>
-  summarise(
+  dplyr::filter(!is.na(is_oa)) |>
+  dplyr::group_by(source_display_name) |>
+  dplyr::summarise(
     n_articles = n(),
     n_oa_articles = sum(is_oa),
     n_closed_articles = n_articles - n_oa_articles
   ) |>
-  arrange(desc(n_oa_articles))
+  dplyr::arrange(desc(n_oa_articles))
 ```
 
 ## {{< iconify proicons:checkmark-circle >}}&ensp;Solution
 
 ```{webr-r}
 df |>
-  filter(!is.na(is_oa)) |>
-  group_by(host_organization_name) |>
-  summarise(
+  dplyr::filter(!is.na(is_oa)) |>
+  dplyr::group_by(host_organization_name) |>
+  dplyr::summarise(
     n_articles = n(),
     n_oa_articles = sum(is_oa),
     n_closed_articles = n_articles - n_oa_articles
   ) |>
-  arrange(desc(n_oa_articles))
+  dplyr::arrange(desc(n_oa_articles))
 ```
 
 :::
@@ -405,9 +429,9 @@ Now, see if you can adapt the code we used to visualise the open access share ov
 
 ```{webr-r}
 df |>
-  group_by(publication_year, oa_status) |>
-  summarise(count = n()) |>
-  mutate(perc = count / sum(count) * 100) |>
+  dplyr::group_by(publication_year, oa_status) |>
+  dplyr::summarise(count = n()) |>
+  dplyr::mutate(perc = count / sum(count) * 100) |>
   ggplot(aes(x = publication_year, y = perc, fill = oa_status)) +
   geom_bar(stat = "identity") +
   theme_minimal()
@@ -421,10 +445,10 @@ df |>
 
 ```{webr-r}
 df |>
-  filter(host_organization_name %in% c("Wiley", "Elsevier BV", "Springer Science+Business Media")) |> 
-  group_by(host_organization_name, oa_status) |>
-  summarise(count = n()) |>
-  mutate(perc = count / sum(count) * 100) |>
+  dplyr::filter(host_organization_name %in% c("Wiley", "Elsevier BV", "Springer Science+Business Media")) |>
+  dplyr::group_by(host_organization_name, oa_status) |>
+  dplyr::summarise(count = n()) |>
+  dplyr::mutate(perc = count / sum(count) * 100) |>
   ggplot(aes(x = host_organization_name, y = perc, fill = oa_status)) +
   geom_bar(stat = "identity") +
   theme_minimal()

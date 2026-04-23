@@ -53,303 +53,326 @@ In this notebook, we want to explore how the inclusion / exclusion of related RO
 
 We focus on the case of [Humboldt-Universität zu Berlin](https://ror.org/01hcx6992) and [Charité -- Universitätsmedizin Berlin](https://ror.org/001w7jn25), the joint university hospital of Humboldt-Universität zu Berlin and Freie Universität Berlin. Although Charité is operationally and academically closely linked to Humboldt-Universität zu Berlin, ROR classifies their relationship as "related", not "parent/child." This distinction is critical: unlike a university department or research center (which would be a child), a "related" institution is not automatically included in a search for its partner. As a result, excluding Charité’s ROR ID from a search may lead to undercounting publications from the broader institutional ecosystem -- a key challenge for accurate institutional monitoring.
 
+We will use the OpenAlex API to investigate the publication output of these institutions. Since getting a response from the OpenAlex API can take a long time, we will show you how to load libraries and formulate the API queries but won't run the query in this notebook. Instead, we will load data that we have already retrieved from the OpenAlex API beforehand to save time. If you want to adapt the notebook for your institution, adapt and run the code blocks for querying the OpenAlex API and skip over the code blocks were we load the prepared datasets.
+
 ## Loading packages
 
-We will load the *openalexR* package [@openalexR] that allows us to query the OpenAlex API and the *tidyverse* package [@tidyverse] that provides a lot of additional functionalities for data wrangling and visualization. Additionally, we will load the *arsenal* package [@arsenal] to compare data frames, the *VennDiagram* package [@venn] to visualize data as Venn diagrams and the *DT* package [@DT] to create interactive HTML tables from tabular outputs.
+We will load the *openalexR* package [@openalexR] that allows us to query the OpenAlex API and the *tidyverse* package [@tidyverse] that provides a lot of additional functionalities for data wrangling and visualization. Additionally, we will load the *VennDiagram* package [@venn] to visualize data as Venn diagrams and the *DT* package [@DT] to create interactive HTML tables from tabular outputs.
 
 ```{r}
 library(tidyverse)
 library(openalexR)
-library(arsenal)
 library(VennDiagram)
 library(DT)
 ```
 
+## OpenAlex API Key
+
+As of February 2026, the OpenAlex API requires user to authenticate via a free API key [@Priem2026]. The API itself is designed as a freemium service; more detailed information on the pricing model is provided in the [OpenAlex technical documentation](https://developers.openalex.org/api-reference/authentication). However, the free daily quota is sufficient for our use case in this notebook.
+
+To get your free API key you need to:
+
+1. Create a free account at [openalex.org](https://openalex.org/signup)
+2. Copy your API key from https://openalex.org/settings/api
+
+Best coding practice is to store credentials in your [.Renviron](https://docs.posit.co/ide/user/ide/guide/environments/r/managing-r.html#renviron) file. To add your API Key to the `.Renviron` file you go into the console and type:
+
+```zsh
+file.edit("~/.Renviron")
+```
+
+The file opens and you can store your OpenAlex API Key by typing:
+
+```zsh
+openalexR.apikey = YOUR_API_KEY
+```
+
+Then you need to save the file and are good to go.
+
 ## ROR-based search
 
-For the ROR-based search strategy, we will query the OpenAlex API twice. Once, using both ROR IDs for Humboldt-Universität zu Berlin and Charité -- Universitätsmedizin Berlin and once using only the single ROR ID for Humboldt-Universität zu Berlin. All other parameters are set to be identical. To query the API we use the `oa_fetch` function from the openalexR package and store each returned data frame into an R object (*df1* and *df2*, respectively). 
+For the ROR-based search strategy, we will query the OpenAlex API twice. Once, using both ROR IDs for Humboldt-Universität zu Berlin and Charité -- Universitätsmedizin Berlin and once using only the single ROR ID for Humboldt-Universität zu Berlin. All other parameters are set to be identical. To query the API we use the `oa_fetch` function from the openalexR package and store each returned data frame into an R object (*multi_ror* and *single_ror*, respectively). 
 
+::: {.callout-note}
+We won't query the API in this notebook directly. We ran each API query once and stored the results in separate files we will load into the notebook in a later section.
+:::
 
-```{r, eval=FALSE}
-df1 <- oa_fetch(entity = "works", 
+```r
+multi_ror <- openalexR::oa_fetch(entity = "works", 
                institutions.ror = c("01hcx6992", "001w7jn25"), # change the ROR ids if you want to analyse the performance of other institutions
                type = "article",
                is_paratext = FALSE,
                is_retracted = FALSE,
-               from_publication_date = "2020-01-01",
-               to_publication_date = "2024-12-31",
+               from_publication_date = "2025-01-01",
+               to_publication_date = "2025-12-31",
                options = list(select = c("doi","authorships","publication_year")),
                output = "tibble", 
                paging = "cursor",
-               abstract = FALSE,
-               api_key = "your_api_key") # add your api key here
+               abstract = FALSE)
 ```
 
-```{r, eval=FALSE}
-df2 <- oa_fetch(entity = "works", 
+```r
+single_ror <- openalexR::oa_fetch(entity = "works", 
                institutions.ror = "01hcx6992", # change the ROR id if you want to analyse the performance of another institution
                type = "article",
                is_paratext = FALSE,
                is_retracted = FALSE,
-               from_publication_date = "2020-01-01",
-               to_publication_date = "2024-12-31",
+               from_publication_date = "2025-01-01",
+               to_publication_date = "2025-12-31",
                options = list(select = c("doi","authorships","publication_year")),
                output = "tibble", 
                paging = "cursor",
-               abstract = FALSE,
-               api_key = "your_api_key") # add your api key here
+               abstract = FALSE)
 ```
 
 ## String-based search
 
-For the string-based search strategy, we will query the OpenAlex API once using the string "Humboldt-Universität zu Berlin". To query the API we again use the `oa_fetch` function from the openalexR package and store the returned data frame into the R object *df3*. All other parameters are identical to the ROR-based searches.
+For the string-based search strategy, we will query the OpenAlex API once using the string "Humboldt-Universität zu Berlin". To query the API we again use the `oa_fetch` function from the openalexR package and store the returned data frame into the R object *string_search*. All other parameters are identical to the ROR-based searches.
 
 
-```{r, eval=FALSE}
-df3 <- oa_fetch(entity = "works", 
+```r
+string_search <- openalexR::oa_fetch(entity = "works", 
                raw_affiliation_strings.search = "Humboldt-Universität zu Berlin", # change the affiliation name if you want to analyse the performance of another institution
                type = "article",
                is_paratext = FALSE,
                is_retracted = FALSE,
-               from_publication_date = "2020-01-01",
-               to_publication_date = "2024-12-31",
+               from_publication_date = "2025-01-01",
+               to_publication_date = "2025-12-31",
                options = list(select = c("doi","authorships","publication_year")),
                output = "tibble", 
                paging = "cursor",
-               abstract = FALSE,
-               api_key = "your_api_key") # add your api key here
+               abstract = FALSE)
 ```
+
+## Load prepared datasets
+
+Here, we load the datasets we have retrieved from the OpenAlex API beforehand. We have saved the query results in three rds-files. Skip this step if you have adapted the notebook to investigate the publication output of your institution.
 
 ```{r}
-#| eval: false
-#| echo: false
-
-saveRDS(df1, file = "df1.rds")
-saveRDS(df2, file = "df2.rds")
-saveRDS(df3, file = "df3.rds")
+multi_ror <- readRDS(file = "notebooks/multi_ror.rds")
+single_ror <- readRDS(file = "notebooks/single_ror.rds")
+string_search <- readRDS(file = "notebooks/string_search.rds")
 ```
+
+Before we move on to analysing the datasets, we remove publications without a DOI. We do this because we need a unique identifier for comparing the elements in each set.
+
+```{r}
+multi_ror <- multi_ror |>
+  dplyr::filter(!is.na(doi)) |>
+  dplyr::distinct(doi, .keep_all = TRUE)
+
+single_ror <- single_ror |>
+  dplyr::filter(!is.na(doi)) |>
+  dplyr::distinct(doi, .keep_all = TRUE)
+
+string_search <- string_search |>
+  dplyr::filter(!is.na(doi)) |>
+  dplyr::distinct(doi, .keep_all = TRUE)
+```
+
 
 ## DOI overlap
-
-```{r}
-#| echo: false
-
-df1 <- readRDS(file = "notebooks/df1.rds")
-df2 <- readRDS(file = "notebooks/df2.rds")
-df3 <- readRDS(file = "notebooks/df3.rds")
-```
 
 To explore the impact of our different search strategies on the composition of the resulting data frames, we will first analyse the size of each data frame determined by the number of distinct DOIs using the `n_distinct` function.
 
 ```{r}
-#| echo: false
-df1 <- df1 |> 
-  filter(!is.na(doi)) |> 
-  distinct(doi, .keep_all = TRUE)
-
-df2 <- df2 |> 
-  filter(!is.na(doi)) |> 
-  distinct(doi, .keep_all = TRUE)
-
-df3 <- df3 |> 
-  filter(!is.na(doi)) |> 
-  distinct(doi, .keep_all = TRUE)
+dplyr::n_distinct(multi_ror$doi)
+dplyr::n_distinct(single_ror$doi)
+dplyr::n_distinct(string_search$doi)
 ```
 
+The output shows that the ROR-based search strategies result in data frames (*multi_ror* and *single_ror*) with more entries than the string-based search strategy (*string_search*). This result might be expected, since the first ROR-based strategy explicitly searched for publications from two institutions. Interestingly, however, the string-based search strategy and the ROR-based search strategy with the single ROR (*single_ror*) result in a different number of publications, although it might be expected that the numbers would be the same, given that searches explicitly focused on publications from Humboldt-Universität zu Berlin. 
+
+To get insight into how many observations, i.e. publications, the data frames share, we will compare the sets to see how many DOIs they have in common. We use the `intersect` function from the dplyr package to compare the sets and the `length` function to get the number of shared DOIs.
 
 ```{r}
-n_distinct(df1$doi)
-n_distinct(df2$doi)
-n_distinct(df3$doi)
+dplyr::intersect(multi_ror$doi, single_ror$doi) |> length()
 ```
 
-The output shows that the ROR-based search strategies result in data frames (*df1* and *df2*) with more entries than the string-based search strategy (*df3*). This result might be expected, since the first ROR-based strategy explicitly searched for publications from two institutions. Interestingly, however, the string-based search strategy and the ROR-based search strategy with the single ROR (*df2*) result in a different number of publications, although it might be expected that the numbers would be the same, given that searches explicitly focused on publications from Humboldt-Universität zu Berlin. 
-
-To get insight into how many observations, i.e. publications, the data frames share, we will perform pairwise comparisons of the data frames using the `comparedf` function from the arsenal package.
+For the comparison of *multi_ror* and *single_ror*, the output shows that both data frames share `r length(dplyr::intersect(multi_ror$doi, single_ror$doi))` publications, which is precisely the number of publications in our *single_ror* data frame. This is to be expected, because the search strategy resulting in *multi_ror* includes the search strategy resulting in *single_ror*. Therefore, we might assume that the `r length(dplyr::setdiff(multi_ror$doi, single_ror$doi))` publications in *multi_ror* that are not included in *single_ror* can be attributed to Charité. We will investigate if this is the case in the next section.
 
 ```{r}
-comparedf(df1, df2, by = "doi")
+dplyr::intersect(multi_ror$doi, string_search$doi) |> length()
 ```
 
-For the comparison of *df1* and *df2*, the output shows that both data frames share all variables and 21,069 publications, which is precisely the number of publications in our *df2* data frame. This is to be expected, because the search strategy resulting in *df1* includes the search strategy resulting in *df2*. Therefore, we might assume that the 18,839 publications in *df1* that are not included in *df2* can be attributed to Charité. We will investigate if this is the case in the next section.
+The comparison of *multi_ror* and *string_search* shows that both data frames share `r length(dplyr::intersect(multi_ror$doi, string_search$doi))` publications. The total size of *string_search* is `r nrow(string_search)`, therefore, the string-based search strategy adds only a limited number of publications. However, it is important to note that we applied a broader search strategy (using ROR IDs of both the university and the university hospital) to obtain *multi_ror*, whereas we only searched for "Humboldt-Universität zu Berlin" for *string_search*.
 
 ```{r}
-comparedf(df1, df3, by = "doi")
+dplyr::intersect(single_ror$doi, string_search$doi) |> length()
 ```
 
-The comparison of *df1* and *df3* shows that both data frames share all variables and 17,048 publications. The total size of *df3* is 17,742, therefore, the string-based search strategy adds only a limited number of publications. However, it is important to note that we applied a broader search strategy (using ROR IDs of both the university and the university hospital) to obtain *df1*, whereas we only searched for "Humboldt-Universität zu Berlin" for *df3*.
+Comparing *single_ror* and *string_search* shows that both data frames share `r length(dplyr::intersect(single_ror$doi, string_search$doi))` publications. The number of publications not shared by both data frames is `r length(dplyr::setdiff(single_ror$doi, string_search$doi))`. We will investigate the cause for this discrepancy further in the next section.
 
-```{r}
-comparedf(df2, df3, by = "doi")
-```
+Additionally to the pairwise comparison, the following Venn diagram displays the DOI overlap of all three data frames at the same time. To create the diagram we us the `venn.diagram` function from the VennDiagram package.
 
-Comparing *df2* and *df3* shows that both data frames share all variables and 16,900 publications. The number of publications not shared by both data frames is 5,011. We will investigate the cause further in the next section.
-
-Additionally to the pairwise comparison, the following Venn diagram aims to visualise the DOI overlap of all three data frames at the same time. To create the diagram we us the `venn.diagram` function from the VennDiagram package.
-
-```{r, eval = FALSE}
+```{r, eval=FALSE}
 venn.diagram(
-  x = list(df1$doi, df2$doi, df3$doi),
-  category.names = c("multiple ROR" , "single ROR" , "string"),
-  filename = 'doi_venn_diagram.png',
-  output=TRUE,
-          imagetype="png" ,
-          height = 750 , 
-          width = 750 , 
-          resolution = 300,
-          compression = "lzw",
-          lwd = 1,
-          col=c("#1E88E5", '#004D40', '#FFC107'),
-          fill = c(alpha("#1E88E5",0.3), alpha('#004D40',0.3), alpha('#FFC107',0.3)),
-          cex = 0.5,
-          fontfamily = "sans",
-          cat.cex = 0.3,
-          cat.default.pos = "outer",
-          cat.pos = c(-27, 27, 130),
-          cat.dist = c(0.085, 0.085, 0.085),
-          cat.fontfamily = "sans",
-          cat.col = c("#1E88E5", '#004D40', '#FFC107'),
-          rotation = 1
+  x = list(multi_ror$doi, single_ror$doi, string_search$doi),
+  category.names = c("multiple ROR", "single ROR", "string"),
+  filename = "doi_venn_diagram.png",
+  output = TRUE,
+  imagetype = "png",
+  height = 750,
+  width = 750,
+  resolution = 300,
+  compression = "lzw",
+  lwd = 1,
+  col = c("#1E88E5", "#004D40", "#FFC107"),
+  fill = c(alpha("#1E88E5", 0.3), alpha("#004D40", 0.3), alpha("#FFC107", 0.3)),
+  cex = 0.5,
+  fontfamily = "sans",
+  cat.cex = 0.3,
+  cat.default.pos = "outer",
+  cat.pos = c(-27, 27, 130),
+  cat.dist = c(0.085, 0.085, 0.085),
+  cat.fontfamily = "sans",
+  cat.col = c("#1E88E5", "#004D40", "#FFC107"),
+  rotation = 1
 )
 ```
 
-![Venn diagram showing DOI overlap between three search strategies: (1) multiple ROR IDs, (2) single ROR ID, and (3) string-based search](notebooks/doi_venn_diagram.png)
+![Venn diagram showing DOI overlap between three search strategies: (1) multiple ROR IDs, (2) single ROR ID, and (3) string-based search](doi_venn_diagram.png)
 
-The Venn diagram reveals that *df2* (single ROR) is fully contained within *df1* (multiple RORs). Furthermore, the diagram shows that 18,691 publications are unique to *df1* — these are likely attributable to Charité – Universitätsmedizin Berlin, as they are not found in either the single-ROR or string-based searches. 694 publications are unique to *df3* (string-based search), i.e. these are not captured by either ROR-based approach.
+The Venn diagram reveals that *single_ror* (single ROR) is fully contained within *multi_ror* (multiple RORs). Furthermore, the diagram shows that `r length(dplyr::setdiff(dplyr::setdiff(multi_ror$doi, string_search$doi), single_ror$doi))` publications are unique to *multi_ror* — these are likely attributable to Charité – Universitätsmedizin Berlin, as they are not found in either the single-ROR or string-based searches. `r length(dplyr::setdiff(dplyr::setdiff(string_search$doi, multi_ror$doi), single_ror$doi))` publications are unique to *string_search* (string-based search), i.e. these are not captured by either ROR-based approach.
 
 ## Set differences
 
-To understand the real-world implications of the differences between our three data frames — especially the 18,691 publications unique to *df1* and the 694 unique to *df3* — we now examine the affiliation data behind these sets. This analysis helps to understand if our assumptions are correct and the unique publications in *df1* are truly from Charité – Universitätsmedizin Berlin and the unique publications in *df3* are affiliated with Humboldt-Universität zu Berlin. 
+To understand the real-world implications of the differences between our three data frames — especially the 18,691 publications unique to *multi_ror* and the `r length(dplyr::setdiff(dplyr::setdiff(string_search$doi, multi_ror$doi), single_ror$doi))` unique to *string_search* — we now examine the affiliation data behind these sets. This analysis helps to understand if our assumptions are correct and the unique publications in *multi_ror* are truly from Charité – Universitätsmedizin Berlin and the unique publications in *string_search* are affiliated with Humboldt-Universität zu Berlin. 
 
-To this end, we use the `anti_join` function from the tidyverse package to partition the datasets into non-overlapping groups, isolating publications that are unique to each strategy. We nest two `anti_join` functions to create *df1_unique*, which includes publications that are unique to *df1*, and a single `anti_join` function to create *df3_unique*.
+To this end, we use the `anti_join` function from the tidyverse package to partition the datasets into non-overlapping groups, isolating publications that are unique to each strategy. We nest two `anti_join` functions to create *multi_ror_unique*, which includes publications that are unique to *multi_ror*, and a single `anti_join` function to create *string_search_unique*.
 
 ```{r}
-df1_unique <- anti_join(anti_join(df1, df3, by = "doi"), df2, by = "doi")
-df3_unique <- anti_join(df3, df1, by = "doi")
+multi_ror_unique <- dplyr::anti_join(
+  dplyr::anti_join(multi_ror, string_search, by = "doi"),
+  single_ror,
+  by = "doi"
+)
+
+string_search_unique <- dplyr::anti_join(string_search, multi_ror, by = "doi")
 ```
 
-We begin by exploring the affiliation records of the 18,691 publications in *df1_unique*. To do this, we need to unnest the *authorships* column to access affiliation data, because publications can have multiple authors that are affiliated with different institutions. Then, we will find all affiliations that contain the string "Berlin" and count the number of times each institution appears in the data frame.
+We begin by exploring the affiliation records of the `r nrow(multi_ror_unique)` publications in *multi_ror_unique*. To do this, we need to unnest the *authorships* column to access affiliation data, because publications can have multiple authors that are affiliated with different institutions. Then, we will find all affiliations that contain the string "Berlin" and count the number of times each institution appears in the data frame.
 
 ```{r}
-df1_unique |> 
-  select(authorships, doi) |> 
-  unnest(authorships) |> 
-  unnest(affiliations, names_sep = "_") |> 
-  select(doi, affiliations_display_name, affiliation_raw) |> 
-  filter(str_detect(affiliations_display_name, "Berlin")) |> 
-  group_by(affiliations_display_name) |> 
-  summarise(n = n()) |> 
-  arrange(desc(n)) |> 
-  datatable()
+multi_ror_unique |>
+  dplyr::select(authorships, doi) |>
+  tidyr::unnest(authorships) |>
+  tidyr::unnest(affiliations, names_sep = "_") |>
+  dplyr::select(doi, affiliations_display_name, affiliation_raw) |>
+  dplyr::filter(str_detect(affiliations_display_name, "Berlin")) |>
+  dplyr::group_by(affiliations_display_name) |>
+  dplyr::summarise(n = n()) |>
+  dplyr::arrange(desc(n)) |>
+  DT::datatable()
 ```
 
-The output shows that the most common affiliation in *df1_unique* is Charité - Universitätsmedizin Berlin. Notably, Humboldt-Universität zu Berlin does not appear as an affiliation string in any of these publications. This provides strong evidence that publications unique to *df1* are introduced by the inclusion of Charité’s ROR ID in the search. The second most common affiliation listed is the [Berlin Instiute of Health](https://ror.org/0493xsw21), a child organization of Charité with a separate ROR ID.
+The output shows that the most common affiliation in *multi_ror_unique* is Charité - Universitätsmedizin Berlin. Notably, Humboldt-Universität zu Berlin does not appear as an affiliation string in any of these publications. This provides strong evidence that publications unique to *multi_ror* are introduced by the inclusion of Charité’s ROR ID in the search. The second most common affiliation listed is the [Berlin Instiute of Health](https://ror.org/0493xsw21), a child organization of Charité with a separate ROR ID.
 
-Next, we want to confirm that all 18,691 publications in *df1_unique* are genuinely affiliated with Charité. We filter for the exact display name "Charité – Universitätsmedizin Berlin", count the number of distinct DOIs in the filtered set, and compare it to the number of publications *df1_unique*.
+Next, we want to confirm that all `r nrow(multi_ror_unique)` publications in *multi_ror_unique* are genuinely affiliated with Charité. We filter for the exact display name "Charité – Universitätsmedizin Berlin", count the number of distinct DOIs in the filtered set, and compare it to the number of publications *multi_ror_unique*.
 
 ```{r}
-n_distinct(df1_unique$doi)
+dplyr::n_distinct(multi_ror_unique$doi)
 
-df1_unique |> 
-  select(authorships, doi) |> 
-  unnest(authorships) |> 
-  unnest(affiliations, names_sep = "_") |> 
-  select(doi, affiliations_display_name, affiliation_raw) |> 
-  filter(str_detect(affiliations_display_name, "Charité - Universitätsmedizin Berlin")) |> 
-  summarise(n_doi = n_distinct(doi)) |> 
-  pull(n_doi)
+multi_ror_unique |>
+  dplyr::select(authorships, doi) |>
+  tidyr::unnest(authorships) |>
+  tidyr::unnest(affiliations, names_sep = "_") |>
+  dplyr::select(doi, affiliations_display_name, affiliation_raw) |>
+  dplyr::filter(str_detect(affiliations_display_name, "Charité - Universitätsmedizin Berlin")) |>
+  dplyr::summarise(n_doi = dplyr::n_distinct(doi)) |>
+  dplyr::pull(n_doi)
 ```
 
-The output shows that the counts are identical. This means that each of the 18,691 publications in *df1_unique* has Charité listed at least once as an affiliation, confirming that the publications unique to *df1* are truly from Charité.
+The output shows that the counts are identical. This means that each of the `r nrow(multi_ror_unique)` publications in *multi_ror_unique* has Charité listed at least once as an affiliation, confirming that the publications unique to *multi_ror* are truly from Charité.
 
-Since *df2* is a proper subset of *df1*, we will now explore the affiliation records for all publications of *df2*. The analysis steps are the same as for *df1_unique*: we unnest authorship data, extract affiliations, and count.
+Since *single_ror* is a proper subset of *multi_ror*, we will now explore the affiliation records for all publications of *single_ror*. The analysis steps are the same as for *multi_ror_unique*: we unnest authorship data, extract affiliations, and count.
 
 ```{r}
-df2 |> 
-  select(authorships, doi) |> 
-  unnest(authorships) |> 
-  unnest(affiliations, names_sep = "_") |> 
-  select(doi, affiliations_display_name, affiliation_raw) |> 
-  filter(str_detect(affiliations_display_name, "Berlin")) |> 
-  group_by(affiliations_display_name) |> 
-  summarise(n = n()) |> 
-  arrange(desc(n)) |> 
-  datatable()
+single_ror |>
+  dplyr::select(authorships, doi) |>
+  tidyr::unnest(authorships) |>
+  tidyr::unnest(affiliations, names_sep = "_") |>
+  dplyr::select(doi, affiliations_display_name, affiliation_raw) |>
+  dplyr::filter(str_detect(affiliations_display_name, "Berlin")) |>
+  dplyr::group_by(affiliations_display_name) |>
+  dplyr::summarise(n = n()) |>
+  dplyr::arrange(desc(n)) |>
+  DT::datatable()
 ```
 
-The output shows that the most common affiliation listed for publications in *df2* is Humboldt-Universität zu Berlin. Notably, Charité - Universitätsmedizin Berlin is the second most common affiliation. This indicates that the publications in *df2* are attributable to the inclusion of the ROR ID of Humboldt-Universität zu Berlin in the search. The strong representation of Charité in *df2* could indicate that many publications involve co-authorship with Charité.
+The output shows that the most common affiliation listed for publications in *single_ror* is Humboldt-Universität zu Berlin. Notably, Charité - Universitätsmedizin Berlin is the second most common affiliation. This indicates that the publications in *single_ror* are attributable to the inclusion of the ROR ID of Humboldt-Universität zu Berlin in the search. The strong representation of Charité in *single_ror* could indicate that many publications involve co-authorship with Charité.
 
-To confirm that all publications in *df2* are genuinely affiliated with the university, we filter for the exact display name "Humboldt-Universität zu Berlin", count the number of distinct DOIs in the filtered set, and compare it to the number of publications in *df2*. Additionally, we filter for the display name "Charité – Universitätsmedizin Berlin" and compare the count of distinct DOIs to check how many publications might be the result of collaboration between both institutions.
+To confirm that all publications in *single_ror* are genuinely affiliated with the university, we filter for the exact display name "Humboldt-Universität zu Berlin", count the number of distinct DOIs in the filtered set, and compare it to the number of publications in *single_ror*. Additionally, we filter for the display name "Charité – Universitätsmedizin Berlin" and compare the count of distinct DOIs to check how many publications might be the result of collaboration between both institutions.
 
 ```{r}
-n_distinct(df2$doi)
+dplyr::n_distinct(single_ror$doi)
 
-df2 |> 
-  select(authorships, doi) |> 
-  unnest(authorships) |> 
-  unnest(affiliations, names_sep = "_") |> 
-  select(doi, affiliations_display_name, affiliation_raw) |> 
-  filter(str_detect(affiliations_display_name, "Humboldt-Universität zu Berlin")) |> 
-  summarise(n_doi = n_distinct(doi)) |> 
-  pull(n_doi)
+single_ror |>
+  dplyr::select(authorships, doi) |>
+  tidyr::unnest(authorships) |>
+  tidyr::unnest(affiliations, names_sep = "_") |>
+  dplyr::select(doi, affiliations_display_name, affiliation_raw) |>
+  dplyr::filter(str_detect(affiliations_display_name, "Humboldt-Universität zu Berlin")) |>
+  dplyr::summarise(n_doi = dplyr::n_distinct(doi)) |>
+  dplyr::pull(n_doi)
 
-df2 |> 
-  select(authorships, doi) |> 
-  unnest(authorships) |> 
-  unnest(affiliations, names_sep = "_") |> 
-  select(doi, affiliations_display_name, affiliation_raw) |> 
-  filter(str_detect(affiliations_display_name, "Charité - Universitätsmedizin Berlin")) |> 
-  summarise(n_doi = n_distinct(doi)) |> 
-  pull(n_doi)
+single_ror |>
+  dplyr::select(authorships, doi) |>
+  tidyr::unnest(authorships) |>
+  tidyr::unnest(affiliations, names_sep = "_") |>
+  dplyr::select(doi, affiliations_display_name, affiliation_raw) |>
+  dplyr::filter(str_detect(affiliations_display_name, "Charité - Universitätsmedizin Berlin")) |>
+  dplyr::summarise(n_doi = dplyr::n_distinct(doi)) |>
+  dplyr::pull(n_doi)
 ```
 
-The output shows that all publications are genuienly affiliated with Humboldt-Universität zu Berlin. `r round(9164 / 21069, 2)` % of publications originated from co-authorship of Humboldt-Universität zu Berlin and Charité. 
+The output shows that all publications are genuinely affiliated with Humboldt-Universität zu Berlin. `r round(dplyr::n_distinct(single_ror$doi) / single_ror |> dplyr::select(authorships, doi) |> tidyr::unnest(authorships) |>  tidyr::unnest(affiliations, names_sep = "_") |> dplyr::select(doi, affiliations_display_name, affiliation_raw) |> dplyr::filter(str_detect(affiliations_display_name, "Charité - Universitätsmedizin Berlin")) |> dplyr::summarise(n_doi = dplyr::n_distinct(doi)) |> dplyr::pull(n_doi), 2)` % of publications are affiliated with both Humboldt-Universität zu Berlin and Charité. This could be a result of co-authorship, or authors being affiliated with both institutions.
 
-Finally, we repeat the analysis of affiliations for the 694 publications in *df3_unique*. The steps are the same as for before: we unnest authorship data, extract affiliations, and count.
+Finally, we repeat the analysis of affiliations for the `r dplyr::n_distinct(string_search_unique$doi)` publications in *string_search_unique*. The steps are the same as for before: we unnest authorship data, extract affiliations, and count.
 
 ```{r}
-df3_unique |> 
-  select(authorships, doi) |> 
-  unnest(authorships) |> 
-  unnest(affiliations, names_sep = "_") |> 
-  select(doi, affiliations_display_name, affiliation_raw) |> 
-  filter(str_detect(affiliations_display_name, "Berlin")) |> 
-  group_by(affiliations_display_name) |> 
-  summarise(n = n()) |> 
-  arrange(desc(n)) |> 
-  datatable()
+string_search_unique |>
+  dplyr::select(authorships, doi) |>
+  tidyr::unnest(authorships) |>
+  tidyr::unnest(affiliations, names_sep = "_") |>
+  dplyr::select(doi, affiliations_display_name, affiliation_raw) |>
+  dplyr::filter(str_detect(affiliations_display_name, "Berlin")) |>
+  dplyr::group_by(affiliations_display_name) |>
+  dplyr::summarise(n = n()) |>
+  dplyr::arrange(desc(n)) |>
+  DT::datatable()
 ```
 
-The results show that neither Humboldt-Universität zu Berlin nor Charité – Universitätsmedizin Berlin appear as affiliations in any of the 694 publications unique to *df3*. Instead, the Berlin Institute of Health (BIH) — a child institution of Charité — is the most frequently listed affiliation. Since *df3* results from a string-based search for "Humboldt-Universität zu Berlin" in raw affiliation strings, we now investigate why these publications were included — particularly those listing BIH as an affiliation. This helps us determine whether the string-based search is capturing legitimate publications from Humboldt-Universität zu Berlin or generating false positives due to ambiguous or overlapping names.
+The results show that neither Humboldt-Universität zu Berlin nor Charité – Universitätsmedizin Berlin appear as affiliations in any of the `r dplyr::n_distinct(string_search_unique$doi)` publications unique to *string_search*. Instead, the Berlin Institute of Health (BIH) — a child institution of Charité — is the most frequently listed affiliation. Since *string_search* results from a string-based search for "Humboldt-Universität zu Berlin" in raw affiliation strings, we now investigate why these publications were included — particularly those listing BIH as an affiliation. This helps us determine whether the string-based search is capturing legitimate publications from Humboldt-Universität zu Berlin or generating false positives due to ambiguous or overlapping names.
 
-To assess the extent of this issue, we first determine how many of the 694 publications in *df3_unique* list Berlin Institute of Health as an affiliation.
+To assess the extent of this issue, we first determine how many of the `r dplyr::n_distinct(string_search_unique$doi)` publications in *string_search_unique* list Berlin Institute of Health as an affiliation.
 
 ```{r}
-n_distinct(df3_unique$doi)
+dplyr::n_distinct(string_search_unique$doi)
 
-df3_unique |> 
-  select(authorships, doi) |> 
-  unnest(authorships) |> 
-  unnest(affiliations, names_sep = "_") |> 
-  select(doi, affiliations_display_name, affiliation_raw) |> 
-  filter(str_detect(affiliations_display_name, "Berlin Institute of Health at Charité - Universitätsmedizin Berlin")) |> 
-  summarise(n_doi = n_distinct(doi)) |> 
-  pull(n_doi)
+string_search_unique |>
+  dplyr::select(authorships, doi) |>
+  tidyr::unnest(authorships) |>
+  tidyr::unnest(affiliations, names_sep = "_") |>
+  dplyr::select(doi, affiliations_display_name, affiliation_raw) |>
+  dplyr::filter(str_detect(affiliations_display_name, "Berlin Institute of Health at Charité - Universitätsmedizin Berlin")) |>
+  dplyr::summarise(n_doi = dplyr::n_distinct(doi)) |>
+  dplyr::pull(n_doi)
 ```
 
-While BIH is the most common affiliation, it appears in only a small fraction of the unique *df3* publications. This suggests that most of the 694 publications were included due to other reasons — for example because they include the string "Berlin".
+While BIH is the most common affiliation, it appears in only a small fraction of the unique *string_search* publications. This suggests that most of the `r dplyr::n_distinct(string_search_unique$doi)` publications were included due to other reasons — for example because they include the string "Berlin".
 
 
-To understand why these 694 publications were included in *df3*, we examine the raw affiliation strings for the 44 publications where BIH appears.
+To understand why these `r dplyr::n_distinct(string_search_unique$doi)` publications were included in *string_search*, we examine the raw affiliation strings for the publications where BIH appears.
 
 ```{r}
-df3_unique |> 
-  select(authorships, doi) |> 
-  unnest(authorships) |> 
-  unnest(affiliations, names_sep = "_") |> 
-  select(doi, affiliations_display_name, affiliation_raw) |> 
-  filter(str_detect(affiliations_display_name, "Berlin Institute of Health at Charité - Universitätsmedizin Berlin")) |> 
-  datatable()
+string_search_unique |>
+  dplyr::select(authorships, doi) |>
+  tidyr::unnest(authorships) |>
+  tidyr::unnest(affiliations, names_sep = "_") |>
+  dplyr::select(doi, affiliations_display_name, affiliation_raw) |>
+  dplyr::filter(str_detect(affiliations_display_name, "Berlin Institute of Health at Charité - Universitätsmedizin Berlin")) |>
+  DT::datatable()
 ```
 
 The results reveal two main patterns: Several affiliation strings include "Corporate Member of Freie Universität Berlin, Humboldt-Universität zu Berlin", a phrase that explicitly contains the search term "Humboldt-Universität zu Berlin". Others list only "Berlin" or "Charité – Universitätsmedizin Berlin", which may match the search string due to partial or contextual matching, even though the institution is not Humboldt-Universität zu Berlin.

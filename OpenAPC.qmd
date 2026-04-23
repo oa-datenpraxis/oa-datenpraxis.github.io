@@ -90,12 +90,6 @@ library(ggplot2)
 We will load the csv file downloaded from the OpenAPC dashboard and store it in the object *df*.
 
 ```{r}
-#| eval: false
-df <- read.csv("facts.csv")
-```
-
-```{r}
-#| echo: false
 df <- read.csv("notebooks/facts.csv")
 ```
 
