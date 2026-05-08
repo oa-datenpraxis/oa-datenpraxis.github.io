@@ -239,7 +239,7 @@ df |>
 
 Which publishers received the highest amount of APC payments from Charité? Do you notice any interesting patterns?
 
-## 2. Visuzlization of APC distribution by publisher
+## 2. Visualization of APC distribution by publisher
 
 Now, see if you can adapt the code above to show you the distribution of APC payments by publisher.
 
