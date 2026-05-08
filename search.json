@@ -665,11 +665,11 @@
     "text": "1. Aggregate statistics for publishers\nAbove, we analyzed APC payments by journal. Here is a copy of that code block. See if you can adapt it to give you aggregate statistics for publishers instead.\n\n\n Interactive editor\n Solution\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nWhich publishers received the highest amount of APC payments from Charité? Do you notice any interesting patterns?"
   },
   {
-    "objectID": "OpenAPC.html#visuzlization-of-apc-distribution-by-publisher",
-    "href": "OpenAPC.html#visuzlization-of-apc-distribution-by-publisher",
+    "objectID": "OpenAPC.html#visualization-of-apc-distribution-by-publisher",
+    "href": "OpenAPC.html#visualization-of-apc-distribution-by-publisher",
     "title": "Open Access Cost Monitoring with OpenAPC",
-    "section": "2. Visuzlization of APC distribution by publisher",
-    "text": "2. Visuzlization of APC distribution by publisher\nNow, see if you can adapt the code above to show you the distribution of APC payments by publisher.\n\n\n Interactive editor\n Solution\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "section": "2. Visualization of APC distribution by publisher",
+    "text": "2. Visualization of APC distribution by publisher\nNow, see if you can adapt the code above to show you the distribution of APC payments by publisher.\n\n\n Interactive editor\n Solution\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "index.html",
