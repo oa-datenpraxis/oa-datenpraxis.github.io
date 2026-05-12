@@ -280,95 +280,46 @@
     "text": "Footnotes\n\n\nhttps://oa-datenpraxis.de/↩︎\nhttps://openalex.org/↩︎\nhttps://posit.cloud/plans/free↩︎"
   },
   {
-    "objectID": "events/webinar_20260414.html",
-    "href": "events/webinar_20260414.html",
-    "title": "OA Datenpraxis Webinar  Open-Access-Reporting - Initiativen und Guidelines",
+    "objectID": "events/webinar_20260701.html",
+    "href": "events/webinar_20260701.html",
+    "title": "OA Datenpraxis Webinar  How to - Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen",
     "section": "",
-    "text": "Datum: 14.04.2026\nUhrzeit: 15:00–16:30 Uhr\nOrt: Online über Zoom\nRegistrierung unter: https://hu-berlin.zoom-x.de/meeting/register/FQ0J688cRX2jkTW_S3lk0A"
+    "text": "Datum: 01.07.2026\nUhrzeit: 10:00–12:00 Uhr\nOrt: Online über Zoom\nRegistrierung unter: https://hu-berlin.zoom-x.de/meeting/register/GPbfrtfySsWJUyCbWxt2qw (Beschränkt auf 30 Teilnehmende)"
   },
   {
-    "objectID": "events/webinar_20260414.html#daten",
-    "href": "events/webinar_20260414.html#daten",
-    "title": "OA Datenpraxis Webinar  Open-Access-Reporting - Initiativen und Guidelines",
+    "objectID": "events/webinar_20260701.html#daten",
+    "href": "events/webinar_20260701.html#daten",
+    "title": "OA Datenpraxis Webinar  How to - Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen",
     "section": "",
-    "text": "Datum: 14.04.2026\nUhrzeit: 15:00–16:30 Uhr\nOrt: Online über Zoom\nRegistrierung unter: https://hu-berlin.zoom-x.de/meeting/register/FQ0J688cRX2jkTW_S3lk0A"
+    "text": "Datum: 01.07.2026\nUhrzeit: 10:00–12:00 Uhr\nOrt: Online über Zoom\nRegistrierung unter: https://hu-berlin.zoom-x.de/meeting/register/GPbfrtfySsWJUyCbWxt2qw (Beschränkt auf 30 Teilnehmende)"
   },
   {
-    "objectID": "events/webinar_20260414.html#beschreibung",
-    "href": "events/webinar_20260414.html#beschreibung",
-    "title": "OA Datenpraxis Webinar  Open-Access-Reporting - Initiativen und Guidelines",
+    "objectID": "events/webinar_20260701.html#beschreibung",
+    "href": "events/webinar_20260701.html#beschreibung",
+    "title": "OA Datenpraxis Webinar  How to - Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen",
     "section": "Beschreibung",
-    "text": "Beschreibung\nAn dieser Paneldiskussion beteiligen sich Initiativen und Empfehlungen, die einen Bezug zum Open-Access-Reporting aufweisen. Die Veranstaltung kreist um die zentrale Frage, wie die Berichtstellung im Kontext der Open-Access-Transformation gestaltet werden kann und inwieweit eine einrichtungsübergreifende Standardisierung sinnvoll und möglich ist.\nAn der Paneldiskussion nehmen Expert*innen teil, die sich aus verschiedenen Perspektiven mit dem Thema befasst haben:\n\nEvgeny Bobrov (Mitinitiator der Open Science Monitoring Initiative)\nStefanie Haustein (Ko-Autorin der Guidance List for the repOrting of Bibliometric AnaLyses (GLOBAL))\nBernhard Mittermaier (Ko-Autor eines Papiers der AG Wissenschaftliches Publikationssystem, Allianz der deutschen Wissenschaftsorganisationen)\nFatma Rebeggiani (Redaktionsmitglied des ersten deutschen Staatenberichts zur UNESCO-Empfehlung zu Open Science)\nNina Schönfelder (Mitarbeit am Publikations- und Kostenmonitoring in Nordrhein-Westfalen (pkm_nrw))\n\nDiese Veranstaltung richtet sich an Mitarbeitende in wissenschaftlichen Einrichtungen, die mit Monitoring und Berichterstattung im Kontext der Open-Access-Transformation betraut sind.\n\nProgramm\nNach einer kurzen Vorstellung der Initiativen folgt eine Paneldiskussion. Im Anschluss haben Teilnehmende die Möglichkeit, Fragen zu stellen.\n\nBegrüßung (5 Minuten)\nVorstellung der Initiativen durch die Panelists (35 Minuten)\nPaneldiskussion (30 Minuten)\nQ&A-Session(20 Minuten)"
+    "text": "Beschreibung\nSie fragen sich, was, wie viel und wo Forschende Ihrer Einrichtung publizieren? In diesem Webinar möchten wir Ihnen zeigen, wie Sie das Publikationsaufkommen an Ihrer Einrichtung erfassen können. Dazu nutzen wir OpenAlex, eine offene Quelle für Forschungsinformationen. Wir demonstrieren, wie Sie mit Hilfe eines R-Notebooks Daten Ihrer Einrichtung anhand der ROR-ID über die OpenAlex API abfragen können. Anschließend werden wir den abgefragten Datensatz gemeinsam explorieren und für die Auswertung vorbereiten. Dabei gehen wir exemplarisch auf das Qualitätsproblem der variierenden Ansetzung von Verlagsnamen ein und zeigen, wie es adressiert werden kann. Abschließend zeigen wir, wie sich anhand der bereinigten Daten Metriken für das Monitoring des Publikationsverhaltens an Ihrer Einrichtung berechnen lassen.\nDiese Veranstaltung richtet sich an Mitarbeitende in wissenschaftlichen Einrichtungen, die an Monitoring und Berichterstattung im Kontext der Open-Access-Transformation interessiert sind.\nIn der Veranstaltung führen wir Sie Schritt für Schritt durch den verwendeten Code. Darum sind Vorkenntnisse oder die Installation von Software nicht erforderlich. Bitte erstellen Sie vorab einen API-key für OpenAlex [1] und einen kostenlosen Posit-Cloud Account [2]. Gerne können Sie auch vorab Wünsche zu Metriken an uns richten, die wir dann in der Veranstaltung berechnen.\n[1]: https://developers.openalex.org/api-reference/authentication [2]: https://posit.cloud/plans/free"
   },
   {
-    "objectID": "events/oat24_20240910.html",
-    "href": "events/oat24_20240910.html",
-    "title": "Workshop  Stand und Perspektive des Open-Access-Reportings",
+    "objectID": "events/bid25_20250627.html",
+    "href": "events/bid25_20250627.html",
+    "title": "Vortrag  Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland",
     "section": "",
-    "text": "Datum: 10.09.2024\nUhrzeit: 13:30–15:00 Uhr\nRaum: Raum 149\nProgramm auf der Seite des Veranstalters"
+    "text": "Datum: 27.06.2025\nUhrzeit: 11:00–11:30 Uhr\nSaal: Focke-Wulf Saal\nProgramm auf der Seite des Veranstalters"
   },
   {
-    "objectID": "events/oat24_20240910.html#daten",
-    "href": "events/oat24_20240910.html#daten",
-    "title": "Workshop  Stand und Perspektive des Open-Access-Reportings",
+    "objectID": "events/bid25_20250627.html#daten",
+    "href": "events/bid25_20250627.html#daten",
+    "title": "Vortrag  Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland",
     "section": "",
-    "text": "Datum: 10.09.2024\nUhrzeit: 13:30–15:00 Uhr\nRaum: Raum 149\nProgramm auf der Seite des Veranstalters"
+    "text": "Datum: 27.06.2025\nUhrzeit: 11:00–11:30 Uhr\nSaal: Focke-Wulf Saal\nProgramm auf der Seite des Veranstalters"
   },
   {
-    "objectID": "events/oat24_20240910.html#beschreibung",
-    "href": "events/oat24_20240910.html#beschreibung",
-    "title": "Workshop  Stand und Perspektive des Open-Access-Reportings",
+    "objectID": "events/bid25_20250627.html#beschreibung",
+    "href": "events/bid25_20250627.html#beschreibung",
+    "title": "Vortrag  Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland",
     "section": "Beschreibung",
-    "text": "Beschreibung\nVor dem Hintergrund der Definition expliziter Zielmarken für das Open-Access-Publikationsaufkommen durch das Bundesministerium für Bildung und Forschung, einiger Bundesländer und verschiedener weiterer Stakeholder gewinnt Open-Access-Reporting weiter an Bedeutung. Gleichzeitig erschweren Umstände wie die komplexe Datenlage eine flächendeckende Implementierung von Verfahren, und es wird deutlich, dass das Erfassen des Publikationsaufkommens durch die Betrachtung weiterer Indikatoren ergänzt werden sollte, um den unterschiedlichen Typen von Hochschulen und deren fachlicher Ausrichtung besser gerecht zu werden.\nDieser interaktive Workshop richtet sich daher an Mitarbeitende an wissenschaftlichen Einrichtungen, die an der Durchführung von Open-Access-Reporting interessiert sind.\nIm Workshop werden unterschiedliche Ansätze des Open-Access-Reportings beleuchtet und diskutiert sowie anhand praxisnaher Beispiele das konkrete Vorgehen bei der Berichterstattung vermittelt.\nDer Workshop wird mit kurzen Praxisberichten zu Open-Access-Reporting auf Länderebene basierend auf qualitativen und quantitativen Ansätzen durch das Open-Access-Büro Berlin und die Vernetzungs- und Kompetenzstelle Brandenburg eröffnet.\nAnschließend erhalten Teilnehmende anhand eigener Fragestellungen und Analyseszenarien einen Einblick in die Nutzung des Open Access Monitors 1 für das Reporting des Publikationsaufkommens ihrer Einrichtung sowie ergänzender Informationen zu Strategien und Services von wissenschaftlichen Einrichtungen auf Basis des oa.atlas 2.\nAnhand vorbereiteter Impulse diskutieren Teilnehmende in Kleingruppen Chancen und Herausforderungen der vorgestellten Reporting-Ansätze, bevor die Ergebnisse kurz im Plenum vorgestellt werden.\nNach Abschluss des Workshops sind die Teilnehmenden mit verschiedenen Ansätzen des Open-Access-Reportings vertraut und in der Lage, den Open Access Monitor und den oa.atlas für die Erstellung eines Berichts über ihre Open-Access-Aktivitäten sowie das Publikationsaufkommen ihrer Einrichtung zu nutzen.\nAn dem Workshop können maximal 20 Personen (exklusive der Organisator:innen) teilnehmen. Teilnehmende müssen einen eigenen Laptop mitbringen."
-  },
-  {
-    "objectID": "events/oat24_20240910.html#footnotes",
-    "href": "events/oat24_20240910.html#footnotes",
-    "title": "Workshop  Stand und Perspektive des Open-Access-Reportings",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nopen-access-monitor.de↩︎\nopen-access.network/services/oaatlas↩︎"
-  },
-  {
-    "objectID": "events/dini24_20240919.html",
-    "href": "events/dini24_20240919.html",
-    "title": "Workshop  Transparenz in der Wissenschaft – Strategien für offene Informationsversorgung",
-    "section": "",
-    "text": "Datum: 19.09.2024\nUhrzeit: 11:15–12:15 Uhr\nProgramm auf der Seite des Veranstalters\nWorkshop Report"
-  },
-  {
-    "objectID": "events/dini24_20240919.html#daten",
-    "href": "events/dini24_20240919.html#daten",
-    "title": "Workshop  Transparenz in der Wissenschaft – Strategien für offene Informationsversorgung",
-    "section": "",
-    "text": "Datum: 19.09.2024\nUhrzeit: 11:15–12:15 Uhr\nProgramm auf der Seite des Veranstalters\nWorkshop Report"
-  },
-  {
-    "objectID": "events/dini24_20240919.html#beschreibung",
-    "href": "events/dini24_20240919.html#beschreibung",
-    "title": "Workshop  Transparenz in der Wissenschaft – Strategien für offene Informationsversorgung",
-    "section": "Beschreibung",
-    "text": "Beschreibung\nSowohl die Open-Access-Strategie des Bundesministeriums für Bildung und Forschung (BMBF), als auch die Empfehlungen der Europäischen Kommission zu OA an die EU-Mitgliedsstaaten fordern wissenschaftliche Einrichtungen auf, die Transparenz rund um vertragliche Vereinbarungen mit Verlagen zu stärken. Auch die Allianz der deutschen Wissenschaftsorganisationen adressiert dieses Thema. In der Praxis wird diese Forderung jedoch bis auf wenige Ausnahmen (z. B. die Offenlegung der DEAL-Verträge) nicht umgesetzt. Während im Bereich der Publikationsgebühren mit der Initiative OpenAPC ein international beachteter Ansatz zur Offenlegung der Mittel geschaffen wurde, steht eine solche Initiative z. B. für Subskriptionskosten noch aus. Vor diesem Hintergrund strebt das DFG-Projekt Transform2Open eine nationale Transparenzinitiative an, die sowohl Subskriptions- als auch Transformations- und OA-Verträge adressiert. Von besonderem Interesse sind der Umgang mit Non-Disclosure-Agreements und aktuelle Hindernisse für Transparenzbestrebungen. Auch praktische Verfahren zur Offenlegung von Kosten sind ein wichtiges Thema. Mit den Bestrebungen zur Öffnung von Forschungsinformationen, z. B. im Rahmen der Initiative „Barcelona Declaration on Open Research Information“, ergeben sich darüber hinaus neue Möglichkeiten der Zusammenführung von Daten über Publikationen und ihre Kosten. Unter dem Tagungsmotto „Gemeinsame Infrastrukturen für eine offene Wissenschaft“ der 25. Jahrestagung der Deutschen Initiative für Netzwerkinformation (DINI) am 19. September 2024 in Potsdam wurden im Rahmen eines World-Café-Workshops thematisiert, welche Aspekte und Einrichtungen für eine prototypische Implementierung einer Transparenzinitiative zunächst fokussiert werden sollten. Gemeinsam wurden Herausforderungen bei der Umsetzung identifiziert, um die Umsetzung in die Praxis vorzubereiten. Der Workshop wurde gemeinsam von den DFG-Projekten Transform2Open und OA Datenpraxis angeboten. OA Datenpraxis unterstützt die Strukturbildung für die Open-Access-Transformation auf nationaler Ebene. Eine enge Zusammenarbeit mit Akteur:innen aus dem Projekt DEAL, OpenAPC, openCost und dem OA-Monitor besteht bzw. wird weiter ausgebaut."
-  },
-  {
-    "objectID": "dashboard_uebersicht.html",
-    "href": "dashboard_uebersicht.html",
-    "title": "OA Dashboards Kontakt",
-    "section": "",
-    "text": "Mit der wachsenden Bedeutung von Open Access stellt sich die Frage nach dem Anteil am Publikationsaufkommen von Forschungseinrichtungen, Ländern und auch auf globaler Ebene. Im Projekt OA Datenpraxis entwickeln wir eine Übersicht über Dashboards zu Open Access.\nDafür haben wir eine Recherche zu relevanten Dashboards durchgeführt und ein eigenes Metadatenschema zur Indexierung erstellt. Im Mai 2025 haben wir einen Community-Prozess gestartet, um die Sammlung weiterzuentwickeln und auszubauen.\nSie finden die Open-Access-Dashboard-Collection hier und das dazugehörige Metadatenschema hier.\nFalls Sie Änderungsvorschläge haben oder ein Dashboard haben, was hier noch nicht gelistet wird, schreiben Sie uns sehr gerne hier: oa-datenpraxis-dashboards@listserv.dfn.de. Wir freuen uns über jeden Hinweis und tragen neue Dashboards ein.\nFalls Sie selbst tätig werden wollen, finden Sie eine editierbare Version der Dashboard-Collection hier: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz Dort können Sie neue Vorschläge selbst eintragen."
-  },
-  {
-    "objectID": "dashboard_uebersicht.html#oa-dashboard-collection",
-    "href": "dashboard_uebersicht.html#oa-dashboard-collection",
-    "title": "OA Dashboards Kontakt",
-    "section": "",
-    "text": "Mit der wachsenden Bedeutung von Open Access stellt sich die Frage nach dem Anteil am Publikationsaufkommen von Forschungseinrichtungen, Ländern und auch auf globaler Ebene. Im Projekt OA Datenpraxis entwickeln wir eine Übersicht über Dashboards zu Open Access.\nDafür haben wir eine Recherche zu relevanten Dashboards durchgeführt und ein eigenes Metadatenschema zur Indexierung erstellt. Im Mai 2025 haben wir einen Community-Prozess gestartet, um die Sammlung weiterzuentwickeln und auszubauen.\nSie finden die Open-Access-Dashboard-Collection hier und das dazugehörige Metadatenschema hier.\nFalls Sie Änderungsvorschläge haben oder ein Dashboard haben, was hier noch nicht gelistet wird, schreiben Sie uns sehr gerne hier: oa-datenpraxis-dashboards@listserv.dfn.de. Wir freuen uns über jeden Hinweis und tragen neue Dashboards ein.\nFalls Sie selbst tätig werden wollen, finden Sie eine editierbare Version der Dashboard-Collection hier: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz Dort können Sie neue Vorschläge selbst eintragen."
-  },
-  {
-    "objectID": "events.html#konferenzen-tagungen",
-    "href": "events.html#konferenzen-tagungen",
-    "title": "Veranstaltungen",
-    "section": "Konferenzen & Tagungen",
-    "text": "Konferenzen & Tagungen\n\n114. Bibliocon, 19.–22. Mai 2026, Berlin\n\nVortrag: Open-Access-Dashboards im Überblick\n\n\nHands-on Lab: How to: Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen"
+    "text": "Beschreibung\nZur strategischen und operativen Gestaltung der Open-Access-Transformation werden Daten zu Publikationen und Kosten benötigt. Der Vortrag stellt Ergebnisse einer Umfrage vor, die im Rahmen des von der Deutschen Forschungsgemeinschaft (DFG) geförderten Projekts OA Datenpraxis im Jahr 2024 durchgeführt wurde. Die Umfrage erhob, wie Daten zu Publikationskosten aktuell an wissenschaftlichen Einrichtungen in Deutschland erfasst werden. Adressiert wurden Vertreter*innen von Universitäten, Fachhochschulen, Instituten außeruniversitärer Forschungseinrichtungen (Fraunhofer-Gesellschaft, Helmholtz-Gemeinschaft, Leibniz-Gesellschaft und Max-Planck-Gesellschaft) sowie Ressortforschungseinrichtungen des Bundes. Von den 583 eingeladenen Personen füllten 258 (44,3 %) den Fragebogen aus. Die Umfrage ist die erste umfassende Erhebung zur Erfassung von Publikationskosten in Deutschland.\nDie Ergebnisse zeigen, dass die Mehrzahl der Befragten Publikationskosten zumindest teilweise erfassen. Die Abläufe sind jedoch nicht überall verbindlich geregelt. 33,1 % der Befragten gaben an, dass Publikationskosten an ihrer Einrichtung dezentral an mehreren Abteilungen in mehreren Systemen erfasst werden. Durchschnittlich sind 2,4 Bereiche einer Einrichtung in die Prozesse involviert. 66,3 % der Befragten bewerteten die Zusammenarbeit der beteiligten Einrichtungen als “sehr gut” oder “eher gut”. schätzen die Erfassung je nach Mittelherkunft unterschiedlich zuverlässig ein, am zuverlässigsten wird der Einsatz von Mitteln bewertet, die von einer zentralen Serviceeinrichtung verwaltet werden. 80,2 % bewerteten den Beitrag der Erfassung von Publikationskosten für die Gestaltung der Open-Access-Transformation als “sehr wichtig” oder “eher wichtig”. Die erfassten Daten sind jedoch nicht an allen Einrichtungen Grundlage strategischer Entscheidungen. Die Umsetzung eines Informationsbudgets bis 2025 wird an den meisten Einrichtungen als unwahrscheinlich angesehen."
   },
   {
     "objectID": "events/oat25_20250919.html",
@@ -399,25 +350,95 @@
     "text": "Footnotes\n\n\nhttps://oa-datenpraxis.de↩︎\nhttps://www.opencost.de↩︎\nhttps://www.transform2open.de↩︎"
   },
   {
-    "objectID": "events/bid25_20250627.html",
-    "href": "events/bid25_20250627.html",
-    "title": "Vortrag  Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland",
-    "section": "",
-    "text": "Datum: 27.06.2025\nUhrzeit: 11:00–11:30 Uhr\nSaal: Focke-Wulf Saal\nProgramm auf der Seite des Veranstalters"
+    "objectID": "events.html#konferenzen-tagungen",
+    "href": "events.html#konferenzen-tagungen",
+    "title": "Veranstaltungen",
+    "section": "Konferenzen & Tagungen",
+    "text": "Konferenzen & Tagungen\n\n114. Bibliocon, 19.–22. Mai 2026, Berlin\n\nVortrag: Open-Access-Dashboards im Überblick\n\n\nHands-on Lab: How to: Das Publikationsaufkommen Ihrer Einrichtung mit einer offenen Datenquelle erfassen"
   },
   {
-    "objectID": "events/bid25_20250627.html#daten",
-    "href": "events/bid25_20250627.html#daten",
-    "title": "Vortrag  Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland",
+    "objectID": "dashboard_uebersicht.html",
+    "href": "dashboard_uebersicht.html",
+    "title": "OA Dashboards Kontakt",
     "section": "",
-    "text": "Datum: 27.06.2025\nUhrzeit: 11:00–11:30 Uhr\nSaal: Focke-Wulf Saal\nProgramm auf der Seite des Veranstalters"
+    "text": "Mit der wachsenden Bedeutung von Open Access stellt sich die Frage nach dem Anteil am Publikationsaufkommen von Forschungseinrichtungen, Ländern und auch auf globaler Ebene. Im Projekt OA Datenpraxis entwickeln wir eine Übersicht über Dashboards zu Open Access.\nDafür haben wir eine Recherche zu relevanten Dashboards durchgeführt und ein eigenes Metadatenschema zur Indexierung erstellt. Im Mai 2025 haben wir einen Community-Prozess gestartet, um die Sammlung weiterzuentwickeln und auszubauen.\nSie finden die Open-Access-Dashboard-Collection hier und das dazugehörige Metadatenschema hier.\nFalls Sie Änderungsvorschläge haben oder ein Dashboard haben, was hier noch nicht gelistet wird, schreiben Sie uns sehr gerne hier: oa-datenpraxis-dashboards@listserv.dfn.de. Wir freuen uns über jeden Hinweis und tragen neue Dashboards ein.\nFalls Sie selbst tätig werden wollen, finden Sie eine editierbare Version der Dashboard-Collection hier: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz Dort können Sie neue Vorschläge selbst eintragen."
   },
   {
-    "objectID": "events/bid25_20250627.html#beschreibung",
-    "href": "events/bid25_20250627.html#beschreibung",
-    "title": "Vortrag  Erfassung von Publikationskosten an wissenschaftlichen Einrichtungen in Deutschland",
+    "objectID": "dashboard_uebersicht.html#oa-dashboard-collection",
+    "href": "dashboard_uebersicht.html#oa-dashboard-collection",
+    "title": "OA Dashboards Kontakt",
+    "section": "",
+    "text": "Mit der wachsenden Bedeutung von Open Access stellt sich die Frage nach dem Anteil am Publikationsaufkommen von Forschungseinrichtungen, Ländern und auch auf globaler Ebene. Im Projekt OA Datenpraxis entwickeln wir eine Übersicht über Dashboards zu Open Access.\nDafür haben wir eine Recherche zu relevanten Dashboards durchgeführt und ein eigenes Metadatenschema zur Indexierung erstellt. Im Mai 2025 haben wir einen Community-Prozess gestartet, um die Sammlung weiterzuentwickeln und auszubauen.\nSie finden die Open-Access-Dashboard-Collection hier und das dazugehörige Metadatenschema hier.\nFalls Sie Änderungsvorschläge haben oder ein Dashboard haben, was hier noch nicht gelistet wird, schreiben Sie uns sehr gerne hier: oa-datenpraxis-dashboards@listserv.dfn.de. Wir freuen uns über jeden Hinweis und tragen neue Dashboards ein.\nFalls Sie selbst tätig werden wollen, finden Sie eine editierbare Version der Dashboard-Collection hier: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz Dort können Sie neue Vorschläge selbst eintragen."
+  },
+  {
+    "objectID": "events/dini24_20240919.html",
+    "href": "events/dini24_20240919.html",
+    "title": "Workshop  Transparenz in der Wissenschaft – Strategien für offene Informationsversorgung",
+    "section": "",
+    "text": "Datum: 19.09.2024\nUhrzeit: 11:15–12:15 Uhr\nProgramm auf der Seite des Veranstalters\nWorkshop Report"
+  },
+  {
+    "objectID": "events/dini24_20240919.html#daten",
+    "href": "events/dini24_20240919.html#daten",
+    "title": "Workshop  Transparenz in der Wissenschaft – Strategien für offene Informationsversorgung",
+    "section": "",
+    "text": "Datum: 19.09.2024\nUhrzeit: 11:15–12:15 Uhr\nProgramm auf der Seite des Veranstalters\nWorkshop Report"
+  },
+  {
+    "objectID": "events/dini24_20240919.html#beschreibung",
+    "href": "events/dini24_20240919.html#beschreibung",
+    "title": "Workshop  Transparenz in der Wissenschaft – Strategien für offene Informationsversorgung",
     "section": "Beschreibung",
-    "text": "Beschreibung\nZur strategischen und operativen Gestaltung der Open-Access-Transformation werden Daten zu Publikationen und Kosten benötigt. Der Vortrag stellt Ergebnisse einer Umfrage vor, die im Rahmen des von der Deutschen Forschungsgemeinschaft (DFG) geförderten Projekts OA Datenpraxis im Jahr 2024 durchgeführt wurde. Die Umfrage erhob, wie Daten zu Publikationskosten aktuell an wissenschaftlichen Einrichtungen in Deutschland erfasst werden. Adressiert wurden Vertreter*innen von Universitäten, Fachhochschulen, Instituten außeruniversitärer Forschungseinrichtungen (Fraunhofer-Gesellschaft, Helmholtz-Gemeinschaft, Leibniz-Gesellschaft und Max-Planck-Gesellschaft) sowie Ressortforschungseinrichtungen des Bundes. Von den 583 eingeladenen Personen füllten 258 (44,3 %) den Fragebogen aus. Die Umfrage ist die erste umfassende Erhebung zur Erfassung von Publikationskosten in Deutschland.\nDie Ergebnisse zeigen, dass die Mehrzahl der Befragten Publikationskosten zumindest teilweise erfassen. Die Abläufe sind jedoch nicht überall verbindlich geregelt. 33,1 % der Befragten gaben an, dass Publikationskosten an ihrer Einrichtung dezentral an mehreren Abteilungen in mehreren Systemen erfasst werden. Durchschnittlich sind 2,4 Bereiche einer Einrichtung in die Prozesse involviert. 66,3 % der Befragten bewerteten die Zusammenarbeit der beteiligten Einrichtungen als “sehr gut” oder “eher gut”. schätzen die Erfassung je nach Mittelherkunft unterschiedlich zuverlässig ein, am zuverlässigsten wird der Einsatz von Mitteln bewertet, die von einer zentralen Serviceeinrichtung verwaltet werden. 80,2 % bewerteten den Beitrag der Erfassung von Publikationskosten für die Gestaltung der Open-Access-Transformation als “sehr wichtig” oder “eher wichtig”. Die erfassten Daten sind jedoch nicht an allen Einrichtungen Grundlage strategischer Entscheidungen. Die Umsetzung eines Informationsbudgets bis 2025 wird an den meisten Einrichtungen als unwahrscheinlich angesehen."
+    "text": "Beschreibung\nSowohl die Open-Access-Strategie des Bundesministeriums für Bildung und Forschung (BMBF), als auch die Empfehlungen der Europäischen Kommission zu OA an die EU-Mitgliedsstaaten fordern wissenschaftliche Einrichtungen auf, die Transparenz rund um vertragliche Vereinbarungen mit Verlagen zu stärken. Auch die Allianz der deutschen Wissenschaftsorganisationen adressiert dieses Thema. In der Praxis wird diese Forderung jedoch bis auf wenige Ausnahmen (z. B. die Offenlegung der DEAL-Verträge) nicht umgesetzt. Während im Bereich der Publikationsgebühren mit der Initiative OpenAPC ein international beachteter Ansatz zur Offenlegung der Mittel geschaffen wurde, steht eine solche Initiative z. B. für Subskriptionskosten noch aus. Vor diesem Hintergrund strebt das DFG-Projekt Transform2Open eine nationale Transparenzinitiative an, die sowohl Subskriptions- als auch Transformations- und OA-Verträge adressiert. Von besonderem Interesse sind der Umgang mit Non-Disclosure-Agreements und aktuelle Hindernisse für Transparenzbestrebungen. Auch praktische Verfahren zur Offenlegung von Kosten sind ein wichtiges Thema. Mit den Bestrebungen zur Öffnung von Forschungsinformationen, z. B. im Rahmen der Initiative „Barcelona Declaration on Open Research Information“, ergeben sich darüber hinaus neue Möglichkeiten der Zusammenführung von Daten über Publikationen und ihre Kosten. Unter dem Tagungsmotto „Gemeinsame Infrastrukturen für eine offene Wissenschaft“ der 25. Jahrestagung der Deutschen Initiative für Netzwerkinformation (DINI) am 19. September 2024 in Potsdam wurden im Rahmen eines World-Café-Workshops thematisiert, welche Aspekte und Einrichtungen für eine prototypische Implementierung einer Transparenzinitiative zunächst fokussiert werden sollten. Gemeinsam wurden Herausforderungen bei der Umsetzung identifiziert, um die Umsetzung in die Praxis vorzubereiten. Der Workshop wurde gemeinsam von den DFG-Projekten Transform2Open und OA Datenpraxis angeboten. OA Datenpraxis unterstützt die Strukturbildung für die Open-Access-Transformation auf nationaler Ebene. Eine enge Zusammenarbeit mit Akteur:innen aus dem Projekt DEAL, OpenAPC, openCost und dem OA-Monitor besteht bzw. wird weiter ausgebaut."
+  },
+  {
+    "objectID": "events/oat24_20240910.html",
+    "href": "events/oat24_20240910.html",
+    "title": "Workshop  Stand und Perspektive des Open-Access-Reportings",
+    "section": "",
+    "text": "Datum: 10.09.2024\nUhrzeit: 13:30–15:00 Uhr\nRaum: Raum 149\nProgramm auf der Seite des Veranstalters"
+  },
+  {
+    "objectID": "events/oat24_20240910.html#daten",
+    "href": "events/oat24_20240910.html#daten",
+    "title": "Workshop  Stand und Perspektive des Open-Access-Reportings",
+    "section": "",
+    "text": "Datum: 10.09.2024\nUhrzeit: 13:30–15:00 Uhr\nRaum: Raum 149\nProgramm auf der Seite des Veranstalters"
+  },
+  {
+    "objectID": "events/oat24_20240910.html#beschreibung",
+    "href": "events/oat24_20240910.html#beschreibung",
+    "title": "Workshop  Stand und Perspektive des Open-Access-Reportings",
+    "section": "Beschreibung",
+    "text": "Beschreibung\nVor dem Hintergrund der Definition expliziter Zielmarken für das Open-Access-Publikationsaufkommen durch das Bundesministerium für Bildung und Forschung, einiger Bundesländer und verschiedener weiterer Stakeholder gewinnt Open-Access-Reporting weiter an Bedeutung. Gleichzeitig erschweren Umstände wie die komplexe Datenlage eine flächendeckende Implementierung von Verfahren, und es wird deutlich, dass das Erfassen des Publikationsaufkommens durch die Betrachtung weiterer Indikatoren ergänzt werden sollte, um den unterschiedlichen Typen von Hochschulen und deren fachlicher Ausrichtung besser gerecht zu werden.\nDieser interaktive Workshop richtet sich daher an Mitarbeitende an wissenschaftlichen Einrichtungen, die an der Durchführung von Open-Access-Reporting interessiert sind.\nIm Workshop werden unterschiedliche Ansätze des Open-Access-Reportings beleuchtet und diskutiert sowie anhand praxisnaher Beispiele das konkrete Vorgehen bei der Berichterstattung vermittelt.\nDer Workshop wird mit kurzen Praxisberichten zu Open-Access-Reporting auf Länderebene basierend auf qualitativen und quantitativen Ansätzen durch das Open-Access-Büro Berlin und die Vernetzungs- und Kompetenzstelle Brandenburg eröffnet.\nAnschließend erhalten Teilnehmende anhand eigener Fragestellungen und Analyseszenarien einen Einblick in die Nutzung des Open Access Monitors 1 für das Reporting des Publikationsaufkommens ihrer Einrichtung sowie ergänzender Informationen zu Strategien und Services von wissenschaftlichen Einrichtungen auf Basis des oa.atlas 2.\nAnhand vorbereiteter Impulse diskutieren Teilnehmende in Kleingruppen Chancen und Herausforderungen der vorgestellten Reporting-Ansätze, bevor die Ergebnisse kurz im Plenum vorgestellt werden.\nNach Abschluss des Workshops sind die Teilnehmenden mit verschiedenen Ansätzen des Open-Access-Reportings vertraut und in der Lage, den Open Access Monitor und den oa.atlas für die Erstellung eines Berichts über ihre Open-Access-Aktivitäten sowie das Publikationsaufkommen ihrer Einrichtung zu nutzen.\nAn dem Workshop können maximal 20 Personen (exklusive der Organisator:innen) teilnehmen. Teilnehmende müssen einen eigenen Laptop mitbringen."
+  },
+  {
+    "objectID": "events/oat24_20240910.html#footnotes",
+    "href": "events/oat24_20240910.html#footnotes",
+    "title": "Workshop  Stand und Perspektive des Open-Access-Reportings",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nopen-access-monitor.de↩︎\nopen-access.network/services/oaatlas↩︎"
+  },
+  {
+    "objectID": "events/webinar_20260414.html",
+    "href": "events/webinar_20260414.html",
+    "title": "OA Datenpraxis Webinar  Open-Access-Reporting - Initiativen und Guidelines",
+    "section": "",
+    "text": "Datum: 14.04.2026\nUhrzeit: 15:00–16:30 Uhr\nOrt: Online über Zoom\nRegistrierung unter: https://hu-berlin.zoom-x.de/meeting/register/FQ0J688cRX2jkTW_S3lk0A"
+  },
+  {
+    "objectID": "events/webinar_20260414.html#daten",
+    "href": "events/webinar_20260414.html#daten",
+    "title": "OA Datenpraxis Webinar  Open-Access-Reporting - Initiativen und Guidelines",
+    "section": "",
+    "text": "Datum: 14.04.2026\nUhrzeit: 15:00–16:30 Uhr\nOrt: Online über Zoom\nRegistrierung unter: https://hu-berlin.zoom-x.de/meeting/register/FQ0J688cRX2jkTW_S3lk0A"
+  },
+  {
+    "objectID": "events/webinar_20260414.html#beschreibung",
+    "href": "events/webinar_20260414.html#beschreibung",
+    "title": "OA Datenpraxis Webinar  Open-Access-Reporting - Initiativen und Guidelines",
+    "section": "Beschreibung",
+    "text": "Beschreibung\nAn dieser Paneldiskussion beteiligen sich Initiativen und Empfehlungen, die einen Bezug zum Open-Access-Reporting aufweisen. Die Veranstaltung kreist um die zentrale Frage, wie die Berichtstellung im Kontext der Open-Access-Transformation gestaltet werden kann und inwieweit eine einrichtungsübergreifende Standardisierung sinnvoll und möglich ist.\nAn der Paneldiskussion nehmen Expert*innen teil, die sich aus verschiedenen Perspektiven mit dem Thema befasst haben:\n\nEvgeny Bobrov (Mitinitiator der Open Science Monitoring Initiative)\nStefanie Haustein (Ko-Autorin der Guidance List for the repOrting of Bibliometric AnaLyses (GLOBAL))\nBernhard Mittermaier (Ko-Autor eines Papiers der AG Wissenschaftliches Publikationssystem, Allianz der deutschen Wissenschaftsorganisationen)\nFatma Rebeggiani (Redaktionsmitglied des ersten deutschen Staatenberichts zur UNESCO-Empfehlung zu Open Science)\nNina Schönfelder (Mitarbeit am Publikations- und Kostenmonitoring in Nordrhein-Westfalen (pkm_nrw))\n\nDiese Veranstaltung richtet sich an Mitarbeitende in wissenschaftlichen Einrichtungen, die mit Monitoring und Berichterstattung im Kontext der Open-Access-Transformation betraut sind.\n\nProgramm\nNach einer kurzen Vorstellung der Initiativen folgt eine Paneldiskussion. Im Anschluss haben Teilnehmende die Möglichkeit, Fragen zu stellen.\n\nBegrüßung (5 Minuten)\nVorstellung der Initiativen durch die Panelists (35 Minuten)\nPaneldiskussion (30 Minuten)\nQ&A-Session(20 Minuten)"
   },
   {
     "objectID": "events/occ26_20260318.html",
