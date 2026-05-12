@@ -15,7 +15,7 @@ title: OA Datenpraxis Webinar <br/> How to - Das Publikationsaufkommen Ihrer Ein
 ## Beschreibung
 
 Sie fragen sich, was, wie viel und wo Forschende Ihrer Einrichtung publizieren? In diesem Webinar möchten wir Ihnen zeigen, wie Sie das Publikationsaufkommen an Ihrer Einrichtung erfassen können. Dazu nutzen wir OpenAlex, eine offene Quelle für Forschungsinformationen.
-Wir demonstrieren, wie Sie mit Hilfe eines R-Notebooks Daten Ihrer Einrichtung anhand der ROR-ID über die OpenAlex API abfragen können. Anschließend werden wir den abgefragten Datensatz gemeinsam explorieren und für die Auswertung vorbereiten. Dabei gehen wir insbesondere auf übliche Qualitätsprobleme ein und zeigen, wie sie beseitigt werden können. Abschließend zeigen wir exemplarisch, wie sich anhand der bereinigten Daten Metriken für das Monitoring des Publikationsverhaltens an Ihrer Einrichtung berechnen lassen.
+Wir demonstrieren, wie Sie mit Hilfe eines R-Notebooks Daten Ihrer Einrichtung anhand der ROR-ID über die OpenAlex API abfragen können. Anschließend werden wir den abgefragten Datensatz gemeinsam explorieren und für die Auswertung vorbereiten. Dabei gehen wir exemplarisch auf das Qualitätsproblem der variierenden Ansetzung von Verlagsnamen ein und zeigen, wie es adressiert werden kann. Abschließend zeigen wir, wie sich anhand der bereinigten Daten Metriken für das Monitoring des Publikationsverhaltens an Ihrer Einrichtung berechnen lassen.
 
 Diese Veranstaltung richtet sich an Mitarbeitende in wissenschaftlichen Einrichtungen, die an Monitoring und Berichterstattung im Kontext der Open-Access-Transformation interessiert sind.
 
