@@ -3,4 +3,6 @@ title: "Events"
 ---
 ## OA Datenpraxis Webinar Series
 
+#### [26 June 2026: University Rankings Under Scrutiny: Open Access as a Performance Indicator, and Institutional Perspectives from Germany and the Netherlands](events/webinar_20260626.qmd)
+
 ## Conferences & Meetings
