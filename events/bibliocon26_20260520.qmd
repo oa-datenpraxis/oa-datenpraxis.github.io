@@ -29,6 +29,8 @@ Gerne können Sie auch vorab Wünsche zu Metriken an uns richten, die wir dann i
 
 **Bitte um Voranmeldung bei:** dorothea.strecker@hu-berlin.de
 
+Die genutzten Materialien sind auf GitHub veröffentlicht: [https://github.com/oa-datenpraxis/materials/tree/main/BiblioCon26](https://github.com/oa-datenpraxis/materials/tree/main/BiblioCon26)
+
 
 [^1]: [https://oa-datenpraxis.de/OpenAlex.html](https://oa-datenpraxis.de/OpenAlex.html)
 
