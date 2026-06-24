@@ -6,6 +6,8 @@ title: "Archive"
 
 ### OA Datenpraxis Webinar Series
 
+#### [11 June 2026: OA Datenpraxis Webinar: Tools zum Monitoring von Publikationskosten in der Open-Access-Transformation](events/webinar_20260611.qmd)
+
 #### [14 April 2026: Open-Access-Reporting - Initiativen und Guidelines](events/webinar_20260414.qmd)
 
 #### [27 March 2026: Open-Access-Reporting in der Praxis](events/webinar_20260327.qmd)
