@@ -1,5 +1,5 @@
 ---
-title: "Events"
+title: "Upcoming Events"
 ---
 ## OA Datenpraxis Webinar Series
 

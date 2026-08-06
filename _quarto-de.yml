@@ -8,24 +8,18 @@ website:
       - text: "Sofern nicht anders angegeben, ist der Inhalt dieser Website unter einer Creative Commons Namensnennung 4.0 International Lizenz lizenziert."
   navbar:
     left:
-      - href: partners.qmd
-        text: "Projektpartner"
+      - text: "Über das Projekt"
+        menu:
+          - partners.qmd
+          - arbeitspakete.qmd
       - href: publications.qmd
         text: "Publikationen"
-      - text: "Projektvorhaben"
-        menu: 
-          - arbeitspakete.qmd
-      - text: "Aktuelles"
+      - text: "Veranstaltungen"
         menu:    
           - events.qmd
           - archive.qmd
-      - text: "OA Dashboards"
+      - text: "Ressourcen"
         menu:
           - dashboard_uebersicht.qmd
-          - dashboards.qmd
-          - dashboards_schema.qmd
-      - text: "Notebooks"
-        menu: 
-          - OpenAPC.qmd
-          - OpenAlex.qmd
-          - ROR.qmd
+          - notebooks.qmd
+          

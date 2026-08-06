@@ -1,13 +1,17 @@
 ---
-title: "OA Dashboards Kontakt"
+title: "Open Access Dashboards"
 ---
-## OA-Dashboard-Collection
+## Über diese Sammlung
 
 Mit der wachsenden Bedeutung von Open Access stellt sich die Frage nach dem Anteil am Publikationsaufkommen von Forschungseinrichtungen, Ländern und auch auf globaler Ebene. Im Projekt OA Datenpraxis entwickeln wir eine Übersicht über Dashboards zu Open Access. 
 
 Dafür haben wir eine Recherche zu relevanten Dashboards durchgeführt und ein eigenes Metadatenschema zur Indexierung erstellt. Im Mai 2025 haben wir einen Community-Prozess gestartet, um die Sammlung weiterzuentwickeln und auszubauen.
 
-Sie finden die Open-Access-Dashboard-Collection [hier](dashboards.qmd) und das dazugehörige Metadatenschema [hier](dashboards_schema.qmd).
+### [Sammlung Open Access Dashboards](dashboards.qmd)
+
+### [Metadatenschema Open Access Dashboards](dashboards_schema.de)
+
+## Kontakt
 
 Falls Sie Änderungsvorschläge haben oder ein Dashboard haben, was hier noch nicht gelistet wird, schreiben Sie uns sehr gerne hier: [oa-datenpraxis-dashboards@listserv.dfn.de](mailto:oa-datenpraxis-dashboards@listserv.dfn.de).
 Wir freuen uns über jeden Hinweis und tragen neue Dashboards ein.
