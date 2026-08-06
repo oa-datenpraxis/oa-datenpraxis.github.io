@@ -310,7 +310,7 @@
   {
     "objectID": "events.html#conferences-meetings",
     "href": "events.html#conferences-meetings",
-    "title": "Events",
+    "title": "Upcoming Events",
     "section": "Conferences & Meetings",
     "text": "Conferences & Meetings"
   },
@@ -343,11 +343,46 @@
     "text": "Description\nThe Carpentries (consisting of Data, Library and Software Carpentry) are a method of introducing basic data competences. The main focus is on the joint learning of IT-supported procedures for solving practical problems. In Germany, both library associations and academic institutions support the Carpentries community through membership. For example, the SUB Göttingen has been a member since 2019 and trains up to five instructors annually at the Göttingen campus and regularly organises Carpentries workshops, which are primarily aimed at young researchers and librarians. The aim of the AP is to design, test and iteratively develop training courses with a specific focus on data practice to shape the OA transformation as part of Library Carpentry. The target group includes professionals in the field of OA transformation and research administration. Not all data analysis aspects can be covered within a Carpentry training course. Rather, the aim is to introduce open and science-oriented tools and procedures and to test their application (Wilson et al., 2017). The tasks of the WP are based on the life cycle of the Carpentries Lessons and start in the second year of the project."
   },
   {
-    "objectID": "dashboards.html",
-    "href": "dashboards.html",
-    "title": "Open Access Dashboard Collection",
+    "objectID": "notebooks.html",
+    "href": "notebooks.html",
+    "title": "Notebooks",
     "section": "",
-    "text": "Back to top"
+    "text": "Open Access Cost Monitoring with OpenAPC\nThis notebook is a tool for library and information professionals dealing with cost monitoring in terms of Open Access publication output at their institution. It shows how to leverage the OpenAPC data set to collect and analyze cost information using R. No software installation or prior programming knowledge required. At the end of the notebook you will find some short excercises that can be executed directly in your browser.\n\n\nOpen Access Monitoring with OpenAlex\nThis notebook is a tool for library and information professionals dealing with monitoring Open Access publication output at their institution. It shows how to leverage OpenAlex to retrieve and analyze publication data using R. No software installation or prior programming knowledge required. At the end of the notebook you will find some short excercises that can be executed directly in your browser.\n\n\nAffiliation search using ROR IDs\nThis notebook serves as a tool for librarians and information professionals monitoring their institution’s publication output. It compares ROR-based versus string-based search strategies in OpenAlex for retrieving publication data with R, accounting for institutional hierarchies (parent institutions and their child/related institutions) and demonstrating differences in publication coverage. No software installation or prior programming knowledge required.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "arbeitspakete.html",
+    "href": "arbeitspakete.html",
+    "title": "Work Packages",
+    "section": "",
+    "text": "WP 1 Institutional Level\nThe aim of WP 1 is to collect, analyse and document requirements for data analyses relating to the OA transformation from the institutional practice of scientific institutions. The results of WP 1 will be published in a report and formulated in recommendations.\n\n\nWP 2 Publisher Agreements\nThe aim of WP 2 is to analyse publishing contracts relating to open metadata and data analytics research services and to identify best practices. The result is an inventory of German transformation contracts and a recommendation for action.\n\n\nWP 3 Open Access in institutional Rankings\nThe aim of WP 3 is to critically accompany OA as an evaluation dimension of institutional rankings. To this end, interpretation and intervention aids for the management of scientific institutions will be developed on the basis of an inventory of institutional rankings. Secondly, data analysis aids will be developed and published to enable institutions and consortia to carry out benchmarking on the basis of data from university rankings.\n\n\nWP 4 Open-Access-Reporting\nThe aim of WP 4 is to contribute to the improvement of data quality and to promote the standardisation of data and reports on OA transformation. As a result of WP 4, the proposal for a standard of the Alliance of Science Organisations for OA reporting will be further developed as part of an assessment process.\n\n\nWP 5 Synopsis\nThe aim of WP 5 is to summarise the results from WPs 1, 2, 3 and 4 in a strategic recommendation on data practices for shaping the OA transformation.\n\n\nWP 6 Trainings\nThe aim of WP 6 is to develop and test open training materials on the use of open data sources and tools in the form of a Carpentry module in a participatory manner. The work planning is based on the life cycle of the Carpentry lessons and includes the call for teamwork, creation of the course materials, testing and revision phase.\n\n\nWP 7 Tools\nThe aim of the WP is to set up and operate a digital toolbox that provides information on tools for collecting, analysing and visualising data relating to OA transformation.\n\n\nWP 8 Networks\nThe aim of the WP is to initiate networks on specific issues relating to data work on OA transformation. At the heart of this is the dialogue on the topics of: Reporting, publishing data, bibliometrics and mentoring in the context of OA transformation. The project organises digital workshops for the networks and provides an organisational structure.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "dashboard_uebersicht.html",
+    "href": "dashboard_uebersicht.html",
+    "title": "Open Access Dashboards",
+    "section": "",
+    "text": "With Open Access gaining importance in science policy, questions arise about its share in the publication output of research institutions, countries, and globally. In the OA Data Practices project, we are developing an overview of dashboards on Open Access.\nTo support this, we conducted a search for relevant dashboards and created a custom metadata schema to index them. In May 2025, we launched a community process to further develop and expand the collection."
+  },
+  {
+    "objectID": "dashboard_uebersicht.html#about-the-collection",
+    "href": "dashboard_uebersicht.html#about-the-collection",
+    "title": "Open Access Dashboards",
+    "section": "",
+    "text": "With Open Access gaining importance in science policy, questions arise about its share in the publication output of research institutions, countries, and globally. In the OA Data Practices project, we are developing an overview of dashboards on Open Access.\nTo support this, we conducted a search for relevant dashboards and created a custom metadata schema to index them. In May 2025, we launched a community process to further develop and expand the collection."
+  },
+  {
+    "objectID": "dashboard_uebersicht.html#contact",
+    "href": "dashboard_uebersicht.html#contact",
+    "title": "Open Access Dashboards",
+    "section": "Contact",
+    "text": "Contact\nIf you have any suggestions for modifications or a new dashboard that isn’t listed here yet, we encourage you to write us here: oa-datenpraxis-dashboards@listserv.dfn.de. We are happy about any suggestions and will add new dashboards for you.\nIf you want to become active yourself you can find an editable version of the dashboard collection here: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz There you can add your new suggestions yourself."
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "OA Datenpraxis",
+    "section": "",
+    "text": "The content of the OA Datenpraxis website is made available under the Creative Commons Attribution license. The following is a human-readable summary of (and not a substitute for) the full legal text of the CC BY 4.0 license.\nYou are free:\n\nto Share—copy and redistribute the material in any medium or format\nto Adapt—remix, transform, and build upon the material\n\nfor any purpose, even commercially.\nThe licensor cannot revoke these freedoms as long as you follow the license terms.\nUnder the following terms:\n\nAttribution—You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions—You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits. With the understanding that:\n\nNotices:\n\nYou do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.\nNo warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.\n\n\n\n\n Back to top"
   },
   {
     "objectID": "publications.html",
@@ -371,32 +406,11 @@
     "text": "Preliminary work of the project partners\n\n\nJahn, N. (2024). How open are hybrid journals included in transformative agreements? arXiv. https://doi.org/10.48550/arXiv.2402.18255\n\n\nFraser, N., Hobert, A., Jahn, N., Mayr, P., & Peters, I. (2023). No deal: German researchers’ publishing and citing behaviors after big deal negotiations with elsevier. Quantitative Science Studies, 4(2), 325–352. https://doi.org/10.1162/qss_a_00255\n\n\nTaubert, N., Hobert, A., Jahn, N., Bruns, A., & Iravani, E. (2023). Understanding differences of the OA uptake within the german university landscape (2010–2020): Part 1—journal-based OA. Scientometrics, 128(6), 3601–3625. https://doi.org/10.1007/s11192-023-04716-3\n\n\nJahn, N., Matthias, L., & Laakso, M. (2022). Toward transparency of hybrid open access through publisher-provided metadata: An article-level study of elsevier. Journal of the Association for Information Science and Technology, 73(1), 104–118. https://doi.org/10.1002/asi.24549\n\n\nPampel, H. (2022). From library budget to information budget: Fostering transparency in the transformation towards open access. Insights the UKSG Journal, 35, 8. https://doi.org/10.1629/uksg.576\n\n\nHobert, A., Jahn, N., Mayr, P., Schmidt, B., & Taubert, N. (2021). Open access uptake in germany 2010–2018: Adoption in a diverse research landscape. Scientometrics, 126(12), 9751–9777. https://doi.org/10.1007/s11192-021-04002-0"
   },
   {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "OA Datenpraxis",
+    "objectID": "dashboards.html",
+    "href": "dashboards.html",
+    "title": "Open Access Dashboard Collection",
     "section": "",
-    "text": "The content of the OA Datenpraxis website is made available under the Creative Commons Attribution license. The following is a human-readable summary of (and not a substitute for) the full legal text of the CC BY 4.0 license.\nYou are free:\n\nto Share—copy and redistribute the material in any medium or format\nto Adapt—remix, transform, and build upon the material\n\nfor any purpose, even commercially.\nThe licensor cannot revoke these freedoms as long as you follow the license terms.\nUnder the following terms:\n\nAttribution—You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions—You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits. With the understanding that:\n\nNotices:\n\nYou do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.\nNo warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "dashboard_uebersicht.html",
-    "href": "dashboard_uebersicht.html",
-    "title": "OA Dashboards Contact",
-    "section": "",
-    "text": "With Open Access gaining importance in science policy, questions arise about its share in the publication output of research institutions, countries, and globally. In the OA Data Practices project, we are developing an overview of dashboards on Open Access.\nTo support this, we conducted a search for relevant dashboards and created a custom metadata schema to index them. In May 2025, we launched a community process to further develop and expand the collection.\nYou can find the Open Access dashboard collection here and the corresponding metadata schema here.\nIf you have any suggestions for modifications or a new dashboard that isn’t listed here yet, we encourage you to write us here: oa-datenpraxis-dashboards@listserv.dfn.de. We are happy about any suggestions and will add new dashboards for you.\nIf you want to become active yourself you can find an editable version of the dashboard collection here: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz There you can add your new suggestions yourself."
-  },
-  {
-    "objectID": "dashboard_uebersicht.html#oa-dashboard-collection",
-    "href": "dashboard_uebersicht.html#oa-dashboard-collection",
-    "title": "OA Dashboards Contact",
-    "section": "",
-    "text": "With Open Access gaining importance in science policy, questions arise about its share in the publication output of research institutions, countries, and globally. In the OA Data Practices project, we are developing an overview of dashboards on Open Access.\nTo support this, we conducted a search for relevant dashboards and created a custom metadata schema to index them. In May 2025, we launched a community process to further develop and expand the collection.\nYou can find the Open Access dashboard collection here and the corresponding metadata schema here.\nIf you have any suggestions for modifications or a new dashboard that isn’t listed here yet, we encourage you to write us here: oa-datenpraxis-dashboards@listserv.dfn.de. We are happy about any suggestions and will add new dashboards for you.\nIf you want to become active yourself you can find an editable version of the dashboard collection here: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz There you can add your new suggestions yourself."
-  },
-  {
-    "objectID": "arbeitspakete.html",
-    "href": "arbeitspakete.html",
-    "title": "Work Packages",
-    "section": "",
-    "text": "WP 1 Institutional Level\nThe aim of WP 1 is to collect, analyse and document requirements for data analyses relating to the OA transformation from the institutional practice of scientific institutions. The results of WP 1 will be published in a report and formulated in recommendations.\n\n\nWP 2 Publisher Agreements\nThe aim of WP 2 is to analyse publishing contracts relating to open metadata and data analytics research services and to identify best practices. The result is an inventory of German transformation contracts and a recommendation for action.\n\n\nWP 3 Open Access in institutional Rankings\nThe aim of WP 3 is to critically accompany OA as an evaluation dimension of institutional rankings. To this end, interpretation and intervention aids for the management of scientific institutions will be developed on the basis of an inventory of institutional rankings. Secondly, data analysis aids will be developed and published to enable institutions and consortia to carry out benchmarking on the basis of data from university rankings.\n\n\nWP 4 Open-Access-Reporting\nThe aim of WP 4 is to contribute to the improvement of data quality and to promote the standardisation of data and reports on OA transformation. As a result of WP 4, the proposal for a standard of the Alliance of Science Organisations for OA reporting will be further developed as part of an assessment process.\n\n\nWP 5 Synopsis\nThe aim of WP 5 is to summarise the results from WPs 1, 2, 3 and 4 in a strategic recommendation on data practices for shaping the OA transformation.\n\n\nWP 6 Trainings\nThe aim of WP 6 is to develop and test open training materials on the use of open data sources and tools in the form of a Carpentry module in a participatory manner. The work planning is based on the life cycle of the Carpentry lessons and includes the call for teamwork, creation of the course materials, testing and revision phase.\n\n\nWP 7 Tools\nThe aim of the WP is to set up and operate a digital toolbox that provides information on tools for collecting, analysing and visualising data relating to OA transformation.\n\n\nWP 8 Networks\nThe aim of the WP is to initiate networks on specific issues relating to data work on OA transformation. At the heart of this is the dialogue on the topics of: Reporting, publishing data, bibliometrics and mentoring in the context of OA transformation. The project organises digital workshops for the networks and provides an organisational structure.\n\n\n\n\n Back to top"
+    "text": "Back to top"
   },
   {
     "objectID": "OpenAlex.html",

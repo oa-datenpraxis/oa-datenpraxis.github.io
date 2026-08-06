@@ -310,7 +310,7 @@
   {
     "objectID": "events.html#konferenzen-tagungen",
     "href": "events.html#konferenzen-tagungen",
-    "title": "Veranstaltungen",
+    "title": "Kommende Veranstaltungen",
     "section": "Konferenzen & Tagungen",
     "text": "Konferenzen & Tagungen"
   },
@@ -343,11 +343,46 @@
     "text": "Beschreibung\nDie Carpentries (bestehend aus Data, Library und Software Carpentry) sind eine Methode, in grundlegende Datenkompentenzen einzuführen. Hauptaugenmerk liegt dabei auf dem gemeinschaftlichen Erlernen IT-gestützter Verfahren zur Lösung praktischer Probleme. In Deutschland unterstützen sowohl bibliothekarische Fachverbände als auch wissenschaftliche Einrichtungen die Carpentries-Community über eine Mitgliedschaft. So ist die SUB Göttingen seit 2019 Mitglied und bildet am Campus Göttingen jährlich bis zu fünf Instruktoren aus und organisiert regelmäßig Carpentries Workshops, die in erster Linie Nachwuchswissenschaftler:innen und Bibliothekar:innen adressieren. Ziel des AP ist es, Trainings mit spezifischem Fokus auf die Datenpraxis zur Gestaltung der OA- Transformation als Teil von Library Carpentry zu entwerfen, zu testen und iterativ weiterzuentwickeln. Die Zielgruppe umfasst Professionals des Bereichs OA-Transformation und Forschungsadministration. Innerhalb eines Carpentry-Trainings lassen sich nicht sämtliche datenanalytische Aspekte abdecken. Vielmehr geht es darum, offene und wissenschaftsnahe Tools und Vorgehensweisen einzuführen und deren Anwendung zu erproben (Wilson et al., 2017). Die Aufgaben des AP orientieren sich an dem Lebenszyklus der Carpentries Lessons und starten im 2. Projektjahr."
   },
   {
-    "objectID": "dashboards.html",
-    "href": "dashboards.html",
-    "title": "Open-Access-Dashboard Collection",
+    "objectID": "notebooks.html",
+    "href": "notebooks.html",
+    "title": "Notebooks",
     "section": "",
-    "text": "Back to top"
+    "text": "Open Access Cost Monitoring with OpenAPC\nThis notebook is a tool for library and information professionals dealing with cost monitoring in terms of Open Access publication output at their institution. It shows how to leverage the OpenAPC data set to collect and analyze cost information using R. No software installation or prior programming knowledge required. At the end of the notebook you will find some short excercises that can be executed directly in your browser.\n\n\nOpen Access Monitoring with OpenAlex\nThis notebook is a tool for library and information professionals dealing with monitoring Open Access publication output at their institution. It shows how to leverage OpenAlex to retrieve and analyze publication data using R. No software installation or prior programming knowledge required. At the end of the notebook you will find some short excercises that can be executed directly in your browser.\n\n\nAffiliation search using ROR IDs\nThis notebook serves as a tool for librarians and information professionals monitoring their institution’s publication output. It compares ROR-based versus string-based search strategies in OpenAlex for retrieving publication data with R, accounting for institutional hierarchies (parent institutions and their child/related institutions) and demonstrating differences in publication coverage. No software installation or prior programming knowledge required.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "arbeitspakete.html",
+    "href": "arbeitspakete.html",
+    "title": "Arbeitspakete",
+    "section": "",
+    "text": "AP 1 Institutionelle Ebene\nZiel des AP 1 ist die Erhebung, Analyse und Dokumentation von Anforderungen an Datenanalysen rund um die OA- Transformation aus der institutionellen Praxis wissenschaftlicher Einrichtungen. Die Ergebnisse des AP 1 werden in einem Report veröffentlicht und in Empfehlungen formuliert.\n\n\nAP 2 Verlagsverträge\nZiel des AP 2 ist es, Verlagsverträge bezogen auf offene Metadaten und datenanalytische Forschungsservices zu analysieren und Best Practices zu identifizieren. Ergebnis sind eine Bestandsaufnahme bezogen auf deutsche Transformationsverträge und eine Handlungsempfehlung.\n\n\nAP 3 Open Access in institutionellen Rankings\nZiel des AP 3 ist es, OA als Bewertungsdimension von Institutionsrankings kritisch zu begleiten. Zu diesem Zweck sollen auf Grundlage einer Bestandsaufnahme von Instituionsrankings Interpretations- und Interventionshilfen für Leitungen wissenschaftlicher Einrichtungen erstellt werden. Zum anderen werden datenanalytische Hilfestellungen entwickelt und veröffentlicht, mit denen Einrichtungen und Konsortien ein Benchmarking auf Basis von Daten aus Hochschulrankings durchführen können.\n\n\nAP 4 Open-Access-Reporting\nZiel des AP 4 ist, einen Beitrag zur Verbesserung der Datenqualität zu leisten und die Standardisierung von Daten und Berichten zur OA-Transformation zu fördern. Als Ergebnis des AP 4 wird der Vorschlag eines Standards der Allianz der Wissenschaftsorganisationen zum OA-Reporting im Rahmen eines Beurteilungsprozesses weiterentwickelt.\n\n\nAP 5 Synopse\nZiel des AP 5 ist die Synopse der Ergebnisse aus den APs 1, 2, 3 und 4 in einer strategischen Empfehlung zur Datenpraxis zur Gestaltung der OA-Transformation.\n\n\nAP 6 Trainings\nZiel des AP 6 ist es, offene Trainingsmaterialien zur Verwendung offener Datenquellen und Werkzeuge in Form eines Carpentry Moduls partizipativ zu entwickeln und zu erproben. Die Arbeitsplanung orientiert sich am Lebenszyklus der Carpentries Lessons und umfasst die Ausschreibung zur Teamarbeit, Erstellung der Kursmaterialien, Erprobung und Revisionsphase.\n\n\nAP 7 Werkzeuge\nZiel des AP ist der Aufbau und Betrieb einer digitalen Werkzeugbox, die über Tools zur Erhebung, Analyse und Visualisierungen von Daten rund um die OA-Transformation informiert.\n\n\nAP 8 Netzwerke\nZiel des AP ist es, Netzwerke zu spezifischen Fragen der Datenarbeit zur OA-Transformation anzustoßen. Im Kern steht dabei der Dialog zu den Themen: Reporting, Verlagsdaten, Bibliometrie sowie Mentoring im Kontext der OA-Transformation. Das Projekt organisiert digitale Workshops für die Netzwerke und bietet eine Organisationsstruktur.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "dashboard_uebersicht.html",
+    "href": "dashboard_uebersicht.html",
+    "title": "Open Access Dashboards",
+    "section": "",
+    "text": "Mit der wachsenden Bedeutung von Open Access stellt sich die Frage nach dem Anteil am Publikationsaufkommen von Forschungseinrichtungen, Ländern und auch auf globaler Ebene. Im Projekt OA Datenpraxis entwickeln wir eine Übersicht über Dashboards zu Open Access.\nDafür haben wir eine Recherche zu relevanten Dashboards durchgeführt und ein eigenes Metadatenschema zur Indexierung erstellt. Im Mai 2025 haben wir einen Community-Prozess gestartet, um die Sammlung weiterzuentwickeln und auszubauen."
+  },
+  {
+    "objectID": "dashboard_uebersicht.html#über-diese-sammlung",
+    "href": "dashboard_uebersicht.html#über-diese-sammlung",
+    "title": "Open Access Dashboards",
+    "section": "",
+    "text": "Mit der wachsenden Bedeutung von Open Access stellt sich die Frage nach dem Anteil am Publikationsaufkommen von Forschungseinrichtungen, Ländern und auch auf globaler Ebene. Im Projekt OA Datenpraxis entwickeln wir eine Übersicht über Dashboards zu Open Access.\nDafür haben wir eine Recherche zu relevanten Dashboards durchgeführt und ein eigenes Metadatenschema zur Indexierung erstellt. Im Mai 2025 haben wir einen Community-Prozess gestartet, um die Sammlung weiterzuentwickeln und auszubauen."
+  },
+  {
+    "objectID": "dashboard_uebersicht.html#kontakt",
+    "href": "dashboard_uebersicht.html#kontakt",
+    "title": "Open Access Dashboards",
+    "section": "Kontakt",
+    "text": "Kontakt\nFalls Sie Änderungsvorschläge haben oder ein Dashboard haben, was hier noch nicht gelistet wird, schreiben Sie uns sehr gerne hier: oa-datenpraxis-dashboards@listserv.dfn.de. Wir freuen uns über jeden Hinweis und tragen neue Dashboards ein.\nFalls Sie selbst tätig werden wollen, finden Sie eine editierbare Version der Dashboard-Collection hier: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz Dort können Sie neue Vorschläge selbst eintragen."
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "OA Datenpraxis",
+    "section": "",
+    "text": "The content of the OA Datenpraxis website is made available under the Creative Commons Attribution license. The following is a human-readable summary of (and not a substitute for) the full legal text of the CC BY 4.0 license.\nYou are free:\n\nto Share—copy and redistribute the material in any medium or format\nto Adapt—remix, transform, and build upon the material\n\nfor any purpose, even commercially.\nThe licensor cannot revoke these freedoms as long as you follow the license terms.\nUnder the following terms:\n\nAttribution—You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions—You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits. With the understanding that:\n\nNotices:\n\nYou do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.\nNo warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.\n\n\n\n\n Back to top"
   },
   {
     "objectID": "publications.html",
@@ -371,32 +406,11 @@
     "text": "Vorarbeiten der Projektpartner\n\n\nJahn, N. (2024). How open are hybrid journals included in transformative agreements? arXiv. https://doi.org/10.48550/arXiv.2402.18255\n\n\nFraser, N., Hobert, A., Jahn, N., Mayr, P., & Peters, I. (2023). No deal: German researchers’ publishing and citing behaviors after big deal negotiations with elsevier. Quantitative Science Studies, 4(2), 325–352. https://doi.org/10.1162/qss_a_00255\n\n\nTaubert, N., Hobert, A., Jahn, N., Bruns, A., & Iravani, E. (2023). Understanding differences of the OA uptake within the german university landscape (2010–2020): Part 1—journal-based OA. Scientometrics, 128(6), 3601–3625. https://doi.org/10.1007/s11192-023-04716-3\n\n\nJahn, N., Matthias, L., & Laakso, M. (2022). Toward transparency of hybrid open access through publisher-provided metadata: An article-level study of elsevier. Journal of the Association for Information Science and Technology, 73(1), 104–118. https://doi.org/10.1002/asi.24549\n\n\nPampel, H. (2022). From library budget to information budget: Fostering transparency in the transformation towards open access. Insights the UKSG Journal, 35, 8. https://doi.org/10.1629/uksg.576\n\n\nHobert, A., Jahn, N., Mayr, P., Schmidt, B., & Taubert, N. (2021). Open access uptake in germany 2010–2018: Adoption in a diverse research landscape. Scientometrics, 126(12), 9751–9777. https://doi.org/10.1007/s11192-021-04002-0"
   },
   {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "OA Datenpraxis",
+    "objectID": "dashboards.html",
+    "href": "dashboards.html",
+    "title": "Open-Access-Dashboard Collection",
     "section": "",
-    "text": "The content of the OA Datenpraxis website is made available under the Creative Commons Attribution license. The following is a human-readable summary of (and not a substitute for) the full legal text of the CC BY 4.0 license.\nYou are free:\n\nto Share—copy and redistribute the material in any medium or format\nto Adapt—remix, transform, and build upon the material\n\nfor any purpose, even commercially.\nThe licensor cannot revoke these freedoms as long as you follow the license terms.\nUnder the following terms:\n\nAttribution—You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nNo additional restrictions—You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits. With the understanding that:\n\nNotices:\n\nYou do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.\nNo warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "dashboard_uebersicht.html",
-    "href": "dashboard_uebersicht.html",
-    "title": "OA Dashboards Kontakt",
-    "section": "",
-    "text": "Mit der wachsenden Bedeutung von Open Access stellt sich die Frage nach dem Anteil am Publikationsaufkommen von Forschungseinrichtungen, Ländern und auch auf globaler Ebene. Im Projekt OA Datenpraxis entwickeln wir eine Übersicht über Dashboards zu Open Access.\nDafür haben wir eine Recherche zu relevanten Dashboards durchgeführt und ein eigenes Metadatenschema zur Indexierung erstellt. Im Mai 2025 haben wir einen Community-Prozess gestartet, um die Sammlung weiterzuentwickeln und auszubauen.\nSie finden die Open-Access-Dashboard-Collection hier und das dazugehörige Metadatenschema hier.\nFalls Sie Änderungsvorschläge haben oder ein Dashboard haben, was hier noch nicht gelistet wird, schreiben Sie uns sehr gerne hier: oa-datenpraxis-dashboards@listserv.dfn.de. Wir freuen uns über jeden Hinweis und tragen neue Dashboards ein.\nFalls Sie selbst tätig werden wollen, finden Sie eine editierbare Version der Dashboard-Collection hier: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz Dort können Sie neue Vorschläge selbst eintragen."
-  },
-  {
-    "objectID": "dashboard_uebersicht.html#oa-dashboard-collection",
-    "href": "dashboard_uebersicht.html#oa-dashboard-collection",
-    "title": "OA Dashboards Kontakt",
-    "section": "",
-    "text": "Mit der wachsenden Bedeutung von Open Access stellt sich die Frage nach dem Anteil am Publikationsaufkommen von Forschungseinrichtungen, Ländern und auch auf globaler Ebene. Im Projekt OA Datenpraxis entwickeln wir eine Übersicht über Dashboards zu Open Access.\nDafür haben wir eine Recherche zu relevanten Dashboards durchgeführt und ein eigenes Metadatenschema zur Indexierung erstellt. Im Mai 2025 haben wir einen Community-Prozess gestartet, um die Sammlung weiterzuentwickeln und auszubauen.\nSie finden die Open-Access-Dashboard-Collection hier und das dazugehörige Metadatenschema hier.\nFalls Sie Änderungsvorschläge haben oder ein Dashboard haben, was hier noch nicht gelistet wird, schreiben Sie uns sehr gerne hier: oa-datenpraxis-dashboards@listserv.dfn.de. Wir freuen uns über jeden Hinweis und tragen neue Dashboards ein.\nFalls Sie selbst tätig werden wollen, finden Sie eine editierbare Version der Dashboard-Collection hier: https://nextcloud.gfz.de/s/QG38J6kEDbJ8DXz Dort können Sie neue Vorschläge selbst eintragen."
-  },
-  {
-    "objectID": "arbeitspakete.html",
-    "href": "arbeitspakete.html",
-    "title": "Arbeitspakete",
-    "section": "",
-    "text": "AP 1 Institutionelle Ebene\nZiel des AP 1 ist die Erhebung, Analyse und Dokumentation von Anforderungen an Datenanalysen rund um die OA- Transformation aus der institutionellen Praxis wissenschaftlicher Einrichtungen. Die Ergebnisse des AP 1 werden in einem Report veröffentlicht und in Empfehlungen formuliert.\n\n\nAP 2 Verlagsverträge\nZiel des AP 2 ist es, Verlagsverträge bezogen auf offene Metadaten und datenanalytische Forschungsservices zu analysieren und Best Practices zu identifizieren. Ergebnis sind eine Bestandsaufnahme bezogen auf deutsche Transformationsverträge und eine Handlungsempfehlung.\n\n\nAP 3 Open Access in institutionellen Rankings\nZiel des AP 3 ist es, OA als Bewertungsdimension von Institutionsrankings kritisch zu begleiten. Zu diesem Zweck sollen auf Grundlage einer Bestandsaufnahme von Instituionsrankings Interpretations- und Interventionshilfen für Leitungen wissenschaftlicher Einrichtungen erstellt werden. Zum anderen werden datenanalytische Hilfestellungen entwickelt und veröffentlicht, mit denen Einrichtungen und Konsortien ein Benchmarking auf Basis von Daten aus Hochschulrankings durchführen können.\n\n\nAP 4 Open-Access-Reporting\nZiel des AP 4 ist, einen Beitrag zur Verbesserung der Datenqualität zu leisten und die Standardisierung von Daten und Berichten zur OA-Transformation zu fördern. Als Ergebnis des AP 4 wird der Vorschlag eines Standards der Allianz der Wissenschaftsorganisationen zum OA-Reporting im Rahmen eines Beurteilungsprozesses weiterentwickelt.\n\n\nAP 5 Synopse\nZiel des AP 5 ist die Synopse der Ergebnisse aus den APs 1, 2, 3 und 4 in einer strategischen Empfehlung zur Datenpraxis zur Gestaltung der OA-Transformation.\n\n\nAP 6 Trainings\nZiel des AP 6 ist es, offene Trainingsmaterialien zur Verwendung offener Datenquellen und Werkzeuge in Form eines Carpentry Moduls partizipativ zu entwickeln und zu erproben. Die Arbeitsplanung orientiert sich am Lebenszyklus der Carpentries Lessons und umfasst die Ausschreibung zur Teamarbeit, Erstellung der Kursmaterialien, Erprobung und Revisionsphase.\n\n\nAP 7 Werkzeuge\nZiel des AP ist der Aufbau und Betrieb einer digitalen Werkzeugbox, die über Tools zur Erhebung, Analyse und Visualisierungen von Daten rund um die OA-Transformation informiert.\n\n\nAP 8 Netzwerke\nZiel des AP ist es, Netzwerke zu spezifischen Fragen der Datenarbeit zur OA-Transformation anzustoßen. Im Kern steht dabei der Dialog zu den Themen: Reporting, Verlagsdaten, Bibliometrie sowie Mentoring im Kontext der OA-Transformation. Das Projekt organisiert digitale Workshops für die Netzwerke und bietet eine Organisationsstruktur.\n\n\n\n\n Back to top"
+    "text": "Back to top"
   },
   {
     "objectID": "OpenAlex.html",
