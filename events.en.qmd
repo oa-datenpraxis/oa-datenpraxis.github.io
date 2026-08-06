@@ -3,6 +3,5 @@ title: "Events"
 ---
 ## OA Datenpraxis Webinar Series
 
-#### [15 July 2026: edit-a-thon Materialsammlung für die Gestaltung des institutionellen Publikationskostenmonitorings](events/webinar_20260715.qmd)
 
 ## Conferences & Meetings
