@@ -9,7 +9,7 @@ Dafür haben wir eine Recherche zu relevanten Dashboards durchgeführt und ein e
 
 ### [Sammlung Open Access Dashboards](dashboards.qmd)
 
-### [Metadatenschema Open Access Dashboards](dashboards_schema.de)
+### [Metadatenschema Open Access Dashboards](dashboards_schema.qmd)
 
 ## Kontakt
 

@@ -1,5 +1,5 @@
 ---
-title: "Open-Access-Dashboard Collection"
+title: "Sammlung Open Access Dashboards"
 header-includes:
   - |
     <style>

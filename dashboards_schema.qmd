@@ -1,5 +1,5 @@
 ---
-title: Metadatenschema
+title: Metadatenschema Open Access Dashboards
 ---
 
 | ID  | Property          | Definition                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Occ | Values                                                                                          | Example                                                                                             |

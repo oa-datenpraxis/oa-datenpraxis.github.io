@@ -1,5 +1,5 @@
 ---
-title: "Affiliation search using ROR IDs"
+title: "Affiliation Search using ROR IDs"
 author:
   - name: Dorothea Strecker
     orcid: 0000-0002-9754-3807
