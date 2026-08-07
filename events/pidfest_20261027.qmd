@@ -1,0 +1,29 @@
+---
+title: Vortrag <br/> Your contract says ‘Open Access’, but does it say ‘Open Metadata’?
+subtitle: PIDfest 26, 27.--29. Oktober 2026, Berlin
+---
+
+## Daten
+
+**Datum:** 27.10.2026
+
+**Uhrzeit:** 14:15--14:45 Uhr
+
+**Saal:** Naturalis 02
+
+[Programm auf der Seite des Veranstalters](https://pretalx.surf.nl/pidfest-26-2026/talk/JNMGHG/)
+
+## Beschreibung
+
+Do you want to know if your institution gets open, reusable metadata — including PIDs like ORCID and ROR — from transformative agreements?
+
+In this session, you’ll discover how we ran a parallel analysis of openly available transformative agreements listed in the ESAC registry to inventorize conditions for open metadata in publisher contracts, in an initiative connected to the Barcelona Declaration/OA2020 and OA Datenpraxis.
+
+You’ll learn about:
+
+- existing gaps in contracts: e.g., permission for full text but not metadata reuse
+- missing commitments of PID (ORCID, ROR, Funder ID) use and provision
+- how metadata provision differs across consortia: to Crossref, library systems and discovery tools
+- real-world data: e.g., ROR are rarely submitted to Crossref
+
+We share our reusable analysis method so you can audit your own contracts, push for stronger open metadata clauses or contribute to this collectively organized analysis for publisher contracts in your country.
