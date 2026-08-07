@@ -7,4 +7,4 @@ title: "Kommende Veranstaltungen"
 
 ### PIDfest 26, 27.--29. Oktober 2026, Leiden NL
 
-#### [Vortrag: Your contract says ‘Open Access’, but does it say ‘Open Metadata’?](pidfest_20261027.qmd)
+#### [Vortrag: Your contract says ‘Open Access’, but does it say ‘Open Metadata’?](events/pidfest_20261027.qmd)
