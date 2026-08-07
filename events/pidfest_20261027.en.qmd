@@ -1,6 +1,6 @@
 ---
 title: Vortrag <br/> Your contract says ‘Open Access’, but does it say ‘Open Metadata’?
-subtitle: PIDfest 26, October 27 - 29 2026, Leiden NL
+subtitle: PIDfest 26, 27 -- 29 October, 2026, Leiden NL
 ---
 
 ## Dates
