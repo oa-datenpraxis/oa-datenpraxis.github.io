@@ -4,3 +4,7 @@ title: "Kommende Veranstaltungen"
 ## OA Datenpraxis Webinarreihe
 
 ## Konferenzen & Tagungen
+
+### PIDfest 26, 27.--29. Oktober 2026, Leiden NL
+
+#### [Vortrag: Your contract says ‘Open Access’, but does it say ‘Open Metadata’?](pidfest_20261027.qmd)
