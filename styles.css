@@ -29,3 +29,12 @@ a {
 .nav-footer-center .footer-items {
   display: table;
 }
+
+.csl-entry .csl-indent {
+  display: block;
+  margin-top: 0.5em;
+  padding: 8px 14px;
+  border: 1px solid #4484dc;
+  border-radius: 10px;
+  color: #4484dc;
+}
