@@ -30,8 +30,8 @@ Diese Sammlung ist eine gemeinsame Initiative der Projekte [OA Datenpraxis](http
 - 4 Datensammlung / Datenverarbeitung
 - 5 Reporting
 
-[![](oa_datenpraxis_logo.png){width=30% style="margin-top: 50px;"}](https://oa-datenpraxis.de)
-[![](transform2open_logo.png){width=45% style="margin-top: 50px;"}](https://www.transform2open.de)
+[![](materialsammlung/oa_datenpraxis_logo.png){width=30% style="margin-top: 50px;"}](https://oa-datenpraxis.de)
+[![](materialsammlung/transform2open_logo.png){width=45% style="margin-top: 50px;"}](https://www.transform2open.de)
 
 ### Wie kann ich zur Materialsammlung beitragen?
 
