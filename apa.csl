@@ -2094,6 +2094,7 @@
           </group>
         </else>
       </choose>
+      <text variable = "addendum" display = "indent"/>
     </layout>
   </bibliography>
 </style>
