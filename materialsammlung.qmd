@@ -14,7 +14,7 @@ citeproc: false
 reference-section-title: ""
 nocite: |
   @*
-csl: materialsammlung/apa-annotated-bibliography.csl 
+csl: apa-annotated-bibliography.csl 
 ---
 
 Die Open-Access-Transformation erfordert eine Umstellung der Finanzierungsstrukturen des wissenschaftlichen Publikationssystems. Damit einher geht auch eine Diversifizierung von Finanzströmen -- der Wissenschaftsrat legte Wissenschaftlichen Einrichtungen darum in der 2022 veröffentlichten [Empfehlungen zur Transformation des wissenschaftlichen Publizierens zu Open Access](https://www.wissenschaftsrat.de/download/2022/9477-22.pdf) nahe, alle informationsbezogenen Ausgaben zu erfassen, orientiert am Konzepts des [Informationsbudgets](https://open-access.network/informieren/glossar#c19015). Ein wesentlicher Bestandteil des Informationsbudgets ist das Publikationskostenmonitoring, bei dem Ausgaben für Publikationen für eine Einrichtung möglichst vollständig erfasst werden.
