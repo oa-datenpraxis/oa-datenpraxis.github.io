@@ -2128,7 +2128,7 @@
           </group>
         </else>
       </choose>
-      <text variable="note" display="block"/>
+      <text variable="note" display="indent"/>
     </layout>
   </bibliography>
 </style>
