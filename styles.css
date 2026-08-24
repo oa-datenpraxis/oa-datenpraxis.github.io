@@ -31,15 +31,14 @@ a {
 }
 
 .csl-entry .csl-indent {
-  display: inline-block;
-  margin-top: .3em;
-  padding: 5px 10px;
+  display: inline-block !important;
+  margin-top: .2em !important;
+  padding: 5px 10px !important;
+  width: fit-content;
   border: 1px solid #4484dc;
   border-radius: 10px;
   color: #4484dc;
-  width: fit-content;
-  text-indent: 0;
-  margin-left: .7em;
-  box-sizing: border-box;
-  margin-bottom: .7em;
+  text-indent: 0 !important;
+  margin-left: .5em !important;
+  margin-bottom: .2em !important;
 }
