@@ -38,6 +38,7 @@ a {
   border: 1px solid #4484dc;
   border-radius: 10px;
   color: #4484dc;
+  box-sizing: border-box;
   text-indent: 0 !important;
   margin-left: .5em !important;
   margin-bottom: .2em !important;
