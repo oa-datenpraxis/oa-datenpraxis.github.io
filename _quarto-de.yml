@@ -22,4 +22,5 @@ website:
         menu:
           - dashboard_uebersicht.qmd
           - notebooks.qmd
+          - materialsammlung.qmd
           
