@@ -1,6 +1,5 @@
 ---
 title: "Materialsammlung für die Gestaltung des institutionellen Publikationskostenmonitorings"
-lang: de
 filters:
   - multibib
 validate-yaml: false
