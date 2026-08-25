@@ -5,11 +5,11 @@ subtitle: PIDfest 26, 27.--29. Oktober 2026, Leiden NL
 
 ## Daten
 
-**Datum:** 27.10.2026
+**Datum:** 29.10.2026
 
-**Uhrzeit:** 14:15--14:45 Uhr
+**Uhrzeit:** 12:00--12:30 Uhr
 
-**Saal:** Naturalis 02
+**Saal:** LUMC01
 
 [Programm auf der Seite des Veranstalters](https://pretalx.surf.nl/pidfest-26-2026/talk/JNMGHG/)
 
