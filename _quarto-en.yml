@@ -22,5 +22,6 @@ website:
         menu:
           - dashboard_uebersicht.qmd
           - notebooks.qmd
-          - materialsammlung.qmd
+          - text: "Collection of Materials"
+            href: materialsammlung.qmd
           
