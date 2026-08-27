@@ -228,12 +228,20 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>5.2</td>
 <td>Countries</td>
-<td>Country code of the organization(s) whose data are represented in the dashboard, represented with country code value ‘Europe’ if more than 1 country but all from EU + Switzerland OR Norway OR UK value ‘global’ if more than 1 country and more than 3 countries outside of ‘Europe’</td>
+<td>Country code of the organization(s) whose data are represented in the dashboard, value ‘Europe’ if more than 1 country but all from UN</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>M49 area code 150; value ‘global’ if more than 1 country and more than 3 countries outside of ‘Europe’</td>
 <td>1-n</td>
 <td>Controlled vocabulary: 3-letter ISO 3166-1 alpha-3 country code; additionally: ‘Europe’, ‘global’</td>
 <td>DEU</td>
+<td></td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>6</td>
 <td>Data type</td>
 <td>Type of data that the dashboard shows ‘publications’ for data on textual publications such as e.g. journal articles ‘data’ for research data ‘software’ for research software ‘infrastructures’ for data on e.g. repositories ‘other’ for data that does not fall under any of the other categories</td>
@@ -241,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
 <td>publications, data, software, infrustructures, other</td>
 <td>publications</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>7</td>
 <td>Dashboard license</td>
 <td>Copyright license of the software used to create the dashboard; if the dashboard provides a generic license for its website without specifically mentioning the software or its dataset, this license is instead entered here</td>
@@ -249,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
 <td>controlled vocabulary: SPDX License List entries, N/A</td>
 <td>MIT, Apache-2.0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>8</td>
 <td>Data license</td>
 <td>Copyright license under which the data of the dashboard is published</td>
@@ -257,7 +265,7 @@ ul.task-list li input[type="checkbox"] {
 <td>controlled vocabulary: SPDX License List entries, N/A</td>
 <td>CC-BY-4,0, CC0-1.0</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>9</td>
 <td>Data source</td>
 <td>Availability of the data source the dashboard is based on: ‘open’ if data comes from an open source such as e.g. OpenAlex, ‘proprietary’ if not, both values if dashboard uses data sources of both types</td>
@@ -265,7 +273,7 @@ ul.task-list li input[type="checkbox"] {
 <td>open, restricted, N/A</td>
 <td>open</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>10</td>
 <td>Collection</td>
 <td>Names the dashboard collection the dashboard is part of if applicable; ‘N/A’ otherwise</td>
@@ -273,7 +281,7 @@ ul.task-list li input[type="checkbox"] {
 <td>string of the dashboard collection name, N/A</td>
 <td>OpenAIRE Monitor Dashboard, CHORUS dashboard</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>11</td>
 <td>Documentation</td>
 <td>Free text field in which relevant links and comments are gathered; these can include: links to the specific part of the website where the various licenses are mentioned, DOIs to accompanying publications about the dashboard and other comments</td>
