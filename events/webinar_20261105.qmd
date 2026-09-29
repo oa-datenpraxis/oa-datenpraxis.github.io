@@ -1,0 +1,31 @@
+---
+title: OA Datenpraxis Webinar <br/> Bibliometrie und offene Daten im Kontext der Open-Access-Transformation
+---
+
+## Daten
+
+**Datum:** 05.11.2026
+
+**Uhrzeit:** 12:00--15:00 Uhr
+
+**Ort:** Online über Zoom
+
+**Registrierung unter:** [https://gfz-de.zoom-x.de/meeting/register/**EQ3DkB3BROSmOQRSbAQi6A](https://gfz-de.zoom-x.de/meeting/register/**EQ3DkB3BROSmOQRSbAQi6A)
+
+## Beschreibung
+
+Thema dieses Webinars ist die Rolle bibliometrischer Fragestellungen im Kontext der Open-Access-Transformation. Die Transformation hin zu Open Access verändert nicht nur die Publikationslandschaft, sondern schafft zugleich neue Anforderungen und Möglichkeiten für die Erhebung, Analyse und Nachnutzung von Forschungsinformationen. Offene Daten sind dabei von besonderer Bedeutung: Sie können eine breitere Datenbasis für bibliometrische Analysen schaffen und ermöglichen zugleich, den Abdeckungsgrad und die Qualität bibliometrischer Daten zu untersuchen.  
+Kurze Vorträge beleuchten unterschiedliche Aspekte: den Stand der Barcelona Declaration in Deutschland, offene Bibliometriedaten im Kompetenznetzwerk Bibliometrie, Kompetenzen im Umgang mit offenen Metadaten und den Bezug zum KDSF – Standard für Forschungsinformationen  
+
+Diese Veranstaltung richtet sich an Mitarbeitende in wissenschaftlichen Einrichtungen, die mit bibliometrischen Fragestellungen und Aspekten offener Forschungsinformation betraut sind
+
+
+### vorläufiges Programm
+
+- 12:00-12:30 **Offene Metadaten und der KDSF – Standard für Forschungsinformationen** – Dr. Sophie Biesenbender, Kommission für Forschungsinformationen in Deutschland (KFiD)
+- 12:30-13:00 **Barcelona Declaration in Deutschland** – Marc Lange, Helmholtz Open Science Office
+- 13:00-13:15 Pause
+- 13:15-13:45 **Offene Bibliometriedaten des Kompetenznetzwerks Bibliometrie** – Nina Funke, SUB Göttingen
+- 13:45-14:15 **Kompetenzen für offene Bibliometriedaten** – Dr. Stephan Gauch, Humboldt-Universität zu Berlin
+
+
