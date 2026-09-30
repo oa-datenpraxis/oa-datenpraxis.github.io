@@ -22,11 +22,11 @@ Diese Veranstaltung richtet sich an Mitarbeitende in wissenschaftlichen Einricht
 
 ### vorläufiges Programm
 
-- 12:00-12:30 **Offene Metadaten und der KDSF – Standard für Forschungsinformationen** – Dr. Sophie Biesenbender, Kommission für Forschungsinformationen in Deutschland (KFiD)
+- 12:00-12:30 **Offene Metadaten und der KDSF – Standard für Forschungsinformationen** – Sophie Biesenbender, Kommission für Forschungsinformationen in Deutschland (KFiD)
 - 12:30-13:00 **Barcelona Declaration in Deutschland** – Marc Lange, Helmholtz Open Science Office
 - 13:00-13:30 **Offene Bibliometriedaten des Kompetenznetzwerks Bibliometrie** – Nina Funke, SUB Göttingen
 - 13:30-13:50 Pause
-- 13:50-14:20 **Kompetenzen für offene Bibliometriedaten** – Dr. Stephan Gauch, Humboldt-Universität zu Berlin
+- 13:50-14:20 **Kompetenzen für offene Bibliometriedaten** – Stephan Gauch, Humboldt-Universität zu Berlin
 - 14:20-14:50 **Förderorganisationen und offene Metadaten** – Simon Gorin, Schweizerischer Nationalfonds (SNF)
 
 
