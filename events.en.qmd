@@ -3,6 +3,8 @@ title: "Upcoming Events"
 ---
 ## OA Datenpraxis Webinar Series
 
+#### [Bibliometrie und offene Daten im Kontext der Open-Access-Transformation](events/webinar_20261105.qmd)
+
 ## Conferences & Meetings
 
 ### PIDfest 26, 27 -- 29 October, 2026, Leiden NL
