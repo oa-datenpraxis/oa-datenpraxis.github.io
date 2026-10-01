@@ -3,6 +3,8 @@ title: "Kommende Veranstaltungen"
 ---
 ## OA Datenpraxis Webinarreihe
 
+#### [University Rankings Under Scrutiny -- Open Access as a Performance Indicator and Institutional Perspectives from Germany and the Netherlands](events/webinar_20261103.qmd)
+
 #### [Bibliometrie und offene Daten im Kontext der Open-Access-Transformation](events/webinar_20261105.qmd)
 
 ## Konferenzen & Tagungen
