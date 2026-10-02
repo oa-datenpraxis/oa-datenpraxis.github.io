@@ -7,6 +7,8 @@ title: "Upcoming Events"
 
 #### [Bibliometrie und offene Daten im Kontext der Open-Access-Transformation](events/webinar_20261105.qmd)
 
+#### [Open Access and Publisher Data](events/webinar_20261130.en.qmd)
+
 ## Conferences & Meetings
 
 ### PIDfest 26, 27 -- 29 October, 2026, Leiden NL
