@@ -1,0 +1,34 @@
+---
+title: OA Datenpraxis Webinar <br/> Open Access and Publisher Data
+---
+
+## Daten
+
+**Date:** Nov 30th, 2026
+
+**Time:** 12:00--15:00 CET
+
+**Location:** Online via Zoom
+
+**Language: English**
+
+**Registration** [https://gfz-de.zoom-x.de/meeting/register/OZKvgYeRTpuy16oEPTSXmQ](https://gfz-de.zoom-x.de/meeting/register/OZKvgYeRTpuy16oEPTSXmQ)
+
+## Description
+
+Transformative agreements have changed how scholarly publishing is funded. The data that publishers provide about these agreements, however, is often still incomplete, inconsistent, or closed. Reliable, open metadata is essential for monitoring agreements, analyzing costs, and making informed decisions about Open Access. This workshop, organized by the DFG-funded OA Datenpraxis project, brings together experts to discuss how open publisher data can be improved and how it can be put to use.
+The workshop is aimed at people working in libraries, consortia, research institutions, funding organizations, and infrastructure providers, as well as anyone interested in open research information.
+Participation is free of charge.
+
+
+### Program
+
+- 12:00-12:30 Sophia Dörner (SUB Göttingen): OA Datenpraxis recommendations on open metadata in transformative journal agreements
+- 12:30-13:00 Hans de Jonge (Open Science NL): Why publisher metadata in Crossref remains incomplete
+- 13:00-13:30 Arjan Schalken (SURF): Negotiating metadata openness into publisher agreements
+- 13:30-13:50 Break
+- 13:50-14:20 Najko Jahn (SUB Göttingen): ORION-DBs and open research information at scale
+- 14:20-14:50 Bianca Kramer (Sesame Open Science): Modeling publishing costs with open research information
+
+
+
