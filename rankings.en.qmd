@@ -311,7 +311,7 @@ Due to the limitations in assigning ROR IDs, it was decided to restrict the anal
 
 @fig-2 quantifies the institutional overlap between German institutions across the various ranking systems. The figure only includes those institutions to which ROR IDs could be assigned.
 
-![Institutional overlap for all German institutions with ROR IDs across five ranking systems](plots/all_de_institution_upset.png){#fig-2 group="upset"}
+![Institutional overlap for all German institutions with ROR IDs across five ranking systems](rankings/plots/all_de_institution_upset.png){#fig-2 group="upset"}
 
 In total, after matching the ROR IDs `r format(n_distinct(institutions_df_de_sector$ror), big.mark=",", decimal.mark=".")` unique institutions from Germany were identified across all ranking systems. As can be seen from @fig-2, the COKI OA Dashboard covers significantly more German institutions than all other ranking systems, both in total (`r format(sum(institutions_df_de_sector$coki), big.mark=",", decimal.mark=".")` institutions, `r format(round(sum(institutions_df_de_sector$coki) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=".")`%), as well as in terms of the number of institutions not included in any other ranking system (`r format(sum(filter(institutions_df_de_sector, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=",", decimal.mark=".")` institutions, `r format(round(sum(filter(institutions_df_de_sector, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=".")`%). This could be attributed in particular to the fact that the COKI OA Dashboard, while covering a relatively long publication period (2000--2024), also includes institutions from multiple sectors, as well as institutions with a relatively low publication volume -- typically at least 50 publications [@COKI_how;@COKI_data].
 
@@ -321,7 +321,7 @@ Whereas the QS Sustainability Ranking and both versions of the Leiden Ranking in
 
 @fig-3 below shows the institutional overlap between the rankings with regard to German universities. The figure also includes only those institutions to which ROR IDs could be assigned.
 
-![Institutional overlap for German universities with ROR IDs across five ranking systems](plots/univs_de_institution_upset.png){#fig-3 group="upset"}
+![Institutional overlap for German universities with ROR IDs across five ranking systems](rankings/plots/univs_de_institution_upset.png){#fig-3 group="upset"}
 
 In total, `r format(n_distinct(institutions_df_de_univs$ror), big.mark = ".")` different German higher education institutions were identified across all ranking systems. @fig-3 shows that the COKI OA Dashboard also covers significantly more German higher education institutions than any other ranking system, both in total (`r format(sum(institutions_df_de_univs$coki), big.mark=",", decimal.mark=".")` institutions, `r format(round(sum(institutions_df_de_univs$coki) / n_distinct(institutions_df_de_univs$ror) *100, 2), decimal.mark=".")`%), as well as in terms of the number of institutions not included in any other ranking system (`r format(sum(filter(institutions_df_de_univs, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=",", decimal.mark=".")` institutions, `r format(round(sum(filter(institutions_df_de_univs, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_de_univs$ror) *100, 2), decimal.mark=".")`%). According to the Federal Statistical Office, a total of 422 German higher education institutions were recorded in the 2024/2025 winter term [@destatis]. Thus, the COKI OA Dashboard currently represents `r format(round(n_distinct(institutions_df_de_univs$ror) / 422 * 100,2), decimal.mark=".")`% of all German higher education institutions. It is also the only ranking system that includes higher education institutions not featured in any other ranking. The total number of German higher education institutions featured in all five ranking systems, with `r format(sum(filter(institutions_df_de_univs, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki), big.mark=",", decimal.mark=".")` institutions, remains unchanged from the total number of all German institutions featured in all five ranking systems.
 
@@ -340,9 +340,9 @@ Figures -@fig-leidenmaps and -@fig-maps[^5] below show the geographical distribu
 ::: {#fig-leidenmaps layout-ncol=2}
 
 
-![Leiden Ranking 2025](plots/lr_map.png){#fig-LR group="map"}
+![Leiden Ranking 2025](rankings/plots/lr_map.png){#fig-LR group="map"}
 
-![Leiden Ranking Open Edition 2025](plots/lroe_map.png){#fig-LROE group="map"}
+![Leiden Ranking Open Edition 2025](rankings/plots/lroe_map.png){#fig-LROE group="map"}
 
 Geographical distribution of the institutions featured in the Leiden Rankings by country and world region
 
@@ -350,11 +350,11 @@ Geographical distribution of the institutions featured in the Leiden Rankings by
 
 ::: {#fig-maps layout-ncol=3}
 
-![SCImago Institutions Ranking 2025 (Universities)](plots/sir_univ_map.png){#fig-sir group="map"}
+![SCImago Institutions Ranking 2025 (Universities)](rankings/plots/sir_univ_map.png){#fig-sir group="map"}
 
-![QS Sustainability Ranking 2025](plots/qs_map.png){#fig-qs group="map"}
+![QS Sustainability Ranking 2025](rankings/plots/qs_map.png){#fig-qs group="map"}
 
-![COKI OA Dashboard 2025 (Education)](plots/coki_univ_map.png){#fig-coki group="map"}
+![COKI OA Dashboard 2025 (Education)](rankings/plots/coki_univ_map.png){#fig-coki group="map"}
 
 Geographical distribution of the institutions featured in the SIR, QS and COKI ranking systems, by country and world region
 

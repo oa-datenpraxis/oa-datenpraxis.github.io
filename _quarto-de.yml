@@ -24,4 +24,6 @@ website:
           - notebooks.qmd
           - text: "Materialsammlung"
             href: materialsammlung.qmd
+          - text: "Rankings"
+            href: rankings.qmd
           

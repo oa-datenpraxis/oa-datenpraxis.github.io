@@ -316,7 +316,7 @@ Aufgrund der Einschränkungen bei der Zuordnung von ROR-IDs wurde entschieden, d
 
 @fig-2 stellt quantitativ die institutionellen Überschneidungen deutscher Einrichtungen zwischen den Rankings dar. Die Abbildung bezieht dabei nur die Institutionen ein, denen ROR-IDs zugeordnet werden konnten.
 
-![Institutionelle Überschneidungen für alle deutschen Institutionen mit ROR-IDs in fünf Rankingsystemen](plots/all_de_institution_upset.png){#fig-2 group="upset"}
+![Institutionelle Überschneidungen für alle deutschen Institutionen mit ROR-IDs in fünf Rankingsystemen](rankings/plots/all_de_institution_upset.png){#fig-2 group="upset"}
 
 Insgesamt konnten nach dem Abgleich der ROR-IDs `r format(n_distinct(institutions_df_de_sector$ror), big.mark=".", decimal.mark = ",")` einzigartige Institutionen aus Deutschland über alle Rankingsysteme hinweg identifiziert werden. Anhand von @fig-2 ist zu erkennen, dass das COKI OA Dashboard deutlich mehr deutsche Einrichtungen abbildet, als alle anderen Rankingsysteme, sowohl insgesamt (`r format(sum(institutions_df_de_sector$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(institutions_df_de_sector$coki) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=",")`%), als auch in Bezug auf die Anzahl an Institutionen, die in keinem anderen Rankingsystem abgebildet werden (`r format(sum(filter(institutions_df_de_sector, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(filter(institutions_df_de_sector, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=",")`%). Dies könnte insbesondere darauf zurückzuführen sein, dass das COKI OA Dashboard einerseits einen relativ langen Publikationszeitraum abbildet (2000--2024) und andererseits auch Institutionen aus mehreren Sektoren, sowie Institutionen mit einem relativ geringen Publikationsvolumen von i.d.R. mindestens 50 Publikationen in das Ranking aufnimmt [@COKI_how;@COKI_data].
 
@@ -326,7 +326,7 @@ Während das QS Sustainability Ranking sowie beide Versionen des Leiden Ranking 
 
 @fig-3 stellt folgend die institutionellen Überschneidungen bezogen auf deutsche Hochschulen zwischen den Rankings dar. Die Abbildung bezieht dabei ebenfalls nur diejenigen Institutionen ein, denen ROR-IDs zugeordnet werden konnten.
 
-![Institutionelle Überschneidungen für deutsche Hochschulen mit ROR-IDs in fünf Rankingsystemen](plots/univs_de_institution_upset.png){#fig-3 group="upset"}
+![Institutionelle Überschneidungen für deutsche Hochschulen mit ROR-IDs in fünf Rankingsystemen](rankings/plots/univs_de_institution_upset.png){#fig-3 group="upset"}
 
 Insgesamt konnten `r format(n_distinct(institutions_df_de_univs$ror), big.mark = ".")` verschiedene deutsche Hochschulen über alle Rankingsysteme hinweg identifiziert werden. @fig-3 zeigt, dass das COKI OA Dashboard auch in Bezug auf die deutschen Hochschulen deutlich mehr Institutionen abbildet, als alle anderen Rankingsysteme, sowohl insgesamt (`r format(sum(institutions_df_de_univs$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(institutions_df_de_univs$coki) / n_distinct(institutions_df_de_univs$ror) *100, 2), decimal.mark=",")`%), als auch in Bezug auf die Anzahl an Institutionen, die in keinem anderen Rankingsystem erfasst sind (`r format(sum(filter(institutions_df_de_univs, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=".", decimal.mark = ",")` Institutionen, `r format(round(sum(filter(institutions_df_de_univs, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_de_univs$ror) *100, 2), decimal.mark=",")`%). Nach Angaben des Statistischen Bundesamt wurden im Wintersemester 2024/2025 insgesamt 422 deutsche Hochschulen gezählt [@destatis]. Demnach bildet das COKI OA Dashboard nach aktuellem Stand `r format(round(n_distinct(institutions_df_de_univs$ror) / 422 * 100,2), decimal.mark = ",")`% aller deutschen Hochschulen ab. Es ist zudem das einzige Rankingsystem, das Hochschulen abbildet, die in keinem anderen Ranking erfasst sind. Die absolute Anzahl an deutschen Hochschulen, die in allen fünf Rankingsystemen erfasst sind ist mit `r format(sum(filter(institutions_df_de_univs, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki), big.mark=".", decimal.mark = ",")` Hochschulen unverändert zur absoluten Anzahl aller deutschen Einrichtungen, die in allen fünf Rankingsystemen erfasst sind. 
 
@@ -345,9 +345,9 @@ Abbildungen -@fig-leidenmaps und -@fig-maps[^5] zeigen folgend die geographische
 ::: {#fig-leidenmaps layout-ncol=2}
 
 
-![Leiden Ranking 2025](plots/lr_map.png){#fig-LR group="map"}
+![Leiden Ranking 2025](rankings/plots/lr_map.png){#fig-LR group="map"}
 
-![Leiden Ranking Open Edition 2025](plots/lroe_map.png){#fig-LROE group="map"}
+![Leiden Ranking Open Edition 2025](rankings/plots/lroe_map.png){#fig-LROE group="map"}
 
 Geographische Verteilung der in den Leiden Rankings abgebildeten Institutionen auf Länder und Weltregionen
 
@@ -355,11 +355,11 @@ Geographische Verteilung der in den Leiden Rankings abgebildeten Institutionen a
 
 ::: {#fig-maps layout-ncol=3}
 
-![SCImago Institutions Ranking 2025 (Universities)](plots/sir_univ_map.png){#fig-sir group="map"}
+![SCImago Institutions Ranking 2025 (Universities)](rankings/plots/sir_univ_map.png){#fig-sir group="map"}
 
-![QS Sustainability Ranking 2025](plots/qs_map.png){#fig-qs group="map"}
+![QS Sustainability Ranking 2025](rankings/plots/qs_map.png){#fig-qs group="map"}
 
-![COKI OA Dashboard 2025 (Education)](plots/coki_univ_map.png){#fig-coki group="map"}
+![COKI OA Dashboard 2025 (Education)](rankings/plots/coki_univ_map.png){#fig-coki group="map"}
 
 Geographische Verteilung der in den Rankingssystemen SIR, QS und COKI abgebildeten Institutionen auf Länder und Weltregionen
 
