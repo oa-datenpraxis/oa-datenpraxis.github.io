@@ -8,7 +8,7 @@ author:
     affiliations:
       - name: Niedersächsische Staats- und Universitätsbibliothek Göttingen
         url: https://www.sub.uni-goettingen.de/sub-aktuell/
-bibliography: rankings.bib
+bibliography: rankings/data/rankings.bib
 csl: apa.csl
 lightbox:
   match: auto
@@ -298,11 +298,11 @@ library(here)
 library(tidyverse)
 options(scipen = 999)
 
-institutions_df_de_sector <- read_csv(here("rankings_notebook/data","institutions_df_de_sector.csv"))
-institutions_df_de_univs <- read_csv(here("rankings_notebook/data", "institutions_df_de_univs.csv"))
-pref_df <- read_csv(here("rankings_notebook/data", "pref_df.csv"))
-qs_upset_merged <- read_csv(here("rankings_notebook/data","qs_upset_merged.csv"))
-sir_upset_merged <- read_csv(here("rankings_notebook/data","sir_upset_merged.csv"))
+institutions_df_de_sector <- read_csv(here("rankings/data","institutions_df_de_sector.csv"))
+institutions_df_de_univs <- read_csv(here("rankings/data", "institutions_df_de_univs.csv"))
+pref_df <- read_csv(here("rankings/data", "pref_df.csv"))
+qs_upset_merged <- read_csv(here("rankings/data","qs_upset_merged.csv"))
+sir_upset_merged <- read_csv(here("rankings/data","sir_upset_merged.csv"))
 ```
 
 
