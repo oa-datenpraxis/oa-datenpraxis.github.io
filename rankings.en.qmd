@@ -1,134 +1,145 @@
 ---
-title: "Open Access in institutional Rankings"
-format: 
-  html: 
-    resources: 
-      - shinylive-sw.js
-filters:
-  - shinylive
-bibliography: rankings/data/rankings.bib
+title: "Open Access in Institutional Rankings"
+format: html
+author: 
+  - name: Sophia Dörner
+    orcid: 0000-0001-8747-3422
+    email: sophia.doerner@sub.uni-goettingen.de
+    affiliations:
+      - name: Göttingen State and University Library
+        url: https://www.sub.uni-goettingen.de/sub-aktuell/
+bibliography: rankings.bib
 csl: apa.csl
 lightbox:
   match: auto
 ---
 
-Institutional or university rankings attract a great deal of attention in science policy and the public sphere because they enable scientific institutions to be easily compared with one another on a global level. They serve various interest groups, such as political decision-makers, university managers and prospective students, as a tool for strategic decision-making, illustrating institutional excellence or choosing a place to study [@Waltman2012]. The methodologies on which the rankings are based are repeatedly criticised, for example because of their tendency to summarise multiple dimensions of the performance spectrum of scientific institutions into a single, often intransparent score [@vanRaan2005;@Piro2016;@Diprose2023]. This approach not only makes it difficult to interpret the rankings, but also fails to take sufficient account of the different tasks and priorities of the institutions [@Waltman2012;@Huang2020].
+Institutional or university rankings attract a great deal of attention in academic policy circles and amongst the general public because they provide a clear comparison of academic institutions on a global scale. They serve various stakeholder groups, such as policy-makers, university managers and prospective students, acting, amongst other things, as a tool for strategic decision-making, for illustrating institutional excellence, or for choosing a place to study [@Waltman2012;@Johnes2018]. The methodology on which the rankings are based is sometimes subject to numerous criticisms, for example because of the tendency to summarise multiple dimensions of academic institutions’ performance into a single, often untransparent score [@vanRaan2005;@Piro2016;@Diprose2023]. This makes it difficult not only to interpret the results, but also fails to take sufficient account of the different missions and priorities of the institutions [@Waltman2012;@Huang2020].
 
-Five institutional rankings with Open Access as a comparative dimension could be identified: the Leiden Ranking 2024 (LR), the Leiden Ranking Open Edition 2024 (LROE), the SCImago Institutions Ranking 2024 (SIR), the Quacquarelli Symonds World University Rankings: Sustainability 2025 (QS), and the COKI OA Dashboard 2025 (COKI). All five rankings include one or more Open Access indicators and are globally oriented in terms of geographical coverage.
+In recent years, the inclusion of open access metrics in university rankings has gained in importance. Open access refers to free and unrestricted online access to research results [@Suber2012] and has become an important indicator of an academic institution’s commitment to open and transparent scientific practice. This trend is further supported by the requirements of funding organizations, which are increasingly viewing open access publishing as a condition for research funding [@Wellcome_Trust;@NIH;@DFG;@Fournier2017;@Huang2020a;@Ruecknagel2021]. In addition to the many institutions' own commitment to open access, these requirements provide a further incentive to make research findings available via open access. The inclusion of open access indicators in university rankings makes it possible to assess institutions’ open access activities and provides an additional dimension for comparison [@Diprose2023].
 
-This page provides an overview of the characteristics of the five rankings, as well as an investigation into the extent to which the results of the rankings are comparable. This includes, among other things, a comparison of the data sources and Open Access indicators used by the rankings, as well as a review of the extent to which institutions can participate in the data collection by the ranking providers. The focus is particularly on the Open Access dimension.
+Following the argument of @Moed2016, it is assumed that a comparative analysis of several ranking systems can help users better understand, interpret, and use the information provided by these systems. This also applies to the open access dimension of rankings. When rankings are used to compare institutional open access engagement or to monitor corresponding activities, the informative value of ranking results depends substantially on how strongly the underlying ranking methodologies differ. To date, however, no systematic investigation appears to exist that specifically compares the open access dimension across several ranking systems.
+
+In this study, institutional rankings with open access indicators were identified via a web search. Rankings were included if they met three criteria: (1) they constitute an institutional-level ranking (as opposed to, e.g., journal- or researcher-level rankings), (2) they include at least one open access indicator, and (3) they have a global geographic scope. Based on these criteria, five institutional rankings with open access as a comparative dimension could be identified: the Leiden Ranking 2025 (LR), the Leiden Ranking Open Edition 2025 (LROE), the SCImago Institutions Ranking 2025 (SIR), the Quacquarelli Symonds World University Rankings: Sustainability 2025 (QS), and the COKI OA Dashboard 2025 (COKI). All five rankings contain one or more open access indicators and are globally oriented in terms of their geographic coverage.
+
+This page provides an overview of the characteristics of the five ranking systems, as well as an analysis of the extent to which the ranking results are comparable with one another. This includes, amongst other things, a comparison of the data sources and open-access indicators used by the rankings, as well as an assessment of the extent to which institutions can participate in the data collection carried out by the ranking providers. The focus here is particularly on the open access dimension.
+
+
+## Institutional Rankings with Open Access as a Comparative Dimension
+
+The following sections begin with a description of the core characteristics of the selected rankings. At the end of each section, details of the rankings are summarised in a drop-down text box headed ‘Ranking Details’. This includes, in particular, a comprehensive list of the open access indicators used in each ranking system.
 
 
 ### Leiden Ranking
 
-The Leiden Ranking has been produced annually by the Centre for Science and Technology Studies (CWTS) at Leiden University in the Netherlands since 2007 [@Waltman2012; @LR_updates]. The ranking does not offer a traditional league table where an overall score is calculated; instead, it provides various bibliometric indicators along the dimensions of *scientific impact*, *collaboration*, *Open Access*, and *gender*. The indicators are presented in both size-dependent (absolute numbers) and size-independent (relative proportions) forms to account for differences in the size of universities. The ranking also offers trend analyses over time periods and stability intervals to account for statistical uncertainties [@LR_general; @LR_method].
+The Leiden Ranking has been produced annually since 2007 by the Centre for Science and Technology Studies (CWTS) at Leiden University in the Netherlands [@Waltman2012;@LR_updates]. The ranking does not provide a traditional league table based on a single overall score, but rather presents various bibliometric indicators across the dimensions of *scientific impact*, *collaboration*, *Open Access* and *gender*. Indicators are presented in both size-dependent (absolute numbers) and size-independent (relative shares) form to account for differences in university size. The ranking also provides trend analyses over time and stability intervals to reflect statistical uncertainties [@LR_indicators;@LR_method]. 
 
-The 2024 version of the Leiden Ranking includes bibliometric data for 1,506 universities worldwide [@LR_method]. Indicators are provided for four-year time periods, with the 2024 version extending this to the period 2019--2022 [@LR_method]. The bibliographic data comes from the Web of Science, but only articles and reviews published in international scientific journals are considered [@LR_method]. The selection of universities is based on their research performance, with a minimum of 800 so-called *core publications* required for inclusion in the ranking. *Core publications* are defined as publications in international scientific journals in fields suitable for citation analysis. These publications must be in English, have at least one author, not be retracted, and appear in a *core journal*. *Core journals* are characterized by their international orientation and must be situated in a field suitable for citation analysis. The Leiden Ranking does not use data directly from universities [@LR_method; @LR_general].
+The 2025 edition of the Leiden Ranking includes bibliometric data for 1,594 universities worldwide [@LR_method]. Indicators are reported for four-year periods; the 2025 edition extends these to include the period 2020--2023 [@LR_method]. Bibliographic data is retrieved from the Web of Science, however, only articles and reviews published in international scientific journals are taken into account [@LR_method]. Universities are selected on the basis of their research output, and must have at least 800 so-called *core publications* to be included in the ranking. *Core publications* are defined as publications that have appeared in international scientific journals in fields suitable for citation analysis. These publications must be written in English, have at least one author, must not have been retracted, and must have appeared in a so-called *core journal*. *Core journals* are defined through their international focus and must be situated in a field suitable for citation analysis. The Leiden Ranking does not use data provided directly by universities [@LR_method;@LR_universities].
 
-A key feature of the Leiden Ranking is its focus on Open Access publications. Open Access indicators were added to the ranking beginning with the 2019 version [@LR_updates]. To determine the Open Access status of publications, the Leiden Ranking uses OpenAlex as its data source [@LR_method; @LR_general].
+A key characteristic of the Leiden Ranking is its focus on open access publications. Indicators relating to open access publishing were added in the 2019 edition of the ranking [@LR_updates]. To determine the open access status of publications, the Leiden Ranking uses OpenAlex as its data source [@LR_method;@LR_general].
+
 
 ::: {.callout-note collapse="true"}
 ## Ranking Details
 
-**Version:** 2024
+**Version:** 2025
 
-**Website:** <https://www.leidenranking.com/>
+**Website:** <https://traditional.leidenranking.com/>
 
-**Creator:** [Centre for Science and Technology Studies (CWTS)](https://www.universiteitleiden.nl/en/social-behavioural-sciences/cwts)
+**Producer:** [Centre for Science and Technology Studies (CWTS)](https://www.universiteitleiden.nl/en/social-behavioural-sciences/cwts)
 
-**Ranking Type:** University ranking
+**Ranking type:** University ranking
 
 **Sectors:** Universities
 
-**Link to Methodology:** <https://traditional.leidenranking.com/Content/CWTS%20Leiden%20Ranking%202024.pdf>
+**Link to methodology:** <https://doi.org/10.5281/zenodo.17473108>
 
-**Data Sources:** Web of Science (Publikationen), OpenAlex (Open Access Status)
+**Data sources:** Web of Science (publications), OpenAlex (open access status)
 
-**Dimension with Open Access Indicators (Weight):** Open Access
+**Dimension with open access indicators (weighting):** Open Access
 
-**Open Access Indicators (Weight):**
+**Open access indicators (weighting):**
 
-- Total number of publications by a university
-- Number and proportion of open access publications by a university
-- Number and proportion of gold open access publications by a university
-- Number and proportion of hybrid open access publications by a university
-- Number and proportion of bronze open access publications by a university
-- Number and proportion of green open access publications by a university
-- Number and proportion of publications by a university whose open access status is unknown
+- Total number of publications of a university
+- Number and share of open access publications of a university
+- Number and share of gold open access publications of a university
+- Number and share of hybrid open access publications of a university
+- Number and share of bronze open access publications of a university
+- Number and share of green open access publications of a university
+- Number and share of publications of a university whose open access status is unknown
 
-**Publication-/Update-Frequency:** annually
+**Publication/update frequency:** annually
 
-**Number of Institutions:** 1.506 universities
+**Number of institutions:** 1,594 universities
 
-**Geographic Scope:** global
+**Geographic coverage:** global
 
 **Presentation:** multi-indicator ranking
 
-**Data Availability:** Data of ranking results available under CC-BY licence: @LR2024_data
+**Data availability:** Result data available under a CC-BY licence: @LR_method
 
 :::
 
 
 ### Leiden Ranking Open Edition
 
-The Leiden Ranking Open Edition has been produced annually by the Centre for Science and Technology Studies (CWTS) at Leiden University in the Netherlands since 2024 [@LROE2024]. It is an approximate reproduction of the traditional Leiden Ranking using open data sources [@LROE2024] and also does not offer a traditional league table but provides various bibliometric indicators along the dimensions of *scientific impact*, *collaboration*, and *Open Access*. The indicators in the Open Edition are also presented in both size-dependent (absolute numbers) and size-independent (relative proportions) forms to account for differences in the size of universities. The Open Edition of the Leiden Ranking also offers trend analyses over time periods and stability intervals to account for statistical uncertainties [@LROE_method; @LROE_updates].
+The Leiden Ranking Open Edition has been compiled annually since 2024 [@LROE2024] by the Centre for Science and Technology Studies (CWTS) at Leiden University in the Netherlands [@LROE_updates]. It is a near reproduction of the traditional Leiden Ranking using open data sources [@LROE2024] and, like the traditional ranking, does not provide a conventional league table, but rather various bibliometric indicators across the dimensions of *scientific impact*, *collaboration* and *Open Access*. In the Open Edition, the indicators are also presented in both size-dependent (absolute figures) and size-independent (relative shares) form to account for differences in the size of universities. Additionally, the Open Edition of the Leiden Ranking also provides trend analyses over time and stability intervals to address statistical uncertainties [@LROE_indicators]. 
 
-The 2024 version of the Leiden Ranking Open Edition includes bibliometric data for 1,506 universities worldwide [@LROE_method]. Indicators are provided for four-year time periods, with the 2024 version extending this to the period 2019--2022 [@LROE_method]. The bibliographic data comes from OpenAlex, but only so-called *core publications* are considered [@LROE_method]. Compared to the traditional Leiden Ranking, the Open Edition also includes publications of the type "book chapters" published in book series as *core publications*. Furthermore, all publications must include author affiliations and references to be considered *core publications*. All other criteria for *core publications* and *core journals* are identical to those of the traditional Leiden Ranking [@LROE_method].
+The 2025 edition of the Leiden Ranking Open Edition introduces two changes compared to the 2024 edition: Firstly, in addition to *core publications*, so-called *non-core publications* are included in the preparation of the ranking. Secondly, unlike the 2024 edition and the traditional Leiden Ranking, bibliometric data from a larger number of universities is included [@vanEck2025c]. Whereas the 2024 version comprised bibliometric data for 1,506 universities worldwide [@LROE24_method], the 2025 version is based on bibliometric data from 2,831 universities [@LROE_universities; @vanEck2025c]. Indicators are reported for four-year periods; the 2025 version extends these to include the period 2020–2023 [@LROE_indicators]. Bibliographic data are retrieved from OpenAlex, and the respective indicators are calculated and reported separately for the set of *core publications* and for the combined set of *core publications* and *non-core publications*. The definition of *core publications* and *core journals* in the Leiden Ranking Open Edition is largely identical to that in the traditional Leiden Ranking [@LR_indicators;@LROE_indicators]. However, the Open Edition expands the set of *core publications* to include book chapters published in book series. Furthermore, all publications must contain not only author details but also affiliation details and references in order to be counted as *core publications* [@LROE_indicators]. Less restrictive criteria apply to *non-core publications*; for example, the restriction to English-language publications does not apply, and *non-core publications* may also have been published outside *core journals*, such as in journals with a national or regional focus, books, book series, or conference proceedings [@LROE_indicators].
 
-The Leiden Ranking Open Edition also focuses on Open Access publications and offers largely the same Open Access indicators as the traditional Leiden Ranking, with the exception of indicators for publications with unknown Open Access status [@LROE_method]. Additionally, the Leiden Ranking Open Edition has the distinctive feature that the publications underlying the indicators can be viewed on the web interface [@LROE2024a].
+The Leiden Ranking Open Edition also focuses on open access publications and offers largely the same open access indicators as the traditional Leiden Ranking, with the exception of the indicators relating to publications with an unclear open access status [@LROE_indicators]. Furthermore, a distinctive feature of the Leiden Ranking Open Edition is that the publications underlying the indicators can be viewed via the web interface [@LROE2024a].
 
 
 ::: {.callout-note collapse="true"}
 ## Ranking Details
 
-**Version:** 2024
+**Version:** 2025
 
 **Website:** <https://www.open.leidenranking.com/>
 
-**Creator:** [Centre for Science and Technology Studies (CWTS)](https://www.universiteitleiden.nl/en/social-behavioural-sciences/cwts)
+**Producer:** [Centre for Science and Technology Studies (CWTS)](https://www.universiteitleiden.nl/en/social-behavioural-sciences/cwts)
 
-**Ranking Type:** University ranking
+**Ranking type:** University ranking
 
 **Sectors:** Universities
 
-**Link to Methodology:** <https://open.leidenranking.com/Content/CWTS%20Leiden%20Ranking%20Open%20Edition%202024.pdf>
+**Link to methodology:** <https://open.leidenranking.com/information/data>
 
-**Data Sources:** OpenAlex
+**Data sources:** OpenAlex
 
-**Dimension with Open Access Indicators (Weight):** Open Access
+**Dimension with open access indicators (weighting):** Open Access
 
-**Open Access Indicators (Weight):**
+**Open access indicators (weighting):**
 
-- Total number of publications by a university
-- Number and proportion of open access publications by a university
-- Number and proportion of gold open access publications by a university
-- Number and proportion of hybrid open access publications by a university
-- Number and proportion of bronze open access publications by a university
-- Number and proportion of green open access publications by a university
+- Total number of publications of a university
+- Number and share of open access publications of a university
+- Number and share of gold open access publications of a university
+- Number and share of hybrid open access publications of a university
+- Number and share of bronze open access publications of a university
+- Number and share of green open access publications of a university
 
-**Publication-/Update-Frequency:** annually
+**Publication/update frequency:** annually
 
-**Number of Institutions:** 1,506 universities
+**Number of institutions:** 2,831 universities
 
-**Geographic Scope:** global
+**Geographic coverage:** global
 
 **Presentation:** multi-indicator ranking
 
-**Data Availability:** Raw data and data of ranking results available under CC0 licence:
+**Data availability:** Raw data and result data available under CC0 licence:
 
-- Rohdaten: @LROE2024_raw
-- Ergebnisdaten: @LROE2024_results
+- Raw data: @LROE2025_raw
+- Result data: @LROE2025_results
 
 :::
 
-
 ### SCImago Institutions Ranking
 
-The SCImago Institutions Ranking has been produced annually by the SCImago Research Group since 2009 [@Rousseau2018]. The ranking offers a traditional league table of scientific and research-related institutions based on a composite indicator on a scale between 0 and 100. The composite indicator combines evaluations along three dimensions: research, innovation, and societal impact. The composite indicator is derived from a weighted combination of metrics along these dimensions, using both size-dependent and size-independent metrics. For each institution, the ranking also provides a series of graphs, for example, on rank development over time, comparisons at national, regional, or global levels, or comparisons with similar institutions based on publication profiles [@SIR_method].
+The SCImago Institutions Ranking has been compiled annually by the SCImago Research Group since 2009 [@Rousseau2018]. The ranking provides a traditional league table of academic and research-oriented institutions based on a composite indicator on a scale of 0 to 100. The composite indicator combines assessments across three dimensions: research, innovation and societal impact. The composite indicator is derived from a weighted combination of metrics across these dimensions, using both size-dependent and size-independent indicators. For each institution, the ranking also provides a series of charts, for example showing changes in ranking over time, comparisons at national, regional or global level, or similar institutions based on their publication profile [@SIR_method].
 
-The 2025 version of the SCImago Institutions Ranking includes data for 9,756 institutions worldwide [@SIR]. The composite indicator is provided annually for a five-year period ending two years before the ranking's publication, meaning for the 2025 version, the period is 2019--2023. The bibliographic data comes from Scopus. The selection of institutions is based on their publication performance. In the last year of the period considered, institutions must have published at least 100 Scopus-indexed publications to be included in the ranking. Furthermore, at least 75% of an institution's total publication volume must consist of citable documents. For the SCImago Institutions Ranking, citable documents include the publication types articles, book chapters, conference contributions, reviews, and short surveys [@SIR_method].
+The 2025 version of the SCImago Institutions Ranking includes data for 9,755 institutions worldwide [@SIR]. The composite indicator is reported on an annual basis for a five-year period ending two years prior to the publication of the ranking; for the 2025 edition, this covers the period 2019--2023. Bibliographic data are retrieved from Scopus. Institutions are selected based on their publication output. In the final year of the period under review, institutions must have published at least 100 publications indexed in Scopus in order to be included in the ranking. Furthermore, at least 75% of an institution’s total publication output must consist of so-called *citable items*. For the SCImago Institutions Ranking, document types counted as *citable items* include articles, books, book chapters, conference papers, data papers, editorials, letters, notes, reviews and short surveys. [@SIR_method;@elsevier2026scopus].
 
-Within the research dimension, which accounts for 50% of the composite indicator, an Open Access indicator was added to the ranking beginning with the 2019 version. This indicator accounts for 2% of the research dimension and measures the percentage of documents published in Open Access journals or indexed in Unpaywall. To determine the Open Access status of publications, the SCImago Institutions Ranking uses Unpaywall as its data source [@SIR_method].
+Within the research dimension, which accounts for 50% of the composite indicator, an open access indicator was added to the ranking in the 2019 version. With a weighting of 2% within the research dimension, this indicator measures the percentage of documents published in open access journals or indexed in Unpaywall. To determine the open access status of publications, the SCImago Institutions Ranking uses Unpaywall as its data source [@SIR_method].
 
 
 ::: {.callout-note collapse="true"}
@@ -138,39 +149,39 @@ Within the research dimension, which accounts for 50% of the composite indicator
 
 **Website:** <https://www.scimagoir.com/>
 
-**Creator:** [SCImago Research Group](https://www.scimagolab.com/)
+**Producer:** [SCImago Research Group](https://www.scimagolab.com/)
 
-**Ranking Type:** Institutional ranking
+**Ranking type:** Institutional ranking
 
 **Sectors:** Government agencies, universities, companies, health organisations, non-profit organisations
 
-**Link to Methodology:** <https://www.scimagoir.com/methodology.php>
+**Link to methodology:** <https://www.scimagoir.com/methodology.php>
 
-**Data Sources:** Scopus (publications), Unpaywall (Open Access status)
+**Data sources:** Scopus (publications), Unpaywall (open access status)
 
-**Dimension with Open Access Indicators (Weight):** Research (50%)
+**Dimension with open access indicators (weighting):** Research (50%)
 
-**Open Access Indicators (Weight):** Share of documents published in open access journals or indexed in Unpaywall (2%)
+**Open access indicators (weighting):** Percentage of documents published in open access journals or indexed in Unpaywall (2%)
 
-**Publication-/Update-Frequency:** annually
+**Publication/update frequency:** annually
 
-**Number of Institutions:** 9,756 universities and research-related institutions
+**Number of institutions:** 9,756 universities and research-related institutions
 
-**Geographic Scope:** global
+**Geographic coverage:** global
 
 **Presentation:** league table
 
-**Data Availability:** Data of ranking results available via the ranking website, no licence information provided: <https://www.scimagoir.com/rankings.php>
+**Data availability:** Result data available via the ranking website; no licence information provided: <https://www.scimagoir.com/rankings.php>
 :::
 
+### QS World University Rankings: Sustainability 
 
-### QS Sustainability Ranking
+The QS World University Rankings: Sustainability has been compiled annually by Quacquarelli Symonds since 2023, following the publication of a pilot version in 2022 [@QS_date]. The ranking provides a traditional league table of higher education institutions based on a composite indicator for both the individual categories and sub-categories (*Lenses*), as well as an overall score. The category scores are displayed for all institutions assessed, whereas the overall scores are only shown up to a certain point and are then hidden [@QS_scores]. The QS World University Rankings: Sustainability assesses institutions across three dimensions: *Environmental Impact*, *Social Impact* and *Governance*.
 
-The QS World University Rankings: Sustainability has been produced annually by Quacquarelli Symonds since 2023, following a pilot version released in 2022 [@QS_date]. The ranking offers a traditional league table of universities based on a composite indicator for individual categories and subcategories (*Lenses*), as well as an overall score. The ranking evaluates institutions along three dimensions: *Environmental Impact*, *Social Impact*, and *Governance*.
+The 2025 edition of the QS World University Rankings: Sustainability includes data on 1,744 higher education institutions worldwide [@QS_date]. Bibliographic data are retrieved from Scopus and cover a 5-year period [@QS_papers]. Only the following document types are taken into account: article, review, conference paper, book, book chapter, article in press, business article, data paper and report [@QS_paperdef;@QS_scopus]. Institutions are only included in the QS World University Rankings: Sustainability if, on the one hand, they meet the eligibility criteria for inclusion in at least one of the *QS World University Rankings*, *QS Rankings by Region* or *QS Rankings by Subject*, and, on the other hand, they achieve a non-zero score for specific indicators within the *Environmental Impact* and *Social Impact* dimensions. [@QS_sustain].
 
-The 2025 version of the QS World University Rankings: Sustainability includes data for 1,744 universities worldwide [@QS_date]. The bibliographic data comes from Scopus and covers a five-year period [@QS_papers]. Only the publication types articles, reviews, conference contributions, books, book chapters, articles in press, and business articles are considered [@QS_paperdef; @QS_scopus]. Institutions are included in the QS World University Rankings: Sustainability only if they meet eligibility criteria for inclusion in at least one of the rankings *QS World University Rankings*, *QS Rankings by Region*, or *QS Rankings by Subject* and also achieve a non-zero score for specific indicators within the *Environmental Impact* and *Social Impact* dimensions [@QS_sustain].
+Within the *Governance* dimension, which accounts for 10% of the total score, one indicator relates to open access publications. This indicator is weighted at 1% within the *Governance* dimension and measures the share of open access publications in the total publication volume. This proportion is calculated separately for each of the six fields considered and aggregated into a weighted total. Gold and hybrid publications are given greater weight in the calculation than publications published via the green open access route. To determine the open access status of publications, the QS World University Rankings: Sustainability uses Unpaywall as its data source [@QS_governance].
 
-Within the *Governance* dimension, which accounts for 10% of the overall score, an Open Access publications indicator is included. This indicator accounts for 1% of the *Governance* dimension and measures the proportion of Open Access publications in the institution's total publication volume. The proportion is calculated individually for the six fields considered and aggregated into a weighted sum. Gold and hybrid publications are weighted more heavily in the calculation than green Open Access publications. To determine the Open Access status of publications, the QS World University Rankings: Sustainability uses Unpaywall as its data source [@QS_governance].
 
 ::: {.callout-note collapse="true"}
 ## Ranking Details
@@ -179,140 +190,96 @@ Within the *Governance* dimension, which accounts for 10% of the overall score, 
 
 **Website:** <https://www.topuniversities.com/sustainability-rankings>
 
-**Creator:** [Quacquarelli Symonds Ltd.](https://www.qs.com/)
+**Producer:** [Quacquarelli Symonds Ltd.](https://www.qs.com/)
 
-**Ranking Type:** University ranking
+**Ranking type:** University ranking
 
 **Sectors:** Universities
 
-**Link to Methodology:** <https://support.qs.com/hc/en-gb/articles/8551503200668-QS-World-University-Rankings-Sustainability>
+**Link to methodology:** <https://support.qs.com/hc/en-gb/articles/8551503200668-QS-World-University-Rankings-Sustainability>
 
-**Data Sources:** Scopus (publications), Unpaywall (Open Access status)
+**Data sources:** Scopus (publications), Unpaywall (open access status)
 
-**Dimension with Open Access Indicators (Weight):** Governance (10%)
+**Dimension with open access indicators (weighting):** Governance (10%)
 
-**Open Access Indicators (Weight):** The proportion of an institution's total research output that is available as open access according to Unpaywall (1%)
+**Open access indicators (weighting):** The proportion of an institution’s total research output that is available open access, according to Unpaywall (1%)
 
-**Publication-/Update-Frequency:** annually
+**Publication/update frequency:** annually
 
-**Number of Institutions:** 1,744 universities
+**Number of institutions:** 1,744 universities
 
-**Geographic Scope:** global
+**Geographic coverage:** global
 
 **Presentation:** league table
 
-**Data Availability:** Data of ranking results available on the ranking website after registration, no licence information provided: <https://www.topuniversities.com/sustainability-rankings>
-:::
+**Data availability:** Result data available via the ranking website after registration; no licence information provided: <https://www.topuniversities.com/sustainability-rankings>
 
+:::
 
 ### COKI OA Dashboard
 
-The COKI Open Access Dashboard has been produced by the Curtin Open Knowledge Initiative since 2022 [@COKI_date; @COKI_newsletter]. The dashboard is not a traditional ranking but allows institutions and countries to be sorted by Open Access percentage and total as well as Open Access publication volumes [@COKI_date]. The dashboard also shows, for individual countries and institutions, the platforms through which Open Access publications are made available, both aggregated over the entire publication period and broken down by individual publication years [@COKI_date].
+The COKI Open Access Dashboard has been produced by the Curtin Open Knowledge Initiative since 2022 [@COKI_date; @COKI_newsletter]. The dashboard is not a traditional ranking, but institutions and countries can be sorted by their proportion of open access publications, as well as by their total and open access publication volumes [@COKI_date]. The dashboard also shows, for each country and institution, the platform through which open access publications are made available, both as an aggregate figure covering the entire publication period and broken down by individual publication years [@COKI_date].
 
-The version of the COKI Open Access Dashboard from August 18, 2025, includes data for 227 countries and 56,187 institutions worldwide [@COKI_how]. The bibliographic data comes from multiple open data sources and covers the publication period 2000--2024, with Crossref being used primarily for publication identification [@COKI_how; @COKI_dashboard]. The selection of publication types is less restrictive compared to the other rankings, with only specific types such as datasets, databases, components, report components, peer reviews, funding acknowledgments, conference proceedings, journal issues, report series, book catalogs, and publications without a specified type being excluded [@COKI_how]. Institutions must have at least 50 publications to be included in the COKI Open Access Dashboard, unless the institutions were already included in the dataset when it was based on the Microsoft Academic Graph dataset [@COKI_how].
+The 18 August 2025 version of the COKI Open Access Dashboard includes data for 227 countries and 56,187 institutions worldwide [@COKI_how]. Bibliographic data is retrieved from several open data sources and covers the publication period 2000--2024; Crossref is used in particular to identify publications [@COKI_how;@COKI_dashboard]. The selection of document types is less restrictive than in the other ranking systems; the only exclusions are publications classified as datasets, databases, components, report components, peer reviews, funding awards, conference proceedings, journal issues, report series, book catalogues, and all publications without a specified document type. [@COKI_how]. Institutions must have at least 50 publications to be included in the COKI Open Access Dashboard, unless they were already included in the dataset when it was still based on Microsoft Academic Graph [@COKI_how].
 
-The COKI Open Access Dashboard focuses exclusively on the Open Access activities of institutions and countries. While the list view primarily displays the absolute number and percentage of Open Access publications, detailed views for individual institutions and countries provide more differentiated breakdowns of publication activities and locations, supplemented by visualizations [@COKI_dashboard]. To determine the Open Access status of publications, the COKI Open Access Dashboard uses Unpaywall as its data source [@COKI_how].
+The COKI Open Access Dashboard focuses exclusively on the open access activities of institutions and countries. Whereas the list view primarily displays the absolute number and the percentage of open access publications, detailed views of individual institutions and countries provide more nuanced breakdowns of publication activities and locations, supplemented by visualisations [@COKI_dashboard]. To determine the open access status of publications, the COKI Open Access Dashboard uses Unpaywall as its data source [@COKI_how].
+
 
 ::: {.callout-note collapse="true"}
 ## Ranking Details
 
-**Version:** 18.08.2025
+**Version:** 18 August 2025
 
 **Website:** <https://open.coki.ac/>
 
-**Creator:** [Curtin Open Knowledge Initiative](https://openknowledge.community/)
+**Producer:** [Curtin Open Knowledge Initiative](https://openknowledge.community/)
 
-**Ranking Type:** Country and institutional ranking
+**Ranking type:** Country and institution ranking
 
-**Sectors:** Funding organisations, government agencies, universities, companies, health organisations, non-profit organisations, infrastructure organisations, archives, others
+**Sectors:** Funding bodies, government agencies, universities, companies, healthcare organisations, non-profit organisations, infrastructure organisations, archives, others
 
-**Link to Methodology:** <https://open.coki.ac/how/>
+**Link to methodology:** <https://open.coki.ac/how/>
 
-**Data Sources:** Crossref (publications), Unpaywall (Open Access status)
+**Data sources:** Crossref (publications), Unpaywall (open access status)
 
-**Dimension with Open Access Indicators (Weight):** --
+**Dimension with open access indicators (weighting):** --
 
-**Open Access Indicators (Weight):** 
+**Open access indicators (weighting):**
 
-- Percentage of open access publications
+- Percentage share of open access publications
 - Total number of publications
 - Total number of open access publications
-- Percentage of articles accessible via open access through the publisher
-- Percentage of articles accessible via open access through other platforms (repositories, preprint servers, etc.)
-- Percentage of articles that are accessible via both the publisher and other platforms
-- Percentage of closed articles
-- Percentage of articles published in an open access journal
-- Percentage of articles published in a hybrid journal
-- Percentage of articles that are open access via the publisher without reuse rights
-- Percentage of articles that are open access via institutional repositories
-- Percentage of articles that are open access via preprint servers
-- Percentage of articles that are open access via subject repositories
-- Percentage of articles that are open access via other public repositories
-- Percentage of articles that are open access via other websites or portals
+- Percentage share of articles that are open access via the publisher
+- Percentage share of articles that are open access via other platforms (repositories, preprint servers, etc.)
+- Percentage share of articles that are open access both via the publisher and via other platforms
+- Percentage share of closed articles
+- Percentage share of articles published in an open access journal
+- Percentage share of articles open access via a hybrid journal
+- Percentage share of articles that are open access via the publisher without reuse rights
+- Percentage share of articles that are open access via institutional repositories
+- Percentage share of articles that are open access via preprint servers
+- Percentage share of articles that are open access via subject repositories
+- Percentage share of articles that are open access via other public repositories
+- Percentage share of articles that are open access via other websites or portals
 
-**Publication-/Update-Frequency:** regularly
+**Publication/update frequency:** regularly
 
-**Number of Institutions:** 56,187 institutions
+**Number of institutions:** 56,187 institutions
 
-**Geographic Scope:** global
+**Geographic coverage:** global
 
-**Presentation:** Multi-indicator dashboard
+**Presentation:** multi-indicator dashboard
 
-**Data Availability:** Data of ranking results available via the ranking website under CC-BY licence: <https://open.coki.ac/data/>
-:::
-
-
-### Comparability of Ranking Results
-
-To assess how comparable the results of the selected rankings are, the following sections focus on examining the data sources used by the rankings, the Open Access indicators and their weighting, the number of institutions represented in all rankings, the geographical distribution of institutions across countries and world regions, and the possibility of institutional participation in the data collection process of the ranking providers.
-
-The aim is to identify how the individual ranking systems differ and what implications this may have for the use of a particular ranking in Open Access monitoring activities or strategic decision-making.
-
-### Data Sources
-
-This section examines the data sources used by the five rankings, focusing on two categories of data sources: those used for collecting bibliographic data and those used for determining the Open Access status. Differences in the coverage, completeness, and methodology of these data sources can lead to discrepancies in the calculation of metrics and thus limit the comparability of the results across different rankings. Additionally, it is investigated whether disciplinary differences arise between the rankings due to the data sources used.
-
-
-#### Bibliographic Data Sources
-
-| Ranking |Web of Science | Scopus | OpenAlex | Crossref |
-|:---------|:---------------:|:--------:|:----------:|:----------:|
-| Leiden Ranking |  x | | | |
-| Leiden Ranking Open Edition | | | x | |
-| SCImago Institutions Ranking | | x | | |
-| QS Sustainability Ranking | | x | | |
-| COKI OA Dashboard | | | | x |
-
-: Data sources used for collecting bibliographic data {#tbl-1}
-
-#### Open Access Data Sources
-
-| Ranking | Unpaywall | OpenAlex |
-|:--------|:---------:|:--------:|
-| Leiden Ranking | | x |
-| Leiden Ranking Open Edition | | x | 
-| SCImago Institutions Ranking | x | |
-| QS Sustainability Ranking | x | |
-| COKI OA Dashboard | x | |
-
-: Data sources used for determining the Open Access status {#tbl-2}
-
-#### Disciplinary Differences
-
-::: {.column-page}
-
-::: {#fig-fields}
-
-```{=html}
-<iframe width="1040" height="560" src="https://app.powerbi.com/view?r=eyJrIjoiZmI0YzljYjYtYWZlNy00YzUzLWE1YjYtYjdkNmYwMDUzNjFmIiwidCI6ImNhMmE3Zjc2LWRiZDctNGVjMC05MTA4LTZiM2Q1MjRmYjdjOCIsImMiOjh9"></iframe>
-```
-
-Disciplinary differences between the traditional Leiden Ranking 2024 and the Leiden Ranking Open Edition 2024 (Source: [Open Dashboard 2024](https://app.powerbi.com/view?r=eyJrIjoiZmI0YzljYjYtYWZlNy00YzUzLWE1YjYtYjdkNmYwMDUzNjFmIiwidCI6ImNhMmE3Zjc2LWRiZDctNGVjMC05MTA4LTZiM2Q1MjRmYjdjOCIsImMiOjh9), [@LROE_resources])
-:::
+**Data availability:** Result data available under a CC-BY licence: @COKI2025_08_18
 
 :::
 
-### Open Access Indicators
+
+## Comparability of Ranking Results
+
+In order to assess how comparable the results of the selected rankings are, the subsequent sections focus on examining the following aspects: the number and overlap of institutions featured in all rankings, the geographical distribution of institutions across countries and regions of the world, the data sources used by the ranking systems, the open access indicators used by the rankings and their weighting, and the extent to which institutions can participate in the data collection process carried out by the ranking providers.
+
+The aim is to examine the extent to which the individual ranking systems differ and what implications this may have for the use of a particular ranking in open access monitoring activities or strategic decision-making.
 
 ### Institutional Overlap
 
@@ -326,179 +293,540 @@ library(here)
 library(tidyverse)
 options(scipen = 999)
 
-institutions_df_de_sector <- read_csv(here("rankings/data","institutions_df_de_sector.csv"))
-institutions_df_de_univs <- read_csv(here("rankings/data", "institutions_df_de_univs.csv"))
-pref_df <- read_csv(here("rankings/data", "pref_df.csv"))
+institutions_df_de_sector <- read_csv(here("rankings_notebook/data","institutions_df_de_sector.csv"))
+institutions_df_de_univs <- read_csv(here("rankings_notebook/data", "institutions_df_de_univs.csv"))
+pref_df <- read_csv(here("rankings_notebook/data", "pref_df.csv"))
+qs_upset_merged <- read_csv(here("rankings_notebook/data","qs_upset_merged.csv"))
+sir_upset_merged <- read_csv(here("rankings_notebook/data","sir_upset_merged.csv"))
 ```
 
 
-To determine the institutional overlaps between the rankings, the available results data from the rankings were first downloaded[^1]. In addition to the names and locations (country information, sometimes also region and sub-region) of all institutions, the data from both versions of the Leiden Ranking and the COKI OA Dashboard also include identifiers from the *Research Organization Registry (ROR)*. Furthermore, the data from the COKI OA Dashboard and the SCImago Institutions Ranking include sector classifications for all institutions represented in the rankings.
+To determine the institutional overlap between the rankings, first available ranking data was downloaded[^1]. In addition to the names and locations (country details, and in some cases details of regions and sub-regions) of all institutions, data from both versions of the Leiden Ranking and from the COKI OA Dashboard included identifiers from the [Research Organisation Registry (ROR)](https://ror.org/). Furthermore, data from the COKI OA Dashboard and the SCImago Institutions Ranking included sector classifications for all institutions represented in the rankings.
 
-To uniquely assign ROR IDs to identical institutions across the rankings, the ROR dataset (version 1.69) [@ror_data] was downloaded in full. A machine-based matching process was then performed for both the SCImago Institutions Ranking and the QS Sustainability Ranking using institutional names and country information. For the QS data, which included entries for a total of 1,743 institutions, ROR IDs could be assigned to 1,204 institutions through machine-based matching. For the remaining 539 institutions, manual assignment of ROR IDs was performed, although no assignment could be made for 7 institutions. Therefore, only 1,736 institutions from the QS Sustainability Ranking could be considered for the analysis of institutional overlaps.
+In order to uniquely match identical institutions across rankings using their ROR IDs, the data of the SCImago Institutions Ranking and the QS Sustainability Ranking first had to be supplemented with ROR IDs. For this purpose, the complete ROR dataset in version 2.9 [@ror_data] was downloaded. Subsequently, an automated matching based on institutional name and country information was performed against the ROR data for both rankings. The QS data contained entries for a total of 1,743 institutions[^2], of which `r format(sum(is.na(qs_upset_merged$id)), big.mark=",", decimal.mark = ".")` institutions could not be assigned ROR IDs via the automated matching procedure.
 
-Assigning ROR IDs to the 9,755 institutions included in the SCImago Institutions Ranking proved more challenging. Through machine-based matching using institutional names and country information, ROR IDs could only be assigned to 4,714 institutions. In part, this may be due to the fact that the SCImago Institutions Ranking also lists institutions classified as multinational [@SIR_method]. This seems to particularly affect companies that operate globally, such as [Google](https://www.scimagoir.com/institution.php?idp=89900). While ROR also provides IDs for companies (see [Google](https://ror.org/00njsd438)), it appears to assign clear country classifications. However, the greater difficulty for machine-based matching likely stems from differences in name spelling between the SCImago Institutions Ranking and ROR[^4]. To increase the coverage of ROR IDs for the SCImago Institutions Ranking, a fuzzy matching approach was tested, which also considered alternative name forms and acronyms from the ROR dataset. However, the result was not sufficiently accurate and would have required extensive data cleaning. Overall, this constitutes a significant limitation for the usability of the SCImago dataset for a global analysis of institutional overlaps.
+It proved even more difficult to map ROR IDs to the 9,755 institutions included in the SCImago Institutions Ranking[^3]. Based on the automated matching process using the institutional name and country details, no ROR IDs could be assigned to `r format(sum(is.na(sir_upset_merged$id)), big.mark=",", decimal.mark=".")` institutions. This may be partly due to the fact that the SCImago Institutions Ranking also lists institutions that are classified as multinational [@SIR_method]. This appears to affect, in particular, companies that operate on a supra-regional level, such as [Google](https://www.scimagoir.com/institution.php?idp=89900). Although ROR also provides IDs for companies (see [Google](https://ror.org/00njsd438)), these appear to be assigned to specific countries. However, the greater difficulty for automated matching is likely to be the differences in naming conventions between the SCImago Institutions Ranking and ROR[^4]. To increase coverage with ROR IDs for the SCImago Institutions Ranking, a fuzzy matching approach was tested, which also took into account alternative name forms and acronyms from the ROR dataset. However, the result was not sufficiently accurate and would have required a significant amount of data cleaning. Overall, this represents a significant limitation on the usability of the SCImago dataset for a global analysis of institutional overlap.
 
-Due to the difficulties in assigning ROR IDs, it was decided to limit the analysis of institutional overlaps to institutions from Germany. In the QS Sustainability Ranking dataset, a total of 50 institutions from Germany could be identified, all of which could be assigned ROR IDs. In the SCImago Institutions Ranking dataset, a total of 364 institutions from Germany could be identified, of which 342 could not be assigned ROR IDs through machine-based matching. Therefore, manual assignment of ROR IDs was performed, although no assignment could be made for 6 of the 342 institutions. For the analysis of institutional overlaps among German institutions, 385 institutions from the SCImago Institutions Ranking could thus be considered.
+Due to the limitations in assigning ROR IDs, it was decided to restrict the analysis of institutional overlap to German institutions. In the QS Sustainability Ranking dataset, a total of 50 institutions from Germany were identified, all of which could be assigned a ROR ID, either via automated matching or manual additions. In the SCImago Institutions Ranking dataset, a total of 364 German institutions were identified, of which 342 could not be assigned a ROR ID via automated matching. A manual assignment was carried out for these 342, however, no ROR ID could be assigned to 5 of these institutions as they have no record in ROR. Consequently, 385 institutions were included in the analysis of institutional overlap among German institutions for the SCImago Institutions Ranking.
 
-@fig-2 quantitatively represents the institutional overlaps of German institutions with ROR IDs in the five ranking systems. The figure only includes institutions that could be assigned ROR IDs.
+@fig-2 quantifies the institutional overlap between German institutions across the various ranking systems. The figure only includes those institutions to which ROR IDs could be assigned.
 
-![Institutional overlaps for all German institutions with ROR IDs in five ranking systems](rankings/plots/all_de_institution_upset.png){#fig-2 group="upset"}
+![Institutional overlap for all German institutions with ROR IDs across five ranking systems](plots/all_de_institution_upset.png){#fig-2 group="upset"}
 
-Overall, `r format(n_distinct(institutions_df_de_sector$ror), big.mark=".", decimal.mark = ",")` unique institutions from Germany could be identified across all ranking systems. From @fig-2, it is evident that the COKI OA Dashboard clearly includes more German institutions than all other ranking systems, both in total (`r format(sum(institutions_df_de_sector$coki), big.mark=".", decimal.mark = ",")` institutions, `r format(round(sum(institutions_df_de_sector$coki) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=",")` %) and in terms of the number of institutions that are not represented in any other ranking system (`r format(sum(filter(institutions_df_de_sector, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=".", decimal.mark = ",")` institutions, `r format(round(sum(filter(institutions_df_de_sector, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=",")` %). This could be particularly due to the fact that the COKI OA Dashboard covers a relatively long publication period (2000–2024) and also includes institutions from multiple sectors, as well as institutions with a relatively small publication volume of at least 50 publications [@COKI_how; @COKI_data].
+In total, after matching the ROR IDs `r format(n_distinct(institutions_df_de_sector$ror), big.mark=",", decimal.mark=".")` unique institutions from Germany were identified across all ranking systems. As can be seen from @fig-2, the COKI OA Dashboard covers significantly more German institutions than all other ranking systems, both in total (`r format(sum(institutions_df_de_sector$coki), big.mark=",", decimal.mark=".")` institutions, `r format(round(sum(institutions_df_de_sector$coki) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=".")`%), as well as in terms of the number of institutions not included in any other ranking system (`r format(sum(filter(institutions_df_de_sector, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=",", decimal.mark=".")` institutions, `r format(round(sum(filter(institutions_df_de_sector, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=".")`%). This could be attributed in particular to the fact that the COKI OA Dashboard, while covering a relatively long publication period (2000--2024), also includes institutions from multiple sectors, as well as institutions with a relatively low publication volume -- typically at least 50 publications [@COKI_how;@COKI_data].
 
-@fig-2 also shows that of the `r format(sum(institutions_df_de_sector$sir), big.mark=".", decimal.mark = ",")` institutions from the SCImago Institutions Ranking, `r format(sum(filter(institutions_df_de_sector, sir == 1 & lr == 0 & lroe == 0 & qs == 0 & coki == 0)$sir), big.mark=".", decimal.mark = ",")` institution (`r format(round(sum(filter(institutions_df_de_sector, sir == 1 & lr == 0 & lroe == 0 & qs == 0 & coki == 0)$sir) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=",")` %) is not represented in any other ranking. In contrast, all institutions from both versions of the Leiden Ranking and the QS Sustainability Ranking are also represented in at least one other ranking. Overall, only `r format(sum(filter(institutions_df_de_sector, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki), big.mark=".", decimal.mark = ",")` institutions (`r format(round(sum(filter(institutions_df_de_sector, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=",")` %) are represented in all five ranking systems.
+@fig-2 also shows that, of the `r format(sum(institutions_df_de_sector$sir), big.mark=",", decimal.mark=".")` institutions included in the SCImago Institutions Ranking, `r format(sum(filter(institutions_df_de_sector, sir == 1 & lr == 0 & lroe == 0 & qs == 0 & coki == 0)$sir), big.mark=",", decimal.mark=".")` institutions (`r format(round(sum(filter(institutions_df_de_sector, sir == 1 & lr == 0 & lroe == 0 & qs == 0 & coki == 0)$sir) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=".")`%) are not included in any other ranking. By contrast, all institutions from both versions of the Leiden Ranking and from the QS Sustainability Ranking are also featured in at least one other ranking. In total, there are only `r format(sum(filter(institutions_df_de_sector, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki), big.mark=",", decimal.mark=".")` institutions (`r format(round(sum(filter(institutions_df_de_sector, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki) / n_distinct(institutions_df_de_sector$ror) *100, 2), decimal.mark=".")`%) included in all five ranking systems.
 
-While the QS Sustainability Ranking and both versions of the Leiden Ranking only include universities in their rankings, the COKI OA Dashboard and the SCImago Institutions Ranking also include institutions from other sectors. Universities in the COKI dataset are classified with the institution type *Education*, while in the SCImago Institutions Ranking dataset, the sector *Universities* is assigned to universities. To further investigate the institutional overlaps of German universities between the five ranking systems, a *sector* column was added to the merged dataset of all ranking systems. For institutions represented in both versions of the Leiden Ranking or in the QS Sustainability Ranking, the sector classification *Universities* was added. For institutions represented in the SCImago Institutions Ranking or the COKI OA Dashboard, the original classification was retained. The dataset was then filtered to include only institutions assigned to the *Universities* or *Education* sectors.
+Whereas the QS Sustainability Ranking and both versions of the Leiden Ranking include only higher education institutions in their rankings, the COKI OA Dashboard and the SCImago Institutions Ranking also cover institutions from other sectors. Higher education institutions are classified as *Education* in the COKI dataset, whilst in the SCImago Institutions Ranking dataset, the *Universities* sector is assigned to higher education institutions. In order to subsequently examine the institutional overlap of German higher education institutions across the five ranking systems, a *sector* column was added to the consolidated dataset of all ranking systems. For institutions featured in both versions of the Leiden Ranking or in the QS Sustainability Ranking, the sector classification *Universities* was added. For institutions featured in the SCImago Institutions Ranking or the COKI OA Dashboard, the original classification was retained. The dataset was then filtered to include only those institutions to which the values *Universities* or *Education* had been assigned in the *sector* column.
 
-@fig-3 represents the institutional overlaps of German universities between the rankings. The figure also only includes institutions that could be assigned ROR IDs.
+@fig-3 below shows the institutional overlap between the rankings with regard to German universities. The figure also includes only those institutions to which ROR IDs could be assigned.
 
-![Institutional overlaps for German universities with ROR IDs in five ranking systems](rankings/plots/univs_de_institution_upset.png){#fig-3 group="upset"}
+![Institutional overlap for German universities with ROR IDs across five ranking systems](plots/univs_de_institution_upset.png){#fig-3 group="upset"}
 
-Overall, `r format(n_distinct(institutions_df_de_univs$ror), big.mark = ".")` different German universities could be identified across all ranking systems. From @fig-3, it is evident that the COKI OA Dashboard also includes more German universities than all other ranking systems, both in total (`r format(sum(institutions_df_de_univs$coki), big.mark=".", decimal.mark = ",")` institutions, `r format(round(sum(institutions_df_de_univs$coki) / n_distinct(institutions_df_de_univs$ror) *100, 2), decimal.mark=",")` %) and in terms of the number of institutions that are not represented in any other ranking system (`r format(sum(filter(institutions_df_de_univs, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=".", decimal.mark = ",")` institutions, `r format(round(sum(filter(institutions_df_de_univs, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_de_univs$ror) *100, 2), decimal.mark=",")` %). According to the German Federal Statistical Office, a total of 422 German universities were counted in the 2024/2025 winter semester [@destatis]. Accordingly, the COKI OA Dashboard currently represents `r format(round(n_distinct(institutions_df_de_univs$ror) / 422 * 100,2), decimal.mark = ",")` % of all German universities. It is also the only ranking system that includes universities not represented in any other ranking. The absolute number of German universities represented in all five ranking systems remains the same as the absolute number of all German institutions represented in all five ranking systems. 
+In total, `r format(n_distinct(institutions_df_de_univs$ror), big.mark = ".")` different German higher education institutions were identified across all ranking systems. @fig-3 shows that the COKI OA Dashboard also covers significantly more German higher education institutions than any other ranking system, both in total (`r format(sum(institutions_df_de_univs$coki), big.mark=",", decimal.mark=".")` institutions, `r format(round(sum(institutions_df_de_univs$coki) / n_distinct(institutions_df_de_univs$ror) *100, 2), decimal.mark=".")`%), as well as in terms of the number of institutions not included in any other ranking system (`r format(sum(filter(institutions_df_de_univs, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki), big.mark=",", decimal.mark=".")` institutions, `r format(round(sum(filter(institutions_df_de_univs, coki == 1 & lr == 0 & lroe == 0 & qs == 0 & sir == 0)$coki) / n_distinct(institutions_df_de_univs$ror) *100, 2), decimal.mark=".")`%). According to the Federal Statistical Office, a total of 422 German higher education institutions were recorded in the 2024/2025 winter term [@destatis]. Thus, the COKI OA Dashboard currently represents `r format(round(n_distinct(institutions_df_de_univs$ror) / 422 * 100,2), decimal.mark=".")`% of all German higher education institutions. It is also the only ranking system that includes higher education institutions not featured in any other ranking. The total number of German higher education institutions featured in all five ranking systems, with `r format(sum(filter(institutions_df_de_univs, coki == 1 & lr == 1 & lroe == 1 & qs == 1 & sir == 1)$coki), big.mark=",", decimal.mark=".")` institutions, remains unchanged from the total number of all German institutions featured in all five ranking systems.
 
-The COKI OA Dashboard and the SCImago Institutions Ranking are the only two of the analyzed ranking systems that do not exclusively include universities. With regard to Germany, of the total `r format(sum(institutions_df_de_sector$coki), big.mark=".", decimal.mark = ",")` German institutions represented in the COKI OA Dashboard, `r format(round(sum(institutions_df_de_univs$coki) / sum(institutions_df_de_sector$coki) *100,2), big.mark=".", decimal.mark = ",")` % are German universities. In comparison, of the total `r format(sum(institutions_df_de_sector$sir), big.mark=".", decimal.mark = ",")` German institutions represented in the SCImago Institutions Ranking, `r format(round(sum(institutions_df_de_univs$sir) / sum(institutions_df_de_sector$sir) *100,2), big.mark=".", decimal.mark = ",")` % are German universities. For both ranking systems, it can thus be concluded that the majority of represented institutions, at least with regard to Germany, are assigned to other sectors.
+The COKI OA Dashboard and the SCImago Institutions Ranking are the only two of the ranking systems examined that do not limit their rankings to higher education institutions. With regard to Germany, of the total `r format(sum(institutions_df_de_sector$coki), big.mark=",", decimal.mark=".")` German institutions featured in the COKI OA Dashboard, `r format(round(sum(institutions_df_de_univs$coki) / sum(institutions_df_de_sector$coki) *100,2), big.mark=",", decimal.mark=".")`% are German higher education institutions. By comparison, of the total `r format(sum(institutions_df_de_sector$sir), big.mark=",", decimal.mark=".")` German institutions featured in the SCImago Institutions Ranking, `r format(round(sum(institutions_df_de_univs$sir) / sum(institutions_df_de_sector$sir) *100,2), big.mark=",", decimal.mark=".")`% are German higher education institutions. For both ranking systems, it can therefore be observed that the majority of the German institutions included are assigned to other sectors.
 
-[^1]: Information on the availability of data, including a link to download the version of the data used (if available), is provided for all rankings in the respective "Ranking Details" section.
-[^2]: @QS_date reports that 1,744 institutions were ranked in the 2025 version. However, the data shows a discrepancy of one institution.
-[^3]: The provided data shows a discrepancy of one institution compared to the number of ranked institutions reported by SCImago on the ranking website [@SIR]. The provided CSV file contains 9,756 rows; however, the first row is merely a header.
-[^4]: For example, in the SCImago Institutions Ranking, the [Deutsche Krebsforschungszentrum](https://www.scimagoir.com/institution.php?idp=21592) is listed in the national language, while in ROR, the English name [German Cancer Research Center](https://ror.org/04cdgtt98) is used as the primary designation.
+
+[^1]: Information on the availability of the relevant data, including a link to download the version of the data used -- where available -- is provided for all rankings in the respective box containing the ranking details.
+[^2]: @QS_date reports that 1,744 institutions were ranked in the 2025 edition. However, the data here shows a discrepancy of one institution.
+[^3]: The data provided shows a discrepancy of one institution compared with the number of ranked institutions reported by SCImago on the ranking website [@SIR]. Although the CSV file provided contains 9,756 rows, the first row is merely a header row.
+[^4]: For example, in the SCImago Institutions Ranking, the [Deutsche Krebsforschungszentrum](https://www.scimagoir.com/institution.php?idp=21592) is listed in the national language, whilst in ROR the English name variant [German Cancer Research Centre](https://ror.org/04cdgtt98) is used as the display name.
 
 ### Geographical Distribution
 
-Figures -@fig-leidenmaps and -@fig-maps[^5] show the geographical distribution of institutions in terms of the countries and world regions in which they are located. While all five rankings have a global orientation, the figures aim to visualize whether there are differences in the geographical distribution between the rankings. To ensure better comparability, the institutions in all ranking systems were limited to those assigned to the university sector (*Universities*, *Education*).
+Figures -@fig-leidenmaps and -@fig-maps[^5] below show the geographical distribution of the institutions in terms of the countries and regions of the world in which they are located. Although all five rankings have a global focus, the figures are intended to visualise whether there are differences in geographical distribution between the rankings. To ensure better comparability, the analysis has been restricted to those institutions classified under the higher education sector (*Universities*, *Education*).
 
 ::: {#fig-leidenmaps layout-ncol=2}
 
-![Leiden Ranking 2024](rankings/plots/lr_map.png){#fig-LR group="map"}
 
-![Leiden Ranking Open Edition 2024](rankings/plots/lroe_map.png){#fig-LROE group="map"}
+![Leiden Ranking 2025](plots/lr_map.png){#fig-LR group="map"}
 
-Geographical distribution of institutions represented in the Leiden Rankings across countries and world regions
+![Leiden Ranking Open Edition 2025](plots/lroe_map.png){#fig-LROE group="map"}
+
+Geographical distribution of the institutions featured in the Leiden Rankings by country and world region
 
 :::
 
 ::: {#fig-maps layout-ncol=3}
 
-![SCImago Institutions Ranking 2025 (Universities)](rankings/plots/sir_univ_map.png){#fig-sir group="map"}
+![SCImago Institutions Ranking 2025 (Universities)](plots/sir_univ_map.png){#fig-sir group="map"}
 
-![QS Sustainability Ranking 2025](rankings/plots/qs_map.png){#fig-qs group="map"}
+![QS Sustainability Ranking 2025](plots/qs_map.png){#fig-qs group="map"}
 
-![COKI OA Dashboard 2025 (Education)](rankings/plots/coki_univ_map.png){#fig-coki group="map"}
+![COKI OA Dashboard 2025 (Education)](plots/coki_univ_map.png){#fig-coki group="map"}
 
-Geographical distribution of institutions represented in the SIR, QS, and COKI ranking systems across countries and world regions
+Geographical distribution of the institutions featured in the SIR, QS and COKI ranking systems, by country and world region
 
 :::
 
+Looking at the absolute numbers of higher education institutions, Figures -@fig-leidenmaps and -@fig-maps show in particular that, for both versions of the Leiden Ranking and the SCImago Institutions Ranking, the majority of higher education institutions are based in China (LR: `r pref_df$nij_lr[pref_df$country == "China"]` institutions, LROE: `r pref_df$nij_lroe[pref_df$country == "China"]` institutions, SIR: `r pref_df$nij_sir[pref_df$country == "China"]` institutions). By contrast, for the QS Sustainability Ranking and the COKI OA Dashboard, most institutions are based in the United States of America (QS: `r pref_df$nij_qs[pref_df$country == "United States"]` institutions, COKI: `r pref_df$nij_coki[pref_df$country == "United States"]` institutions). Furthermore, the figures illustrate that, with the exception of the COKI OA Dashboard, certain countries, particularly those in the Global South, are not represented at all in the ranking systems.
 
-If we consider the absolute numbers of universities, Figures -@fig-leidenmaps and -@fig-maps show that for both versions of the Leiden Ranking and the SCImago Institutions Ranking, the majority of universities are located in China (LR: `r pref_df$nij_lr[pref_df$Country == "China"]` institutions, LROE: `r pref_df$nij_lroe[pref_df$Country == "China"]` institutions, SIR: `r pref_df$nij_sir[pref_df$Country == "China"]` institutions). In contrast, for the QS Sustainability Ranking and the COKI OA Dashboard, the majority of institutions are located in the United States of America (QS: `r pref_df$nij_qs[pref_df$Country == "United States"]` institutions, COKI: `r pref_df$nij_coki[pref_df$Country == "United States"]` institutions). Furthermore, the figures illustrate that, with the exception of the COKI OA Dashboard, several countries in the global South are not represented in the ranking systems.
-
-In addition to the absolute number of universities, the relative distribution of universities across countries and ranking systems is examined using the *preference* metric according to @Moed2016. @Moed2016 defines *preference* as follows[^6]:
+In addition to the absolute number of higher education institutions per country and ranking system, below we examine the over- or under-representation of countries within the ranking systems using the *preference* as defined by @Moed2016. @Moed2016 defines *preference* as[^6]:
 
 > The preference of ranking system R for a particular country C is expressed as the ratio of the actual and the expected number of institutions from C appearing in R, where the expected number is based on the total number of institutions across countries and across systems, under the assumption of independence of these two variables. A value of 1.0 indicates that the number of institutions from C in R is ‘as expected’.
 
-The resulting preference score (*preference score*) measures whether a country, measured by the number of institutions it hosts, is overrepresented or underrepresented in a ranking system relative to expectations. The metric is neutral at a value of 1.0, meaning the number of institutions from a country in a ranking system matches expectations. Values above 1.0 indicate that more institutions from a country are included in a ranking system than expected. Values below 1.0 indicate that fewer institutions from a country are included in a ranking system than expected.
 
-@tbl-pref presents, for all five ranking systems, the top 5 countries based on preference score, as well as Germany, showing the absolute number of universities and the respective preference score.
+The resulting *preference score* therefore measures whether a country, in terms of the number of institutions based there, is over- or under-represented within a ranking system. A value of 1 is neutral, i.e. the number of institutions from a country in a ranking system corresponds to expectations. Values above 1 indicate that more institutions from a country are included in a ranking system than expected. Values below 1 indicate that fewer institutions from a country are included in a ranking system than expected.
 
+
+@tbl-pref shows, for all five ranking systems, the top five countries as measured by *preference score*. It displays the absolute number of higher education institutions and the respective *preference score* for each country, and additionally includes the values for Germany.
+
+::: {.column-page}
 ::: {#tbl-pref layout-ncol=2}
 
 +---------+-----------------------------+-----------------+------------------+
-| Ranking | Country                     | No. Universities| preference score |
+| Ranking | Country                     | No. universities| preference score |
 +=========+=============================+=================+==================+
-| Leiden  | Luxembourg                  | 1               |    2,45          |
+| Leiden  | Luxembourg                  | 1               |    2.44          |
 |         +-----------------------------+-----------------+------------------+
-|         | Australia                   | 35              |    2,34          |
+|         | Malta                       | 1               |    2.44          |
 |         +-----------------------------+-----------------+------------------+
-|         | Spain                       | 47              |    2,32          |
+|         | China                       | 356             |    2.33          |
 |         +-----------------------------+-----------------+------------------+
-|         | Italy                       | 49              |    2,22          |
+|         | Australia                   | 35              |    2.30          |
 |         +-----------------------------+-----------------+------------------+
-|         | China                       | 313             |    2,15          |
+|         | Spain                       | 47              |    2.25          |
 |         +-----------------------------+-----------------+------------------+
 |         +-----------------------------+-----------------+------------------+
-|         | Germany                     | 57              |    1,46          |
+|         | Germany                     | 58              |    1.44          |
 +---------+-----------------------------+-----------------+------------------+
-| SIR     | Faroe Islands               | 1               |    2,55          |
+| SIR     | Faroe Islands               | 1               |    2.69          |
 |         +-----------------------------+-----------------+------------------+
-|         | French Guiana               | 1               |    2,55          |
+|         | Guadeloupe                  | 1               |    2.69          |
 |         +-----------------------------+-----------------+------------------+
-|         | Grenada                     | 1               |    2,55          |
+|         | French Guiana               | 1               |    2.69          |
 |         +-----------------------------+-----------------+------------------+
-|         | Guadeloupe                  | 1               |    2,55          |
+|         | Lesotho                     | 1               |    2.69          |
 |         +-----------------------------+-----------------+------------------+
-|         | Lesotho                     | 1               |    2,55          |
+|         | Réunion                     | 1               |    2.69          |
 |         +-----------------------------+-----------------+------------------+
 |         +-----------------------------+-----------------+------------------+
-|         | Germany                     | 108             |    0,82          |
+|         | Germany                     | 108             |    0.85          |
 +---------+-----------------------------+-----------------+------------------+
-| COKI    | Myanmar                     | 27              |    1,61          |
+| COKI    | Myanmar                     | 27              |    1.70          |
 |         +-----------------------------+-----------------+------------------+
-|         | Cambodia                    | 15              |    1,61          |
+|         | Nicaragua                   | 15              |    1.70          |
 |         +-----------------------------+-----------------+------------------+
-|         | Nicaragua                   | 15              |    1,61          |
+|         | El Salvador                 | 13              |    1.70          |
 |         +-----------------------------+-----------------+------------------+
-|         | Somalia                     | 14              |    1,61          |
+|         | Tajikistan                  | 13              |    1.70          |
 |         +-----------------------------+-----------------+------------------+
-|         | El Salvador                 | 13              |    1,61          |
+|         | Angola                      | 10              |    1.70          |
 |         +-----------------------------+-----------------+------------------+
 |         +-----------------------------+-----------------+------------------+
-|         | Germany                     | 397             |    0,96          |
+|         | Germany                     | 397             |    0.99          |
 +---------+-----------------------------+-----------------+------------------+
 
 +-----------+---------------+-----------------+------------------+
-| Ranking   | Land          | Nr. Hochschulen | preference score |
+| Ranking   | Country       | No. universities| preference score |
 +===========+===============+=================+==================+
-| Leiden OE | Luxembourg    | 1               |    2,45          |
+| Leiden OE | Grenada       | 1               |    3.20          |
 |           +---------------+-----------------+------------------+
-|           | Australia     | 35              |    2,34          |
+|           | Cameroon      | 7               |    1.98          |
 |           +---------------+-----------------+------------------+
-|           | Spain         | 47              |    2,32          |
+|           | Turkey        | 10              |    1.85          |
 |           +---------------+-----------------+------------------+
-|           | Italy         | 49              |    2,22          |
+|           | South Africa  | 20              |    1.76          |
 |           +---------------+-----------------+------------------+
-|           | China         | 313             |    2,15          |
+|           | Italy         | 63              |    1.53          |
 |           +---------------+-----------------+------------------+
 |           +---------------+-----------------+------------------+
-|           | Germany       | 57              |    1,46          |
+|           | Germany       | 73              |    1.02          |
 +-----------+---------------+-----------------+------------------+
-| QS        | Brunei        | 2               |    3,70          |
+| QS        | Brunei        | 2               |    3.47          |
 |           +---------------+-----------------+------------------+
-|           | Hong Kong     | 9               |    3,17          |
+|           | Hong Kong     | 9               |    3.35          |
 |           +---------------+-----------------+------------------+
-|           | Malta         | 1               |    2,96          |
+|           | Saudi Arabia  | 28              |    2.65          |
 |           +---------------+-----------------+------------------+
-|           | Saudi Arabia  | 28              |    2,67          |
+|           | Fiji          | 1               |    2.60          |
 |           +---------------+-----------------+------------------+
-|           | Jordan        | 11              |    2,50          |
+|           | Azerbaijan    | 7               |    2.54          |
 |           +---------------+-----------------+------------------+
 |           +---------------+-----------------+------------------+
-|           | Germany       | 50              |    1,11          |
+|           | Germany       | 50              |    1.14          |
 +-----------+---------------+-----------------+------------------+
 
-
-Preference scores of the top 5 countries and Germany per ranking system
+Preference scores for the top five countries and Germany by ranking system
+:::
 :::
 
-@tbl-pref shows different geographical coverage of the various ranking systems in terms of overproportionally represented countries. Both versions of the Leiden Ranking tend to focus on Europe, the SCImago Institutions Ranking on North and South America, the COKI OA Dashboard predominantly on Asia and Central America, and the QS Sustainability Ranking primarily on Asia. A particular feature of the COKI OA Dashboard is that `r nrow(filter(pref_df,pref_coki == 1.61))` countries have the same preference score of 1.61. The countries shown in @tbl-pref are the first five entries resulting from a descending sort by the number of institutions from the respective countries. The observation that a large number of countries share the same preference score is due to the fact that the `r nrow(filter(pref_df,pref_coki == 1.61))` countries are exclusively included in the COKI OA Dashboard.
+@tbl-pref reveals considerable differences in the geographical over-representation of the ranking systems. The traditional Leiden Ranking features a diverse range of countries without a consistent regional pattern (Luxembourg, Malta, China, Australia, Spain). The Leiden Ranking Open Edition features a greater number of countries from the Global South, as well as a few other countries outside the established academic centres of North America and Western Europe (Grenada, Cameroon, South Africa, Turkey, Italy), whilst the QS Sustainability Ranking focuses predominantly on Asian countries and territories (Brunei, Hong Kong, Saudi Arabia, Fiji, Azerbaijan). The regional focus of the Leiden Ranking Open Edition suggests an effect resulting from the inclusion of so-called *non-core publications* as well as a lower publication threshold. This expansion specifically captures more universities from countries such as India, Indonesia and Brazil, which are under-represented in the traditional Leiden Ranking [@vanEck2025c]. In the SCImago Institutions Ranking and the COKI OA Dashboard, the top five countries each share an identical preference score (2.69 and 1.70 respectively). This is due to the fact that the respective countries are represented exclusively in their respective ranking systems. It is also striking that the top five countries in the SCImago Institutions Ranking are represented by just a single institution each.
 
-With regard to Germany, @tbl-pref shows that both versions of the Leiden Ranking and the QS Sustainability Ranking include a slightly overrepresented to overrepresented number of German universities, with preference scores of 1.46 and 1.11, respectively. This suggests that these ranking systems include a slightly higher to higher-than-expected number of German universities, with an absolute number of 50 and 57 universities, respectively. In contrast, while the COKI OA Dashboard includes a significantly higher absolute number of German universities (397), its preference score of 0.96 indicates that this number is below the expected value. For the SCImago Institutions Ranking, the preference score for German universities is only 0.82, indicating that German institutions are underrepresented in this ranking, even though the absolute number of German universities (108) is the second highest.
+With regard to Germany, @tbl-pref presents a mixed picture. Whilst the traditional Leiden Ranking (1.44), the QS Sustainability Ranking (1.14) and the Leiden Ranking Open Edition (1.02) show a slightly above-average representation of German universities, the COKI OA Dashboard (0.99) is close to the expected value and the SCImago Institutions Ranking (0.85) is even slightly below it. Germany is therefore not among the top five countries in any of the five systems.
+
+[^5]: Click on the images to enlargen them.
+[^6]: In mathematical terms, @Moed2016 defines the *preference* as: $P= \bigg(\dfrac{n[i, j]}{\sum_i n[i, j]}\bigg)\bigg(\dfrac{\sum_i\sum_jn[i, j]} {\sum_jn[i, j]}\bigg)$, where $n[i, j]$ is the number of institutions from country $i$ in ranking system $j$, $\sum_in[i, j]$ is the sum of all $n[i, j]$ over all $i$ (countries), $\sum_jn[i, j]$ denotes the sum of all $n[i, j]$ over all $j$ (ranking systems), and $\sum_i\sum_jn[i, j]$ denotes the sum of all $n[i, j]$ over all $i$ (countries) and all $j$ (ranking systems).
 
 
-[^5]: Clicking on the figures enlarges them for better viewing.
-[^6]: Formally, @Moed2016 defines *preference* as: $P= \dfrac{\bigg(\dfrac{n[i, j]}{\sum_i n[i, j]}\bigg)}{\bigg(\dfrac{\sum_jn[i, j]}{\sum_i\sum_jn[i, j]}\bigg)}$, where $n[i, j]$ represents the number of institutions from country $i$ in ranking system $j$, $\sum_in[i, j]$ is the sum of all $n[i, j]$ across all $i$ (countries), $\sum_jn[i, j]$ is the sum of all $n[i, j]$ across all $j$ (ranking systems), and $\sum_i\sum_jn[i, j]$ is the sum of all $n[i, j]$ across all $i$ (countries) and all $j$ (ranking systems).
+### Data Sources
+
+This section examines the data sources used by the five rankings, focusing on the following two categories of data sources: 1) data sources used to obtain bibliographic data, and 2) data sources used to determine open access status. Differences in the coverage, completeness and methodology of these data sources can lead to discrepancies in the calculation of metrics and thus limit the comparability of results across different rankings. Furthermore, the study examines whether the data sources used result in disciplinary differences between the rankings.
+
+#### Bibliographic Data Sources
+
+@Huang2020b identify two key sources of information that are necessary for the analysis of research outputs. Firstly, information sources that provide data to link research outputs to the relevant units of analysis (e.g. universities, research institutions). Secondly, information sources that provide data to link research outputs to relevant metrics (e.g. open access status) [@Huang2020b]. In the context of compiling university rankings, bibliographic data sources play a central role in providing this data and are essential for a quantitative assessment of the respective productivity of the universities under consideration.
+
+@tbl-1 below shows the bibliographic data sources used by the five ranking systems. 
+
+| Ranking | Web of Science | Scopus | OpenAlex | Crossref |
+|:---------|:---------------:|:--------:|:----------:|:----------:|
+| Leiden Ranking |  x | | | |
+| Leiden Ranking Open Edition | | | x | |
+| SCImago Institutions Ranking | | x | | |
+| QS Sustainability Ranking | | x | | |
+| COKI OA Dashboard | | | | x |
+
+: Data sources used for the collection of bibliographic data {#tbl-1}
+
+As @tbl-1 shows, the five rankings examined use four different bibliographic data sources: Web of Science (WoS), Scopus, Crossref and OpenAlex. Of these, Web of Science (WoS) is the most established abstract and citation database [@Birkle2020]. Until the mid-2000s, WoS was the leading tool for bibliometric analyses [@Gauch2023]. In 2004, Elsevier launched Scopus, the first comparable multidisciplinary database, which broke WoS’s previous monopoly [@Baas2020;@Huang2020;@Gauch2023]. Crossref was established in 2000 as a membership-based DOI registration agency. Publishers and other publication infrastructures can register DOIs for their publications via Crossref and, at the same time, submit publication metadata to the service. Since 2013, Crossref has offered a REST API through which Crossref’s publication metadata is openly accessible and can be reused [@Hendricks2020]. In 2022, OpenAlex was introduced as an open data source, with the aim of succeeding the discontinued Microsoft Academic Graph (MAG) as a fully open source of research information [@Priem2022]. Since its launch, OpenAlex has established itself as a serious alternative to proprietary providers, particularly through the integration of data from diverse open data sources such as Crossref, PubMed, ORCID and institutional repositories [@Torres2026;@Abramo2026].
+
+The emergence of new data sources usually leads to comparative analyses in order to understand the differences between them and to situate them within the evolving research and infrastructure landscape [@Gauch2023]. The study by @Torres2026 provides a recent overview of comparative analyses, however, these analyses focus predominantly on WoS, Scopus, Microsoft Academic/Microsoft Academic Graph and OpenAlex. By contrast, there are comparatively few bibliometric studies that explicitly include Crossref in comparisons with other data sources.
+
+The study by @Harzing2019 compared the quantitative coverage of Crossref and Dimensions with that of Google Scholar, Microsoft Academic, Scopus and Web of Science in terms of publication output and citation rates for the author’s publications, as well as for six leading journals in the field of Business & Economics. @Harzing2019 found that Crossref and Dimensions had higher publication coverage than Scopus and WoS for journal articles, book chapters and conference papers, but lower publication coverage than Google Scholar and Microsoft Academic across all document types considered. @Harzing2019 also found that open data sources have an advantage over proprietary data sources in terms of timeliness, as they often capture publications within a few weeks of their online publication, whilst Scopus and WoS often only index publications upon their print publication. The study by @Harzing2019 concludes that Crossref and Dimensions represent alternatives to the established commercial data sources, whereas Google Scholar and Microsoft Academic are more comprehensive open data sources.
+
+The study by @Visser2021 carried out a pair-wise comparison of Scopus with the bibliographic data sources WoS (in the version licensed by the Centre for Science and Technology Studies (CWTS), which includes the SCIE, SSCI, AHCI, CPCI indexes), Dimensions, Crossref and Microsoft Academic in terms of document coverage, as well as the completeness and accuracy of citation links. @Visser2021 identified Microsoft Academic as offering the broadest coverage of documents, followed by Dimensions/Crossref, Scopus and CWTS WoS. Microsoft Academic also includes a larger number of non-scholarly documents. By contrast, @Visser2021 reported that Scopus and WoS are superior to Dimensions and Microsoft Academic in terms of the completeness and accuracy of citation links. Furthermore, a structural problem was identified with Crossref, as some citation links are not openly accessible, even though they are available internally within Crossref. @Visser2021 conclude that the choice of a suitable data source must be guided by the objectives of the analysis, and that both the comprehensiveness of Dimensions and Microsoft Academic and the selectivity of Scopus and WoS can offer added value.
+
+@Kramer2022 analysed the coverage of funding information for NWO-funded publications in Crossref, The Lens, Web of Science, Scopus and Dimensions. The analysis revealed that Crossref provided funding information for only 67% of publications, with NWO being correctly identified by its funder ID in just 45% of cases. In contrast, Web of Science (83%) and Scopus (78%) achieved a significantly higher level of completeness in funding information, as they extracted this from the full texts, whilst Crossref relied exclusively on metadata submitted by publishers.
+
+The study by @Asubiaro2023 compared the coverage of African journals in Web of Science, Scopus and Crossref. @Asubiaro2023 found that African journals were covered to a significantly greater extent in Crossref than in Web of Science and Scopus. Overall, however, @Asubiaro2023 assess African research as being under-represented in global citation databases.
+
+The study by @Torres2026 combined a systematic literature review with an empirical bibliometric analysis to compare Web of Science, Scopus and OpenAlex. The literature review by @Torres2026 analysed five key areas: total volume of records, coverage of open access journals, language coverage, reference coverage, and the quality and reliability of metadata. The empirical section compared the three data sources, particularly with regard to document types, languages and research fields for publications between 2015 and 2024. @Torres2026 report that WoS and Scopus operate subscription-based business models with strictly curated, predominantly English-language content and exhibit a high degree of structural overlap between them. OpenAlex, by contrast, offers an open-source platform with heterogeneous data sources and exhibits a higher volume of records, greater linguistic and geographical diversity – particularly with regard to open access publications and publications from the Global South – as well as less overlap with the proprietary systems. With regard to metadata quality, @Torres2026 found that OpenAlex exhibits higher error rates in the identification and classification of document types, publication years, language and affiliation information than WoS and Scopus. In terms of subject areas, @Torres2026 report that WoS and Scopus have a similarly strong focus on the natural sciences, whereas OpenAlex indexes a significantly higher proportion of publications from the social sciences and humanities. Furthermore, @Torres2026 found that WoS and Scopus offer greater coverage and accuracy of references, whilst OpenAlex under-represents a considerable proportion of resources, particularly grey literature. @Torres2026 conclude that no single data source provides a comprehensive picture of the global scientific landscape and that the combined use of all three data sources can reduce disciplinary, linguistic and geographical biases.
+
+The study by @Abramo2026 compared Web of Science, Scopus, and OpenAlex—both at the individual level and at the aggregated institutional level—in terms of publication output, impact metrics, and the resulting rankings. For Italian professors and universities in the field of management engineering, the comparison showed that the consistency among the data sources was high for pure publication output but only moderate for impact-based metrics. At the institutional level, the rankings of individual universities shifted—in some cases substantially—depending on the data source used, with smaller institutions being particularly affected. @Abramo2026 identified differences in disciplinary taxonomies, normalization procedures, and conventions for determining publication years as the main causes. These factors had a particular impact on rankings, especially when aggregating data at the institutional level. @Abramo2026 therefore recommend triangulating results from at least two data sources in evaluations, transparently reporting the sensitivity of the results, and—when using OpenAlex—explicitly defining and communicating methodological conventions in advance, including the definition of the document types to be included.
+
+The study by @Huang2020 is already somewhat dated, but it is particularly interesting in the context of university rankings. @Huang2020 compared Web of Science, Scopus, and Microsoft Academic at the institutional level and examined their impact on university rankings. The results showed that the choice of data source led to clear differences in the bibliographic characteristics examined (document coverage, publication years, document types, citation rates, open access status, affiliation assignment). @Huang2020 found that Microsoft Academic offered the most comprehensive document coverage, particularly in the social sciences and humanities, but had less precise affiliation metadata. WoS and Scopus showed lower overall coverage but were more reliable in assigning institutions to publications. With regard to publication years, the sources showed a high degree of agreement overall, however, considerable discrepancies between the data sources occurred for individual institutions, notably those from non-English-speaking countries. @Huang2020 reported that the proportion of open access publications at the institutional level varied depending on the source, which also led to shifts in the rankings, with universities from non-English-speaking regions being disproportionately affected. With regard to document types, it was found that Microsoft Academic captured a higher proportion of book chapters and conference papers, while Scopus frequently indexed books and monographs that were not captured by the other sources. In terms of citation rates, the study showed that Microsoft Academic tended to report lower average values, which led to clear changes in ranking positions when the data source was switched. Universities that did not achieve top positions in international rankings were particularly affected. Overall, the study showed that relying on a single data source can cause distortions in the evaluation of universities, especially for non-Western institutions and those that rank lower in international rankings. The key recommendation from @Huang2020 was therefore to integrate multiple data sources for robust evaluation systems to enable a fair and comprehensive analysis.
+
+The literature on the four bibliographic data sources examined -- Web of Science, Scopus, Crossref, and OpenAlex -- shows that all sources have advantages and disadvantages, each of which affects the evaluation of research performance and the production of university rankings.Web of Science and Scopus tend to be characterised by a high degree of structural reliability, precise affiliation assignments and more accurate citation tracking, however, they are limited by a selective content profile dominated by English-language material and by lower coverage of open access publications and research from the Global South. Crossref offers high timeliness and comprehensive coverage of publications, particularly for formats such as conference papers and book chapters, but suffers from incomplete funding information and structurally limited accessibility of citation links. OpenAlex positions itself as a comprehensive, open alternative with the largest volume of data, greater linguistic and geographical diversity, and stronger representation of research outputs from the social sciences and humanities. At the same time, OpenAlex tends to exhibit lower metadata quality, particularly in terms of document type classification, language detection and reference coverage. In addition, the studies by @Huang2020, @Torres2026 and @Abramo2026 demonstrate that the choice of data source not only influences quantitative coverage but is also decisive for the rankings of higher education institutions, specifically those from non-English-speaking regions. The results suggest that no single data source can provide a complete and fair representation of the global research landscape. Rather, the literature considers the combined use of multiple sources to be necessary in order to reduce disciplinary, linguistic and geographical biases and to create robust, transparent and fairer evaluation systems. It should also be noted, however, that the respective studies can only ever provide a snapshot of the data sources under investigation.
+
+#### Open Access Data Sources
+
+Determining the open access status of academic publications is a prerequisite for calculating open access indicators. This section provides an overview of the data sources used by the rankings examined to determine the open access status of the respective publications, as well as their specific characteristics. To this end, @tbl-2 first sets out below the open access data sources used by the five ranking systems examined.
+
+| Ranking | Unpaywall | OpenAlex |
+|:--------|:---------:|:--------:|
+| Leiden Ranking | | x |
+| Leiden Ranking Open Edition | | x | 
+| SCImago Institutions Ranking | x | |
+| QS Sustainability Ranking | x | |
+| COKI OA Dashboard | x | |
+
+: Data sources used to determine open access status {#tbl-2}
+
+
+@tbl-2 shows that a total of two different open access data sources are used: Unpaywall and OpenAlex. The SCImago Institutions Ranking, the QS Sustainability Ranking and the COKI OA Dashboard all use Unpaywall, whereas both versions of the Leiden Ranking rely on OpenAlex to determine open access status.
+
+Unpaywall is a free, automated service that identifies open access versions of articles using DOIs. The foundations for Unpaywall were laid as early as 2011; part of the underlying technology was published in 2016, and the Unpaywall browser plug-in was released in 2017 [@Else2018]. The service exclusively records publications with Crossref DOIs and is primarily focused on journal articles and preprints [@unpaywall_faq; @unpaywall_dois]. Other document types with Crossref DOIs, such as book chapters or conference papers, are in principle also processed by Unpaywall, as the *genre* field in the Unpaywall data schema directly adopts the Crossref type [@unpaywall_dataformat]. However, Unpaywall itself makes no statements regarding the quality of coverage for these document types [@unpaywall_faq]. In addition to publications without a Crossref DOI, so-called component DOIs are structurally not covered [@unpaywall_improvements2025] -- Crossref assigns these to individual components of journal articles, such as figures, tables or supplementary materials [@crossref_components]. The OA status determination is based on several open data sources, including Crossref, DOAJ and PubMed Central. Furthermore, Unpaywall harvests over 50,000 online sources, including journals, as well as institutional and subject-specific repositories [@unpaywall_sources]. Specifically, Unpaywall harvests repositories via the OAI-PMH protocol and cross-checks the metadata obtained in this way against the DOIs in its database. In addition, publishers’ landing pages are scraped directly to extract licence information not stored in Crossref. Furthermore, Unpaywall carries out manual corrections for known issues or misclassifications [@oadoi_github]. Only sources that make full texts accessible without the need to register and without CAPTCHA prompts are counted as OA sources [@unpaywall_locations]. Based on this information, Unpaywall assigns an OA status to each publication, distinguishing between five categories [@unpaywall_dataformat]: Gold, Hybrid, Green, Bronze and Closed. This classification logic follows a fixed decision-making sequence [@unpaywall_oa_status; @oadoi_github], which is schematically illustrated in @fig-mermaid.
+
+:::{#fig-mermaid .column-page}
+
+```{mermaid}
+%%| fig-width: 10
+
+flowchart LR
+    A[article] --> B{is OA?} 
+    B -->|FALSE| D(closed)
+    B -->|TRUE| C{best OA location?}
+    C -->|repository| E(green)
+    C -->|publisher| F{fully OA journal?} --- G
+    F -->|TRUE| H(gold) 
+    H --> L{APC = 0?}
+    subgraph OpenAlex [" "]
+    L -->|TRUE| M(diamond)
+    OAlabel(OpenAlex) ~~~ M
+    end
+    L -->|FALSE| H
+    F -->|FALSE| I{open license?}
+    I --->|TRUE| J(hybrid)
+    I -->|FALSE| K(bronze)
+
+style D fill:#D6D3D1,stroke:#A6A09B,color:#000 
+style E fill:#50C878,stroke:#059669,color:#fff
+style H fill:#f59e0b,stroke:#d97706,color:#fff
+style J fill:#C3B1E1,stroke:#8C68C4,color:#fff
+style K fill:#CD7F32,stroke:#B87333,color:#fff
+style M fill:#6495ED,stroke:#0047AB,color:#fff
+style OpenAlex fill:#D3D3D3,color:#000 
+style OAlabel fill:none,stroke:none,color:#000
+G@{ shape: braces, label: "journal_is_in_doaj = true  
+
+OR
+
+journal_is_in_doaj = false & fully OA-publisher
+
+OR
+
+jorunal_is_in_doaj = false & only OA-articles" }
+```
+
+Determining open access status in Unpaywall (OpenAlex)
+:::
+
+First, the system checks whether an article is available via open access. It then checks whether the best available version is hosted by the publisher or in a repository; if it is hosted by the publisher, the journal’s OA status and the presence of an open licence determine whether it is classified as Gold, Hybrid or Bronze. A decisive factor for the classification as Gold is whether a journal is considered to be fully open access, which Unpaywall determines on the basis of three criteria [@unpaywall_gold_journal]: Erstens gilt eine Zeitschrift als Gold-OA, wenn sie im DOAJ gelistet ist. However, as the DOAJ does not cover all Gold OA journals, secondly, journals from well-known OA publishers are classified as Gold OA via a maintained whitelist; and thirdly, Unpaywall empirically assesses whether a journal publishes exclusively OA articles. If several OA versions of an article are available, Unpaywall uses a scoring algorithm to select the best OA source, with publisher versions ranked higher than repository versions, peer-reviewed versions ranked higher than preprints, and versions with a direct PDF link ranked higher than versions without [@unpaywall_best_location; @oadoi_github]. The OA status is then derived deterministically from the best OA source selected. In May 2025, Unpaywall’s underlying codebase was revised to improve speed, maintainability and data quality, and to enable community-led correction of errors [@unpaywall_update2025]. As part of this overhaul, Gold OA detection was also specifically expanded, including through the evaluation of data from OJS journals, J-STAGE and SciELO, in order to improve coverage beyond the DOAJ [@unpaywall_improvements2025].
+
+OpenAlex has already been introduced in the previous section as a bibliographic data source. As such, unlike Unpaywall, OpenAlex does not limit itself to publications with a Crossref DOI when indexing research information. Prior to the OpenAlex-Walden rewrite in November 2025, OpenAlex and Unpaywall were operated by the same organisation on separate code bases, which occasionally led to discrepancies between the OA status information provided by the two services in the context of OA status determination [@openalex_rewrite;@unpaywall_improvements2025]. However, the OA status determination in OpenAlex followed a logic analogous to that of Unpaywall (see @fig-mermaid) with the same five categories: Gold, Hybrid, Bronze, Green and Closed -- the Diamond category was not implemented as a separate category until July 2024. Following the OpenAlex-Walden rewrite in November 2025, both systems are now operated on the same codebase, and Unpaywall has since been running as a subroutine of the OpenAlex infrastructure [@priem2025openalex;@openalex_2025review]. The Walden source code shows that this specifically means that OpenAlex work data indexed in Crossref is extracted and converted into the Unpaywall format [@openalex_createwunpaywall_2025], which should structurally rule out any discrepancies between the two services. The Walden pipeline determines the OA status in two stages [@openalex2025createworksbase]: First, at source level, a check is carried out to determine whether a journal is fully OA (via DOAJ, J-STAGE or observed OA rate). Building on this, each publication is assigned a status -- Diamond, Gold, Hybrid, Bronze, Green or Closed -- depending on accessibility, APC costs, licence and hosting location, with the best OA version being prioritised according to version type and PDF availability, in line with Unpaywall [@openalex2025createworksbase]. Since July 2024, OpenAlex has been assigning the *Diamond* OA status category, which identifies publications in purely open access journals without APCs. @haupka2026walden demonstrated empirically that the Walden rewrite has led to noticeable shifts in the OA classification. Diamond OA was awarded much more frequently following the rewrite, while Gold, Bronze and Hybrid OA declined. These findings highlight that individual releases on OpenAlex can have an impact on OA indicators and, at the same time, illustrate that OpenAlex is evolving dynamically [@haupka2026walden].
+
+For rankings that use OpenAlex as their OA data source, this means that OA metrics depend not only on the underlying classification logic but also on the snapshot of data used -- a limitation that must be taken into account when interpreting the results of the Leiden Ranking and the Leiden Ranking Open Edition. For rankings that use Unpaywall as a data source, the introduction of the Diamond category has no immediate impact: in the Unpaywall export, Diamond is mapped to Gold [@openalex_createwunpaywall_2025], as the Unpaywall data schema does not provide for Diamond as a separate OA status value [@unpaywall_dataformat]. The SCImago Institutions Ranking, the QS Sustainability Ranking and the COKI OA Dashboard therefore classify Diamond articles as Gold and are structurally unable to report the Diamond category until the Unpaywall schema is expanded accordingly. Rankings that use OpenAlex directly, on the other hand, have Diamond available as a separate category and could potentially include it in their OA indicators in the future.
+
+
+#### Document Types
+
+@tbl-doctype below provides an overview of the document types covered by each ranking. It should be noted that the rankings use different type vocabularies -- Crossref types for COKI, Scopus types for the SCImago Institutions Ranking and the QS Sustainability Ranking, OpenAlex types for the Leiden Ranking Open Edition, and WoS types for the traditional Leiden Ranking -- meaning that nominally identical terms such as *article* do not necessarily describe the same content [@Alperin2024;@Haupka2026].
+
+| Ranking                      | Document types                |
+|:-----------------------------|:------------------------------|
+| Leiden Ranking               | article, review               |
+| Leiden Ranking Open Edition  | article, review, book chapter | 
+| SCImago Institutions Ranking | article, book, book chapter, conference paper, data paper, editorial, letter, note, review, short survey |
+| QS Sustainability Ranking    | article, article in press, review, conference paper, book, book chapter, business article, data paper, report |
+| COKI OA Dashboard            | journal articles, proceedings articles, reports, posted content, edited books, books, book chapters, book parts, book sections, reference books, monographs, reference entries, other |
+
+: Document types covered {#tbl-doctype}
+
+The five rankings differ noticeably in terms of the types of documents they cover. The traditional Leiden Ranking is limited to articles and reviews in international journals [@LR_indicators]. The Leiden Ranking Open Edition additionally includes book chapters in journals and book series [@LROE_indicators]. The QS Sustainability Ranking takes into account not only articles and reviews but also conference papers, books, book chapters, articles in press, business articles, data papers and reports, however, it excludes editorials, letters, notes and short surveys [@QS_paperdef]. The SCImago Institutions Ranking is the most inclusive of the Scopus-based rankings and takes into account all Scopus document types with the exception of the types retracted, erratum and preprint -- including editorials, letters and notes, which QS explicitly excludes [@SIR_method]. The COKI OA Dashboard is the most inclusive overall and includes almost all Crossref document types, including monographs, book chapters, conference papers, reports and posted content -- the only exclusions are datasets, databases, peer reviews, conference proceedings and a few other less traditional document types [@COKI_how].
+
+These differences are particularly relevant for the calculation of OA indicators, as the proportion of OA publications can vary depending on the document type. Furthermore, publications without a Crossref DOI are not structurally covered by Unpaywall [@unpaywall_dois]. Consequently, the reported OA proportion for rankings that use Unpaywall as their OA data source may not provide a complete picture of the OA landscape, despite broad coverage of document types. Furthermore, differences regarding the document types included can have disciplinary implications, which are examined in more detail in the following section. The inclusion of different document types could therefore systematically result in different OA percentages even for identical institutions and publication periods, which would limit the comparability of the ranking results.
+
+
+#### Disciplinary Differences
+
+> A concern in any university evaluation is the existing disciplinary bias in large bibliographic sources used to support rankings. [@Huang2020a]
+
+Disciplinary differences or biases that arise from the choice of bibliographic data sources when compiling a ranking may adversely affect the comparability of results across ranking systems by under- or over-representing different disciplines. This section examines the extent of disciplinary differences with regard to the open access dimension. However, as only the datasets from the two versions of the Leiden Ranking include disciplinary classification, the analysis is limited to the disciplinary differences between the traditional Leiden Ranking, which uses Web of Science as its bibliographic data source, and the Leiden Ranking Open Edition, which uses OpenAlex as its bibliographic data source.
+
+To enable users to compare the results between the two versions of the Leiden Ranking, the CWTS has been providing interactive dashboards since the 2023 edition [@LROE_resources]. The results can be filtered by time period, one or more countries, fields and all indicators included in the Leiden Rankings, enabling a detailed comparison. @fig-fields incorporates the interactive dashboard for the 2025 edition of the Leiden Rankings. The x-axis represents the traditional Leiden Ranking, while the y-axis represents the Leiden Ranking Open Edition.
+
+::: {.column-page}
+
+::: {#fig-fields}
+
+```{=html}
+<iframe width="1040" height="560" src="https://app.powerbi.com/view?r=eyJrIjoiNGExNmJhN2UtZmY1MC00NTI1LWFjNjktOGZiZTUwM2EwYjkyIiwidCI6ImNhMmE3Zjc2LWRiZDctNGVjMC05MTA4LTZiM2Q1MjRmYjdjOCIsImMiOjh9"></iframe>
+```
+
+Disciplinary differences between the traditional Leiden Ranking 2025 and the Leiden Ranking Open Edition 2025 (Source: [Open Dashboard 2025](https://app.powerbi.com/view?r=eyJrIjoiNGExNmJhN2UtZmY1MC00NTI1LWFjNjktOGZiZTUwM2EwYjkyIiwidCI6ImNhMmE3Zjc2LWRiZDctNGVjMC05MTA4LTZiM2Q1MjRmYjdjOCIsImMiOjh9), [@LROE_resources])
+:::
+
+:::
+
+If @fig-fields is filtered by German higher education institutions and the number of open access publications (P(OA)) across all fields, it can be seen that there is a slightly higher density above the line $x = y$. This suggests that, across all fields, more open access information in OpenAlex leads to higher scores in the Leiden Ranking Open Edition. Furthermore, when filtering by individual subject areas, it can be seen that, with the exception of the *Life and Earth Sciences* subject area, OpenAlex tends to offer more open access information, this is most pronounced in the *Mathematics and Computer Science* and *Social Sciences and Humanities* subject areas. For these two fields, a higher density above the line $x = y$ is also evident for the total number of publications (P). This suggests that, overall, OpenAlex indexes more publications in the fields *Mathematics and computer science* and *Social sciences and humanities* than Web of Science (WoS), which leads to higher scores in the Leiden Ranking Open Edition. Overall, OpenAlex -- and thus the Leiden Ranking Open Edition -- appears to offer better coverage of the fields *Mathematics and computer science* and *Social sciences and humanities*, while WoS -- and thus the traditional Leiden Ranking -- offers better coverage in the field *Life and earth sciences*. This is also confirmed when considering the number of open access publications for the individual open access status types (P(gold OA), P(hybrid OA), etc.).
+
+@tbl-lr uses the field of *Mathematics and computer science* and the top five institutions in Germany as an example to illustrate whether there are differences in rank position in terms of the proportion of open access publications (PP(OA)). @tbl-lr clearly shows that the rankings differ between the two Leiden Ranking versions, even though the PP(OA) figures for the top five institutions fall within a similar range in both ranking systems. The University of Konstanz tops the traditional Leiden Ranking, whereas Hannover Medical School occupies first place in the Open Edition. Only the Freie Universität Berlin and the University of Heidelberg are listed among the top five in both rankings. It is also striking that, in the field under consideration, OpenAlex has clearly attributed more publications to the latter two institutions than WoS.
+
+
+::: {#tbl-lr layout-ncol=2}
+
++---------+----------------------+------+--------+--------+
+| Rank    | University           | P    | P(OA)  | PP(OA) |
++=========+======================+======+========+========+
+| 1       | Univ Konstanz        | 313  |  249   | 79.6%  |
++---------+----------------------+------+--------+--------+
+| 2       | Freie Univ Berlin    | 649  |  540   | 77.8%  |
++---------+----------------------+------+--------+--------+
+| 3       | Heidelberg Univ      | 753  |  582   | 77.4%  |
++---------+----------------------+------+--------+--------+
+| 4       | Univ Augsburg        | 404  |  311   | 77.0%  |
++---------+----------------------+------+--------+--------+
+| 5       | Phillips-Univ Marburg| 240  |  185   | 76.9%  |
++---------+----------------------+------+--------+--------+
+
+: Leiden Ranking 2025
+
++---------+----------------------------+------+--------+--------+
+| Rank    | University                 | P    | P(OA)  | PP(OA) |
++=========+============================+======+========+========+
+| 1       | Hannover Med Sch           | 354  | 294    | 83.2%  |
++---------+----------------------------+------+--------+--------+
+| 2       | Georg-August-Univ Göttingen| 953  | 756    | 79.3%  |
++---------+----------------------------+------+--------+--------+
+| 3       | Univ Greifswald            | 170  | 135    | 79.1%  |
++---------+----------------------------+------+--------+--------+
+| 4       | Freie Univ Berlin          | 1378 | 1087   | 78.9%  |
++---------+----------------------------+------+--------+--------+
+| 5       | Heidelberg Univ            | 1452 | 1143   | 78.7%  |
++---------+----------------------------+------+--------+--------+
+
+: Leiden Ranking Open Edition 2025
+
+
+Top 5 German universities ranked by the proportion of open access publications in the field of *Mathematics and computer science* for the publication period 2020--2023, with a minimum publication volume of 100 publications and restricted to *core publications*
+:::
+
+@tbl-lrshift also shows the specific changes in rank positions in the Open Edition for the top five universities from the traditional Leiden Ranking. The University of Konstanz has shifted from 1st place in the traditional Leiden Ranking to 6th place in the Leiden Ranking Open Edition, a decrease of five places. The Freie Universität Berlin nd the University of Heidelberg each moved down one place. The University of Augsburg moved down three places and Philipps University of Marburg four places. All five institutions therefore experienced a downward shift in rank position.
+
+::: {#tbl-lrshift}
+
++-----------------------+-----------+-------------+---------+-----------+
+| University            | PP(OA) LR | PP(OA) LROE | Rank LR | Rank LROE |
++:======================+:==========+:============+=========+===========+
+| Univ Konstanz         | 0.796     | 0.774       | 1       | 6         |
++-----------------------+-----------+-------------+---------+-----------+
+| Freie Univ Berlin     | 0.778     | 0.789       | 2       | 3         |
++-----------------------+-----------+-------------+---------+-----------+
+| Heidelberg Univ       | 0.774     | 0.787       | 3       | 4         |
++-----------------------+-----------+-------------+---------+-----------+
+| Univ Augsburg         | 0.770     | 0.764       | 4       | 7         |
++-----------------------+-----------+-------------+---------+-----------+
+| Phillips-Univ Marburg | 0.769     | 0.762       | 5       | 9         |
++-----------------------+-----------+-------------+---------+-----------+
+
+: Changes in rank position of the top 5 German universities in the traditional Leiden Ranking, measured by the proportion of open access publications in the field of *Mathematics and computer science* for the publication period 2020–2023, with a minimum publication volume of 100 publications and restricted to *core publications*
+
+:::
+
+
+In order to systematically record the differences between the rankings of the two versions of the Leiden Ranking, as exemplified by the tables [-@tbl-lr] and [-@tbl-lrshift], the absolute value of the differences in ranking positions between the traditional Leiden Ranking and the Leiden Ranking Open Edition, as well as the median and the 90th percentile of these differences, were calculated based on the rankings according to the PP(OA) values per field and institution. The calculation was carried out both for the set of all shared institutions (global) and for the set of shared German institutions (Germany) for the publication period 2020--2023 and a minimum publication volume of 100 publications per institution. @tbl-rankshift displays the results by field and also shows the absolute number of higher education institutions in the respective intersections.
+
+
+::: {.column-page}
+
+::: {#tbl-rankshift layout-ncol=2}
+
++-----------------------------------+-----------------+--------------+---------------+
+| Field                             | No. universities| Median       |90th percentile|
++===================================+=================+==============+===============+
+| All sciences                      | 58              | 3            | 8.3           |
++-----------------------------------+-----------------+--------------+---------------+
+| Biomedical and health sciences    | 57              | 3            | 12.4          |
++-----------------------------------+-----------------+--------------+---------------+
+| Life and earth sciences           | 53              | 2            | 8.8           |
++-----------------------------------+-----------------+--------------+---------------+
+| Mathematics and computer science  | 55              | 6            | 16.6          |
++-----------------------------------+-----------------+--------------+---------------+
+| Physical sciences and engineering | 57              | 8            | 21.4          |
++-----------------------------------+-----------------+--------------+---------------+
+| Social sciences and humanities    | 56              | 5            | 14.5          |
++-----------------------------------+-----------------+--------------+---------------+
+
+: Germany
+
+
++-----------------------------------+-----------------+--------------+---------------+
+| Field                             | No. universities| Median       |90th percentile|
++===================================+=================+==============+===============+
+| All sciences                      | 1586            | 39           | 124.5         |
++-----------------------------------+-----------------+--------------+---------------+
+| Biomedical and health sciences    | 1528            | 59           | 199.3         |
++-----------------------------------+-----------------+--------------+---------------+
+| Life and earth sciences           | 1490            | 43           | 146.0         |
++-----------------------------------+-----------------+--------------+---------------+
+| Mathematics and computer science  | 1420            | 53           | 170.0         |
++-----------------------------------+-----------------+--------------+---------------+
+| Physical sciences and engineering | 1540            | 52           | 150.0         |
++-----------------------------------+-----------------+--------------+---------------+
+| Social sciences and humanities    | 1207            | 52           | 162.8         |
++-----------------------------------+-----------------+--------------+---------------+
+
+: Global
+
+
+Median and 90th percentile of the absolute rank shifts between the traditional Leiden Ranking and the Leiden Ranking Open Edition by field, based on the ranking according to PP(OA) values, globally and for Germany
+
+:::
+
+:::
+
+The median absolute rank shift for Germany ranges from 2 positions in the *Life and earth sciences* field to 8 positions in the *Physical sciences and engineering* field. The 90th percentile ranges from 8.3 (*All sciences*) to 21.4 positions (*Physical sciences and engineering*). In the field *Physical sciences and engineering*, German institutions therefore show greater variation -- both in typical cases and at the upper end of the distribution -- than in other fields. The field *Life and earth sciences* exhibits the lowest median value among the six fields, at 2, while the 90th percentile, at 8.8, is close to the median and well below the corresponding value for *Physical sciences and engineering*. This suggests a comparatively even distribution, one that is not heavily influenced by individual institutions with high volatility. In the field of *Mathematics and computer science*, German institutions typically fluctuate by 6 positions and, in one tenth of cases, by 16.6 positions. The example for *Mathematics and computer science* shown in @tbl-lrshift (rank shifts of between one and five positions for the top five institutions) lies at the lower end of the distribution observed for this field.
+
+Globally, the median ranges between 39 and 59, and the 90th percentile between 124.5 and 199.3 positions. The field *Biomedical and health sciences* (median 59, 90th percentile 199.3) has the highest values for both the median and the 90th percentile amongst the six fields, while *All sciences* (median 39, 90th percentile 124.5) has the lowest. Consequently, the field most affected by changes in ranking at global level (*Biomedical and health sciences*) differs from the fields most affected in Germany (*Physical sciences and engineering*, *Mathematics and computer science*).
+
+One possible explanation for the comparatively significant shifts in rankings in *Mathematics and computer science* and *Physical sciences and engineering* for German institutions lies in the methodological definition of *core publications* in both versions of the Leiden Ranking. The methodology of the traditional Leiden Ranking defines *core publications* for WoS exclusively as the document types *article* and *review*. By contrast, the definition used for OpenAlex is less restrictive [@vanEck2025b]. The reason for this is that, compared with proprietary databases, OpenAlex uses a significantly less granular document-type classification. Whereas WoS lists conference papers as a separate document type, clearly distinguished from *article/review*, OpenAlex groups journal articles, conference papers and preprints into a single *article* type as part of its document type classification; in OpenAlex, *article* effectively functions as a catch-all category [@Haupka2026;@Alperin2024]. This lower level of granularity has direct consequences for the *core-publications* count. Conference papers, which are excluded in WoS via explicit type assignment, are implicitly assigned to the generic *article* type in OpenAlex. Depending on the field and publication culture, this could result in differing counts, and fields characterised by the high significance of conference papers as a publication format might thus exhibit greater disciplinary differences. This also suggests that even standardised, size-independent indicators such as PP(OA) are not independent of data sources. This must be taken into account when comparing different ranking versions and interpreting their results.
+
+It should be noted, however, that OpenAlex has since revised its own document type classification [@openalex_classification]. OpenAlex now categorises 25 different document types and, according to its own statements, the document type of around 10% of the indexed works have changed [@openalex_classification]. This will have a particular impact on future versions of the rankings that use OpenAlex as a data source.
+
+
+### Open Access Indicators
+
+Within evaluative bibliometrics, so-called productivity indicators focus on counting publication volumes in order to quantify the productivity of individuals, institutions or countries [@Gauch2023]. In this context, open access indicators can be understood as a form of productivity indicator, as they usually count the number of open access publications and use this to generate an approximate measure of the productivity of researchers, institutions or countries in the area of open access.
+
+In line with good bibliometric practice, as outlined, for example, in the Leiden Manifesto [@Hicks2015], the selection of indicators used in the context of rankings requires careful consideration of their suitability for comparing institutions. A comparison between institutions from different regional contexts or with varying numbers of researchers and publication volumes can be problematic if the indicators merely represent absolute numbers of publications, as the specific conditions and challenges of each institution are not taken into account. To improve comparability between institutions, various forms of normalisation are therefore applied when constructing indicators [@Gauch2023]. One form of normalisation with regard to open access indicators could be to set the absolute number of an institution’s open access publications in relation to the absolute number of all its publications during the period under review.
+
+In addition to individual indicators, so-called *composite indicators* are also used for certain rankings that are structured as league tables. These indicators are derived from weighted aggregates of individual indicators [@Glaenzel2009;@Johnes2018]. The idea behind composite indicators is to capture complex phenomena relating to scientific activities by combining and consolidating various indicators into a single, comprehensive metric. These linearised metrics, which can be ranked, make it easier to compare institutions, individuals or countries [@quick_notes]. Nevertheless, certain problems are associated with composite indicators -- a good overview can be found in @Forthmann2024. Among the problems and points of criticism are, for example, the fact that the selection of weightings for individual components in composite indicators is often opaque and, in some cases, arbitrary. Yet the weights of the individual components have a huge impact on the resulting ranking [@Glaenzel2009;@Forthmann2024]. Furthermore, criticism has been raised that there is often a lack of sufficient transparency regarding the construction of these indicators, which can make it difficult to interpret the ranking results [@Forthmann2024].
+
+@tbl-oaindicators provides a summary of the key differences between the five ranking systems in terms of the open access indicators they use.
+
+::: {#tbl-oaindicators}
+
+| Ranking                      | OA data source | OA status types distinguished                     | Presentation form  | Weighting in overall score |
+|:-----------------------------|:---------------|:--------------------------------------------------|:------------------|:---------------------------|
+| Leiden Ranking               | OpenAlex       | Gold, Hybrid, Bronze, Green, Unknown              | Individual indicators (absolute & relative) | no overall score |
+| Leiden Ranking Open Edition  | OpenAlex       | Gold, Hybrid, Bronze, Green                       | Individual indicators (absolute & relative) | no overall score |
+| SCImago Institutions Ranking | Unpaywall      | no differentiation                                | single indicator (%) | 2% (within Research: 50%) |
+| QS Sustainability Ranking    | Unpaywall      | Gold, Hybrid, Green                               | aggregated indicator (0–100) | 1% (within Governance: 10%) |
+| COKI OA Dashboard            | Unpaywall      | Publisher Open, Other Platform Open, Both, Closed | absolute & relative | no overall score |
+
+: Comparison of the open access indicators across the five ranking systems
+
+:::
+
+Both versions of the Leiden Ranking essentially provide two types of open access indicators: 1) indicators that show the total volume of open access publications produced by a higher education institution over a four-year period, and 2) indicators that show the proportion of open access publications out of the total publication volume of a higher education institution over a four-year period. Both indicators are reported once as a total for open access publications and, in addition, separately for the common open access status types (gold, hybrid, green, bronze, and unknown as used in the traditional Leiden Ranking). In addition to the open access indicators, the total publication volume per institution is also stated. Although a comparison between institutions based on absolute numbers has its limitations, it can still be useful to report absolute figures in order to improve the transparency and traceability of the indicators. Stating the absolute numbers enables institutions to verify the percentage figures and assess their accuracy.
+
+Similar to the two Leiden Rankings, the COKI OA Dashboard also reports both absolute figures and relative proportions in relation to an institution’s open access publication volume. The scope of the indicators shown in the COKI OA Dashboard varies between the institutional overview page and the detailed pages for individual institutions. The overview page, which is designed to enable a comparison of all institutions represented in the COKI OA Dashboard, displays the following indicators for the publication period 2000–2024: 1) the percentage of open access publications, 2) a stacked bar chart showing the percentages of articles that are available via the publisher, other platforms, both, or not at all via open access. However, the bar chart does not show the respective percentages; 3) the total number of publications by an institution; and 4) the total number of open access publications by an institution. The detail pages for individual institutions contain further specific indicators that provide a more detailed overview of an institution’s open access publishing activity. Among other things, these pages display percentage figures for the stacked bar chart and trends over time. It is striking that there is a discrepancy between an institution’s overview page and its details page regarding the absolute figures for total publication volume and open access publication volume. The overview page shows the exact figures, whereas the details page displays rounded figures. Furthermore, the percentage of open access publications shown on both pages is a rounded figure. Although the use of absolute figures, similar to the Leiden Rankings, ensures greater verifiability of the indicators, the presentation of rounded figures is less precise.
+
+The SCImago Institutions Ranking uses a composite indicator that aggregates various indicators from the three areas of *Research*, *Innovation* and *Societal*. The *Research* dimension accounts for 50% of the composite indicator and is therefore clearly more heavily weighted than the other two dimensions, which are weighted at 30% (*Innovation*) and 20% (*Societal*). In the SCImago Institutions Ranking, the open access indicator forms part of the *Research* dimension and is weighted at 2%. It is therefore one of the least heavily weighted indicators within the *Research* dimension and the composite indicator as a whole. The open access indicator represents the percentage of publications that are published in open access journals or indexed in Unpaywall [@SIR_method]. However, the SCImago Institutions Ranking does not report either the open access indicator or the total score achieved by the institutions, it merely states the resulting rank.
+
+Similar to the SCImago Institutions Ranking, the QS Sustainability Ranking also uses a composite indicator. To this end, the QS Sustainability Ranking aggregates various indicators from the areas of *Environmental Impact*, *Social Impact* and *Governance*. The *Governance* dimension accounts for 10% of the composite indicator and is therefore given less weight than the other two dimensions, each of which is weighted at 45%. The open access indicator forms part of the *Governance* dimension in the QS Sustainability Ranking and accounts for 1% of this dimension. All indicators within the *Governance* dimension are assigned the same weighting and are therefore given equal consideration for the dimension. The open access indicator specifies the proportion of an institution’s total research output that is available in open access according to Unpaywall [@QS_governance]. In constructing the indicator, a distinction is made between different types of open access status (gold, hybrid, green) and subject areas, to which different weightings are assigned. The final open access indicator is aggregated based on the individual values per field and scaled to a range between 0 and 100 [@QS_governance]. In addition to the total score, the QS Sustainability Ranking dataset shows the score achieved for each dimension separately. The total score is only shown up to rank 902.
+
+Overall, it is evident that the five ranking systems differ, in some cases considerably, in their use of open access indicators, even though all the open access indicators outlined measure and present the productivity of institutions in relation to open access.  Differences and challenges regarding the comparability of ranking results arise, for example, from the consideration of different types of open access status (gold, hybrid, green, etc.) for classifying open access publications. This also results in a path dependency on the data source used to identify open access publications. Both versions of the Leiden Ranking use OpenAlex as their data source for identifying open access publications and, furthermore, report the open access indicators separately for all open access status types. The QS Sustainability Ranking, on the other hand, uses Unpaywall as its data source, but appears to distinguish only between gold, hybrid and green open access publications [@QS_governance]. The SCImago Institutions Ranking also uses Unpaywall as its data source, but does not appear to distinguish between different types of open access status [@SIR_method]. The COKI OA Dashboard likewise uses Unpaywall as its data source for identifying open access publications, but, unlike the other rankings, does not display the typical open access status types with their corresponding colours. Instead, the COKI OA Dashboard groups gold, hybrid and bronze publications together under the category *Publisher Open*. These differences make it difficult to compare the ranking systems in terms of open access.
+
+Due to the more nuanced presentation of the indicators, both versions of the Leiden Ranking and the COKI OA Dashboard require users to examine the individual dimensions separately in order to carry out a comprehensive assessment of the institutions. This entails a higher level of complexity when interpreting the results. The SCImago Institutions Ranking and the QS Sustainability Ranking simplify this complexity through the use of composite indicators. However, the composite indicators prove to be less suitable for open access monitoring and the assessment of open access activities, as the specific open access-related values cannot be derived directly from the composite indicators. Furthermore, open access indicators play a secondary role in the SCImago Institutions Ranking and the QS Sustainability Ranking, as they each account for only a very small proportion of the overall score.
+
 
 ### Institutional Participation in Data Collection
 
-This section examines the data collection procedures of the various ranking providers and investigates the extent to which institutions can participate in the data collection process relevant to them.
+This section examines the data collection methods used by the various ranking providers and explores the extent to which institutions can participate in the data collection process that concerns them.
 
-For the traditional Leiden Ranking, the CWTS does not collect any data directly from the ranked institutions [@LR_method; @LR_general]. The ranking is based on data from the Web of Science, which is processed and standardized by the CWTS. Since the Web of Science is a proprietary data source with licensing restrictions, the CWTS is unable to make the raw and curated data openly accessible [@LeidenData]. As a result, it is not straightforward for the institutions concerned to verify the data quality.
+For the traditional Leiden Ranking, the CWTS does not collect any data directly from the ranked institutions [@LR_method;@LR_general]. The ranking is based on data from the Web of Science, which is processed and standardised by the CWTS. However, as Web of Science is a proprietary data source subject to licensing restrictions, the CWTS is unable to make the raw data or the curated data openly accessible [@LeidenData]. Consequently, it is not readily possible for the institutions concerned to verify the quality of the data.
 
-For the Leiden Ranking Open Edition, no data is collected directly from the institutions either [@LROE_method]. In contrast to the traditional Leiden Ranking, however, the Leiden Ranking Open Edition relies on open data sources, such as OpenAlex and ROR, for the creation of the ranking [@LROE_method]. Due to the use of open data sources and the CWTS's provision of raw and results data [@LROE_resources], it is possible for the ranked institutions to verify the data quality and participate in the data curation process by reporting issues with data quality to the respective actors.
+Similarly, no data is collected directly from the institutions for the Leiden Ranking Open Edition [@LROE_universities]. However, unlike the traditional Leiden Ranking, the Leiden Ranking Open Edition draws on open data sources, such as OpenAlex and ROR, to produce the ranking [@LROE_data]. Through the use of open data sources and thanks to the provision of raw and results data by the CWTS [@LROE_resources], the ranked institutions are able, on the one hand, to verify the quality of the data and, on the other hand, to participate in the data curation process by reporting any data quality issues to the relevant stakeholders [@LeidenData].
 
-The methodology of the SCImago Institutions Ranking describes that data is collected from various sources: Scopus, PATSTAT, Google, Semrush, Unpaywall, PlumX Metrics, Mendeley, and Overton [@SIR_method]. The methodology does not mention any possibility of institutional participation in the data collection process, so it is assumed that no data is collected directly from the ranked institutions. The bibliographic data for the SCImago Institutions Ranking comes from Scopus, a proprietary data source with licensing restrictions, similar to the Web of Science. The raw data from the SCImago Institutions Ranking is not publicly accessible, so it is assumed that ranked institutions are not easily able to verify or correct the data concerning them before they are included in the ranking. For determining the Open Access status, the SCImago Institutions Ranking uses Unpaywall, an open data source. Similar to the Leiden Ranking Open Edition, this could allow institutions to participate in the data curation process by reporting data quality issues directly to Unpaywall. Overall, however, the methodology of the SCImago Institutions Ranking provides little information regarding data quality and potential limitations, nor does it transparently communicate the opportunities for institutions to contribute to improved data quality.
+The methodology of the SCImago Institutions Ranking states that data for the ranking is collected from various sources, namely: Scopus, PATSTAT, Google, Semrush, Unpaywall, PlumX Metrics, Mendeley and Overton [@SIR_method]. The methodology makes no mention of any opportunity for institutional involvement in data collection, it is therefore assumed that no data is collected directly from the ranked institutions. The bibliographic data for the SCImago Institutions Ranking is retrieved from Scopus, a proprietary data source which, like Web of Science, is subject to licensing restrictions. The raw data for the SCImago Institutions Ranking is not publicly available, meaning that it can be assumed that ranked institutions do not readily have the opportunity to verify or correct the data relating to them before it is included in the ranking. To determine open access status, the SCImago Institutions Ranking uses Unpaywall, an open data source. As with the Leiden Ranking Open Edition, it may be possible for the institutions concerned to participate in the data curation process for the open access data by reporting data quality issues directly to Unpaywall. Overall, the methodology of the SCImago Institutions Ranking provides little information regarding data quality and possible limitations, nor is there any transparent communication regarding the options available to institutions for helping to improve data quality.
 
-The COKI Open Access Dashboard uses only open data sources for data collection, including Crossref, Unpaywall, and ROR [@COKI_how]. The methodology of the COKI OA Dashboard describes the process of data collection from external sources in detail [@COKI_how] but does not provide any information about data submission by the ranked institutions themselves. Therefore, it is assumed that there is no direct institutional participation in the data collection process. Since the COKI dataset is based on open data sources, similar to the Leiden Ranking Open Edition, it is assumed that the institutions concerned can indirectly participate in the data curation process by reporting data quality issues directly to the various data sources. Additionally, COKI communicates limitations of its dataset [@COKI_how] and offers various contact options [@COKI_contact], so institutions also have the opportunity to actively contribute to improving the quality of the COKI dataset.
+The COKI Open Access Dashboard exclusively uses open data sources for data collection, including Crossref, Unpaywall and ROR [@COKI_how]. The methodology of the COKI OA Dashboard describes the process of data collection from external data sources in detail, but provides no information regarding data provision by the ranked institutions themselves [@COKI_how]. It can therefore be assumed that there is no direct institutional involvement in the data collection process. As the COKI dataset is based on open data sources, it can further be assumed -- as with the Leiden Ranking Open Edition -- that the institutions concerned have the opportunity to participate indirectly in the data curation process by reporting data quality issues directly to the relevant data providers. Additionally, COKI communicates the limitations of its own dataset [@COKI_how] and provides various contact options [@COKI_contact], so that institutions also have the opportunity to play an active role in contributing to the improvement of the data in the COKI dataset.
 
-The QS Sustainability Ranking is the only one of the five analyzed ranking systems that provides for direct participation of the institutions concerned in the data collection process. The methodology of the QS Sustainability Ranking describes that QS generally encourages all institutions to provide data for the QS Rankings [@QS_sustain]. For data submission, QS provides a special platform, but the methodology does not offer a precise list of the data requested [@QS_sustain]. If institutions that qualify for inclusion in the QS Sustainability Ranking do not provide data, QS evaluates these institutions based on proprietary and publicly available data or data previously submitted by the respective institution. A complete opt-out of the ranking by the institution is not provided for. QS argues that the inclusion of all qualifying institutions increases the reliability of the rankings [@QS_optout]. However, QS does not provide information on how many of the ranked institutions actually take the opportunity to submit data.
+The QS Sustainability Ranking is the only one of the five ranking systems examined that directly involves the institutions concerned in the data collection process. The methodology of the QS Sustainability Ranking states that QS generally encourages all institutions to provide data for the QS rankings [@QS_sustain]. QS provides a dedicated platform for data submission, however, the methodology does not provide a precise list of the data requested [@QS_sustain]. Should institutions that are eligible for inclusion in the QS Sustainability Ranking fail to provide data, QS assesses these institutions on the basis of proprietary and publicly available data, or data previously provided by the institution in question. A complete opt-out from the ranking by institutions is therefore not provided for. QS justifies this by arguing that the inclusion of all qualifying institutions enhances the reliability of the rankings [@QS_optout]. However, QS does not provide any information on how many of the ranked institutions actually take up the opportunity to submit data.
 
-Overall, it is evident that the opportunity for institutions to participate in the data collection process of the ranking providers is limited. The QS Sustainability Ranking is the only ranking system that directly collects data from the institutions concerned, although it is not entirely clear which specific data is requested from the institutions. The other ranking systems use data exclusively from external sources that are not directly collected from the institutions. The use of open data sources, as in the Leiden Ranking Open Edition or the COKI OA Dashboard, can, however, provide institutions with an opportunity to improve the quality of the data concerning them. High-quality source data and transparent methodologies for creating rankings can further contribute to improving trust in the reliability and validity of the ranking systems.
+Overall, it appears that institutions only have limited opportunities to participate in the data collection process carried out by ranking providers. The QS Sustainability Ranking is the only ranking system that collects data directly from the institutions concerned, although it is not entirely clear what specific data is requested from them. The other ranking systems rely exclusively on data from external sources that are not collected directly from the institutions. However, the use of open data sources, such as in the Leiden Ranking Open Edition or the COKI OA Dashboard, can offer institutions an opportunity to improve the quality of the data relating to them. High-quality source data and transparent methodologies for compiling rankings can also help to improve confidence in the reliability and validity of the ranking systems.
+
+
+## Limitations
+
+This analysis is subject to several methodological limitations, which must be taken into account when interpreting the results.
+
+The analysis of institutional overlap between the five ranking systems was restricted to German institutions due to incomplete ROR-ID mappings for the SCImago Institutions Ranking and the QS Sustainability Ranking. The reported overlap percentages cannot therefore be readily extrapolated to the global level.
+
+The analysis of disciplinary differences is limited to the two versions of the Leiden Ranking, as only these include disciplinary classifications in their data. It is not possible, on this basis, to draw conclusions regarding disciplinary biases in the other three ranking systems. The analysis of changes in ranking between the traditional Leiden Ranking and the Leiden Ranking Open Edition relates exclusively to the subset of institutions that are common to both, as identified by ROR IDs. For Germany, 15 of the 73 institutions included in the Leiden Ranking Open Edition were not represented in the traditional Leiden Ranking and were therefore excluded from the analysis. Furthermore, the absolute median and percentile values between the German (N = 53–58) and global samples (N = 1,207–1,586) were not directly comparable due to the considerable differences in sample size. Corresponding comparisons were therefore limited to qualitative observations within the respective levels.
+
+All observations reported in this analysis represent snapshots of the respective underlying data versions. The same applies to the literature used regarding the bibliographic data sources. The studies reflect the state of Web of Science, Scopus, Crossref and OpenAlex at the time each analysis was conducted, and, due to the dynamic evolution of these data sources, the study results cannot simply be extrapolated to the current state.
+
+## Summary
+
+A comparative analysis of the five ranking systems, focusing on the open access dimension, shows that, despite a common interest -- the measurement of open access activities at research institutions -- the OA indicators used are only comparable to a limited extent. The main reasons for this limited comparability lie, in particular, in the following areas:
+
+1. In the choice of bibliographic data source (Web of Science, Scopus, OpenAlex, Crossref), which determines both the coverage of publications and their disciplinary and geographical distribution.
+2. In the choice of OA data source (Unpaywall vs. OpenAlex), which defines the available OA status categories and their classification logic.
+3. In the document types included, which define the denominator for all relative OA indicators.
+4. In the construction of the indicators themselves, which ranges from differentiated individual indicators to highly aggregated composite indicators.
+5. In empirically observable differences between the rankings themselves: the systems examined differ considerably in the number and overlap of the institutions included (in particular, the COKI OA Dashboard shows much broader coverage than the other four rankings) as well as in the geographical representation of individual countries (see @tbl-pref). Using the two versions of the Leiden Ranking as an example, it was also found that the ranking position of individual institutions can shift noticeably depending on the data source used, and that the extent of this shift varies between disciplines as well as between Germany and the global level.
+
+Consequently, both a direct comparison of the ranking results of individual institutions across the five systems and a comparison of their respective open access activities across multiple ranking systems are of limited value. Neither the underlying publication volumes nor the calculated open access proportions relate to comparable populations. Furthermore, institutions not included in a particular ranking cannot, in principle, use it to assess their own standing, whereas institutions featured in multiple rankings cannot have their respective results directly compared.
+
+This has specific implications for users who wish to utilise rankings for open access monitoring or strategic decision-making. Rankings based on open data sources -- in particular the Leiden Ranking Open Edition and the COKI OA Dashboard -- offer greater transparency and traceability, as well as the opportunity to report data quality issues to the relevant entities. This offers advantages over ranking systems that rely on proprietary data sources. However, transparency alone does not resolve the fundamental problem of comparability between ranking systems. Rankings using composite indicators, such as the SCImago Institutions Ranking and the QS Sustainability Ranking, are generally less suitable for nuanced OA monitoring, as the OA indicators each account for only a very small proportion of the overall score and no disaggregated OA figures are reported.
+
+## Data Availability {.appendix}
+
+This study is based on secondary data from five institutional ranking systems and the Research Organisation Registry (ROR). The data used are described in detail in the accompanying data documentation [@doerner2026data]. The data from the CWTS Leiden Rankings (Traditional Edition and Open Edition), the COKI Open Access Dashboard and the ROR dataset are publicly available under open licences and are cited in the data documentation with versioned, persistent DOIs. These data are not published separately as part of the dataset underlying the analysis, as this offers no added value compared with the existing, versioned sources.
+
+The data from the SCImago Institutions Ranking and the QS Sustainability Ranking are not published for the following reasons: (1) The terms of use for the data from the SCImago Institutions Ranking are not sufficiently specific to determine whether redistribution is permitted, and (2) access to the data from the QS Sustainability Ranking requires registration with the data provider, whose terms of use also do not contain explicit permission for redistribution.
+
+To ensure reproducibility despite these limitations, a data release comprising a data documentation that describes in detail all data sources, matching and harmonisation procedures, as well as the components of the data publication, and the complete computational notebook (Quarto/R source code) used to carry out the analysis, together with a rendered HTML version of the notebook including all calculations, tables, UpSet plots and choropleth maps generated during execution, has been deposited on Zenodo under a CC0 licence: Dörner, S. (2026). *Dataset for: Open Access in Institutional Rankings* [Dataset]. Zenodo. <https://doi.org/10.5281/zenodo.23892205>
+
+Direct links and access conditions for each of the five original ranking data sets, as well as for the ROR data set, including the respective DOIs, are provided in the data documentation.
+
+
+## AI Usage Statement {.appendix}
+
+In the preparation of this document, Claude (Anthropic, model Claude Sonnet 5.5) was used to support text generation (draft suggestions), code generation, and code optimization. The tool was used to speed up the writing and development process and to improve the quality of the code. AI served exclusively as a supporting tool. After using this tool, the author reviewed the content and revised it as needed. The author has checked, validated, and verified the accuracy of all AI-generated content.
+
+## References
