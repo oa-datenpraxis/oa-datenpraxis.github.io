@@ -7,7 +7,7 @@ title: "Upcoming Events"
 
 #### [Bibliometrie und offene Daten im Kontext der Open-Access-Transformation](events/webinar_20261105.qmd)
 
-#### [Open Access and Publisher Data](events/webinar_20261130.en.qmd)
+#### [Open Access and Publisher Data](events/webinar_20261130.qmd)
 
 ## Conferences & Meetings
 
